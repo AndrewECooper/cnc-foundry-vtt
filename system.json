@@ -2,51 +2,51 @@
     "name": "cnc",
     "title": "Castles & Crusades",
     "description": "A rules light adaptable game that has stood the test of time in the Foundry Virtual Tabletop environment.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "author": "KillerWabbit",
     "scripts": [],
-    "esmodules": ["dnd5e.js"],
-    "styles": ["dnd5e.css"],
+    "esmodules": ["cnc.js"],
+    "styles": ["cnc.css"],
     "packs": [
       {
         "name": "heroes",
         "label": "Starter Heroes",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/heroes.db",
         "type": "Actor"
       },
       {
         "name": "monsters",
         "label": "Monsters (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/monsters.db",
         "type": "Actor"
       },
       {
         "name": "items",
         "label": "Items (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/items.db",
         "type": "Item"
       },
       {
         "name": "tradegoods",
         "label": "Trade Goods (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/tradegoods.db",
         "type": "Item"
       },
       {
         "name": "spells",
         "label": "Spells (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/spells.db",
         "type": "Item"
       },
       {
         "name": "backgrounds",
         "label": "Backgrounds (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/backgrounds.db",
         "entity": "Item",
         "type": "Item"
@@ -54,49 +54,49 @@
       {
         "name": "classes",
         "label": "Classes (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/classes.db",
         "type": "Item"
       },
       {
         "name": "subclasses",
         "label": "Subclasses (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/subclasses.db",
         "type": "Item"
       },
       {
         "name": "classfeatures",
         "label": "Class Features (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/classfeatures.db",
         "type": "Item"
       },
       {
         "name": "races",
         "label": "Racial Features (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/races.db",
         "type": "Item"
       },
       {
         "name": "monsterfeatures",
         "label": "Monster Features (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/monsterfeatures.db",
         "type": "Item"
       },
       {
         "name": "rules",
         "label": "Rules (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/rules.db",
         "type": "JournalEntry"
       },
       {
         "name": "tables",
         "label": "Tables (SRD)",
-        "system": "dnd5e",
+        "system": "cnc",
         "path": "./packs/tables.db",
         "type": "RollTable"
       }
@@ -115,8 +115,8 @@
     "secondaryTokenAttribute": null,
     "minimumCoreVersion": "9.245",
     "compatibleCoreVersion": "9",
-    "url": "https://gitlab.com/foundrynet/dnd5e",
-    "manifest": "https://gitlab.com/api/v4/projects/foundrynet%2Fdnd5e/packages/generic/dnd5e/latest/system.json",
-    "download": "https://gitlab.com/foundrynet/dnd5e/-/releases/release-1.6.2/downloads/dnd5e-release-1.6.2.zip"
+    "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades",
+    "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/system.json",
+    "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/release-0.1.0/downloads/cnc-release-0.1.0.zip"
   }
   

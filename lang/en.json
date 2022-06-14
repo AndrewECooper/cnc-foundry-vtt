@@ -1,0 +1,27 @@
+{
+    "ACTOR.TypeCharacter": "Player Character",
+    "ACTOR.TypeNpc": "Non-Player Character",
+    "ACTOR.TypeVehicle": "Vehicle",
+    "ITEM.TypeBackground": "Background",
+    "ITEM.TypeBackpack": "Backpack",
+    "ITEM.TypeClass": "Class",
+    "ITEM.TypeConsumable": "Consumable",
+    "ITEM.TypeEquipment": "Equipment",
+    "ITEM.TypeFeat": "Feature",
+    "ITEM.TypeLoot": "Loot",
+    "ITEM.TypeSpell": "Spell",
+    "ITEM.TypeSubclass": "Subclass",
+    "ITEM.TypeTool": "Tool",
+    "ITEM.TypeWeapon": "Weapon",
+    
+    "CNC.title": "Castles & Crusades Game System",
+    "CNC.AbbreviationCR": "CR",
+    "CNC.AbbreviationConc": "Conc.",
+    "CNC.AbbreviationDC": "DC",
+    "CNC.AbbreviationKgs": "kgs",
+    "CNC.AbbreviationLR": "LR",
+    "CNC.AbbreviationLevel": "Lvl.",
+    "CNC.AbbreviationLbs": "lbs.",
+    "CNC.AbbreviationSR": "SR"
+}
+    

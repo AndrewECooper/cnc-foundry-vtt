@@ -150,7 +150,8 @@ export class ItemGrantConfig extends AdvancementConfig {
   /**
    * Handle deleting an existing Item entry from the Advancement.
    * @param {Event} event  The originating click event.
-   * @returns {Promise<ItemCnc>}  The promise for the updated parent Item which resolves after the application re-renders
+   * @returns {Promise<ItemCnc>}  The promise for the updated parent Item which resolves after
+   * the application re-renders
    * @private
    */
   async _onItemDelete(event) {

@@ -1,3 +1,4 @@
+// This file is for reference from the DND5E Game System - KillerWabbit
 import { ClassFeatures } from "./classFeatures.js";
 import { preLocalize } from "./utils.js";
 

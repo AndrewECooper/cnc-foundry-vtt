@@ -4,25 +4,25 @@
  * @param {number} slot         The hotbar slot to use
  * @returns {Promise<boolean>}
  */
-export async function create5eMacro(data, slot) {
+export async function createCncMacro(data, slot) {
   const macroData = { type: "script", scope: "actor" };
   switch ( data.type ) {
     case "Item":
-      if ( !("data" in data) ) return ui.notifications.warn(game.i18n.localize("MACRO.5eUnownedWarn"));
+      if ( !("data" in data) ) return ui.notifications.warn(game.i18n.localize("MACRO.CncUnownedWarn"));
       foundry.utils.mergeObject(macroData, {
         name: data.data.name,
         img: data.data.img,
-        command: `game.dnd5e.macros.rollItem("${data.data.name}")`,
-        flags: {"dnd5e.itemMacro": true}
+        command: `game.cnc.macros.rollItem("${data.data.name}")`,
+        flags: {"cnc.itemMacro": true}
       });
       break;
     case "ActiveEffect":
-      if ( !("data" in data) ) return ui.notifications.warn(game.i18n.localize("MACRO.5eUnownedWarn"));
+      if ( !("data" in data) ) return ui.notifications.warn(game.i18n.localize("MACRO.CncUnownedWarn"));
       foundry.utils.mergeObject(macroData, {
         name: data.data.label,
         img: data.data.icon,
-        command: `game.dnd5e.macros.toggleEffect("${data.data.label}")`,
-        flags: {"dnd5e.effectMacro": true}
+        command: `game.cnc.macros.toggleEffect("${data.data.label}")`,
+        flags: {"cnc.effectMacro": true}
       });
       break;
     default:
@@ -49,7 +49,7 @@ function getMacroTarget(name, documentType) {
   const speaker = ChatMessage.getSpeaker();
   if ( speaker.token ) actor = game.actors.tokens[speaker.token];
   actor ??= game.actors.get(speaker.actor);
-  if ( !actor ) return ui.notifications.warn(game.i18n.localize("MACRO.5eNoActorSelected"));
+  if ( !actor ) return ui.notifications.warn(game.i18n.localize("MACRO.CncNoActorSelected"));
 
   const collection = (documentType === "Item") ? actor.items : actor.effects;
   const nameKeyPath = (documentType === "Item") ? "name" : "data.label";
@@ -58,10 +58,10 @@ function getMacroTarget(name, documentType) {
   const documents = collection.filter(i => foundry.utils.getProperty(i, nameKeyPath) === name);
   const type = game.i18n.localize(`DOCUMENT.${documentType}`);
   if ( documents.length === 0 ) {
-    return ui.notifications.warn(game.i18n.format("MACRO.5eMissingTargetWarn", { actor: actor.name, type, name }));
+    return ui.notifications.warn(game.i18n.format("MACRO.CncMissingTargetWarn", { actor: actor.name, type, name }));
   }
   if ( documents.length > 1 ) {
-    ui.notifications.warn(game.i18n.format("MACRO.5eMultipleTargetsWarn", { actor: actor.name, type, name }));
+    ui.notifications.warn(game.i18n.format("MACRO.CncMultipleTargetsWarn", { actor: actor.name, type, name }));
   }
 
   return documents[0];

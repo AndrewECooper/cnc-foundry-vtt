@@ -6,12 +6,14 @@ export const CNC = {};
 
 // ASCII Artwork
 CNC.ASCII = `_______________________________
-______      ______ _____ _____
-|  _  \\___  |  _  \\  ___|  ___|
-| | | ( _ ) | | | |___ \\| |__
-| | | / _ \\/\\ | | |   \\ \\  __|
-| |/ / (_>  < |/ //\\__/ / |___
-|___/ \\___/\\/___/ \\____/\\____/
+_______  _        _______ 
+(  ____ \\( (    /|(  ____ \\
+| (    \\/|  \\  ( || (    \\/
+| |      |   \\ | || |      
+| |      | (\\ \\) || |      
+| |      | | \\   || |      
+| (____/\\| )  \\  || (____/\\
+(_______/|/    )_)(_______/                        
 _______________________________`;
 
 
@@ -115,7 +117,7 @@ CNC.weaponProficienciesMap = {
 };
 
 /**
- * The basic weapon types in 5e. This enables specific weapon proficiencies or
+ * The basic weapon types in CNC. This enables specific weapon proficiencies or
  * starting equipment provided by classes and backgrounds.
  * @enum {string}
  */
@@ -185,7 +187,7 @@ CNC.toolProficiencies = {
 preLocalize("toolProficiencies", { sort: true });
 
 /**
- * The basic tool types in 5e. This enables specific tool proficiencies or
+ * The basic tool types in CNC. This enables specific tool proficiencies or
  * starting equipment provided by classes and backgrounds.
  * @enum {string}
  */
@@ -492,7 +494,7 @@ CNC.armorProficienciesMap = {
 };
 
 /**
- * The basic armor types in 5e. This enables specific armor proficiencies,
+ * The basic armor types in CNC. This enables specific armor proficiencies,
  * automated AC calculation in NPCs, and starting equipment.
  * @enum {string}
  */
@@ -512,7 +514,7 @@ CNC.armorIds = {
 };
 
 /**
- * The basic shield in 5e.
+ * The basic shield in CNC.
  * @enum {string}
  */
 CNC.shieldIds = {

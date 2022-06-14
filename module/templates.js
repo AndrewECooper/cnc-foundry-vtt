@@ -9,36 +9,36 @@ export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
 
     // Shared Partials
-    "systems/dnd5e/templates/actors/parts/active-effects.html",
+    "systems/cnc/templates/actors/parts/active-effects.html",
 
     // Actor Sheet Partials
-    "systems/dnd5e/templates/actors/parts/actor-traits.html",
-    "systems/dnd5e/templates/actors/parts/actor-inventory.html",
-    "systems/dnd5e/templates/actors/parts/actor-features.html",
-    "systems/dnd5e/templates/actors/parts/actor-spellbook.html",
-    "systems/dnd5e/templates/actors/parts/actor-warnings.html",
+    "systems/cnc/templates/actors/parts/actor-traits.html",
+    "systems/cnc/templates/actors/parts/actor-inventory.html",
+    "systems/cnc/templates/actors/parts/actor-features.html",
+    "systems/cnc/templates/actors/parts/actor-spellbook.html",
+    "systems/cnc/templates/actors/parts/actor-warnings.html",
 
     // Item Sheet Partials
-    "systems/dnd5e/templates/items/parts/item-action.html",
-    "systems/dnd5e/templates/items/parts/item-activation.html",
-    "systems/dnd5e/templates/items/parts/item-advancement.html",
-    "systems/dnd5e/templates/items/parts/item-description.html",
-    "systems/dnd5e/templates/items/parts/item-mountable.html",
-    "systems/dnd5e/templates/items/parts/item-spellcasting.html",
+    "systems/cnc/templates/items/parts/item-action.html",
+    "systems/cnc/templates/items/parts/item-activation.html",
+    "systems/cnc/templates/items/parts/item-advancement.html",
+    "systems/cnc/templates/items/parts/item-description.html",
+    "systems/cnc/templates/items/parts/item-mountable.html",
+    "systems/cnc/templates/items/parts/item-spellcasting.html",
 
     // Advancement Partials
-    "systems/dnd5e/templates/advancement/parts/advancement-controls.html"
+    "systems/cnc/templates/advancement/parts/advancement-controls.html"
   ]);
 };
 
 /* -------------------------------------------- */
 
 /**
- * Register custom Handlebars helpers used by 5e.
+ * Register custom Handlebars helpers used by Cnc.
  */
 export const registerHandlebarsHelpers = function() {
   Handlebars.registerHelper({
     getProperty: foundry.utils.getProperty,
-    "dnd5e-linkForUuid": _linkForUuid
+    "cnc-linkForUuid": _linkForUuid
   });
 };

@@ -1,0 +1,40 @@
+<div class="form-group">
+    <label>{{localize "CNC.AdvancementCustomTitle"}}</label>
+    <div class="form-fields">
+        <input type="text" name="data.title" value="{{data.title}}" placeholder="{{default.title}}">
+    </div>
+</div>
+
+<div class="form-group">
+    <label>{{localize "CNC.AdvancementCustomIcon"}}</label>
+    <div class="form-fields">
+        {{filePicker type="image" target="data.icon"}}
+        <input type="text" name="data.icon" value="{{data.icon}}" placeholder="{{default.icon}}">
+    </div>
+</div>
+
+{{#if showClassRestrictions}}
+<div class="form-group">
+    <label>{{localize "CNC.AdvancementClassRestriction"}}</label>
+    <div class="form-fields">
+        <select name="data.classRestriction">
+            {{#select data.classRestriction}}
+            <option value="">{{localize "CNC.AdvancementClassRestrictionNone"}}</option>
+            <option value="primary">{{localize "CNC.AdvancementClassRestrictionPrimary"}}</option>
+            <option value="secondary">{{localize "CNC.AdvancementClassRestrictionSecondary"}}</option>
+            {{/select}}
+        </select>
+    </div>
+</div>
+{{/if}}
+
+{{#if showLevelSelector}}
+<div class="form-group">
+    <label>{{localize "CNC.Level"}}</label>
+    <div class="form-fields">
+        <select name="data.level" data-dtype="Number">
+            {{selectOptions levels selected=data.level}}
+        </select>
+    </div>
+</div>
+{{/if}}

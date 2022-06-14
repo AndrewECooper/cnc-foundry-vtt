@@ -3,7 +3,7 @@ export const registerSystemSettings = function() {
   const reload = foundry.utils.debounce(() => window.location.reload(), 250);
 
   // Internal System Migration Version
-  game.settings.register("dnd5e", "systemMigrationVersion", {
+  game.settings.register("cnc", "systemMigrationVersion", {
     name: "System Migration Version",
     scope: "world",
     config: false,
@@ -12,54 +12,54 @@ export const registerSystemSettings = function() {
   });
 
   // Rest Recovery Rules
-  game.settings.register("dnd5e", "restVariant", {
-    name: "SETTINGS.5eRestN",
-    hint: "SETTINGS.5eRestL",
+  game.settings.register("cnc", "restVariant", {
+    name: "SETTINGS.CncRestN",
+    hint: "SETTINGS.CncRestL",
     scope: "world",
     config: true,
     default: "normal",
     type: String,
     choices: {
-      normal: "SETTINGS.5eRestPHB",
-      gritty: "SETTINGS.5eRestGritty",
-      epic: "SETTINGS.5eRestEpic"
+      normal: "SETTINGS.CncRestPHB",
+      gritty: "SETTINGS.CncRestGritty",
+      epic: "SETTINGS.CncRestEpic"
     }
   });
 
   // Diagonal Movement Rule
-  game.settings.register("dnd5e", "diagonalMovement", {
-    name: "SETTINGS.5eDiagN",
-    hint: "SETTINGS.5eDiagL",
+  game.settings.register("cnc", "diagonalMovement", {
+    name: "SETTINGS.CncDiagN",
+    hint: "SETTINGS.CncDiagL",
     scope: "world",
     config: true,
     default: "555",
     type: String,
     choices: {
-      555: "SETTINGS.5eDiagPHB",
-      5105: "SETTINGS.5eDiagDMG",
-      EUCL: "SETTINGS.5eDiagEuclidean"
+      555: "SETTINGS.CncDiagPHB",
+      5105: "SETTINGS.CncDiagDMG",
+      EUCL: "SETTINGS.CncDiagEuclidean"
     },
     onChange: rule => canvas.grid.diagonalRule = rule
   });
 
   // Proficiency modifier type
-  game.settings.register("dnd5e", "proficiencyModifier", {
-    name: "SETTINGS.5eProfN",
-    hint: "SETTINGS.5eProfL",
+  game.settings.register("cnc", "proficiencyModifier", {
+    name: "SETTINGS.CncProfN",
+    hint: "SETTINGS.CncProfL",
     scope: "world",
     config: true,
     default: "bonus",
     type: String,
     choices: {
-      bonus: "SETTINGS.5eProfBonus",
-      dice: "SETTINGS.5eProfDice"
+      bonus: "SETTINGS.CncProfBonus",
+      dice: "SETTINGS.CncProfDice"
     }
   });
 
   // Use Honor ability score
-  game.settings.register("dnd5e", "honorScore", {
-    name: "SETTINGS.5eHonorN",
-    hint: "SETTINGS.5eHonorL",
+  game.settings.register("cnc", "honorScore", {
+    name: "SETTINGS.CncHonorN",
+    hint: "SETTINGS.CncHonorL",
     scope: "world",
     config: true,
     default: false,
@@ -68,9 +68,9 @@ export const registerSystemSettings = function() {
   });
 
   // Use Sanity ability score
-  game.settings.register("dnd5e", "sanityScore", {
-    name: "SETTINGS.5eSanityN",
-    hint: "SETTINGS.5eSanityL",
+  game.settings.register("cnc", "sanityScore", {
+    name: "SETTINGS.CncSanityN",
+    hint: "SETTINGS.CncSanityL",
     scope: "world",
     config: true,
     default: false,
@@ -79,9 +79,9 @@ export const registerSystemSettings = function() {
   });
 
   // Apply Dexterity as Initiative Tiebreaker
-  game.settings.register("dnd5e", "initiativeDexTiebreaker", {
-    name: "SETTINGS.5eInitTBN",
-    hint: "SETTINGS.5eInitTBL",
+  game.settings.register("cnc", "initiativeDexTiebreaker", {
+    name: "SETTINGS.CncInitTBN",
+    hint: "SETTINGS.CncInitTBL",
     scope: "world",
     config: true,
     default: false,
@@ -89,9 +89,9 @@ export const registerSystemSettings = function() {
   });
 
   // Record Currency Weight
-  game.settings.register("dnd5e", "currencyWeight", {
-    name: "SETTINGS.5eCurWtN",
-    hint: "SETTINGS.5eCurWtL",
+  game.settings.register("cnc", "currencyWeight", {
+    name: "SETTINGS.CncCurWtN",
+    hint: "SETTINGS.CncCurWtL",
     scope: "world",
     config: true,
     default: true,
@@ -99,9 +99,9 @@ export const registerSystemSettings = function() {
   });
 
   // Disable Experience Tracking
-  game.settings.register("dnd5e", "disableExperienceTracking", {
-    name: "SETTINGS.5eNoExpN",
-    hint: "SETTINGS.5eNoExpL",
+  game.settings.register("cnc", "disableExperienceTracking", {
+    name: "SETTINGS.CncNoExpN",
+    hint: "SETTINGS.CncNoExpL",
     scope: "world",
     config: true,
     default: false,
@@ -109,9 +109,9 @@ export const registerSystemSettings = function() {
   });
 
   // Disable Advancements
-  game.settings.register("dnd5e", "disableAdvancements", {
-    name: "SETTINGS.5eNoAdvancementsN",
-    hint: "SETTINGS.5eNoAdvancementsL",
+  game.settings.register("cnc", "disableAdvancements", {
+    name: "SETTINGS.CncNoAdvancementsN",
+    hint: "SETTINGS.CncNoAdvancementsL",
     scope: "world",
     config: true,
     default: false,
@@ -119,9 +119,9 @@ export const registerSystemSettings = function() {
   });
 
   // Collapse Item Cards (by default)
-  game.settings.register("dnd5e", "autoCollapseItemCards", {
-    name: "SETTINGS.5eAutoCollapseCardN",
-    hint: "SETTINGS.5eAutoCollapseCardL",
+  game.settings.register("cnc", "autoCollapseItemCards", {
+    name: "SETTINGS.CncAutoCollapseCardN",
+    hint: "SETTINGS.CncAutoCollapseCardL",
     scope: "client",
     config: true,
     default: false,
@@ -132,9 +132,9 @@ export const registerSystemSettings = function() {
   });
 
   // Allow Polymorphing
-  game.settings.register("dnd5e", "allowPolymorphing", {
-    name: "SETTINGS.5eAllowPolymorphingN",
-    hint: "SETTINGS.5eAllowPolymorphingL",
+  game.settings.register("cnc", "allowPolymorphing", {
+    name: "SETTINGS.CncAllowPolymorphingN",
+    hint: "SETTINGS.CncAllowPolymorphingL",
     scope: "world",
     config: true,
     default: false,
@@ -142,7 +142,7 @@ export const registerSystemSettings = function() {
   });
 
   // Polymorph Settings
-  game.settings.register("dnd5e", "polymorphSettings", {
+  game.settings.register("cnc", "polymorphSettings", {
     scope: "client",
     default: {
       keepPhysical: false,
@@ -162,9 +162,9 @@ export const registerSystemSettings = function() {
   });
 
   // Metric Unit Weights
-  game.settings.register("dnd5e", "metricWeightUnits", {
-    name: "SETTINGS.5eMetricN",
-    hint: "SETTINGS.5eMetricL",
+  game.settings.register("cnc", "metricWeightUnits", {
+    name: "SETTINGS.CncMetricN",
+    hint: "SETTINGS.CncMetricL",
     scope: "world",
     config: true,
     type: Boolean,
@@ -172,9 +172,9 @@ export const registerSystemSettings = function() {
   });
 
   // Critical Damage Modifiers
-  game.settings.register("dnd5e", "criticalDamageModifiers", {
-    name: "SETTINGS.5eCriticalModifiersN",
-    hint: "SETTINGS.5eCriticalModifiersL",
+  game.settings.register("cnc", "criticalDamageModifiers", {
+    name: "SETTINGS.CncCriticalModifiersN",
+    hint: "SETTINGS.CncCriticalModifiersL",
     scope: "world",
     config: true,
     type: Boolean,
@@ -182,9 +182,9 @@ export const registerSystemSettings = function() {
   });
 
   // Critical Damage Maximize
-  game.settings.register("dnd5e", "criticalDamageMaxDice", {
-    name: "SETTINGS.5eCriticalMaxDiceN",
-    hint: "SETTINGS.5eCriticalMaxDiceL",
+  game.settings.register("cnc", "criticalDamageMaxDice", {
+    name: "SETTINGS.CncCriticalMaxDiceN",
+    hint: "SETTINGS.CncCriticalMaxDiceL",
     scope: "world",
     config: true,
     type: Boolean,

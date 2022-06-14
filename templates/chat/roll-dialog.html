@@ -1,0 +1,24 @@
+<form>
+    <div class="form-group">
+        <label>{{ localize "CNC.Formula" }}</label>
+        <input type="text" name="formula" value="{{formula}}" disabled />
+    </div>
+    {{#if chooseModifier}}
+    <div class="form-group">
+        <label>{{ localize "CNC.AbilityModifier" }}</label>
+        <select name="ability">
+            {{selectOptions abilities selected=defaultAbility}}
+        </select>
+    </div>
+    {{/if}}
+    <div class="form-group">
+        <label>{{ localize "CNC.RollSituationalBonus" }}</label>
+        <input type="text" name="bonus" value="" placeholder="{{ localize 'CNC.RollExample' }}" />
+    </div>
+    <div class="form-group">
+        <label>{{ localize "CNC.RollMode" }}</label>
+        <select name="rollMode">
+            {{selectOptions rollModes selected=defaultRollMode localize=true}}
+        </select>
+    </div>
+</form>

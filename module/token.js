@@ -2,7 +2,7 @@
  * Extend the base TokenDocument class to implement system-specific HP bar logic.
  * @extends {TokenDocument}
  */
-export class TokenDocument5e extends TokenDocument {
+export class TokenDocumentCnc extends TokenDocument {
 
   /** @inheritdoc */
   getBarAttribute(...args) {
@@ -18,7 +18,7 @@ export class TokenDocument5e extends TokenDocument {
   static getTrackedAttributes(data, _path=[]) {
     const attributes = super.getTrackedAttributes(data, _path);
     if ( _path.length ) return attributes;
-    const allowed = CONFIG.DND5E.trackableAttributes;
+    const allowed = CONFIG.CNC.trackableAttributes;
     attributes.value = attributes.value.filter(attrs => this._isAllowedAttribute(allowed, attrs));
     return attributes;
   }
@@ -30,7 +30,7 @@ export class TokenDocument5e extends TokenDocument {
    */
   static getConsumedAttributes(data) {
     const attributes = super.getTrackedAttributes(data);
-    const allowed = CONFIG.DND5E.consumableResources;
+    const allowed = CONFIG.CNC.consumableResources;
     attributes.value = attributes.value.filter(attrs => this._isAllowedAttribute(allowed, attrs));
     return attributes;
   }
@@ -62,7 +62,7 @@ export class TokenDocument5e extends TokenDocument {
  * Extend the base Token class to implement additional system-specific logic.
  * @extends {Token}
  */
-export class Token5e extends Token {
+export class TokenCnc extends Token {
 
   /** @inheritdoc */
   _drawBar(number, bar, data) {
@@ -98,7 +98,7 @@ export class Token5e extends Token {
     // Determine colors to use
     const blk = 0x000000;
     const hpColor = PIXI.utils.rgb2hex([(1-(colorPct/2)), colorPct, 0]);
-    const c = CONFIG.DND5E.tokenHPColors;
+    const c = CONFIG.CNC.tokenHPColors;
 
     // Determine the container size (logic borrowed from core)
     const w = this.w;

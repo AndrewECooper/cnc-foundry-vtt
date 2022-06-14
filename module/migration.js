@@ -572,7 +572,7 @@ function _migrateActorAC(actorData, updateData) {
 
 /**
  * Renamed token images.
- * @type {object<string, string>}
+ * @type {Object<string, string>}
  */
 const TOKEN_IMAGE_RENAME = {
   "systems/cnc/tokens/beast/OwlWhite.png": "systems/cnc/tokens/beast/Owl.webp",
@@ -591,7 +591,7 @@ const TOKEN_IMAGE_RENAME = {
 
 /**
  * Re-scaled token images.
- * @type {object<string, number>}
+ * @type {Object<string, number>}
  */
 const TOKEN_IMAGE_RESCALE = {
   "systems/cnc/tokens/beast/HunterShark.png": 1.5,
@@ -730,7 +730,7 @@ function _migrateItemCriticalData(item, updateData) {
  * @param {object} item                                     Item data to migrate
  * @param {object} updateData                               Existing update to expand upon
  * @param {object} [migrationData={}]                       Additional data to perform the migration
- * @param {object<string, string>} [migrationData.iconMap]  A mapping of system icons to core foundry icons
+ * @param {Object<string, string>} [migrationData.iconMap]  A mapping of system icons to core foundry icons
  * @returns {object}                                        The updateData to apply
  * @private
  */

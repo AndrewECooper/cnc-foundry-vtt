@@ -20,7 +20,7 @@ export default class ActorCnc extends Actor {
 
   /**
    * The data source for ActorCnc.classes allowing it to be lazily computed.
-   * @type {object<string, ItemCNC>}
+   * @type {Object<string, ItemCNC>}
    * @private
    */
   _classes;
@@ -31,7 +31,7 @@ export default class ActorCnc extends Actor {
 
   /**
    * A mapping of classes belonging to this Actor.
-   * @type {object<string, ItemCNC>}
+   * @type {Object<string, ItemCNC>}
    */
   get classes() {
     if ( this._classes !== undefined ) return this._classes;

@@ -9,9 +9,9 @@
 image: node:latest
 
 stages:
-  # - test
   - lint
   - build
+  - test
   - release
 
 # Pick zero or more services to be used on all builds.
@@ -31,12 +31,12 @@ cache:
 lint:
   stage: lint
   script:
-    - npm install
     - npm run lint
 
 build:
     stage: build
     script:
+        - npm install
         - npm run build
 
 release:

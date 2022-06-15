@@ -40,6 +40,7 @@ build:
   only:
     - tags
     - merge_requests
+    - develop
     - main
 
 lint:
@@ -50,6 +51,7 @@ lint:
     - job: build
   only:
     - merge_requests
+    - develop
     - main
 
 release:

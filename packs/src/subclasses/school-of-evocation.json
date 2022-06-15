@@ -17,8 +17,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.7uzJ2JkmsdRGLra3",
-            "Compendium.dnd5e.classfeatures.6VBXkjjBgjSpNElh"
+            "Compendium.cnc.classfeatures.7uzJ2JkmsdRGLra3",
+            "Compendium.cnc.classfeatures.6VBXkjjBgjSpNElh"
           ]
         },
         "value": {},
@@ -31,7 +31,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.evEWCpE5MYgr5RRW"
+            "Compendium.cnc.classfeatures.evEWCpE5MYgr5RRW"
           ]
         },
         "value": {},
@@ -44,7 +44,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.7O85kj6uDEG5NzUE"
+            "Compendium.cnc.classfeatures.7O85kj6uDEG5NzUE"
           ]
         },
         "value": {},
@@ -57,7 +57,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.VUtSLeCzFubGXmGx"
+            "Compendium.cnc.classfeatures.VUtSLeCzFubGXmGx"
           ]
         },
         "value": {},

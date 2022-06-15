@@ -820,7 +820,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.EOmsUcFQJTfG2oio"
+          "sourceId": "Compendium.cnc.spells.EOmsUcFQJTfG2oio"
         }
       },
       "img": "systems/dnd5e/icons/spells/fireball-red-1.jpg",
@@ -919,7 +919,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi"
+          "sourceId": "Compendium.cnc.spells.Bnn9Nzajixvow9xi"
         }
       },
       "img": "systems/dnd5e/icons/spells/light-sky-1.jpg",
@@ -1019,7 +1019,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Utk1OQRwYkMkFRD3"
+          "sourceId": "Compendium.cnc.spells.Utk1OQRwYkMkFRD3"
         }
       },
       "img": "icons/magic/water/water-hand.webp",
@@ -1119,7 +1119,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.7p9IuWrSWFgfyQo2"
+          "sourceId": "Compendium.cnc.spells.7p9IuWrSWFgfyQo2"
         }
       },
       "img": "systems/dnd5e/icons/spells/runes-royal-1.jpg",
@@ -1220,7 +1220,7 @@
       "flags": {
         "_sheetTab": "description",
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.z1mx84ONwkXKUZd7"
+          "sourceId": "Compendium.cnc.spells.z1mx84ONwkXKUZd7"
         }
       },
       "img": "systems/dnd5e/icons/spells/protect-magenta-1.jpg",
@@ -1342,7 +1342,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.JGT5bNqu9REL7Fuz"
+          "sourceId": "Compendium.cnc.spells.JGT5bNqu9REL7Fuz"
         }
       },
       "img": "systems/dnd5e/icons/spells/wild-eerie-2.jpg",
@@ -1443,7 +1443,7 @@
       "flags": {
         "_sheetTab": "details",
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.CKZTpZlxj7hjjo2H"
+          "sourceId": "Compendium.cnc.spells.CKZTpZlxj7hjjo2H"
         }
       },
       "img": "systems/dnd5e/icons/spells/protect-blue-1.jpg",
@@ -1463,7 +1463,7 @@
           },
           "icon": "systems/dnd5e/icons/spells/protect-blue-1.jpg",
           "label": "Mage Armor",
-          "origin": "Compendium.dnd5e.spells.CKZTpZlxj7hjjo2H",
+          "origin": "Compendium.cnc.spells.CKZTpZlxj7hjjo2H",
           "transfer": true,
           "flags": {}
         }
@@ -1568,7 +1568,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.KhwiSi9fwVfUPtku"
+          "sourceId": "Compendium.cnc.spells.KhwiSi9fwVfUPtku"
         }
       },
       "img": "systems/dnd5e/icons/spells/light-magenta-1.jpg",
@@ -1672,7 +1672,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.41JIhpDyM9Anm7cs"
+          "sourceId": "Compendium.cnc.spells.41JIhpDyM9Anm7cs"
         }
       },
       "img": "systems/dnd5e/icons/spells/fire-arrows-magenta-1.jpg",
@@ -3173,14 +3173,14 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.gbNo5eVPaqr8IVKL",
-                "Compendium.dnd5e.classfeatures.e0uTcFPpgxjIyUW9"
+                "Compendium.cnc.classfeatures.gbNo5eVPaqr8IVKL",
+                "Compendium.cnc.classfeatures.e0uTcFPpgxjIyUW9"
               ]
             },
             "value": {
               "added": {
-                "0rezvlf2ul1kjm7d": "Compendium.dnd5e.classfeatures.gbNo5eVPaqr8IVKL",
-                "mb3aiiyoga49hld8": "Compendium.dnd5e.classfeatures.e0uTcFPpgxjIyUW9"
+                "0rezvlf2ul1kjm7d": "Compendium.cnc.classfeatures.gbNo5eVPaqr8IVKL",
+                "mb3aiiyoga49hld8": "Compendium.cnc.classfeatures.e0uTcFPpgxjIyUW9"
               }
             },
             "level": 1,
@@ -3193,7 +3193,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.AEWr9EMxy5gj4ZFT"
+                "Compendium.cnc.classfeatures.AEWr9EMxy5gj4ZFT"
               ]
             },
             "value": {},
@@ -3207,7 +3207,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.JfFfHTeIszx1hNRx"
+                "Compendium.cnc.classfeatures.JfFfHTeIszx1hNRx"
               ]
             },
             "value": {},
@@ -3221,8 +3221,8 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.nUrZDi6QN1YjwAr6",
-                "Compendium.dnd5e.classfeatures.31bKbWe9ZGVLEns6"
+                "Compendium.cnc.classfeatures.nUrZDi6QN1YjwAr6",
+                "Compendium.cnc.classfeatures.31bKbWe9ZGVLEns6"
               ]
             },
             "value": {},
@@ -3276,7 +3276,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.classes.wZK2Q0rXB0AQo8h3"
+          "sourceId": "Compendium.cnc.classes.wZK2Q0rXB0AQo8h3"
         }
       }
     },
@@ -3354,7 +3354,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.gbNo5eVPaqr8IVKL",
+          "sourceId": "Compendium.cnc.classfeatures.gbNo5eVPaqr8IVKL",
           "advancementOrigin": "sqcr639qfksmr1hc.9ojqd2dejdsffabi"
         }
       }
@@ -3433,7 +3433,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.e0uTcFPpgxjIyUW9",
+          "sourceId": "Compendium.cnc.classfeatures.e0uTcFPpgxjIyUW9",
           "advancementOrigin": "sqcr639qfksmr1hc.9ojqd2dejdsffabi"
         }
       }

@@ -20,8 +20,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.u4NLajXETJhJU31v",
-            "Compendium.dnd5e.classfeatures.hpLNiGq7y67d2EHA"
+            "Compendium.cnc.classfeatures.u4NLajXETJhJU31v",
+            "Compendium.cnc.classfeatures.hpLNiGq7y67d2EHA"
           ]
         },
         "value": {},
@@ -35,8 +35,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.ezWijmCnlnQ9ZRX2",
-            "Compendium.dnd5e.classfeatures.he8RpPXwSl2lVSIk"
+            "Compendium.cnc.classfeatures.ezWijmCnlnQ9ZRX2",
+            "Compendium.cnc.classfeatures.he8RpPXwSl2lVSIk"
           ]
         },
         "value": {},
@@ -50,8 +50,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.ILhzFHiRrqgQ9dFJ",
-            "Compendium.dnd5e.classfeatures.aQLg7BWdRnm4Hr9S"
+            "Compendium.cnc.classfeatures.ILhzFHiRrqgQ9dFJ",
+            "Compendium.cnc.classfeatures.aQLg7BWdRnm4Hr9S"
           ]
         },
         "value": {},
@@ -65,7 +65,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.3VDZGs5Ug3hIE322"
+            "Compendium.cnc.classfeatures.3VDZGs5Ug3hIE322"
           ]
         },
         "value": {},
@@ -79,7 +79,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.SEJmsjkEhdAZ90ki"
+            "Compendium.cnc.classfeatures.SEJmsjkEhdAZ90ki"
           ]
         },
         "value": {},
@@ -93,7 +93,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.aonJ2YjkqkYB9WYB"
+            "Compendium.cnc.classfeatures.aonJ2YjkqkYB9WYB"
           ]
         },
         "value": {},
@@ -107,7 +107,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.GBYN5rH4nh1ocRlY"
+            "Compendium.cnc.classfeatures.GBYN5rH4nh1ocRlY"
           ]
         },
         "value": {},

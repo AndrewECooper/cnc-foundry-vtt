@@ -15,9 +15,9 @@ import { _getInitiativeFormula } from "./module/combat.js";
 import { measureDistances } from "./module/canvas.js";
 
 // Import Documents
-import Actor5e from "./module/actor/entity.js";
-import Item5e from "./module/item/entity.js";
-import { TokenDocument5e, Token5e } from "./module/token.js";
+import ActorCnc from "./module/actor/entity.js";
+import ItemCnc from "./module/item/entity.js";
+import { TokenDocumentCnc, TokenCnc } from "./module/token.js";
 
 // Import Applications
 import AbilityTemplate from "./module/pixi/ability-template.js";
@@ -28,12 +28,12 @@ import ActorHitDiceConfig from "./module/apps/hit-dice-config.js";
 import ActorMovementConfig from "./module/apps/movement-config.js";
 import ActorSensesConfig from "./module/apps/senses-config.js";
 import ActorSheetFlags from "./module/apps/actor-flags.js";
-import ActorSheet5eCharacter from "./module/actor/sheets/character.js";
-import ActorSheet5eNPC from "./module/actor/sheets/npc.js";
-import ActorSheet5eVehicle from "./module/actor/sheets/vehicle.js";
+import ActorSheetCncCharacter from "./module/actor/sheets/character.js";
+import ActorSheetCncNPC from "./module/actor/sheets/npc.js";
+import ActorSheetCncVehicle from "./module/actor/sheets/vehicle.js";
 import ActorSkillConfig from "./module/apps/skill-config.js";
 import ActorTypeConfig from "./module/apps/actor-type.js";
-import ItemSheet5e from "./module/item/sheet.js";
+import ItemSheetCnc from "./module/item/sheet.js";
 import LongRestDialog from "./module/apps/long-rest.js";
 import ProficiencySelector from "./module/apps/proficiency-selector.js";
 import SelectItemsPrompt from "./module/apps/select-items-prompt.js";
@@ -47,7 +47,7 @@ import * as dice from "./module/dice.js";
 import * as macros from "./module/macros.js";
 import * as migrations from "./module/migration.js";
 import * as utils from "./module/utils.js";
-import ActiveEffect5e from "./module/active-effect.js";
+import ActiveEffectCnc from "./module/active-effect.js";
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
@@ -67,12 +67,12 @@ Hooks.once("init", function() {
       ActorMovementConfig,
       ActorSensesConfig,
       ActorSheetFlags,
-      ActorSheet5eCharacter,
-      ActorSheet5eNPC,
-      ActorSheet5eVehicle,
+      ActorSheetCncCharacter,
+      ActorSheetCncNPC,
+      ActorSheetCncVehicle,
       ActorSkillConfig,
       ActorTypeConfig,
-      ItemSheet5e,
+      ItemSheetCnc,
       LongRestDialog,
       ProficiencySelector,
       SelectItemsPrompt,
@@ -85,10 +85,10 @@ Hooks.once("init", function() {
     config: CNC,
     dice,
     entities: {
-      Actor5e,
-      Item5e,
-      TokenDocument5e,
-      Token5e
+      ActorCnc,
+      ItemCnc,
+      TokenDocumentCnc,
+      TokenCnc
     },
     macros,
     migrations,
@@ -99,17 +99,17 @@ Hooks.once("init", function() {
 
   // Record Configuration Values
   CONFIG.CNC = CNC;
-  CONFIG.ActiveEffect.documentClass = ActiveEffect5e;
-  CONFIG.Actor.documentClass = Actor5e;
-  CONFIG.Item.documentClass = Item5e;
-  CONFIG.Token.documentClass = TokenDocument5e;
-  CONFIG.Token.objectClass = Token5e;
+  CONFIG.ActiveEffect.documentClass = ActiveEffectCnc;
+  CONFIG.Actor.documentClass = ActorCnc;
+  CONFIG.Item.documentClass = ItemCnc;
+  CONFIG.Token.documentClass = TokenDocumentCnc;
+  CONFIG.Token.objectClass = TokenCnc;
   CONFIG.time.roundTime = 6;
 
   CONFIG.Dice.DamageRoll = dice.DamageRoll;
   CONFIG.Dice.D20Roll = dice.D20Roll;
 
-  // 5e cone RAW should be 53.13 degrees
+  // CnC cone RAW should be 53.13 degrees
   CONFIG.MeasuredTemplate.defaults.angle = 53.13;
 
   // Register System Settings
@@ -135,23 +135,23 @@ Hooks.once("init", function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("cnc", ActorSheet5eCharacter, {
+  Actors.registerSheet("cnc", ActorSheetCncCharacter, {
     types: ["character"],
     makeDefault: true,
     label: "CNC.SheetClassCharacter"
   });
-  Actors.registerSheet("cnc", ActorSheet5eNPC, {
+  Actors.registerSheet("cnc", ActorSheetCncNPC, {
     types: ["npc"],
     makeDefault: true,
     label: "CNC.SheetClassNPC"
   });
-  Actors.registerSheet("cnc", ActorSheet5eVehicle, {
+  Actors.registerSheet("cnc", ActorSheetCncVehicle, {
     types: ["vehicle"],
     makeDefault: true,
     label: "CNC.SheetClassVehicle"
   });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("cnc", ItemSheet5e, {
+  Items.registerSheet("cnc", ItemSheetCnc, {
     makeDefault: true,
     label: "CNC.SheetClassItem"
   });
@@ -205,12 +205,12 @@ Hooks.once("i18nInit", () => utils.performPreLocalization(CONFIG.CNC));
 Hooks.once("ready", function() {
 
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
-  Hooks.on("hotbarDrop", (bar, data, slot) => macros.create5eMacro(data, slot));
+  Hooks.on("hotbarDrop", (bar, data, slot) => macros.createCncMacro(data, slot));
 
   // Determine whether a system migration is required and feasible
   if ( !game.user.isGM ) return;
   const currentVersion = game.settings.get("cnc", "systemMigrationVersion");
-  const NEEDS_MIGRATION_VERSION = "1.6.0";
+  const NEEDS_MIGRATION_VERSION = "0.1.0";
   const COMPATIBLE_MIGRATION_VERSION = 0.80;
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
   if ( !currentVersion && totalDocuments === 0 ) return game.settings.set("cnc", "systemMigrationVersion", game.system.data.version);
@@ -219,7 +219,7 @@ Hooks.once("ready", function() {
 
   // Perform the migration
   if ( currentVersion && isNewerVersion(COMPATIBLE_MIGRATION_VERSION, currentVersion) ) {
-    ui.notifications.error(game.i18n.localize("MIGRATION.5eVersionTooOldWarning"), {permanent: true});
+    ui.notifications.error(game.i18n.localize("MIGRATION.CncVersionTooOldWarning"), {permanent: true});
   }
   migrations.migrateWorld();
 });
@@ -251,6 +251,6 @@ Hooks.on("renderChatMessage", (app, html, data) => {
   if (game.settings.get("cnc", "autoCollapseItemCards")) html.find(".card-content").hide();
 });
 Hooks.on("getChatLogEntryContext", chat.addChatMessageContextOptions);
-Hooks.on("renderChatLog", (app, html, data) => Item5e.chatListeners(html));
-Hooks.on("renderChatPopout", (app, html, data) => Item5e.chatListeners(html));
-Hooks.on("getActorDirectoryEntryContext", Actor5e.addDirectoryContextOptions);
+Hooks.on("renderChatLog", (app, html, data) => ItemCnc.chatListeners(html));
+Hooks.on("renderChatPopout", (app, html, data) => ItemCnc.chatListeners(html));
+Hooks.on("getActorDirectoryEntryContext", ActorCnc.addDirectoryContextOptions);

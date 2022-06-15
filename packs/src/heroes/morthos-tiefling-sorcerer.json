@@ -814,7 +814,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR"
+          "sourceId": "Compendium.cnc.spells.MUO1uYN7JR1hm4dR"
         }
       },
       "img": "systems/dnd5e/icons/spells/explosion-royal-1.jpg",
@@ -914,7 +914,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.kjmjY0zlE6IEiQVL"
+          "sourceId": "Compendium.cnc.spells.kjmjY0zlE6IEiQVL"
         }
       },
       "img": "systems/dnd5e/icons/spells/wind-blue-1.jpg",
@@ -1018,7 +1018,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.EOmsUcFQJTfG2oio"
+          "sourceId": "Compendium.cnc.spells.EOmsUcFQJTfG2oio"
         }
       },
       "img": "systems/dnd5e/icons/spells/fireball-red-1.jpg",
@@ -1117,7 +1117,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.oIzA2MEHwxhtQneU"
+          "sourceId": "Compendium.cnc.spells.oIzA2MEHwxhtQneU"
         }
       },
       "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
@@ -1217,7 +1217,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.icZokbgV1jIMpNCv"
+          "sourceId": "Compendium.cnc.spells.icZokbgV1jIMpNCv"
         }
       },
       "img": "icons/commodities/currency/coin-engraved-sun-smile-copper.webp",
@@ -1320,7 +1320,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.5SuJewoa1CRWaj1F"
+          "sourceId": "Compendium.cnc.spells.5SuJewoa1CRWaj1F"
         }
       },
       "img": "systems/dnd5e/icons/spells/fog-orange-2.jpg",
@@ -1420,7 +1420,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.A3q2gTNqG6fvNGrv"
+          "sourceId": "Compendium.cnc.spells.A3q2gTNqG6fvNGrv"
         }
       },
       "img": "systems/dnd5e/icons/spells/wind-grasp-eerie-2.jpg",
@@ -2872,14 +2872,14 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.oygRF3ZjTv2T7z0Y",
-                "Compendium.dnd5e.classfeatures.cmRCL9T9UgRYOj1c"
+                "Compendium.cnc.classfeatures.oygRF3ZjTv2T7z0Y",
+                "Compendium.cnc.classfeatures.cmRCL9T9UgRYOj1c"
               ]
             },
             "value": {
               "added": {
-                "w5ecv78hsyiui3ho": "Compendium.dnd5e.classfeatures.oygRF3ZjTv2T7z0Y",
-                "ipplypb2dw25lwg9": "Compendium.dnd5e.classfeatures.cmRCL9T9UgRYOj1c"
+                "w5ecv78hsyiui3ho": "Compendium.cnc.classfeatures.oygRF3ZjTv2T7z0Y",
+                "ipplypb2dw25lwg9": "Compendium.cnc.classfeatures.cmRCL9T9UgRYOj1c"
               }
             },
             "level": 1,
@@ -2892,7 +2892,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.LBKChJY5n02Afhnq"
+                "Compendium.cnc.classfeatures.LBKChJY5n02Afhnq"
               ]
             },
             "value": {},
@@ -2906,7 +2906,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.9Uh7uTDNZ04oTJsL"
+                "Compendium.cnc.classfeatures.9Uh7uTDNZ04oTJsL"
               ]
             },
             "value": {},
@@ -2920,7 +2920,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.F2lEKSmOY0NUruzY"
+                "Compendium.cnc.classfeatures.F2lEKSmOY0NUruzY"
               ]
             },
             "value": {},
@@ -2974,7 +2974,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.classes.6T08zzKtmmpVwlXU"
+          "sourceId": "Compendium.cnc.classes.6T08zzKtmmpVwlXU"
         }
       }
     },
@@ -3052,7 +3052,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.oygRF3ZjTv2T7z0Y",
+          "sourceId": "Compendium.cnc.classfeatures.oygRF3ZjTv2T7z0Y",
           "advancementOrigin": "blu8155lcbwm8o1s.uuxthec7dohzb4wn"
         }
       }
@@ -3131,7 +3131,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.cmRCL9T9UgRYOj1c",
+          "sourceId": "Compendium.cnc.classfeatures.cmRCL9T9UgRYOj1c",
           "advancementOrigin": "blu8155lcbwm8o1s.uuxthec7dohzb4wn"
         }
       }
@@ -3156,14 +3156,14 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.EZsonMThTNLZq35j",
-                "Compendium.dnd5e.classfeatures.MW1ExvBLm8Hg82aA"
+                "Compendium.cnc.classfeatures.EZsonMThTNLZq35j",
+                "Compendium.cnc.classfeatures.MW1ExvBLm8Hg82aA"
               ]
             },
             "value": {
               "added": {
-                "hb79jvadlbp5y3yf": "Compendium.dnd5e.classfeatures.EZsonMThTNLZq35j",
-                "2imt4re4r61bps2e": "Compendium.dnd5e.classfeatures.MW1ExvBLm8Hg82aA"
+                "hb79jvadlbp5y3yf": "Compendium.cnc.classfeatures.EZsonMThTNLZq35j",
+                "2imt4re4r61bps2e": "Compendium.cnc.classfeatures.MW1ExvBLm8Hg82aA"
               }
             },
             "level": 1,
@@ -3175,7 +3175,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.x6eEZ9GUsuOcEa3G"
+                "Compendium.cnc.classfeatures.x6eEZ9GUsuOcEa3G"
               ]
             },
             "value": {},
@@ -3188,7 +3188,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.3647zjKSE9zFwOXc"
+                "Compendium.cnc.classfeatures.3647zjKSE9zFwOXc"
               ]
             },
             "value": {},
@@ -3201,7 +3201,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.Gsha4bl0apxqspFy"
+                "Compendium.cnc.classfeatures.Gsha4bl0apxqspFy"
               ]
             },
             "value": {},
@@ -3224,7 +3224,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.subclasses.2nadB2MBSHTQ0kcl"
+          "sourceId": "Compendium.cnc.subclasses.2nadB2MBSHTQ0kcl"
         }
       }
     },
@@ -3323,7 +3323,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.EZsonMThTNLZq35j",
+          "sourceId": "Compendium.cnc.classfeatures.EZsonMThTNLZq35j",
           "advancementOrigin": "f3p50jjvtk2ao61n.bjbipb2oydq3zsuy"
         }
       }
@@ -3423,7 +3423,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.MW1ExvBLm8Hg82aA",
+          "sourceId": "Compendium.cnc.classfeatures.MW1ExvBLm8Hg82aA",
           "advancementOrigin": "f3p50jjvtk2ao61n.bjbipb2oydq3zsuy"
         }
       }
@@ -3447,7 +3447,7 @@
       },
       "icon": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
       "label": "Dragon Ancestor",
-      "origin": "Compendium.dnd5e.heroes.xT2C2Itv2XambDYp.Item.hb79jvadlbp5y3yf",
+      "origin": "Compendium.cnc.heroes.xT2C2Itv2XambDYp.Item.hb79jvadlbp5y3yf",
       "tint": null,
       "transfer": false,
       "flags": {}
@@ -3469,7 +3469,7 @@
       },
       "icon": "icons/creatures/claws/claw-scaled-red.webp",
       "label": "Draconic Resilience",
-      "origin": "Compendium.dnd5e.heroes.xT2C2Itv2XambDYp.Item.2imt4re4r61bps2e",
+      "origin": "Compendium.cnc.heroes.xT2C2Itv2XambDYp.Item.2imt4re4r61bps2e",
       "tint": null,
       "transfer": false,
       "flags": {}

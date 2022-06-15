@@ -103,7 +103,7 @@
       },
       "icon": "icons/equipment/finger/ring-cabochon-silver-gold-red.webp",
       "label": "+1 to AC",
-      "origin": "Compendium.dnd5e.items.QtmVEreNIWEVOoLR",
+      "origin": "Compendium.cnc.items.QtmVEreNIWEVOoLR",
       "transfer": true,
       "flags": {}
     }

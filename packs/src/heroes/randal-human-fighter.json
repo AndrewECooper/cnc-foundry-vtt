@@ -2436,14 +2436,14 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.fbExzwNwEAl2kW9c",
-                "Compendium.dnd5e.classfeatures.nTjmWbyHweXuIqwc"
+                "Compendium.cnc.classfeatures.fbExzwNwEAl2kW9c",
+                "Compendium.cnc.classfeatures.nTjmWbyHweXuIqwc"
               ]
             },
             "value": {
               "added": {
-                "8esd96grt1e7ct4k": "Compendium.dnd5e.classfeatures.fbExzwNwEAl2kW9c",
-                "pszansgr88j2t9wz": "Compendium.dnd5e.classfeatures.nTjmWbyHweXuIqwc"
+                "8esd96grt1e7ct4k": "Compendium.cnc.classfeatures.fbExzwNwEAl2kW9c",
+                "pszansgr88j2t9wz": "Compendium.cnc.classfeatures.nTjmWbyHweXuIqwc"
               }
             },
             "level": 1,
@@ -2456,7 +2456,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.xF1VTcJ3AdkbTsdQ"
+                "Compendium.cnc.classfeatures.xF1VTcJ3AdkbTsdQ"
               ]
             },
             "value": {},
@@ -2470,7 +2470,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.ax8M0X0q1GGWM26j"
+                "Compendium.cnc.classfeatures.ax8M0X0q1GGWM26j"
               ]
             },
             "value": {},
@@ -2484,7 +2484,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.q9g1MLXuLZyxjQMg"
+                "Compendium.cnc.classfeatures.q9g1MLXuLZyxjQMg"
               ]
             },
             "value": {},
@@ -2498,7 +2498,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.653ZHbNcmm7ZGXbw"
+                "Compendium.cnc.classfeatures.653ZHbNcmm7ZGXbw"
               ]
             },
             "value": {},
@@ -2597,7 +2597,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.classes.ABEBgWyRhVlDUIfq"
+          "sourceId": "Compendium.cnc.classes.ABEBgWyRhVlDUIfq"
         }
       }
     },
@@ -2675,7 +2675,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.fbExzwNwEAl2kW9c",
+          "sourceId": "Compendium.cnc.classfeatures.fbExzwNwEAl2kW9c",
           "advancementOrigin": "z1xtuix2w8sjskct.mlcvcu7p2jfwxwa3"
         }
       }
@@ -2759,7 +2759,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.nTjmWbyHweXuIqwc",
+          "sourceId": "Compendium.cnc.classfeatures.nTjmWbyHweXuIqwc",
           "advancementOrigin": "z1xtuix2w8sjskct.mlcvcu7p2jfwxwa3"
         }
       }
@@ -2783,7 +2783,7 @@
       },
       "icon": "icons/equipment/shield/heater-stone-orange.webp",
       "label": "+1 to AC",
-      "origin": "Compendium.dnd5e.heroes.K5XFMOiiM9WufwYO.Item.xhSq81g4w9vTE0nK",
+      "origin": "Compendium.cnc.heroes.K5XFMOiiM9WufwYO.Item.xhSq81g4w9vTE0nK",
       "transfer": false,
       "flags": {}
     }

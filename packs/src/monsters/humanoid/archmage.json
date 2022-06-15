@@ -849,7 +849,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.EOmsUcFQJTfG2oio"
+          "sourceId": "Compendium.cnc.spells.EOmsUcFQJTfG2oio"
         }
       }
     },
@@ -948,7 +948,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi"
+          "sourceId": "Compendium.cnc.spells.Bnn9Nzajixvow9xi"
         }
       }
     },
@@ -1048,7 +1048,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Utk1OQRwYkMkFRD3"
+          "sourceId": "Compendium.cnc.spells.Utk1OQRwYkMkFRD3"
         }
       }
     },
@@ -1148,7 +1148,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.udsLtG0BugXHR2JQ"
+          "sourceId": "Compendium.cnc.spells.udsLtG0BugXHR2JQ"
         }
       }
     },
@@ -1252,7 +1252,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.XvbiNhNqXXIFisIy"
+          "sourceId": "Compendium.cnc.spells.XvbiNhNqXXIFisIy"
         }
       }
     },
@@ -1352,7 +1352,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.ghXTfe7sgCbgf1Q8"
+          "sourceId": "Compendium.cnc.spells.ghXTfe7sgCbgf1Q8"
         }
       }
     },
@@ -1452,7 +1452,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.3OZnNhunvRtPOQmH"
+          "sourceId": "Compendium.cnc.spells.3OZnNhunvRtPOQmH"
         }
       }
     },
@@ -1560,7 +1560,7 @@
           },
           "icon": "systems/dnd5e/icons/spells/protect-blue-1.jpg",
           "label": "Mage Armor",
-          "origin": "Compendium.dnd5e.spells.CKZTpZlxj7hjjo2H",
+          "origin": "Compendium.cnc.spells.CKZTpZlxj7hjjo2H",
           "transfer": true,
           "flags": {}
         }
@@ -1572,7 +1572,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.CKZTpZlxj7hjjo2H"
+          "sourceId": "Compendium.cnc.spells.CKZTpZlxj7hjjo2H"
         }
       }
     },
@@ -1676,7 +1676,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.41JIhpDyM9Anm7cs"
+          "sourceId": "Compendium.cnc.spells.41JIhpDyM9Anm7cs"
         }
       }
     },
@@ -1775,7 +1775,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.ppWAAEul0QHtm4er"
+          "sourceId": "Compendium.cnc.spells.ppWAAEul0QHtm4er"
         }
       }
     },
@@ -1875,7 +1875,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.X4c8xCkmF8U9HUMz"
+          "sourceId": "Compendium.cnc.spells.X4c8xCkmF8U9HUMz"
         }
       }
     },
@@ -1975,7 +1975,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.wqfAVANuQonNBgnL"
+          "sourceId": "Compendium.cnc.spells.wqfAVANuQonNBgnL"
         }
       }
     },
@@ -2075,7 +2075,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Ek45cBpVXvJdv1Qy"
+          "sourceId": "Compendium.cnc.spells.Ek45cBpVXvJdv1Qy"
         }
       }
     },
@@ -2175,7 +2175,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.yfbK8gZqESlaoY5t"
+          "sourceId": "Compendium.cnc.spells.yfbK8gZqESlaoY5t"
         }
       }
     },
@@ -2278,7 +2278,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.IyikgTEOTv701jgQ"
+          "sourceId": "Compendium.cnc.spells.IyikgTEOTv701jgQ"
         }
       }
     },
@@ -2378,7 +2378,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.pxpb2eOB6bv4phAf"
+          "sourceId": "Compendium.cnc.spells.pxpb2eOB6bv4phAf"
         }
       }
     },
@@ -2526,7 +2526,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.avD5XUtkBPQQR97c"
+          "sourceId": "Compendium.cnc.spells.avD5XUtkBPQQR97c"
         }
       }
     },
@@ -2626,7 +2626,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.ReMbjfeOKoSj3O79"
+          "sourceId": "Compendium.cnc.spells.ReMbjfeOKoSj3O79"
         }
       }
     },
@@ -2729,7 +2729,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.RpKjTlYASrfqUPVA"
+          "sourceId": "Compendium.cnc.spells.RpKjTlYASrfqUPVA"
         }
       }
     },
@@ -2828,7 +2828,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.fVbCxFRaORalHB20"
+          "sourceId": "Compendium.cnc.spells.fVbCxFRaORalHB20"
         }
       }
     },
@@ -2928,7 +2928,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.o9ZCvuD2B1OTcubb"
+          "sourceId": "Compendium.cnc.spells.o9ZCvuD2B1OTcubb"
         }
       }
     },
@@ -3028,7 +3028,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.WmQpxfjZwF3MGUby"
+          "sourceId": "Compendium.cnc.spells.WmQpxfjZwF3MGUby"
         }
       }
     },
@@ -3128,7 +3128,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.L4J89JXqbKs6puEV"
+          "sourceId": "Compendium.cnc.spells.L4J89JXqbKs6puEV"
         }
       }
     },
@@ -3228,7 +3228,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.bllEWfm9xfEKynhv"
+          "sourceId": "Compendium.cnc.spells.bllEWfm9xfEKynhv"
         }
       }
     },
@@ -3327,7 +3327,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.JYuRBwxpoFhXduvD"
+          "sourceId": "Compendium.cnc.spells.JYuRBwxpoFhXduvD"
         }
       }
     },
@@ -3537,7 +3537,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.1N8dDMMgZ1h1YJ3B"
+          "sourceId": "Compendium.cnc.spells.1N8dDMMgZ1h1YJ3B"
         }
       }
     },
@@ -3637,7 +3637,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.A3q2gTNqG6fvNGrv"
+          "sourceId": "Compendium.cnc.spells.A3q2gTNqG6fvNGrv"
         }
       }
     }

@@ -20,8 +20,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.v4gKwLhAq9vuqza7",
-            "Compendium.dnd5e.classfeatures.x637K2Icp2ZFM1TB"
+            "Compendium.cnc.classfeatures.v4gKwLhAq9vuqza7",
+            "Compendium.cnc.classfeatures.x637K2Icp2ZFM1TB"
           ]
         },
         "value": {},
@@ -35,8 +35,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.YpiLQEKGalROn7iJ",
-            "Compendium.dnd5e.classfeatures.r91UIgwFdHwkXdia"
+            "Compendium.cnc.classfeatures.YpiLQEKGalROn7iJ",
+            "Compendium.cnc.classfeatures.r91UIgwFdHwkXdia"
           ]
         },
         "value": {},
@@ -50,7 +50,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.NMy4piwXIpLjYbRE"
+            "Compendium.cnc.classfeatures.NMy4piwXIpLjYbRE"
           ]
         },
         "value": {},
@@ -64,7 +64,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.eVXqHn0ojWrEuYGU"
+            "Compendium.cnc.classfeatures.eVXqHn0ojWrEuYGU"
           ]
         },
         "value": {},

@@ -23,7 +23,7 @@ Runs all relevant build scripts:
 
 ### `npm run build:css` / `gulp css`
 
-Converts the LESS in `./less` to the final `dnd5e.css`.
+Converts the LESS in `./less` to the final `cnc.css`.
 
 ### `npm run build:watch` / `gulp`
 
@@ -156,7 +156,7 @@ Please appreciate that reviewing contributions constitutes a substantial amount 
 MRs have a few phases:
 
 0. **Prioritization.** If the MR relates to the current milestone, it is assigned to that milestone.
-1. **Initial Review from the 5e contributor team.** This lets us spread out the review work and catch some of the more obvious things that need to be fixed before final review. Generally this talks about code style and some methodology.
+1. **Initial Review from the CnC contributor team.** This lets us spread out the review work and catch some of the more obvious things that need to be fixed before final review. Generally this talks about code style and some methodology.
 2. **Final Review from the Maintainers.** Atropos and Kim have final review and are the only ones with merge permission.
 
 #### MR Size

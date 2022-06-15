@@ -20,8 +20,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.E8ozg8avUVOX9N7u",
-            "Compendium.dnd5e.classfeatures.OdrvL3afwLOPeuYZ"
+            "Compendium.cnc.classfeatures.E8ozg8avUVOX9N7u",
+            "Compendium.cnc.classfeatures.OdrvL3afwLOPeuYZ"
           ]
         },
         "value": {},
@@ -35,9 +35,9 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.fbExzwNwEAl2kW9c",
-            "Compendium.dnd5e.classfeatures.ihoQHsmVZlyDbPhX",
-            "Compendium.dnd5e.classfeatures.ySMPQ6zNSlvkrl2f"
+            "Compendium.cnc.classfeatures.fbExzwNwEAl2kW9c",
+            "Compendium.cnc.classfeatures.ihoQHsmVZlyDbPhX",
+            "Compendium.cnc.classfeatures.ySMPQ6zNSlvkrl2f"
           ]
         },
         "value": {},
@@ -51,8 +51,8 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.dY9yrqkyEDuF0CG2",
-            "Compendium.dnd5e.classfeatures.olAqNsUTIef9x8xC"
+            "Compendium.cnc.classfeatures.dY9yrqkyEDuF0CG2",
+            "Compendium.cnc.classfeatures.olAqNsUTIef9x8xC"
           ]
         },
         "value": {},
@@ -66,7 +66,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.XogoBnFWmCAHXppo"
+            "Compendium.cnc.classfeatures.XogoBnFWmCAHXppo"
           ]
         },
         "value": {},
@@ -80,7 +80,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.carGDhkIdoduTC0I"
+            "Compendium.cnc.classfeatures.carGDhkIdoduTC0I"
           ]
         },
         "value": {},
@@ -94,7 +94,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.nahSkBO6LH4HkpaT"
+            "Compendium.cnc.classfeatures.nahSkBO6LH4HkpaT"
           ]
         },
         "value": {},
@@ -108,7 +108,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.FAk41RPCTcvCk6KI"
+            "Compendium.cnc.classfeatures.FAk41RPCTcvCk6KI"
           ]
         },
         "value": {},
@@ -122,7 +122,7 @@
         "type": "ItemGrant",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.classfeatures.U7BIPVPsptBmwsnV"
+            "Compendium.cnc.classfeatures.U7BIPVPsptBmwsnV"
           ]
         },
         "value": {},

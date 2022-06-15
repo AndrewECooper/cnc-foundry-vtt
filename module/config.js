@@ -1002,7 +1002,7 @@ CNC.spellScrollIds = {
  * @enum {string}
  */
 CNC.sourcePacks = {
-  ITEMS: "CNC.items"
+  ITEMS: "cnc.items"
 };
 
 /**

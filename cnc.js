@@ -33,7 +33,7 @@ import ActorSheetCncNPC from "./module/actor/sheets/npc.js";
 import ActorSheetCncVehicle from "./module/actor/sheets/vehicle.js";
 import ActorSkillConfig from "./module/apps/skill-config.js";
 import ActorTypeConfig from "./module/apps/actor-type.js";
-import ItemSheet5e from "./module/item/sheet.js";
+import ItemSheetCnc from "./module/item/sheet.js";
 import LongRestDialog from "./module/apps/long-rest.js";
 import ProficiencySelector from "./module/apps/proficiency-selector.js";
 import SelectItemsPrompt from "./module/apps/select-items-prompt.js";
@@ -47,7 +47,7 @@ import * as dice from "./module/dice.js";
 import * as macros from "./module/macros.js";
 import * as migrations from "./module/migration.js";
 import * as utils from "./module/utils.js";
-import ActiveEffect5e from "./module/active-effect.js";
+import ActiveEffectCnc from "./module/active-effect.js";
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
@@ -72,7 +72,7 @@ Hooks.once("init", function() {
       ActorSheetCncVehicle,
       ActorSkillConfig,
       ActorTypeConfig,
-      ItemSheet5e,
+      ItemSheetCnc,
       LongRestDialog,
       ProficiencySelector,
       SelectItemsPrompt,
@@ -99,7 +99,7 @@ Hooks.once("init", function() {
 
   // Record Configuration Values
   CONFIG.CNC = CNC;
-  CONFIG.ActiveEffect.documentClass = ActiveEffect5e;
+  CONFIG.ActiveEffect.documentClass = ActiveEffectCnc;
   CONFIG.Actor.documentClass = ActorCnc;
   CONFIG.Item.documentClass = ItemCnc;
   CONFIG.Token.documentClass = TokenDocumentCnc;
@@ -151,7 +151,7 @@ Hooks.once("init", function() {
     label: "CNC.SheetClassVehicle"
   });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("cnc", ItemSheet5e, {
+  Items.registerSheet("cnc", ItemSheetCnc, {
     makeDefault: true,
     label: "CNC.SheetClassItem"
   });
@@ -205,12 +205,12 @@ Hooks.once("i18nInit", () => utils.performPreLocalization(CONFIG.CNC));
 Hooks.once("ready", function() {
 
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
-  Hooks.on("hotbarDrop", (bar, data, slot) => macros.create5eMacro(data, slot));
+  Hooks.on("hotbarDrop", (bar, data, slot) => macros.createCncMacro(data, slot));
 
   // Determine whether a system migration is required and feasible
   if ( !game.user.isGM ) return;
   const currentVersion = game.settings.get("cnc", "systemMigrationVersion");
-  const NEEDS_MIGRATION_VERSION = "1.6.0";
+  const NEEDS_MIGRATION_VERSION = "0.1.0";
   const COMPATIBLE_MIGRATION_VERSION = 0.80;
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
   if ( !currentVersion && totalDocuments === 0 ) return game.settings.set("cnc", "systemMigrationVersion", game.system.data.version);
@@ -219,7 +219,7 @@ Hooks.once("ready", function() {
 
   // Perform the migration
   if ( currentVersion && isNewerVersion(COMPATIBLE_MIGRATION_VERSION, currentVersion) ) {
-    ui.notifications.error(game.i18n.localize("MIGRATION.5eVersionTooOldWarning"), {permanent: true});
+    ui.notifications.error(game.i18n.localize("MIGRATION.CncVersionTooOldWarning"), {permanent: true});
   }
   migrations.migrateWorld();
 });

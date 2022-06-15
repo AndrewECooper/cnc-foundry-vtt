@@ -72,7 +72,7 @@
       "_id": "K4xQzXl1Z4zMnyOa",
       "changes": [
         {
-          "key": "flags.dnd5e.jackOfAllTrades",
+          "key": "flags.cnc.jackOfAllTrades",
           "mode": 5,
           "value": "true"
         }

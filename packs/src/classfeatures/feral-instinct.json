@@ -72,7 +72,7 @@
       "_id": "q7TkJQX7PeVOzTQH",
       "changes": [
         {
-          "key": "flags.dnd5e.initiativeAdv",
+          "key": "flags.cnc.initiativeAdv",
           "mode": 5,
           "value": "true"
         }

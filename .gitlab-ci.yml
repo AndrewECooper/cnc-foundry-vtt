@@ -40,8 +40,6 @@ build:
     paths:
       - packs/
       - cnc.css
-  only:
-    - main
   needs:
     - job: install
 

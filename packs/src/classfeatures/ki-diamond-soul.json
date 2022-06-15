@@ -72,7 +72,7 @@
       "_id": "v6jhyPoAYRIIXBG1",
       "changes": [
         {
-          "key": "flags.dnd5e.diamondSoul",
+          "key": "flags.cnc.diamondSoul",
           "mode": 5,
           "value": "true"
         }

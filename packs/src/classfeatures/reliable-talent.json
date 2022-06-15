@@ -72,7 +72,7 @@
       "_id": "vMMZHZQ0qT7MT4I4",
       "changes": [
         {
-          "key": "flags.dnd5e.reliableTalent",
+          "key": "flags.cnc.reliableTalent",
           "mode": 5,
           "value": "true"
         }

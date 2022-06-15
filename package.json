@@ -1,6 +1,6 @@
 {
   "name": "castles-and-crusades",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Foundry Virtual Tabletop - Castles & Crusades Game System",
   "main": "cnc.js",
   "scripts": {

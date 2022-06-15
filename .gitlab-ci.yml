@@ -38,9 +38,8 @@ build:
       - cnc.css
     expire_in: 30 days
   only:
-    - develop
-    - main
     - tags
+    - merge_requests
 
 lint:
   stage: test
@@ -49,8 +48,7 @@ lint:
   needs:
     - job: build
   only:
-    - develop
-    - main
+    - merge_requests
 
 release:
   image: registry.gitlab.com/gitlab-org/release-cli:latest

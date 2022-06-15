@@ -40,6 +40,7 @@ build:
   only:
     - tags
     - merge_requests
+    - main
 
 lint:
   stage: test
@@ -49,6 +50,7 @@ lint:
     - job: build
   only:
     - merge_requests
+    - main
 
 release:
   image: registry.gitlab.com/gitlab-org/release-cli:latest

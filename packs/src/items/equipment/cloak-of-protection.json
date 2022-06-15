@@ -100,7 +100,7 @@
       },
       "icon": "icons/equipment/back/cloak-heavy-fur-blue.webp",
       "label": "+1 to AC",
-      "origin": "Compendium.dnd5e.items.lvaMqEhfidfHDGf5",
+      "origin": "Compendium.cnc.items.lvaMqEhfidfHDGf5",
       "transfer": true,
       "flags": {}
     }

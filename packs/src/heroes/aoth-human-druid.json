@@ -1687,7 +1687,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.SbSvZKkJASyk8jKo"
+          "sourceId": "Compendium.cnc.spells.SbSvZKkJASyk8jKo"
         }
       },
       "img": "systems/dnd5e/icons/spells/vines-jade-1.jpg",
@@ -1792,7 +1792,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.VzgFzcmocr1X1cp4"
+          "sourceId": "Compendium.cnc.spells.VzgFzcmocr1X1cp4"
         }
       },
       "img": "systems/dnd5e/icons/spells/enchant-jade-1.jpg",
@@ -1891,7 +1891,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.hDOENzjuj5WpLq7B"
+          "sourceId": "Compendium.cnc.spells.hDOENzjuj5WpLq7B"
         }
       },
       "img": "systems/dnd5e/icons/spells/wild-jade-2.jpg",
@@ -1990,7 +1990,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.eS7XnnApoxRxYXPs"
+          "sourceId": "Compendium.cnc.spells.eS7XnnApoxRxYXPs"
         }
       },
       "img": "systems/dnd5e/icons/spells/explosion-magenta-2.jpg",
@@ -2090,7 +2090,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.a3XtAO5n2GrqiAh5"
+          "sourceId": "Compendium.cnc.spells.a3XtAO5n2GrqiAh5"
         }
       },
       "img": "systems/dnd5e/icons/spells/wind-blue-2.jpg",
@@ -2194,7 +2194,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP"
+          "sourceId": "Compendium.cnc.spells.uUWb1wZgtMou0TVP"
         }
       },
       "img": "systems/dnd5e/icons/spells/heal-jade-1.jpg",
@@ -2294,7 +2294,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.ghXTfe7sgCbgf1Q8"
+          "sourceId": "Compendium.cnc.spells.ghXTfe7sgCbgf1Q8"
         }
       },
       "img": "systems/dnd5e/icons/spells/light-blue-2.jpg",
@@ -2394,7 +2394,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.2skfDtglk1mGrb3l"
+          "sourceId": "Compendium.cnc.spells.2skfDtglk1mGrb3l"
         }
       },
       "img": "systems/dnd5e/icons/spells/air-burst-jade-2.jpg",
@@ -2493,7 +2493,7 @@
       "sort": 0,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.gMrWeG8fMDPRFiVe"
+          "sourceId": "Compendium.cnc.spells.gMrWeG8fMDPRFiVe"
         }
       },
       "img": "systems/dnd5e/icons/spells/vines-acid-2.jpg",
@@ -2592,7 +2592,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.nqBDWkVOfcGZt4YU"
+          "sourceId": "Compendium.cnc.spells.nqBDWkVOfcGZt4YU"
         }
       },
       "img": "systems/dnd5e/icons/spells/fire-arrows-jade-2.jpg",
@@ -2692,7 +2692,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.IBJmWjzbQGu7M4UX"
+          "sourceId": "Compendium.cnc.spells.IBJmWjzbQGu7M4UX"
         }
       },
       "img": "systems/dnd5e/icons/spells/fog-water-air-2.jpg",
@@ -2796,7 +2796,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Qf6CAZkc7ms4ZY3e"
+          "sourceId": "Compendium.cnc.spells.Qf6CAZkc7ms4ZY3e"
         }
       },
       "img": "systems/dnd5e/icons/spells/leaf-acid-1.jpg",
@@ -2900,7 +2900,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.o8Dh7fblk1d16tnO"
+          "sourceId": "Compendium.cnc.spells.o8Dh7fblk1d16tnO"
         }
       },
       "img": "systems/dnd5e/icons/spells/heal-jade-1.jpg",
@@ -3000,7 +3000,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.ZrTc23tToJ0JpH2h"
+          "sourceId": "Compendium.cnc.spells.ZrTc23tToJ0JpH2h"
         }
       },
       "img": "systems/dnd5e/icons/spells/wind-grasp-sky-2.jpg",
@@ -3100,7 +3100,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.B0pnIcc52O6G8hi8"
+          "sourceId": "Compendium.cnc.spells.B0pnIcc52O6G8hi8"
         }
       },
       "img": "systems/dnd5e/icons/spells/wind-sky-1.jpg",
@@ -3200,7 +3200,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Kn7K5PtYUJAKZTTp"
+          "sourceId": "Compendium.cnc.spells.Kn7K5PtYUJAKZTTp"
         }
       },
       "img": "systems/dnd5e/icons/spells/light-jade-1.jpg",
@@ -3300,7 +3300,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.aL1F8fvYLtNzUbKu"
+          "sourceId": "Compendium.cnc.spells.aL1F8fvYLtNzUbKu"
         }
       },
       "img": "systems/dnd5e/icons/spells/wild-jade-1.jpg",
@@ -3403,7 +3403,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.WTbOQBsarsL1LuXJ"
+          "sourceId": "Compendium.cnc.spells.WTbOQBsarsL1LuXJ"
         }
       },
       "img": "systems/dnd5e/icons/spells/lightning-jade-1.jpg",
@@ -3675,14 +3675,14 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.LzJ5ayHt0OlSVGxi",
-                "Compendium.dnd5e.classfeatures.i6tPm3FNK13Ftc9v"
+                "Compendium.cnc.classfeatures.LzJ5ayHt0OlSVGxi",
+                "Compendium.cnc.classfeatures.i6tPm3FNK13Ftc9v"
               ]
             },
             "value": {
               "added": {
-                "mq7aft43zn80ksgr": "Compendium.dnd5e.classfeatures.LzJ5ayHt0OlSVGxi",
-                "mukslab94jgo077m": "Compendium.dnd5e.classfeatures.i6tPm3FNK13Ftc9v"
+                "mq7aft43zn80ksgr": "Compendium.cnc.classfeatures.LzJ5ayHt0OlSVGxi",
+                "mukslab94jgo077m": "Compendium.cnc.classfeatures.i6tPm3FNK13Ftc9v"
               }
             },
             "level": 1,
@@ -3695,8 +3695,8 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.swK0r5TOIxredxWS",
-                "Compendium.dnd5e.classfeatures.u6Du2P9s81SWuGbi"
+                "Compendium.cnc.classfeatures.swK0r5TOIxredxWS",
+                "Compendium.cnc.classfeatures.u6Du2P9s81SWuGbi"
               ]
             },
             "value": {},
@@ -3710,8 +3710,8 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.cVDEQo0ow1WJT7Wl",
-                "Compendium.dnd5e.classfeatures.xvgPu1O57DgXCM86"
+                "Compendium.cnc.classfeatures.cVDEQo0ow1WJT7Wl",
+                "Compendium.cnc.classfeatures.xvgPu1O57DgXCM86"
               ]
             },
             "value": {},
@@ -3725,7 +3725,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.ip4bvmGoz3qkoqes"
+                "Compendium.cnc.classfeatures.ip4bvmGoz3qkoqes"
               ]
             },
             "value": {},
@@ -3804,7 +3804,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.classes.ygVYgPbJkaH0tH1N"
+          "sourceId": "Compendium.cnc.classes.ygVYgPbJkaH0tH1N"
         }
       }
     },
@@ -3903,7 +3903,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.LzJ5ayHt0OlSVGxi",
+          "sourceId": "Compendium.cnc.classfeatures.LzJ5ayHt0OlSVGxi",
           "advancementOrigin": "wu0878mk64sgvd9z.6pdotglp4hy4zlvb"
         }
       }
@@ -3982,7 +3982,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.i6tPm3FNK13Ftc9v",
+          "sourceId": "Compendium.cnc.classfeatures.i6tPm3FNK13Ftc9v",
           "advancementOrigin": "wu0878mk64sgvd9z.6pdotglp4hy4zlvb"
         }
       }

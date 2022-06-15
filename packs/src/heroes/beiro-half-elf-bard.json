@@ -2007,7 +2007,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi"
+          "sourceId": "Compendium.cnc.spells.Bnn9Nzajixvow9xi"
         }
       },
       "img": "systems/dnd5e/icons/spells/light-sky-1.jpg",
@@ -2107,7 +2107,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.Utk1OQRwYkMkFRD3"
+          "sourceId": "Compendium.cnc.spells.Utk1OQRwYkMkFRD3"
         }
       },
       "img": "icons/magic/water/water-hand.webp",
@@ -2206,7 +2206,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.eS7XnnApoxRxYXPs"
+          "sourceId": "Compendium.cnc.spells.eS7XnnApoxRxYXPs"
         }
       },
       "img": "systems/dnd5e/icons/spells/explosion-magenta-2.jpg",
@@ -2306,7 +2306,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.A3q2gTNqG6fvNGrv"
+          "sourceId": "Compendium.cnc.spells.A3q2gTNqG6fvNGrv"
         }
       },
       "img": "systems/dnd5e/icons/spells/wind-grasp-eerie-2.jpg",
@@ -2410,7 +2410,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.ge3Saet9zPTDyaoL"
+          "sourceId": "Compendium.cnc.spells.ge3Saet9zPTDyaoL"
         }
       },
       "img": "systems/dnd5e/icons/spells/heal-sky-2.jpg",
@@ -2509,7 +2509,7 @@
       "sort": 100001,
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.spells.BQk5Row4NymMnUQl"
+          "sourceId": "Compendium.cnc.spells.BQk5Row4NymMnUQl"
         }
       },
       "img": "systems/dnd5e/icons/spells/explosion-magenta-2.jpg",
@@ -2820,14 +2820,14 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.u4NLajXETJhJU31v",
-                "Compendium.dnd5e.classfeatures.hpLNiGq7y67d2EHA"
+                "Compendium.cnc.classfeatures.u4NLajXETJhJU31v",
+                "Compendium.cnc.classfeatures.hpLNiGq7y67d2EHA"
               ]
             },
             "value": {
               "added": {
-                "8t2i9ani6yvs44l2": "Compendium.dnd5e.classfeatures.u4NLajXETJhJU31v",
-                "cteye2m8qmv9ua48": "Compendium.dnd5e.classfeatures.hpLNiGq7y67d2EHA"
+                "8t2i9ani6yvs44l2": "Compendium.cnc.classfeatures.u4NLajXETJhJU31v",
+                "cteye2m8qmv9ua48": "Compendium.cnc.classfeatures.hpLNiGq7y67d2EHA"
               }
             },
             "level": 1,
@@ -2840,8 +2840,8 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.ezWijmCnlnQ9ZRX2",
-                "Compendium.dnd5e.classfeatures.he8RpPXwSl2lVSIk"
+                "Compendium.cnc.classfeatures.ezWijmCnlnQ9ZRX2",
+                "Compendium.cnc.classfeatures.he8RpPXwSl2lVSIk"
               ]
             },
             "value": {},
@@ -2855,8 +2855,8 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.ILhzFHiRrqgQ9dFJ",
-                "Compendium.dnd5e.classfeatures.aQLg7BWdRnm4Hr9S"
+                "Compendium.cnc.classfeatures.ILhzFHiRrqgQ9dFJ",
+                "Compendium.cnc.classfeatures.aQLg7BWdRnm4Hr9S"
               ]
             },
             "value": {},
@@ -2870,7 +2870,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.3VDZGs5Ug3hIE322"
+                "Compendium.cnc.classfeatures.3VDZGs5Ug3hIE322"
               ]
             },
             "value": {},
@@ -2884,7 +2884,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.SEJmsjkEhdAZ90ki"
+                "Compendium.cnc.classfeatures.SEJmsjkEhdAZ90ki"
               ]
             },
             "value": {},
@@ -2898,7 +2898,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.aonJ2YjkqkYB9WYB"
+                "Compendium.cnc.classfeatures.aonJ2YjkqkYB9WYB"
               ]
             },
             "value": {},
@@ -2912,7 +2912,7 @@
             "type": "ItemGrant",
             "configuration": {
               "items": [
-                "Compendium.dnd5e.classfeatures.GBYN5rH4nh1ocRlY"
+                "Compendium.cnc.classfeatures.GBYN5rH4nh1ocRlY"
               ]
             },
             "value": {},
@@ -3038,7 +3038,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.dnd5e.classes.ILvRZGEx3aXqSVUt"
+          "sourceId": "Compendium.cnc.classes.ILvRZGEx3aXqSVUt"
         }
       }
     },
@@ -3116,7 +3116,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.u4NLajXETJhJU31v",
+          "sourceId": "Compendium.cnc.classfeatures.u4NLajXETJhJU31v",
           "advancementOrigin": "5trn1skegukwezch.rpmaepj0rdbnnrzd"
         }
       }
@@ -3195,7 +3195,7 @@
       },
       "flags": {
         "dnd5e": {
-          "sourceId": "Compendium.dnd5e.classfeatures.hpLNiGq7y67d2EHA",
+          "sourceId": "Compendium.cnc.classfeatures.hpLNiGq7y67d2EHA",
           "advancementOrigin": "5trn1skegukwezch.rpmaepj0rdbnnrzd"
         }
       }

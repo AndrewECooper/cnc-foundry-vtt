@@ -28,6 +28,7 @@
   "author": "Ken Taylor (https://gitlab.com/KillerWabbit)",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.18.5",
     "@babel/eslint-parser": "^7.18.2",
     "eslint-plugin-jsdoc": "^39.3.2",
     "fs": "0.0.1-security",

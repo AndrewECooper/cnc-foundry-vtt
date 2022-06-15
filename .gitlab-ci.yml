@@ -8,6 +8,12 @@
 # https://hub.docker.com/r/library/node/tags/
 image: node:latest
 
+stages:
+  # - test
+  - lint
+  - build
+  - release
+
 # Pick zero or more services to be used on all builds.
 # Only needed when using a docker container to run your tests in.
 # Check out: https://docs.gitlab.com/ee/ci/services/index.html
@@ -22,17 +28,31 @@ cache:
   paths:
     - node_modules/
 
+lint:
+  stage: lint
+  script:
+    - npm install
+    - npm run lint
+
 build:
+    stage: build
     script:
-        - npm install
         - npm run build
 
-# test_async:
-#   script:
-#     - npm install
-#     - node ./specs/start.js ./specs/async.spec.js
-
-# test_db:
-#   script:
-#     - npm install
-#     - node ./specs/start.js ./specs/db-postgres.spec.js
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG                 # Run this job when a tag is created
+  script:
+    - echo "running release_job"
+  release:                               # See https://docs.gitlab.com/ee/ci/yaml/#release for available properties
+    tag_name: $CI_COMMIT_TAG
+    name: 'Release $CI_COMMIT_TAG'
+    description: '$CI_COMMIT_TAG Release'
+    assets:
+      links:
+        - name: 'system.json'
+          filepath: 'system.json'
+          url: 'https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/$CI_COMMIT_TAG/downloads/system.json'
+          link_type: 'other'

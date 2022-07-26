@@ -1,25 +1,19 @@
-# Foundry Virtual Tabletop - Castles & Crusades Game System
+# Castles & Crusades for FoundryVTT
 
-This game system for [Foundry Virtual Tabletop](http://foundryvtt.com) provides character sheet and game system support for Castles & Crusades by Troll Lord Games.
 
-This system provides character sheet support for Actors and Items, mechanical support for dice and rules necessary to
-play games of Castles & Crusades.
 
-Images present under the `icons/` directory are distributed under various terms, please see the `icons/LICENSE` file for full details.
+## License
 
-The software component of this system is distributed under the MIT license.
+All software components are licensed under the MIT license - see *LICENSE.txt* for details.
 
-## Installation Instructions
 
-To install and use the Castles & Crusades system for Foundry Virtual Tabletop, simply paste the following URL into the 
-**Install System** dialog on the Setup menu of the application.
+### Copyright Notices
 
-https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/raw/master/system.json
-
-If you wish to manually install the system, you must clone or extract it into the ``Data/systems/cnc`` folder. You
-may do this by cloning the repository or downloading a zip archive from the
-[Releases Page](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases).
-
-## Community Contribution
-
-See the [CONTRIBUTING](/CONTRIBUTING.md) file for information about how you can help this project.
+- Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.
+- System Reference Document Copyright 2000-2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
+- Castles & Crusades: Players Handbook, Copyright 2004, Troll Lord Games; Authors Davis Chenault and Mac Golden.
+- Castles & Crusades: Monsters Product Support, Copyright 2005, Troll Lord Games.
+- The Basic Fantasy Field Guide Copyright © 2010 Chris Gonnerman and Contributors.
+- Basic Fantasy Role-Playing Game Copyright © 2006-2015 Chris Gonnerman.
+- Boilerplate System Copyright © 2020 Asacolips Projects / Foundry Mods.
+- Basic Fantasy RPG for FoundryVTT © 2022 Steve Simenic.

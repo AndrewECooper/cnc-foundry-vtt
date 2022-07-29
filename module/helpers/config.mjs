@@ -22,8 +22,17 @@ TLGCC.abilityAbbreviations = {
   "cha": "TLGCC.AbilityChaAbbr"
 };
 
+TLGCC.abilitySave = {
+  "str": "TLGCC.AbilityStrSave",
+  "dex": "TLGCC.AbilityDexSave",
+  "con": "TLGCC.AbilityConSave",
+  "int": "TLGCC.AbilityIntSave",
+  "wis": "TLGCC.AbilityWisSave",
+  "cha": "TLGCC.AbilityChaSave"
+};
+
 /**
- * The set of Saving Throws used within the sytem.
+ * The set of Saving Throws used within the sytem. FIXME - I would like to use this for tracking class resources.
  * @type {Object}
  */
 TLGCC.saves = {

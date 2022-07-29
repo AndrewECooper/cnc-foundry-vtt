@@ -5,24 +5,23 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'TLGCC.Name'}}"/></h1>
-      <div class="resources grid grid-5col">
+      <div class="resources grid grid-3col">
+
         <div class="resource flex-group-center">
-          <label for="data.hitPoints.value" class="resource-label">{{localize 'TLGCC.HitPoints'}} </label>
+          <label for="data.hitPoints.value" class="resource-label">{{localize 'TLGCC.HitPoints'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="data.hitPoints.value" value="{{data.hitPoints.value}}" data-dtype="Number" width="50px"/>
             <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
             <input type="text" name="data.hitPoints.max" value="{{data.hitPoints.max}}" data-dtype="Number"/>
           </div>
         </div>
+
         <div class="resource flex-group-center">
-          <label for="data.level.value" class="resource-label"> {{localize data.level.label}}</label>
-          <input type="text" name="data.level.value" value="{{data.level.value}}" data-dtype="Number"/>
-        </div>
-        <div class="resource flex-group-center grid-span-2">
-          <label for="data.level.value" class="resource-label">{{localize data.class.label}}  </label>
+          <label for="data.level.value" class="resource-label">{{localize data.class.label}}&nbsp; &nbsp;{{localize data.level.label}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="data.class.value" value="{{data.class.value}}" data-dtype="String"/>
-            <!-- -->
+            <span class="flexshrink flex-align-center">&nbsp;</span>
+            <input type="text" name="data.level.value" value="{{data.level.value}}" data-dtype="Number"/>
           </div>
         </div>
 
@@ -34,41 +33,19 @@
             <input type="text" name="data.xp.next" value="{{data.xp.next}}" data-dtype="Number"/>
           </div>
         </div>
-      </div>
-</div>
 
+      </div>
+    </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
-  <div class="sheet-header">
-    <div class="header-fields">
-    <div class="resources grid grid-5col">
-      <div class="resource flex-group-center grid-span-2">
-        <label for="data.background.value" class="resource-label">{{localize data.background.label}}  </label>
-        <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="data.background.value" value="{{data.background.value}}" data-dtype="String"/>
-        </div>
-    </div>
-    <div class="resource flex-group-center grid-span-2">
-      <label for="data.title.value" class="resource-label">{{localize data.title.label}}  </label>
-      <div class="resource-content flexrow flex-center flex-between">
-        <input type="text" name="data.title.value" value="{{data.title.value}}" data-dtype="String"/>
-      </div>
-    </div>
-    <div class="resource flex-group-center">
-    <label for="data.alignment.value" class="resource-label">{{localize data.alignment.label}}  </label>
-    <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="data.alignment.value" value="{{data.alignment.value}}" data-dtype="String"/>
-    </div>
-    </div>
-    </div></div></div>
-    <nav class="sheet-tabs tabs" data-group="primary">
+  <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="combat">{{localize 'TLGCC.CombatTab'}}</a>
-    <a class="item" data-tab="features">{{localize 'TLGCC.FeaturesTab'}}</a>
+    <a class="item" data-tab="description">{{localize 'TLGCC.DescriptionTab'}}</a>
     <a class="item" data-tab="items">{{localize 'TLGCC.ItemsTab'}}</a>
     <a class="item" data-tab="spells">{{localize 'TLGCC.SpellsTab'}}</a>
-    <a class="item" data-tab="description">{{localize 'TLGCC.DescriptionTab'}}</a>
+    <a class="item" data-tab="features">{{localize 'TLGCC.FeaturesTab'}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -80,12 +57,10 @@
         <aside class="sidebar">
 
           <div class="abilities flexcol">
-            <div class="ability flexrow flex-group-center ability-header"><h3 style="margin-right: 10px;">Prime</h3><h3 style="margin-right: 30px;">Attribute</h3><h3 style="margin-right: 20px;">Score</h3><h3>Mod</h3></div>
             {{#each data.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
-              
-              <input style="margin-right: 10px;" type="checkbox" name="data.abilities.{{key}}.ccprimary" {{checked ability.ccprimary}}/>
-              <label for="data.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" title="{{localize 'TLGCC.Ability{{key}}Save'}}" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="{{ability.label}} Ability Check. <b>Prime:</b> {{ability.ccprimary}}">{{ability.label}}</label>
+              <input type="checkbox" name="data.abilities.{{key}}.ccprimary" {{checked ability.ccprimary}}/>
+              <label for="data.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="{{ability.label}} Ability Check. <b>Prime:</b> {{ability.ccprimary}}">{{ability.label}}</label>
               <input type="text" name="data.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
               <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="{{ability.label}} Ability Check. <b>Prime:</b> {{ability.ccprimary}}">{{numberFormat ability.bonus decimals=0 sign=true}}</span>
              </div>
@@ -93,12 +68,12 @@
 
             <hr>
 
-            <!--{{#each data.saves as |save key|}}
+            {{#each data.saves as |save key|}}
             <div class="resource-pool flexrow flex-group-center">
               <label for="data.saves.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20" data-label="Saving Throw - {{save.label}}">{{save.label}}</label>
               <input type="text" name="data.saves.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
             </div>
-            {{/each}} -->
+            {{/each}}
           </div>
         </aside>
 

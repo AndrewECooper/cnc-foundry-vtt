@@ -24,6 +24,10 @@
           "value": "1d8",
           "label": "TLGCC.hdSize"
         },
+        "alignment": {
+          "value": "",
+          "label": "TLGCC.Alignment"
+        },
         "move": {
           "value": 30,
           "label": "TLGCC.Movement"
@@ -80,9 +84,17 @@
         "value": "",
         "label": "TLGCC.Age"
       },
+      "background": {
+        "value": "",
+        "label": "TLGCC.Background"
+      },
       "class": {
         "value": "",
         "label": "TLGCC.Class"
+      },
+      "title": {
+        "value": "",
+        "label": "TLGCC.Title"
       },
       "race": {
         "value": "",
@@ -182,6 +194,10 @@
         "weight": {
           "value": 1,
           "label": "TLGCC.Weight"
+        },
+        "itemev": {
+          "value": 1,
+          "label": "TLGCC.itemev"
         }
       }
     },

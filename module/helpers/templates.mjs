@@ -7,10 +7,10 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/tlgcastles_crusades/templates/actor/parts/actor-combat.html",
-    "systems/tlgcastles_crusades/templates/actor/parts/actor-description.html",
-    "systems/tlgcastles_crusades/templates/actor/parts/actor-items.html",
-    "systems/tlgcastles_crusades/templates/actor/parts/actor-spells.html",
-    "systems/tlgcastles_crusades/templates/actor/parts/actor-features.html",
+    "systems/castles-and-crusades/templates/actor/parts/actor-combat.html",
+    "systems/castles-and-crusades/templates/actor/parts/actor-description.html",
+    "systems/castles-and-crusades/templates/actor/parts/actor-items.html",
+    "systems/castles-and-crusades/templates/actor/parts/actor-spells.html",
+    "systems/castles-and-crusades/templates/actor/parts/actor-features.html",
   ]);
 };

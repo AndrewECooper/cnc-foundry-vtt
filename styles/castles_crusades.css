@@ -349,7 +349,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .tlgcc .sheet-header .profile-img {
@@ -593,4 +593,11 @@
 
 .tlgcc .effects .item .effect-controls {
   border: none;
+}
+
+.ability-header {
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: start;
+  font-size: .8em;
 }

@@ -35,6 +35,7 @@ TLGCC.abilitySave = {
  * The set of Saving Throws used within the sytem. FIXME - I would like to use this for tracking class resources.
  * @type {Object}
  */
+
 TLGCC.saves = {
   "death": "TLGCC.SaveDeath",
   "wands": "TLGCC.SaveWands",
@@ -50,7 +51,6 @@ TLGCC.saves = {
 TLGCC.money = {
   "pp": "TLGCC.Platinum",
   "gp": "TLGCC.Gold",
-  "ep": "TLGCC.Electrum",
   "sp": "TLGCC.Silver",
   "cp": "TLGCC.Copper"
 };

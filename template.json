@@ -57,7 +57,6 @@
         "str": {
           "value": 10,
           "ccprimary": false
-          
         },
         "dex": {
           "value": 10,
@@ -113,9 +112,6 @@
           "value": 0
         },
         "gp": {
-          "value": 0
-        },
-        "ep": {
           "value": 0
         },
         "sp": {
@@ -177,9 +173,9 @@
         "label": "TLGCC.ExperiencePoints",
         "abbr": "TLGCC.ExperiencePointsAbbr"
       }
-    }
+  }
+},    
 
-  },
   "Item": {
     "types": ["item", "weapon", "armor", "spell", "feature"],
     "templates": {
@@ -197,7 +193,7 @@
         },
         "itemev": {
           "value": 1,
-          "label": "TLGCC.itemev"
+          "label": "TLGCC.ItemEV"
         }
       }
     },
@@ -278,6 +274,10 @@
         "value": "",
         "label": "TLGCC.Component"
       },
+      "summary": {
+        "value": "",
+        "label": "TLGCC.spellSummary"
+      },
       "spellLevel": {
         "value": 1,
         "label": "TLGCC.spellLevel"
@@ -285,10 +285,13 @@
     },
     "feature": {
       "templates": ["base"],
+      
       "formula": {
         "value": "d100",
-        "label": "TLGCC.Formula"
+        "label": "TLGCC.Formula" 
+      },
+      "value": ""
+      
       }
     }
   }
-}

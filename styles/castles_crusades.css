@@ -413,6 +413,7 @@
 
 .tlgcc .resource-label {
   font-weight: bold;
+  font-size: 16px;
 }
 
 .tlgcc .items-header {
@@ -428,7 +429,7 @@
 }
 
 .tlgcc .items-header > * {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -600,4 +601,31 @@
   flex-direction: row;
   text-align: start;
   font-size: .8em;
+}
+.abilityscore {
+  width: 50px;
+  font-size: 20px;
+}
+.abilitybox {
+
+  border:15px solid transparent; /* control the offset of the lines */
+  outline:2px solid #000; /* adjust the 2px here */
+  outline-offset:-10px; /* control the offset of the rectangle */
+  background:
+    linear-gradient(#777777 0 0) top,
+    linear-gradient(#777777 0 0) left,
+    linear-gradient(#777777 0 0) bottom,
+    linear-gradient(#777777 0 0) right;
+  background-size:200% 2px,2px 200%; /* adjust the 2px here */
+  background-origin:padding-box;
+  background-repeat:no-repeat;
+}
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.ability-label {
+  font-weight: bold;
+  font-size: 26px;
 }

@@ -70,7 +70,7 @@
 
             {{#each data.saves as |save key|}}
             <div class="resource-pool flexrow flex-group-center">
-              <label for="data.saves.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20" data-label="Saving Throw - {{save.label}}">{{save.label}}</label>
+              <input for="data.saves.{{key}}.value" title="TLGCC.savesHover" class="resource-label rollable flexlarge align-left" data-roll="d20" ></input>
               <input type="text" name="data.saves.{{key}}.value" value="{{save.value}}" data-dtype="Number"/>
             </div>
             {{/each}}

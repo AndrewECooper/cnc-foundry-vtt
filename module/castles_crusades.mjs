@@ -14,6 +14,8 @@ import { TLGCC } from "./helpers/config.mjs";
 
 Hooks.once('init', async function() {
 
+  console.log(`TLGCC | Initializing the Castles & Crusades Game System\n${TLGCC.ASCII}`);
+
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.tlgcc = {

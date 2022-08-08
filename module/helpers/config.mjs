@@ -1,4 +1,9 @@
+import { preLocalize } from "./utils.mjs";
+
+// Namespace Configuration Values
 export const TLGCC = {};
+
+console.log('Loading config...');
 
 /**
  * The set of Ability Scores used within the sytem.
@@ -12,6 +17,7 @@ export const TLGCC = {};
   "wis": "TLGCC.AbilityWis",
   "cha": "TLGCC.AbilityCha"
 };
+preLocalize("abilities");
 
 TLGCC.abilityAbbreviations = {
   "str": "TLGCC.AbilityStrAbbr",
@@ -21,6 +27,7 @@ TLGCC.abilityAbbreviations = {
   "wis": "TLGCC.AbilityWisAbbr",
   "cha": "TLGCC.AbilityChaAbbr"
 };
+preLocalize("abilityAbbreviations");
 
 TLGCC.abilitySave = {
   "str": "TLGCC.AbilityStrSave",
@@ -30,6 +37,7 @@ TLGCC.abilitySave = {
   "wis": "TLGCC.AbilityWisSave",
   "cha": "TLGCC.AbilityChaSave"
 };
+preLocalize("abilitySave");
 
 /**
  * The set of Saving Throws used within the sytem. FIXME - I would like to use this for tracking class resources.
@@ -43,6 +51,7 @@ TLGCC.saves = {
   "breath": "TLGCC.SaveBreath",
   "spells": "TLGCC.SaveSpells"
 };
+preLocalize("saves");
 
 /**
  * Money used within the sytem.
@@ -54,3 +63,6 @@ TLGCC.money = {
   "sp": "TLGCC.Silver",
   "cp": "TLGCC.Copper"
 };
+preLocalize("money");
+
+console.log(TLGCC);

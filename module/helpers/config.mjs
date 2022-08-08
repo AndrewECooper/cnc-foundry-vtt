@@ -1,4 +1,21 @@
+import { preLocalize } from "./utils.mjs";
+
+// Namespace Configuration Values
 export const TLGCC = {};
+
+// ASCII Artwork
+TLGCC.ASCII = `_________________________________________________________________________________
+
+███████████                    ████  ████                       █████      ███
+░█░░░███░░░█                   ░░███ ░░███                      ░░███      ░███
+░   ░███  ░  ████████   ██████  ░███  ░███   █████████  ██████   ░███████  ░███
+    ░███    ░░███░░███ ███░░███ ░███  ░███  ░█░░░░███  ░░░░░███  ░███░░███ ░███
+    ░███     ░███ ░░░ ░███ ░███ ░███  ░███  ░   ███░    ███████  ░███ ░███ ░███
+    ░███     ░███     ░███ ░███ ░███  ░███    ███░   █ ███░░███  ░███ ░███ ░░░ 
+    █████    █████    ░░██████  █████ █████  █████████░░████████ ████ █████ ███
+   ░░░░░    ░░░░░      ░░░░░░  ░░░░░ ░░░░░  ░░░░░░░░░  ░░░░░░░░ ░░░░ ░░░░░ ░░░ 
+
+_________________________________________________________________________________`;
 
 /**
  * The set of Ability Scores used within the sytem.
@@ -12,6 +29,7 @@ export const TLGCC = {};
   "wis": "TLGCC.AbilityWis",
   "cha": "TLGCC.AbilityCha"
 };
+preLocalize("abilities");
 
 TLGCC.abilityAbbreviations = {
   "str": "TLGCC.AbilityStrAbbr",
@@ -21,11 +39,23 @@ TLGCC.abilityAbbreviations = {
   "wis": "TLGCC.AbilityWisAbbr",
   "cha": "TLGCC.AbilityChaAbbr"
 };
+preLocalize("abilityAbbreviations");
+
+TLGCC.abilitySave = {
+  "str": "TLGCC.AbilityStrSave",
+  "dex": "TLGCC.AbilityDexSave",
+  "con": "TLGCC.AbilityConSave",
+  "int": "TLGCC.AbilityIntSave",
+  "wis": "TLGCC.AbilityWisSave",
+  "cha": "TLGCC.AbilityChaSave"
+};
+preLocalize("abilitySave");
 
 /**
- * The set of Saving Throws used within the sytem.
+ * The set of Saving Throws used within the sytem. FIXME - I would like to use this for tracking class resources.
  * @type {Object}
  */
+
 TLGCC.saves = {
   "death": "TLGCC.SaveDeath",
   "wands": "TLGCC.SaveWands",
@@ -33,6 +63,7 @@ TLGCC.saves = {
   "breath": "TLGCC.SaveBreath",
   "spells": "TLGCC.SaveSpells"
 };
+preLocalize("saves");
 
 /**
  * Money used within the sytem.
@@ -41,7 +72,7 @@ TLGCC.saves = {
 TLGCC.money = {
   "pp": "TLGCC.Platinum",
   "gp": "TLGCC.Gold",
-  "ep": "TLGCC.Electrum",
   "sp": "TLGCC.Silver",
   "cp": "TLGCC.Copper"
 };
+preLocalize("money");

@@ -10,8 +10,8 @@ export class tlgccActorSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["tlgcc", "sheet", "actor"],
-      template: "systems/tlgcastles_crusades/templates/actor/actor-sheet.html",
-      width: 800,
+      template: "systems/castles-and-crusades/templates/actor/actor-sheet.html",
+      width: 780,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "combat" }]
     });
@@ -19,7 +19,7 @@ export class tlgccActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/tlgcastles_crusades/templates/actor/actor-${this.actor.data.type}-sheet.html`;
+    return `systems/castles-and-crusades/templates/actor/actor-${this.actor.data.type}-sheet.html`;
   }
 
   /* -------------------------------------------- */

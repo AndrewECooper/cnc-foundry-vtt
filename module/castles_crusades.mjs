@@ -61,8 +61,9 @@ Handlebars.registerHelper('concat', function() {
       outStr += arguments[arg];
     }
   }
-  return outStr;
+  return outStr.trim();
 });
+
 
 Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
@@ -70,6 +71,18 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 
 Handlebars.registerHelper('localizeLowerCase', function(str) {
   return game.i18n.localize(str).toLowerCase();
+});
+
+Handlebars.registerHelper('toUpperCase', function (str) {
+  return str.toUpperCase();
+});
+
+Handlebars.registerHelper('localizeUpperCase', function (str) {
+  return game.i18n.localize(str).toUpperCase();
+});
+
+Handlebars.registerHelper('toCapitalCase', function (str) {
+  return str.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 });
 
 /* -------------------------------------------- */

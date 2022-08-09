@@ -28,7 +28,7 @@
   "minimumCoreVersion": "0.8.9",
   "compatibleCoreVersion": "9",
   "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/",
-  "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/main/system.json",
-  "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/archive/refs/heads/main.zip",
+  "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/v0.0.3/system.json",
+  "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/archive/v0.0.3/castles-and-crusades-v0.0.3.zip",
   "license": "LICENSE.txt"
 }

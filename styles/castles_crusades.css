@@ -102,7 +102,11 @@
 .game {
   font-family: "Soutane", "Century Gothic", "TeX Gyre Adventor", var(--font-primary);
 }
-
+#logo {
+  content: url("/systems/castles-and-crusades/assets/CnClogo.webp");
+  height: 100px;
+  width: 150px;
+}
 .rollable:hover, .rollable:focus {
   color: #000;
   text-shadow: 0 0 10px red;

@@ -12,5 +12,6 @@
     "systems/castles-and-crusades/templates/actor/parts/actor-items.html",
     "systems/castles-and-crusades/templates/actor/parts/actor-spells.html",
     "systems/castles-and-crusades/templates/actor/parts/actor-features.html",
+    "systems/castles-and-crusades/templates/actor/parts/monster-combat.html",
   ]);
 };

@@ -35,6 +35,10 @@
           "value": 30,
           "label": "TLGCC.Movement"
         },
+        "languages": {
+          "value": "",
+          "label": "TLGCC.languages"
+        },
         "saves": {
           "death": {
             "value": 13
@@ -196,6 +200,10 @@
       "treasureType": {
         "value": "None",
         "label": "TLGCC.TreasureType"
+      },
+      "type": {
+        "value": "",
+        "label": "TLGCC.monsterType"
       },
       "xp": {
         "value": 0,

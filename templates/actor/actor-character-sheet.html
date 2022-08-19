@@ -25,15 +25,13 @@
             <!-- -->
           </div>
         </div>
-
         <div class="resource flex-group-center">
-          <label for="data.xp.value" class="resource-label">{{localize data.xp.abbr}}&nbsp;/&nbsp;{{localize 'TLGCC.NextLevel'}}</label>
+          <label for="data.race.value" class="resource-label">{{localize data.race.label}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="data.xp.value" value="{{data.xp.value}}" data-dtype="Number"/>
-            <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
-            <input type="text" name="data.xp.next" value="{{data.xp.next}}" data-dtype="Number"/>
+            <input type="text" name="data.race.value" value="{{data.race.value}}" data-dtype="String"/>
           </div>
         </div>
+
       </div>
 </div>
 
@@ -42,7 +40,7 @@
   {{!-- Sheet Tab Navigation --}}
   <div class="sheet-header">
     <div class="header-fields">
-    <div class="resources grid grid-5col">
+    <div class="resources grid grid-6col">
       <div class="resource flex-group-center grid-span-2">
         <label for="data.background.value" class="resource-label">{{localize data.background.label}}  </label>
         <div class="resource-content flexrow flex-center flex-between">
@@ -60,6 +58,14 @@
     <div class="resource-content flexrow flex-center flex-between">
       <input type="text" name="data.alignment.value" value="{{data.alignment.value}}" data-dtype="String"/>
     </div>
+    </div>
+    <div class="resource flex-group-center">
+      <label for="data.xp.value" class="resource-label">{{localize data.xp.abbr}}&nbsp;/&nbsp;{{localize 'TLGCC.NextLevel'}}</label>
+      <div class="resource-content flexrow flex-center flex-between">
+        <input type="text" name="data.xp.value" value="{{data.xp.value}}" data-dtype="Number"/>
+        <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
+        <input type="text" name="data.xp.next" value="{{data.xp.next}}" data-dtype="Number"/>
+      </div>
     </div>
     </div></div></div>
     <nav class="sheet-tabs tabs" data-group="primary">

@@ -130,6 +130,10 @@
         "value": "",
         "label": "TLGCC.Race"
       },
+      "religion": {
+        "value": "",
+        "label": "TLGCC.Religion"
+      },
       "sex": {
         "value": "",
         "label": "TLGCC.Sex"

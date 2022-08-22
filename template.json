@@ -209,6 +209,10 @@
         "value": "",
         "label": "TLGCC.monsterType"
       },
+      "msaves": {
+        "value": "",
+        "label": "TLGCC.monsterSaves"
+      },
       "xp": {
         "value": 0,
         "label": "TLGCC.ExperiencePoints",

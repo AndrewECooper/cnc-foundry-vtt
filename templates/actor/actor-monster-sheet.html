@@ -22,13 +22,13 @@
             <span class="flexshrink flex-align-center"> </span>
             <input type="number" name="data.hitDice.mod" value="{{data.hitDice.mod}}" data-dtype="Number" sign="true"/>
           </div></div>
-          <div class="resource flex-group-center">
-            <label for="data.specialAbility.value" class="resource-label"> {{localize data.specialAbility.label}} </label>
-            <div class="resource-content flexrow flex-center flex-between">
-            <input type="number" name="data.specialAbility.value" value="{{data.specialAbility.value}}" data-dtype="Number"/>
-          </div>
+
+        <div class="resource flex-group-center">
+          <label for="data.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}" class="resource-label"><a class="rollable" data-roll="d20+{{data.hitDice.number}}" data-label="{{localize data.msaves.label}}: {{localize data.msaves.value}}"> {{localize data.msaves.label}}</a> </label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="data.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}" value="{{data.msaves.value}}" data-dtype="string"/>
         </div>
-        
+      </div>
       
       
         <div class="resource flex-group-center">

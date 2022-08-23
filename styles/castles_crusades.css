@@ -633,3 +633,9 @@
   font-weight: bold;
   font-size: 26px;
 }
+.tlgbackground {
+  background:
+    url("/systems/castles-and-crusades/assets/tlg_watermark.webp");
+    background-repeat: no-repeat;
+
+}

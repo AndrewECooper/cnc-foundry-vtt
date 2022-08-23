@@ -130,6 +130,10 @@
         "value": "",
         "label": "TLGCC.Race"
       },
+      "religion": {
+        "value": "",
+        "label": "TLGCC.Religion"
+      },
       "sex": {
         "value": "",
         "label": "TLGCC.Sex"
@@ -204,6 +208,10 @@
       "type": {
         "value": "",
         "label": "TLGCC.monsterType"
+      },
+      "msaves": {
+        "value": "",
+        "label": "TLGCC.monsterSaves"
       },
       "xp": {
         "value": 0,

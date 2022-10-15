@@ -9,7 +9,19 @@
 image: node:latest
 
 stages:
+  - lint
   - release
+
+lint:
+  stage: lint
+  only:
+    - develop
+    - main
+    - /(?:feature|bugfix|hotfix|release|support)\/[A-z,0-9,_,-]+/ # regex for gitflow
+  script:
+    - echo "linting code"
+    - npm install
+    - npm run lint
 
 release:
   image: registry.gitlab.com/gitlab-org/release-cli:latest

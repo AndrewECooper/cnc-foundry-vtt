@@ -9,7 +9,7 @@
     "maximum": "10"
   },
   "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/",
-  "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/0.0.7-alpha/system.json",
+  "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/system.json",
   "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/archive/0.0.7-alpha/castles-and-crusades-0.0.7-alpha.zip",
   "license": "LICENSE.txt",
   "authors": [

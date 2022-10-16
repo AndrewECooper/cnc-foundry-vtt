@@ -55,6 +55,10 @@ npm run lint
 npm run lint:fix
 ```
 
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
 ## License
 
 All software components are licensed under the MIT license - see _LICENSE.txt_ for details.

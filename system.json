@@ -8,6 +8,10 @@
     "verified": "9",
     "maximum": "10"
   },
+  "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/",
+  "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/0.0.5-alpha/system.json",
+  "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/archive/0.0.5-alpha/castles-and-crusades-0.0.5-alpha.zip",
+  "license": "LICENSE.txt",
   "authors": [
     { 
       "name": "Ken Taylor",
@@ -20,13 +24,9 @@
       "discord": "42datasquirrels#7292"
     }
   ],
-  "esmodules": [
-    "module/castles_crusades.mjs"
-  ],
-  "styles": [
-    "styles/castles_crusades.css"
-  ],
   "scripts": [],
+  "esmodules": ["module/castles_crusades.mjs"],
+  "styles": ["styles/castles_crusades.css"],
   "packs": [],
   "languages": [
     {
@@ -40,11 +40,5 @@
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "hitPoints",
-  "secondaryTokenAttribute": null,
-  "minimumCoreVersion": "0.8.9",
-  "compatibleCoreVersion": "9",
-  "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/",
-  "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/0.0.5-alpha/system.json",
-  "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/archive/0.0.5-alpha/castles-and-crusades-0.0.5-alpha.zip",
-  "license": "LICENSE.txt"
+  "secondaryTokenAttribute": null
 }

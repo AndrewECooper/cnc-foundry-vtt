@@ -35,7 +35,7 @@ release:
     tag_name: $CI_COMMIT_TAG
     name: "Release $CI_COMMIT_TAG"
     description: "Castles & Crusades FoundryVTT Game System $CI_COMMIT_TAG Release"
-    assets:
-      links:
-        - name: "system.json"
-          url: "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/$CI_COMMIT_TAG/system.json"
+    # assets:
+    #   links:
+    #     - name: "system.json"
+    #       url: "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/$CI_COMMIT_TAG/system.json"

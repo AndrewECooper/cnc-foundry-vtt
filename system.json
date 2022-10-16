@@ -4,8 +4,8 @@
   "description": "Troll Lord Games presents Castles & Crusades: The Role Playing Game for FoundryVTT! To learn about additional adventures please visit https://www.trolllord.com/",
   "version": "0.0.7-alpha",
   "compatibility": {
-    "minimum": "9",
-    "verified": "9",
+    "minimum": "10",
+    "verified": "10",
     "maximum": "10"
   },
   "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/",

@@ -2,7 +2,7 @@
   "id": "castles-and-crusades",
   "title": "Castles & Crusades: The Role Playing Game",
   "description": "Troll Lord Games presents Castles & Crusades: The Role Playing Game for FoundryVTT! To learn about additional adventures please visit https://www.trolllord.com/",
-  "version": "0.0.7-alpha",
+  "version": "0.0.8-alpha",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
@@ -14,14 +14,8 @@
   "license": "LICENSE.txt",
   "authors": [
     { 
-      "name": "Ken Taylor",
-      "url": "https://gitlab.com/KillerWabbit",
-      "discord": "KillerWabbit#3711"
-    },
-    {
-      "name": "Michael Pflugrad",
-      "url": "https://gitlab.com/42datasquirrels",
-      "discord": "42datasquirrels#7292"
+      "name": "Troll Lord Games",
+      "url": "https://trolllord.com/castles-crusades/"
     }
   ],
   "scripts": [],

@@ -340,7 +340,7 @@
         "label": "TLGCC.spellSummary"
       },
       "spellLevel": {
-        "value": 1,
+        "value": "",
         "label": "TLGCC.spellLevel"
       }
     },

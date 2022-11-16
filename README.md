@@ -4,7 +4,7 @@ The **Official** game system for playing [Castles & Crusades: The Role Playing G
 
 Castles & Crusades: The Roleplaying Game, is an easy to learn, fast paced fantasy role playing game suitable for novice and veteran gamers of all ages. With Castles & Crusades, these imaginings come to life as you play the role of a hero seeking adventure in a fantastic world populated by mythic creatures and legendary beasts. Or, as the Castle Keeper, you can design the worlds and stories that make up the game, guiding friends and fellow gamers through epic adventures in wondrous settings of your own making. **Join Us at the Table!**
 
-![Banner](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/assets/readme_banner.webp)
+![Banner](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/5fb14e71c5d56256536bf2986f31cef1e2d9ec1d/assets/readme_banner.webp)
 
 ## Installation
 
@@ -20,7 +20,7 @@ The following **official** modules are available:
 
 ## Features
 
-![Character Sheet](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/assets/readme_charactersheet_example.webp)
+![Character Sheet](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/5fb14e71c5d56256536bf2986f31cef1e2d9ec1d/assets/readme_charactersheet_example.webp)
 
 First when using the Character sheets think **Digital Paper** Many of the fields in the sheet do not have auto caculations enabled, Yet!
 - Character sheets for PCs

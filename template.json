@@ -17,6 +17,7 @@
           "abbr": "TLGCC.AttackBonusAbbr"
         },
         "biography": "",
+        "appearance": "",
         "hitPoints": {
           "value": 10,
           "max": 10,
@@ -137,6 +138,14 @@
       "sex": {
         "value": "",
         "label": "TLGCC.Sex"
+      },
+      "origin": {
+        "value": "",
+        "label": "TLGCC.Origin"
+      },
+      "height": {
+        "value": "",
+        "label": "TLGCC.Height"
       },
       "level": {
         "value": 1,

@@ -84,10 +84,10 @@
     <div class="tab combat" data-group="primary" data-tab="combat">
       <div class="grid grid-6col flexrow">
         {{#each data.abilities as |ability key|}}
-        <div class="ability abilitybox flex-group-center">
-          <label for="data.abilities.{{key}}.value" class="ability-label rollable flexlarge align-center" title="{{localize (concat 'TLGCC.Ability' (toCapitalCase key) 'Save') }}" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="{{ability.label}} Ability Save. <b>Prime: <em>{{ability.ccprimary}}</em></b>">{{ability.label}}</label><div class="break"></div>
-          <span class="abilityscore"><input style="width: 30px;" type="text" name="data.abilities.{{key}}.value" title="{{localize (concat 'TLGCC.Ability' (toCapitalCase key) 'Save') }}" value="{{ability.value}}" data-dtype="Number"/><span style="margin-left: 8px;" title="{{ localize 'TLGCC.AbilityCheck' }}" class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="{{ability.label}} Ability Check. <b>Prime: <em>{{ability.ccprimary}}</em></b>">{{numberFormat ability.bonus decimals=0 sign=true}} </span></span>
-          <span>{{{localize 'TLGCC.primeCheck'}}}<input style="margin-left: 5px; height: 13px;" type="checkbox" title="{{localize 'TLGCC.primeCheckhover'}}" name="data.abilities.{{key}}.ccprimary" {{checked ability.ccprimary}}/></span>
+        <div class="ability abilitybox flex-group-center" style="max-width:135px;">
+          <label for="data.abilities.{{key}}.value" class="ability-label rollable flexlarge align-center" title="{{localize 'TLGCC.AbilityCheck' }}" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="<b>{{ability.label}}</b> Ability CHECK. <br><b>Prime: <em>{{ability.ccprimary}}</em></b>">{{ability.label}}</label><div class="break"></div>
+          <span class="abilityscore"><input style="width: 30px;" type="text" name="data.abilities.{{key}}.value" title="{{localize (concat 'TLGCC.Ability' (toCapitalCase key) 'Save') }}" value="{{ability.value}}" data-dtype="Number"/><span style="margin-left: 8px;" title="{{localize (concat 'TLGCC.Ability' (toCapitalCase key) 'Save') }}" class="ability-mod ability-button rollable" data-roll="d20+@abilities.{{key}}.bonus+@level.value" data-label="<b>{{ability.label}}</b> Ability SAVE. <br><b>Prime: <em>{{ability.ccprimary}}</em></b>">{{numberFormat ability.bonus decimals=0 sign=true}} </span></span>
+          <span>{{{localize 'TLGCC.primeCheck'}}}<input style="margin: 5px 8px 3px; height: 13px;" type="checkbox" title="{{localize 'TLGCC.primeCheckhover'}}" name="data.abilities.{{key}}.ccprimary" {{checked ability.ccprimary}}/></span>
          </div>
         {{/each}}
       </div>

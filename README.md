@@ -1,5 +1,7 @@
 # Castles & Crusades for FoundryVTT
 
+[![Latest Release](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/badges/release.svg)](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases)
+[![pipeline status](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/badges/main/pipeline.svg)](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/commits/main)  
 This game system for [Foundry Virtual Tabletop](http://foundryvtt.com) provides character sheet and game system support for the Castles and Crusades roleplaying game by [Troll Lord Games](https://trolllord.com/).
 
 This system provides character sheet support for Actors and Items, mechanical support for dice and rules necessary to play games of Castles and Crusades using the SEIGE Engine.

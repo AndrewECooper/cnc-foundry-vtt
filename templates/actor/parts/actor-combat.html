@@ -3,7 +3,7 @@
   <div class="resource flex-group-center">
     <label for="data.armorClass.value" class="resource-label">{{localize data.armorClass.abbr}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="number" title="AC=10+Armor+Shield+Attribute Mod+Misc. Helmits are seperate!" name="data.armorClass.value" value="{{data.armorClass.value}}" data-dtype="Number"/>
+      <input type="number" title="{{localize 'TLGCC.ACtitle'}}" name="data.armorClass.value" value="{{data.armorClass.value}}" data-dtype="Number"/>
     </div>
   </div>
 
@@ -76,7 +76,7 @@
         </div>
         <h4>{{armor.name}}</h4>
       </div>
-      <div class="item-prop">{{localize armor.data.armorClass.abbr}} {{armor.data.armorClass.value}}</div>
+      <div class="item-prop">{{localize armor.data.armorClass.abbr}} +{{armor.data.armorClass.value}}</div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
         <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>

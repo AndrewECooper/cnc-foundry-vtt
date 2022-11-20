@@ -1,61 +1,42 @@
-# Castles & Crusades for FoundryVTT
+# Castles & Crusades: The Role Playing Game
 
 [![Latest Release](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/badges/release.svg)](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases)
 [![pipeline status](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/badges/main/pipeline.svg)](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/commits/main)  
-This game system for [Foundry Virtual Tabletop](http://foundryvtt.com) provides character sheet and game system support for the Castles and Crusades roleplaying game by [Troll Lord Games](https://trolllord.com/).
+The **Official** game system for playing [Castles & Crusades: The Role Playing Game](https://trolllord.com/castles-crusades/) on FoundryVTT.
 
-This system provides character sheet support for Actors and Items, mechanical support for dice and rules necessary to play games of Castles and Crusades using the SEIGE Engine.
+Castles & Crusades: The Roleplaying Game, is an easy to learn, fast paced fantasy role playing game suitable for novice and veteran gamers of all ages. With Castles & Crusades, these imaginings come to life as you play the role of a hero seeking adventure in a fantastic world populated by mythic creatures and legendary beasts. Or, as the Castle Keeper, you can design the worlds and stories that make up the game, guiding friends and fellow gamers through epic adventures in wondrous settings of your own making. **Join Us at the Table!**
 
-## Getting Started
+![Banner](https://raw.githubusercontent.com/42datasquirrels/castles_crusades/main/readme_banner.webp)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Installation
 
-### Prerequisites
+1. Inside Foundry's Configuration and Setup screen, go to **Game Systems**
+2. Click "Install System"
+3. In the Manifest URL field, found at the bottowm, paste: `https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/system.json`
 
-What things you need to install the software and how to install them
+## Official Modules
 
-* [FoundryVTT](http://foundryvtt.com) (v10+)
-* [Node.js](https://nodejs.org/en/) (v16+)
-* [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (latest version)
-* A programmers editor/IDE
+The following **official** modules are available:
 
-### Installing
+- [Castles & Crusades Quickstart Guide](https://gitlab.com/troll-lord/foundry-vtt/modules/castles-crusades-quickstart/-/raw/main/module.json)
 
-To install the project on windows, you will need to locate your FoundryVTT `data/systems` folder. This is typically `C:\Users\[USER]\AppData\Local\FoundryVTT\Data\systems\`
+## Features
 
-_Note: replace [USER] with your login name!_
+![Character Sheet](https://raw.githubusercontent.com/42datasquirrels/castles_crusades/main/readme_charactersheet_example.webp)
 
-Launch powershell or cmd and execute the following commands:
+First when using the Character sheets think **Digital Paper** Many of the fields in the sheet do not have auto caculations enabled, Yet!
+- Character sheets for PCs
+- Roll Ability Check and Saves
+- Can create Class Abilitys, Weapons, Gear, Armor and drag-n-drop onto character sheets.
+- Can click on weapons to roll with bonus modifiers
+- Track weight carried in the inventory tab
 
-```powershell
-# Change directory to the Foundry system data folder
-PS C:\Users\[USER]> cd AppData\Local\FoundryVTT\Data\systems\
-# Clone the Castles and Crusades FoundryVTT repo
-PS C:\Users\[USER]\AppData\Local\FoundryVTT\Data\systems> git clone git@gitlab.com:troll-lord/foundry-vtt/ruleset/castles-and-crusades.git
-```
+## How-Tos
+Coming soon!
 
-After the repository is cloned, install the development dependencies
+## Versioning
 
-```powershell
-# Change directory into the newly cloned repo
-PS C:\Users\[USER]\AppData\Local\FoundryVTT\Data\systems> cd castles-and-crusades
-# Install the node js dependencies
-PS C:\Users\[USER]\AppData\Local\FoundryVTT\Data\systems\castles-and-crusades> npm i
-```
-
-The development environment is now installed.
-
-## Running the tests
-
-### Coding style tests
-
-To lint the code, run the following from within the `castles-and-crusades` folder:
-
-```powershell
-npm run lint
-# or to fix linting issues: 
-npm run lint:fix
-```
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Versioning
 

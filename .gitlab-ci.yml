@@ -11,6 +11,7 @@ image: node:latest
 stages:
   - lint
   - release
+  - update_changelog
 
 lint:
   stage: lint
@@ -39,3 +40,16 @@ release:
     #   links:
     #     - name: "system.json"
     #       url: "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/$CI_COMMIT_TAG/system.json"
+
+update-changelog:
+  stage: update_changelog
+  needs: ["release"]
+  rules:
+    - if: $CI_COMMIT_TAG # Run this job when a tag is created
+  script: 
+    - latestVersion=$(git describe --tags --abbrev=0)
+    - currentVersion=$(grep -oP '(?<=VERSION ")([^"]*)' version.h)
+    - |
+      curl --header "PRIVATE-TOKEN: $PRIVATE_TOKEN" --data "version=$currentVersion&from=$latestVersion&to=main&branch=main" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/repository/changelog"
+  # only: 
+  #   - release

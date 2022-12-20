@@ -19,13 +19,20 @@ export class tlgccActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/castles-and-crusades/templates/actor/actor-${this.actor.data.type}-sheet.html`;
+    return `systems/castles-and-crusades/templates/actor/actor-${this.actor.type}-sheet.html`;
   }
 
   /* -------------------------------------------- */
+  async _enrichTextFields(data, fieldNameArr) {
+    for (let t = 0; t < fieldNameArr.length; t++) {
+      if (hasProperty(data, fieldNameArr[t])) {
+        setProperty(data, fieldNameArr[t], await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), { async: true }));
+      }
+    };
+  }
 
   /** @override */
-  getData() {
+  async getData() {
     // Retrieve the data structure from the base sheet. You can inspect or log
     // the context variable to see the structure, but some key properties for
     // sheets are the actor object, the data object, whether or not it's
@@ -33,10 +40,10 @@ export class tlgccActorSheet extends ActorSheet {
     const context = super.getData();
 
     // Use a safe clone of the actor data for further operations.
-    const actorData = this.actor.data.toObject(false);
+    const actorData = this.actor.toObject(false);
 
     // Add the actor's data to context.data for easier access, as well as flags.
-    context.data = actorData.data;
+    context.system = actorData.system;
     context.flags = actorData.flags;
 
     // Prepare character data and items.
@@ -44,12 +51,24 @@ export class tlgccActorSheet extends ActorSheet {
       this._prepareItems(context);
       this._prepareCharacterData(context);
       this._prepareActorData(context);
+
+      let enrichedFields = [
+        "system.appearance",
+        "system.biography",
+      ];
+      await this._enrichTextFields(context, enrichedFields);
+
     }
 
     // Prepare NPC data and items.
     if (actorData.type == "monster") {
       this._prepareItems(context);
       this._prepareActorData(context);
+      let enrichedFields = [
+        "system.biography",
+      ];
+      await this._enrichTextFields(context, enrichedFields);
+
     }
 
     // Add roll data for TinyMCE editors.
@@ -71,7 +90,7 @@ export class tlgccActorSheet extends ActorSheet {
    */
   _prepareActorData(context) {
     // Handle saves.
-    for (let [k, v] of Object.entries(context.data.saves)) {
+    for (let [k, v] of Object.entries(context.system.saves)) {
       v.label = game.i18n.localize(CONFIG.TLGCC.saves[k]) ?? k;
     }
   }
@@ -84,13 +103,13 @@ export class tlgccActorSheet extends ActorSheet {
    * @param context
    * @returns {undefined}
    */
-  _prepareCharacterData(context) {
+  async _prepareCharacterData(context) {
     // Handle ability scores.
-    for (let [k, v] of Object.entries(context.data.abilities)) {
+    for (let [k, v] of Object.entries(context.system.abilities)) {
       v.label = game.i18n.localize(CONFIG.TLGCC.abilities[k]) ?? k;
     }
     // Handle money.
-    for (let [k, v] of Object.entries(context.data.money)) {
+    for (let [k, v] of Object.entries(context.system.money)) {
       v.label = game.i18n.localize(CONFIG.TLGCC.money[k]) ?? k;
     }
   }
@@ -144,16 +163,16 @@ export class tlgccActorSheet extends ActorSheet {
       // Append to gear.
       if (i.type === "item") {
         gear.push(i);
-        carriedWeight._addWeight(i.data.weight.value, i.data.quantity.value);
+        carriedWeight._addWeight(i.system.weight.value, i.system.quantity.value);
       } else if (i.type === "weapon") { // Append to weapons.
         weapons.push(i);
-        carriedWeight._addWeight(i.data.weight.value, 1); // Weapons are always quantity 1
+        carriedWeight._addWeight(i.system.weight.value, 1); // Weapons are always quantity 1
       } else if (i.type === "armor") { // Append to armors.
         armors.push(i);
-        carriedWeight._addWeight(i.data.weight.value, 1); // Armor is always quantity 1
+        carriedWeight._addWeight(i.system.weight.value, 1); // Armor is always quantity 1
       } else if (i.type === "spell") { // Append to spells.
-        if (i.data.spellLevel.value != undefined) {
-          spells[i.data.spellLevel.value].push(i);
+        if (i.system.spellLevel.value != undefined) {
+          spells[i.system.spellLevel.value].push(i);
         }
       } else if (i.type === "feature") { // Append to features.
         features.push(i);
@@ -161,8 +180,8 @@ export class tlgccActorSheet extends ActorSheet {
     }
 
     // Iterate through money, add to carried weight
-    if (context.data.money) {
-      for (let [k, v] of Object.entries(context.data.money)) {
+    if (context.system.money) {
+      for (let [k, v] of Object.entries(context.system.money)) {
         carriedWeight._addWeight("*", v.value);
       }
     }
@@ -210,8 +229,8 @@ export class tlgccActorSheet extends ActorSheet {
       if (parseInt(change)) {
         const li = $(ev.currentTarget).parents(".item");
         const item = this.actor.items.get(li.data("itemId"));
-        let newValue = item.data.data.prepared.value + parseInt(change);
-        item.update({ "data.prepared.value": newValue });
+        let newValue = item.system.prepared.value + parseInt(change);
+        item.update({ "system.prepared.value": newValue });
       }
     });
 
@@ -232,39 +251,71 @@ export class tlgccActorSheet extends ActorSheet {
     }
   }
 
-  /**
-   * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  async _onItemCreate(event) {
+  // /**
+  //  * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
+  //  * @param {Event} event   The originating click event
+  //  * @private
+  //  */
+  // async _onItemCreate(event) {
+  //   event.preventDefault();
+  //   const header = event.currentTarget;
+  //   // Get the type of item to create.
+  //   const type = header.dataset.type;
+  //   // Grab any data associated with this control.
+  //   const system = duplicate(header.dataset);
+  //   debugger;
+  //   if (type === "spell") {
+  //     // Move dataset spellLevelValue into spellLevel.value
+  //     data.spellLevel = {
+  //       value: data.spellLevelValue,
+  //     };
+  //     delete data.spellLevelValue;
+  //   }
+  //   // Initialize a default name.
+  //   const name = `New ${type.capitalize()}`;
+  //   // Prepare the item object.
+  //   const itemData = {
+  //     name: name,
+  //     type: type,
+  //     system: system,
+  //   };
+  //   // Remove the type from the dataset since it's in the itemData.type prop.
+  //   delete itemData.system['type'];
+
+  //   // Finally, create the item!
+  //   // return await Item.create(itemData, { parent: this.actor });
+  //   return this.actor.createEmbeddedDocuments(itemData);
+
+  // }
+  _onItemCreate(event) {
     event.preventDefault();
-    const header = event.currentTarget;
-    // Get the type of item to create.
+    let header = event.currentTarget;
+    let data = duplicate(header.dataset);
     const type = header.dataset.type;
-    // Grab any data associated with this control.
-    const data = duplicate(header.dataset);
+
     if (type === "spell") {
       // Move dataset spellLevelValue into spellLevel.value
       data.spellLevel = {
-        value: data.spellLevelValue
+        value: data.spellLevelValue,
       };
       delete data.spellLevelValue;
     }
-    // Initialize a default name.
-    const name = `New ${type.capitalize()}`;
-    // Prepare the item object.
-    const itemData = {
-      name: name,
-      type: type,
-      data: data
-    };
-    // Remove the type from the dataset since it's in the itemData.type prop.
-    delete itemData.data.type;
 
-    // Finally, create the item!
-    return await Item.create(itemData, { parent: this.actor });
+    data['name'] = `New ${data.type.capitalize()}`;
+
+    let itemData = {
+      name: data["name"],
+      type: data.type,
+      system: foundry.utils.deepClone(data)
+    };
+
+    this.actor.createEmbeddedDocuments('Item', [itemData], { render: true }).then(item => {
+      // Automatically render the item sheet we just created
+      item[0].sheet.render(true);
+    });
+
   }
+
 
   /**
    * Handle clickable rolls.

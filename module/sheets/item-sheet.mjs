@@ -21,18 +21,24 @@ export class tlgccItemSheet extends ItemSheet {
 
     // Alternatively, you could use the following return statement to do a
     // unique item sheet by type, like `weapon-sheet.html`.
-    return `${path}/item-${this.item.data.type}-sheet.html`;
+    return `${path}/item-${this.item.type}-sheet.html`;
   }
 
   /* -------------------------------------------- */
+  async _enrichTextFields(data, fieldNameArr) {
+    for (let t = 0; t < fieldNameArr.length; t++) {
+      if (hasProperty(data, fieldNameArr[t])) {
+        setProperty(data, fieldNameArr[t], await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), { async: true }));
+      }
+    };
+  }
 
   /** @override */
-  getData() {
+  async getData() {
     // Retrieve base data structure.
     const context = super.getData();
-
     // Use a safe clone of the item data for further operations.
-    const itemData = context.item.data;
+    const itemData = context.item;
 
     // Retrieve the roll data for TinyMCE editors.
     context.rollData = {};
@@ -42,8 +48,14 @@ export class tlgccItemSheet extends ItemSheet {
     }
 
     // Add the actor's data to context.data for easier access, as well as flags.
-    context.data = itemData.data;
+    context.system = itemData.system;
     context.flags = itemData.flags;
+
+    let enrichedFields = [
+      "system.description",
+    ];
+    await this._enrichTextFields(context, enrichedFields);
+
 
     return context;
   }

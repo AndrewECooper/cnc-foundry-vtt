@@ -37,7 +37,7 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
     <div class="item-name">{{localize 'ITEM.TypeItem'}}</div>
-    <div class="item-detail">{{localize 'TLGCC.CarriedWeight'}}: {{carriedWeight}} lbs.</div>
+    <div class="item-detail">{{localize 'TLGCC.CarriedWeight'}}: {{carriedWeight}} {{localize 'TLGCC.WeightMeasure'}}</div>
     <div class="item-controls">
       <a class="item-control item-create" title="Create item" data-type="item"><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
     </div>
@@ -51,7 +51,7 @@
         <h4>{{item.data.quantity.value}} {{item.name}}</h4>
       </div>
       <div class="item-prop grid grid-2col">
-        <div class="flex-left align-right">{{item.data.weight.value}} lbs.</div>
+        <div class="flex-left align-right">{{item.data.weight.value}} {{localize 'TLGCC.WeightMeasure'}}</div>
         <div class="flex-right">{{item.data.price.value}}</div>
       </div>
       <div class="item-controls">

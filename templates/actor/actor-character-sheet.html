@@ -97,7 +97,7 @@
             <hr>
             {{#each data.resources as |resource key|}}
             <div class="ability flexrow flex-group-center">
-              <input class="flex-center" type="text" name="data.resources.{{key}}.name" value="{{resource.name}}" data-dtype="String" />
+              <input class="flex-center" type="text" name="data.resources.{{key}}.name" value="{{localize resource.name}}" data-dtype="String" />
               <input style="width: 30px;" class="flex-right" type="text" name="data.resources.{{key}}.value" value="{{resource.value}}"
                   data-dtype="Number" />
             </div>

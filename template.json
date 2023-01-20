@@ -59,23 +59,23 @@
         },
         "resources": {
           "first": {
-            "name": "Resource 1",
+            "name": "TLGCC.Resource1",
             "value": 0
           },
           "second": {
-            "name": "Resource 2",
+            "name": "TLGCC.Resource2",
             "value": 0
           },
           "third": {
-            "name": "Resource 3",
+            "name": "TLGCC.Resource3",
             "value": 0
           },
           "fourth": {
-            "name": "Resource 4",
+            "name": "TLGCC.Resource4",
             "value": 0
           },
           "fifth": {
-            "name": "Resource 5",
+            "name": "TLGCC.Resource5",
             "value": 0
           }
         }
@@ -281,7 +281,7 @@
         "abbr": "TLGCC.DamageAbbr"
       },
       "range": {
-        "value": "Melee",
+        "value": "TLGCC.Melee",
         "label": "TLGCC.Range"
       },
       "size": {
@@ -314,15 +314,15 @@
       },
       "savevalue": {
         "value": "",
-        "label": "TLGCC.savevalue"
+        "label": "TLGCC.SaveValue"
       },
       "spellresist": {
         "value": "",
-        "label": "TLGCC.spellresist"
+        "label": "TLGCC.SpellResistance"
       },
       "spellcomp": {
         "value": "",
-        "label": "TLGCC.Comp"
+        "label": "TLGCC.SpellComp"
       },
       "prepared": {
         "value": 0,

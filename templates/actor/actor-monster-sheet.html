@@ -15,7 +15,7 @@
         </div>
       </div>
         <div class="resource flex-group-center">
-          <label for="data.hitDice" class="resource-label"><a class="rollable" data-roll="{{data.hitDice.number}}{{data.hitDice.size}}+{{data.hitDice.mod}}" data-label="{{localize data.hitDice.label}}">HD Size  &nbsp;</a></label>
+          <label for="data.hitDice" class="resource-label"><a class="rollable" data-roll="{{data.hitDice.number}}{{data.hitDice.size}}+{{data.hitDice.mod}}" data-label="{{localize data.hitDice.label}}">{{localize 'TLGCC.monsterHitDice'}} &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="number" name="data.hitDice.number" value="{{data.hitDice.number}}" data-dtype="Number"/>
             <input type="text" name="data.hitDice.size" value="{{data.hitDice.size}}" data-dtype="String"/>
@@ -115,7 +115,7 @@
     </div>
     {{!-- Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
-    <div class="resource flex-group-center" ><h3 title="{{localize 'TLGCC.spellsKnownhover'}}">Spells Known</h3></div>
+    <div class="resource flex-group-center" ><h3 title="{{localize 'TLGCC.spellsKnownhover'}}">{{localize 'TLGCC.spellsKnown'}}</h3></div>
     <!--<section class="resources grid grid-10col">
      
       {{#each data.spellsPerLevel.value as |spellsPerLevel level|}}

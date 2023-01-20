@@ -5,7 +5,7 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'TLGCC.Name'}}"/></h1>
       <div class="grid grid-5col">
         <div class="resource">
-          <label for="data.cast.value" class="resource-label">Cast Time</label>
+          <label for="data.cast.value" class="resource-label">{{localize data.cast.label}}</label>
           <input type="text" name="data.cast.value" value="{{data.cast.value}}" data-dtype="String"/>
         </div>
 
@@ -19,23 +19,23 @@
           <input type="text" name="data.duration.value" value="{{data.duration.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spell.spelllevel" class="resource-label">Level</label>
+          <label for="data.spell.spelllevel" class="resource-label">{{localize data.spellLevel.label}}</label>
           <input type="text" name="data.spell.spelllevel" value="{{data.spell.spelllevel}}" data-dtype="Number"/>
         </div>
         <div class="resource">
-          <label for="data.savevalue.value" class="resource-label">SV</label>
+          <label for="data.savevalue.value" class="resource-label">{{localize data.savevalue.label}}</label>
           <input type="text" name="data.savevalue.value" value="{{data.savevalue.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spellresist.value" class="resource-label">SR</label>
+          <label for="data.spellresist.value" class="resource-label">{{localize data.spellresist.label}}</label>
           <input type="text" name="data.spellresist.value" value="{{data.spellresist.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spellcomp.value" class="resource-label">Comp.</label>
+          <label for="data.spellcomp.value" class="resource-label">{{localize data.spellcomp.label}}</label>
           <input type="text" name="data.spellcomp.value" value="{{data.spellcomp.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spelldmg.value" class="resource-label">Damage</label>
+          <label for="data.spelldmg.value" class="resource-label">{{localize data.spelldmg.label}}</label>
           <input type="text" name="data.spelldmg.value" value="{{data.spelldmg.value}}" data-dtype="String"/>
         </div>
         
@@ -44,7 +44,7 @@
           <input type="number" name="data.prepared.value" value="{{data.prepared.value}}" data-dtype="Number"/>
         </div>
         <div class="resource grid-span-3">
-          <label for="data.component.value" class="resource-label">Components</label>
+          <label for="data.component.value" class="resource-label">{{localize data.component.label}}</label>
           <input type="text" name="data.component.value" value="{{data.component.value}}" data-dtype="String"/>
         </div>
         <div class="resource grid-span-2">

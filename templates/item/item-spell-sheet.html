@@ -1,74 +1,77 @@
 <form class="{{cssClass}}" autocomplete="off">
   <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'TLGCC.Name'}}"/></h1>
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'TLGCC.Name'}}" /></h1>
       <div class="grid grid-5col">
         <div class="resource">
-          <label for="data.cast.value" class="resource-label">{{localize data.cast.label}}</label>
-          <input type="text" name="data.cast.value" value="{{data.cast.value}}" data-dtype="String"/>
+          <label for="system.cast.value" class="resource-label">{{localize system.cast.label}}</label>
+          <input type="text" name="system.cast.value" value="{{system.cast.value}}" data-dtype="String"/>
         </div>
 
         <div class="resource">
-          <label for="data.range.value" class="resource-label">{{localize data.range.label}}</label>
-          <input type="text" name="data.range.value" value="{{data.range.value}}" data-dtype="String"/>
+          <label for="system.range.value" class="resource-label">{{localize system.range.label}}</label>
+          <input type="text" name="system.range.value" value="{{system.range.value}}" data-dtype="String" />
         </div>
 
         <div class="resource grid-span-2">
-          <label for="data.duration.value" class="resource-label">{{localize data.duration.label}}</label>
-          <input type="text" name="data.duration.value" value="{{data.duration.value}}" data-dtype="String"/>
+          <label for="system.duration.value" class="resource-label">{{localize system.duration.label}}</label>
+          <input type="text" name="system.duration.value" value="{{system.duration.value}}" data-dtype="String" />
         </div>
         <div class="resource">
-          <label for="data.spell.spelllevel" class="resource-label">{{localize data.spellLevel.label}}</label>
-          <input type="text" name="data.spell.spelllevel" value="{{data.spell.spelllevel}}" data-dtype="Number"/>
+          <label for="system.spell.spelllevel" class="resource-label">{{localize system.spellLevel.label}}</label>
+          <input type="text" name="system.spell.spelllevel" value="{{system.spell.spelllevel}}" data-dtype="Number"/>
         </div>
         <div class="resource">
-          <label for="data.savevalue.value" class="resource-label">{{localize data.savevalue.label}}</label>
-          <input type="text" name="data.savevalue.value" value="{{data.savevalue.value}}" data-dtype="String"/>
+          <label for="system.savevalue.value" class="resource-label">{{localize system.savevalue.label}}</label>
+          <input type="text" name="system.savevalue.value" value="{{system.savevalue.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spellresist.value" class="resource-label">{{localize data.spellresist.label}}</label>
-          <input type="text" name="data.spellresist.value" value="{{data.spellresist.value}}" data-dtype="String"/>
+          <label for="system.spellresist.value" class="resource-label">{{localize system.spellresist.label}}</label>
+          <input type="text" name="system.spellresist.value" value="{{system.spellresist.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spellcomp.value" class="resource-label">{{localize data.spellcomp.label}}</label>
-          <input type="text" name="data.spellcomp.value" value="{{data.spellcomp.value}}" data-dtype="String"/>
+          <label for="system.spellcomp.value" class="resource-label">{{localize system.spellcomp.label}}</label>
+          <input type="text" name="system.spellcomp.value" value="{{system.spellcomp.value}}" data-dtype="String"/>
         </div>
         <div class="resource">
-          <label for="data.spelldmg.value" class="resource-label">{{localize data.spelldmg.label}}</label>
-          <input type="text" name="data.spelldmg.value" value="{{data.spelldmg.value}}" data-dtype="String"/>
+          <label for="system.spelldmg.value" class="resource-label">{{localize system.spelldmg.label}}</label>
+          <input type="text" name="system.spelldmg.value" value="{{system.spelldmg.value}}" data-dtype="String"/>
         </div>
-        
+
         <div class="resource">
-          <label for="data.prepared.value" class="resource-label">{{localize data.prepared.label}}</label>
-          <input type="number" name="data.prepared.value" value="{{data.prepared.value}}" data-dtype="Number"/>
+          <label for="system.prepared.value" class="resource-label">{{localize system.prepared.label}}</label>
+          <input type="number" name="system.prepared.value" value="{{system.prepared.value}}" data-dtype="Number" />
         </div>
         <div class="resource grid-span-3">
-          <label for="data.component.value" class="resource-label">{{localize data.component.label}}</label>
-          <input type="text" name="data.component.value" value="{{data.component.value}}" data-dtype="String"/>
+          <label for="system.component.value" class="resource-label">{{localize system.component.label}}</label>
+          <input type="text" name="system.component.value" value="{{system.component.value}}" data-dtype="String"/>
         </div>
         <div class="resource grid-span-2">
-          <label for="data.class.value" class="resource-label">{{localize data.class.label}}</label>
-          <input type="text" name="data.class.value" value="{{data.class.value}}" data-dtype="String"/>
+          <label for="system.class.value" class="resource-label">{{localize system.class.label}}</label>
+          <input type="text" name="system.class.value" value="{{system.class.value}}" data-dtype="String" />
         </div>
 
       </div>
     </div>
-    
+
   </header>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
     <div class="grid grid-2col">
-      <div class="resource grid-span-2">      
-    <label for="data.spell.summary" class="resource-label">{{localize 'TLGCC.spellSummary'}}</label>
-          <input type="text" name="data.spell.summary" value="{{data.spell.summary}}" data-dtype="String"/></div></div>
+      <div class="resource grid-span-2">
+        <label for="system.spell.summary" class="resource-label">{{localize 'TLGCC.spellSummary'}}</label>
+        <input type="text" name="system.spell.summary" value="{{system.spell.summary}}" data-dtype="String" />
+      </div>
+    </div>
     {{!-- Description Tab --}}
     <div class="description">
       <h2 title="Click the pencil icon at far right to edit. !!Note Please place full spell data below until we get roll data working">Spell Description - Hover for important alert</h2>
-      {{editor content=data.description target="data.description" rollData=rollData button=true owner=owner editable=editable}}
+      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
   </section>
+  {{log "CONTEXT!!!!"}} {{log this}}
 
 </form>

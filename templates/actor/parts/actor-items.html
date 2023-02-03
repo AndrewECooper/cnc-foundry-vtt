@@ -1,32 +1,32 @@
 <section class="resources grid grid-6col">
 
   <div class="resource flex-group-center">
-    <label for="data.money.pp.value" class="resource-label">{{data.money.pp.label}}</label>
+    <label for="system.money.pp.value" class="resource-label">{{system.money.pp.label}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="data.money.pp.value" value="{{data.money.pp.value}}" data-dtype="String"/>
+      <input type="text" name="system.money.pp.value" value="{{system.money.pp.value}}" data-dtype="String" />
     </div>
   </div>
 
   <div class="resource flex-group-center">
-    <label for="data.money.gp.value" class="resource-label">{{data.money.gp.label}}</label>
+    <label for="system.money.gp.value" class="resource-label">{{system.money.gp.label}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="data.money.gp.value" value="{{data.money.gp.value}}" data-dtype="String"/>
+      <input type="text" name="system.money.gp.value" value="{{system.money.gp.value}}" data-dtype="String" />
     </div>
   </div>
 
-  
+
 
   <div class="resource flex-group-center">
-    <label for="data.money.sp.value" class="resource-label">{{data.money.sp.label}}</label>
+    <label for="system.money.sp.value" class="resource-label">{{system.money.sp.label}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="data.money.sp.value" value="{{data.money.sp.value}}" data-dtype="String"/>
+      <input type="text" name="system.money.sp.value" value="{{system.money.sp.value}}" data-dtype="String" />
     </div>
   </div>
 
   <div class="resource flex-group-center">
-    <label for="data.money.cp.value" class="resource-label">{{data.money.cp.label}}</label>
+    <label for="system.money.cp.value" class="resource-label">{{system.money.cp.label}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="data.money.cp.value" value="{{data.money.cp.value}}" data-dtype="String"/>
+      <input type="text" name="system.money.cp.value" value="{{system.money.cp.value}}" data-dtype="String" />
     </div>
   </div>
 
@@ -46,13 +46,13 @@
     <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name">
         <div class="item-image">
-          <a class="rollable" data-roll-type="item"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
+          <a class="rollable" data-roll-type="item"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24" /></a>
         </div>
-        <h4>{{item.data.quantity.value}} {{item.name}}</h4>
+        <h4>{{item.system.quantity.value}} {{item.name}}</h4>
       </div>
       <div class="item-prop grid grid-2col">
-        <div class="flex-left align-right">{{item.data.weight.value}} {{localize 'TLGCC.WeightMeasure'}}</div>
-        <div class="flex-right">{{item.data.price.value}}</div>
+        <div class="flex-left align-right">{{item.system.weight.value}} {{localize 'TLGCC.WeightMeasure'}}</div>
+        <div class="flex-right">{{item.system.price.value}}</div>
       </div>
       <div class="item-controls">
         <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>

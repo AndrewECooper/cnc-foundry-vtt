@@ -2,7 +2,7 @@
   "id": "castles-and-crusades",
   "title": "Castles & Crusades: The Role Playing Game",
   "description": "Troll Lord Games presents Castles &amp; Crusades: The Role Playing Game for FoundryVTT! To learn about additional adventures please visit https://www.trolllord.com/",
-  "version": "0.0.8-beta",
+  "version": "0.0.9-beta",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
@@ -10,7 +10,7 @@
   },
   "url": "https://trolllord.com/castles-crusades/",
   "manifest": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/system.json",
-  "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/archive/0.0.8-beta/castles-and-crusades-0.0.8-beta.zip",
+  "download": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/archive/0.0.9-beta/castles-and-crusades-0.0.9-beta.zip",
   "license": "LICENSE.txt",
   "authors": [
     {

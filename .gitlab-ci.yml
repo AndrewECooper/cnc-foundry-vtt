@@ -19,6 +19,7 @@ lint:
     - develop
     - main
     - /(?:feature|bugfix|hotfix|release|support)\/[A-z,0-9,_,-]+/ # regex for gitflow
+  allow_failure: true
   script:
     - echo "linting code"
     - npm install

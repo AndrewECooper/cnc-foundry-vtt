@@ -28,7 +28,7 @@ export class tlgccActorSheet extends ActorSheet {
       if (hasProperty(data, fieldNameArr[t])) {
         setProperty(data, fieldNameArr[t], await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), { async: true }));
       }
-    };
+    }
   }
 
   /** @override */
@@ -54,7 +54,7 @@ export class tlgccActorSheet extends ActorSheet {
 
       let enrichedFields = [
         "system.appearance",
-        "system.biography",
+        "system.biography"
       ];
       await this._enrichTextFields(context, enrichedFields);
 
@@ -65,7 +65,7 @@ export class tlgccActorSheet extends ActorSheet {
       this._prepareItems(context);
       this._prepareActorData(context);
       let enrichedFields = [
-        "system.biography",
+        "system.biography"
       ];
       await this._enrichTextFields(context, enrichedFields);
 
@@ -296,20 +296,20 @@ export class tlgccActorSheet extends ActorSheet {
     if (type === "spell") {
       // Move dataset spellLevelValue into spellLevel.value
       data.spellLevel = {
-        value: data.spellLevelValue,
+        value: data.spellLevelValue
       };
       delete data.spellLevelValue;
     }
 
-    data['name'] = `New ${data.type.capitalize()}`;
+    data.name = `New ${data.type.capitalize()}`;
 
     let itemData = {
-      name: data["name"],
+      name: data.name,
       type: data.type,
       system: foundry.utils.deepClone(data)
     };
 
-    this.actor.createEmbeddedDocuments('Item', [itemData], { render: true }).then(item => {
+    this.actor.createEmbeddedDocuments("Item", [itemData], { render: true }).then(item => {
       // Automatically render the item sheet we just created
       item[0].sheet.render(true);
     });

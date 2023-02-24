@@ -99,7 +99,7 @@ export class tlgccActor extends Actor {
     if (actorData.type !== "monster") return;
 
     const data = actorData.system;
-    /*     data.xp.value = function() {
+    /*     Data.xp.value = function() {
           let xpLookup = [10, 25, 75, 145, 240, 360, 500, 670, 875, 1075, 1300, 1575, 1875, 2175, 2500, 2850, 3250, 3600, 4000, 4500, 5250, 6000, 6750, 7500, 8250, 9000];
           let specialAbilityLookup = [3, 12, 25, 30, 40, 45, 55, 65, 70, 75, 90, 95, 100, 110, 115, 125, 135, 145, 160, 175, 200, 225, 250, 275, 300, 325];
           let xpValue = 0;

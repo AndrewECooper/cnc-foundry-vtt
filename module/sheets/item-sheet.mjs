@@ -30,7 +30,7 @@ export class tlgccItemSheet extends ItemSheet {
       if (hasProperty(data, fieldNameArr[t])) {
         setProperty(data, fieldNameArr[t], await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), { async: true }));
       }
-    };
+    }
   }
 
   /** @override */
@@ -52,7 +52,7 @@ export class tlgccItemSheet extends ItemSheet {
     context.flags = itemData.flags;
 
     let enrichedFields = [
-      "system.description",
+      "system.description"
     ];
     await this._enrichTextFields(context, enrichedFields);
 

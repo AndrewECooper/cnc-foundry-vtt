@@ -21,7 +21,7 @@ export class tlgccItem extends Item {
     // If present, return the actor's roll data.
     if (!this.actor) return null;
     const rollData = this.actor.getRollData();
-    rollData.item = foundry.utils.deepClone(this.data.data);
+    rollData.item = foundry.utils.deepClone(this.system);
 
     return rollData;
   }

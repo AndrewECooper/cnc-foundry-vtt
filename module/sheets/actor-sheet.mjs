@@ -334,14 +334,14 @@ export class tlgccActorSheet extends ActorSheet {
         const item = this.actor.items.get(itemId);
         let label = dataset.label ? `Roll: ${dataset.label}` : `Roll: ${dataset.attack.capitalize()} attack with ${item.name}`;
         let rollFormula = "d20+@ab";
-        if (this.actor.data.type == "character") {
+        if (this.type === "character") {
           if (dataset.attack == "melee") {
             rollFormula += "+@str.bonus";
           } else if (dataset.attack == "ranged") {
             rollFormula += "+@dex.bonus";
           }
         }
-        rollFormula += `+${item.data.data.bonusAb.value}`;
+        rollFormula += `+${item.system.bonusAb.value}`;
         let roll = new Roll(rollFormula, this.actor.getRollData());
         roll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor: this.actor }),

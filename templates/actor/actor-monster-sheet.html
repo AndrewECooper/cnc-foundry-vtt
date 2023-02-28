@@ -125,24 +125,27 @@
     {{!-- Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
     <div class="resource flex-group-center" ><h3 title="{{localize 'TLGCC.spellsKnownhover'}}">{{localize 'TLGCC.spellsKnown'}}</h3></div>
-    <!--<section class="resources grid grid-10col">
+<!--
+    <section class="resources grid grid-10col">
      
       {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
-      <div class="resource flex-group-center">
-        <h3 title="{{localize 'TLGCC.spellsKnownhover'}}">Spells Known</h3>
-      </div>
-      <!--<section class="resources grid grid-10col">
-     
-      {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
-      <div class="resource flex-group-center">
-        <label for="system.spellsPerLevel.{{level}}" class="resource-label">{{level}}</label>
-        <div class="resource-content flexrow flex-center flex-between">
-          <input type="number" name="system.spellsPerLevel.value.{{level}}" value="{{spellsPerLevel}}" data-dtype="Number"/>
+        <div class="resource flex-group-center">
+         <h3 title="{{localize 'TLGCC.spellsKnownhover'}}">Spells Known</h3>
         </div>
-      </div>
+      {{/each}} 
+    </section>
+    <section class="resources grid grid-10col">
+      {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
+        <div class="resource flex-group-center">
+            <label for="system.spellsPerLevel.{{level}}" class="resource-label">{{level}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="number" name="system.spellsPerLevel.value.{{level}}" value="{{spellsPerLevel}}" data-dtype="Number"/>
+          </div>
+        </div>
       {{/each}}
     
-    </section> -->
+    </section> 
+-->
 
       <ol class="items-list">
         {{#each spells as |spells spellLevel|}}

@@ -2,7 +2,7 @@
   "id": "castles-and-crusades",
   "title": "Castles & Crusades: The Role Playing Game",
   "description": "Troll Lord Games presents Castles &amp; Crusades: The Role Playing Game for FoundryVTT! To learn about additional adventures please visit https://www.trolllord.com/",
-  "version": "0.0.9-beta",
+  "version": "0.0.10-beta",
   "compatibility": {
     "minimum": "10",
     "verified": "10",

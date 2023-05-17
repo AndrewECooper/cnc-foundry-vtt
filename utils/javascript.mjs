@@ -7,7 +7,6 @@ import nodeResolve from "@rollup/plugin-node-resolve";
 import { rollup } from "rollup";
 import yargs from "yargs";
 
-
 /**
  * Parsed arguments passed in through the command line.
  * @type {object}
@@ -29,17 +28,16 @@ const LINTING_PATHS = ["./module/"];
 async function compileJavascript() {
   const bundle = await rollup({
     input: "./castles_crusades.mjs",
-    plugins: [nodeResolve()]
+    plugins: [nodeResolve()],
   });
   await bundle.write({
     file: "./castles_crusades-compiled.mjs",
     format: "es",
     sourcemap: true,
-    sourcemapFile: "castles_crusades.mjs"
+    sourcemapFile: "castles_crusades.mjs",
   });
 }
 export const compile = compileJavascript;
-
 
 /**
  * Lint javascript sources and optionally applies fixes.
@@ -49,15 +47,22 @@ export const compile = compileJavascript;
  */
 function lintJavascript() {
   const applyFixes = !!parsedArgs.fix;
-  const tasks = LINTING_PATHS.map(path => {
+  const tasks = LINTING_PATHS.map((path) => {
     const src = path.endsWith("/") ? `${path}**/*.mjs` : path;
-    const dest = path.endsWith("/") ? path : `${path.split("/").slice(0, -1).join("/")}/`;
+    const dest = path.endsWith("/")
+      ? path
+      : `${path.split("/").slice(0, -1).join("/")}/`;
     return gulp
       .src(src)
       .pipe(eslint({ fix: applyFixes }))
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
-      .pipe(gulpIf(file => file.eslint != null && file.eslint.fixed, gulp.dest(dest)));
+      .pipe(
+        gulpIf(
+          (file) => file.eslint != null && file.eslint.fixed,
+          gulp.dest(dest)
+        )
+      );
   });
   return mergeStream(tasks);
 }

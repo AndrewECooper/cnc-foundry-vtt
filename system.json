@@ -19,12 +19,8 @@
       "flags": {}
     }
   ],
-  "esmodules": [
-    "module/castles_crusades.mjs"
-  ],
-  "styles": [
-    "styles/castles_crusades.css"
-  ],
+  "esmodules": ["module/castles_crusades.mjs"],
+  "styles": ["styles/castles_crusades.css"],
   "languages": [
     {
       "lang": "en",
@@ -32,7 +28,7 @@
       "path": "lang/en.json",
       "flags": {}
     },
-	    {
+    {
       "lang": "es",
       "name": "Español",
       "path": "lang/es.json",

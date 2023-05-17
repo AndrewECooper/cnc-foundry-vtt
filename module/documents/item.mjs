@@ -37,7 +37,9 @@ export class tlgccItem extends Item {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    const label = `Roll: ${game.i18n.localize(`ITEM.Type${item.type.capitalize()}`)} - ${item.name}`;
+    const label = `Roll: ${game.i18n.localize(
+      `ITEM.Type${item.type.capitalize()}`
+    )} - ${item.name}`;
 
     // If there's no roll data, or the formula is empty, send a chat message.
     if (!this.system.formula || !this.system.formula.value) {
@@ -45,9 +47,10 @@ export class tlgccItem extends Item {
         speaker: speaker,
         rollMode: rollMode,
         flavor: label,
-        content: item.system.description ?? ""
+        content: item.system.description ?? "",
       });
-    } else { // Otherwise, create a roll and send a chat message from it.
+    } else {
+      // Otherwise, create a roll and send a chat message from it.
       // Retrieve roll data.
       const rollData = this.getRollData();
 
@@ -58,7 +61,7 @@ export class tlgccItem extends Item {
       roll.toMessage({
         speaker: speaker,
         rollMode: rollMode,
-        flavor: label
+        flavor: label,
       });
       return roll;
     }

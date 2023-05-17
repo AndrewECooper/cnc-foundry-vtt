@@ -3,7 +3,6 @@
  * @extends {Actor}
  */
 export class tlgccActor extends Actor {
-
   /** @override */
   prepareData() {
     // Prepare data for the actor. Calling the super version of this executes
@@ -62,32 +61,44 @@ export class tlgccActor extends Actor {
    */
   _calculateAbilityBonus(abilityScore) {
     switch (abilityScore) {
-      case 1: return -4;
+      case 1:
+        return -4;
       case 2:
-      case 3: return -3;
+      case 3:
+        return -3;
       case 4:
-      case 5: return -2;
+      case 5:
+        return -2;
       case 6:
       case 7:
-      case 8: return -1;
+      case 8:
+        return -1;
       case 9:
       case 10:
       case 11:
-      case 12: return 0;
+      case 12:
+        return 0;
       case 13:
       case 14:
-      case 15: return 1;
+      case 15:
+        return 1;
       case 16:
-      case 17: return 2;
+      case 17:
+        return 2;
       case 18:
-      case 19: return 3;
+      case 19:
+        return 3;
       case 20:
-      case 21: return 4;
+      case 21:
+        return 4;
       case 22:
-      case 23: return 5;
+      case 23:
+        return 5;
       case 24:
-      case 25: return 6;
-      default: return 0;
+      case 25:
+        return 6;
+      default:
+        return 0;
     }
   }
 
@@ -99,7 +110,8 @@ export class tlgccActor extends Actor {
     if (actorData.type !== "monster") return;
 
     const data = actorData.system;
-    /*     Data.xp.value = function() {
+    /*     
+    Data.xp.value = function() {
           let xpLookup = [10, 25, 75, 145, 240, 360, 500, 670, 875, 1075, 1300, 1575, 1875, 2175, 2500, 2850, 3250, 3600, 4000, 4500, 5250, 6000, 6750, 7500, 8250, 9000];
           let specialAbilityLookup = [3, 12, 25, 30, 40, 45, 55, 65, 70, 75, 90, 95, 100, 110, 115, 125, 135, 145, 160, 175, 200, 225, 250, 275, 300, 325];
           let xpValue = 0;
@@ -112,10 +124,10 @@ export class tlgccActor extends Actor {
             xpSpecialAbilityBonus = specialAbilityLookup[0] * data.specialAbility.value;
           }
           return xpValue + xpSpecialAbilityBonus;
-        }; */
+        }; 
+    */
 
     data.attackBonus.value = this._calculateMonsterAttackBonus();
-
   }
 
   /**
@@ -126,30 +138,39 @@ export class tlgccActor extends Actor {
       return 0;
     }
     switch (this.system.hitDice.number) {
-      case 9: return 8;
+      case 9:
+        return 8;
       case 10:
-      case 11: return 9;
+      case 11:
+        return 9;
       case 12:
-      case 13: return 10;
+      case 13:
+        return 10;
       case 14:
-      case 15: return 11;
+      case 15:
+        return 11;
       case 16:
       case 17:
       case 18:
-      case 19: return 12;
+      case 19:
+        return 12;
       case 20:
       case 21:
       case 22:
-      case 23: return 13;
+      case 23:
+        return 13;
       case 24:
       case 25:
       case 26:
-      case 27: return 14;
+      case 27:
+        return 14;
       case 28:
       case 29:
       case 30:
-      case 31: return 15;
-      default: return this.system.hitDice.number;
+      case 31:
+        return 15;
+      default:
+        return this.system.hitDice.number;
     }
   }
 
@@ -196,7 +217,6 @@ export class tlgccActor extends Actor {
     if (this.type !== "monster") return;
 
     // Process additional NPC data here.
-
   }
 
   /**

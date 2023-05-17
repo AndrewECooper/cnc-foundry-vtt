@@ -8,7 +8,6 @@ import path from "path";
 import through2 from "through2";
 import yargs from "yargs";
 
-
 /**
  * Parsed arguments passed in through the command line.
  * @type {object}
@@ -34,7 +33,6 @@ const PACK_SRC = "packs/src";
  */
 const DB_CACHE = {};
 
-
 /* ----------------------------------------- */
 /*  Clean Packs
 /* ----------------------------------------- */
@@ -50,7 +48,8 @@ function cleanPackEntry(data, { clearSourceId = true } = {}) {
   if (clearSourceId) delete data.flags?.core?.sourceId;
   delete data.flags?.importSource;
   delete data.flags?.exportSource;
-  if (data._stats?.lastModifiedBy) data._stats.lastModifiedBy = "cncbuilder0000";
+  if (data._stats?.lastModifiedBy)
+    data._stats.lastModifiedBy = "cncbuilder0000";
 
   // Remove empty entries in flags
   if (!data.flags) data.flags = {};
@@ -58,13 +57,15 @@ function cleanPackEntry(data, { clearSourceId = true } = {}) {
     if (Object.keys(contents).length === 0) delete data.flags[key];
   });
 
-  if (data.effects) data.effects.forEach(i => cleanPackEntry(i, { clearSourceId: false }));
-  if (data.items) data.items.forEach(i => cleanPackEntry(i, { clearSourceId: false }));
-  if (data.system?.description?.value) data.system.description.value = cleanString(data.system.description.value);
+  if (data.effects)
+    data.effects.forEach((i) => cleanPackEntry(i, { clearSourceId: false }));
+  if (data.items)
+    data.items.forEach((i) => cleanPackEntry(i, { clearSourceId: false }));
+  if (data.system?.description?.value)
+    data.system.description.value = cleanString(data.system.description.value);
   if (data.label) data.label = cleanString(data.label);
   if (data.name) data.name = cleanString(data.name);
 }
-
 
 /**
  * Attempts to find an existing matching ID for an item of this name, otherwise generates a new unique ID.
@@ -97,7 +98,10 @@ function determineId(data, pack) {
  * @returns {string}    The cleaned string.
  */
 function cleanString(str) {
-  return str.replace(/\u2060/gu, "").replace(/[‘’]/gu, "'").replace(/[“”]/gu, '"');
+  return str
+    .replace(/\u2060/gu, "")
+    .replace(/[‘’]/gu, "'")
+    .replace(/[“”]/gu, '"');
 }
 
 /**
@@ -111,29 +115,33 @@ function cleanString(str) {
 function cleanPacks() {
   const packName = parsedArgs.pack;
   const entryName = parsedArgs.name?.toLowerCase();
-  const folders = fs.readdirSync(PACK_SRC, { withFileTypes: true }).filter(file =>
-    file.isDirectory() && (!packName || (packName === file.name))
-  );
+  const folders = fs
+    .readdirSync(PACK_SRC, { withFileTypes: true })
+    .filter(
+      (file) => file.isDirectory() && (!packName || packName === file.name)
+    );
 
-  const packs = folders.map(folder => {
+  const packs = folders.map((folder) => {
     logger.info(`Cleaning pack ${folder.name}`);
-    return gulp.src(path.join(PACK_SRC, folder.name, "/**/*.json"))
-      .pipe(through2.obj(async (file, enc, callback) => {
+    return gulp.src(path.join(PACK_SRC, folder.name, "/**/*.json")).pipe(
+      through2.obj(async (file, enc, callback) => {
         const json = JSON.parse(file.contents.toString());
         const name = json.name.toLowerCase();
-        if (entryName && (entryName !== name)) return callback(null, file);
+        if (entryName && entryName !== name) return callback(null, file);
         cleanPackEntry(json);
         if (!json._id) json._id = await determineId(json, folder.name);
         fs.rmSync(file.path, { force: true });
-        fs.writeFileSync(file.path, `${JSON.stringify(json, null, 2)}\n`, { mode: 0o664 });
+        fs.writeFileSync(file.path, `${JSON.stringify(json, null, 2)}\n`, {
+          mode: 0o664,
+        });
         callback(null, file);
-      }));
+      })
+    );
   });
 
   return mergeStream(packs);
 }
 export const clean = cleanPacks;
-
 
 /* ----------------------------------------- */
 /*  Compile Packs
@@ -148,32 +156,37 @@ export const clean = cleanPacks;
 function compilePacks() {
   const packName = parsedArgs.pack;
   // Determine which source folders to process
-  const folders = fs.readdirSync(PACK_SRC, { withFileTypes: true }).filter(file =>
-    file.isDirectory() && (!packName || (packName === file.name))
-  );
+  const folders = fs
+    .readdirSync(PACK_SRC, { withFileTypes: true })
+    .filter(
+      (file) => file.isDirectory() && (!packName || packName === file.name)
+    );
 
-  const packs = folders.map(folder => {
+  const packs = folders.map((folder) => {
     const filePath = path.join(PACK_DEST, `${folder.name}.db`);
     fs.rmSync(filePath, { force: true });
     const db = fs.createWriteStream(filePath, { flags: "a", mode: 0o664 });
     const data = [];
     logger.info(`Compiling pack ${folder.name}`);
-    return gulp.src(path.join(PACK_SRC, folder.name, "/**/*.json"))
-      .pipe(through2.obj((file, enc, callback) => {
-        const json = JSON.parse(file.contents.toString());
-        cleanPackEntry(json);
-        data.push(json);
-        callback(null, file);
-      }, callback => {
-        data.sort((lhs, rhs) => lhs._id > rhs._id ? 1 : -1);
-        data.forEach(entry => db.write(`${JSON.stringify(entry)}\n`));
-        callback();
-      }));
+    return gulp.src(path.join(PACK_SRC, folder.name, "/**/*.json")).pipe(
+      through2.obj(
+        (file, enc, callback) => {
+          const json = JSON.parse(file.contents.toString());
+          cleanPackEntry(json);
+          data.push(json);
+          callback(null, file);
+        },
+        (callback) => {
+          data.sort((lhs, rhs) => (lhs._id > rhs._id ? 1 : -1));
+          data.forEach((entry) => db.write(`${JSON.stringify(entry)}\n`));
+          callback();
+        }
+      )
+    );
   });
   return mergeStream(packs);
 }
 export const compile = compilePacks;
-
 
 /* ----------------------------------------- */
 /*  Extract Packs
@@ -189,36 +202,47 @@ export const compile = compilePacks;
 function extractPacks() {
   const packName = parsedArgs.pack ?? "*";
   const entryName = parsedArgs.name?.toLowerCase();
-  const packs = gulp.src(`${PACK_DEST}/**/${packName}.db`)
-    .pipe(through2.obj((file, enc, callback) => {
+  const packs = gulp.src(`${PACK_DEST}/**/${packName}.db`).pipe(
+    through2.obj((file, enc, callback) => {
       const filename = path.parse(file.path).name;
       const folder = path.join(PACK_SRC, filename);
-      if (!fs.existsSync(folder)) fs.mkdirSync(folder, { recursive: true, mode: 0o775 });
+      if (!fs.existsSync(folder))
+        fs.mkdirSync(folder, { recursive: true, mode: 0o775 });
 
       const db = new Datastore({ filename: file.path, autoload: true });
       db.loadDatabase();
 
       db.find({}, (err, entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           const name = entry.name.toLowerCase();
-          if (entryName && (entryName !== name)) return;
+          if (entryName && entryName !== name) return;
           cleanPackEntry(entry);
           const output = `${JSON.stringify(entry, null, 2)}\n`;
-          const outputName = name.replace("'", "").replace(/[^a-z0-9]+/gi, " ").trim().replace(/\s+|-{2,}/g, "-");
-          const subfolder = path.join(folder, _getSubfolderName(entry, filename));
-          if (!fs.existsSync(subfolder)) fs.mkdirSync(subfolder, { recursive: true, mode: 0o775 });
-          fs.writeFileSync(path.join(subfolder, `${outputName}.json`), output, { mode: 0o664 });
+          const outputName = name
+            .replace("'", "")
+            .replace(/[^a-z0-9]+/gi, " ")
+            .trim()
+            .replace(/\s+|-{2,}/g, "-");
+          const subfolder = path.join(
+            folder,
+            _getSubfolderName(entry, filename)
+          );
+          if (!fs.existsSync(subfolder))
+            fs.mkdirSync(subfolder, { recursive: true, mode: 0o775 });
+          fs.writeFileSync(path.join(subfolder, `${outputName}.json`), output, {
+            mode: 0o664,
+          });
         });
       });
 
       logger.info(`Extracting pack ${filename}`);
       callback(null, file);
-    }));
+    })
+  );
 
   return mergeStream(packs);
 }
 export const extract = extractPacks;
-
 
 /**
  * Determine a subfolder name based on which pack is being extracted.
@@ -231,7 +255,8 @@ function _getSubfolderName(data, pack) {
   switch (pack) {
     // Items should be grouped by type
     case "items":
-      if ((data.type === "consumable") && data.system.consumableType) return data.system.consumableType;
+      if (data.type === "consumable" && data.system.consumableType)
+        return data.system.consumableType;
       return data.type;
 
     // Monsters should be grouped by CR
@@ -245,6 +270,7 @@ function _getSubfolderName(data, pack) {
       if (data.system.level === 0) return "cantrip";
       return `level-${data.system.level}`;
 
-    default: return "";
+    default:
+      return "";
   }
 }

@@ -12,10 +12,11 @@ const argv = await yargs(hideBin(process.argv))
   .help()
   .parse();
 
-const manifest = await readFile(manifestPath, "utf-8");
+const rawManifest = await readFile(manifestPath, "utf-8");
+const manifest = JSON.parse(rawManifest);
 
 const newManifest = {
-  version: getSystemVersion(manifest, argv),
+  version: getSystemVersion(),
   manifest: argv.manifest ?? manifest.manifest,
   download: argv.download ?? manifest.download,
 };
@@ -23,11 +24,15 @@ const newManifest = {
 console.log(chalk.blue.bold("Updating system.json with following data:"));
 console.table(newManifest);
 
-await writeFile(manifestPath, JSON.stringify(newManifest, null, 2), {
+manifest.version = newManifest.version;
+manifest.manifest = newManifest.manifest;
+manifest.download = newManifest.download;
+
+await writeFile(manifestPath, JSON.stringify(manifest, null, 2), {
   encoding: "utf-8",
 });
 
-function getSystemVersion(manifest, argv) {
+function getSystemVersion() {
   const commitSha = process.env.CI_COMMIT_SHORT_SHA;
   const tag = process.env.CI_COMMIT_TAG;
   if (!tag && commitSha) {

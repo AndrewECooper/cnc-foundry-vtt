@@ -3,7 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 
-const manifestPath = "src/system.json";
+const manifestPath = "./system.json";
 
 const argv = await yargs(hideBin(process.argv))
   .option("systemVersion")

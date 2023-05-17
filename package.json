@@ -24,8 +24,7 @@
     "check:lint": "eslint --ext .ts,.js,.mjs .",
     "lint": "gulp lint",
     "lint:fix": "gulp lint --fix",
-    "prepare": "npx husky install",
-    "pretty-staged": "pretty-quick --staged --patern '**/*.!(hbs)'"
+    "pretty-staged": "pretty-quick --staged --pattern '**/*.!(hbs)'"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.4",
@@ -39,7 +38,6 @@
     "gulp-eslint-new": "^1.6.0",
     "gulp-if": "^3.0.0",
     "gulp-less": "^5.0.0",
-    "husk": "^0.5.3",
     "merge-stream": "^2.0.0",
     "nedb": "^1.8.0",
     "path": "^0.12.7",

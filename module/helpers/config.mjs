@@ -27,7 +27,7 @@ TLGCC.abilities = {
   con: "TLGCC.AbilityCon",
   int: "TLGCC.AbilityInt",
   wis: "TLGCC.AbilityWis",
-  cha: "TLGCC.AbilityCha"
+  cha: "TLGCC.AbilityCha",
 };
 preLocalize("abilities");
 
@@ -37,7 +37,7 @@ TLGCC.abilityAbbreviations = {
   con: "TLGCC.AbilityConAbbr",
   int: "TLGCC.AbilityIntAbbr",
   wis: "TLGCC.AbilityWisAbbr",
-  cha: "TLGCC.AbilityChaAbbr"
+  cha: "TLGCC.AbilityChaAbbr",
 };
 preLocalize("abilityAbbreviations");
 
@@ -47,7 +47,7 @@ TLGCC.abilitySave = {
   con: "TLGCC.AbilityConSave",
   int: "TLGCC.AbilityIntSave",
   wis: "TLGCC.AbilityWisSave",
-  cha: "TLGCC.AbilityChaSave"
+  cha: "TLGCC.AbilityChaSave",
 };
 preLocalize("abilitySave");
 
@@ -61,7 +61,7 @@ TLGCC.saves = {
   wands: "TLGCC.SaveWands",
   paralysis: "TLGCC.SaveParalysis",
   breath: "TLGCC.SaveBreath",
-  spells: "TLGCC.SaveSpells"
+  spells: "TLGCC.SaveSpells",
 };
 preLocalize("saves");
 
@@ -73,6 +73,6 @@ TLGCC.money = {
   pp: "TLGCC.Platinum",
   gp: "TLGCC.Gold",
   sp: "TLGCC.Silver",
-  cp: "TLGCC.Copper"
+  cp: "TLGCC.Copper",
 };
 preLocalize("money");

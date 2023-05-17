@@ -8,16 +8,21 @@ export function onManageActiveEffect(event, owner) {
   event.preventDefault();
   const a = event.currentTarget;
   const li = a.closest("li");
-  const effect = li.dataset.effectId ? owner.effects.get(li.dataset.effectId) : null;
+  const effect = li.dataset.effectId
+    ? owner.effects.get(li.dataset.effectId)
+    : null;
   switch (a.dataset.action) {
     case "create":
-      return owner.createEmbeddedDocuments("ActiveEffect", [{
-        label: "New Effect",
-        icon: "icons/svg/aura.svg",
-        origin: owner.uuid,
-        "duration.rounds": li.dataset.effectType === "temporary" ? 1 : undefined,
-        disabled: li.dataset.effectType === "inactive"
-      }]);
+      return owner.createEmbeddedDocuments("ActiveEffect", [
+        {
+          label: "New Effect",
+          icon: "icons/svg/aura.svg",
+          origin: owner.uuid,
+          "duration.rounds":
+            li.dataset.effectType === "temporary" ? 1 : undefined,
+          disabled: li.dataset.effectType === "inactive",
+        },
+      ]);
     case "edit":
       return effect.sheet.render(true);
     case "delete":
@@ -33,24 +38,23 @@ export function onManageActiveEffect(event, owner) {
  * @returns {object}                   Data for rendering
  */
 export function prepareActiveEffectCategories(effects) {
-
   // Define effect header categories
   const categories = {
     temporary: {
       type: "temporary",
       label: "Temporary Effects",
-      effects: []
+      effects: [],
     },
     passive: {
       type: "passive",
       label: "Passive Effects",
-      effects: []
+      effects: [],
     },
     inactive: {
       type: "inactive",
       label: "Inactive Effects",
-      effects: []
-    }
+      effects: [],
+    },
   };
 
   // Iterate over active effects, classifying them into categories

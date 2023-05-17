@@ -1,9 +1,6 @@
 {
   "Actor": {
-    "types": [
-      "character",
-      "monster"
-    ],
+    "types": ["character", "monster"],
     "templates": {
       "base": {
         "armorClass": {
@@ -59,32 +56,30 @@
         },
         "resources": {
           "first": {
-            "name": "Resource 1",
+            "name": "TLGCC.Resource1",
             "value": 0
           },
           "second": {
-            "name": "Resource 2",
+            "name": "TLGCC.Resource2",
             "value": 0
           },
           "third": {
-            "name": "Resource 3",
+            "name": "TLGCC.Resource3",
             "value": 0
           },
           "fourth": {
-            "name": "Resource 4",
+            "name": "TLGCC.Resource4",
             "value": 0
           },
           "fifth": {
-            "name": "Resource 5",
+            "name": "TLGCC.Resource5",
             "value": 0
           }
         }
       }
     },
     "character": {
-      "templates": [
-        "base"
-      ],
+      "templates": ["base"],
       "abilities": {
         "str": {
           "value": 10,
@@ -188,9 +183,7 @@
       }
     },
     "monster": {
-      "templates": [
-        "base"
-      ],
+      "templates": ["base"],
       "hitDice": {
         "size": "d8",
         "number": 1,
@@ -230,13 +223,7 @@
     }
   },
   "Item": {
-    "types": [
-      "item",
-      "weapon",
-      "armor",
-      "spell",
-      "feature"
-    ],
+    "types": ["item", "weapon", "armor", "spell", "feature"],
     "templates": {
       "base": {
         "description": ""
@@ -257,20 +244,14 @@
       }
     },
     "item": {
-      "templates": [
-        "base",
-        "valuable"
-      ],
+      "templates": ["base", "valuable"],
       "quantity": {
         "value": 1,
         "label": "TLGCC.Quantity"
       }
     },
     "weapon": {
-      "templates": [
-        "base",
-        "valuable"
-      ],
+      "templates": ["base", "valuable"],
       "bonusAb": {
         "value": 0,
         "label": "TLGCC.BonusAttackBonus"
@@ -281,7 +262,7 @@
         "abbr": "TLGCC.DamageAbbr"
       },
       "range": {
-        "value": "Melee",
+        "value": "TLGCC.Melee",
         "label": "TLGCC.Range"
       },
       "size": {
@@ -290,10 +271,7 @@
       }
     },
     "armor": {
-      "templates": [
-        "base",
-        "valuable"
-      ],
+      "templates": ["base", "valuable"],
       "armorClass": {
         "value": 11,
         "label": "TLGCC.ArmorClass",
@@ -301,9 +279,7 @@
       }
     },
     "spell": {
-      "templates": [
-        "base"
-      ],
+      "templates": ["base"],
       "class": {
         "value": "",
         "label": "TLGCC.Class"
@@ -314,15 +290,15 @@
       },
       "savevalue": {
         "value": "",
-        "label": "TLGCC.savevalue"
+        "label": "TLGCC.SaveValue"
       },
       "spellresist": {
         "value": "",
-        "label": "TLGCC.spellresist"
+        "label": "TLGCC.SpellResistance"
       },
       "spellcomp": {
         "value": "",
-        "label": "TLGCC.Comp"
+        "label": "TLGCC.SpellComp"
       },
       "prepared": {
         "value": 0,
@@ -354,9 +330,7 @@
       }
     },
     "feature": {
-      "templates": [
-        "base"
-      ],
+      "templates": ["base"],
       "formula": {
         "value": "d100",
         "label": "TLGCC.Formula"

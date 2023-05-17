@@ -24,7 +24,7 @@
     "check:lint": "eslint --ext .ts,.js,.mjs .",
     "lint": "gulp lint",
     "lint:fix": "gulp lint --fix",
-    "prepare": "husky install",
+    "prepare": "npx husky install",
     "pretty-staged": "pretty-quick --staged --patern '**/*.!(hbs)'"
   },
   "devDependencies": {

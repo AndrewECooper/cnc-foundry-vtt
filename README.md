@@ -12,13 +12,13 @@ Castles & Crusades: The Roleplaying Game, is an easy to learn, fast paced fantas
 
 1. Inside Foundry's Configuration and Setup screen, go to **Game Systems**
 2. Click "Install System"
-3. In the Manifest URL field, found at the bottowm, paste: `https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/system.json`
+3. In the Manifest URL field, found at the bottom, paste: `https://gitlab.com/api/v4/projects/36291450/packages/generic/castles-and-crusades/latest/system.json`
 
 ## Official Modules
 
 The following **official** modules are available:
 
-- [Castles & Crusades Quickstart Guide](https://gitlab.com/troll-lord/foundry-vtt/modules/castles-crusades-quickstart/-/raw/main/module.json)
+- [Castles & Crusades Quickstart Guide](https://gitlab.com/api/v4/projects/40459621/packages/generic/castles-crusades-quickstart/latest/module.json)
 
 ## Features
 

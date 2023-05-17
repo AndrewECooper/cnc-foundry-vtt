@@ -61,7 +61,7 @@ publish-artifacts:
     - apk update
     - apk add zip curl
   script: |
-    zip -r ./$PACKAGE_ARCHIVE.zip .
+    zip -r ./$PACKAGE_ARCHIVE.zip . -x ".git" ".husky" ".npm" "utils" "node_modules" ".git*"
     curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file $PACKAGE_ARCHIVE.zip "$PACKAGE_REGISTRY_URL/$CI_COMMIT_TAG/$PACKAGE_ARCHIVE.zip"
     curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file $PACKAGE_TYPE.json "$PACKAGE_REGISTRY_URL/$CI_COMMIT_TAG/$PACKAGE_TYPE.json"
   rules:

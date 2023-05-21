@@ -1,12 +1,12 @@
 /**
  * Extend the basic ItemSheet with some very simple modifications
- * @extends {ItemSheet}
+ * @augments {ItemSheet}
  */
 export class tlgccItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["tlgcc", "sheet", "item"],
+      classes: ['tlgcc', 'sheet', 'item'],
       width: 520,
       height: 480,
     });
@@ -14,7 +14,7 @@ export class tlgccItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/castles-and-crusades/templates/item";
+    const path = 'systems/castles-and-crusades/templates/item';
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 
@@ -32,7 +32,7 @@ export class tlgccItemSheet extends ItemSheet {
           fieldNameArr[t],
           await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), {
             async: true,
-          })
+          }),
         );
       }
     }
@@ -56,7 +56,7 @@ export class tlgccItemSheet extends ItemSheet {
     context.system = itemData.system;
     context.flags = itemData.flags;
 
-    let enrichedFields = ["system.description"];
+    let enrichedFields = ['system.description'];
     await this._enrichTextFields(context, enrichedFields);
 
     return context;

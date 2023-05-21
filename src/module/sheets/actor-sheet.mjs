@@ -1,25 +1,25 @@
 import {
   onManageActiveEffect,
   prepareActiveEffectCategories,
-} from "../helpers/effects.mjs";
+} from '../helpers/effects.mjs';
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
- * @extends {ActorSheet}
+ * @augments {ActorSheet}
  */
 export class tlgccActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["tlgcc", "sheet", "actor"],
-      template: "systems/castles-and-crusades/templates/actor/actor-sheet.html",
+      classes: ['tlgcc', 'sheet', 'actor'],
+      template: 'systems/castles-and-crusades/templates/actor/actor-sheet.html',
       width: 780,
       height: 600,
       tabs: [
         {
-          navSelector: ".sheet-tabs",
-          contentSelector: ".sheet-body",
-          initial: "combat",
+          navSelector: '.sheet-tabs',
+          contentSelector: '.sheet-body',
+          initial: 'combat',
         },
       ],
     });
@@ -39,7 +39,7 @@ export class tlgccActorSheet extends ActorSheet {
           fieldNameArr[t],
           await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), {
             async: true,
-          })
+          }),
         );
       }
     }
@@ -61,20 +61,20 @@ export class tlgccActorSheet extends ActorSheet {
     context.flags = actorData.flags;
 
     // Prepare character data and items.
-    if (actorData.type == "character") {
+    if (actorData.type == 'character') {
       this._prepareItems(context);
       this._prepareCharacterData(context);
       this._prepareActorData(context);
 
-      let enrichedFields = ["system.appearance", "system.biography"];
+      let enrichedFields = ['system.appearance', 'system.biography'];
       await this._enrichTextFields(context, enrichedFields);
     }
 
     // Prepare NPC data and items.
-    if (actorData.type == "monster") {
+    if (actorData.type == 'monster') {
       this._prepareItems(context);
       this._prepareActorData(context);
-      let enrichedFields = ["system.biography"];
+      let enrichedFields = ['system.biography'];
       await this._enrichTextFields(context, enrichedFields);
     }
 
@@ -89,9 +89,7 @@ export class tlgccActorSheet extends ActorSheet {
 
   /**
    * Organize and classify Items for Actor sheets.
-   *
    * @param {object} actorData The actor to prepare.
-   *
    * @param context
    * @returns {undefined}
    */
@@ -104,9 +102,7 @@ export class tlgccActorSheet extends ActorSheet {
 
   /**
    * Organize and classify Items for Character sheets.
-   *
    * @param {object} actorData The actor to prepare.
-   *
    * @param context
    * @returns {undefined}
    */
@@ -123,9 +119,7 @@ export class tlgccActorSheet extends ActorSheet {
 
   /**
    * Organize and classify Items for Character sheets.
-   *
    * @param {object} actorData The actor to prepare.
-   *
    * @param context
    * @returns {undefined}
    */
@@ -154,7 +148,7 @@ export class tlgccActorSheet extends ActorSheet {
       _addWeight(moreWeight, quantity) {
         if (
           !quantity ||
-          quantity == "" ||
+          quantity == '' ||
           Number.isNaN(quantity) ||
           quantity < 0
         ) {
@@ -163,7 +157,7 @@ export class tlgccActorSheet extends ActorSheet {
         let q = Math.floor(quantity / 10);
         if (!Number.isNaN(parseFloat(moreWeight))) {
           this.value += parseFloat(moreWeight) * quantity;
-        } else if (moreWeight === "*" && q > 0) {
+        } else if (moreWeight === '*' && q > 0) {
           this.value += q;
         }
       },
@@ -173,26 +167,26 @@ export class tlgccActorSheet extends ActorSheet {
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
       // Append to gear.
-      if (i.type === "item") {
+      if (i.type === 'item') {
         gear.push(i);
         carriedWeight._addWeight(
           i.system.weight.value,
-          i.system.quantity.value
+          i.system.quantity.value,
         );
-      } else if (i.type === "weapon") {
+      } else if (i.type === 'weapon') {
         // Append to weapons.
         weapons.push(i);
         carriedWeight._addWeight(i.system.weight.value, 1); // Weapons are always quantity 1
-      } else if (i.type === "armor") {
+      } else if (i.type === 'armor') {
         // Append to armors.
         armors.push(i);
         carriedWeight._addWeight(i.system.weight.value, 1); // Armor is always quantity 1
-      } else if (i.type === "spell") {
+      } else if (i.type === 'spell') {
         // Append to spells.
         if (i.system.spellLevel.value != undefined) {
           spells[i.system.spellLevel.value].push(i);
         }
-      } else if (i.type === "feature") {
+      } else if (i.type === 'feature') {
         // Append to features.
         features.push(i);
       }
@@ -201,7 +195,7 @@ export class tlgccActorSheet extends ActorSheet {
     // Iterate through money, add to carried weight
     if (context.system.money) {
       for (let [k, v] of Object.entries(context.system.money)) {
-        carriedWeight._addWeight("*", v.value);
+        carriedWeight._addWeight('*', v.value);
       }
     }
 
@@ -221,9 +215,9 @@ export class tlgccActorSheet extends ActorSheet {
     super.activateListeners(html);
 
     // Render the item sheet for viewing/editing prior to the editable check.
-    html.find(".item-edit").click((ev) => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
+    html.find('.item-edit').click((ev) => {
+      const li = $(ev.currentTarget).parents('.item');
+      const item = this.actor.items.get(li.data('itemId'));
       item.sheet.render(true);
     });
 
@@ -232,42 +226,42 @@ export class tlgccActorSheet extends ActorSheet {
     if (!this.isEditable) return;
 
     // Add Inventory Item
-    html.find(".item-create").click(this._onItemCreate.bind(this));
+    html.find('.item-create').click(this._onItemCreate.bind(this));
 
     // Delete Inventory Item
-    html.find(".item-delete").click((ev) => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
+    html.find('.item-delete').click((ev) => {
+      const li = $(ev.currentTarget).parents('.item');
+      const item = this.actor.items.get(li.data('itemId'));
       item.delete();
       li.slideUp(200, () => this.render(false));
     });
 
     // Prepare Spells
-    html.find(".spell-prepare").click((ev) => {
+    html.find('.spell-prepare').click((ev) => {
       const change = event.currentTarget.dataset.change;
       if (parseInt(change)) {
-        const li = $(ev.currentTarget).parents(".item");
-        const item = this.actor.items.get(li.data("itemId"));
+        const li = $(ev.currentTarget).parents('.item');
+        const item = this.actor.items.get(li.data('itemId'));
         let newValue = item.system.prepared.value + parseInt(change);
-        item.update({ "system.prepared.value": newValue });
+        item.update({ 'system.prepared.value': newValue });
       }
     });
 
     // Active Effect management
     html
-      .find(".effect-control")
+      .find('.effect-control')
       .click((ev) => onManageActiveEffect(ev, this.actor));
 
     // Rollable abilities.
-    html.find(".rollable").click(this._onRoll.bind(this));
+    html.find('.rollable').click(this._onRoll.bind(this));
 
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = (ev) => this._onDragStart(ev);
-      html.find("li.item").each((i, li) => {
-        if (li.classList.contains("inventory-header")) return;
-        li.setAttribute("draggable", true);
-        li.addEventListener("dragstart", handler, false);
+      html.find('li.item').each((i, li) => {
+        if (li.classList.contains('inventory-header')) return;
+        li.setAttribute('draggable', true);
+        li.addEventListener('dragstart', handler, false);
       });
     }
   }
@@ -314,7 +308,7 @@ export class tlgccActorSheet extends ActorSheet {
     let data = duplicate(header.dataset);
     const type = header.dataset.type;
 
-    if (type === "spell") {
+    if (type === 'spell') {
       // Move dataset spellLevelValue into spellLevel.value
       data.spellLevel = {
         value: data.spellLevelValue,
@@ -331,7 +325,7 @@ export class tlgccActorSheet extends ActorSheet {
     };
 
     this.actor
-      .createEmbeddedDocuments("Item", [itemData], { render: true })
+      .createEmbeddedDocuments('Item', [itemData], { render: true })
       .then((item) => {
         // Automatically render the item sheet we just created
         item[0].sheet.render(true);
@@ -350,18 +344,18 @@ export class tlgccActorSheet extends ActorSheet {
 
     if (dataset.rollType) {
       // Handle weapon rolls. TODO: this could be moved into the item.roll() function instead
-      if (dataset.rollType == "weapon") {
-        const itemId = element.closest(".item").dataset.itemId;
+      if (dataset.rollType == 'weapon') {
+        const itemId = element.closest('.item').dataset.itemId;
         const item = this.actor.items.get(itemId);
         let label = dataset.label
           ? `Roll: ${dataset.label}`
           : `Roll: ${dataset.attack.capitalize()} attack with ${item.name}`;
-        let rollFormula = "d20+@ab";
-        if (this.type === "character") {
-          if (dataset.attack == "melee") {
-            rollFormula += "+@str.bonus";
-          } else if (dataset.attack == "ranged") {
-            rollFormula += "+@dex.bonus";
+        let rollFormula = 'd20+@ab';
+        if (this.type === 'character') {
+          if (dataset.attack == 'melee') {
+            rollFormula += '+@str.bonus';
+          } else if (dataset.attack == 'ranged') {
+            rollFormula += '+@dex.bonus';
           }
         }
         rollFormula += `+${item.system.bonusAb.value}`;
@@ -369,14 +363,14 @@ export class tlgccActorSheet extends ActorSheet {
         roll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor: this.actor }),
           flavor: label,
-          rollMode: game.settings.get("core", "rollMode"),
+          rollMode: game.settings.get('core', 'rollMode'),
         });
         return roll;
       }
 
       // Handle item rolls.
-      if (dataset.rollType == "item") {
-        const itemId = element.closest(".item").dataset.itemId;
+      if (dataset.rollType == 'item') {
+        const itemId = element.closest('.item').dataset.itemId;
         const item = this.actor.items.get(itemId);
         if (item) return item.roll();
       }
@@ -384,12 +378,12 @@ export class tlgccActorSheet extends ActorSheet {
 
     // Handle rolls that supply the formula directly.
     if (dataset.roll) {
-      let label = dataset.label ? `Roll: ${dataset.label}` : "";
+      let label = dataset.label ? `Roll: ${dataset.label}` : '';
       let roll = new Roll(dataset.roll, this.actor.getRollData());
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         flavor: label,
-        rollMode: game.settings.get("core", "rollMode"),
+        rollMode: game.settings.get('core', 'rollMode'),
       });
       return roll;
     }

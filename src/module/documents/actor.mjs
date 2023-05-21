@@ -1,6 +1,6 @@
 /**
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
- * @extends {Actor}
+ * @augments {Actor}
  */
 export class tlgccActor extends Actor {
   /** @override */
@@ -43,7 +43,7 @@ export class tlgccActor extends Actor {
    * @param actorData
    */
   _prepareCharacterData(actorData) {
-    if (actorData.type !== "character") return;
+    if (actorData.type !== 'character') return;
 
     // Make modifications to data here. For example:
     const data = actorData.system;
@@ -107,7 +107,7 @@ export class tlgccActor extends Actor {
    * @param actorData
    */
   _prepareMonsterData(actorData) {
-    if (actorData.type !== "monster") return;
+    if (actorData.type !== 'monster') return;
 
     const data = actorData.system;
     /*     
@@ -193,7 +193,7 @@ export class tlgccActor extends Actor {
    * @param data
    */
   _getCharacterRollData(data) {
-    if (this.type !== "character") return;
+    if (this.type !== 'character') return;
 
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.bonus + 4`.
@@ -214,7 +214,7 @@ export class tlgccActor extends Actor {
    * @param data
    */
   _getMonsterRollData(data) {
-    if (this.type !== "monster") return;
+    if (this.type !== 'monster') return;
 
     // Process additional NPC data here.
   }

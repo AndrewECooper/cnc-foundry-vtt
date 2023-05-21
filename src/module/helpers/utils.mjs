@@ -32,11 +32,11 @@ export function sortObjectEntries(obj, sortKey) {
  * @returns {object}     Document's index if one could be found.
  */
 export function indexFromUuid(uuid) {
-  const parts = uuid.split(".");
+  const parts = uuid.split('.');
   let index;
 
   // Compendium Documents
-  if (parts[0] === "Compendium") {
+  if (parts[0] === 'Compendium') {
     const [, scope, packName, id] = parts;
     const pack = game.packs.get(`${scope}.${packName}`);
     index = pack?.index.get(id);
@@ -67,11 +67,11 @@ export function _linkForUuid(uuid) {
   let link;
 
   if (!index) {
-    link = `@Item[${uuid}]{${game.i18n.localize("DND5E.Unknown")}}`;
-  } else if (uuid.startsWith("Compendium.")) {
+    link = `@Item[${uuid}]{${game.i18n.localize('DND5E.Unknown')}}`;
+  } else if (uuid.startsWith('Compendium.')) {
     link = `@Compendium[${uuid.slice(11)}]{${index.name}}`;
   } else {
-    const [type, id] = uuid.split(".");
+    const [type, id] = uuid.split('.');
     link = `@${type}[${id}]{${index.name}}`;
   }
 
@@ -129,24 +129,24 @@ export function performPreLocalization(config) {
 function _localizeObject(obj, keys) {
   for (const [k, v] of Object.entries(obj)) {
     const type = typeof v;
-    if (type === "string") {
+    if (type === 'string') {
       obj[k] = game.i18n.localize(v);
       continue;
     }
 
-    if (type !== "object") {
+    if (type !== 'object') {
       console.error(
         new Error(
-          `Pre-localized configuration values must be a string or object, ${type} found for "${k}" instead.`
-        )
+          `Pre-localized configuration values must be a string or object, ${type} found for "${k}" instead.`,
+        ),
       );
       continue;
     }
     if (!keys?.length) {
       console.error(
         new Error(
-          "Localization keys must be provided for pre-localizing when target is an object."
-        )
+          'Localization keys must be provided for pre-localizing when target is an object.',
+        ),
       );
       continue;
     }

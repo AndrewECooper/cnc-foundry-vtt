@@ -1,6 +1,6 @@
 /**
  * Extend the basic Item with some very simple modifications.
- * @extends {Item}
+ * @augments {Item}
  */
 export class tlgccItem extends Item {
   /**
@@ -36,9 +36,9 @@ export class tlgccItem extends Item {
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get("core", "rollMode");
+    const rollMode = game.settings.get('core', 'rollMode');
     const label = `Roll: ${game.i18n.localize(
-      `ITEM.Type${item.type.capitalize()}`
+      `ITEM.Type${item.type.capitalize()}`,
     )} - ${item.name}`;
 
     // If there's no roll data, or the formula is empty, send a chat message.
@@ -47,7 +47,7 @@ export class tlgccItem extends Item {
         speaker: speaker,
         rollMode: rollMode,
         flavor: label,
-        content: item.system.description ?? "",
+        content: item.system.description ?? '',
       });
     } else {
       // Otherwise, create a roll and send a chat message from it.

@@ -111,12 +111,27 @@ Hooks.on('createActor', async function (actor) {
 
 Hooks.on('createToken', async function (token, options, id) {
   if (token.actor.type === 'monster') {
-    let newHitPoints = new Roll(
-      `${token.actor.system.hitDice.number}${token.actor.system.hitDice.size}+${token.system.hitDice.mod}`,
-    );
-    await newHitPoints.evaluate({ async: true });
-    token.actor.system.hitPoints.value = Math.max(1, newHitPoints.total);
-    token.actor.system.hitPoints.max = Math.max(1, newHitPoints.total);
+    /* Monster token creation hooks */
+
+    if (token.actor.system.xp.value.includes('+')) {
+      /* Generate HP/XP stats if the monster is a template.*/
+
+      let tokenHitDice = token.actor.system.hitDice;
+
+      /* Calculate and set hitPoints.max and hitPoints.value */
+      let newHitPoints = new Roll(
+        `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
+      );
+      await newHitPoints.evaluate({ async: true });
+      token.actor.system.hitPoints.value = Math.max(1, newHitPoints.total);
+      token.actor.system.hitPoints.max = Math.max(1, newHitPoints.total);
+
+      /* Calculate XP based on hitPoints.max */
+      token.actor.system.xp.value =
+        Number(token.actor.system.xp.value.split('+')[1]) *
+          token.actor.system.hitPoints.max +
+        Number(token.actor.system.xp.value.split('+')[0]);
+    }
   }
 });
 

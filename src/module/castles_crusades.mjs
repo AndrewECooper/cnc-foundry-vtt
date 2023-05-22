@@ -152,7 +152,7 @@ async function createItemMacro(data, slot) {
     return ui.notifications.warn(
       'You can only create macro buttons for owned Items',
     );
-  const item = data.data;
+  const item = data.data; //TODO: check this. Not sure if it is correct
 
   // Create the macro command
   const command = `game.tlgcc.rollItemMacro("${item.name}");`;

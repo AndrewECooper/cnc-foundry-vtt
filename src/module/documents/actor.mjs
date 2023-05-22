@@ -57,7 +57,8 @@ export class tlgccActor extends Actor {
 
   /**
    * Determine ability score modifiers
-   * @param abilityScore
+   * @param {object} abilityScore ability score to calculate bonus for
+   * @returns {number} ability bonus
    */
   _calculateAbilityBonus(abilityScore) {
     switch (abilityScore) {
@@ -214,6 +215,7 @@ export class tlgccActor extends Actor {
    * @param data
    */
   _getMonsterRollData(data) {
+    console.log(data);
     if (this.type !== 'monster') return;
 
     // Process additional NPC data here.

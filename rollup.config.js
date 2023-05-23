@@ -1,5 +1,6 @@
 import copy from 'rollup-plugin-copy';
 import typescript from '@rollup/plugin-typescript';
+import terser from '@rollup/plugin-terser';
 import { defineConfig } from 'rollup';
 import livereload from 'rollup-plugin-livereload';
 import * as yaml from 'js-yaml';
@@ -47,6 +48,7 @@ export default defineConfig({
   plugins: [
     environment(process.env.NODE_ENV),
     typescript({ noEmitOnError: false }),
+    isProd && terser(),
     copy({
       targets: [
         {

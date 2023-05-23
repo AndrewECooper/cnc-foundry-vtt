@@ -2,6 +2,7 @@
 
 [![Latest Release](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/badges/release.svg)](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases)
 [![pipeline status](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/badges/main/pipeline.svg)](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/commits/main)  
+
 The **Official** game system for playing [Castles & Crusades: The Role Playing Game](https://trolllord.com/castles-crusades/) on FoundryVTT.
 
 Castles & Crusades: The Roleplaying Game, is an easy to learn, fast paced fantasy role playing game suitable for novice and veteran gamers of all ages. With Castles & Crusades, these imaginings come to life as you play the role of a hero seeking adventure in a fantastic world populated by mythic creatures and legendary beasts. Or, as the Castle Keeper, you can design the worlds and stories that make up the game, guiding friends and fellow gamers through epic adventures in wondrous settings of your own making. **Join Us at the Table!**

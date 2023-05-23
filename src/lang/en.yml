@@ -1,0 +1,128 @@
+ACTOR.TypeCharacter: Character
+ACTOR.TypeMonster: Monster
+ITEM.TypeItem: Equipment
+ITEM.TypeWeapon: Weapon
+ITEM.TypeArmor: Armor
+ITEM.TypeSpell: Spell
+ITEM.TypeFeature: Special Ability
+TLGCC.CombatTab: Combat
+TLGCC.DescriptionTab: Description
+TLGCC.ItemsTab: Equipment
+TLGCC.SpellsTab: Spells
+TLGCC.FeaturesTab: Character Abilities
+TLGCC.AttributesTab: Attributes
+TLGCC.AbilityStr: STR
+TLGCC.AbilityCon: CON
+TLGCC.AbilityDex: DEX
+TLGCC.AbilityInt: INT
+TLGCC.AbilityWis: WIS
+TLGCC.AbilityCha: CHA
+TLGCC.AbilityStrAbbr: STR
+TLGCC.AbilityConAbbr: CON
+TLGCC.AbilityDexAbbr: DEX
+TLGCC.AbilityIntAbbr: INT
+TLGCC.AbilityWisAbbr: WIS
+TLGCC.AbilityChaAbbr: CHA
+TLGCC.AbilityStrSave: Saving Throw vs Paralysis & Constriction
+TLGCC.AbilityDexSave: Saving Throw vs Breath Weapons & Traps
+TLGCC.AbilityConSave: Saving Throw vs Disease, Energy Drain & Poison
+TLGCC.AbilityIntSave: Saving Throw vs Arcane Magic & Illusion
+TLGCC.AbilityWisSave: Saving Throw vs Confusion, Divine Magic, Gaze Attack, Petrification, Polymorph
+TLGCC.AbilityChaSave: Saving Throw vs Death Attack, Charm, Fear
+TLGCC.AbilityCheck: Perform an Ability Check using this ability
+TLGCC.resourceTracker: Trackable Resources
+TLGCC.resourceTrackerhover: Use these 5 fields to track class abilities or other number items.
+TLGCC.Resource1: Resource 1
+TLGCC.Resource2: Resource 2
+TLGCC.Resource3: Resource 3
+TLGCC.Resource4: Resource 4
+TLGCC.Resource5: Resource 5
+TLGCC.SaveDeath: Resource 1
+TLGCC.SaveWands: Resource 2
+TLGCC.SaveParalysis: Resource 3
+TLGCC.SaveBreath: Resource 4
+TLGCC.SaveSpells: Resource 5
+TLGCC.Platinum: Platinum
+TLGCC.Gold: Gold
+TLGCC.Electrum: Electrum
+TLGCC.Silver: Silver
+TLGCC.Copper: Copper
+TLGCC.savesHover: Set class features or items to track in here
+TLGCC.primeCheck: <i>Prime</i>
+TLGCC.primeCheckhover: Check this box to set as Prime
+TLGCC.Add: Add
+TLGCC.Age: Age
+TLGCC.ArmorClass: Armor Class
+TLGCC.ArmorClassAbbr: AC
+TLGCC.ACtitle: AC=10+Armor+Shield+Attribute Mod+Misc. Helmets are seperate!
+TLGCC.AChovertext: AC is manually mathed from the AC listed items on the Combat tab
+TLGCC.Attack: Attack
+TLGCC.AttackBonus: Attack Bonus
+TLGCC.AttackBonusAbbr: Base to Hit
+TLGCC.BtHtitle: Formula is d20+classBtH+Attribute Mod+Misc
+TLGCC.BonusAttackBonus: Bonus AB
+TLGCC.CarriedWeight: Load
+TLGCC.Class: Class
+TLGCC.Damage: Damage
+TLGCC.DamageAbbr: Dmg
+TLGCC.Duration: Duration
+TLGCC.ExperiencePoints: Experience Points
+TLGCC.ExperiencePointsAbbr: XP
+TLGCC.Formula: Roll Formula
+TLGCC.HitDice: Hit Dice
+TLGCC.HitDiceAbbr: HD
+TLGCC.HitPoints: Hit Points
+TLGCC.HitPointsAbbr: HP
+TLGCC.hdSize: Class HD
+TLGCC.Level: Level
+TLGCC.language: Languages
+TLGCC.Melee: Melee
+TLGCC.monsterHitDice: HD Size
+TLGCC.monsterINT: INT
+TLGCC.monsterType: Type
+TLGCC.monsterSaves: Saves
+TLGCC.monsterSavesHover: Physical(P) Str,Dex,Con. Mental(M) is Wis,Int,Cha. Roll d20+monster hd number
+TLGCC.Movement: Move
+TLGCC.Name: Name
+TLGCC.NextLevel: Next Level
+TLGCC.NumberAppearing: No. Appearing
+TLGCC.Prepared: Prepared
+TLGCC.Price: Price
+TLGCC.Quantity: Quantity
+TLGCC.Race: Race
+TLGCC.Religion: Religion
+TLGCC.Range: Range
+TLGCC.Ranged: Ranged
+TLGCC.Sex: Gender
+TLGCC.Size: Size
+TLGCC.Height: Height
+TLGCC.Origin: Hometown
+TLGCC.Notes: Biography and Notes
+TLGCC.Appearance: Appearance
+TLGCC.SpecialAbility: Special Abilities
+TLGCC.spellsKnown: Spells Known
+TLGCC.spellsKnownhover: Combine all spells per day + bonus spells to get this number
+TLGCC.Spells: Spells
+TLGCC.spellLevel: Level
+TLGCC.SpellsPerLevel: Spells
+TLGCC.spellSummary: Spell Summary
+TLGCC.TreasureType: Treasure Type
+TLGCC.Weight: Weight
+TLGCC.WeightMeasure: lbs.
+TLGCC.SaveValue: SV
+TLGCC.SpellComp: Comp
+TLGCC.Cast: Cast Time
+TLGCC.spelldmg: Damage
+TLGCC.Component: Components
+TLGCC.SpellResistance: SR
+TLGCC.EffectSource: Source
+TLGCC.EffectDuration: Duration
+TLGCC.EffectCreate: Create Effect
+TLGCC.EffectToggle: Toggle Effect
+TLGCC.EffectEdit: Edit Effect
+TLGCC.EffectDelete: Delete Effect
+TLGCC.Alignment: Alignment
+TLGCC.Title: Title
+TLGCC.ItemEV: EV
+TLGCC.Background: Background
+TLGCC.FeatureTitle: Feature Hover Text

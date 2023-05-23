@@ -45,11 +45,12 @@ build:
       --systemVersion=${CI_COMMIT_TAG:1} \
       --manifest=$PACKAGE_REGISTRY_URL/latest/$PACKAGE_TYPE.json \
       --download=$CI_PROJECT_URL/-/releases/$CI_COMMIT_TAG/downloads/$PACKAGE_ARCHIVE.zip
+    - npm run build:ci
   cache:
     <<: *global_cache
   artifacts:
     paths:
-      - .
+      - dist
     expire_in: 1 week
   rules:
     - if: '$CI_COMMIT_TAG =~ /^v[0-9]+\.[0-9]+\.[0-9]+$/'
@@ -61,9 +62,11 @@ publish-artifacts:
     - apk update
     - apk add zip curl
   script: |
-    zip -r ./$PACKAGE_ARCHIVE.zip . -x ".git" -x ".husky" -x ".npm" -x "utils" -x "node_modules" -x ".git*"
+    cd dist
+    zip -r ../$PACKAGE_ARCHIVE.zip .
+    cd ..
     curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file $PACKAGE_ARCHIVE.zip "$PACKAGE_REGISTRY_URL/$CI_COMMIT_TAG/$PACKAGE_ARCHIVE.zip"
-    curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file $PACKAGE_TYPE.json "$PACKAGE_REGISTRY_URL/$CI_COMMIT_TAG/$PACKAGE_TYPE.json"
+    curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file dist/$PACKAGE_TYPE.json "$PACKAGE_REGISTRY_URL/$CI_COMMIT_TAG/$PACKAGE_TYPE.json"
   rules:
     - if: '$CI_COMMIT_TAG =~ /^v[0-9]+\.[0-9]+\.[0-9]+$/'
 
@@ -96,6 +99,6 @@ publish-latest-manifest:
     - apk update
     - apk add zip curl
   script: |
-    curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file ./$PACKAGE_TYPE.json "$PACKAGE_REGISTRY_URL/latest/$PACKAGE_TYPE.json"
+    curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file dist/$PACKAGE_TYPE.json "$PACKAGE_REGISTRY_URL/latest/$PACKAGE_TYPE.json"
   rules:
     - if: '$CI_COMMIT_TAG =~ /^v[0-9]+\.[0-9]+\.[0-9]+$/'

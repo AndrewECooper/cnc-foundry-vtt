@@ -1,0 +1,51 @@
+{
+  "id": "castles-and-crusades",
+  "title": "Castles & Crusades: The Role Playing Game",
+  "description": "Troll Lord Games presents Castles &amp; Crusades: The Role Playing Game for FoundryVTT! To learn about additional adventures please visit https://www.trolllord.com/",
+  "version": "0.0.12",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "url": "https://trolllord.com/castles-crusades/",
+  "manifest": "https://gitlab.com/api/v4/projects/36291450/packages/generic/castles-and-crusades/latest/system.json",
+  "download": "This is generated on release",
+  "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "Troll Lord Games",
+      "url": "https://trolllord.com/castles-crusades/"
+    },
+    {
+      "name": "Ken Taylor",
+      "discord": "KillerWabbit#3711",
+      "url": "https://gitlab.com/KillerWabbit"
+    },
+    {
+      "name": "Michael Pflugrad",
+      "discord": "42datasquirrels#7292",
+      "url": "https://www.4d2gaming.com"
+    }
+  ],
+  "esmodules": ["castles_crusades.js"],
+  "styles": ["styles/castles_crusades.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json",
+      "flags": {}
+    }
+  ],
+  "initiative": "1d10",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "hitPoints"
+}

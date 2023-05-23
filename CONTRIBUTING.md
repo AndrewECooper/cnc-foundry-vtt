@@ -1,3 +1,4 @@
+
 <!-- omit in toc -->
 # Contributing to Castles & Crusades: The Role Playing Game
 

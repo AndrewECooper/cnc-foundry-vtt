@@ -21,7 +21,7 @@
     "build:ci": "node ./utils/build-packs.js && rollup -c",
     "link:create": "node ./utils/link-project.js",
     "link:remove": "node ./utils/link-project.js --clean",
-    "update-manifest": "node ./utils/update-manifest.mjs",
+    "update-manifest": "node ./utils/update-manifest.js",
     "clean": "rimraf dist .cache",
     "check:lint": "eslint --ext .ts,.js,.mjs .",
     "lint:fix": "eslint --ext .ts,.js,.mjs . --fix",

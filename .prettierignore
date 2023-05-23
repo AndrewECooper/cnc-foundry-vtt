@@ -4,3 +4,10 @@ coverage
 
 # Ignore all HTML files:
 *.html
+
+styles
+packs
+docs
+assets
+
+.gitkeep

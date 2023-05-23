@@ -1,0 +1,57 @@
+import path from 'node:path';
+import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { load as yamlLoad } from 'js-yaml';
+import { existsSync } from 'node:fs';
+import chalk from 'chalk';
+
+const src = 'src/packs';
+const dest = 'dist/packs';
+
+//load the subdirectories
+const inputDir = path.resolve(src);
+const packs = await readdir(inputDir);
+//go through each subdirectory
+for (const pack of packs) {
+  if (pack === '.gitkeep') continue;
+  console.log(chalk.green('Building pack ' + chalk.bold(pack)));
+  let packData = '';
+  const packPath = path.resolve(inputDir, pack);
+  const entries = await readdir(packPath);
+  //read each file in a subdirectory and push it into the array
+  for (const entry of entries) {
+    const entryPath = path.resolve(packPath, entry);
+    //load the YAML
+    const file = await readFile(entryPath, 'utf-8');
+    const content = yamlLoad(file, { filename: entry });
+    //add ID if necessary
+    if (!content._id) content._id = generateId();
+    //add it to the complete DB string
+    packData += JSON.stringify(content);
+    packData += '\n';
+  }
+
+  //check if the output directory exists, and create it if necessary
+  const outputDir = path.resolve(dest);
+  if (!existsSync(outputDir)) await mkdir(outputDir, { recursive: true });
+
+  //write the contents to the pack file
+  const outputPath = path.resolve(outputDir, pack);
+  await writeFile(`${outputPath}.db`, packData, { flag: 'w' });
+}
+
+/**
+ * Creates a random id string using numbers and letters
+ * TODO: change this to use the nanoid package (https://www.npmjs.com/package/nanoid)
+ * @param {number} length the character length of the id
+ * @returns {string} random id string
+ */
+function generateId(length = 16) {
+  let result = '';
+  let characters =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}

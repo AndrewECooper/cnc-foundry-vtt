@@ -1,4 +1,4 @@
-import { preLocalize } from './utils.mjs';
+import { preLocalize } from './utils';
 
 // Namespace Configuration Values
 export const TLGCC = {};

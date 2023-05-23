@@ -1,12 +1,12 @@
 // Import document classes.
-import { tlgccActor } from './documents/actor.mjs';
-import { tlgccItem } from './documents/item.mjs';
+import { tlgccActor } from './documents/actor';
+import { tlgccItem } from './documents/item';
 // Import sheet classes.
-import { tlgccActorSheet } from './sheets/actor-sheet.mjs';
-import { tlgccItemSheet } from './sheets/item-sheet.mjs';
+import { tlgccActorSheet } from './sheets/actor-sheet';
+import { tlgccItemSheet } from './sheets/item-sheet';
 // Import helper/utility classes and constants.
-import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
-import { TLGCC } from './helpers/config.mjs';
+import { preloadHandlebarsTemplates } from './helpers/templates';
+import { TLGCC } from './helpers/config';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */

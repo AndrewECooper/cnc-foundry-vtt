@@ -1,4 +1,5 @@
 import copy from 'rollup-plugin-copy';
+import typescript from '@rollup/plugin-typescript';
 import { defineConfig } from 'rollup';
 import livereload from 'rollup-plugin-livereload';
 import * as yaml from 'js-yaml';
@@ -8,7 +9,7 @@ const name = 'castles_crusades';
 const distDirectory = 'dist';
 const srcDirectory = 'src';
 
-const staticFiles = ['assets', 'lang', 'module', 'packs', 'styles', 'templates', 'system.json'];
+const staticFiles = ['assets', 'lang', 'packs', 'styles', 'templates', 'system.json'];
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
@@ -35,7 +36,7 @@ const environment = (environment) => {
 };
 
 export default defineConfig({
-  input: { [`${name}`]: `${srcDirectory}/module/${name}.mjs`},
+  input: { [`${name}`]: `${srcDirectory}/module/${name}.ts`},
   output: {
     dir: distDirectory,
     format: 'es',
@@ -45,6 +46,7 @@ export default defineConfig({
   },
   plugins: [
     environment(process.env.NODE_ENV),
+    typescript({ noEmitOnError: false }),
     copy({
       targets: [
         {

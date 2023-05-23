@@ -1,7 +1,7 @@
 import {
   onManageActiveEffect,
   prepareActiveEffectCategories,
-} from '../helpers/effects.mjs';
+} from '../helpers/effects';
 
 /**
  * Extend the basic ActorSheet with some very simple modifications

@@ -157,6 +157,7 @@ Updating, improving and correcting the documentation
 * Michael Pflugrad - _Project Lead_ - [@42datasquirrels](https://gitlab.com/42datasquirrels)
 * Paul Watson - _Contributor_ - [@pwatson100](https://gitlab.com/pwatson100)
 * Patrick - _Contributor_ - [@tradiuz](https://gitlab.com/tradiuz)
+* Juan Estevez - _Contributor_ - [@elfonochasis](https://gitlab.com/elfonochasis)
 <!-- omit in toc -->
 ## Attribution
 This guide is based on the **contributing-gen**. [Make your own](https://github.com/bttger/contributing-gen)!

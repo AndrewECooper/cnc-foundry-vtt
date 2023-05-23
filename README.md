@@ -23,7 +23,7 @@ The following **official** modules are available:
 
 ## Features
 
-![Character Sheet](https://raw.githubusercontent.com/42datasquirrels/castles_crusades/main/readme_charactersheet_example.webp)
+![Character Sheet](src/assets/readme_charactersheet_example.webp "Character Sheet Example")
 
 First when using the Character sheets think **Digital Paper** Many of the fields in the sheet do not have auto calculations enabled, Yet!
 

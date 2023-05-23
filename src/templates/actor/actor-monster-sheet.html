@@ -32,10 +32,10 @@
               data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
               data-label="{{localize system.hitDice.label}}">HD Size &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="string" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
-            <input type="string" name="system.hitDice.size" value="{{system.hitDice.size}}" data-dtype="Number" />
+            <input type="number" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
+            <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" data-dtype="Number" />
             <span class="flexshrink flex-align-center"> </span>
-            <input type="string" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number"
+            <input type="number" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number"
               sign="true" />
           </div>
         </div>

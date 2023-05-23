@@ -18,17 +18,17 @@ Castles & Crusades: The Roleplaying Game, is an easy to learn, fast paced fantas
 
 The following **official** modules are available:
 
-- [Castles & Crusades Quickstart Guide](https://gitlab.com/api/v4/projects/40459621/packages/generic/castles-crusades-quickstart/latest/module.json)
+- [Castles & Crusades Quickstart Guide](https://gitlab.com/troll-lord/foundry-vtt/modules/castles-crusades-quickstart/-/tree/main)
 
 ## Features
 
 ![Character Sheet](https://raw.githubusercontent.com/42datasquirrels/castles_crusades/main/readme_charactersheet_example.webp)
 
-First when using the Character sheets think **Digital Paper** Many of the fields in the sheet do not have auto caculations enabled, Yet!
+First when using the Character sheets think **Digital Paper** Many of the fields in the sheet do not have auto calculations enabled, Yet!
 
 - Character sheets for PCs
 - Roll Ability Check and Saves
-- Can create Class Abilitys, Weapons, Gear, Armor and drag-n-drop onto character sheets.
+- Can create Class Abilities, Weapons, Gear, Armor and drag-n-drop onto character sheets.
 - Can click on weapons to roll with bonus modifiers
 - Track weight carried in the inventory tab
 
@@ -36,13 +36,14 @@ First when using the Character sheets think **Digital Paper** Many of the fields
 
 Coming soon!
 
+## Contributing
+
+If you would like to contribute to making this FoundryVTT system even better, please look at our [Contribution Guide](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/main/CONTRIBUTING.md). This has all of the information you will need to get started!
+
+
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/tags).
 
 ## License
 

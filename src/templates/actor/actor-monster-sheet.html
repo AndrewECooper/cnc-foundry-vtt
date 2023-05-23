@@ -7,19 +7,29 @@
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}"
           placeholder="{{localize 'TLGCC.Name'}}" /></h1>
       <div class="resources grid grid-5col">
-        <div class="resource flex-group-center">
+        <!-- <div class="resource flex-group-center">
           <label for="system.hitPoints.value" class="resource-label">{{localize 'TLGCC.HitPoints'}} </label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number"
-              width="50px" />
+            <input
+            type="text"
+            name="system.hitPoints.value"
+            value="{{system.hitPoints.value}}"
+            data-dtype="Number"
+            width="50px"
+          />
             <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
-            <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number" />
+            <input
+              type="text"
+              name="system.hitPoints.max"
+              value="{{system.hitPoints.max}}"
+              data-dtype="Number"
+            />
           </div>
-        </div>
+        </div> -->
         <div class="resource flex-group-center">
           <label for="system.hitDice" class="resource-label"><a class="rollable"
               data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
-              data-label="{{localize system.hitDice.label}}">{{localize 'TLGCC.monsterHitDice'}} &nbsp;</a></label>
+              data-label="{{localize system.hitDice.label}}">{{localize 'TLGCC.HitPoints'}} &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number"
               width="50px" />
@@ -33,7 +43,7 @@
               data-label="{{localize system.hitDice.label}}">HD Size &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="number" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
-            <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" data-dtype="Number" />
+            <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" data-dtype="String" />
             <span class="flexshrink flex-align-center"> </span>
             <input type="number" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number"
               sign="true" />

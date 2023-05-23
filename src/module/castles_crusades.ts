@@ -123,8 +123,8 @@ Hooks.on('createToken', async function (token, options, id) {
         `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
       );
       await newHitPoints.evaluate({ async: true });
-      token.actor.system.hitPoints.value = Math.max(1, newHitPoints.total);
-      token.actor.system.hitPoints.max = Math.max(1, newHitPoints.total);
+      token.actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
+      token.actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
 
       /* Calculate XP based on hitPoints.max */
       token.actor.system.xp.value =

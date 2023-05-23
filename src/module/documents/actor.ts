@@ -128,17 +128,17 @@ export class tlgccActor extends Actor {
         }; 
     */
 
-    data.attackBonus.value = this._calculateMonsterAttackBonus();
+    data.attackBonus.value = this._calculateMonsterAttackBonus(data);
   }
 
   /**
    * Calculate monster attack bonus
    */
-  _calculateMonsterAttackBonus() {
-    if (this.system.hitDice.number < 1) {
+  _calculateMonsterAttackBonus(data) {
+    if (data.hitDice.number < 1) {
       return 0;
     }
-    switch (this.system.hitDice.number) {
+    switch (data.hitDice.number) {
       case 9:
         return 8;
       case 10:
@@ -171,7 +171,7 @@ export class tlgccActor extends Actor {
       case 31:
         return 15;
       default:
-        return this.system.hitDice.number;
+        return data.hitDice.number;
     }
   }
 

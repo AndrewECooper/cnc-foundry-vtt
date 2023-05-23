@@ -7,7 +7,7 @@ The **Official** game system for playing [Castles & Crusades: The Role Playing G
 
 Castles & Crusades: The Roleplaying Game, is an easy to learn, fast paced fantasy role playing game suitable for novice and veteran gamers of all ages. With Castles & Crusades, these imaginings come to life as you play the role of a hero seeking adventure in a fantastic world populated by mythic creatures and legendary beasts. Or, as the Castle Keeper, you can design the worlds and stories that make up the game, guiding friends and fellow gamers through epic adventures in wondrous settings of your own making. **Join Us at the Table!**
 
-![Banner](src/assets/readme_banner.webp "Join us at the Table!")
+<img src="src/assets/readme_banner.webp" alt="Castles &amp; Crusades Banner" />
 
 ## Installation
 
@@ -23,7 +23,7 @@ The following **official** modules are available:
 
 ## Features
 
-![Character Sheet](src/assets/readme_charactersheet_example.webp "Character Sheet Example"){width=50%}
+<img src="src/assets/readme_charactersheet_example.webp" alt="Character Sheet Example" width="700" />
 
 First when using the Character sheets think **Digital Paper** Many of the fields in the sheet do not have auto calculations enabled, Yet!
 

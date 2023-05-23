@@ -22,8 +22,6 @@ stages:
   - publish
 
 cache: &global_cache
-  untracked: true
-  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - .npm
 

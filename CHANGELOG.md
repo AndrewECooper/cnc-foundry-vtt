@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 
 - Terser minification of production code to make download size smaller (#54) by **@KillerWabbit**.
-- New [contribution guide](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/main/CONTRIBUTION.md) for developers by **@KillerWabbit**.
+- New [contribution guide](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/main/CONTRIBUTING.md) for developers by **@KillerWabbit**.
 - New [code of conduct](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/main/CODE_OF_CONDUCT.md) for contributors by **@KillerWabbit**.
 
 ### Changed

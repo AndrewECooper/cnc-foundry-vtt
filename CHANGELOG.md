@@ -24,6 +24,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## [Unreleased]
 
 
+## [1.0.0] - 2023-05-27
+
+### Changed
+
+- First public release on FoundryVTT installer
+
 ## [0.0.18] - 2023-05-23
 
 ### Added
@@ -108,6 +114,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Corrected how item AC is displayed.
 
 [unreleased]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/compare/main...develop?from_project_id=36291450&straight=false
+[1.0.0]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.0
 [0.0.18]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v0.0.18
 [0.0.17]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v0.0.17
 [0.0.16]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v0.0.16

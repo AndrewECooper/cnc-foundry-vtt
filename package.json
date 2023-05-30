@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "castles-and-crusades",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "description": "Troll Lord Games Castles & Crusades game system for FoundryVTT",
   "author": "Troll Lord Games",
   "license": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/LICENSE.txt",

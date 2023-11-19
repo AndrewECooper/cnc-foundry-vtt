@@ -27,8 +27,12 @@
       "url": "https://www.4d2gaming.com"
     }
   ],
-  "esmodules": ["castles_crusades.js"],
-  "styles": ["styles/castles_crusades.css"],
+  "esmodules": [
+    "castles_crusades.js"
+  ],
+  "styles": [
+    "styles/castles_crusades.css"
+  ],
   "languages": [
     {
       "lang": "en",

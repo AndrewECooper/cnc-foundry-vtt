@@ -131,7 +131,7 @@ After the CI/CD pipeline completes, be sure to update the `CHANGELOG.md` file wi
 
 ## Contributing
 
-Please read the Viking Sasquatch [development-standards](https://github.com/Viking-Sasquatch/development-standards) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read the [CONTRIBUTING.md](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/blob/5655055098ea960d3709aa6ba31a217b3de2ca62/CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -150,6 +150,5 @@ Copyright &copy; 2023 Troll Lord Games. All rights reserved.
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Savage Worlds Game System for Foundry Virtual Tabletop
+* Foundry Virtual Tabletop

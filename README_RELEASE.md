@@ -126,6 +126,8 @@ After the CI/CD pipeline completes, be sure to update the `CHANGELOG.md` file wi
 ## Built With
 
 * [Node JS](https://nodejs.org/en/) - Javascript runtime used
+* [Typescript](https://www.typescriptlang.org/) - Strongly typed programming
+language built on top of javascript
 * [Visual Studio Code](https://code.visualstudio.com/) - Editor used
 * [SemVer](https://semver.org/) - The versioning system used
 

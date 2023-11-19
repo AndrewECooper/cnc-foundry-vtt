@@ -101,16 +101,27 @@ npm run lint:fix
 ## Deployment
 
 Deployment is kicked off after the system is fully tested to deploy a set of 
-features or bugfixes. Deployment uses [git-flow](https://github.com/petervanderdoes/gitflow-avh/wiki) to create a release. The CI/CD pipeline only kicks off for a 
-tagged Semver version (i.e. 1.0.0, 1.0.1, etc.) pushed to the repository.
-To create a release and deploy the system, use the following commands (for example version 1.0.2):
+features or bugfixes. Deployment uses [git-flow](https://github.com/petervanderdoes/gitflow-avh/wiki) 
+to create a release. The CI/CD pipeline only kicks off for a tagged Semver 
+version (i.e. 1.0.0, 1.0.1, etc.) pushed to the repository. To create a release 
+and deploy the system, use the following commands (for example version 1.0.2):
 
 ```shell
 git flow release start 1.0.2
-# update the 
+# update the package.json version using npm for x.y.z, use 'major' for x, 'minor'
+# for y and 'patch' for z. For example to update 1.0.1 to 1.0.2:
+npm version patch
+# finish the release
+git flow release finish 1.0.2
+git push origin develop
+git push origin main
+git push --tags
 ```
 
+You can watch the ci/cd pipeline [here](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/pipelines).  
+You can view releases [here](https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases).
 
+After the CI/CD pipeline completes, be sure to update the `CHANGELOG.md` file with the current changes.
 
 ## Built With
 

@@ -7,25 +7,6 @@
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}"
           placeholder="{{localize 'TLGCC.Name'}}" /></h1>
       <div class="resources grid grid-5col">
-        <!-- <div class="resource flex-group-center">
-          <label for="system.hitPoints.value" class="resource-label">{{localize 'TLGCC.HitPoints'}} </label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input
-            type="text"
-            name="system.hitPoints.value"
-            value="{{system.hitPoints.value}}"
-            data-dtype="Number"
-            width="50px"
-          />
-            <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
-            <input
-              type="text"
-              name="system.hitPoints.max"
-              value="{{system.hitPoints.max}}"
-              data-dtype="Number"
-            />
-          </div>
-        </div> -->
         <div class="resource flex-group-center">
           <label for="system.hitDice" class="resource-label"><a class="rollable"
               data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
@@ -157,28 +138,6 @@
       <div class="resource flex-group-center">
         <h3 title="{{localize 'TLGCC.spellsKnownhover'}}">{{localize 'TLGCC.spellsKnown'}}</h3>
       </div>
-      <!--
-    <section class="resources grid grid-10col">
-     
-      {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
-        <div class="resource flex-group-center">
-         <h3 title="{{localize 'TLGCC.spellsKnownhover'}}">Spells Known</h3>
-        </div>
-      {{/each}} 
-    </section>
-    <section class="resources grid grid-10col">
-      {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
-        <div class="resource flex-group-center">
-            <label for="system.spellsPerLevel.{{level}}" class="resource-label">{{level}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input type="number" name="system.spellsPerLevel.value.{{level}}" value="{{spellsPerLevel}}" data-dtype="Number"/>
-          </div>
-        </div>
-      {{/each}}
-    
-    </section> 
--->
-
       <ol class="items-list">
         {{#each spells as |spells spellLevel|}}
         <li class="item flexrow items-header">
@@ -228,5 +187,3 @@
   </section>
   {{log "CONTEXT!!!!"}} {{log this}}
 </form>
-
-<!-- <script>document.getElementsByName('system.attackBonus.value')[0].disabled = true;</script> -->

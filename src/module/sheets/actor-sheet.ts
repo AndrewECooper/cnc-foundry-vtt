@@ -351,7 +351,7 @@ export class tlgccActorSheet extends ActorSheet {
           ? `Roll: ${dataset.label}`
           : `Roll: ${dataset.attack.capitalize()} attack with ${item.name}`;
         let rollFormula = 'd20+@ab';
-        if (this.type === 'character') {
+        if (this.actor.type == 'character') {
           if (dataset.attack == 'melee') {
             rollFormula += '+@str.bonus';
           } else if (dataset.attack == 'ranged') {

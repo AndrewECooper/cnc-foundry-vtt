@@ -1,10 +1,10 @@
-ACTOR.TypeCharacter: Personaje
-ACTOR.TypeMonster: Enemigo
-ITEM.TypeItem: Equipo
-ITEM.TypeWeapon: Arma
-ITEM.TypeArmor: Armadura
-ITEM.TypeSpell: Hechizo
-ITEM.TypeFeature: Habilidad Especial
+TYPES.Actor.character: Personaje
+TYPES.Actor.monster: Enemigo
+TYPES.Item.item: Equipo
+TYPES.Item.weapon: Arma
+TYPES.Item.armor: Armadura
+TYPES.Item.spell: Hechizo
+TYPES.Item.feature: Habilidad Especial
 TLGCC.CombatTab: Combate
 TLGCC.DescriptionTab: Descripción
 TLGCC.ItemsTab: Equipamiento

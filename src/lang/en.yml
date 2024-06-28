@@ -1,10 +1,10 @@
-ACTOR.TypeCharacter: Character
-ACTOR.TypeMonster: Monster
-ITEM.TypeItem: Equipment
-ITEM.TypeWeapon: Weapon
-ITEM.TypeArmor: Armor
-ITEM.TypeSpell: Spell
-ITEM.TypeFeature: Special Ability
+TYPES.Actor.character: Character
+TYPES.Actor.monster: Monster
+TYPES.Item.item: Equipment
+TYPES.Item.weapon: Weapon
+TYPES.Item.armor: Armor
+TYPES.Item.spell: Spell
+TYPES.Item.feature: Special Ability
 TLGCC.CombatTab: Combat
 TLGCC.DescriptionTab: Description
 TLGCC.ItemsTab: Equipment

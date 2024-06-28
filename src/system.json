@@ -48,7 +48,7 @@
     }
   ],
   "initiative": "1d10",
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "grid.distance": 5,
+  "grid.units": "ft",
   "primaryTokenAttribute": "hitPoints"
 }

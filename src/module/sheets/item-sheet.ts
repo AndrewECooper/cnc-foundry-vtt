@@ -5,7 +5,7 @@
 export class tlgccItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['tlgcc', 'sheet', 'item'],
       width: 520,
       height: 480,
@@ -26,11 +26,11 @@ export class tlgccItemSheet extends ItemSheet {
   /* -------------------------------------------- */
   async _enrichTextFields(data, fieldNameArr) {
     for (let t = 0; t < fieldNameArr.length; t++) {
-      if (hasProperty(data, fieldNameArr[t])) {
-        setProperty(
+      if (foundry.utils.hasProperty(data, fieldNameArr[t])) {
+        foundry.utils.setProperty(
           data,
           fieldNameArr[t],
-          await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), {
+          await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldNameArr[t]), {
             async: true,
           }),
         );

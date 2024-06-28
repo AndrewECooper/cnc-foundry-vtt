@@ -10,7 +10,7 @@ import {
 export class tlgccActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['tlgcc', 'sheet', 'actor'],
       template: 'systems/castles-and-crusades/templates/actor/actor-sheet.html',
       width: 780,
@@ -33,11 +33,11 @@ export class tlgccActorSheet extends ActorSheet {
   /* -------------------------------------------- */
   async _enrichTextFields(data, fieldNameArr) {
     for (let t = 0; t < fieldNameArr.length; t++) {
-      if (hasProperty(data, fieldNameArr[t])) {
-        setProperty(
+      if (foundry.utils.hasProperty(data, fieldNameArr[t])) {
+        foundry.utils.setProperty(
           data,
           fieldNameArr[t],
-          await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), {
+          await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldNameArr[t]), {
             async: true,
           }),
         );
@@ -305,7 +305,7 @@ export class tlgccActorSheet extends ActorSheet {
   _onItemCreate(event) {
     event.preventDefault();
     let header = event.currentTarget;
-    let data = duplicate(header.dataset);
+    let data = foundry.utils.duplicate(header.dataset);
     const type = header.dataset.type;
 
     if (type === 'spell') {

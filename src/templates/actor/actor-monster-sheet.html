@@ -5,61 +5,59 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}"
-                                  placeholder="{{localize 'TLGCC.Name'}}" /></h1>
+          placeholder="{{localize 'TLGCC.Name'}}" /></h1>
       <div class="resources grid grid-5col">
         <div class="resource flex-group-center">
           <label for="system.hitDice" class="resource-label"><a class="rollable"
-                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
-                                                                data-label="{{localize system.hitDice.label}}">{{localize
-            'TLGCC.HitPoints'}} &nbsp;</a></label>
+              data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
+              data-label="{{localize system.hitDice.label}}">{{localize 'TLGCC.HitPoints'}} &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number"
-                   width="50px" />
+              width="50px" />
             <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
             <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number" />
           </div>
         </div>
         <div class="resource flex-group-center">
           <label for="system.hitDice" class="resource-label"><a class="rollable"
-                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
-                                                                data-label="{{localize system.hitDice.label}}">HD Size
-            &nbsp;</a></label>
+              data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
+              data-label="{{localize system.hitDice.label}}">HD Size &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="number" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
             <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" data-dtype="String" />
             <span class="flexshrink flex-align-center"> </span>
             <input type="number" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number"
-                   sign="true" />
+              sign="true" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}" class="resource-label"><a
-            class="rollable" data-roll="d20+{{system.hitDice.number}}"
-            data-label="{{localize system.msaves.label}}: {{localize system.msaves.value}}"> {{localize
-            system.msaves.label}}</a> </label>
+              class="rollable" data-roll="d20+{{system.hitDice.number}}"
+              data-label="{{localize system.msaves.label}}: {{localize system.msaves.value}}"> {{localize
+              system.msaves.label}}</a> </label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}"
-                   value="{{system.msaves.value}}" data-dtype="string" />
+              value="{{system.msaves.value}}" data-dtype="string" />
           </div>
         </div>
 
 
         <div class="resource flex-group-center">
           <label for="system.numberAppearing.value" class="resource-label"><a class="rollable"
-                                                                              data-roll="{{system.numberAppearing.value}}"
-                                                                              data-label="{{localize system.numberAppearing.label}}">{{localize
-            system.numberAppearing.label}}</a></label>
+              data-roll="{{system.numberAppearing.value}}"
+              data-label="{{localize system.numberAppearing.label}}">{{localize
+              system.numberAppearing.label}}</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.numberAppearing.value" value="{{system.numberAppearing.value}}"
-                   data-dtype="String" />
+              data-dtype="String" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.monterINT.value" class="resource-label"><a class=""
-                                                                        data-label="{{localize system.monterINT.label}} ({{system.monterINT.value}})">{{localize
-            system.monsterINT.label}}</a></label>
+              data-label="{{localize system.monterINT.label}} ({{system.monterINT.value}})">{{localize
+              system.monsterINT.label}}</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.monterINT.value" value="{{system.monterINT.value}}" data-dtype="String" />
           </div>
@@ -69,7 +67,7 @@
           <label for="system.treasureType.value" class="resource-label">{{localize system.treasureType.label}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.treasureType.value" value="{{system.treasureType.value}}"
-                   data-dtype="String" />
+              data-dtype="String" />
           </div>
         </div>
 
@@ -98,7 +96,6 @@
           </div>
         </div>
       </div>
-    </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
@@ -121,7 +118,7 @@
             {{#each system.saves as |save key|}}
             <div class="ability flexrow flex-group-center">
               <label for="system.saves.{{key}}.value" class="resource-label rollable flexlarge align-left"
-                     data-roll="d20" data-label="Saving Throw - {{save.label}}">{{save.label}}</label>
+                data-roll="d20" data-label="Saving Throw - {{save.label}}">{{save.label}}</label>
               <input type="text" name="system.saves.{{key}}.value" value="{{save.value}}" data-dtype="Number" />
             </div>
             {{/each}}
@@ -148,7 +145,7 @@
           <div class="item-detail">{{localize 'TLGCC.Prepared'}}</div>
           <div class="item-controls">
             <a class="item-control item-create" title="Create item" data-type="spell"
-               data-spell-level-value="{{spellLevel}}"><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
+              data-spell-level-value="{{spellLevel}}"><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
           </div>
         </li>
         {{#each spells as |item id|}}
@@ -156,21 +153,20 @@
           <div class="item-name flexrow">
             <div class="item-image">
               <a class="rollable" data-roll-type="item"
-                 data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"><img
-                src="{{item.img}}" title="Cast Spell: {{item.name}}" width="24" height="24" /></a>
+                data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"><img
+                  src="{{item.img}}" title="Cast Spell: {{item.name}}" width="24" height="24" /></a>
 
             </div>
             <h4 title="{{system.spell.summary}}">{{item.name}}</h4> <a class="rollable" data-roll-type="damage"
-                                                                       data-roll="{{system.spelldmg.value}}"><img
-            src="systems/castles-and-crusades/styles/damage.svg"
-            title="Roll damage for {{item.name}}" width="24" height="24" /></a>
+              data-roll="{{system.spelldmg.value}}"><img src="systems/castles-and-crusades/styles/damage.svg"
+                title="Roll damage for {{item.name}}" width="24" height="24" /></a>
           </div>
           <div class="item-prop grid grid-3col">
             <div class="flex-group-right"><a class="item-control spell-prepare" data-change="-1"><i
-              class="fas fa-minus"></i></a></div>
+                  class="fas fa-minus"></i></a></div>
             <div class="flex-group-center">{{item.system.prepared.value}}</div>
             <div class="flex-group-left"><a class="item-control spell-prepare" data-change="+1"><i
-              class="fas fa-plus"></i></a></div>
+                  class="fas fa-plus"></i></a></div>
           </div>
           <div class="item-controls">
             <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>

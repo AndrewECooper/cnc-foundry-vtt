@@ -133,6 +133,7 @@ export class tlgccActor extends Actor {
 
   /**
    * Calculate monster attack bonus
+   * @param data
    */
   _calculateMonsterAttackBonus(data) {
     if (data.hitDice.number < 1) {

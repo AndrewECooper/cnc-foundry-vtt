@@ -37,9 +37,12 @@ export class tlgccActorSheet extends ActorSheet {
         foundry.utils.setProperty(
           data,
           fieldNameArr[t],
-          await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldNameArr[t]), {
-            async: true,
-          }),
+          await TextEditor.enrichHTML(
+            foundry.utils.getProperty(data, fieldNameArr[t]),
+            {
+              async: true,
+            },
+          ),
         );
       }
     }

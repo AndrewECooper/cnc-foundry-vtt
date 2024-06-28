@@ -30,9 +30,12 @@ export class tlgccItemSheet extends ItemSheet {
         foundry.utils.setProperty(
           data,
           fieldNameArr[t],
-          await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldNameArr[t]), {
-            async: true,
-          }),
+          await TextEditor.enrichHTML(
+            foundry.utils.getProperty(data, fieldNameArr[t]),
+            {
+              async: true,
+            },
+          ),
         );
       }
     }

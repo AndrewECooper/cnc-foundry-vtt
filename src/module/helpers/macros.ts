@@ -1,4 +1,8 @@
+// @ts-ignore
 import { game } from 'foundry.js';
+// @ts-ignore
+import { ChatMessage } from 'foundry.js';
+
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */
 /* -------------------------------------------- */
@@ -10,15 +14,7 @@ import { game } from 'foundry.js';
  * @param {number} slot     The hotbar slot to use
  * @returns {Promise}
  */
-async function createItemMacro(data, slot) {
-  if (data.type !== 'Item') return;
-  if (!('data' in data))
-    return ui.notifications.warn(
-      'You can only create macro buttons for owned Items',
-    );
-  const item = data.data; //TODO: check this. Not sure if it is correct
-
-  // Create the macro command
+async function createMacro(item: any): Promise<Macro> {
   const command = `game.tlgcc.rollItemMacro("${item.name}");`;
   let macro = game.macros?.find(
     (m) => m.name === item.name && m.command === command,
@@ -32,6 +28,16 @@ async function createItemMacro(data, slot) {
       flags: { 'tlgcc.itemMacro': true },
     });
   }
+  return macro;
+}
+
+async function createItemMacro(data: { type?: string; data?: any }, slot: number): Promise<any> {
+  if (data.type !== 'Item' || !data.data) {
+    return ui.notifications.warn('You can only create macro buttons for owned Items');
+  }
+
+  const macro = await createMacro(data.data);
+
   if (game instanceof Game) {
     await game.user?.assignHotbarMacro(macro, slot);
   }
@@ -44,20 +50,22 @@ async function createItemMacro(data, slot) {
  * @param {string} itemName
  * @returns {Promise}
  */
-function rollItemMacro(itemName) {
+function rollItemMacro(itemName: string) {
   const speaker = ChatMessage.getSpeaker();
   let actor;
-  if (speaker.token) if (game instanceof Game) {
-    actor = game.actors.tokens[speaker.token];
+
+  if (game instanceof Game) {
+    actor = speaker.token ? game.actors.tokens[speaker.token] : game.actors.get(speaker.actor);
   }
-  if (!actor) if (game instanceof Game) {
-    actor = game.actors.get(speaker.actor);
+
+  if (!actor) {
+    return ui.notifications.warn(`No valid actor found.`);
   }
-  const item = actor ? actor.items.find((i) => i.name === itemName) : null;
+
+  const item = actor.items.find((i) => i.name === itemName);
+
   if (!item) {
-    return ui.notifications.warn(
-      `Your controlled Actor does not have an item named ${itemName}`,
-    );
+    return ui.notifications.warn(`Your controlled Actor does not have an item named ${itemName}`);
   }
 
   // Trigger the item roll

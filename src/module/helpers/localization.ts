@@ -1,6 +1,8 @@
 import { preLocalize } from './utils';
-import { TLGCC } from './constants';
 
+/**
+ * Pre-localize all the strings that are used in the module.
+ */
 preLocalize('abilities');
 preLocalize('abilityAbbreviations');
 preLocalize('abilitySave');

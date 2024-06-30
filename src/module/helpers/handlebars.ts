@@ -1,5 +1,3 @@
-import { preloadHandlebarsTemplates } from './templates';
-
 /* -------------------------------------------- */
 /*  Handlebars Helpers                          */
 /* -------------------------------------------- */

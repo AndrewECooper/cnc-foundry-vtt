@@ -1,143 +1,154 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form autocomplete="off" class="{{cssClass}}">
   <header class="sheet-header">
     <img
       class="profile-img"
-      src="{{item.img}}"
       data-edit="img"
+      src="{{item.img}}"
       title="{{item.name}}"
     />
     <div class="header-fields">
       <h1 class="charname">
         <input
           name="name"
+          placeholder="{{localize 'TLGCC.Name'}}"
           type="text"
           value="{{item.name}}"
-          placeholder="{{localize 'TLGCC.Name'}}"
         />
       </h1>
       <div class="grid grid-5col">
         <div class="resource">
-          <label for="system.cast.value" class="resource-label"
-            >{{localize system.cast.label}}</label
+          <label class="resource-label" for="system.cast.value"
+          >{{localize system.cast.label}}</label
           >
           <input
-            type="text"
-            name="system.cast.value"
-            value="{{system.cast.value}}"
             data-dtype="String"
+            id="system.cast.value"
+            name="system.cast.value"
+            type="text"
+            value="{{system.cast.value}}"
           />
         </div>
 
         <div class="resource">
-          <label for="system.range.value" class="resource-label"
-            >{{localize system.range.label}}</label
+          <label class="resource-label" for="system.range.value"
+          >{{localize system.range.label}}</label
           >
           <input
-            type="text"
-            name="system.range.value"
-            value="{{system.range.value}}"
             data-dtype="String"
+            id="system.range.value"
+            name="system.range.value"
+            type="text"
+            value="{{system.range.value}}"
           />
         </div>
 
         <div class="resource grid-span-2">
-          <label for="system.duration.value" class="resource-label"
-            >{{localize system.duration.label}}</label
+          <label class="resource-label" for="system.duration.value"
+          >{{localize system.duration.label}}</label
           >
           <input
-            type="text"
+            data-dtype="String"
+            id="system.duration.value"
             name="system.duration.value"
+            type="text"
             value="{{system.duration.value}}"
-            data-dtype="String"
           />
         </div>
         <div class="resource">
-          <label for="system.spell.spelllevel" class="resource-label"
-            >{{localize system.spellLevel.label}}</label
+          <label class="resource-label" for="system.spell.spelllevel"
+          >{{localize system.spellLevel.label}}</label
           >
           <input
-            type="text"
-            name="system.spell.spelllevel"
-            value="{{system.spell.spelllevel}}"
             data-dtype="Number"
+            id="system.spell.spelllevel"
+            name="system.spell.spelllevel"
+            type="text"
+            value="{{system.spell.spelllevel}}"
           />
         </div>
         <div class="resource">
-          <label for="system.savevalue.value" class="resource-label"
-            >{{localize system.savevalue.label}}</label
+          <label class="resource-label" for="system.savevalue.value"
+          >{{localize system.savevalue.label}}</label
           >
           <input
-            type="text"
+            data-dtype="String"
+            id="system.savevalue.value"
             name="system.savevalue.value"
+            type="text"
             value="{{system.savevalue.value}}"
-            data-dtype="String"
           />
         </div>
         <div class="resource">
-          <label for="system.spellresist.value" class="resource-label"
-            >{{localize system.spellresist.label}}</label
+          <label class="resource-label" for="system.spellresist.value"
+          >{{localize system.spellresist.label}}</label
           >
           <input
-            type="text"
+            data-dtype="String"
+            id="system.spellresist.value"
             name="system.spellresist.value"
+            type="text"
             value="{{system.spellresist.value}}"
-            data-dtype="String"
           />
         </div>
         <div class="resource">
-          <label for="system.spellcomp.value" class="resource-label"
-            >{{localize system.spellcomp.label}}</label
+          <label class="resource-label" for="system.spellcomp.value"
+          >{{localize system.spellcomp.label}}</label
           >
           <input
-            type="text"
+            data-dtype="String"
+            id="system.spellcomp.value"
             name="system.spellcomp.value"
+            type="text"
             value="{{system.spellcomp.value}}"
-            data-dtype="String"
           />
         </div>
         <div class="resource">
-          <label for="system.spelldmg.value" class="resource-label"
-            >{{localize system.spelldmg.label}}</label
+          <label class="resource-label" for="system.spelldmg.value"
+          >{{localize system.spelldmg.label}}</label
           >
           <input
-            type="text"
-            name="system.spelldmg.value"
-            value="{{system.spelldmg.value}}"
             data-dtype="String"
+            id="system.spelldmg.value"
+            name="system.spelldmg.value"
+            type="text"
+            value="{{system.spelldmg.value}}"
           />
         </div>
 
         <div class="resource">
-          <label for="system.prepared.value" class="resource-label"
-            >{{localize system.prepared.label}}</label
+          <label class="resource-label" for="system.prepared.value"
+          >{{localize system.prepared.label}}</label
           >
           <input
-            type="number"
-            name="system.prepared.value"
-            value="{{system.prepared.value}}"
             data-dtype="Number"
+            id="system.prepared.value"
+            name="system.prepared.value"
+            type="number"
+            value="{{system.prepared.value}}"
           />
         </div>
         <div class="resource grid-span-3">
-          <label for="system.component.value" class="resource-label"
-            >{{localize system.component.label}}</label
+          <label class="resource-label" for="system.component.value"
+          >{{localize system.component.label}}</label
           >
           <input
-            type="text"
-            name="system.component.value"
-            value="{{system.component.value}}"
             data-dtype="String"
+            id="system.component.value"
+            name="system.component.value"
+            type="text"
+            value="{{system.component.value}}"
           />
         </div>
         <div class="resource grid-span-2">
-          <label for="system.class.value" class="resource-label"
-            >{{localize system.class.label}}</label
+          <label class="resource-label" for="system.class.value"
+          >{{localize system.class.label}}</label
           >
           <input
-            type="text"
-            name="system.class.value"
-            value="{{system.class.value}}"
             data-dtype="String"
+            id="system.class.value"
+            name="system.class.value"
+            type="text"
+            value="{{system.class.value}}"
           />
         </div>
       </div>
@@ -148,14 +159,15 @@
   <section class="sheet-body">
     <div class="grid grid-2col">
       <div class="resource grid-span-2">
-        <label for="system.spell.summary" class="resource-label"
-          >{{localize 'TLGCC.spellSummary'}}</label
+        <label class="resource-label" for="system.spell.summary"
+        >{{localize 'TLGCC.spellSummary'}}</label
         >
         <input
-          type="text"
-          name="system.spell.summary"
-          value="{{system.spell.summary}}"
           data-dtype="String"
+          id="system.spell.summary"
+          name="system.spell.summary"
+          type="text"
+          value="{{system.spell.summary}}"
         />
       </div>
     </div>

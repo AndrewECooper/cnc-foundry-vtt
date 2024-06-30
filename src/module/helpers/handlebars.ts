@@ -32,3 +32,13 @@ Handlebars.registerHelper('localizeUpperCase', function (str) {
 Handlebars.registerHelper('toCapitalCase', function (str) {
   return str.replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
 });
+
+Handlebars.registerHelper('ifeq', function (a, b, options) {
+  if (a == b) { return options.fn(this); }
+  return options.inverse(this);
+});
+
+Handlebars.registerHelper('ifnoteq', function (a, b, options) {
+  if (a != b) { return options.fn(this); }
+  return options.inverse(this);
+});

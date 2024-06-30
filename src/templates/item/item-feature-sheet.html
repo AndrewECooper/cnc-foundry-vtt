@@ -1,30 +1,31 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form autocomplete="off" class="{{cssClass}}">
   <header class="sheet-header">
     <img
       class="profile-img"
-      src="{{item.img}}"
       data-edit="img"
+      src="{{item.img}}"
       title="{{item.name}}"
     />
     <div class="header-fields">
       <h1 class="charname">
         <input
           name="name"
+          placeholder="{{localize 'TLGCC.Name'}}"
           type="text"
           value="{{item.name}}"
-          placeholder="{{localize 'TLGCC.Name'}}"
         />
       </h1>
       <div class="grid grid-1col">
         <div class="resource">
-          <label for="system.formula.value" class="resource-label"
-            >{{localize system.formula.label}}</label
+          <label class="resource-label" for="system.formula.value"
+          >{{localize system.formula.label}}</label
           >
           <input
-            type="text"
-            name="system.formula.value"
-            value="{{system.formula.value}}"
             data-dtype="String"
+            id="system.formula.value"
+            name="system.formula.value"
+            type="text"
+            value="{{system.formula.value}}"
           />
         </div>
       </div>
@@ -37,14 +38,15 @@
     <div class="description">
       <div class="grid grid-2col">
         <div class="resource grid-span-2">
-          <label for="system.feature.value" class="resource-label"
-            >{{localize 'TLGCC.FeatureTitle'}}</label
+          <label class="resource-label" for="system.feature.value"
+          >{{localize 'TLGCC.FeatureTitle'}}</label
           >
           <input
-            type="text"
-            name="system.feature.value"
-            value="{{system.feature.value}}"
             data-dtype="String"
+            id="system.feature.value"
+            name="system.feature.value"
+            type="text"
+            value="{{system.feature.value}}"
           />
         </div>
       </div>

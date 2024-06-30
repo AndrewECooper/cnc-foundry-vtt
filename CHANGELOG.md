@@ -23,6 +23,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 -->
 ## [Unreleased]
 
+## [1.0.3] - 2024-06-28
+
+### Changed
+
+- Update System to FoundryVTT v12 compatibility (#62) by @KillerWabbit
+
+## [1.0.2] - 2023-12-19
+
+### Changed
+
+- Implemented fix proposed by @javiercanadillas for Issue #57 Character sheet doesn't add STR or DEX modifier on attack or damage rolls by @4d2gaming
+- Attack rolls now add the correct math d20+ BTH + AbilityMOD + Weapon Bonus by @4d2gaming
+
+
 ## [1.0.1] - 2023-05-29
 
 ### Changed

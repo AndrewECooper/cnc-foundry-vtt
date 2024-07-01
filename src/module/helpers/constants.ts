@@ -1,4 +1,6 @@
+// Access the system object
 export const TLGCC = {
+  SYSTEM_ID: 'castles-and-crusades', // This should match the "id" field in your module's manifest
   ASCII: `_________________________________________________________________________________
 
 ███████████                    ████  ████                       █████      ███
@@ -11,6 +13,22 @@ export const TLGCC = {
    ░░░░░    ░░░░░      ░░░░░░  ░░░░░ ░░░░░  ░░░░░░░░░  ░░░░░░░░ ░░░░ ░░░░░ ░░░ 
 
 _________________________________________________________________________________`,
+  PEPPERTIME: `
+%c      ____________________      
+     |  ________________  |     
+     | |                | |     
+     | |   Dr. Pepper   | |     
+     | |                | |     
+     | |    ________    | |     
+     | |   |        |   | |     
+     | |   |        |   | |     
+     | |   |        |   | |     
+     | |   |________|   | |     
+     | |                | |     
+     | |________________| |     
+     |____________________|     
+`,
+  PEPPERCOLOR: 'color: #8B0000; font-weight: bold; font-size: 12px;',
   abilities: {
     str: 'TLGCC.AbilityStr',
     dex: 'TLGCC.AbilityDex',

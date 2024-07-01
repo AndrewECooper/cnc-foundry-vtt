@@ -1,235 +1,109 @@
+import { Logger } from '../utils/logger';
+
+const logger = Logger.getInstance();
+
 /**
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @augments {Actor}
  */
 export class tlgccActor extends Actor {
-  /** @override */
-  prepareData() {
-    // Prepare data for the actor. Calling the super version of this executes
-    // the following, in order: data reset (to clear active effects),
-    // prepareBaseData(), prepareEmbeddedDocuments() (including active effects),
-    // prepareDerivedData().
+  [x: string]: any;
+  override prepareData() {
     super.prepareData();
   }
 
-  /** @override */
-  prepareBaseData() {
+  override prepareBaseData() {
     // Data modifications in this step occur before processing embedded
     // documents or derived data.
   }
 
-  /**
-   * @override
-   * Augment the basic actor data with additional dynamic data. Typically,
-   * you'll want to handle most of your calculated/derived data in this step.
-   * Data calculated in this step should generally not exist in template.json
-   * (such as ability modifiers rather than ability scores) and should be
-   * available both inside and outside of character sheets (such as if an actor
-   * is queried and has a roll executed directly from it).
-   */
-  prepareDerivedData() {
+  override prepareDerivedData() {
     const actorData = this;
-    const data = actorData.system;
-    const flags = actorData.flags.tlgcc || {};
+    logger.debug('Actor data:', actorData);
 
-    // Make separate methods for each Actor type (character, monster, etc.) to keep
-    // things organized.
-    this._prepareCharacterData(actorData);
-    this._prepareMonsterData(actorData);
+    if (actorData.type === 'character') {
+      this._prepareCharacterData(actorData);
+    } else if (actorData.type === 'monster') {
+      this._prepareMonsterData(actorData);
+    }
   }
 
-  /**
-   * Prepare Character type specific data
-   * @param actorData
-   */
-  _prepareCharacterData(actorData) {
-    if (actorData.type !== 'character') return;
-
-    // Make modifications to data here. For example:
+  private _prepareCharacterData(actorData: this) {
+    logger.debug('Character data:', actorData);
     const data = actorData.system;
 
-    // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(data.abilities)) {
-      // Calculate the ability bonus
+    for (const [, ability] of Object.entries(data.abilities)) {
+      // @ts-ignore
       ability.bonus = this._calculateAbilityBonus(ability.value);
     }
   }
 
-  /**
-   * Determine ability score modifiers
-   * @param {object} abilityScore ability score to calculate bonus for
-   * @returns {number} ability bonus
-   */
-  _calculateAbilityBonus(abilityScore) {
-    switch (abilityScore) {
-      case 1:
-        return -4;
-      case 2:
-      case 3:
-        return -3;
-      case 4:
-      case 5:
-        return -2;
-      case 6:
-      case 7:
-      case 8:
-        return -1;
-      case 9:
-      case 10:
-      case 11:
-      case 12:
-        return 0;
-      case 13:
-      case 14:
-      case 15:
-        return 1;
-      case 16:
-      case 17:
-        return 2;
-      case 18:
-      case 19:
-        return 3;
-      case 20:
-      case 21:
-        return 4;
-      case 22:
-      case 23:
-        return 5;
-      case 24:
-      case 25:
-        return 6;
-      default:
-        return 0;
-    }
+  private _calculateAbilityBonus(abilityScore: number): number {
+    if (abilityScore <= 3) return -3;
+    if (abilityScore <= 5) return -2;
+    if (abilityScore <= 8) return -1;
+    if (abilityScore <= 12) return 0;
+    if (abilityScore <= 15) return 1;
+    if (abilityScore <= 17) return 2;
+    if (abilityScore <= 19) return 3;
+    if (abilityScore <= 21) return 4;
+    if (abilityScore <= 23) return 5;
+    if (abilityScore <= 25) return 6;
+    return 0;
   }
 
-  /**
-   * Prepare Monster type specific data.
-   * @param actorData
-   */
-  _prepareMonsterData(actorData) {
-    if (actorData.type !== 'monster') return;
-
+  private _prepareMonsterData(actorData: this) {
     const data = actorData.system;
-    /*     
-    Data.xp.value = function() {
-          let xpLookup = [10, 25, 75, 145, 240, 360, 500, 670, 875, 1075, 1300, 1575, 1875, 2175, 2500, 2850, 3250, 3600, 4000, 4500, 5250, 6000, 6750, 7500, 8250, 9000];
-          let specialAbilityLookup = [3, 12, 25, 30, 40, 45, 55, 65, 70, 75, 90, 95, 100, 110, 115, 125, 135, 145, 160, 175, 200, 225, 250, 275, 300, 325];
-          let xpValue = 0;
-          let xpSpecialAbilityBonus = 0;
-          if (data.hitDice.size == "d8" && data.hitDice.mod >= 0) {
-            xpValue = xpLookup[data.hitDice.number];
-            xpSpecialAbilityBonus = specialAbilityLookup[data.hitDice.number] * data.specialAbility.value;
-          } else {
-            xpValue = xpLookup[0];
-            xpSpecialAbilityBonus = specialAbilityLookup[0] * data.specialAbility.value;
-          }
-          return xpValue + xpSpecialAbilityBonus;
-        }; 
-    */
-
-    data.attackBonus.value = this._calculateMonsterAttackBonus(data);
+    data.attackBonus.value = this._calculateMonsterAttackBonus(data.hitDice.number);
   }
 
-  /**
-   * Calculate monster attack bonus
-   * @param data
-   */
-  _calculateMonsterAttackBonus(data) {
-    if (data.hitDice.number < 1) {
-      return 0;
-    }
-    switch (data.hitDice.number) {
-      case 9:
-        return 8;
-      case 10:
-      case 11:
-        return 9;
-      case 12:
-      case 13:
-        return 10;
-      case 14:
-      case 15:
-        return 11;
-      case 16:
-      case 17:
-      case 18:
-      case 19:
-        return 12;
-      case 20:
-      case 21:
-      case 22:
-      case 23:
-        return 13;
-      case 24:
-      case 25:
-      case 26:
-      case 27:
-        return 14;
-      case 28:
-      case 29:
-      case 30:
-      case 31:
-        return 15;
-      default:
-        return data.hitDice.number;
-    }
+  private _calculateMonsterAttackBonus(hitDiceNumber: number): number {
+    if (hitDiceNumber < 1) return 0;
+    if (hitDiceNumber <= 8) return hitDiceNumber;
+    if (hitDiceNumber <= 9) return 8;
+    if (hitDiceNumber <= 11) return 9;
+    if (hitDiceNumber <= 13) return 10;
+    if (hitDiceNumber <= 15) return 11;
+    if (hitDiceNumber <= 19) return 12;
+    if (hitDiceNumber <= 23) return 13;
+    if (hitDiceNumber <= 27) return 14;
+    if (hitDiceNumber <= 31) return 15;
+    return hitDiceNumber;
   }
 
-  /**
-   * Override getRollData() that's supplied to rolls.
-   */
-  getRollData() {
+  override getRollData() {
     const data = super.getRollData();
 
-    // Prepare character roll data.
-    this._getCharacterRollData(data);
-    this._getMonsterRollData(data);
+    if (this.type === 'character') {
+      this._getCharacterRollData(data);
+    } else if (this.type === 'monster') {
+      this._getMonsterRollData(data);
+    }
+
     this._getActorRollData(data);
 
     return data;
   }
 
-  /**
-   * Prepare character roll data.
-   * @param data
-   */
-  _getCharacterRollData(data) {
-    if (this.type !== 'character') return;
+  private _getCharacterRollData(data: any) {
+    logger.debug('Character roll data:', data);
 
-    // Copy the ability scores to the top level, so that rolls can use
-    // formulas like `@str.bonus + 4`.
     if (data.abilities) {
-      for (let [k, v] of Object.entries(data.abilities)) {
+      Object.entries(data.abilities).forEach(([k, v]) => {
         data[k] = foundry.utils.deepClone(v);
-      }
+      });
     }
 
-    // Add level for easier access, or fall back to 0.
-    if (data.level) {
-      data.lvl = data.level.value ?? 0;
-    }
+    data.lvl = data.level?.value ?? 0;
   }
 
-  /**
-   * Prepare NPC roll data.
-   * @param data
-   */
-  _getMonsterRollData(data) {
-    console.log(data);
-    if (this.type !== 'monster') return;
-
+  private _getMonsterRollData(data: any) {
+    logger.debug('Monster roll data:', data);
     // Process additional NPC data here.
   }
 
-  /**
-   * Prepare shared Actor roll data.
-   * @param data
-   */
-  _getActorRollData(data) {
-    // Add attack bonus for easier access, or fall back to 0.
-    if (data.attackBonus) {
-      data.ab = data.attackBonus.value ?? 0;
-    }
+  private _getActorRollData(data: any) {
+    logger.debug('Actor roll data:', data);
+    data.ab = data.attackBonus?.value ?? 0;
   }
 }

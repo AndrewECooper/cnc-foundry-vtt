@@ -1,4 +1,4 @@
-import { preLocalize } from './utils';
+import { preLocalize } from '../utils/utils';
 
 /**
  * Pre-localize all the strings that are used in the module.

@@ -1,69 +1,59 @@
-/**
- * Extend the basic Item with some very simple modifications.
- * @augments {Item}
- */
 export class tlgccItem extends Item {
-  /**
-   * Augment the basic Item data model with additional dynamic data.
-   */
-  prepareData() {
-    // As with the actor class, items are documents that can have their data
-    // preparation methods overridden (such as prepareBaseData()).
+  [x: string]: any;
+  override prepareData(): void {
     super.prepareData();
   }
 
-  /**
-   * Prepare a data object which is passed to any Roll formulas which are created related to this Item
-   * @private
-   * @returns {object}  RollData object
-   */
-  getRollData() {
-    // If present, return the actor's roll data.
+  // @ts-ignore
+  override getRollData(): object | null {
     if (!this.actor) return null;
     const rollData = this.actor.getRollData();
+    // @ts-ignore
     rollData.item = foundry.utils.deepClone(this.system);
-
     return rollData;
   }
 
-  /**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  async roll() {
-    const item = this;
+  async roll(): Promise<Roll | void> {
+    if (!this.actor) {
+      console.warn("Cannot roll item without an associated actor");
+      return;
+    }
 
-    // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+    // @ts-ignore
     const rollMode = game.settings.get('core', 'rollMode');
-    const label = `Roll: ${game.i18n.localize(
-      `ITEM.Type${item.type.capitalize()}`,
-    )} - ${item.name}`;
+    // @ts-ignore
+    const label = `Roll: ${game.i18n.localize(`ITEM.Type${this.type.capitalize()}`)} - ${this.name}`;
 
-    // If there's no roll data, or the formula is empty, send a chat message.
-    if (!this.system.formula || !this.system.formula.value) {
-      ChatMessage.create({
-        speaker: speaker,
-        rollMode: rollMode,
+    if (!this.system.formula?.value) {
+      // @ts-ignore
+      return ChatMessage.create({
+        speaker,
+        rollMode,
         flavor: label,
-        content: item.system.description ?? '',
+        content: this.system.description ?? '',
       });
-    } else {
-      // Otherwise, create a roll and send a chat message from it.
-      // Retrieve roll data.
-      const rollData = this.getRollData();
+    }
 
-      // Invoke the roll and submit it to chat.
-      const roll = new Roll(rollData.item.formula.value, rollData);
-      // If you need to store the value first, uncomment the next line.
-      // let result = await roll.roll({async: true});
-      roll.toMessage({
-        speaker: speaker,
-        rollMode: rollMode,
+    const rollData = this.getRollData();
+    if (!rollData) {
+      console.error("Failed to get roll data");
+      return;
+    }
+
+    try {
+      // @ts-ignore
+      const roll = new Roll(String(rollData.item.formula.value), rollData);
+      await roll.evaluate({ async: true });
+      await roll.toMessage({
+        speaker,
+        rollMode,
         flavor: label,
       });
       return roll;
+    } catch (error) {
+      console.error("Error during roll:", error);
+      ui.notifications?.error("There was an error processing the roll.");
     }
   }
 }

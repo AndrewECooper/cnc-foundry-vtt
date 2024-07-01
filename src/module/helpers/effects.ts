@@ -1,68 +1,87 @@
 /**
  * Manage Active Effect instances through the Actor Sheet via effect control buttons.
- * @param {MouseEvent} event      The left-click event on the effect control
- * @param {Actor|Item} owner      The owning document which manages this effect
- * @returns {object}              The effect
+ * @param event - The left-click event on the effect control
+ * @param owner - The owning document which manages this effect
+ * @returns The created or updated effect, or void if deleting
  */
-export function onManageActiveEffect(event, owner) {
+export async function onManageActiveEffect(event: MouseEvent, owner: Actor | Item): Promise<ActiveEffect | ActiveEffect[] | void> {
   event.preventDefault();
-  const a = event.currentTarget;
-  const li = a.closest('li');
-  const effect = li.dataset.effectId
-    ? owner.effects.get(li.dataset.effectId)
-    : null;
-  switch (a.dataset.action) {
+  const target = event.currentTarget as HTMLElement;
+  const li = target.closest('li');
+  if (!li) return;
+
+  const effectId = li.dataset.effectId;
+  const effect = effectId ? owner.effects.get(effectId) : null;
+
+  switch (target.dataset.action) {
     case 'create':
-      return owner.createEmbeddedDocuments('ActiveEffect', [
-        {
-          label: 'New Effect',
-          icon: 'icons/svg/aura.svg',
-          origin: owner.uuid,
-          'duration.rounds':
-            li.dataset.effectType === 'temporary' ? 1 : undefined,
-          disabled: li.dataset.effectType === 'inactive',
+      // @ts-ignore
+      return owner.createEmbeddedDocuments('ActiveEffect', [{
+        label: 'New Effect',
+        icon: 'icons/svg/aura.svg',
+        origin: owner.uuid,
+        duration: {
+          rounds: li.dataset.effectType === 'temporary' ? 1 : undefined
         },
-      ]);
+        disabled: li.dataset.effectType === 'inactive'
+      }]);
     case 'edit':
-      return effect.sheet.render(true);
+      // @ts-ignore
+      return effect?.sheet.render(true);
     case 'delete':
-      return effect.delete();
+      return effect?.delete();
     case 'toggle':
-      return effect.update({ disabled: !effect.data.disabled });
+      // @ts-ignore
+      return effect?.update({ disabled: !effect.disabled });
+    default:
+      console.warn(`Unhandled action: ${target.dataset.action}`);
   }
 }
 
+interface EffectCategory {
+  type: 'temporary' | 'passive' | 'inactive';
+  label: string;
+  effects: ActiveEffect[];
+}
+
+type EffectCategories = Record<EffectCategory['type'], EffectCategory>;
+
 /**
  * Prepare the data structure for Active Effects which are currently applied to an Actor or Item.
- * @param {ActiveEffect[]} effects    The array of Active Effect instances to prepare sheet data for
- * @returns {object}                   Data for rendering
+ * @param effects - The array of Active Effect instances to prepare sheet data for
+ * @returns Data for rendering
  */
-export function prepareActiveEffectCategories(effects) {
-  // Define effect header categories
-  const categories = {
+export function prepareActiveEffectCategories(effects: ActiveEffect[]): EffectCategories {
+  const categories: EffectCategories = {
     temporary: {
       type: 'temporary',
       label: 'Temporary Effects',
-      effects: [],
+      effects: []
     },
     passive: {
       type: 'passive',
       label: 'Passive Effects',
-      effects: [],
+      effects: []
     },
     inactive: {
       type: 'inactive',
       label: 'Inactive Effects',
-      effects: [],
-    },
+      effects: []
+    }
   };
 
-  // Iterate over active effects, classifying them into categories
-  for (let e of effects) {
-    e._getSourceName(); // Trigger a lookup for the source name
-    if (e.data.disabled) categories.inactive.effects.push(e);
-    else if (e.isTemporary) categories.temporary.effects.push(e);
-    else categories.passive.effects.push(e);
+  for (const effect of effects) {
+    // @ts-ignore
+    effect._getSourceName(); // Trigger a lookup for the source name
+    // @ts-ignore
+    if (effect.disabled) {
+      categories.inactive.effects.push(effect);
+    } else if (effect.isTemporary) {
+      categories.temporary.effects.push(effect);
+    } else {
+      categories.passive.effects.push(effect);
+    }
   }
+
   return categories;
 }

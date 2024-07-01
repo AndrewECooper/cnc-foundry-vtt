@@ -1,3 +1,4 @@
+import watch from 'rollup-plugin-watch';
 import copy from 'rollup-plugin-copy';
 import typescript from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
@@ -80,7 +81,9 @@ export default defineConfig({
 
     }),
     visualizer(),
+    isDev && watch({ dir: 'src'}),
     isDev && livereload(distDirectory),
+
   ],
   strictDeprecations: true
 });

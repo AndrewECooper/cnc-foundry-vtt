@@ -1,10 +1,11 @@
+// import { ItemSheet } from "@league-of-foundry-developers/foundry-vtt-types/src/foundry/common/documents/item.js";
+// import { TextEditor } from "@league-of-foundry-developers/foundry-vtt-types/src/foundry/client/apps/text-editor.js";
+
 /**
  * Extend the basic ItemSheet with some very simple modifications
- * @augments {ItemSheet}
  */
-export class tlgccItemSheet extends ItemSheet {
-  /** @override */
-  static get defaultOptions() {
+export class TlgccItemSheet extends ItemSheet {
+  static override get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['tlgcc', 'sheet', 'item'],
       width: 520,
@@ -12,68 +13,59 @@ export class tlgccItemSheet extends ItemSheet {
     });
   }
 
-  /** @override */
-  get template() {
+  override get template() {
     const path = 'systems/castles-and-crusades/templates/item';
-    // Return a single sheet for all item types.
-    // return `${path}/item-sheet.html`;
-
-    // Alternatively, you could use the following return statement to do a
-    // unique item sheet by type, like `weapon-sheet.html`.
     return `${path}/item-${this.item.type}-sheet.html`;
   }
 
-  /* -------------------------------------------- */
-  async _enrichTextFields(data, fieldNameArr) {
-    for (let t = 0; t < fieldNameArr.length; t++) {
-      if (foundry.utils.hasProperty(data, fieldNameArr[t])) {
-        foundry.utils.setProperty(
-          data,
-          fieldNameArr[t],
-          await TextEditor.enrichHTML(
-            foundry.utils.getProperty(data, fieldNameArr[t]),
-            {
-              async: true,
-            },
-          ),
+  private async enrichTextFields(data: Record<string, any>, fieldNames: string[]): Promise<void> {
+    for (const fieldName of fieldNames) {
+      if (foundry.utils.hasProperty(data, fieldName)) {
+        const enrichedHTML = await TextEditor.enrichHTML(
+          foundry.utils.getProperty(data, fieldName), //@ts-ignore
+          { async: true }
         );
+        foundry.utils.setProperty(data, fieldName, enrichedHTML);
       }
     }
   }
 
-  /** @override */
-  async getData() {
-    // Retrieve base data structure.
-    const context = super.getData();
-    // Use a safe clone of the item data for further operations.
+  // @ts-ignore
+  override async getData(options?: Partial<DocumentSheetOptions>): Promise<ItemSheetData> {
+    const context = await super.getData(options);
     const itemData = context.item;
 
-    // Retrieve the roll data for TinyMCE editors.
+    // @ts-ignore
     context.rollData = {};
-    let actor = this.object?.parent ?? null;
+    const actor = this.object?.parent ?? null;
     if (actor) {
+      // @ts-ignore
       context.rollData = actor.getRollData();
     }
 
-    // Add the actor's data to context.data for easier access, as well as flags.
+    // @ts-ignore
     context.system = itemData.system;
+    // @ts-ignore
     context.flags = itemData.flags;
 
-    let enrichedFields = ['system.description'];
-    await this._enrichTextFields(context, enrichedFields);
+    await this.enrichTextFields(context, ['system.description']);
 
+    // @ts-ignore
     return context;
   }
 
-  /* -------------------------------------------- */
-
-  /** @override */
-  activateListeners(html) {
+  override activateListeners(html: JQuery): void {
     super.activateListeners(html);
 
-    // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
 
-    // Roll handlers, click handlers, etc. would go here.
+    // Add event listeners here
   }
+}
+
+interface ItemSheetData {
+  item: foundry.documents.BaseItem;
+  rollData: Record<string, any>;
+  system: Record<string, any>;
+  flags: Record<string, any>;
 }

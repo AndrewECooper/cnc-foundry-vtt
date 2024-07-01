@@ -1,63 +1,67 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form autocomplete="off" class="{{cssClass}}">
   <header class="sheet-header">
     <img
       class="profile-img"
-      src="{{item.img}}"
       data-edit="img"
+      src="{{item.img}}"
       title="{{item.name}}"
     />
     <div class="header-fields">
       <h1 class="charname">
         <input
           name="name"
+          placeholder="{{localize 'TLGCC.Name'}}"
           type="text"
           value="{{item.name}}"
-          placeholder="{{localize 'TLGCC.Name'}}"
         />
       </h1>
       <div class="grid grid-4col">
         <div class="resource">
-          <label for="system.quantity.value" class="resource-label"
-            >{{localize system.quantity.label}}</label
+          <label class="resource-label" for="system.quantity.value"
+          >{{localize system.quantity.label}}</label
           >
           <input
-            type="text"
-            name="system.quantity.value"
-            value="{{system.quantity.value}}"
             data-dtype="Number"
+            id="system.quantity.value"
+            name="system.quantity.value"
+            type="text"
+            value="{{system.quantity.value}}"
           />
         </div>
         <div class="resource">
-          <label for="system.price.value" class="resource-label"
-            >{{localize system.price.label}}</label
+          <label class="resource-label" for="system.price.value"
+          >{{localize system.price.label}}</label
           >
           <input
-            type="text"
+            data-dtype="String"
+            id="system.price.value"
             name="system.price.value"
+            type="text"
             value="{{system.price.value}}"
-            data-dtype="String"
           />
         </div>
         <div class="resource">
-          <label for="system.weight.value" class="resource-label"
-            >{{localize system.weight.label}}</label
+          <label class="resource-label" for="system.weight.value"
+          >{{localize system.weight.label}}</label
           >
           <input
-            type="text"
+            data-dtype="String"
+            id="system.weight.value"
             name="system.weight.value"
+            type="text"
             value="{{system.weight.value}}"
-            data-dtype="String"
           />
         </div>
         <div class="resource">
-          <label for="system.itemev.value" class="resource-label"
-            >{{localize 'TLGCC.ItemEV'}}</label
+          <label class="resource-label" for="system.itemev.value"
+          >{{localize 'TLGCC.ItemEV'}}</label
           >
           <input
-            type="text"
-            name="system.itemev.value"
-            value="{{system.itemev.value}}"
             data-dtype="String"
+            id="system.itemev.value"
+            name="system.itemev.value"
+            type="text"
+            value="{{system.itemev.value}}"
           />
         </div>
       </div>

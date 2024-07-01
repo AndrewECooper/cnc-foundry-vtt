@@ -43,6 +43,18 @@
       "flags": {}
     }
   ],
+  "media": [
+    {
+      "type": "cover",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "setup",
+      "url": "systems/castles-and-crusades/assets/cnc-repo.webp",
+      "thumbnail": "systems/castles-and-crusades/assets/cnc-thumbnail.webp"
+    }
+  ],
   "initiative": "1d10",
   "grid": {
     "distance": 5,

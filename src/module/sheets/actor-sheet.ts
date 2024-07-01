@@ -1,394 +1,286 @@
-import {
-  onManageActiveEffect,
-  prepareActiveEffectCategories,
-} from '../helpers/effects';
+import { onManageActiveEffect, prepareActiveEffectCategories } from '../helpers/effects';
+import { Logger } from '../utils/logger';
 
-/**
- * Extend the basic ActorSheet with some very simple modifications
- * @augments {ActorSheet}
- */
-export class tlgccActorSheet extends ActorSheet {
-  /** @override */
-  static get defaultOptions() {
+const logger = Logger.getInstance();
+
+
+export class TlgccActorSheet extends ActorSheet {
+  // @ts-ignore
+  private ROLL_MODE = game.settings.get('core', 'rollMode')
+
+
+  static override get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['tlgcc', 'sheet', 'actor'],
       template: 'systems/castles-and-crusades/templates/actor/actor-sheet.html',
       width: 780,
       height: 600,
-      tabs: [
-        {
-          navSelector: '.sheet-tabs',
-          contentSelector: '.sheet-body',
-          initial: 'combat',
-        },
-      ],
+      tabs: [{
+        navSelector: '.sheet-tabs',
+        contentSelector: '.sheet-body',
+        initial: 'combat',
+      }],
     });
   }
 
-  /** @override */
-  get template() {
+  override get template() {
     return `systems/castles-and-crusades/templates/actor/actor-${this.actor.type}-sheet.html`;
   }
 
-  /* -------------------------------------------- */
-  async _enrichTextFields(data, fieldNameArr) {
-    for (let t = 0; t < fieldNameArr.length; t++) {
-      if (foundry.utils.hasProperty(data, fieldNameArr[t])) {
-        foundry.utils.setProperty(
-          data,
-          fieldNameArr[t],
-          await TextEditor.enrichHTML(
-            foundry.utils.getProperty(data, fieldNameArr[t]),
-            {
-              async: true,
-            },
-          ),
-        );
+  private async _enrichTextFields(data: Record<string, any>, fieldNames: string[]): Promise<void> {
+    for (const fieldName of fieldNames) {
+      if (foundry.utils.hasProperty(data, fieldName)) {
+        // @ts-ignore
+        const enrichedText = await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldName), { async: true });
+        foundry.utils.setProperty(data, fieldName, enrichedText);
       }
     }
   }
 
-  /** @override */
-  async getData() {
-    // Retrieve the data structure from the base sheet. You can inspect or log
-    // the context variable to see the structure, but some key properties for
-    // sheets are the actor object, the data object, whether or not it's
-    // editable, the items array, and the effects array.
-    const context = super.getData();
-
-    // Use a safe clone of the actor data for further operations.
+  // @ts-ignore
+  override async getData(): Promise<Record<string, any>> {
+    const context = await super.getData();
+    logger.debug('ActorSheet Context:', context);
     const actorData = this.actor.toObject(false);
 
-    // Add the actor's data to context.data for easier access, as well as flags.
+    // @ts-ignore
     context.system = actorData.system;
+    // @ts-ignore
     context.flags = actorData.flags;
 
-    // Prepare character data and items.
-    if (actorData.type == 'character') {
-      this._prepareItems(context);
-      this._prepareCharacterData(context);
-      this._prepareActorData(context);
-
-      let enrichedFields = ['system.appearance', 'system.biography'];
-      await this._enrichTextFields(context, enrichedFields);
+    if (actorData.type === 'character') {
+      await this._prepareCharacterData(context);
+    } else if (actorData.type === 'monster') {
+      await this._prepareMonsterData(context);
     }
 
-    // Prepare NPC data and items.
-    if (actorData.type == 'monster') {
-      this._prepareItems(context);
-      this._prepareActorData(context);
-      let enrichedFields = ['system.biography'];
-      await this._enrichTextFields(context, enrichedFields);
-    }
-
-    // Add roll data for TinyMCE editors.
-    context.rollData = context.actor.getRollData();
-
-    // Prepare active effects
+    // @ts-ignore
+    context.rollData = this.actor.getRollData();
+    // @ts-ignore
     context.effects = prepareActiveEffectCategories(this.actor.effects);
-
     return context;
   }
 
-  /**
-   * Organize and classify Items for Actor sheets.
-   * @param {object} actorData The actor to prepare.
-   * @param context
-   * @returns {undefined}
-   */
-  _prepareActorData(context) {
-    // Handle saves.
-    for (let [k, v] of Object.entries(context.system.saves)) {
+  private async _prepareCharacterData(context: Record<string, any>): Promise<void> {
+    this._prepareItems(context);
+    this._prepareActorData(context);
+    await this._enrichTextFields(context, ['system.appearance', 'system.biography']);
+    this._prepareAbilities(context);
+    this._prepareMoney(context);
+  }
+
+  private async _prepareMonsterData(context: Record<string, any>): Promise<void> {
+    this._prepareItems(context);
+    this._prepareActorData(context);
+    await this._enrichTextFields(context, ['system.biography']);
+  }
+
+  private _prepareActorData(context: Record<string, any>): void {
+    for (const [k, v] of Object.entries(context.system.saves ?? {})) {
+      // @ts-ignore
       v.label = game.i18n.localize(CONFIG.TLGCC.saves[k]) ?? k;
     }
   }
 
-  /**
-   * Organize and classify Items for Character sheets.
-   * @param {object} actorData The actor to prepare.
-   * @param context
-   * @returns {undefined}
-   */
-  async _prepareCharacterData(context) {
-    // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
+  private _prepareAbilities(context: Record<string, any>): void {
+    for (const [k, v] of Object.entries(context.system.abilities ?? {})) {
+      // @ts-ignore
       v.label = game.i18n.localize(CONFIG.TLGCC.abilities[k]) ?? k;
     }
-    // Handle money.
-    for (let [k, v] of Object.entries(context.system.money)) {
+  }
+
+  private _prepareMoney(context: Record<string, any>): void {
+    for (const [k, v] of Object.entries(context.system.money ?? {})) {
+      // @ts-ignore
       v.label = game.i18n.localize(CONFIG.TLGCC.money[k]) ?? k;
     }
   }
 
-  /**
-   * Organize and classify Items for Character sheets.
-   * @param {object} actorData The actor to prepare.
-   * @param context
-   * @returns {undefined}
-   */
-  _prepareItems(context) {
-    // Initialize containers.
-    const gear = [];
-    const weapons = [];
-    const armors = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: [],
-    };
-    const features = [];
+  private _prepareItems(context: Record<string, any>): void {
+    const { gear, weapons, armors, spells, features } = this._categorizeItems(context.items);
+    const carriedWeight = this._calculateCarriedWeight(gear, weapons, armors, context.system.money);
 
-    // Define an object to store carried weight.
-    let carriedWeight = {
-      value: 0,
-      _addWeight(moreWeight, quantity) {
-        if (
-          !quantity ||
-          quantity == '' ||
-          Number.isNaN(quantity) ||
-          quantity < 0
-        ) {
-          return; // Check we have a valid quantity, and do nothing if we do not
-        }
-        let q = Math.floor(quantity / 10);
-        if (!Number.isNaN(parseFloat(moreWeight))) {
-          this.value += parseFloat(moreWeight) * quantity;
-        } else if (moreWeight === '*' && q > 0) {
-          this.value += q;
-        }
-      },
-    };
-
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-        carriedWeight._addWeight(
-          i.system.weight.value,
-          i.system.quantity.value,
-        );
-      } else if (i.type === 'weapon') {
-        // Append to weapons.
-        weapons.push(i);
-        carriedWeight._addWeight(i.system.weight.value, 1); // Weapons are always quantity 1
-      } else if (i.type === 'armor') {
-        // Append to armors.
-        armors.push(i);
-        carriedWeight._addWeight(i.system.weight.value, 1); // Armor is always quantity 1
-      } else if (i.type === 'spell') {
-        // Append to spells.
-        if (i.system.spellLevel.value != undefined) {
-          spells[i.system.spellLevel.value].push(i);
-        }
-      } else if (i.type === 'feature') {
-        // Append to features.
-        features.push(i);
-      }
-    }
-
-    // Iterate through money, add to carried weight
-    if (context.system.money) {
-      for (let [k, v] of Object.entries(context.system.money)) {
-        carriedWeight._addWeight('*', v.value);
-      }
-    }
-
-    // Assign and return
-    context.gear = gear;
-    context.weapons = weapons;
-    context.armors = armors;
-    context.spells = spells;
-    context.features = features;
-    context.carriedWeight = Math.floor(carriedWeight.value); // We discard fractions of weight when we update the sheet
+    Object.assign(context, { gear, weapons, armors, spells, features, carriedWeight: Math.floor(carriedWeight) });
   }
 
-  /* -------------------------------------------- */
+  private _categorizeItems(items: any[]): Record<string, any[]> {
+    const categories = {
+      gear: [],
+      weapons: [],
+      armors: [],
+      spells: Array(10).fill(null).map(() => []),
+      features: []
+    };
 
-  /** @override */
-  activateListeners(html) {
+    for (const item of items ?? []) {
+      // @ts-ignore
+      item.img = item.img || DEFAULT_TOKEN;
+      const category = this._getItemCategory(item);
+      if (category === 'spell') {
+        const spellLevel = Number(item.system.spellLevel?.value) || 0;
+        if (spellLevel >= 0 && spellLevel < 10) {
+          // @ts-ignore
+          categories.spells[spellLevel].push(item);
+        }
+      } else if (category) {
+        categories[category].push(item);
+      }
+    }
+
+    return categories;
+  }
+
+  private _getItemCategory(item: any): string | null {
+    switch (item.type) {
+      case 'item': return 'gear';
+      case 'weapon': return 'weapons';
+      case 'armor': return 'armors';
+      case 'spell': return 'spell';
+      case 'feature': return 'features';
+      default: return null;
+    }
+  }
+
+  private _calculateCarriedWeight(gear: any[], weapons: any[], armors: any[], money: Record<string, any>): number {
+    const itemWeight = [...gear, ...weapons, ...armors].reduce((acc, item) => {
+      const weight = Number(item.system.weight?.value) || 0;
+      const quantity = Number(item.system.quantity?.value) || 1;
+      return acc + weight * quantity;
+    }, 0);
+
+    const moneyWeight = Object.values(money ?? {}).reduce((acc, v) => acc + Math.floor(Number(v.value) / 10), 0);
+
+    return itemWeight + moneyWeight;
+  }
+
+  override activateListeners(html: JQuery): void {
     super.activateListeners(html);
 
-    // Render the item sheet for viewing/editing prior to the editable check.
-    html.find('.item-edit').click((ev) => {
-      const li = $(ev.currentTarget).parents('.item');
-      const item = this.actor.items.get(li.data('itemId'));
-      item.sheet.render(true);
-    });
-
-    // -------------------------------------------------------------
-    // Everything below here is only needed if the sheet is editable
+    html.find('.item-edit').click(this._onItemEdit.bind(this));
     if (!this.isEditable) return;
 
-    // Add Inventory Item
     html.find('.item-create').click(this._onItemCreate.bind(this));
-
-    // Delete Inventory Item
-    html.find('.item-delete').click((ev) => {
-      const li = $(ev.currentTarget).parents('.item');
-      const item = this.actor.items.get(li.data('itemId'));
-      item.delete();
-      li.slideUp(200, () => this.render(false));
-    });
-
-    // Prepare Spells
-    html.find('.spell-prepare').click((ev) => {
-      const change = event.currentTarget.dataset.change;
-      if (parseInt(change)) {
-        const li = $(ev.currentTarget).parents('.item');
-        const item = this.actor.items.get(li.data('itemId'));
-        let newValue = item.system.prepared.value + parseInt(change);
-        item.update({ 'system.prepared.value': newValue });
-      }
-    });
-
-    // Active Effect management
-    html
-      .find('.effect-control')
-      .click((ev) => onManageActiveEffect(ev, this.actor));
-
-    // Rollable abilities.
+    html.find('.item-delete').click(this._onItemDelete.bind(this));
+    html.find('.spell-prepare').click(this._onSpellPrepare.bind(this));
+    // @ts-ignore
+    html.find('.effect-control').click(ev => onManageActiveEffect(ev, this.actor));
     html.find('.rollable').click(this._onRoll.bind(this));
 
-    // Drag events for macros.
     if (this.actor.isOwner) {
-      let handler = (ev) => this._onDragStart(ev);
-      html.find('li.item').each((i, li) => {
-        if (li.classList.contains('inventory-header')) return;
-        li.setAttribute('draggable', true);
-        li.addEventListener('dragstart', handler, false);
-      });
+      this._setupDragListeners(html);
     }
   }
 
-  // /**
-  //  * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
-  //  * @param {Event} event   The originating click event
-  //  * @private
-  //  */
-  // async _onItemCreate(event) {
-  //   event.preventDefault();
-  //   const header = event.currentTarget;
-  //   // Get the type of item to create.
-  //   const type = header.dataset.type;
-  //   // Grab any data associated with this control.
-  //   const system = duplicate(header.dataset);
-  //   debugger;
-  //   if (type === "spell") {
-  //     // Move dataset spellLevelValue into spellLevel.value
-  //     data.spellLevel = {
-  //       value: data.spellLevelValue,
-  //     };
-  //     delete data.spellLevelValue;
-  //   }
-  //   // Initialize a default name.
-  //   const name = `New ${type.capitalize()}`;
-  //   // Prepare the item object.
-  //   const itemData = {
-  //     name: name,
-  //     type: type,
-  //     system: system,
-  //   };
-  //   // Remove the type from the dataset since it's in the itemData.type prop.
-  //   delete itemData.system['type'];
+  private _setupDragListeners(html: JQuery): void {
+    html.find('li.item:not(.inventory-header)').each((_, li) => {
+      li.setAttribute('draggable', 'true');
+      li.addEventListener('dragstart', this._onDragStart.bind(this), false);
+    });
+  }
 
-  //   // Finally, create the item!
-  //   // return await Item.create(itemData, { parent: this.actor });
-  //   return this.actor.createEmbeddedDocuments(itemData);
+  private _onItemEdit(event: JQuery.ClickEvent): void {
+    const itemId = $(event.currentTarget).closest('.item').data('itemId');
+    const item = this.actor.items.get(itemId);
+    // @ts-ignore
+    item?.sheet.render(true);
+  }
 
-  // }
-  _onItemCreate(event) {
+  private _onItemCreate(event: JQuery.ClickEvent): void {
     event.preventDefault();
-    let header = event.currentTarget;
-    let data = foundry.utils.duplicate(header.dataset);
+    const header = event.currentTarget;
     const type = header.dataset.type;
+    const data = foundry.utils.duplicate(header.dataset);
 
     if (type === 'spell') {
-      // Move dataset spellLevelValue into spellLevel.value
-      data.spellLevel = {
-        value: data.spellLevelValue,
-      };
+      data.spellLevel = { value: data.spellLevelValue };
       delete data.spellLevelValue;
     }
 
-    data.name = `New ${data.type.capitalize()}`;
-
-    let itemData = {
-      name: data.name,
-      type: data.type,
+    const itemData = {
+      name: `New ${type.capitalize()}`,
+      type,
       system: foundry.utils.deepClone(data),
     };
 
-    this.actor
-      .createEmbeddedDocuments('Item', [itemData], { render: true })
-      .then((item) => {
-        // Automatically render the item sheet we just created
-        item[0].sheet.render(true);
-      });
+    this.actor.createEmbeddedDocuments('Item', [itemData], { render: true }) // @ts-ignore
+      .then(items => items[0]?.sheet.render(true));
   }
 
-  /**
-   * Handle clickable rolls.
-   * @param {Event} event   The originating click event
-   * @private
-   */
-  _onRoll(event) {
+  private _onItemDelete(event: JQuery.ClickEvent): void {
+    const li = $(event.currentTarget).closest('.item');
+    const itemId = li.data('itemId');
+    this.actor.items.get(itemId)?.delete();
+    li.slideUp(200, () => this.render(false));
+  }
+
+  private _onSpellPrepare(event: JQuery.ClickEvent): void {
+    const change = parseInt(event.currentTarget.dataset.change ?? '0');
+    if (change) {
+      const li = $(event.currentTarget).closest('.item');
+      const item = this.actor.items.get(li.data('itemId'));
+      if (item) {
+        // @ts-ignore
+        const newValue = (item.system.prepared?.value ?? 0) + change;
+        item.update({ 'system.prepared.value': newValue });
+      }
+    }
+  }
+
+  private _onRoll(event: JQuery.ClickEvent): Roll | undefined {
     event.preventDefault();
     const element = event.currentTarget;
     const dataset = element.dataset;
 
-    if (dataset.rollType) {
-      // Handle weapon rolls. TODO: this could be moved into the item.roll() function instead
-      if (dataset.rollType == 'weapon') {
-        const itemId = element.closest('.item').dataset.itemId;
-        const item = this.actor.items.get(itemId);
-        let label = dataset.label
-          ? `Roll: ${dataset.label}`
-          : `Roll: ${dataset.attack.capitalize()} attack with ${item.name}`;
-        let rollFormula = 'd20+@ab';
-        if (this.actor.type == 'character') {
-          if (dataset.attack == 'melee') {
-            rollFormula += '+@str.bonus';
-          } else if (dataset.attack == 'ranged') {
-            rollFormula += '+@dex.bonus';
-          }
-        }
-        rollFormula += `+${item.system.bonusAb.value}`;
-        let roll = new Roll(rollFormula, this.actor.getRollData());
-        roll.toMessage({
-          speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-          flavor: label,
-          rollMode: game.settings.get('core', 'rollMode'),
-        });
-        return roll;
-      }
+    if (dataset.rollType === 'weapon') {
+      return this._rollWeapon(element, dataset);
+    } else if (dataset.rollType === 'item') {
+      return this._rollItem(element);
+    } else if (dataset.roll) {
+      return this._rollGeneric(dataset);
+    }
+  }
 
-      // Handle item rolls.
-      if (dataset.rollType == 'item') {
-        const itemId = element.closest('.item').dataset.itemId;
-        const item = this.actor.items.get(itemId);
-        if (item) return item.roll();
-      }
+  private _rollWeapon(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
+    // @ts-ignore
+    const itemId = element.closest('.item')?.dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    if (!item) return;
+
+    const label = dataset.label ? `Roll: ${dataset.label}` : `Roll: ${dataset.attack?.capitalize()} attack with ${item.name}`;
+    // @ts-ignore
+    let rollFormula = `d20+@ab+${item.system.bonusAb?.value ?? 0}`;
+
+    if (this.actor.type === 'character') {
+      rollFormula += dataset.attack === 'melee' ? '+@str.bonus' : '+@dex.bonus';
     }
 
-    // Handle rolls that supply the formula directly.
-    if (dataset.roll) {
-      let label = dataset.label ? `Roll: ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll, this.actor.getRollData());
-      roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get('core', 'rollMode'),
-      });
-      return roll;
-    }
+    const roll = new Roll(rollFormula, this.actor.getRollData());
+    // @ts-ignore
+    roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: label,
+      rollMode: this.ROLL_MODE,
+    });
+
+    return roll;
+  }
+
+  private _rollItem(element: HTMLElement): Roll | undefined {
+    // @ts-ignore
+    const itemId = element.closest('.item')?.dataset.itemId;
+    // @ts-ignore
+    return this.actor.items.get(itemId)?.roll();
+  }
+
+  private _rollGeneric(dataset: DOMStringMap): Roll {
+    const label = dataset.label ? `Roll: ${dataset.label}` : '';
+    const roll = new Roll(dataset.roll ?? '', this.actor.getRollData());
+    // @ts-ignore
+    roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: label,
+      rollMode: this.ROLL_MODE,
+    });
+    return roll;
   }
 }

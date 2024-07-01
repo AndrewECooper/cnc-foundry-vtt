@@ -108,7 +108,7 @@
 /* Global styles */
 .game {
   font-family: 'Soutane', 'Century Gothic', 'TeX Gyre Adventor',
-    var(--font-primary);
+  var(--font-primary), serif;
 }
 #logo {
   content: url('/systems/castles-and-crusades/assets/CnClogo.webp');
@@ -347,8 +347,7 @@
 /* Styles limited to tlgcc sheets */
 
 .tlgcc.sheet.actor {
-  font-family: 'Century Gothic', 'TeX Gyre Adventor', 'Soutane',
-    var(--font-primary);
+  font-family: 'Century Gothic', 'TeX Gyre Adventor', 'Soutane', sans-serif, var(--font-primary);
 }
 
 .tlgcc .sheet-header {
@@ -417,8 +416,7 @@
 }
 
 .tlgcc .editor-content {
-  font-family: 'Soutane', 'Century Gothic', 'TeX Gyre Adventor',
-    var(--font-primary);
+  font-family: 'Century Gothic', 'TeX Gyre Adventor', 'Soutane', sans-serif, var(--font-primary);
   font-size: 18px;
   overflow-y: hidden;
 }
@@ -632,8 +630,8 @@
   outline: 2px solid #000; /* adjust the 2px here */
   outline-offset: -10px; /* control the offset of the rectangle */
   background: linear-gradient(#777777 0 0) top,
-    linear-gradient(#777777 0 0) left, linear-gradient(#777777 0 0) bottom,
-    linear-gradient(#777777 0 0) right;
+  linear-gradient(#777777 0 0) left, linear-gradient(#777777 0 0) bottom,
+  linear-gradient(#777777 0 0) right;
   background-size: 200% 2px, 2px 200%; /* adjust the 2px here */
   background-origin: padding-box;
   background-repeat: no-repeat;

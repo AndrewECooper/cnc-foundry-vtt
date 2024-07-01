@@ -1,101 +1,113 @@
-<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+<form autocomplete="off" class="{{cssClass}} {{actor.type}} flexcol">
 
   {{!-- Sheet Header --}}
   <header class="sheet-header">
-    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+    <img class="profile-img" data-edit="img" height="100" src="{{actor.img}}" title="{{actor.name}}" width="100" />
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}"
-          placeholder="{{localize 'TLGCC.Name'}}" /></h1>
+      <h1 class="charname"><input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text"
+                                  value="{{actor.name}}" /></h1>
       <div class="resources grid grid-5col">
         <div class="resource flex-group-center">
-          <label for="system.hitDice" class="resource-label"><a class="rollable"
-              data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
-              data-label="{{localize system.hitDice.label}}">{{localize 'TLGCC.HitPoints'}} &nbsp;</a></label>
+          <label class="resource-label" for="system.hitDice"><a class="rollable"
+                                                                data-label="{{localize system.hitDice.label}}"
+                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">{{localize
+            'TLGCC.HitPoints'}} &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number"
-              width="50px" />
+            <input data-dtype="Number" id="system.hitDice" name="system.hitPoints.value" type="text"
+                   value="{{system.hitPoints.value}}"
+                   width="50px" />
             <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
-            <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number" />
+            <input data-dtype="Number" name="system.hitPoints.max" type="text" value="{{system.hitPoints.max}}" />
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label for="system.hitDice" class="resource-label"><a class="rollable"
-              data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}"
-              data-label="{{localize system.hitDice.label}}">HD Size &nbsp;</a></label>
+          <label class="resource-label" for="system.hitDice"><a class="rollable"
+                                                                data-label="{{localize system.hitDice.label}}"
+                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">HD
+            Size
+            &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="number" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
-            <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" data-dtype="String" />
+            <input data-dtype="Number" name="system.hitDice.number" type="number" value="{{system.hitDice.number}}" />
+            <input data-dtype="String" name="system.hitDice.size" type="text" value="{{system.hitDice.size}}" />
             <span class="flexshrink flex-align-center"> </span>
-            <input type="number" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number"
-              sign="true" />
+            <input data-dtype="Number" name="system.hitDice.mod" sign="true" type="number"
+                   value="{{system.hitDice.mod}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}" class="resource-label"><a
-              class="rollable" data-roll="d20+{{system.hitDice.number}}"
-              data-label="{{localize system.msaves.label}}: {{localize system.msaves.value}}"> {{localize
-              system.msaves.label}}</a> </label>
+          <label class="resource-label" for="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}"><a
+            class="rollable" data-label="{{localize system.msaves.label}}: {{localize system.msaves.value}}"
+            data-roll="d20+{{system.hitDice.number}}"> {{localize
+            system.msaves.label}}</a> </label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}"
-              value="{{system.msaves.value}}" data-dtype="string" />
+            <input data-dtype="string" id="system.msaves.value" name="system.msaves.value"
+                   title="{{localize 'TLGCC.monsterSavesHover'}}"
+                   type="text" value="{{system.msaves.value}}" />
           </div>
         </div>
 
 
         <div class="resource flex-group-center">
-          <label for="system.numberAppearing.value" class="resource-label"><a class="rollable"
-              data-roll="{{system.numberAppearing.value}}"
-              data-label="{{localize system.numberAppearing.label}}">{{localize
+          <label class="resource-label" for="system.numberAppearing.value">
+            <a class="rollable" data-label="{{localize system.numberAppearing.label}}"
+               data-roll="{{system.numberAppearing.value}}">{{localize
               system.numberAppearing.label}}</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.numberAppearing.value" value="{{system.numberAppearing.value}}"
-              data-dtype="String" />
+            <input data-dtype="String" id="system.numberAppearing.value" name="system.numberAppearing.value" type="text"
+                   value="{{system.numberAppearing.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.monterINT.value" class="resource-label"><a class=""
-              data-label="{{localize system.monterINT.label}} ({{system.monterINT.value}})">{{localize
+          <label class="resource-label" for="system.monterINT.value">
+            <a class="resource-label"
+               data-label="{{localize system.monterINT.label}} ({{system.monterINT.value}})">{{localize
               system.monsterINT.label}}</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.monterINT.value" value="{{system.monterINT.value}}" data-dtype="String" />
+            <input data-dtype="String" id="system.monterINT.value" name="system.monterINT.value" type="text"
+                   value="{{system.monterINT.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.treasureType.value" class="resource-label">{{localize system.treasureType.label}}</label>
+          <label class="resource-label" for="system.treasureType.value">{{localize system.treasureType.label}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.treasureType.value" value="{{system.treasureType.value}}"
-              data-dtype="String" />
+            <input data-dtype="String" id="system.treasureType.value" name="system.treasureType.value" type="text"
+                   value="{{system.treasureType.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.xp.value" class="resource-label">{{localize system.xp.abbr}}</label>
+          <label class="resource-label" for="system.xp.value">{{localize system.xp.abbr}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="String" />
+            <input data-dtype="String" id="system.xp.value" name="system.xp.value" type="text"
+                   value="{{system.xp.value}}" />
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label for="system.alignment.value" class="resource-label">{{localize 'TLGCC.Alignment'}} </label>
+          <label class="resource-label" for="system.alignment.value">{{localize 'TLGCC.Alignment'}} </label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.alignment.value" value="{{system.alignment.value}}" data-dtype="String" />
+            <input data-dtype="String" id="system.alignment.value" name="system.alignment.value" type="text"
+                   value="{{system.alignment.value}}" />
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label for="system.size.value" class="resource-label">{{localize 'TLGCC.Size'}}</label>
+          <label class="resource-label" for="system.size.value">{{localize 'TLGCC.Size'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.size.value" value="{{system.size.value}}" data-dtype="String" />
+            <input data-dtype="String" id="system.size.value" name="system.size.value" type="text"
+                   value="{{system.size.value}}" />
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label for="system.type.value" class="resource-label">{{localize 'TLGCC.monsterType'}}</label>
+          <label class="resource-label" for="system.type.value">{{localize 'TLGCC.monsterType'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input type="text" name="system.type.value" value="{{system.type.value}}" data-dtype="String" />
+            <input data-dtype="String" id="system.type.value" name="system.type.value" type="text"
+                   value="{{system.type.value}}" />
           </div>
         </div>
       </div>
+    </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
@@ -117,9 +129,10 @@
           <div class="abilities flexcol">
             {{#each system.saves as |save key|}}
             <div class="ability flexrow flex-group-center">
-              <label for="system.saves.{{key}}.value" class="resource-label rollable flexlarge align-left"
-                data-roll="d20" data-label="Saving Throw - {{save.label}}">{{save.label}}</label>
-              <input type="text" name="system.saves.{{key}}.value" value="{{save.value}}" data-dtype="Number" />
+              <label class="resource-label rollable flexlarge align-left" data-label="Saving Throw - {{save.label}}"
+                     data-roll="d20" for="system.saves.{{key}}.value">{{save.label}}</label>
+              <input data-dtype="Number" id="system.saves.{{key}}.value" name="system.saves.{{key}}.value" type="text"
+                     value="{{save.value}}" />
             </div>
             {{/each}}
           </div>
@@ -144,29 +157,32 @@
           <div class="item-name">{{localize 'TLGCC.spellLevel'}} {{spellLevel}} {{localize 'TLGCC.Spells'}}</div>
           <div class="item-detail">{{localize 'TLGCC.Prepared'}}</div>
           <div class="item-controls">
-            <a class="item-control item-create" title="Create item" data-type="spell"
-              data-spell-level-value="{{spellLevel}}"><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
+            <a class="item-control item-create" data-spell-level-value="{{spellLevel}}" data-type="spell"
+               title="Create item"><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
           </div>
         </li>
         {{#each spells as |item id|}}
         <li class="item flexrow" data-item-id="{{item._id}}">
           <div class="item-name flexrow">
             <div class="item-image">
-              <a class="rollable" data-roll-type="item"
-                data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"><img
-                  src="{{item.img}}" title="Cast Spell: {{item.name}}" width="24" height="24" /></a>
+              <a class="rollable"
+                 data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"
+                 data-roll-type="item"><img
+                height="24" src="{{item.img}}" title="Cast Spell: {{item.name}}" width="24" /></a>
 
             </div>
-            <h4 title="{{system.spell.summary}}">{{item.name}}</h4> <a class="rollable" data-roll-type="damage"
-              data-roll="{{system.spelldmg.value}}"><img src="systems/castles-and-crusades/styles/damage.svg"
-                title="Roll damage for {{item.name}}" width="24" height="24" /></a>
+            <h4 title="{{system.spell.summary}}">{{item.name}}</h4> <a class="rollable"
+                                                                       data-roll="{{system.spelldmg.value}}"
+                                                                       data-roll-type="damage"><img
+            height="24"
+            src="systems/castles-and-crusades/styles/damage.svg" title="Roll damage for {{item.name}}" width="24" /></a>
           </div>
           <div class="item-prop grid grid-3col">
             <div class="flex-group-right"><a class="item-control spell-prepare" data-change="-1"><i
-                  class="fas fa-minus"></i></a></div>
+              class="fas fa-minus"></i></a></div>
             <div class="flex-group-center">{{item.system.prepared.value}}</div>
             <div class="flex-group-left"><a class="item-control spell-prepare" data-change="+1"><i
-                  class="fas fa-plus"></i></a></div>
+              class="fas fa-plus"></i></a></div>
           </div>
           <div class="item-controls">
             <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
@@ -185,5 +201,5 @@
     </div>
 
   </section>
-  {{log "CONTEXT!!!!"}} {{log this}}
+<!--  {{log "CONTEXT!!!!"}} {{log this}}-->
 </form>

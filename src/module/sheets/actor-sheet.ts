@@ -31,7 +31,7 @@ export class TlgccActorSheet extends ActorSheet {
     for (const fieldName of fieldNames) {
       if (foundry.utils.hasProperty(data, fieldName)) {
         // @ts-ignore
-        const enrichedText = TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldName), { async: true });
+        const enrichedText = await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldName), { async: true });
         foundry.utils.setProperty(data, fieldName, enrichedText);
       }
     }

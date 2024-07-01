@@ -21,7 +21,7 @@ export class TlgccItemSheet extends ItemSheet {
   private async enrichTextFields(data: Record<string, any>, fieldNames: string[]): Promise<void> {
     for (const fieldName of fieldNames) {
       if (foundry.utils.hasProperty(data, fieldName)) {
-        const enrichedHTML = TextEditor.enrichHTML(
+        const enrichedHTML = await TextEditor.enrichHTML(
           foundry.utils.getProperty(data, fieldName), //@ts-ignore
           { async: true }
         );

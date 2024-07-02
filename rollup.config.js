@@ -14,7 +14,8 @@ const srcDirectory = 'src';
 const staticFiles = ['assets', 'lang', 'packs', 'styles', 'templates', 'system.json'];
 
 const isProd = process.env.NODE_ENV === 'production';
-const isDev = !isProd;
+const isDev = !isProd && process.env.ROLLUP_WATCH === 'true';
+
 
 const banner = `/**
 * Author: Troll Lord Games
@@ -25,6 +26,7 @@ const banner = `/**
 /**
  * this simple plugin displays which environment we're in when rollup starts
  * @param {string} environment - the environment to display
+ * @returns {import('rollup').Plugin}
  */
 const environment = (environment) => {
   /** @type {import('rollup').PluginContext} */
@@ -37,6 +39,9 @@ const environment = (environment) => {
   return plugin;
 };
 
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 export default defineConfig({
   input: { [`${name}`]: `${srcDirectory}/module/${name}.ts`},
   output: {

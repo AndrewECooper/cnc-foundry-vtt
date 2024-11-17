@@ -95,9 +95,6 @@ Actor:
     race:
       value: ''
       label: TLGCC.Race
-    weight:
-      value: ''
-      label: TLGCC.Weight
     religion:
       value: ''
       label: TLGCC.Religion

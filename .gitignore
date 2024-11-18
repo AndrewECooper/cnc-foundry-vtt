@@ -19,3 +19,11 @@ foundry
 # ignore visualizer stats
 stats.html
 repo_files.txt
+
+# Python environment
+.venv
+
+# Claude Sync
+.claudeignore
+
+.claudesync/

@@ -1,4 +1,3 @@
-// hooks.ts
 import { TLGCC } from './constants';
 import { tlgccActor } from '../documents/actor';
 import { tlgccItem } from '../documents/item';
@@ -8,6 +7,7 @@ import { preloadHandlebarsTemplates } from './templates';
 import { rollItemMacro, createItemMacro } from './macros';
 import Settings from './settings';
 import { Logger, LogLevel } from '../utils/logger';
+import { MigrationManager } from '../migration/migration_manager';
 
 interface TokenSystemData {
   xp: {
@@ -84,16 +84,26 @@ Hooks.once('init', async function () {
   return preloadHandlebarsTemplates();
 });
 
-// ... other hooks
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
 
 Hooks.once('ready', async function () {
-  // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   logger.debug('Ready hook called');
+
+  // Run migrations if needed
+  try {
+    await MigrationManager.checkAndMigrate();
+  } catch (error) {
+    logger.error('Error during system migration:', error);
+    // @ts-ignore
+    ui.notifications?.error('Error during Castles & Crusades system migration. Check console for details.');
+  }
+
   // @ts-ignore
   logger.info(`Castles & Crusades (${game.system.version}) is ready to play!`);
+
+  // Register hotbar drop hook
   Hooks.on('hotbarDrop', (bar: any, data: any, slot: number) =>
     createItemMacro(data, slot),
   );

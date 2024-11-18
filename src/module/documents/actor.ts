@@ -15,6 +15,7 @@ export class tlgccActor extends Actor {
   override prepareBaseData() {
     // Data modifications in this step occur before processing embedded
     // documents or derived data.
+    this._cleanLevelValue();
   }
 
   override prepareDerivedData() {
@@ -26,6 +27,43 @@ export class tlgccActor extends Actor {
     } else if (actorData.type === 'monster') {
       this._prepareMonsterData(actorData);
     }
+  }
+
+  /**
+   * Cleans up the level value by removing any appended class name
+   * and ensuring it's a proper integer
+   * @private
+   */
+  private _cleanLevelValue(): void {
+    if (this.type !== 'character') return;
+
+    const levelData = this.system?.level;
+    if (!levelData) return;
+
+    let currentValue = levelData.value;
+
+    // If the value is undefined or null, set it to 1
+    if (currentValue === undefined || currentValue === null) {
+      levelData.value = 1;
+      return;
+    }
+
+    // Convert to string to handle all cases
+    currentValue = String(currentValue);
+
+    // If it contains a comma, take only the number part
+    if (currentValue.includes(',')) {
+      currentValue = currentValue.split(',')[0];
+    }
+
+    // Remove any non-numeric characters
+    currentValue = currentValue.replace(/[^\d]/g, '');
+
+    // Convert to integer, defaulting to 1 if invalid
+    const cleanedValue = parseInt(currentValue);
+    levelData.value = isNaN(cleanedValue) ? 1 : cleanedValue;
+
+    logger.debug('Cleaned level value:', levelData.value);
   }
 
   private _prepareCharacterData(actorData: this) {

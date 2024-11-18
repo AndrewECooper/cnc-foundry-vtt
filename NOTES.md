@@ -16,7 +16,7 @@
 ### Known Issues
 - [ ] Brief issue description
     - Workaround: temporary solution
-    - Ticket: #456
+    - Ticket: #84
 
 ## Setup
 ```bash

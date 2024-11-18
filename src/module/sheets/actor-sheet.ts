@@ -3,11 +3,9 @@ import { Logger } from '../utils/logger';
 
 const logger = Logger.getInstance();
 
-
 export class TlgccActorSheet extends ActorSheet {
   // @ts-ignore
-  private ROLL_MODE = game.settings.get('core', 'rollMode')
-
+  private ROLL_MODE = game.settings.get('core', 'rollMode');
 
   static override get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
@@ -231,8 +229,18 @@ export class TlgccActorSheet extends ActorSheet {
     const element = event.currentTarget;
     const dataset = element.dataset;
 
+    // Add debug logging
+    logger.debug('Roll clicked', {
+      element: element,
+      dataset: dataset,
+      rollType: dataset.rollType,
+      attackType: dataset.attack
+    });
+
     if (dataset.rollType === 'weapon') {
       return this._rollWeapon(element, dataset);
+    } else if (dataset.rollType === 'damage') {
+      return this._rollDamage(element, dataset);
     } else if (dataset.rollType === 'item') {
       return this._rollItem(element);
     } else if (dataset.roll) {
@@ -241,20 +249,110 @@ export class TlgccActorSheet extends ActorSheet {
   }
 
   private _rollWeapon(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
+    // Add debug logging
+    logger.debug('Rolling weapon', {
+      element: element,
+      dataset: dataset
+    });
+
+    // @ts-ignore
+    const itemId = element.closest('.item')?.dataset.itemId;
+
+    // Add debug logging for itemId
+    logger.debug('Item ID:', itemId);
+
+    const item = this.actor.items.get(itemId);
+
+    // Add debug logging for item
+    logger.debug('Found item:', item);
+
+    if (!item) {
+      logger.error('No item found for ID:', itemId);
+      return;
+    }
+
+    // Get attack type (melee or ranged)
+    const attackType = dataset.attack;
+
+    // Debug logging for attack type
+    logger.debug('Attack type:', attackType);
+
+    // Determine which ability modifier to use
+    let abilityMod = 0;
+    if (this.actor.type === 'character') {
+      const ability = attackType === 'melee' ? 'str' : 'dex';
+      const actorData = this.actor.system as ActorSystemData;
+      abilityMod = actorData.abilities?.[ability]?.bonus || 0;
+
+      // Debug logging for ability modifier
+      logger.debug('Ability modifier:', {
+        ability: ability,
+        mod: abilityMod,
+        actorData: actorData
+      });
+    }
+
+    // Build attack roll formula
+    const label = dataset.label ? `Roll: ${dataset.label}` : `Roll: ${attackType?.capitalize()} attack with ${item.name}`;
+
+    const itemData = item.system as ItemSystemData;
+    const actorData = this.actor.system as ActorSystemData;
+
+    const attackBonus = parseInt(String(itemData.bonusAb?.value || 0));
+    const baseAttackBonus = parseInt(String(actorData.attackBonus?.value || 0));
+
+    // Debug logging for bonuses
+    logger.debug('Attack bonuses:', {
+      attackBonus: attackBonus,
+      baseAttackBonus: baseAttackBonus,
+      itemData: itemData,
+      actorData: actorData
+    });
+
+    const rollFormula = `d20 + ${baseAttackBonus} + ${attackBonus} + ${abilityMod}`;
+
+    // Debug logging for roll formula
+    logger.debug('Roll formula:', rollFormula);
+
+    const roll = new Roll(rollFormula, this.actor.getRollData());
+
+    // Add flavor text showing the breakdown
+    const flavor = `${label}<br>Attack Roll: 1d20 + ${baseAttackBonus} (Base) + ${attackBonus} (Weapon) + ${abilityMod} (${attackType === 'melee' ? 'STR' : 'DEX'})`;
+
+    // @ts-ignore
+    roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: flavor,
+      rollMode: this.ROLL_MODE,
+    });
+
+    return roll;
+  }
+
+  private _rollDamage(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
     // @ts-ignore
     const itemId = element.closest('.item')?.dataset.itemId;
     const item = this.actor.items.get(itemId);
     if (!item) return;
 
-    const label = dataset.label ? `Roll: ${dataset.label}` : `Roll: ${dataset.attack?.capitalize()} attack with ${item.name}`;
-    // @ts-ignore
-    let rollFormula = `d20+@ab+${item.system.bonusAb?.value ?? 0}`;
+    console.log(item);
 
-    if (this.actor.type === 'character') {
-      rollFormula += dataset.attack === 'melee' ? '+@str.bonus' : '+@dex.bonus';
+    // Add STR modifier to melee damage
+    let damageBonus = 0;
+    // if (this.actor.type === 'character' && item?.system && item.system.range?.value === 'Melee') {
+    //   // @ts-ignore
+    //   damageBonus = this.actor.system.abilities.str.bonus || 0;
+    // }
+
+    // @ts-ignore
+    let rollFormula = item.system.damage?.value || '';
+    if (damageBonus !== 0) {
+      rollFormula += damageBonus >= 0 ? ` + ${damageBonus}` : ` - ${Math.abs(damageBonus)}`;
     }
 
     const roll = new Roll(rollFormula, this.actor.getRollData());
+    const label = `${item.name} Damage${damageBonus !== 0 ? ` (includes STR mod: ${damageBonus})` : ''}`;
+
     // @ts-ignore
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),

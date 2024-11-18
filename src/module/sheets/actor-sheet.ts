@@ -1,5 +1,5 @@
 import { Logger } from '../utils/logger';
-import { TLGCCActor, TLGCCItem, ActorSystemData, ItemSystemData, HTMLElementWithDataset } from '../types';
+import { TLGCCActor, TLGCCItem, ActorSystemData, ItemSystemData, WeaponData, HTMLElementWithDataset } from '../types';
 import { onManageActiveEffect, prepareActiveEffectCategories } from '../helpers/effects';
 
 
@@ -101,11 +101,64 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     }
   }
 
+  private _determineWeaponType(weapon: TLGCCItem): 'melee' | 'ranged' | 'both' {
+    if (!weapon?.name || !weapon.system) return 'melee'; // Default to melee if no data
+
+    const name = weapon.name.toLowerCase();
+    const range = (weapon.system as WeaponData).range?.value?.toLowerCase() || '';
+
+    // Definite ranged weapons
+    const rangedOnly = [
+      'bow', 'crossbow', 'sling'
+    ];
+
+    // Weapons that can be both thrown and used in melee
+    const throwableWeapons = [
+      'dagger', 'handaxe', 'spear', 'hammer', 'javelin'
+    ];
+
+    // Check if it's explicitly a ranged weapon
+    if (rangedOnly.some(w => name.includes(w))) {
+      return 'ranged';
+    }
+
+    // Check if it's a throwable weapon
+    if (throwableWeapons.some(w => name.includes(w)) || range.includes('thrown')) {
+      return 'both';
+    }
+
+    // By default, weapons are melee unless they have a range value with feet
+    if (range.includes('ft') && !range.includes('thrown')) {
+      return 'ranged';
+    }
+
+    return 'melee';
+  }
+
   private _prepareItems(context: Record<string, any>): void {
     const { gear, weapons, armors, spells, features } = this._categorizeItems(context.items);
-    const carriedWeight = this._calculateCarriedWeight(gear, weapons, armors, context.system.money);
 
-    Object.assign(context, { gear, weapons, armors, spells, features, carriedWeight: Math.floor(carriedWeight) });
+    // Add attack type information to weapons
+    const processedWeapons = weapons.map(weapon => {
+      const attackType = this._determineWeaponType(weapon);
+      return {
+        ...weapon,
+        attackType,
+        canMelee: attackType === 'melee' || attackType === 'both',
+        canRanged: attackType === 'ranged' || attackType === 'both'
+      };
+    });
+
+    const carriedWeight = this._calculateCarriedWeight(gear, processedWeapons, armors, context.system.money);
+
+    Object.assign(context, {
+      gear,
+      weapons: processedWeapons,
+      armors,
+      spells,
+      features,
+      carriedWeight: Math.floor(carriedWeight)
+    });
   }
 
   private _categorizeItems(items: any[]): Record<string, any[]> {

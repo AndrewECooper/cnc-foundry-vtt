@@ -682,3 +682,41 @@
     grid-column: span 5;
   }
 }
+
+/* attack button styles */
+.attack-button {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.attack-button.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.attack-button:hover:not(.disabled) {
+  opacity: 0.8;
+}
+
+/* Optional: Add a tooltip for disabled buttons */
+.attack-button.disabled::after {
+  content: attr(data-disabled-reason);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.attack-button.disabled:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

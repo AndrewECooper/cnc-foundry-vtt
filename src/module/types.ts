@@ -26,6 +26,18 @@ export interface ItemSystemData {
   range?: { value: string };
 }
 
+export interface WeaponData extends ItemSystemData {
+  range?: {
+    value: string;
+    label: string;
+  };
+  weaponType?: {
+    value: 'melee' | 'ranged' | 'both';
+    label: string;
+  };
+}
+
 export interface HTMLElementWithDataset extends HTMLElement {
   dataset: DOMStringMap;
 }
+

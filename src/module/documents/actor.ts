@@ -54,7 +54,9 @@ export class tlgccActor extends Actor {
 
   private _prepareMonsterData(actorData: this) {
     const data = actorData.system;
-    data.attackBonus.value = this._calculateMonsterAttackBonus(data.hitDice.number);
+    data.attackBonus.value = this._calculateMonsterAttackBonus(
+      data.hitDice.number,
+    );
   }
 
   private _calculateMonsterAttackBonus(hitDiceNumber: number): number {

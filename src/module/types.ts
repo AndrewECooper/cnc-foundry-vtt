@@ -40,4 +40,3 @@ export interface WeaponData extends ItemSystemData {
 export interface HTMLElementWithDataset extends HTMLElement {
   dataset: DOMStringMap;
 }
-

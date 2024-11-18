@@ -5,10 +5,9 @@
     "lib": ["DOM", "DOM.Iterable", "ES6", "ES2022"],
     "types": ["@league-of-foundry-developers/foundry-vtt-types"],
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitOverride": true,
-    "strict": false,
-    "strictNullChecks": true
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   }
 }

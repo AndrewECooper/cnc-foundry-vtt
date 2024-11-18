@@ -1,5 +1,23 @@
 import { Logger } from './logger';
 
+interface ConfigCollection {
+  collection: {
+    instance: any;
+  };
+}
+
+// utils.ts
+interface GameConfig {
+  [key: string]: {
+    collection: {
+      instance: Collection<any>;
+    };
+  };
+}
+
+// @ts-ignore - game.config exists in foundry
+const config = game.config as GameConfig;
+
 const logger = Logger.getInstance();
 
 /* Copyright notice and license */
@@ -15,7 +33,10 @@ const logger = Logger.getInstance();
  * @param sortKey An inner key upon which to sort.
  * @returns A copy of the original object that has been sorted.
  */
-export function sortObjectEntries<T extends Record<string, any>>(obj: T, sortKey?: keyof T[keyof T]): T {
+export function sortObjectEntries<T extends Record<string, any>>(
+  obj: T,
+  sortKey?: keyof T[keyof T],
+): T {
   const sorted = Object.entries(obj).sort(([, a], [, b]) => {
     if (sortKey) {
       return (a[sortKey] as string).localeCompare(b[sortKey] as string);
@@ -43,7 +64,7 @@ export function indexFromUuid(uuid: string): object | null {
     index = pack?.index.get(id);
   } else if (parts.length < 3) {
     const [docName, id] = parts;
-    const collection = CONFIG[docName].collection.instance;
+    const collection = config[docName].collection.instance;
     index = collection.get(id);
   }
 
@@ -82,14 +103,20 @@ interface PreLocalizationRegistration {
   sort: boolean;
 }
 
-const _preLocalizationRegistrations: Record<string, PreLocalizationRegistration> = {};
+const _preLocalizationRegistrations: Record<
+  string,
+  PreLocalizationRegistration
+> = {};
 
 /**
  * Mark the provided config key to be pre-localized during the init stage.
  * @param configKey Key within `CONFIG.DND5E` to localize.
  * @param options Options for pre-localization.
  */
-export function preLocalize(configKey: string, options: PreLocalizationOptions = {}): void {
+export function preLocalize(
+  configKey: string,
+  options: PreLocalizationOptions = {},
+): void {
   const { key, keys = [], sort = false } = options;
   const finalKeys = key ? [key, ...keys] : keys;
   _preLocalizationRegistrations[configKey] = { keys: finalKeys, sort };
@@ -120,7 +147,9 @@ function _localizeObject(obj: Record<string, any>, keys: string[]): void {
       obj[k] = game.i18n.localize(v);
     } else if (typeof v === 'object' && v !== null) {
       if (!keys.length) {
-        logger.error('Localization keys must be provided for pre-localizing when target is an object.');
+        logger.error(
+          'Localization keys must be provided for pre-localizing when target is an object.',
+        );
         continue;
       }
       for (const key of keys) {
@@ -130,7 +159,9 @@ function _localizeObject(obj: Record<string, any>, keys: string[]): void {
         }
       }
     } else {
-      logger.error(`Pre-localized configuration values must be a string or object, ${typeof v} found for "${k}" instead.`);
+      logger.error(
+        `Pre-localized configuration values must be a string or object, ${typeof v} found for "${k}" instead.`,
+      );
     }
   }
 }

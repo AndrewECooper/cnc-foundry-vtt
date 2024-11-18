@@ -4,7 +4,9 @@
  * @param owner - The owning document which manages this effect
  * @returns The created or updated effect, or void if deleting
  */
-export async function onManageActiveEffect(event: MouseEvent, owner: Actor | Item): Promise<ActiveEffect | ActiveEffect[] | void> {
+export async function onManageActiveEffect(event: MouseEvent | null, owner: Actor | Item): Promise<ActiveEffect | ActiveEffect[] | void> {
+  if (!event) return;
+
   event.preventDefault();
   const target = event.currentTarget as HTMLElement;
   const li = target.closest('li');
@@ -16,15 +18,17 @@ export async function onManageActiveEffect(event: MouseEvent, owner: Actor | Ite
   switch (target.dataset.action) {
     case 'create':
       // @ts-ignore
-      return owner.createEmbeddedDocuments('ActiveEffect', [{
-        label: 'New Effect',
-        icon: 'icons/svg/aura.svg',
-        origin: owner.uuid,
-        duration: {
-          rounds: li.dataset.effectType === 'temporary' ? 1 : undefined
+      return owner.createEmbeddedDocuments('ActiveEffect', [
+        {
+          label: 'New Effect',
+          icon: 'icons/svg/aura.svg',
+          origin: owner.uuid,
+          duration: {
+            rounds: li.dataset.effectType === 'temporary' ? 1 : undefined,
+          },
+          disabled: li.dataset.effectType === 'inactive',
         },
-        disabled: li.dataset.effectType === 'inactive'
-      }]);
+      ]);
     case 'edit':
       // @ts-ignore
       return effect?.sheet.render(true);
@@ -51,23 +55,25 @@ type EffectCategories = Record<EffectCategory['type'], EffectCategory>;
  * @param effects - The array of Active Effect instances to prepare sheet data for
  * @returns Data for rendering
  */
-export function prepareActiveEffectCategories(effects: ActiveEffect[]): EffectCategories {
+export function prepareActiveEffectCategories(
+  effects: ActiveEffect[],
+): EffectCategories {
   const categories: EffectCategories = {
     temporary: {
       type: 'temporary',
       label: 'Temporary Effects',
-      effects: []
+      effects: [],
     },
     passive: {
       type: 'passive',
       label: 'Passive Effects',
-      effects: []
+      effects: [],
     },
     inactive: {
       type: 'inactive',
       label: 'Inactive Effects',
-      effects: []
-    }
+      effects: [],
+    },
   };
 
   for (const effect of effects) {

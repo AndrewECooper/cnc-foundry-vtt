@@ -1,11 +1,32 @@
 import { Logger } from '../utils/logger';
-import { TLGCCActor, TLGCCItem, ActorSystemData, ItemSystemData, WeaponData, HTMLElementWithDataset } from '../types';
-import { onManageActiveEffect, prepareActiveEffectCategories } from '../helpers/effects';
+import {
+  TLGCCActor,
+  TLGCCItem,
+  ActorSystemData,
+  ItemSystemData,
+  WeaponData,
+  HTMLElementWithDataset,
+} from '../types';
+import {
+  onManageActiveEffect,
+  prepareActiveEffectCategories,
+} from '../helpers/effects';
 
+interface ItemCategories {
+  gear: any[];
+  weapons: any[];
+  armors: any[];
+  spells: any[][];
+  features: any[];
+  [key: string]: any[] | any[][];
+}
 
 const logger = Logger.getInstance();
 
-export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> {
+export class TlgccActorSheet extends ActorSheet<
+  ActorSheet.Options,
+  TLGCCActor
+> {
   // Remove the declare actor line and instead override the getter
   override get actor(): TLGCCActor {
     // @ts-ignore - We know this will be our custom actor type
@@ -20,11 +41,13 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
       template: 'systems/castles-and-crusades/templates/actor/actor-sheet.html',
       width: 780,
       height: 600,
-      tabs: [{
-        navSelector: '.sheet-tabs',
-        contentSelector: '.sheet-body',
-        initial: 'combat',
-      }],
+      tabs: [
+        {
+          navSelector: '.sheet-tabs',
+          contentSelector: '.sheet-body',
+          initial: 'combat',
+        },
+      ],
     });
   }
 
@@ -32,11 +55,18 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     return `systems/castles-and-crusades/templates/actor/actor-${this.actor.type}-sheet.html`;
   }
 
+  // actor-sheet.ts
   private async _enrichTextFields(data: Record<string, any>, fieldNames: string[]): Promise<void> {
     for (const fieldName of fieldNames) {
       if (foundry.utils.hasProperty(data, fieldName)) {
-        // @ts-ignore
-        const enrichedText = await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldName), { async: true });
+        // @ts-ignore - foundry types don't match actual API
+        const enrichedText = await TextEditor.enrichHTML(
+          foundry.utils.getProperty(data, fieldName),
+          {
+            secrets: this.actor.isOwner,
+            rollData: this.actor?.getRollData()
+          }
+        );
         foundry.utils.setProperty(data, fieldName, enrichedText);
       }
     }
@@ -66,15 +96,22 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     return context;
   }
 
-  private async _prepareCharacterData(context: Record<string, any>): Promise<void> {
+  private async _prepareCharacterData(
+    context: Record<string, any>,
+  ): Promise<void> {
     this._prepareItems(context);
     this._prepareActorData(context);
-    await this._enrichTextFields(context, ['system.appearance', 'system.biography']);
+    await this._enrichTextFields(context, [
+      'system.appearance',
+      'system.biography',
+    ]);
     this._prepareAbilities(context);
     this._prepareMoney(context);
   }
 
-  private async _prepareMonsterData(context: Record<string, any>): Promise<void> {
+  private async _prepareMonsterData(
+    context: Record<string, any>,
+  ): Promise<void> {
     this._prepareItems(context);
     this._prepareActorData(context);
     await this._enrichTextFields(context, ['system.biography']);
@@ -105,25 +142,31 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     if (!weapon?.name || !weapon.system) return 'melee'; // Default to melee if no data
 
     const name = weapon.name.toLowerCase();
-    const range = (weapon.system as WeaponData).range?.value?.toLowerCase() || '';
+    const range =
+      (weapon.system as WeaponData).range?.value?.toLowerCase() || '';
 
     // Definite ranged weapons
-    const rangedOnly = [
-      'bow', 'crossbow', 'sling'
-    ];
+    const rangedOnly = ['bow', 'crossbow', 'sling'];
 
     // Weapons that can be both thrown and used in melee
     const throwableWeapons = [
-      'dagger', 'handaxe', 'spear', 'hammer', 'javelin'
+      'dagger',
+      'handaxe',
+      'spear',
+      'hammer',
+      'javelin',
     ];
 
     // Check if it's explicitly a ranged weapon
-    if (rangedOnly.some(w => name.includes(w))) {
+    if (rangedOnly.some((w) => name.includes(w))) {
       return 'ranged';
     }
 
     // Check if it's a throwable weapon
-    if (throwableWeapons.some(w => name.includes(w)) || range.includes('thrown')) {
+    if (
+      throwableWeapons.some((w) => name.includes(w)) ||
+      range.includes('thrown')
+    ) {
       return 'both';
     }
 
@@ -136,20 +179,27 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
   }
 
   private _prepareItems(context: Record<string, any>): void {
-    const { gear, weapons, armors, spells, features } = this._categorizeItems(context.items);
+    const { gear, weapons, armors, spells, features } = this._categorizeItems(
+      context.items,
+    );
 
     // Add attack type information to weapons
-    const processedWeapons = weapons.map(weapon => {
+    const processedWeapons = weapons.map((weapon) => {
       const attackType = this._determineWeaponType(weapon);
       return {
         ...weapon,
         attackType,
         canMelee: attackType === 'melee' || attackType === 'both',
-        canRanged: attackType === 'ranged' || attackType === 'both'
+        canRanged: attackType === 'ranged' || attackType === 'both',
       };
     });
 
-    const carriedWeight = this._calculateCarriedWeight(gear, processedWeapons, armors, context.system.money);
+    const carriedWeight = this._calculateCarriedWeight(
+      gear,
+      processedWeapons,
+      armors,
+      context.system.money,
+    );
 
     Object.assign(context, {
       gear,
@@ -157,12 +207,12 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
       armors,
       spells,
       features,
-      carriedWeight: Math.floor(carriedWeight)
+      carriedWeight: Math.floor(carriedWeight),
     });
   }
 
-  private _categorizeItems(items: any[]): Record<string, any[]> {
-    const categories = {
+  private _categorizeItems(items: any[]): ItemCategories {
+    const categories: ItemCategories = {
       gear: [],
       weapons: [],
       armors: [],
@@ -190,23 +240,37 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
 
   private _getItemCategory(item: any): string | null {
     switch (item.type) {
-      case 'item': return 'gear';
-      case 'weapon': return 'weapons';
-      case 'armor': return 'armors';
-      case 'spell': return 'spell';
-      case 'feature': return 'features';
-      default: return null;
+      case 'item':
+        return 'gear';
+      case 'weapon':
+        return 'weapons';
+      case 'armor':
+        return 'armors';
+      case 'spell':
+        return 'spell';
+      case 'feature':
+        return 'features';
+      default:
+        return null;
     }
   }
 
-  private _calculateCarriedWeight(gear: any[], weapons: any[], armors: any[], money: Record<string, any>): number {
+  private _calculateCarriedWeight(
+    gear: any[],
+    weapons: any[],
+    armors: any[],
+    money: Record<string, any>,
+  ): number {
     const itemWeight = [...gear, ...weapons, ...armors].reduce((acc, item) => {
       const weight = Number(item.system.weight?.value) || 0;
       const quantity = Number(item.system.quantity?.value) || 1;
       return acc + weight * quantity;
     }, 0);
 
-    const moneyWeight = Object.values(money ?? {}).reduce((acc, v) => acc + Math.floor(Number(v.value) / 10), 0);
+    const moneyWeight = Object.values(money ?? {}).reduce(
+      (acc, v) => acc + Math.floor(Number(v.value) / 10),
+      0,
+    );
 
     return itemWeight + moneyWeight;
   }
@@ -221,7 +285,9 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     html.find('.item-delete').click(this._onItemDelete.bind(this));
     html.find('.spell-prepare').click(this._onSpellPrepare.bind(this));
     // @ts-ignore
-    html.find('.effect-control').click(ev => onManageActiveEffect(ev, this.actor));
+    html.find('.effect-control').click((ev: JQuery.ClickEvent) =>
+      onManageActiveEffect(ev.originalEvent as MouseEvent, this.actor)
+    );
     html.find('.rollable').click(this._onRoll.bind(this));
 
     if (this.actor.isOwner) {
@@ -260,8 +326,9 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
       system: foundry.utils.deepClone(data),
     };
 
-    this.actor.createEmbeddedDocuments('Item', [itemData], { render: true }) // @ts-ignore
-      .then(items => items[0]?.sheet.render(true));
+    this.actor
+      .createEmbeddedDocuments('Item', [itemData], { render: true }) // @ts-ignore
+      .then((items) => items[0]?.sheet.render(true));
   }
 
   private _onItemDelete(event: JQuery.ClickEvent): void {
@@ -294,7 +361,7 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
       element: element,
       dataset: dataset,
       rollType: dataset.rollType,
-      attackType: dataset.attack
+      attackType: dataset.attack,
     });
 
     if (dataset.rollType === 'weapon') {
@@ -311,13 +378,20 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
   private _isFinesseMeleeWeapon(weaponName: string | null): boolean {
     if (!weaponName) return false;
     const finesseWeapons = ['dagger', 'rapier', 'short sword'];
-    return finesseWeapons.some(weapon => weaponName.toLowerCase().includes(weapon));
+    return finesseWeapons.some((weapon) =>
+      weaponName.toLowerCase().includes(weapon),
+    );
   }
 
-  private _rollWeapon(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
+  private _rollWeapon(
+    element: HTMLElement,
+    dataset: DOMStringMap,
+  ): Roll | undefined {
     logger.debug('Rolling weapon', { element, dataset });
 
-    const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
+    const itemElement = element.closest(
+      '.item',
+    ) as HTMLElementWithDataset | null;
     if (!itemElement?.dataset?.itemId) return;
 
     const itemId = itemElement.dataset.itemId;
@@ -375,7 +449,7 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
       abilityMod,
       abilityUsed,
       itemData,
-      actorData
+      actorData,
     });
 
     const rollFormula = `d20 + ${baseAttackBonus} + ${attackBonus} + ${abilityMod}`;
@@ -395,8 +469,13 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     return roll;
   }
 
-  private _rollDamage(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
-    const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
+  private _rollDamage(
+    element: HTMLElement,
+    dataset: DOMStringMap,
+  ): Roll | undefined {
+    const itemElement = element.closest(
+      '.item',
+    ) as HTMLElementWithDataset | null;
     if (!itemElement?.dataset?.itemId) return;
 
     const itemId = itemElement.dataset.itemId;
@@ -446,11 +525,14 @@ export class TlgccActorSheet extends ActorSheet<ActorSheet.Options, TLGCCActor> 
     let rollFormula = itemData.damage?.value || '';
 
     if (damageBonus !== 0) {
-      rollFormula += damageBonus >= 0 ? ` + ${damageBonus}` : ` - ${Math.abs(damageBonus)}`;
+      rollFormula +=
+        damageBonus >= 0 ? ` + ${damageBonus}` : ` - ${Math.abs(damageBonus)}`;
     }
 
     const roll = new Roll(rollFormula, this.actor?.getRollData());
-    const label = `${item.name || 'Unknown Item'} Damage${damageBonus !== 0 ? ` (includes ${abilityUsed} mod: ${damageBonus})` : ''}`;
+    const label = `${item.name || 'Unknown Item'} Damage${
+      damageBonus !== 0 ? ` (includes ${abilityUsed} mod: ${damageBonus})` : ''
+    }`;
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),

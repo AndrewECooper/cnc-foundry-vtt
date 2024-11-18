@@ -1,10 +1,9 @@
 import { TLGCC } from './constants';
-import { Logger, LogLevel} from '../utils/logger';
+import { Logger, LogLevel } from '../utils/logger';
 
 const logger = Logger.getInstance();
 
 class Settings {
-
   static registerSettings(): void {
     // Add a log level setting to the system settings
     // @ts-ignore
@@ -15,18 +14,17 @@ class Settings {
       config: true,
       type: String,
       choices: {
-        'debug': 'Debug',
-        'info': 'Info',
-        'warn': 'Warning',
-        'error': 'Error'
+        debug: 'Debug',
+        info: 'Info',
+        warn: 'Warning',
+        error: 'Error',
       },
       default: 'info',
-      onChange: value => {
+      onChange: (value: string) => {
         const level = LogLevel[value.toUpperCase() as keyof typeof LogLevel];
         logger.setLogLevel(level);
       }
     });
-
 
     // game.settings.register(MODULE_ID, 'exampleSetting', {
     //   name: 'Example Setting',

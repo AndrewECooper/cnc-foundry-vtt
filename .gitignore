@@ -22,3 +22,8 @@ repo_files.txt
 
 # Python environment
 .venv
+
+# Claude Sync
+.claudeignore
+
+.claudesync/

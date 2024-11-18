@@ -11,7 +11,7 @@ import { Logger, LogLevel } from '../utils/logger';
 
 interface TokenSystemData {
   xp: {
-    value: string | number;  // Allow both string and number
+    value: string | number; // Allow both string and number
   };
   hitDice: any;
   hitPoints: {
@@ -38,7 +38,9 @@ Hooks.once('init', async function () {
   // Set initial log level from settings
   // @ts-ignore
   const savedLogLevel = Settings.logLevel as keyof typeof LogLevel;
-  logger.setLogLevel(LogLevel[savedLogLevel.toUpperCase() as keyof typeof LogLevel]);
+  logger.setLogLevel(
+    LogLevel[savedLogLevel.toUpperCase() as keyof typeof LogLevel],
+  );
   logger.info(
     `Initializing the Castles & Crusades Game System\n${TLGCC.ASCII}`,
   );
@@ -101,7 +103,7 @@ Hooks.once('ready', async function () {
 /*  Character Creation Hooks                    */
 /* -------------------------------------------- */
 
-Hooks.on('createActor', async function(actor: Actor) {
+Hooks.on('createActor', async function (actor: Actor) {
   logger.debug('createActor hook called');
   if (actor.type === 'character') {
     actor.data.token.actorLink = true;
@@ -112,26 +114,34 @@ Hooks.on('createActor', async function(actor: Actor) {
 /*  Token Creation Hooks                        */
 /* -------------------------------------------- */
 
-Hooks.on('createToken', async function(token: TokenDocument, options: any, id: string) {
-  logger.debug('createToken hook called');
-  if (token.actor && token.actor.type === 'monster') {
-    const actor = token.actor;
+Hooks.on(
+  'createToken',
+  async function (token: TokenDocument, options: any, id: string) {
+    logger.debug('createToken hook called');
+    if (token.actor && token.actor.type === 'monster') {
+      const actor = token.actor;
 
-    if (typeof actor.system.xp.value === 'string' && actor.system.xp.value.includes('+')) {
-      let tokenHitDice = actor.system.hitDice;
+      if (
+        typeof actor.system.xp.value === 'string' &&
+        actor.system.xp.value.includes('+')
+      ) {
+        let tokenHitDice = actor.system.hitDice;
 
-      let newHitPoints = new Roll(
-        `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
-      );
-      await newHitPoints.evaluate({ async: true });
-      actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
-      actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
+        let newHitPoints = new Roll(
+          `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
+        );
+        await newHitPoints.evaluate({ async: true });
+        actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
+        actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
 
-      // Calculate XP and convert to string
-      const [baseXP, multiplier] = actor.system.xp.value.split('+').map(Number);
-      actor.system.xp.value = String(
-        baseXP + (multiplier * actor.system.hitPoints.max)
-      );
+        // Calculate XP and convert to string
+        const [baseXP, multiplier] = actor.system.xp.value
+          .split('+')
+          .map(Number);
+        actor.system.xp.value = String(
+          baseXP + multiplier * actor.system.hitPoints.max,
+        );
+      }
     }
-  }
-});
+  },
+);

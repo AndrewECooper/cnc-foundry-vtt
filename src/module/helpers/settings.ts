@@ -23,7 +23,7 @@ class Settings {
       onChange: (value: string) => {
         const level = LogLevel[value.toUpperCase() as keyof typeof LogLevel];
         logger.setLogLevel(level);
-      }
+      },
     });
 
     // game.settings.register(MODULE_ID, 'exampleSetting', {

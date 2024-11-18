@@ -4,11 +4,17 @@
  */
 interface MacroConfig {
   name: string;
-  type: "script" | "chat";
+  type: 'script' | 'chat';
   img: string | null;
   command: string;
   flags: Record<string, unknown>;
 }
+
+interface FoundryMacro extends Macro {
+  name: string;
+  command: string;
+}
+
 
 /**
  * Create a macro from an Item drop.
@@ -16,17 +22,19 @@ interface MacroConfig {
  * @param slot     The hotbar slot to use
  * @returns       A Promise that resolves to the created Macro
  */
-async function createItemMacro(data: any, slot: number): Promise<StoredDocument<Macro> | null> {
-  if (!("data" in data)) return null;
+async function createItemMacro(
+  data: any,
+  slot: number,
+): Promise<StoredDocument<Macro> | null> {
+  if (!('data' in data)) return null;
 
   const item: Item = data.data;
 
   // Search for existing macro
   const command = `game.tlgcc.rollItemMacro("${item.name}");`;
   // @ts-ignore
-  const macro = game.macros.find(m =>
-    m.name === item.name &&
-    m.command === command
+  const macro = game.macros.find(
+    (m: FoundryMacro) => m.name === item.name && m.command === command,
   );
 
   if (macro) {
@@ -36,15 +44,17 @@ async function createItemMacro(data: any, slot: number): Promise<StoredDocument<
   // Create the macro command
   const macroData: MacroConfig = {
     name: item.name || '',
-    type: "script",
+    type: 'script',
     img: item.img || null,
     command: command,
-    flags: { 'tlgcc.itemMacro': true }
+    flags: { 'tlgcc.itemMacro': true },
   };
 
   try {
     // Create the macro
-    const newMacro = await Macro.create(macroData, { renderSheet: false }) as StoredDocument<Macro>;
+    const newMacro = (await Macro.create(macroData, {
+      renderSheet: false,
+    })) as StoredDocument<Macro>;
 
     if (!newMacro) {
       console.error('Failed to create macro');
@@ -81,7 +91,7 @@ async function rollItemMacro(itemName: string): Promise<Roll | null> {
     const tokenActor = game.actors.tokens[speaker.token];
     actor = tokenActor ?? null;
   }
-    // Fall back to regular actor
+  // Fall back to regular actor
   // @ts-ignore - Foundry types
   else if (speaker.actor && game.actors) {
     // @ts-ignore - Foundry types
@@ -96,7 +106,7 @@ async function rollItemMacro(itemName: string): Promise<Roll | null> {
   const item = actor.items.find((i) => i.name === itemName);
   if (!item) {
     ui.notifications?.warn(
-      `Your controlled Actor does not have an item named ${itemName}`
+      `Your controlled Actor does not have an item named ${itemName}`,
     );
     return null;
   }

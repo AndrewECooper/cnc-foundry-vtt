@@ -56,7 +56,10 @@ export class TlgccActorSheet extends ActorSheet<
   }
 
   // actor-sheet.ts
-  private async _enrichTextFields(data: Record<string, any>, fieldNames: string[]): Promise<void> {
+  private async _enrichTextFields(
+    data: Record<string, any>,
+    fieldNames: string[],
+  ): Promise<void> {
     for (const fieldName of fieldNames) {
       if (foundry.utils.hasProperty(data, fieldName)) {
         // @ts-ignore - foundry types don't match actual API
@@ -64,8 +67,8 @@ export class TlgccActorSheet extends ActorSheet<
           foundry.utils.getProperty(data, fieldName),
           {
             secrets: this.actor.isOwner,
-            rollData: this.actor?.getRollData()
-          }
+            rollData: this.actor?.getRollData(),
+          },
         );
         foundry.utils.setProperty(data, fieldName, enrichedText);
       }
@@ -216,8 +219,10 @@ export class TlgccActorSheet extends ActorSheet<
       gear: [],
       weapons: [],
       armors: [],
-      spells: Array(10).fill(null).map(() => []),
-      features: []
+      spells: Array(10)
+        .fill(null)
+        .map(() => []),
+      features: [],
     };
 
     for (const item of items ?? []) {
@@ -285,9 +290,11 @@ export class TlgccActorSheet extends ActorSheet<
     html.find('.item-delete').click(this._onItemDelete.bind(this));
     html.find('.spell-prepare').click(this._onSpellPrepare.bind(this));
     // @ts-ignore
-    html.find('.effect-control').click((ev: JQuery.ClickEvent) =>
-      onManageActiveEffect(ev.originalEvent as MouseEvent, this.actor)
-    );
+    html
+      .find('.effect-control')
+      .click((ev: JQuery.ClickEvent) =>
+        onManageActiveEffect(ev.originalEvent as MouseEvent, this.actor),
+      );
     html.find('.rollable').click(this._onRoll.bind(this));
 
     if (this.actor.isOwner) {
@@ -387,8 +394,6 @@ export class TlgccActorSheet extends ActorSheet<
     element: HTMLElement,
     dataset: DOMStringMap,
   ): Roll | undefined {
-    logger.debug('Rolling weapon', { element, dataset });
-
     const itemElement = element.closest(
       '.item',
     ) as HTMLElementWithDataset | null;
@@ -396,29 +401,24 @@ export class TlgccActorSheet extends ActorSheet<
 
     const itemId = itemElement.dataset.itemId;
     const item = this.actor?.items?.get(itemId);
-    logger.debug('Found item:', item);
-
-    if (!item) {
-      logger.error('No item found for ID:', itemId);
-      return;
-    }
+    if (!item) return;
 
     // Get attack type (melee or ranged)
     const attackType = dataset.attack;
-    logger.debug('Attack type:', attackType);
 
     // Determine which ability modifier to use
     let abilityMod = 0;
     let abilityUsed = '';
+    let rollParts: string[] = ['1d20']; // Start with base d20 roll
+    let rollData: Record<string, number> = {};
 
     if (this.actor?.type === 'character') {
       const actorData = this.actor.system as ActorSystemData;
 
       // Handle melee weapons
       if (attackType === 'melee') {
-        // For finesse weapons, allow choice of DEX or STR
-        if (item.name && this._isFinesseMeleeWeapon(item.name)) {
-          // Use the better modifier between STR and DEX
+        if (item.name && this._isFinesseMelee(item.name)) {
+          // For finesse weapons, use the better modifier
           const strMod = actorData.abilities?.str?.bonus || 0;
           const dexMod = actorData.abilities?.dex?.bonus || 0;
           abilityMod = Math.max(strMod, dexMod);
@@ -431,7 +431,6 @@ export class TlgccActorSheet extends ActorSheet<
       }
       // Handle ranged weapons
       else if (attackType === 'ranged') {
-        // All ranged attacks use DEX for hit
         abilityMod = actorData.abilities?.dex?.bonus || 0;
         abilityUsed = 'DEX';
       }
@@ -440,25 +439,38 @@ export class TlgccActorSheet extends ActorSheet<
     const itemData = item.system as ItemSystemData;
     const actorData = this.actor?.system as ActorSystemData;
 
-    const attackBonus = parseInt(String(itemData.bonusAb?.value || 0));
+    // Add base attack bonus
     const baseAttackBonus = parseInt(String(actorData.attackBonus?.value || 0));
+    if (baseAttackBonus) {
+      rollParts.push(`${baseAttackBonus}`);
+      rollData.bab = baseAttackBonus;
+    }
 
-    logger.debug('Attack bonuses:', {
-      attackBonus,
-      baseAttackBonus,
-      abilityMod,
-      abilityUsed,
-      itemData,
-      actorData,
-    });
+    // Add weapon bonus
+    const weaponBonus = parseInt(String(itemData.bonusAb?.value || 0));
+    if (weaponBonus) {
+      rollParts.push(`${weaponBonus}`);
+      rollData.weaponBonus = weaponBonus;
+    }
 
-    const rollFormula = `d20 + ${baseAttackBonus} + ${attackBonus} + ${abilityMod}`;
+    // Add ability modifier
+    if (abilityMod) {
+      rollParts.push(`${abilityMod}`);
+      rollData.abilityMod = abilityMod;
+    }
 
-    logger.debug('Roll formula:', rollFormula);
+    // Create the roll formula
+    const rollFormula = rollParts.join(' + ');
 
-    const roll = new Roll(rollFormula, this.actor.getRollData());
+    // Create the roll and evaluate
+    const roll = new Roll(rollFormula, rollData);
 
-    const flavor = `${item.name} Attack Roll<br>1d20 + ${baseAttackBonus} (Base) + ${attackBonus} (Weapon) + ${abilityMod} (${abilityUsed})`;
+    // Format the flavor text showing the breakdown
+    const flavor =
+      `${item.name} Attack Roll<br>` +
+      `1d20 + ${baseAttackBonus} (Base) + ` +
+      `${weaponBonus} (Weapon) + ` +
+      `${abilityMod} (${abilityUsed})`;
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
@@ -467,6 +479,13 @@ export class TlgccActorSheet extends ActorSheet<
     });
 
     return roll;
+  }
+
+  private _isFinesseMelee(weaponName: string): boolean {
+    const finesseWeapons = ['dagger', 'rapier', 'short sword'];
+    return finesseWeapons.some((weapon) =>
+      weaponName.toLowerCase().includes(weapon),
+    );
   }
 
   private _rollDamage(
@@ -484,12 +503,20 @@ export class TlgccActorSheet extends ActorSheet<
 
     let damageBonus = 0;
     let abilityUsed = '';
+    let rollParts: string[] = [];
+    let rollData: Record<string, number> = {};
+
+    // Get base weapon damage
+    const itemData = item.system as ItemSystemData;
+    const baseDamage = itemData.damage?.value || '';
+    if (!baseDamage) return;
+
+    rollParts.push(baseDamage);
 
     if (this.actor?.type === 'character') {
       const actorData = this.actor.system as ActorSystemData;
-      const itemSystem = item.system as ItemSystemData;
-      const itemRange = itemSystem.range?.value?.toLowerCase() || '';
-      const isFinesse = item.name && this._isFinesseMeleeWeapon(item.name);
+      const itemRange = itemData.range?.value?.toLowerCase() || '';
+      const isFinesse = item.name && this._isFinesseMelee(item.name);
       const isBow = item.name ? item.name.toLowerCase().includes('bow') : false;
 
       // Melee weapons
@@ -513,7 +540,7 @@ export class TlgccActorSheet extends ActorSheet<
           damageBonus = 0;
           abilityUsed = 'none';
         }
-        // Thrown weapons would get STR to damage
+        // Thrown weapons get STR to damage
         else if (itemRange.includes('thrown')) {
           damageBonus = actorData.abilities?.str?.bonus || 0;
           abilityUsed = 'STR';
@@ -521,15 +548,18 @@ export class TlgccActorSheet extends ActorSheet<
       }
     }
 
-    const itemData = item.system as ItemSystemData;
-    let rollFormula = itemData.damage?.value || '';
-
-    if (damageBonus !== 0) {
-      rollFormula +=
-        damageBonus >= 0 ? ` + ${damageBonus}` : ` - ${Math.abs(damageBonus)}`;
+    // Add damage bonus if any
+    if (damageBonus) {
+      rollParts.push(damageBonus.toString());
+      rollData.damageBonus = damageBonus;
     }
 
+    // Create the roll formula
+    const rollFormula = rollParts.join(' + ');
+
+    // Create and evaluate the roll
     const roll = new Roll(rollFormula, this.actor?.getRollData());
+
     const label = `${item.name || 'Unknown Item'} Damage${
       damageBonus !== 0 ? ` (includes ${abilityUsed} mod: ${damageBonus})` : ''
     }`;

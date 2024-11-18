@@ -4,7 +4,10 @@
  * @param owner - The owning document which manages this effect
  * @returns The created or updated effect, or void if deleting
  */
-export async function onManageActiveEffect(event: MouseEvent | null, owner: Actor | Item): Promise<ActiveEffect | ActiveEffect[] | void> {
+export async function onManageActiveEffect(
+  event: MouseEvent | null,
+  owner: Actor | Item,
+): Promise<ActiveEffect | ActiveEffect[] | void> {
   if (!event) return;
 
   event.preventDefault();

@@ -39,16 +39,38 @@ Handlebars.registerHelper('localizeUpperCase', function (str) {
     : str.toUpperCase();
 });
 
-Handlebars.registerHelper('toCapitalCase', function(str: string) {
-  return str.replace(/\w\S*/g, (w: string) => w.replace(/^\w/, (c: string) => c.toUpperCase()));
+Handlebars.registerHelper('toCapitalCase', function (str: string) {
+  return str.replace(/\w\S*/g, (w: string) =>
+    w.replace(/^\w/, (c: string) => c.toUpperCase()),
+  );
 });
 
-Handlebars.registerHelper('ifeq', function(this: HandlebarsHelperThis, a: any, b: any, options: HandlebarsHelperOptions) {
-  if (a == b) { return options.fn(this); }
-  return options.inverse(this);
-});
+Handlebars.registerHelper(
+  'ifeq',
+  function (
+    this: HandlebarsHelperThis,
+    a: any,
+    b: any,
+    options: HandlebarsHelperOptions,
+  ) {
+    if (a == b) {
+      return options.fn(this);
+    }
+    return options.inverse(this);
+  },
+);
 
-Handlebars.registerHelper('ifnoteq', function(this: HandlebarsHelperThis, a: any, b: any, options: HandlebarsHelperOptions) {
-  if (a != b) { return options.fn(this); }
-  return options.inverse(this);
-});
+Handlebars.registerHelper(
+  'ifnoteq',
+  function (
+    this: HandlebarsHelperThis,
+    a: any,
+    b: any,
+    options: HandlebarsHelperOptions,
+  ) {
+    if (a != b) {
+      return options.fn(this);
+    }
+    return options.inverse(this);
+  },
+);

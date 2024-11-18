@@ -101,6 +101,9 @@ Actor:
     religion:
       value: ''
       label: TLGCC.Religion
+    deity:
+      value: ''
+      label: TLGCC.Deity
     sex:
       value: ''
       label: TLGCC.Sex

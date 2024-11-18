@@ -122,6 +122,9 @@ Actor:
         value: 0
       cp:
         value: 0
+    valuables:
+      value: ''
+      label: TLGCC.Valuables
     spellsPerLevel:
       value:
         '0': 0

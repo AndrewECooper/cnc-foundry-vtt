@@ -475,7 +475,10 @@ export class TlgccActorSheet extends ActorSheet<
     const roll = new Roll(rollFormula, rollData);
 
     // Build flavor text showing only non-zero modifiers
-    const flavorParts = [`${item.name} Attack Roll<br>1d20`];
+    // In the _rollWeapon method, replace the flavor text building section with:
+    // @ts-ignore
+    const attackLabel = attackType?.charAt(0).toUpperCase() + attackType?.slice(1);
+    const flavorParts = [`${attackLabel} Attack Roll: ${item.name}<br>1d20`];
 
     if (baseAttackBonus !== 0) {
       flavorParts.push(`+ ${baseAttackBonus} (Base)`);
@@ -578,7 +581,7 @@ export class TlgccActorSheet extends ActorSheet<
     const roll = new Roll(rollFormula, this.actor?.getRollData());
 
     // Only add ability modifier to label if it's non-zero
-    let label = `${item.name || 'Unknown Item'} Damage`;
+    let label = `Damage Roll: ${item.name || 'Unknown Item'}`;
     if (damageBonus !== 0) {
       label += ` (includes ${abilityUsed} mod: ${damageBonus})`;
     }

@@ -49,6 +49,7 @@
     </div>
 
     <div class="item-prop item-image">
+      <!-- Note: We keep the disabled class logic but it won't visually disable due to CSS -->
       <a class="rollable attack-button {{#unless weapon.canMelee}}disabled{{/unless}}"
          data-roll-type="weapon"
          data-attack="melee"
@@ -64,7 +65,7 @@
          title="{{localize 'TLGCC.Ranged'}} {{localize 'TLGCC.Attack'}}">
         <img src="systems/castles-and-crusades/styles/ranged.svg" width="24" height="24"/>
       </a>
-
+      <!-- Rest of the template remains unchanged -->
       <span class="flexshrink">/</span>
 
       <a class="rollable attack-button"

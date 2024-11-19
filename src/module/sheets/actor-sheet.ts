@@ -12,6 +12,10 @@ import {
   prepareActiveEffectCategories,
 } from '../helpers/effects';
 
+interface WeaponAttackOverrides {
+  temporaryEnableAllAttacks: boolean;
+}
+
 interface ItemCategories {
   gear: any[];
   weapons: any[];
@@ -27,6 +31,11 @@ export class TlgccActorSheet extends ActorSheet<
   ActorSheet.Options,
   TLGCCActor
 > {
+  // Add this as a static property of the class
+  private static readonly CONFIG_OVERRIDES: WeaponAttackOverrides = {
+    temporaryEnableAllAttacks: true // Set this to true to enable all attacks
+  };
+
   // Remove the declare actor line and instead override the getter
   override get actor(): TLGCCActor {
     // @ts-ignore - We know this will be our custom actor type
@@ -182,18 +191,17 @@ export class TlgccActorSheet extends ActorSheet<
   }
 
   private _prepareItems(context: Record<string, any>): void {
-    const { gear, weapons, armors, spells, features } = this._categorizeItems(
-      context.items,
-    );
+    const { gear, weapons, armors, spells, features } = this._categorizeItems(context.items);
 
-    // Add attack type information to weapons
+    // Add attack type information to weapons with override
     const processedWeapons = weapons.map((weapon) => {
       const attackType = this._determineWeaponType(weapon);
       return {
         ...weapon,
         attackType,
-        canMelee: attackType === 'melee' || attackType === 'both',
-        canRanged: attackType === 'ranged' || attackType === 'both',
+        // Override the canMelee and canRanged flags if temporaryEnableAllAttacks is true
+        canMelee: TlgccActorSheet.CONFIG_OVERRIDES.temporaryEnableAllAttacks ? true : (attackType === 'melee' || attackType === 'both'),
+        canRanged: TlgccActorSheet.CONFIG_OVERRIDES.temporaryEnableAllAttacks ? true : (attackType === 'ranged' || attackType === 'both'),
       };
     });
 

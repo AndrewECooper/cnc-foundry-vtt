@@ -690,33 +690,45 @@
   cursor: pointer;
 }
 
-.attack-button.disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  pointer-events: none;
-}
+/*.attack-button.disabled {*/
+/*  opacity: 0.4;*/
+/*  cursor: not-allowed;*/
+/*  pointer-events: none;*/
+/*}*/
 
 .attack-button:hover:not(.disabled) {
   opacity: 0.8;
 }
 
 /* Optional: Add a tooltip for disabled buttons */
-.attack-button.disabled::after {
-  content: attr(data-disabled-reason);
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  white-space: nowrap;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  pointer-events: none;
-}
+/*.attack-button.disabled::after {*/
+/*  content: attr(data-disabled-reason);*/
+/*  position: absolute;*/
+/*  background: rgba(0, 0, 0, 0.8);*/
+/*  color: white;*/
+/*  padding: 4px 8px;*/
+/*  border-radius: 4px;*/
+/*  font-size: 12px;*/
+/*  white-space: nowrap;*/
+/*  visibility: hidden;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.2s ease-in-out;*/
+/*  pointer-events: none;*/
+/*}*/
 
 .attack-button.disabled:hover::after {
   visibility: visible;
   opacity: 1;
+}
+
+/* Temporarily override the disabled button styles */
+.attack-button.disabled {
+  opacity: 1; /* Changed from 0.4 to 1 */
+  cursor: pointer; /* Changed from not-allowed to pointer */
+  pointer-events: all; /* Changed from none to all */
+}
+
+/* Keep the tooltip for reference but make it less prominent */
+.attack-button.disabled::after {
+  opacity: 0.5;
 }

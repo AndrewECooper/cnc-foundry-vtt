@@ -414,12 +414,13 @@ export class TlgccActorSheet extends ActorSheet<
     // Get attack type (melee or ranged)
     const attackType = dataset.attack;
 
-    // Determine which ability modifier to use
+    // Initialize variables
     let abilityMod = 0;
     let abilityUsed = '';
     let rollParts: string[] = ['1d20']; // Start with base d20 roll
     let rollData: Record<string, number> = {};
 
+    // Only apply ability modifiers for characters, not monsters
     if (this.actor?.type === 'character') {
       const actorData = this.actor.system as ActorSystemData;
 
@@ -461,8 +462,8 @@ export class TlgccActorSheet extends ActorSheet<
       rollData.weaponBonus = weaponBonus;
     }
 
-    // Add ability modifier
-    if (abilityMod) {
+    // Add ability modifier only if it exists and is non-zero (for characters)
+    if (abilityMod !== 0) {
       rollParts.push(`${abilityMod}`);
       rollData.abilityMod = abilityMod;
     }
@@ -473,16 +474,24 @@ export class TlgccActorSheet extends ActorSheet<
     // Create the roll and evaluate
     const roll = new Roll(rollFormula, rollData);
 
-    // Format the flavor text showing the breakdown
-    const flavor =
-      `${item.name} Attack Roll<br>` +
-      `1d20 + ${baseAttackBonus} (Base) + ` +
-      `${weaponBonus} (Weapon) + ` +
-      `${abilityMod} (${abilityUsed})`;
+    // Build flavor text showing only non-zero modifiers
+    const flavorParts = [`${item.name} Attack Roll<br>1d20`];
+
+    if (baseAttackBonus !== 0) {
+      flavorParts.push(`+ ${baseAttackBonus} (Base)`);
+    }
+
+    if (weaponBonus !== 0) {
+      flavorParts.push(`+ ${weaponBonus} (Weapon)`);
+    }
+
+    if (abilityMod !== 0) {
+      flavorParts.push(`+ ${abilityMod} (${abilityUsed})`);
+    }
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor: flavor,
+      flavor: flavorParts.join(' '),
       rollMode: this.ROLL_MODE,
     });
 
@@ -521,6 +530,7 @@ export class TlgccActorSheet extends ActorSheet<
 
     rollParts.push(baseDamage);
 
+    // Only apply ability modifiers for characters, not monsters
     if (this.actor?.type === 'character') {
       const actorData = this.actor.system as ActorSystemData;
       const itemRange = itemData.range?.value?.toLowerCase() || '';
@@ -546,7 +556,6 @@ export class TlgccActorSheet extends ActorSheet<
         // Bows don't get ability bonus to damage
         if (isBow) {
           damageBonus = 0;
-          abilityUsed = 'none';
         }
         // Thrown weapons get STR to damage
         else if (itemRange.includes('thrown')) {
@@ -556,8 +565,8 @@ export class TlgccActorSheet extends ActorSheet<
       }
     }
 
-    // Add damage bonus if any
-    if (damageBonus) {
+    // Add damage bonus if non-zero
+    if (damageBonus !== 0) {
       rollParts.push(damageBonus.toString());
       rollData.damageBonus = damageBonus;
     }
@@ -568,9 +577,11 @@ export class TlgccActorSheet extends ActorSheet<
     // Create and evaluate the roll
     const roll = new Roll(rollFormula, this.actor?.getRollData());
 
-    const label = `${item.name || 'Unknown Item'} Damage${
-      damageBonus !== 0 ? ` (includes ${abilityUsed} mod: ${damageBonus})` : ''
-    }`;
+    // Only add ability modifier to label if it's non-zero
+    let label = `${item.name || 'Unknown Item'} Damage`;
+    if (damageBonus !== 0) {
+      label += ` (includes ${abilityUsed} mod: ${damageBonus})`;
+    }
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),

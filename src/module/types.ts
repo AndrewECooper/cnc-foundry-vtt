@@ -24,6 +24,7 @@ export interface ItemSystemData {
   bonusAb?: { value: number };
   damage?: { value: string };
   range?: { value: string };
+  spelldmg?: { value: string };
 }
 
 export interface WeaponData extends ItemSystemData {

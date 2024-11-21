@@ -14,8 +14,11 @@
 - Need refactor of folders, etc.
 
 ### Known Issues
-- [ ] Brief issue description
-    - Workaround: temporary solution
+- [X] Level box appends the class when changed
+    - Workaround: Ignore for now
+    - Ticket: #84
+- [ ] Spell damage roll not working
+    - Workaround: Roll manually in chat
     - Ticket: #84
 
 ## Setup

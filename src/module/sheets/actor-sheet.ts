@@ -510,17 +510,24 @@ export class TlgccActorSheet extends ActorSheet<
 
   private _rollDamage(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
     const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
-    if (!itemElement?.dataset?.itemId) return;
+    if (!itemElement?.dataset?.itemId) {
+      logger.debug('No item ID found');
+      return;
+    }
 
     const itemId = itemElement.dataset.itemId;
     const item = this.actor?.items.get(itemId);
-    if (!item) return;
+    if (!item) {
+      logger.debug('Item not found');
+      return;
+    }
 
     let rollParts: string[] = [];
     let rollData: Record<string, number> = {};
 
     // Handle both weapon and spell damage
     const itemData = item.system as ItemSystemData;
+    logger.debug('Item data:', itemData);
 
     // For weapons, use damage.value
     if (item.type === 'weapon') {
@@ -531,7 +538,11 @@ export class TlgccActorSheet extends ActorSheet<
     // For spells, use spelldmg.value
     else if (item.type === 'spell') {
       const spellDamage = (itemData as any).spelldmg?.value || '';
-      if (!spellDamage) return;
+      logger.debug('Spell damage value:', spellDamage);
+      if (!spellDamage) {
+        logger.debug('No spell damage value found');
+        return;
+      }
       rollParts.push(spellDamage);
     }
 
@@ -547,13 +558,20 @@ export class TlgccActorSheet extends ActorSheet<
     const itemType = game.i18n.localize(`TYPES.Item.${item.type}`);
     const label = `${itemType} Damage Roll: ${item.name}`;
 
-    roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor: label,
-      rollMode: this.ROLL_MODE,
-    });
+    try {
+      roll.toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        flavor: label,
+        rollMode: this.ROLL_MODE,
+      }).catch(error => {
+        logger.error('Error creating roll message:', error);
+      });
 
-    return roll;
+      return roll;
+    } catch (error) {
+      logger.error('Error creating roll:', error);
+      return undefined;
+    }
   }
 
   private _rollItem(element: HTMLElement): Roll | undefined {

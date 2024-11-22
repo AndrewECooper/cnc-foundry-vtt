@@ -36,42 +36,48 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}"><a
-            class="rollable" data-label="{{localize system.msaves.label}}: {{localize system.msaves.value}}"
+          <label class="resource-label" for="system.msaves.value" title="{{localize 'TLGCC.MonsterSavesHover'}}"><a
+            class="rollable" data-label="<b>{{localize 'TLGCC.MonsterSaves'}}: {{localize system.msaves.value}}</b>"
             data-roll="d20+{{system.hitDice.number}}"> {{localize
-            system.msaves.label}}</a> </label>
+            'TLGCC.MonsterSaves'}}</a> </label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="string" id="system.msaves.value" name="system.msaves.value"
-                   title="{{localize 'TLGCC.monsterSavesHover'}}"
+                   title="{{localize 'TLGCC.MonsterSavesHover'}}"
                    type="text" value="{{system.msaves.value}}" />
           </div>
         </div>
 
-
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.numberAppearing.value">
-            <a class="rollable" data-label="{{localize system.numberAppearing.label}}"
-               data-roll="{{system.numberAppearing.value}}">{{localize
-              system.numberAppearing.label}}</a></label>
+          <label class="resource-label rollable" data-roll-type="numberAppearing" title="Click to roll number appearing">
+            {{localize 'TLGCC.MonsterNumberAppearing'}}
+          </label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.numberAppearing.value" name="system.numberAppearing.value" type="text"
-                   value="{{system.numberAppearing.value}}" />
+            <input
+              type="text"
+              class="rollable"
+              data-roll-type="numberAppearing"
+              id="system.numberAppearing.value"
+              name="system.numberAppearing.value"
+              value="{{system.numberAppearing.value}}"
+              data-dtype="String"
+              title="Enter a number (1), range (10-40), or multiple ranges (10-40, 50-100)"
+            />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.monterINT.value">
+          <label class="resource-label" for="system.monsterINT.value">
             <a class="resource-label"
-               data-label="{{localize system.monterINT.label}} ({{system.monterINT.value}})">{{localize
-              system.monsterINT.label}}</a></label>
+               data-label="{{localize 'TLGCC.MonsterINT'}} ({{system.monsterINT.value}})">{{localize
+              'TLGCC.MonsterINT'}}</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.monterINT.value" name="system.monterINT.value" type="text"
+            <input data-dtype="String" id="system.monsterINT.value" name="system.monsterINT.value" type="text"
                    value="{{system.monterINT.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.treasureType.value">{{localize system.treasureType.label}}</label>
+          <label class="resource-label" for="system.treasureType.value">{{localize 'TLGCC.MonsterTreasureType'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="String" id="system.treasureType.value" name="system.treasureType.value" type="text"
                    value="{{system.treasureType.value}}" />
@@ -100,7 +106,7 @@
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.type.value">{{localize 'TLGCC.monsterType'}}</label>
+          <label class="resource-label" for="system.type.value">{{localize 'TLGCC.MonsterType'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="String" id="system.type.value" name="system.type.value" type="text"
                    value="{{system.type.value}}" />

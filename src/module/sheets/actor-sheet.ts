@@ -1,3 +1,4 @@
+// src/module/helpers/settings.ts
 import { Logger } from '../utils/logger';
 import {
   TLGCCActor,
@@ -12,6 +13,8 @@ import {
   prepareActiveEffectCategories,
 } from '../helpers/effects';
 import Settings from '../helpers/settings';
+import { DocumentSheetOptions } from '../types';
+import { NumberAppearingRoller } from '../utils/number-appearing';
 
 interface WeaponAttackOverrides {
   temporaryEnableAllAttacks: boolean;
@@ -380,8 +383,11 @@ export class TlgccActorSheet extends ActorSheet<
       element: element,
       dataset: dataset,
       rollType: dataset.rollType,
-      attackType: dataset.attack,
     });
+
+    if (dataset.rollType === 'numberAppearing') {
+      return this._rollNumberAppearing(element);
+    }
 
     if (dataset.rollType === 'weapon') {
       return this._rollWeapon(element, dataset);
@@ -612,5 +618,39 @@ export class TlgccActorSheet extends ActorSheet<
       rollMode: this.ROLL_MODE,
     });
     return roll;
+  }
+
+  private _rollNumberAppearing(element: HTMLElement): Roll | undefined {
+    try {
+      // @ts-ignore
+      const format = this.actor.system.numberAppearing.value;
+
+      // Early return if the value is "1"
+      if (!NumberAppearingRoller.needsRoll(format)) {
+        return undefined;
+      }
+
+      const result = NumberAppearingRoller.roll(format);
+
+      // Create a roll to represent this result
+      const roll = new Roll('1d1', { result: result.value });
+      roll.evaluate({ async: false });
+
+      // Create chat message with private roll mode
+      ChatMessage.create({
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        flavor: `<h2>${this.actor.name}: Number Appearing</h2>${result.detail}`,
+        content: `<h3>Total: ${result.value}</h3>`,
+        rollMode: 'gmroll',
+        // @ts-ignore - whisper property exists but isn't in types
+        whisper: [game.user?.id || '']
+      });
+
+      return roll;
+    } catch (error) {
+      logger.error('Error in _rollNumberAppearing:', error);
+      ui.notifications?.error('Error rolling number appearing. Check the console for details.');
+      return undefined;
+    }
   }
 }

@@ -42,3 +42,7 @@ export interface WeaponData extends ItemSystemData {
 export interface HTMLElementWithDataset extends HTMLElement {
   dataset: DOMStringMap;
 }
+
+export interface DocumentSheetOptions {
+  showDetailedFormulas?: boolean;
+}

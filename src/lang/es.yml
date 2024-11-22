@@ -78,6 +78,7 @@ TLGCC.Attack: Atacar
 TLGCC.AttackBonus: Bonus Ataque
 TLGCC.AttackBonusAbbr: BA
 TLGCC.BtHtitle: d20 + BA + Mod. Atributo + Misc
+TLGCC.BtHAbbr: BA
 TLGCC.BonusAttackBonus: BA
 TLGCC.Damage: Daño
 TLGCC.DamageAbbr: Daño
@@ -90,17 +91,17 @@ TLGCC.Melee: CaC
 TLGCC.Ranged: A distancia
 
 # Monster Specific
-TLGCC.monsterHitDice: DG
-TLGCC.monsterINT: INT
-TLGCC.monsterType: Tipo
-TLGCC.monsterSaves: Salvación
-TLGCC.monsterSavesHover: '(F)ísica: FUE,DES,CON. (M)entales: CAR,SAB,INT. Tirada d20 + DG'
+TLGCC.MonsterHitDice: DG
+TLGCC.MonsterINT: INT
+TLGCC.MonsterType: Tipo
+TLGCC.MonsterSaves: Salvación
+TLGCC.MonsterSavesHover: '(F)ísica: FUE,DES,CON. (M)entales: CAR,SAB,INT. Tirada d20 + DG'
 TLGCC.NumberAppearing: Cantidad
 TLGCC.TreasureType: Valor Tesoro
 
 # Character Attributes
 TLGCC.Age: Edad
-TLGCC.Alignment: Alineamiento
+TLGCC.Alignment: Disposición
 TLGCC.Background: Trasfondo
 TLGCC.Class: Clase
 TLGCC.Height: Altura
@@ -161,3 +162,16 @@ TLGCC.EffectToggle: Activar Efecto
 
 # Descriptions
 TLGCC.Appearance: Apariencia
+TLGCC.Notes: Biografía y Notas
+
+# UI Elements
+TLGCC.Add: Añadir
+TLGCC.Unknown: Desconocido
+TLGCC.Formula: Fórmula de Tirada
+TLGCC.language: Idiomas
+
+# System Settings
+TLGCC.Settings.ShowDetailedFormulas.Name: Mostrar Fórmulas Detalladas
+TLGCC.Settings.ShowDetailedFormulas.Hint: Muestra las fórmulas detalladas en la hoja de personaje
+TLGCC.Settings.LogLevel.Name: Nivel de Log
+TLGCC.Settings.LogLevel.Hint: Nivel de detalle de los mensajes de log

@@ -96,8 +96,8 @@ TLGCC.MonsterINT: INT
 TLGCC.MonsterType: Tipo
 TLGCC.MonsterSaves: Salvación
 TLGCC.MonsterSavesHover: '(F)ísica: FUE,DES,CON. (M)entales: CAR,SAB,INT. Tirada d20 + DG'
-TLGCC.NumberAppearing: Cantidad
-TLGCC.TreasureType: Valor Tesoro
+TLGCC.MonsterNumberAppearing: Cantidad
+TLGCC.MonsterTreasureType: Valor Tesoro
 
 # Character Attributes
 TLGCC.Age: Edad

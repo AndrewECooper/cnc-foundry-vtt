@@ -91,13 +91,13 @@ TLGCC.Melee: Melee
 TLGCC.Ranged: Ranged
 
 # Monster Specific
-TLGCC.MonsterHitDice: HD Size
+TLGCC.MonsterHitDice: Level Size
 TLGCC.MonsterINT: INT
 TLGCC.MonsterType: Type
 TLGCC.MonsterSaves: Saves
 TLGCC.MonsterSavesHover: Physical(P) Str,Dex,Con. Mental(M) is Wis,Int,Cha. Roll d20+monster hd number
-TLGCC.NumberAppearing: No. Appearing
-TLGCC.TreasureType: Treasure Type
+TLGCC.MonsterNumberAppearing: No. Appearing
+TLGCC.MonsterTreasureType: Treasure Type
 
 # Character Attributes
 TLGCC.Age: Age

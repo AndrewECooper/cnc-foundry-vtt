@@ -1,11 +1,13 @@
 import { TLGCC } from './constants';
 import { Logger, LogLevel } from '../utils/logger';
+import { TlgccActorSheet } from '../sheets/actor-sheet';
 
 const logger = Logger.getInstance();
 
 interface SettingsData {
   logLevel: string;
   systemMigrationVersion: number;
+  showDetailedFormulas?: boolean;
 }
 
 class Settings {
@@ -46,6 +48,25 @@ class Settings {
         logger.setLogLevel(level);
         logger.info(`Log level changed to ${value}`);
       },
+    });
+
+    // Add new setting for detailed roll formulas
+    // @ts-ignore
+    game.settings.register(TLGCC.SYSTEM_ID, 'showDetailedFormulas', {
+      name: 'TLGCC.Settings.ShowDetailedFormulas.Name',
+      hint: 'TLGCC.Settings.ShowDetailedFormulas.Hint',
+      scope: 'client',
+      config: true,
+      type: Boolean,
+      default: true,
+      onChange: () => {
+        // Re-render all actor sheets when the setting changes
+        Object.values(ui.windows).forEach((app) => {
+          if (app instanceof TlgccActorSheet) {
+            app.render();
+          }
+        });
+      }
     });
   }
 
@@ -90,6 +111,19 @@ class Settings {
   }
 
   /**
+   * Get the current setting for showing detailed roll formulas
+   */
+  static get showDetailedFormulas(): boolean {
+    try {
+      // @ts-ignore
+      return game.settings.get(TLGCC.SYSTEM_ID, 'showDetailedFormulas');
+    } catch (error) {
+      logger.error('Error getting showDetailedFormulas setting:', error);
+      return true; // Default to true if there's an error
+    }
+  }
+
+  /**
    * Reset all settings to their default values
    */
   static async resetSettings(): Promise<void> {
@@ -117,7 +151,8 @@ class Settings {
     try {
       return {
         logLevel: this.logLevel,
-        systemMigrationVersion: this.systemMigrationVersion
+        systemMigrationVersion: this.systemMigrationVersion,
+        showDetailedFormulas: this.showDetailedFormulas,
       };
     } catch (error) {
       logger.error('Error getting all settings:', error);

@@ -1,6 +1,7 @@
 // src/module/types.ts
 
 export interface TLGCCActor extends Actor {
+  showDetailedFormulas: boolean;
   system: ActorSystemData;
   // @ts-ignore
   items: foundry.documents.EmbeddedCollection<foundry.documents.BaseItem>;

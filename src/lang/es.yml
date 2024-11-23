@@ -171,7 +171,12 @@ TLGCC.Formula: Fórmula de Tirada
 TLGCC.language: Idiomas
 
 # System Settings
-TLGCC.Settings.ShowDetailedFormulas.Name: Mostrar Fórmulas Detalladas
-TLGCC.Settings.ShowDetailedFormulas.Hint: Muestra las fórmulas detalladas en la hoja de personaje
-TLGCC.Settings.LogLevel.Name: Nivel de Log
-TLGCC.Settings.LogLevel.Hint: Nivel de detalle de los mensajes de log
+TLGCC.Settings.ShowDetailedFormulas:
+  Name: Mostrar Fórmulas Detalladas
+  Hint: Muestra las fórmulas detalladas en la hoja de personaje
+TLGCC.Settings.LogLevel:
+  Name: Nivel de Log
+  Hint: Nivel de detalle de los mensajes de log
+TLGCC.Settings.DisableStatusEffects:
+  Name: Desactivar Efectos de Estado
+  Hint: Si está activado, elimina todos los iconos de efectos de estado del HUD del token

@@ -61,6 +61,22 @@ export default class Settings {
         });
       }
     });
+
+    // Add new setting for status effects
+    // @ts-ignore
+    game.settings.register(TLGCC.SYSTEM_ID, 'disableStatusEffects', {
+      name: 'TLGCC.Settings.DisableStatusEffects.Name',
+      hint: 'TLGCC.Settings.DisableStatusEffects.Hint',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: false,
+      onChange: () => {
+        // Refresh tokens when the setting changes
+        // @ts-ignore
+        canvas.tokens?.placeables.forEach(t => t.draw());
+      }
+    });
   }
 
   static get systemMigrationVersion(): number {
@@ -101,6 +117,17 @@ export default class Settings {
     } catch (error) {
       logger.error('Error getting showDetailedFormulas setting:', error);
       return true;
+    }
+  }
+
+  // Add getter for the new setting
+  static get disableStatusEffects(): boolean {
+    try {
+      // @ts-ignore
+      return game.settings.get(TLGCC.SYSTEM_ID, 'disableStatusEffects') ?? false;
+    } catch (error) {
+      logger.error('Error getting disableStatusEffects setting:', error);
+      return false;
     }
   }
 }

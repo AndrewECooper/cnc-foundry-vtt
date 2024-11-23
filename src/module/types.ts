@@ -46,3 +46,7 @@ export interface HTMLElementWithDataset extends HTMLElement {
 export interface DocumentSheetOptions {
   showDetailedFormulas?: boolean;
 }
+
+export interface SettingsData {
+  disableStatusEffects: boolean;
+}

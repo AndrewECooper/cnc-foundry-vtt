@@ -171,7 +171,12 @@ TLGCC.Formula: Roll Formula
 TLGCC.language: Languages
 
 # System Settings
-TLGCC.Settings.ShowDetailedFormulas.Name: Show Detailed Roll Formulas
-TLGCC.Settings.ShowDetailedFormulas.Hint: Show the formula breakdown in chat messages for attacks and damage rolls
-TLGCC.Settings.LogLevel.Name: Log Level
-TLGCC.Settings.LogLevel.Hint: Set the level of logging to display in the console
+TLGCC.Settings.ShowDetailedFormulas:
+  Name: Show Detailed Roll Formulas
+  Hint: Show the formula breakdown in chat messages for attacks and damage rolls
+TLGCC.Settings.LogLevel:
+  Name: Log Level
+  Hint: Set the level of logging to display in the console
+TLGCC.Settings.DisableStatusEffects:
+  Name: Disable Status Effects
+  Hint: If enabled, removes all status effect icons from the token HUD

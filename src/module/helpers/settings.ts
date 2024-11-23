@@ -1,17 +1,11 @@
-import { TLGCC } from './constants';
+// src/module/helpers/settings.ts
+
 import { Logger, LogLevel } from '../utils/logger';
+import { TLGCC } from './constants';
 
 const logger = Logger.getInstance();
 
-interface SettingsData {
-  logLevel: string;
-  systemMigrationVersion: number;
-}
-
-class Settings {
-  /**
-   * Register all game settings for the system
-   */
+export default class Settings {
   static registerSettings(): void {
     // System Migration Version
     // @ts-ignore
@@ -47,11 +41,44 @@ class Settings {
         logger.info(`Log level changed to ${value}`);
       },
     });
+
+    // Add new setting for detailed roll formulas
+    // @ts-ignore
+    game.settings.register(TLGCC.SYSTEM_ID, 'showDetailedFormulas', {
+      name: 'TLGCC.Settings.ShowDetailedFormulas.Name',
+      hint: 'TLGCC.Settings.ShowDetailedFormulas.Hint',
+      scope: 'client',
+      config: true,
+      type: Boolean,
+      default: true,
+      onChange: () => {
+        // Instead of directly referencing TlgccActorSheet, we'll update all windows
+        // @ts-ignore
+        Object.values(ui.windows).forEach((app) => {
+          if (app.constructor.name === "TlgccActorSheet") {
+            app.render();
+          }
+        });
+      }
+    });
+
+    // Add new setting for status effects
+    // @ts-ignore
+    game.settings.register(TLGCC.SYSTEM_ID, 'disableStatusEffects', {
+      name: 'TLGCC.Settings.DisableStatusEffects.Name',
+      hint: 'TLGCC.Settings.DisableStatusEffects.Hint',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: false,
+      onChange: () => {
+        // Refresh tokens when the setting changes
+        // @ts-ignore
+        canvas.tokens?.placeables.forEach(t => t.draw());
+      }
+    });
   }
 
-  /**
-   * Get the current system migration version
-   */
   static get systemMigrationVersion(): number {
     try {
       // @ts-ignore
@@ -62,9 +89,6 @@ class Settings {
     }
   }
 
-  /**
-   * Set the system migration version
-   */
   static async setSystemMigrationVersion(version: number): Promise<void> {
     try {
       // @ts-ignore
@@ -76,54 +100,34 @@ class Settings {
     }
   }
 
-  /**
-   * Get the current log level
-   */
   static get logLevel(): string {
     try {
       // @ts-ignore
       return game.settings.get(TLGCC.SYSTEM_ID, 'logLevel');
     } catch (error) {
       logger.error('Error getting log level:', error);
-      return 'info'; // Default to info level if there's an error
+      return 'info';
     }
   }
 
-  /**
-   * Reset all settings to their default values
-   */
-  static async resetSettings(): Promise<void> {
+  static get showDetailedFormulas(): boolean {
     try {
-      const defaultSettings: SettingsData = {
-        logLevel: 'info',
-        systemMigrationVersion: 0
-      };
-
-      for (const [key, value] of Object.entries(defaultSettings)) {
-        // @ts-ignore
-        await game.settings.set(TLGCC.SYSTEM_ID, key, value);
-      }
-      logger.info('All settings reset to defaults');
+      // @ts-ignore
+      return game.settings.get(TLGCC.SYSTEM_ID, 'showDetailedFormulas');
     } catch (error) {
-      logger.error('Error resetting settings:', error);
-      throw error;
+      logger.error('Error getting showDetailedFormulas setting:', error);
+      return true;
     }
   }
 
-  /**
-   * Get all current settings as an object
-   */
-  static getAllSettings(): Partial<SettingsData> {
+  // Add getter for the new setting
+  static get disableStatusEffects(): boolean {
     try {
-      return {
-        logLevel: this.logLevel,
-        systemMigrationVersion: this.systemMigrationVersion
-      };
+      // @ts-ignore
+      return game.settings.get(TLGCC.SYSTEM_ID, 'disableStatusEffects') ?? false;
     } catch (error) {
-      logger.error('Error getting all settings:', error);
-      return {};
+      logger.error('Error getting disableStatusEffects setting:', error);
+      return false;
     }
   }
 }
-
-export default Settings;

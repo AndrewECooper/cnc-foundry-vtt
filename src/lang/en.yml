@@ -72,12 +72,13 @@ TLGCC.primeCheckhover: Check this box to set as Prime
 # Combat Stats
 TLGCC.ArmorClass: Armor Class
 TLGCC.ArmorClassAbbr: AC
-TLGCC.ACtitle: AC=10+Armor+Shield+Attribute Mod+Misc. Helmets are seperate!
-TLGCC.AChovertext: AC is manually mathed from the AC listed items on the Combat tab
+TLGCC.ACtitle: AC=10+Armor+Shield+Attribute Mod+Misc. Helmets are separate!
+TLGCC.AChovertext: AC is manually matched from the AC listed items on the Combat tab
 TLGCC.Attack: Attack
 TLGCC.AttackBonus: Attack Bonus
 TLGCC.AttackBonusAbbr: Base to Hit
 TLGCC.BtHtitle: Formula is d20+classBtH+Attribute Mod+Misc
+TLGCC.BtHAbbr: BtH
 TLGCC.BonusAttackBonus: Bonus AB
 TLGCC.Damage: Damage
 TLGCC.DamageAbbr: Dmg
@@ -90,17 +91,17 @@ TLGCC.Melee: Melee
 TLGCC.Ranged: Ranged
 
 # Monster Specific
-TLGCC.monsterHitDice: HD Size
-TLGCC.monsterINT: INT
-TLGCC.monsterType: Type
-TLGCC.monsterSaves: Saves
-TLGCC.monsterSavesHover: Physical(P) Str,Dex,Con. Mental(M) is Wis,Int,Cha. Roll d20+monster hd number
-TLGCC.NumberAppearing: No. Appearing
-TLGCC.TreasureType: Treasure Type
+TLGCC.MonsterHitDice: Level Size
+TLGCC.MonsterINT: INT
+TLGCC.MonsterType: Type
+TLGCC.MonsterSaves: Saves
+TLGCC.MonsterSavesHover: Physical(P) Str,Dex,Con. Mental(M) is Wis,Int,Cha. Roll d20+monster hd number
+TLGCC.MonsterNumberAppearing: No. Appearing
+TLGCC.MonsterTreasureType: Treasure Type
 
 # Character Attributes
 TLGCC.Age: Age
-TLGCC.Alignment: Alignment
+TLGCC.Alignment: Disposition
 TLGCC.Background: Background
 TLGCC.Class: Class
 TLGCC.Height: Height
@@ -168,3 +169,14 @@ TLGCC.Add: Add
 TLGCC.Unknown: Unknown
 TLGCC.Formula: Roll Formula
 TLGCC.language: Languages
+
+# System Settings
+TLGCC.Settings.ShowDetailedFormulas:
+  Name: Show Detailed Roll Formulas
+  Hint: Show the formula breakdown in chat messages for attacks and damage rolls
+TLGCC.Settings.LogLevel:
+  Name: Log Level
+  Hint: Set the level of logging to display in the console
+TLGCC.Settings.DisableStatusEffects:
+  Name: Disable Status Effects
+  Hint: If enabled, removes all status effect icons from the token HUD

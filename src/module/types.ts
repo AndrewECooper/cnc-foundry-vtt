@@ -1,6 +1,7 @@
 // src/module/types.ts
 
 export interface TLGCCActor extends Actor {
+  showDetailedFormulas: boolean;
   system: ActorSystemData;
   // @ts-ignore
   items: foundry.documents.EmbeddedCollection<foundry.documents.BaseItem>;
@@ -40,4 +41,12 @@ export interface WeaponData extends ItemSystemData {
 
 export interface HTMLElementWithDataset extends HTMLElement {
   dataset: DOMStringMap;
+}
+
+export interface DocumentSheetOptions {
+  showDetailedFormulas?: boolean;
+}
+
+export interface SettingsData {
+  disableStatusEffects: boolean;
 }

@@ -1,3 +1,4 @@
+// src/module/helpers/settings.ts
 import { Logger } from '../utils/logger';
 import {
   TLGCCActor,
@@ -11,6 +12,9 @@ import {
   onManageActiveEffect,
   prepareActiveEffectCategories,
 } from '../helpers/effects';
+import Settings from '../helpers/settings';
+import { DocumentSheetOptions } from '../types';
+import { NumberAppearingRoller } from '../utils/number-appearing';
 
 interface WeaponAttackOverrides {
   temporaryEnableAllAttacks: boolean;
@@ -105,6 +109,8 @@ export class TlgccActorSheet extends ActorSheet<
     context.rollData = this.actor.getRollData();
     // @ts-ignore
     context.effects = prepareActiveEffectCategories(this.actor.effects);
+    // Add showDetailedFormulas to context
+    context.showDetailedFormulas = Settings.showDetailedFormulas;
     return context;
   }
 
@@ -219,6 +225,7 @@ export class TlgccActorSheet extends ActorSheet<
       spells,
       features,
       carriedWeight: Math.floor(carriedWeight),
+      showDetailedFormulas: Settings.showDetailedFormulas,
     });
   }
 
@@ -376,8 +383,11 @@ export class TlgccActorSheet extends ActorSheet<
       element: element,
       dataset: dataset,
       rollType: dataset.rollType,
-      attackType: dataset.attack,
     });
+
+    if (dataset.rollType === 'numberAppearing') {
+      return this._rollNumberAppearing(element);
+    }
 
     if (dataset.rollType === 'weapon') {
       return this._rollWeapon(element, dataset);
@@ -398,17 +408,12 @@ export class TlgccActorSheet extends ActorSheet<
     );
   }
 
-  private _rollWeapon(
-    element: HTMLElement,
-    dataset: DOMStringMap,
-  ): Roll | undefined {
-    const itemElement = element.closest(
-      '.item',
-    ) as HTMLElementWithDataset | null;
+  private _rollWeapon(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
+    const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
     if (!itemElement?.dataset?.itemId) return;
 
     const itemId = itemElement.dataset.itemId;
-    const item = this.actor?.items?.get(itemId);
+    const item = this.actor?.items.get(itemId);
     if (!item) return;
 
     // Get attack type (melee or ranged)
@@ -427,18 +432,15 @@ export class TlgccActorSheet extends ActorSheet<
       // Handle melee weapons
       if (attackType === 'melee') {
         if (item.name && this._isFinesseMelee(item.name)) {
-          // For finesse weapons, use the better modifier
           const strMod = actorData.abilities?.str?.bonus || 0;
           const dexMod = actorData.abilities?.dex?.bonus || 0;
           abilityMod = Math.max(strMod, dexMod);
           abilityUsed = abilityMod === strMod ? 'STR' : 'DEX';
         } else {
-          // Regular melee weapons use STR
           abilityMod = actorData.abilities?.str?.bonus || 0;
           abilityUsed = 'STR';
         }
       }
-      // Handle ranged weapons
       else if (attackType === 'ranged') {
         abilityMod = actorData.abilities?.dex?.bonus || 0;
         abilityUsed = 'DEX';
@@ -462,7 +464,7 @@ export class TlgccActorSheet extends ActorSheet<
       rollData.weaponBonus = weaponBonus;
     }
 
-    // Add ability modifier only if it exists and is non-zero (for characters)
+    // Add ability modifier
     if (abilityMod !== 0) {
       rollParts.push(`${abilityMod}`);
       rollData.abilityMod = abilityMod;
@@ -471,100 +473,118 @@ export class TlgccActorSheet extends ActorSheet<
     // Create the roll formula
     const rollFormula = rollParts.join(' + ');
 
-    // Create the roll and evaluate
+    // Create the roll
     const roll = new Roll(rollFormula, rollData);
 
-    // Build flavor text showing only non-zero modifiers
-    // In the _rollWeapon method, replace the flavor text building section with:
-    // @ts-ignore
-    const attackLabel = attackType?.charAt(0).toUpperCase() + attackType?.slice(1);
-    const flavorParts = [`${attackLabel} Attack Roll: ${item.name}<br>1d20`];
+    // Create attack type label
+    const attackLabel = attackType === 'melee' ? 'Melee Attack' : 'Ranged Attack';
+    let flavor = `Roll: <b>${attackLabel} &rarr; ${item.name}</b>`;
 
-    if (baseAttackBonus !== 0) {
-      flavorParts.push(`+ ${baseAttackBonus} (Base)`);
-    }
+    // Add formula details if enabled
+    if (Settings.showDetailedFormulas) {
+      const detailedParts = [];
+      detailedParts.push('1d20');
+      if (baseAttackBonus) detailedParts.push('@ab');
+      if (abilityMod) {
+        const abilityKey = abilityUsed.toLowerCase();
+        detailedParts.push(`@abilities.${abilityKey}.bonus`);
+      }
+      if (weaponBonus) detailedParts.push(`${weaponBonus}`);
 
-    if (weaponBonus !== 0) {
-      flavorParts.push(`+ ${weaponBonus} (Weapon)`);
-    }
-
-    if (abilityMod !== 0) {
-      flavorParts.push(`+ ${abilityMod} (${abilityUsed})`);
+      flavor += `<br><em>(${detailedParts.join(' + ')})</em>`;
     }
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor: flavorParts.join(' '),
+      flavor: flavor,
       rollMode: this.ROLL_MODE,
     });
 
     return roll;
   }
 
-  private _isFinesseMelee(weaponName: string): boolean {
-    const finesseWeapons = ['dagger', 'rapier', 'short sword'];
-    return finesseWeapons.some((weapon) =>
-      weaponName.toLowerCase().includes(weapon),
-    );
-  }
-
   private _rollDamage(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
     const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
-    if (!itemElement?.dataset?.itemId) {
-      logger.debug('No item ID found');
-      return;
-    }
+    if (!itemElement?.dataset?.itemId) return;
 
     const itemId = itemElement.dataset.itemId;
     const item = this.actor?.items.get(itemId);
-    if (!item) {
-      logger.debug('Item not found');
-      return;
-    }
+    if (!item) return;
 
     let rollParts: string[] = [];
     let rollData: Record<string, number> = {};
 
-    // Handle both weapon and spell damage
     const itemData = item.system as ItemSystemData;
-    logger.debug('Item data:', itemData);
 
-    // For weapons, use damage.value
     if (item.type === 'weapon') {
       const baseDamage = itemData.damage?.value || '';
       if (!baseDamage) return;
       rollParts.push(baseDamage);
-    }
-    // For spells, use spelldmg.value
-    else if (item.type === 'spell') {
-      const spellDamage = (itemData as any).spelldmg?.value || '';
-      logger.debug('Spell damage value:', spellDamage);
-      if (!spellDamage) {
-        logger.debug('No spell damage value found');
-        return;
+
+      // Add ability modifier for weapons
+      if (this.actor?.type === 'character') {
+        const actorData = this.actor.system as ActorSystemData;
+
+        // For melee weapons
+        if (this._isFinesseMelee(item.name)) {
+          // Use higher of STR or DEX for finesse weapons
+          const strMod = actorData.abilities?.str?.bonus || 0;
+          const dexMod = actorData.abilities?.dex?.bonus || 0;
+          const abilityMod = Math.max(strMod, dexMod);
+          if (abilityMod) {
+            rollParts.push(abilityMod.toString());
+            rollData.abilityMod = abilityMod;
+          }
+        } else if (!itemData.range?.value?.toLowerCase().includes('ft')) {
+          // Regular melee weapons use STR
+          const strMod = actorData.abilities?.str?.bonus || 0;
+          if (strMod) {
+            rollParts.push(strMod.toString());
+            rollData.abilityMod = strMod;
+          }
+        } else {
+          // Ranged weapons don't add ability mod to damage
+        }
       }
+    } else if (item.type === 'spell') {
+      const spellDamage = (itemData as any).spelldmg?.value || '';
+      if (!spellDamage) return;
       rollParts.push(spellDamage);
     }
 
-    // Create the roll formula
     const rollFormula = rollParts.join(' + ');
     if (!rollFormula) return;
 
-    // Create and evaluate the roll
     const roll = new Roll(rollFormula, this.actor?.getRollData());
 
-    // Create label
-    // @ts-ignore
-    const itemType = game.i18n.localize(`TYPES.Item.${item.type}`);
-    const label = `${itemType} Damage Roll: ${item.name}`;
+    let flavor = `Roll: <b>Damage &rarr; ${item.name}</b>`;
+
+    // Add formula details if enabled
+    if (Settings.showDetailedFormulas) {
+      const detailedParts = [];
+
+      if (item.type === 'weapon') {
+        detailedParts.push(itemData.damage?.value);
+
+        if (this.actor?.type === 'character') {
+          if (this._isFinesseMelee(item.name)) {
+            detailedParts.push('max(@abilities.str.bonus, @abilities.dex.bonus)');
+          } else if (!itemData.range?.value?.toLowerCase().includes('ft')) {
+            detailedParts.push('@abilities.str.bonus');
+          }
+        }
+      } else if (item.type === 'spell') {
+        detailedParts.push((itemData as any).spelldmg?.value);
+      }
+
+      flavor += `<br><em>(${detailedParts.join(' + ')})</em>`;
+    }
 
     try {
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
+        flavor: flavor,
         rollMode: this.ROLL_MODE,
-      }).catch(error => {
-        logger.error('Error creating roll message:', error);
       });
 
       return roll;
@@ -572,6 +592,13 @@ export class TlgccActorSheet extends ActorSheet<
       logger.error('Error creating roll:', error);
       return undefined;
     }
+  }
+
+  private _isFinesseMelee(weaponName: string): boolean {
+    const finesseWeapons = ['dagger', 'rapier', 'short sword'];
+    return finesseWeapons.some((weapon) =>
+      weaponName.toLowerCase().includes(weapon),
+    );
   }
 
   private _rollItem(element: HTMLElement): Roll | undefined {
@@ -591,5 +618,39 @@ export class TlgccActorSheet extends ActorSheet<
       rollMode: this.ROLL_MODE,
     });
     return roll;
+  }
+
+  private _rollNumberAppearing(element: HTMLElement): Roll | undefined {
+    try {
+      // @ts-ignore
+      const format = this.actor.system.numberAppearing.value;
+
+      // Early return if the value is "1"
+      if (!NumberAppearingRoller.needsRoll(format)) {
+        return undefined;
+      }
+
+      const result = NumberAppearingRoller.roll(format);
+
+      // Create a roll to represent this result
+      const roll = new Roll('1d1', { result: result.value });
+      roll.evaluate({ async: false });
+
+      // Create chat message with private roll mode
+      ChatMessage.create({
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        flavor: `<h2>${this.actor.name}: Number Appearing</h2>${result.detail}`,
+        content: `<h3>Total: ${result.value}</h3>`,
+        rollMode: 'gmroll',
+        // @ts-ignore - whisper property exists but isn't in types
+        whisper: [game.user?.id || '']
+      });
+
+      return roll;
+    } catch (error) {
+      logger.error('Error in _rollNumberAppearing:', error);
+      ui.notifications?.error('Error rolling number appearing. Check the console for details.');
+      return undefined;
+    }
   }
 }

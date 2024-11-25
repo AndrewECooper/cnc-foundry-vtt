@@ -50,7 +50,7 @@ export default class Settings {
       scope: 'client',
       config: true,
       type: Boolean,
-      default: true,
+      default: false,
       onChange: () => {
         // Instead of directly referencing TlgccActorSheet, we'll update all windows
         // @ts-ignore
@@ -70,7 +70,7 @@ export default class Settings {
       scope: 'world',
       config: true,
       type: Boolean,
-      default: false,
+      default: true,
       onChange: () => {
         // Update status effects when setting changes
         const MINIMAL_STATUS_EFFECTS = [

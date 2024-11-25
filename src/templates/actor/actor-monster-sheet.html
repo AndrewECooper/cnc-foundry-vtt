@@ -4,8 +4,9 @@
   <header class="sheet-header">
     <img class="profile-img" data-edit="img" height="100" src="{{actor.img}}" title="{{actor.name}}" width="100" />
     <div class="header-fields">
-      <h1 class="charname"><input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text"
-                                  value="{{actor.name}}" /></h1>
+      <h1 class="charname">
+        <input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text" value="{{actor.name}}" />
+      </h1>
       <div class="resources grid grid-5col">
         <div class="resource flex-group-center">
           <label class="resource-label" for="system.hitDice">
@@ -13,8 +14,7 @@
           </label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="Number" id="system.hitDice" name="system.hitPoints.value" type="text"
-                   value="{{system.hitPoints.value}}"
-                   width="50px" />
+                   value="{{system.hitPoints.value}}" width="50px" />
             <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
             <input data-dtype="Number" name="system.hitPoints.max" type="text" value="{{system.hitPoints.max}}" />
           </div>
@@ -24,7 +24,7 @@
             <a class="rollable" data-label="{{localize 'TLGCC.HitDice'}}"
                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">
               {{localize 'TLGCC.MonsterHitDice'}}
-            &nbsp;</a></label>
+              &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="Number" name="system.hitDice.number" type="number" value="{{system.hitDice.number}}" />
             <input data-dtype="String" name="system.hitDice.size" type="text" value="{{system.hitDice.size}}" />
@@ -151,6 +151,7 @@
 
       </section>
     </div>
+
     {{!-- Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
       <div class="resource flex-group-center">
@@ -215,10 +216,9 @@
         {{/each}}
       </ol>
     </div>
+
     {{!-- Description Tab --}}
     <div class="tab description" data-group="primary" data-tab="description">
-      {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to
-      the rollData property. --}}
       {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 

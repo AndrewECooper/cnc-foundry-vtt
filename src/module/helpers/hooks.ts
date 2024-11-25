@@ -11,7 +11,7 @@ import { MigrationManager } from '../migration/migration_manager';
 
 interface TokenSystemData {
   xp: {
-    value: string | number; // Allow both string and number
+    value: string | number;
   };
   hitDice: any;
   hitPoints: {
@@ -31,12 +31,8 @@ interface TokenDocument {
 const logger = Logger.getInstance();
 
 Hooks.once('init', async function () {
-  // Set logging level as a setting for the system
-  // @ts-ignore
   Settings.registerSettings();
 
-  // Set initial log level from settings
-  // @ts-ignore
   const savedLogLevel = Settings.logLevel as keyof typeof LogLevel;
   logger.setLogLevel(
     LogLevel[savedLogLevel.toUpperCase() as keyof typeof LogLevel],
@@ -47,16 +43,8 @@ Hooks.once('init', async function () {
   logger.debug("It's Dr. Pepper Time!", TLGCC.PEPPERCOLOR);
   logger.debug(TLGCC.PEPPERTIME, TLGCC.PEPPERCOLOR);
 
-  /**
-   * Set up token status effects based on settings
-   */
-  const configureStatusEffects = () => {
-    // @ts-ignore - Foundry types don't properly expose statusEffects
-    CONFIG.statusEffects = Settings.disableStatusEffects ? [] : TOKEN_STATUS_EFFECTS;
-  };
-
-  // Define default status effects
-  const TOKEN_STATUS_EFFECTS = [
+  // Define minimal status effects
+  const MINIMAL_STATUS_EFFECTS = [
     {
       id: "dead",
       label: "EFFECT.StatusDead",
@@ -66,127 +54,14 @@ Hooks.once('init', async function () {
       id: "unconscious",
       label: "EFFECT.StatusUnconscious",
       icon: "icons/svg/unconscious.svg"
-    },
-    {
-      id: "sleep",
-      label: "EFFECT.StatusAsleep",
-      icon: "icons/svg/sleep.svg"
-    },
-    {
-      id: "stun",
-      label: "EFFECT.StatusStunned",
-      icon: "icons/svg/daze.svg"
-    },
-    {
-      id: "prone",
-      label: "EFFECT.StatusProne",
-      icon: "icons/svg/falling.svg"
-    },
-    {
-      id: "restrain",
-      label: "EFFECT.StatusRestrained",
-      icon: "icons/svg/net.svg"
-    },
-    {
-      id: "paralysis",
-      label: "EFFECT.StatusParalyzed",
-      icon: "icons/svg/paralysis.svg"
-    },
-    {
-      id: "fly",
-      label: "EFFECT.StatusFlying",
-      icon: "icons/svg/wing.svg"
-    },
-    {
-      id: "blind",
-      label: "EFFECT.StatusBlinded",
-      icon: "icons/svg/blind.svg"
-    },
-    {
-      id: "deaf",
-      label: "EFFECT.StatusDeafened",
-      icon: "icons/svg/deaf.svg"
-    },
-    {
-      id: "silence",
-      label: "EFFECT.StatusSilenced",
-      icon: "icons/svg/silenced.svg"
-    },
-    {
-      id: "fear",
-      label: "EFFECT.StatusFear",
-      icon: "icons/svg/terror.svg"
-    },
-    {
-      id: "burning",
-      label: "EFFECT.StatusBurning",
-      icon: "icons/svg/fire.svg"
-    },
-    {
-      id: "frozen",
-      label: "EFFECT.StatusFrozen",
-      icon: "icons/svg/frozen.svg"
-    },
-    {
-      id: "shock",
-      label: "EFFECT.StatusShocked",
-      icon: "icons/svg/lightning.svg"
-    },
-    {
-      id: "poison",
-      label: "EFFECT.StatusPoison",
-      icon: "icons/svg/poison.svg"
-    },
-    {
-      id: "disease",
-      label: "EFFECT.StatusDisease",
-      icon: "icons/svg/biohazard.svg"
-    },
-    {
-      id: "regenerate",
-      label: "EFFECT.StatusRegeneration",
-      icon: "icons/svg/regen.svg"
-    },
-    {
-      id: "degen",
-      label: "EFFECT.StatusDegen",
-      icon: "icons/svg/degen.svg"
-    },
-    {
-      id: "advantage",
-      label: "EFFECT.StatusAdvantage",
-      icon: "icons/svg/upgrade.svg"
-    },
-    {
-      id: "disadvantage",
-      label: "EFFECT.StatusDisadvantage",
-      icon: "icons/svg/downgrade.svg"
-    },
-    {
-      id: "invisible",
-      label: "EFFECT.StatusInvisible",
-      icon: "icons/svg/invisible.svg"
-    },
-    {
-      id: "target",
-      label: "EFFECT.StatusTarget",
-      icon: "icons/svg/target.svg"
-    },
-    {
-      id: "mark",
-      label: "EFFECT.StatusMarked",
-      icon: "icons/svg/mark.svg"
     }
   ];
 
-  // Initial configuration
-  configureStatusEffects();
+  // Configure status effects based on setting
+  // @ts-ignore - Foundry types don't properly expose statusEffects
+  CONFIG.statusEffects = Settings.disableStatusEffects ? MINIMAL_STATUS_EFFECTS : CONFIG.statusEffects;
 
-  // Listen for settings changes
-  Hooks.on('closeSettingsConfig', configureStatusEffects);
-
-  // Add utility classes to the global game object so that they're more easily
-  // accessible in global contexts.
+  // Add utility classes to the global game object
   // @ts-ignore
   game.tlgcc = {
     tlgccActor,

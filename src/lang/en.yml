@@ -180,4 +180,4 @@ TLGCC.Settings.LogLevel:
   Hint: Set the level of logging to display in the console
 TLGCC.Settings.DisableStatusEffects:
   Name: Disable Status Effects
-  Hint: If enabled, removes all status effect icons from the token HUD
+  Hint: If enabled, removes all status effect icons from the token HUD except for "Dead" and "Unconscious"

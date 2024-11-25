@@ -72,7 +72,24 @@ export default class Settings {
       type: Boolean,
       default: false,
       onChange: () => {
-        // Refresh tokens when the setting changes
+        // Update status effects when setting changes
+        const MINIMAL_STATUS_EFFECTS = [
+          {
+            id: "dead",
+            label: "EFFECT.StatusDead",
+            icon: "icons/svg/skull.svg"
+          },
+          {
+            id: "unconscious",
+            label: "EFFECT.StatusUnconscious",
+            icon: "icons/svg/unconscious.svg"
+          }
+        ];
+
+        // @ts-ignore
+        CONFIG.statusEffects = Settings.disableStatusEffects ? MINIMAL_STATUS_EFFECTS : foundry.CONST.DEFAULT_TOKEN_EFFECTS;
+
+        // Refresh tokens
         // @ts-ignore
         canvas.tokens?.placeables.forEach(t => t.draw());
       }

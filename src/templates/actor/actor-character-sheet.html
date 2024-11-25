@@ -79,9 +79,7 @@
     {{!-- Combat Tab --}}
     <div class="tab combat" data-group="primary" data-tab="combat">
       <div class="grid grid-6col flexrow">
-        <!-- {{log "Abilities: "}} -->
         {{#each system.abilities as |ability key|}}
-        <!-- {{log ability}} -->
         <div class="ability abilitybox flex-group-center" style="max-width: 135px">
           <label for="system.abilities.{{key}}.value" class="ability-label rollable flexlarge align-center"
                  title="{{localize 'TLGCC.AbilityCheck'}}"

@@ -180,4 +180,4 @@ TLGCC.Settings.LogLevel:
   Hint: Nivel de detalle de los mensajes de log
 TLGCC.Settings.DisableStatusEffects:
   Name: Desactivar Efectos de Estado
-  Hint: Si está activado, elimina todos los iconos de efectos de estado del HUD del token
+  Hint: Si está activado, elimina todos los iconos de efectos de estado del HUD del token excepto "Muerto" y "Inconsciente"

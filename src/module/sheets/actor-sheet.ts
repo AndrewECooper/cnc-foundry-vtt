@@ -8,10 +8,6 @@ import {
   WeaponData,
   HTMLElementWithDataset,
 } from '../types';
-import {
-  onManageActiveEffect,
-  prepareActiveEffectCategories,
-} from '../helpers/effects';
 import Settings from '../helpers/settings';
 import { DocumentSheetOptions } from '../types';
 import { NumberAppearingRoller } from '../utils/number-appearing';
@@ -107,9 +103,6 @@ export class TlgccActorSheet extends ActorSheet<
 
     // @ts-ignore
     context.rollData = this.actor.getRollData();
-    // @ts-ignore
-    context.effects = prepareActiveEffectCategories(this.actor.effects);
-    // Add showDetailedFormulas to context
     context.showDetailedFormulas = Settings.showDetailedFormulas;
     return context;
   }
@@ -304,12 +297,6 @@ export class TlgccActorSheet extends ActorSheet<
     html.find('.item-create').click(this._onItemCreate.bind(this));
     html.find('.item-delete').click(this._onItemDelete.bind(this));
     html.find('.spell-prepare').click(this._onSpellPrepare.bind(this));
-    // @ts-ignore
-    html
-      .find('.effect-control')
-      .click((ev: JQuery.ClickEvent) =>
-        onManageActiveEffect(ev.originalEvent as MouseEvent, this.actor),
-      );
     html.find('.rollable').click(this._onRoll.bind(this));
 
     if (this.actor.isOwner) {

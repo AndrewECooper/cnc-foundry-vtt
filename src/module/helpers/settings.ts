@@ -170,9 +170,9 @@ export default class Settings {
     // Status effects setting
     // @ts-ignore
     // @ts-ignore
-    game.settings.register(TLGCC.SYSTEM_ID, 'disableStatusEffects', {
-      name: 'TLGCC.Settings.DisableStatusEffects.Name',
-      hint: 'TLGCC.Settings.DisableStatusEffects.Hint',
+    game.settings.register(TLGCC.SYSTEM_ID, 'useMinimalStatusEffects', {
+      name: 'TLGCC.Settings.UseMinimalStatusEffects.Name',
+      hint: 'TLGCC.Settings.UseMinimalStatusEffects.Hint',
       scope: 'world',
       config: true,
       type: Boolean,
@@ -219,6 +219,16 @@ export default class Settings {
       return game.settings.get(TLGCC.SYSTEM_ID, 'disableStatusEffects');
     } catch (error) {
       logger.error('Error getting disableStatusEffects setting:', error);
+      return false;
+    }
+  }
+
+  static get useMinimalStatusEffects(): boolean {
+    try {
+      // @ts-ignore
+      return game.settings.get(TLGCC.SYSTEM_ID, 'useMinimalStatusEffects');
+    } catch (error) {
+      logger.error('Error getting useMinimalStatusEffects setting:', error);
       return false;
     }
   }

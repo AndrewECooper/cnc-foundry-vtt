@@ -35,7 +35,7 @@ Hooks.once('init', async function () {
   Items.registerSheet('tlgcc', TlgccItemSheet, { makeDefault: true });
 
   // Initialize status effects
-  await Settings.updateStatusEffects(Settings.disableStatusEffects);
+  await Settings.updateStatusEffects(Settings.useMinimalStatusEffects);
 
   // Set initiative formula
   CONFIG.Combat.initiative = {
@@ -72,16 +72,14 @@ Hooks.once('ready', async function () {
 
   // Initialize status effects
   try {
-    if (Settings.disableStatusEffects) {
+    if (Settings.useMinimalStatusEffects) {
       CONFIG.statusEffects = foundry.utils.deepClone(Settings.MINIMAL_STATUS_EFFECTS);
 
       // Update existing tokens if needed
       if (canvas?.ready) {
-        // @ts-ignore
         for (const token of canvas.tokens?.placeables || []) {
           if (token?.actor) {
             await token.drawEffects();
-            // @ts-ignore
             if (token.hasActiveHUD) token.refreshHUD();
           }
         }

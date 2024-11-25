@@ -238,9 +238,9 @@ export class TlgccActorSheet extends ActorSheet<
       item.img = item.img || DEFAULT_TOKEN;
       const category = this._getItemCategory(item);
       if (category === 'spell') {
-        const spellLevel = Number(item.system.spellLevel?.value) || 0;
+        // Update this section to check both possible locations for spell level
+        const spellLevel = Number(item.system.spell?.spelllevel) || Number(item.system.spellLevel?.value) || 0;
         if (spellLevel >= 0 && spellLevel < 10) {
-          // @ts-ignore
           categories.spells[spellLevel].push(item);
         }
       } else if (category) {

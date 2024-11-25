@@ -92,6 +92,7 @@ TLGCC.Ranged: A distancia
 
 # Monster Specific
 TLGCC.MonsterHitDice: DG
+TLGCC.MonsterHitDiceHover: Número de dados de golpe
 TLGCC.MonsterINT: INT
 TLGCC.MonsterType: Tipo
 TLGCC.MonsterSaves: Salvación

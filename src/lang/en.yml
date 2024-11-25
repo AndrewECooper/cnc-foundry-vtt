@@ -91,7 +91,8 @@ TLGCC.Melee: Melee
 TLGCC.Ranged: Ranged
 
 # Monster Specific
-TLGCC.MonsterHitDice: Level Size
+TLGCC.MonsterHitDice: Level
+TLGCC.MonsterHitDiceHover: Roll for max monster hit points
 TLGCC.MonsterINT: INT
 TLGCC.MonsterType: Type
 TLGCC.MonsterSaves: Saves

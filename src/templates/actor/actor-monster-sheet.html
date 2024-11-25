@@ -8,10 +8,9 @@
                                   value="{{actor.name}}" /></h1>
       <div class="resources grid grid-5col">
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.hitDice"><a class="rollable"
-                                                                data-label="{{localize 'TLGCC.MonsterHitDice'}}"
-                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">{{localize
-            'TLGCC.HitPoints'}} &nbsp;</a></label>
+          <label class="resource-label" for="system.hitDice">
+            {{localize 'TLGCC.HitPoints'}}
+          </label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="Number" id="system.hitDice" name="system.hitPoints.value" type="text"
                    value="{{system.hitPoints.value}}"
@@ -21,10 +20,10 @@
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.hitDice"><a class="rollable"
-                                                                data-label="{{localize 'TLGCC.HitDice'}}"
-                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">HD
-            Size
+          <label class="resource-label" for="system.hitDice" title="{{localize 'TLGCC.MonsterHitDiceHover'}}">
+            <a class="rollable" data-label="{{localize 'TLGCC.HitDice'}}"
+               data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">
+              {{localize 'TLGCC.MonsterHitDice'}}
             &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="Number" name="system.hitDice.number" type="number" value="{{system.hitDice.number}}" />

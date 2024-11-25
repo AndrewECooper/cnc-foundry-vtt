@@ -9,25 +9,6 @@ import Settings from './settings';
 import { Logger, LogLevel } from '../utils/logger';
 import { MigrationManager } from '../migration/migration_manager';
 
-interface TokenSystemData {
-  xp: {
-    value: string | number;
-  };
-  hitDice: any;
-  hitPoints: {
-    value: number;
-    max: number;
-  };
-}
-
-interface TokenActor extends Actor {
-  system: TokenSystemData;
-}
-
-interface TokenDocument {
-  actor: TokenActor | null;
-}
-
 const logger = Logger.getInstance();
 
 Hooks.once('init', async function () {
@@ -37,50 +18,10 @@ Hooks.once('init', async function () {
   logger.setLogLevel(
     LogLevel[savedLogLevel.toUpperCase() as keyof typeof LogLevel],
   );
+
   logger.info(
     `Initializing the Castles & Crusades Game System\n${TLGCC.ASCII}`,
   );
-  logger.debug("It's Dr. Pepper Time!", TLGCC.PEPPERCOLOR);
-  logger.debug(TLGCC.PEPPERTIME, TLGCC.PEPPERCOLOR);
-
-  // Define minimal status effects
-  const MINIMAL_STATUS_EFFECTS = [
-    {
-      id: "dead",
-      label: "EFFECT.StatusDead",
-      icon: "icons/svg/skull.svg"
-    },
-    {
-      id: "unconscious",
-      label: "EFFECT.StatusUnconscious",
-      icon: "icons/svg/unconscious.svg"
-    }
-  ];
-
-  // Configure status effects based on setting
-  // @ts-ignore - Foundry types don't properly expose statusEffects
-  CONFIG.statusEffects = Settings.disableStatusEffects ? MINIMAL_STATUS_EFFECTS : CONFIG.statusEffects;
-
-  // Add utility classes to the global game object
-  // @ts-ignore
-  game.tlgcc = {
-    tlgccActor,
-    tlgccItem,
-    rollItemMacro,
-  };
-
-  // Add custom constants for configuration.
-  // @ts-ignore
-  CONFIG.TLGCC = TLGCC;
-
-  /**
-   * Set an initiative formula for the system
-   * @type {string}
-   */
-  CONFIG.Combat.initiative = {
-    formula: 'max(1, 1d10)',
-    decimals: 0,
-  };
 
   // Define custom Document classes
   CONFIG.Actor.documentClass = tlgccActor;
@@ -93,24 +34,61 @@ Hooks.once('init', async function () {
   Items.unregisterSheet('core', ItemSheet);
   Items.registerSheet('tlgcc', TlgccItemSheet, { makeDefault: true });
 
-  // Preload Handlebars templates.
+  // Initialize status effects
+  await Settings.updateStatusEffects(Settings.disableStatusEffects);
+
+  // Set initiative formula
+  CONFIG.Combat.initiative = {
+    formula: 'max(1, 1d10)',
+    decimals: 0,
+  };
+
+  // Add utility classes to the global game object
+  // @ts-ignore
+  game.tlgcc = {
+    tlgccActor,
+    tlgccItem,
+    rollItemMacro,
+  };
+
+  // Add custom constants for configuration
+  // @ts-ignore
+  CONFIG.TLGCC = TLGCC;
+
+  // Preload Handlebars templates
   return preloadHandlebarsTemplates();
 });
-
-/* -------------------------------------------- */
-/*  Ready Hook                                  */
-/* -------------------------------------------- */
 
 Hooks.once('ready', async function () {
   logger.debug('Ready hook called');
 
-  // Run migrations if needed
   try {
     await MigrationManager.checkAndMigrate();
   } catch (error) {
     logger.error('Error during system migration:', error);
     // @ts-ignore
     ui.notifications?.error('Error during Castles & Crusades system migration. Check console for details.');
+  }
+
+  // Initialize status effects
+  try {
+    if (Settings.disableStatusEffects) {
+      CONFIG.statusEffects = foundry.utils.deepClone(Settings.MINIMAL_STATUS_EFFECTS);
+
+      // Update existing tokens if needed
+      if (canvas?.ready) {
+        // @ts-ignore
+        for (const token of canvas.tokens?.placeables || []) {
+          if (token?.actor) {
+            await token.drawEffects();
+            // @ts-ignore
+            if (token.hasActiveHUD) token.refreshHUD();
+          }
+        }
+      }
+    }
+  } catch (error) {
+    logger.warn('Non-critical error initializing status effects:', error);
   }
 
   // @ts-ignore
@@ -122,10 +100,7 @@ Hooks.once('ready', async function () {
   );
 });
 
-/* -------------------------------------------- */
-/*  Character Creation Hooks                    */
-/* -------------------------------------------- */
-
+// Keep existing hooks
 Hooks.on('createActor', async function (actor: Actor) {
   logger.debug('createActor hook called');
   if (actor.type === 'character') {
@@ -133,38 +108,29 @@ Hooks.on('createActor', async function (actor: Actor) {
   }
 });
 
-/* -------------------------------------------- */
-/*  Token Creation Hooks                        */
-/* -------------------------------------------- */
+Hooks.on('createToken', async function (token: TokenDocument, options: any, id: string) {
+  logger.debug('createToken hook called');
+  if (token.actor && token.actor.type === 'monster') {
+    const actor = token.actor;
 
-Hooks.on(
-  'createToken',
-  async function (token: TokenDocument, options: any, id: string) {
-    logger.debug('createToken hook called');
-    if (token.actor && token.actor.type === 'monster') {
-      const actor = token.actor;
+    // @ts-ignore
+    if (typeof actor.system.xp.value === 'string' && actor.system.xp.value.includes('+')) {
+      // @ts-ignore
+      let tokenHitDice = actor.system.hitDice;
 
-      if (
-        typeof actor.system.xp.value === 'string' &&
-        actor.system.xp.value.includes('+')
-      ) {
-        let tokenHitDice = actor.system.hitDice;
+      let newHitPoints = new Roll(
+        `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
+      );
+      await newHitPoints.evaluate({ async: true });
+      // @ts-ignore
+      actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
+      // @ts-ignore
+      actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
 
-        let newHitPoints = new Roll(
-          `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
-        );
-        await newHitPoints.evaluate({ async: true });
-        actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
-        actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
-
-        // Calculate XP and convert to string
-        const [baseXP, multiplier] = actor.system.xp.value
-          .split('+')
-          .map(Number);
-        actor.system.xp.value = String(
-          baseXP + multiplier * actor.system.hitPoints.max,
-        );
-      }
+      // @ts-ignore
+      const [baseXP, multiplier] = actor.system.xp.value.split('+').map(Number);
+      // @ts-ignore
+      actor.system.xp.value = String(baseXP + multiplier * actor.system.hitPoints.max);
     }
-  },
-);
+  }
+});

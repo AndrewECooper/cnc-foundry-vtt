@@ -360,7 +360,7 @@ export class TlgccActorSheet extends ActorSheet<
     }
   }
 
-  private _onRoll(event: JQuery.ClickEvent): Roll | undefined {
+  private async _onRoll(event: JQuery.ClickEvent): Promise<Roll | undefined> {
     event.preventDefault();
     const element = event.currentTarget;
     const dataset = element.dataset;
@@ -490,7 +490,7 @@ export class TlgccActorSheet extends ActorSheet<
     return roll;
   }
 
-  private _rollDamage(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
+  private async _rollDamage(element: HTMLElement, dataset: DOMStringMap): Promise<Roll | undefined> {
     const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
     if (!itemElement?.dataset?.itemId) return;
 
@@ -568,7 +568,10 @@ export class TlgccActorSheet extends ActorSheet<
     }
 
     try {
-      roll.toMessage({
+      // Evaluate the roll before sending to chat
+      await roll.evaluate({ async: true });
+
+      await roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         flavor: flavor,
         rollMode: this.ROLL_MODE,

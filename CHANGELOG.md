@@ -23,6 +23,36 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 -->
 ## [Unreleased]
 
+## [1.0.4] - 2024-11-26
+
+### Bug Fixes
+
+- Spell damage button not working on spell page (!87) [@KillerWabbit]
+- Edit spell not showing localized labels (!86) [@KillerWabbit]
+- Level box appends comma and class when changed (!84) [@KillerWabbit]
+- Spell Items are broken (!59) [@roman.weindl]
+- Character sheet doesn't add STR or DEX modifier on attack or damage rolls (!57) [@yschnoe]
+
+### New Features
+
+- Change background box on character sheet to diety (!65) [@KillerWabbit]
+- Resize wealth boxes and add field for custom items (!64) [@KillerWabbit]
+- Add weight field in description section (!63) [@KillerWabbit]
+
+### Other Changes
+
+- Fix newly created spell item always drags into level 0 even if level is set (!97) [@KillerWabbit]
+- Check attack, damage and save rolls (!96) [@KillerWabbit]
+- Remove all status effects except dead and unconscious (!95) [@KillerWabbit]
+- Change Alignment to Disposition (!94) [@KillerWabbit]
+- Remove 'Hit Points' roll on monster sheet (!93) [@KillerWabbit]
+- Change 'HD Size' to 'Level' on monster sheet (!92) [@KillerWabbit]
+- Add level bonus to monster to hit roll on monster sheet (!91) [@KillerWabbit]
+- 1.04 pre-release fixes (!90) [@KillerWabbit]
+- Saving Throws for Monsters (!76) [@rippedtabard]
+- Update System to FoundryVTT v12 compatibility (!62) [@KillerWabbit]
+
+
 ## [1.0.3] - 2024-06-28
 
 ### Changed

@@ -9,7 +9,7 @@ import {
   HTMLElementWithDataset,
 } from '../types';
 import Settings from '../helpers/settings';
-import { DocumentSheetOptions } from '../types';
+// import { DocumentSheetOptions } from '../types';
 import { NumberAppearingRoller } from '../utils/number-appearing';
 
 interface WeaponAttackOverrides {
@@ -291,6 +291,12 @@ export class TlgccActorSheet extends ActorSheet<
   override activateListeners(html: JQuery): void {
     super.activateListeners(html);
 
+    // Add new listeners for monster attribute checks and saves
+    if (this.actor.type === 'monster') {
+      html.find('.monster-attribute-check').click(this._rollMonsterAttributeCheck.bind(this));
+      html.find('.monster-save').click(this._onMonsterSave.bind(this));
+    }
+
     html.find('.item-edit').click(this._onItemEdit.bind(this));
     if (!this.isEditable) return;
 
@@ -387,13 +393,13 @@ export class TlgccActorSheet extends ActorSheet<
     }
   }
 
-  private _isFinesseMeleeWeapon(weaponName: string | null): boolean {
+  /*private _isFinesseMeleeWeapon(weaponName: string | null): boolean {
     if (!weaponName) return false;
     const finesseWeapons = ['dagger', 'rapier', 'short sword'];
     return finesseWeapons.some((weapon) =>
       weaponName.toLowerCase().includes(weapon),
     );
-  }
+  }*/
 
   private _rollWeapon(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
     const itemElement = element.closest('.item') as HTMLElementWithDataset | null;
@@ -643,4 +649,51 @@ export class TlgccActorSheet extends ActorSheet<
       return undefined;
     }
   }
+
+  private _rollMonsterAttributeCheck(event: JQuery.ClickEvent): void {
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    const attribute = dataset.attribute;
+
+    if (this.actor.type !== 'monster') return;
+
+    // @ts-ignore
+    const hitDice = this.actor.system.hitDice.number;
+    const roll = new Roll(`1d20+${hitDice}`);
+
+    let label = `${this.actor.name} - ${attribute} Check`;
+    if (Settings.showDetailedFormulas) {
+      label += `<br><em>(1d20 + ${hitDice} [HD])</em>`;
+    }
+
+    roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: label,
+      rollMode: this.ROLL_MODE
+    });
+  }
+
+  private _onMonsterSave(event: JQuery.ClickEvent): void {
+    if (this.actor.type !== 'monster') return;
+
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    const save = dataset.save;
+    // @ts-ignore
+    const hitDice = this.actor.system.hitDice.number;
+
+    const roll = new Roll(`1d20+${hitDice}`);
+
+    let label = `${this.actor.name} - ${save} Save`;
+    if (Settings.showDetailedFormulas) {
+      label += `<br><em>(1d20 + ${hitDice} [HD])</em>`;
+    }
+
+    roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: label,
+      rollMode: this.ROLL_MODE
+    });
+  }
+
 }

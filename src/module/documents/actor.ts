@@ -92,23 +92,16 @@ export class tlgccActor extends Actor {
 
   private _prepareMonsterData(actorData: this) {
     const data = actorData.system;
-    data.attackBonus.value = this._calculateMonsterAttackBonus(
-      data.hitDice.number,
-    );
+    if (data.hitDice?.number) {
+      // Set attack bonus equal to HD
+      data.attackBonus.value = this._calculateMonsterAttackBonus(data.hitDice.number);
+    } else {
+      data.attackBonus.value = 0;
+    }
   }
 
   private _calculateMonsterAttackBonus(hitDiceNumber: number): number {
-    if (hitDiceNumber < 1) return 0;
-    if (hitDiceNumber <= 8) return hitDiceNumber;
-    if (hitDiceNumber <= 9) return 8;
-    if (hitDiceNumber <= 11) return 9;
-    if (hitDiceNumber <= 13) return 10;
-    if (hitDiceNumber <= 15) return 11;
-    if (hitDiceNumber <= 19) return 12;
-    if (hitDiceNumber <= 23) return 13;
-    if (hitDiceNumber <= 27) return 14;
-    if (hitDiceNumber <= 31) return 15;
-    return hitDiceNumber;
+    return Math.max(0, hitDiceNumber); // Just return HD, but never negative
   }
 
   override getRollData() {

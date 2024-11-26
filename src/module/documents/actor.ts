@@ -15,6 +15,7 @@ export class tlgccActor extends Actor {
   override prepareBaseData() {
     // Data modifications in this step occur before processing embedded
     // documents or derived data.
+    this._cleanLevelValue();
   }
 
   override prepareDerivedData() {
@@ -26,6 +27,43 @@ export class tlgccActor extends Actor {
     } else if (actorData.type === 'monster') {
       this._prepareMonsterData(actorData);
     }
+  }
+
+  /**
+   * Cleans up the level value by removing any appended class name
+   * and ensuring it's a proper integer
+   * @private
+   */
+  private _cleanLevelValue(): void {
+    if (this.type !== 'character') return;
+
+    const levelData = this.system?.level;
+    if (!levelData) return;
+
+    let currentValue = levelData.value;
+
+    // If the value is undefined or null, set it to 1
+    if (currentValue === undefined || currentValue === null) {
+      levelData.value = 1;
+      return;
+    }
+
+    // Convert to string to handle all cases
+    currentValue = String(currentValue);
+
+    // If it contains a comma, take only the number part
+    if (currentValue.includes(',')) {
+      currentValue = currentValue.split(',')[0];
+    }
+
+    // Remove any non-numeric characters
+    currentValue = currentValue.replace(/[^\d]/g, '');
+
+    // Convert to integer, defaulting to 1 if invalid
+    const cleanedValue = parseInt(currentValue);
+    levelData.value = isNaN(cleanedValue) ? 1 : cleanedValue;
+
+    logger.debug('Cleaned level value:', levelData.value);
   }
 
   private _prepareCharacterData(actorData: this) {
@@ -54,21 +92,16 @@ export class tlgccActor extends Actor {
 
   private _prepareMonsterData(actorData: this) {
     const data = actorData.system;
-    data.attackBonus.value = this._calculateMonsterAttackBonus(data.hitDice.number);
+    if (data.hitDice?.number) {
+      // Set attack bonus equal to HD
+      data.attackBonus.value = this._calculateMonsterAttackBonus(data.hitDice.number);
+    } else {
+      data.attackBonus.value = 0;
+    }
   }
 
   private _calculateMonsterAttackBonus(hitDiceNumber: number): number {
-    if (hitDiceNumber < 1) return 0;
-    if (hitDiceNumber <= 8) return hitDiceNumber;
-    if (hitDiceNumber <= 9) return 8;
-    if (hitDiceNumber <= 11) return 9;
-    if (hitDiceNumber <= 13) return 10;
-    if (hitDiceNumber <= 15) return 11;
-    if (hitDiceNumber <= 19) return 12;
-    if (hitDiceNumber <= 23) return 13;
-    if (hitDiceNumber <= 27) return 14;
-    if (hitDiceNumber <= 31) return 15;
-    return hitDiceNumber;
+    return Math.max(0, hitDiceNumber); // Just return HD, but never negative
   }
 
   override getRollData() {

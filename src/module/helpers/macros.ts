@@ -1,87 +1,118 @@
-// @ts-ignore
-// import { game } from 'foundry.js';
-// @ts-ignore
-// import { ChatMessage } from 'foundry.js';
+// macros.ts
+/**
+ * This represents the type of data needed to create a macro
+ */
+interface MacroConfig {
+  name: string;
+  type: 'script' | 'chat';
+  img: string | null;
+  command: string;
+  flags: Record<string, unknown>;
+}
 
-/* -------------------------------------------- */
-/*  Hotbar Macros                               */
-/* -------------------------------------------- */
+interface FoundryMacro extends Macro {
+  name: string;
+  command: string;
+}
+
 
 /**
- * Create a Macro from an Item drop.
- * Get an existing item macro if one exists, otherwise create a new one.
- * @returns {Promise}
- * @param item
+ * Create a macro from an Item drop.
+ * @param data     The dropped data
+ * @param slot     The hotbar slot to use
+ * @returns       A Promise that resolves to the created Macro
  */
-async function createMacro(item): Promise<Macro> {
+async function createItemMacro(
+  data: any,
+  slot: number,
+): Promise<StoredDocument<Macro> | null> {
+  if (!('data' in data)) return null;
+
+  const item: Item = data.data;
+
+  // Search for existing macro
   const command = `game.tlgcc.rollItemMacro("${item.name}");`;
   // @ts-ignore
-  let macro = game.macros.find(
-    (m) => m.name === item.name && m.command === command,
+  const macro = game.macros.find(
+    (m: FoundryMacro) => m.name === item.name && m.command === command,
   );
-  if (!macro) {
-    macro = await Macro.create({
-      name: item.name,
-      type: 'script',
-      img: item.img,
-      command: command,
-      flags: { 'tlgcc.itemMacro': true },
-    });
-  }
-  return macro;
-}
 
-/**
- * Create a Macro from an Item drop.
- * Get an existing item macro if one exists, otherwise create a new one.
- * @returns {Promise}
- * @param data
- * @param slot
- */
-async function createItemMacro(data: { type?: string; data?: any }, slot: number): Promise<any> {
-  if (data.type !== 'Item' || !data.data) {
+  if (macro) {
+    return macro;
+  }
+
+  // Create the macro command
+  const macroData: MacroConfig = {
+    name: item.name || '',
+    type: 'script',
+    img: item.img || null,
+    command: command,
+    flags: { 'tlgcc.itemMacro': true },
+  };
+
+  try {
+    // Create the macro
+    const newMacro = (await Macro.create(macroData, {
+      renderSheet: false,
+    })) as StoredDocument<Macro>;
+
+    if (!newMacro) {
+      console.error('Failed to create macro');
+      return null;
+    }
+
+    // Assign to hotbar if we have a slot and user
     // @ts-ignore
-    return ui.notifications.warn('You can only create macro buttons for owned Items');
-  }
+    if (game.user) {
+      // @ts-ignore
+      await game.user.assignHotbarMacro(newMacro, slot);
+    }
 
-  const macro = await createMacro(data.data);
-
-  if (game instanceof Game) {
-    await game.user?.assignHotbarMacro(macro, slot);
+    return newMacro;
+  } catch (error) {
+    console.error('Error creating macro:', error);
+    return null;
   }
-  return false;
 }
 
 /**
- * Create a Macro from an Item drop.
- * Get an existing item macro if one exists, otherwise create a new one.
- * @param {string} itemName
- * @returns {Promise}
+ * Roll an item macro from a hotbar macro click
+ * @param itemName - Name of the item to roll
+ * @returns Promise that resolves to the roll result
  */
-function rollItemMacro(itemName: string): Promise<any> {
+async function rollItemMacro(itemName: string): Promise<Roll | null> {
   const speaker = ChatMessage.getSpeaker();
-  let actor: any;
+  let actor: Actor | null = null;
 
-  if (game instanceof Game) {
-    // @ts-ignore
-    actor = speaker.token ? game.actors.tokens[speaker.token] : game.actors.get(speaker.actor);
+  // Check for token actor
+  // @ts-ignore - Foundry types
+  if (speaker.token && game.actors) {
+    // @ts-ignore - Foundry types
+    const tokenActor = game.actors.tokens[speaker.token];
+    actor = tokenActor ?? null;
+  }
+  // Fall back to regular actor
+  // @ts-ignore - Foundry types
+  else if (speaker.actor && game.actors) {
+    // @ts-ignore - Foundry types
+    actor = game.actors.get(speaker.actor) ?? null;
   }
 
   if (!actor) {
-    // @ts-ignore
-    return ui.notifications.warn(`No valid actor found.`);
+    ui.notifications?.warn('No valid actor found.');
+    return null;
   }
 
   const item = actor.items.find((i) => i.name === itemName);
-
   if (!item) {
-    // @ts-ignore
-    return ui.notifications.warn(`Your controlled Actor does not have an item named ${itemName}`);
+    ui.notifications?.warn(
+      `Your controlled Actor does not have an item named ${itemName}`,
+    );
+    return null;
   }
 
-  // Trigger the item roll
+  // @ts-ignore - roll exists but isn't typed
   return item.roll();
 }
-
 
 export { createItemMacro, rollItemMacro };

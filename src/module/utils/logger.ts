@@ -54,7 +54,7 @@ class Logger {
     const formattedMessage = `TLGCC | [${timestamp}] ${LogLevel[level]}: ${message}`;
 
     // Convert objects to string representation
-    const formattedArgs = args.map(arg => {
+    const formattedArgs = args.map((arg) => {
       if (typeof arg === 'object') {
         return JSON.stringify(arg, null, 2);
       }

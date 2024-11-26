@@ -18,12 +18,15 @@ export class TlgccItemSheet extends ItemSheet {
     return `${path}/item-${this.item.type}-sheet.html`;
   }
 
-  private async enrichTextFields(data: Record<string, any>, fieldNames: string[]): Promise<void> {
+  private async enrichTextFields(
+    data: Record<string, any>,
+    fieldNames: string[],
+  ): Promise<void> {
     for (const fieldName of fieldNames) {
       if (foundry.utils.hasProperty(data, fieldName)) {
         const enrichedHTML = await TextEditor.enrichHTML(
           foundry.utils.getProperty(data, fieldName), //@ts-ignore
-          { async: true }
+          { async: true },
         );
         foundry.utils.setProperty(data, fieldName, enrichedHTML);
       }
@@ -31,7 +34,9 @@ export class TlgccItemSheet extends ItemSheet {
   }
 
   // @ts-ignore
-  override async getData(options?: Partial<DocumentSheetOptions>): Promise<ItemSheetData> {
+  override async getData(
+    options?: Partial<DocumentSheetOptions>,
+  ): Promise<ItemSheetData> {
     const context = await super.getData(options);
     const itemData = context.item;
 

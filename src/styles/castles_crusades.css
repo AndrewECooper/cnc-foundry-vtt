@@ -649,3 +649,86 @@
   background: url('/systems/castles-and-crusades/assets/tlg_watermark.webp');
   background-repeat: no-repeat;
 }
+
+/* Compressed money inputs */
+.money-input {
+  width: 60px;
+  text-align: center;
+  height: 24px;
+  margin: 2px;
+  border: 1px solid #7a7971;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Valuables input styling */
+.valuables-input {
+  width: 100%;
+  height: 24px;
+  margin: 2px;
+  padding: 0 5px;
+  border: 1px solid #7a7971;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 600px) {
+  .grid-7col {
+    grid-template-columns: repeat(4, 1fr) 3fr;
+  }
+
+  .valuables-input {
+    grid-column: span 5;
+  }
+}
+
+/* attack button styles */
+.attack-button {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/*.attack-button.disabled {*/
+/*  opacity: 0.4;*/
+/*  cursor: not-allowed;*/
+/*  pointer-events: none;*/
+/*}*/
+
+.attack-button:hover:not(.disabled) {
+  opacity: 0.8;
+}
+
+/* Optional: Add a tooltip for disabled buttons */
+/*.attack-button.disabled::after {*/
+/*  content: attr(data-disabled-reason);*/
+/*  position: absolute;*/
+/*  background: rgba(0, 0, 0, 0.8);*/
+/*  color: white;*/
+/*  padding: 4px 8px;*/
+/*  border-radius: 4px;*/
+/*  font-size: 12px;*/
+/*  white-space: nowrap;*/
+/*  visibility: hidden;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.2s ease-in-out;*/
+/*  pointer-events: none;*/
+/*}*/
+
+.attack-button.disabled:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Temporarily override the disabled button styles */
+.attack-button.disabled {
+  opacity: 1; /* Changed from 0.4 to 1 */
+  cursor: pointer; /* Changed from not-allowed to pointer */
+  pointer-events: all; /* Changed from none to all */
+}
+
+/* Keep the tooltip for reference but make it less prominent */
+.attack-button.disabled::after {
+  opacity: 0.5;
+}

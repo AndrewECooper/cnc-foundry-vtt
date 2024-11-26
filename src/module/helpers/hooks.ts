@@ -1,5 +1,3 @@
-// @ts-ignore
-// import { Hooks, game } from 'foundry.js';
 import { TLGCC } from './constants';
 import { tlgccActor } from '../documents/actor';
 import { tlgccItem } from '../documents/item';
@@ -8,45 +6,22 @@ import { TlgccItemSheet } from '../sheets/item-sheet';
 import { preloadHandlebarsTemplates } from './templates';
 import { rollItemMacro, createItemMacro } from './macros';
 import Settings from './settings';
-import { Logger, LogLevel} from '../utils/logger';
+import { Logger, LogLevel } from '../utils/logger';
+import { MigrationManager } from '../migration/migration_manager';
 
 const logger = Logger.getInstance();
 
 Hooks.once('init', async function () {
-
-  // Set logging level as a setting for the system
-  // @ts-ignore
   Settings.registerSettings();
 
-  // Set initial log level from settings
-  // @ts-ignore
   const savedLogLevel = Settings.logLevel as keyof typeof LogLevel;
-  logger.setLogLevel(LogLevel[savedLogLevel.toUpperCase()]);
-  logger.info(`Initializing the Castles & Crusades Game System\n${TLGCC.ASCII}`);
-  logger.debug('It\'s Dr. Pepper Time!', TLGCC.PEPPERCOLOR);
-  logger.debug(TLGCC.PEPPERTIME, TLGCC.PEPPERCOLOR);
+  logger.setLogLevel(
+    LogLevel[savedLogLevel.toUpperCase() as keyof typeof LogLevel],
+  );
 
-  // Add utility classes to the global game object so that they're more easily
-  // accessible in global contexts.
-  // @ts-ignore
-  game.tlgcc = {
-    tlgccActor,
-    tlgccItem,
-    rollItemMacro,
-  };
-
-  // Add custom constants for configuration.
-  // @ts-ignore
-  CONFIG.TLGCC = TLGCC;
-
-  /**
-   * Set an initiative formula for the system
-   * @type {string}
-   */
-  CONFIG.Combat.initiative = {
-    formula: 'max(1, 1d10)',
-    decimals: 0,
-  };
+  logger.info(
+    `Initializing the Castles & Crusades Game System\n${TLGCC.ASCII}`,
+  );
 
   // Define custom Document classes
   CONFIG.Actor.documentClass = tlgccActor;
@@ -59,61 +34,101 @@ Hooks.once('init', async function () {
   Items.unregisterSheet('core', ItemSheet);
   Items.registerSheet('tlgcc', TlgccItemSheet, { makeDefault: true });
 
-  // Preload Handlebars templates.
+  // Initialize status effects
+  await Settings.updateStatusEffects(Settings.useMinimalStatusEffects);
+
+  // Set initiative formula
+  CONFIG.Combat.initiative = {
+    formula: 'max(1, 1d10)',
+    decimals: 0,
+  };
+
+  // Add utility classes to the global game object
+  // @ts-ignore
+  game.tlgcc = {
+    tlgccActor,
+    tlgccItem,
+    rollItemMacro,
+  };
+
+  // Add custom constants for configuration
+  // @ts-ignore
+  CONFIG.TLGCC = TLGCC;
+
+  // Preload Handlebars templates
   return preloadHandlebarsTemplates();
 });
 
-// ... other hooks
-/* -------------------------------------------- */
-/*  Ready Hook                                  */
-/* -------------------------------------------- */
-
 Hooks.once('ready', async function () {
-  // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   logger.debug('Ready hook called');
+
+  try {
+    await MigrationManager.checkAndMigrate();
+  } catch (error) {
+    logger.error('Error during system migration:', error);
+    // @ts-ignore
+    ui.notifications?.error('Error during Castles & Crusades system migration. Check console for details.');
+  }
+
+  // Initialize status effects
+  try {
+    if (Settings.useMinimalStatusEffects) {
+      CONFIG.statusEffects = foundry.utils.deepClone(Settings.MINIMAL_STATUS_EFFECTS);
+
+      // Update existing tokens if needed
+      if (canvas?.ready) {
+        for (const token of canvas.tokens?.placeables || []) {
+          if (token?.actor) {
+            await token.drawEffects();
+            if (token.hasActiveHUD) token.refreshHUD();
+          }
+        }
+      }
+    }
+  } catch (error) {
+    logger.warn('Non-critical error initializing status effects:', error);
+  }
+
   // @ts-ignore
   logger.info(`Castles & Crusades (${game.system.version}) is ready to play!`);
-  Hooks.on('hotbarDrop', (bar: any, data: any, slot: number) => createItemMacro(data, slot));
+
+  // Register hotbar drop hook
+  Hooks.on('hotbarDrop', (bar: any, data: any, slot: number) =>
+    createItemMacro(data, slot),
+  );
 });
 
-/* -------------------------------------------- */
-/*  Character Creation Hooks                    */
-/* -------------------------------------------- */
-
-Hooks.on('createActor', async function (actor) {
+// Keep existing hooks
+Hooks.on('createActor', async function (actor: Actor) {
   logger.debug('createActor hook called');
   if (actor.type === 'character') {
     actor.data.token.actorLink = true;
   }
 });
 
-/* -------------------------------------------- */
-/*  Token Creation Hooks                        */
-/* -------------------------------------------- */
-
-Hooks.on('createToken', async function (token, options, id) {
+Hooks.on('createToken', async function (token: TokenDocument, options: any, id: string) {
   logger.debug('createToken hook called');
-  if (token.actor.type === 'monster') {
-    /* Monster token creation hooks */
+  if (token.actor && token.actor.type === 'monster') {
+    const actor = token.actor;
 
-    if (token.actor.system.xp.value.includes('+')) {
-      /* Generate HP/XP stats if the monster is a template.*/
+    // @ts-ignore
+    if (typeof actor.system.xp.value === 'string' && actor.system.xp.value.includes('+')) {
+      // @ts-ignore
+      let tokenHitDice = actor.system.hitDice;
 
-      let tokenHitDice = token.actor.system.hitDice;
-
-      /* Calculate and set hitPoints.max and hitPoints.value */
       let newHitPoints = new Roll(
         `${tokenHitDice.number}${tokenHitDice.size}+${tokenHitDice.mod}`,
       );
       await newHitPoints.evaluate({ async: true });
-      token.actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
-      token.actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
+      // @ts-ignore
+      actor.system.hitPoints.value = Math.max(1, newHitPoints.total || 0);
+      // @ts-ignore
+      actor.system.hitPoints.max = Math.max(1, newHitPoints.total || 0);
 
-      /* Calculate XP based on hitPoints.max */
-      token.actor.system.xp.value =
-        Number(token.actor.system.xp.value.split('+')[1]) *
-        token.actor.system.hitPoints.max +
-        Number(token.actor.system.xp.value.split('+')[0]);
+      // @ts-ignore
+      const [baseXP, multiplier] = actor.system.xp.value.split('+').map(Number);
+      // @ts-ignore
+      actor.system.xp.value = String(baseXP + multiplier * actor.system.hitPoints.max);
     }
   }
 });

@@ -11,7 +11,9 @@
       >
     </div>
   </li>
+  {{ log 'Items:' }}
   {{#each features as |item id|}}
+  {{ log item }}
   <li class="item flexrow" data-item-id="{{item._id}}">
     <div class="item-name">
       <div class="item-image">
@@ -21,8 +23,14 @@
       </div>
       <h4 title="{{system.feature.value}}">{{item.name}}</h4>
     </div>
-    <div class="item-formula item-prop rollable" data-roll-type="item">
-      {{item.system.formula.value}}
+    <div class="item-formula item-prop rollable"
+         data-roll="{{item.system.formula.value}}"
+         {{#if @root.showDetailedFormulas}}
+         data-label="<b>{{item.name}}</b><br/><em>({{item.system.formula.value}})</em>"
+         {{else}}
+         data-label="<b>{{item.name}}</b>"
+         {{/if}}>
+    {{item.system.formula.value}}
     </div>
     <div class="item-controls">
       <a class="item-control item-edit" title="Edit Item"

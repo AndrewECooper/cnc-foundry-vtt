@@ -15,7 +15,7 @@ export class tlgccItem extends Item {
 
   async roll(): Promise<Roll | void> {
     if (!this.actor) {
-      console.warn("Cannot roll item without an associated actor");
+      console.warn('Cannot roll item without an associated actor');
       return;
     }
 
@@ -23,7 +23,9 @@ export class tlgccItem extends Item {
     // @ts-ignore
     const rollMode = game.settings.get('core', 'rollMode');
     // @ts-ignore
-    const label = `Roll: ${game.i18n.localize(`ITEM.Type${this.type.capitalize()}`)} - ${this.name}`;
+    const label = `Roll: ${game.i18n.localize(
+      `ITEM.Type${this.type.capitalize()}`,
+    )} - ${this.name}`;
 
     if (!this.system.formula?.value) {
       // @ts-ignore
@@ -37,7 +39,7 @@ export class tlgccItem extends Item {
 
     const rollData = this.getRollData();
     if (!rollData) {
-      console.error("Failed to get roll data");
+      console.error('Failed to get roll data');
       return;
     }
 
@@ -52,8 +54,8 @@ export class tlgccItem extends Item {
       });
       return roll;
     } catch (error) {
-      console.error("Error during roll:", error);
-      ui.notifications?.error("There was an error processing the roll.");
+      console.error('Error during roll:', error);
+      ui.notifications?.error('There was an error processing the roll.');
     }
   }
 }

@@ -1,6 +1,12 @@
-/* -------------------------------------------- */
-/*  Handlebars Helpers                          */
-/* -------------------------------------------- */
+// handlebars.ts
+interface HandlebarsHelperThis {
+  [key: string]: any;
+}
+
+interface HandlebarsHelperOptions {
+  fn: (context: HandlebarsHelperThis) => string;
+  inverse: (context: HandlebarsHelperThis) => string;
+}
 
 // If you need to add Handlebars helpers, here are a few useful examples:
 Handlebars.registerHelper('concat', function () {
@@ -18,7 +24,9 @@ Handlebars.registerHelper('toLowerCase', function (str) {
 });
 
 Handlebars.registerHelper('localizeLowerCase', function (str) {
-  return game instanceof Game ? game.i18n.localize(str).toLowerCase() : str.toLowerCase();
+  return game instanceof Game
+    ? game.i18n.localize(str).toLowerCase()
+    : str.toLowerCase();
 });
 
 Handlebars.registerHelper('toUpperCase', function (str) {
@@ -26,19 +34,43 @@ Handlebars.registerHelper('toUpperCase', function (str) {
 });
 
 Handlebars.registerHelper('localizeUpperCase', function (str) {
-  return game instanceof Game ? game.i18n.localize(str).toUpperCase() : str.toUpperCase();
+  return game instanceof Game
+    ? game.i18n.localize(str).toUpperCase()
+    : str.toUpperCase();
 });
 
-Handlebars.registerHelper('toCapitalCase', function (str) {
-  return str.replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
+Handlebars.registerHelper('toCapitalCase', function (str: string) {
+  return str.replace(/\w\S*/g, (w: string) =>
+    w.replace(/^\w/, (c: string) => c.toUpperCase()),
+  );
 });
 
-Handlebars.registerHelper('ifeq', function (a, b, options) {
-  if (a == b) { return options.fn(this); }
-  return options.inverse(this);
-});
+Handlebars.registerHelper(
+  'ifeq',
+  function (
+    this: HandlebarsHelperThis,
+    a: any,
+    b: any,
+    options: HandlebarsHelperOptions,
+  ) {
+    if (a == b) {
+      return options.fn(this);
+    }
+    return options.inverse(this);
+  },
+);
 
-Handlebars.registerHelper('ifnoteq', function (a, b, options) {
-  if (a != b) { return options.fn(this); }
-  return options.inverse(this);
-});
+Handlebars.registerHelper(
+  'ifnoteq',
+  function (
+    this: HandlebarsHelperThis,
+    a: any,
+    b: any,
+    options: HandlebarsHelperOptions,
+  ) {
+    if (a != b) {
+      return options.fn(this);
+    }
+    return options.inverse(this);
+  },
+);

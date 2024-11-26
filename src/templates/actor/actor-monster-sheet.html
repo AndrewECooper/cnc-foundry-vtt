@@ -4,28 +4,27 @@
   <header class="sheet-header">
     <img class="profile-img" data-edit="img" height="100" src="{{actor.img}}" title="{{actor.name}}" width="100" />
     <div class="header-fields">
-      <h1 class="charname"><input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text"
-                                  value="{{actor.name}}" /></h1>
+      <h1 class="charname">
+        <input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text" value="{{actor.name}}" />
+      </h1>
       <div class="resources grid grid-5col">
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.hitDice"><a class="rollable"
-                                                                data-label="{{localize system.hitDice.label}}"
-                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">{{localize
-            'TLGCC.HitPoints'}} &nbsp;</a></label>
+          <label class="resource-label" for="system.hitDice">
+            {{localize 'TLGCC.HitPoints'}}
+          </label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="Number" id="system.hitDice" name="system.hitPoints.value" type="text"
-                   value="{{system.hitPoints.value}}"
-                   width="50px" />
+                   value="{{system.hitPoints.value}}" width="50px" />
             <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
             <input data-dtype="Number" name="system.hitPoints.max" type="text" value="{{system.hitPoints.max}}" />
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.hitDice"><a class="rollable"
-                                                                data-label="{{localize system.hitDice.label}}"
-                                                                data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">HD
-            Size
-            &nbsp;</a></label>
+          <label class="resource-label" for="system.hitDice" title="{{localize 'TLGCC.MonsterHitDiceHover'}}">
+            <a class="rollable" data-label="{{localize 'TLGCC.HitDice'}}"
+               data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">
+              {{localize 'TLGCC.MonsterHitDice'}}
+              &nbsp;</a></label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="Number" name="system.hitDice.number" type="number" value="{{system.hitDice.number}}" />
             <input data-dtype="String" name="system.hitDice.size" type="text" value="{{system.hitDice.size}}" />
@@ -36,42 +35,48 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.msaves.value" title="{{localize 'TLGCC.monsterSavesHover'}}"><a
-            class="rollable" data-label="{{localize system.msaves.label}}: {{localize system.msaves.value}}"
+          <label class="resource-label" for="system.msaves.value" title="{{localize 'TLGCC.MonsterSavesHover'}}"><a
+            class="rollable" data-label="<b>{{localize 'TLGCC.MonsterSaves'}}: {{localize system.msaves.value}}</b>"
             data-roll="d20+{{system.hitDice.number}}"> {{localize
-            system.msaves.label}}</a> </label>
+            'TLGCC.MonsterSaves'}}</a> </label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="string" id="system.msaves.value" name="system.msaves.value"
-                   title="{{localize 'TLGCC.monsterSavesHover'}}"
+                   title="{{localize 'TLGCC.MonsterSavesHover'}}"
                    type="text" value="{{system.msaves.value}}" />
           </div>
         </div>
 
-
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.numberAppearing.value">
-            <a class="rollable" data-label="{{localize system.numberAppearing.label}}"
-               data-roll="{{system.numberAppearing.value}}">{{localize
-              system.numberAppearing.label}}</a></label>
+          <label class="resource-label rollable" data-roll-type="numberAppearing" title="Click to roll number appearing">
+            {{localize 'TLGCC.MonsterNumberAppearing'}}
+          </label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.numberAppearing.value" name="system.numberAppearing.value" type="text"
-                   value="{{system.numberAppearing.value}}" />
+            <input
+              type="text"
+              class="rollable"
+              data-roll-type="numberAppearing"
+              id="system.numberAppearing.value"
+              name="system.numberAppearing.value"
+              value="{{system.numberAppearing.value}}"
+              data-dtype="String"
+              title="Enter a number (1), range (10-40), or multiple ranges (10-40, 50-100)"
+            />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.monterINT.value">
+          <label class="resource-label" for="system.monsterINT.value">
             <a class="resource-label"
-               data-label="{{localize system.monterINT.label}} ({{system.monterINT.value}})">{{localize
-              system.monsterINT.label}}</a></label>
+               data-label="{{localize 'TLGCC.MonsterINT'}} ({{system.monsterINT.value}})">{{localize
+              'TLGCC.MonsterINT'}}</a></label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.monterINT.value" name="system.monterINT.value" type="text"
+            <input data-dtype="String" id="system.monsterINT.value" name="system.monsterINT.value" type="text"
                    value="{{system.monterINT.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.treasureType.value">{{localize system.treasureType.label}}</label>
+          <label class="resource-label" for="system.treasureType.value">{{localize 'TLGCC.MonsterTreasureType'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="String" id="system.treasureType.value" name="system.treasureType.value" type="text"
                    value="{{system.treasureType.value}}" />
@@ -100,7 +105,7 @@
           </div>
         </div>
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.type.value">{{localize 'TLGCC.monsterType'}}</label>
+          <label class="resource-label" for="system.type.value">{{localize 'TLGCC.MonsterType'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input data-dtype="String" id="system.type.value" name="system.type.value" type="text"
                    value="{{system.type.value}}" />
@@ -146,6 +151,7 @@
 
       </section>
     </div>
+
     {{!-- Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
       <div class="resource flex-group-center">
@@ -154,11 +160,12 @@
       <ol class="items-list">
         {{#each spells as |spells spellLevel|}}
         <li class="item flexrow items-header">
-          <div class="item-name">{{localize 'TLGCC.spellLevel'}} {{spellLevel}} {{localize 'TLGCC.Spells'}}</div>
-          <div class="item-detail">{{localize 'TLGCC.Prepared'}}</div>
+          <div class="item-name">{{localize 'TLGCC.SpellLevel'}} {{spellLevel}} {{localize 'TLGCC.SpellsPerLevel'}}</div>
+          <div class="item-detail">{{localize 'TLGCC.SpellPrepared'}}</div>
           <div class="item-controls">
-            <a class="item-control item-create" data-spell-level-value="{{spellLevel}}" data-type="spell"
-               title="Create item"><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
+            <a class="item-control item-create" data-spell-level-value="{{spellLevel}}" data-type="spell" title="Create item">
+              <i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}
+            </a>
           </div>
         </li>
         {{#each spells as |item id|}}
@@ -167,22 +174,38 @@
             <div class="item-image">
               <a class="rollable"
                  data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"
-                 data-roll-type="item"><img
-                height="24" src="{{item.img}}" title="Cast Spell: {{item.name}}" width="24" /></a>
-
+                 data-roll-type="item">
+                <img height="24"
+                     src="{{item.img}}"
+                     title="Cast Spell: {{item.name}}"
+                     width="24"/>
+              </a>
             </div>
-            <h4 title="{{system.spell.summary}}">{{item.name}}</h4> <a class="rollable"
-                                                                       data-roll="{{system.spelldmg.value}}"
-                                                                       data-roll-type="damage"><img
-            height="24"
-            src="systems/castles-and-crusades/styles/damage.svg" title="Roll damage for {{item.name}}" width="24" /></a>
+            <h4 title="{{item.system.spell.summary}}">{{item.name}}</h4>
+            {{#if (ne item.system.spelldmg.value "")}}
+            <a class="rollable"
+               data-roll-type="damage"
+               data-roll="{{item.system.spelldmg.value}}"
+               data-label="{{item.name}} Damage">
+              <img height="24"
+                   src="systems/castles-and-crusades/styles/damage.svg"
+                   title="Roll damage for {{item.name}}"
+                   width="24"/>
+            </a>
+            {{/if}}
           </div>
           <div class="item-prop grid grid-3col">
-            <div class="flex-group-right"><a class="item-control spell-prepare" data-change="-1"><i
-              class="fas fa-minus"></i></a></div>
+            <div class="flex-group-right">
+              <a class="item-control spell-prepare" data-change="-1">
+                <i class="fas fa-minus"></i>
+              </a>
+            </div>
             <div class="flex-group-center">{{item.system.prepared.value}}</div>
-            <div class="flex-group-left"><a class="item-control spell-prepare" data-change="+1"><i
-              class="fas fa-plus"></i></a></div>
+            <div class="flex-group-left">
+              <a class="item-control spell-prepare" data-change="+1">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
           </div>
           <div class="item-controls">
             <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
@@ -193,13 +216,11 @@
         {{/each}}
       </ol>
     </div>
+
     {{!-- Description Tab --}}
     <div class="tab description" data-group="primary" data-tab="description">
-      {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to
-      the rollData property. --}}
       {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
     </div>
 
   </section>
-<!--  {{log "CONTEXT!!!!"}} {{log this}}-->
 </form>

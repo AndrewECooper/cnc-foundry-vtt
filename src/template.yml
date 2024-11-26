@@ -95,9 +95,15 @@ Actor:
     race:
       value: ''
       label: TLGCC.Race
+    weight:
+      value: ''
+      label: TLGCC.Weight
     religion:
       value: ''
       label: TLGCC.Religion
+    deity:
+      value: ''
+      label: TLGCC.Deity
     sex:
       value: ''
       label: TLGCC.Sex
@@ -119,6 +125,9 @@ Actor:
         value: 0
       cp:
         value: 0
+    valuables:
+      value: ''
+      label: TLGCC.Valuables
     spellsPerLevel:
       value:
         '0': 0
@@ -148,22 +157,22 @@ Actor:
       abbr: TLGCC.HitDiceAbbr
     monsterINT:
       value: P
-      label: TLGCC.monsterINT
+      label: TLGCC.MonsterINT
     numberAppearing:
       value: 1d4
-      label: TLGCC.NumberAppearing
+      label: TLGCC.MonsterNumberAppearing
     specialAbility:
       value: 0
       label: TLGCC.SpecialAbility
     treasureType:
       value: None
-      label: TLGCC.TreasureType
+      label: TLGCC.MonsterTreasureType
     type:
       value: ''
-      label: TLGCC.monsterType
+      label: TLGCC.MonsterType
     msaves:
       value: ''
-      label: TLGCC.monsterSaves
+      label: TLGCC.MonsterSaves
     xp:
       value: 0
       label: TLGCC.ExperiencePoints
@@ -246,19 +255,19 @@ Item:
       label: TLGCC.Range
     spelldmg:
       value: ''
-      label: TLGCC.spelldmg
+      label: TLGCC.SpellDamage
     cast:
       value: ''
-      label: TLGCC.Cast
+      label: TLGCC.SpellCastTime
     component:
       value: ''
-      label: TLGCC.Component
+      label: TLGCC.SpellComponent
     summary:
       value: ''
-      label: TLGCC.spellSummary
+      label: TLGCC.SpellSummary
     spellLevel:
-      value: ''
-      label: TLGCC.spellLevel
+      value: 0
+      label: TLGCC.SpellLevel
   feature:
     templates:
       - base

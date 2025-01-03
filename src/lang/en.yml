@@ -140,7 +140,7 @@ TLGCC.ValuablesPlaceholder: Gems, jewelry, art objects...
 # Spells
 TLGCC.SpellDuration: Duration
 TLGCC.SpellPrepared: Prepared
-TLCGG.SpellRange: Range
+TLGCC.SpellRange: Range
 TLGCC.SaveValue: SV
 TLGCC.SpellComponents: Comp
 TLGCC.SpellCastTime: Cast Time

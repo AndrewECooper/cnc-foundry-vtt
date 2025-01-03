@@ -23,6 +23,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 -->
 ## [Unreleased]
 
+## [1.0.5] - 2025-01-02
+
+### Bug Fixes
+
+- INT Field disappears (!98) [@KillerWabbit]
+- Strength Added to Ranged attack damage (!99) [@KillerWabbit]
+
+### Changed
+- Monster Actors - Remove Resources and add Sanity (!102) [@KillerWabbit]
+
 ## [1.0.4] - 2024-11-26
 
 ### Bug Fixes
@@ -51,7 +61,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - 1.04 pre-release fixes (!90) [@KillerWabbit]
 - Saving Throws for Monsters (!76) [@rippedtabard]
 - Update System to FoundryVTT v12 compatibility (!62) [@KillerWabbit]
-
 
 ## [1.0.3] - 2024-06-28
 
@@ -164,6 +173,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Corrected how item AC is displayed.
 
 [unreleased]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/compare/main...develop?from_project_id=36291450&straight=false
+[1.0.4]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.4
 [1.0.3]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.3
 [1.0.2]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.2
 [1.0.1]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.1

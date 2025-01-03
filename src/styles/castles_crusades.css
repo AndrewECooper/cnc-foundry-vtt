@@ -615,6 +615,16 @@
   border: none;
 }
 
+.tlgcc .grid-5col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+  /* Increase from 10px to 15px */
+  margin: 10px 0;
+  padding: 0 10px;
+  /* Add padding */
+}
+
 .ability-header {
   justify-content: flex-start;
   flex-direction: row;

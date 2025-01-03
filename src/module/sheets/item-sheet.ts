@@ -8,7 +8,7 @@ export class TlgccItemSheet extends ItemSheet {
   static override get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['tlgcc', 'sheet', 'item'],
-      width: 520,
+      width: 720,
       height: 480,
     });
   }

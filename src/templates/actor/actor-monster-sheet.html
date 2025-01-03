@@ -97,19 +97,8 @@
     {{!-- Combat Tab --}}
     <div class="tab combat" data-group="primary" data-tab="combat">
       <section class="grid grid-3col">
-        <!-- <aside class="sidebar">
-          <div class="abilities flexcol">
-            {{#each system.saves as |save key|}}
-            <div class="ability flexrow flex-group-center">
-              <label class="resource-label rollable flexlarge align-left" data-roll="d20">
-                {{localize (concat 'TLGCC.Save' key)}}
-              </label>
-              <input data-dtype="Number" name="system.saves.{{key}}.value" type="text" value="{{save.value}}" />
-            </div>
-            {{/each}}
-          </div>
-        </aside> -->
-
+        
+        
         {{!-- Combat Stats --}}
         <section class="main grid-span-3">
           {{> "systems/castles-and-crusades/templates/actor/parts/monster-combat.html"}}

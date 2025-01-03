@@ -204,7 +204,7 @@ Item:
       label: TLGCC.Damage
       abbr: TLGCC.DamageAbbr
     range:
-      value: TLGCC.Melee
+      value: Melee
       label: TLGCC.Range
     size:
       value: M

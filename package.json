@@ -53,6 +53,7 @@
     "rollup-plugin-visualizer": "^5.9.0",
     "rollup-plugin-watch": "^1.0.4",
     "terser": "^5.17.6",
+    "tslib": "^2.6.2",
     "typedoc": "^0.24.7",
     "typescript": "^5.0.4",
     "yargs": "^17.7.2"

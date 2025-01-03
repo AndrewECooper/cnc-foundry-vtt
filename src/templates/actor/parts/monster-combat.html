@@ -1,22 +1,29 @@
-<div class="section resources grid grid-5col">
-  <div class="resource flex-group-center">
+<div class="section resources grid grid-4col" style="width: 400px; margin: 0 auto; gap: 4px;">
+  <div class="resource flex-group-center" style="width: 90px;">
     <label>{{localize 'TLGCC.ArmorClassAbbr'}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="system.armorClass.value" value="{{system.armorClass.value}}" data-dtype="Number"/>
+      <input type="text" name="system.armorClass.value" value="{{system.armorClass.value}}" data-dtype="Number" />
     </div>
   </div>
 
-  <div class="resource flex-group-center">
+  <div class="resource flex-group-center" style="width: 90px;">
     <label>{{localize 'TLGCC.AttackBonusAbbr'}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="system.attackBonus.value" value="{{system.attackBonus.value}}" data-dtype="Number"/>
+      <input type="text" name="system.attackBonus.value" value="{{system.attackBonus.value}}" data-dtype="Number" />
     </div>
   </div>
 
-  <div class="resource flex-group-center grid-span-2">
+  <div class="resource flex-group-center" style="width: 90px;">
+    <label title="{{localize 'TLGCC.MonsterSanityTooltip'}}">{{localize "TLGCC.MonsterSanity"}}</label>
+    <div class="resource-content flexrow flex-center flex-between">
+      <input data-dtype="String" name="system.sanity.value" type="text" value="{{system.sanity.value}}" />
+    </div>
+  </div>
+
+  <div class="resource flex-group-center" style="width: 90px;">
     <label>{{localize 'TLGCC.Movement'}}</label>
     <div class="resource-content flexrow flex-center flex-between">
-      <input type="text" name="system.move.value" value="{{system.move.value}}" data-dtype="string"/>
+      <input type="text" name="system.move.value" value="{{system.move.value}}" title="{{system.move.value}}" data-dtype="string" />
     </div>
   </div>
 </div>

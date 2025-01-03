@@ -86,6 +86,8 @@ TLGCC.HitDice: Dados de Golpe
 TLGCC.HitDiceAbbr: DG
 TLGCC.HitPoints: PG
 TLGCC.HitPointsAbbr: PG
+TLGCC.HitPointsCurrent: PG Actuales
+TLGCC.HitPointsMax: PG Máximos
 TLGCC.hdSize: DG Clase
 TLGCC.Melee: CaC
 TLGCC.Ranged: A distancia
@@ -99,6 +101,8 @@ TLGCC.MonsterSaves: Salvación
 TLGCC.MonsterSavesHover: '(F)ísica: FUE,DES,CON. (M)entales: CAR,SAB,INT. Tirada d20 + DG'
 TLGCC.MonsterNumberAppearing: Cantidad
 TLGCC.MonsterTreasureType: Valor Tesoro
+TLGCC.MonsterSanity: Cordura
+TLGCC.MonsterSanityTooltip: Cuando un personaje se encuentra por primera vez con este monstruo, debe realizar una tirada de salvación de Sabiduría contra el NE del monstruo. Si tiene éxito, sufre daño a su Cordura igual al primer número de la clasificación; si falla, sufre daño igual al segundo número.
 
 # Character Attributes
 TLGCC.Age: Edad

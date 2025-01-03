@@ -86,6 +86,8 @@ TLGCC.HitDice: Hit Dice
 TLGCC.HitDiceAbbr: HD
 TLGCC.HitPoints: Hit Points
 TLGCC.HitPointsAbbr: HP
+TLGCC.HitPointsCurrent: Current HP
+TLGCC.HitPointsMax: Max HP
 TLGCC.hdSize: Class HD
 TLGCC.Melee: Melee
 TLGCC.Ranged: Ranged
@@ -99,6 +101,8 @@ TLGCC.MonsterSaves: Saves
 TLGCC.MonsterSavesHover: Physical(P) Str,Dex,Con. Mental(M) is Wis,Int,Cha. Roll d20+monster hd number
 TLGCC.MonsterNumberAppearing: No. Appearing
 TLGCC.MonsterTreasureType: Treasure Type
+TLGCC.MonsterSanity: Sanity
+TLGCC.MonsterSanityTooltip: When a character first encounters this monster, they must make a wisdom saving throw against the monster's CL. Success means they suffer damage to their Sanity equal to the first number in the rating, failure means they suffer damage equal to the second number.
 
 # Character Attributes
 TLGCC.Age: Age

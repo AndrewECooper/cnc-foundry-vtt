@@ -42,22 +42,6 @@ Actor:
           value: 16
         spells:
           value: 18
-      resources:
-        first:
-          name: TLGCC.Resource1
-          value: 0
-        second:
-          name: TLGCC.Resource2
-          value: 0
-        third:
-          name: TLGCC.Resource3
-          value: 0
-        fourth:
-          name: TLGCC.Resource4
-          value: 0
-        fifth:
-          name: TLGCC.Resource5
-          value: 0
   character:
     templates:
       - base
@@ -173,6 +157,10 @@ Actor:
     msaves:
       value: ''
       label: TLGCC.MonsterSaves
+    sanity:
+      value: ''
+      label: TLGCC.Sanity
+      tooltip: TLGCC.SanityTooltip
     xp:
       value: 0
       label: TLGCC.ExperiencePoints

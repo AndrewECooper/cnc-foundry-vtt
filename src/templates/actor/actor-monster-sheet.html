@@ -1,5 +1,4 @@
 <form autocomplete="off" class="{{cssClass}} {{actor.type}} flexcol">
-
   {{!-- Sheet Header --}}
   <header class="sheet-header">
     <img class="profile-img" data-edit="img" height="100" src="{{actor.img}}" title="{{actor.name}}" width="100" />
@@ -7,108 +6,79 @@
       <h1 class="charname">
         <input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text" value="{{actor.name}}" />
       </h1>
+
       <div class="resources grid grid-5col">
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.hitDice">
-            {{localize 'TLGCC.HitPoints'}}
-          </label>
+          <label class="resource-label" title="{{localize 'TLGCC.MonsterHitDiceHover'}}">{{localize "TLGCC.Level"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="Number" id="system.hitDice" name="system.hitPoints.value" type="text"
-                   value="{{system.hitPoints.value}}" width="50px" />
-            <span class="flexshrink flex-align-center">&nbsp;/&nbsp;</span>
-            <input data-dtype="Number" name="system.hitPoints.max" type="text" value="{{system.hitPoints.max}}" />
-          </div>
-        </div>
-        <div class="resource flex-group-center">
-          <label class="resource-label" for="system.hitDice" title="{{localize 'TLGCC.MonsterHitDiceHover'}}">
-            <a class="rollable" data-label="{{localize 'TLGCC.HitDice'}}"
-               data-roll="{{system.hitDice.number}}{{system.hitDice.size}}+{{system.hitDice.mod}}">
-              {{localize 'TLGCC.MonsterHitDice'}}
-              &nbsp;</a></label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="Number" name="system.hitDice.number" type="number" value="{{system.hitDice.number}}" />
+            <input data-dtype="Number" name="system.hitDice.number" type="text" value="{{system.hitDice.number}}" />
             <input data-dtype="String" name="system.hitDice.size" type="text" value="{{system.hitDice.size}}" />
-            <span class="flexshrink flex-align-center"> </span>
-            <input data-dtype="Number" name="system.hitDice.mod" sign="true" type="number"
-                   value="{{system.hitDice.mod}}" />
+            <input data-dtype="Number" name="system.hitDice.mod" type="text" value="{{system.hitDice.mod}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.msaves.value" title="{{localize 'TLGCC.MonsterSavesHover'}}"><a
-            class="rollable" data-label="<b>{{localize 'TLGCC.MonsterSaves'}}: {{localize system.msaves.value}}</b>"
-            data-roll="d20+{{system.hitDice.number}}"> {{localize
-            'TLGCC.MonsterSaves'}}</a> </label>
+          <label class="resource-label">{{localize 'TLGCC.HitPoints'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="string" id="system.msaves.value" name="system.msaves.value"
-                   title="{{localize 'TLGCC.MonsterSavesHover'}}"
-                   type="text" value="{{system.msaves.value}}" />
+            <input data-dtype="Number" title="{{localize 'TLGCC.HitPointsCurrent'}}" name="system.hitPoints.value" type="text" value="{{system.hitPoints.value}}" />
+            <span class="sep">/</span> 
+            <input data-dtype="Number" title="{{localize 'TLGCC.HitPointsMax'}}" name="system.hitPoints.max" type="text" value="{{system.hitPoints.max}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label rollable" data-roll-type="numberAppearing" title="Click to roll number appearing">
-            {{localize 'TLGCC.MonsterNumberAppearing'}}
-          </label>
+          <label class="resource-label">{{localize "TLGCC.MonsterSaves"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input
-              type="text"
-              class="rollable"
-              data-roll-type="numberAppearing"
-              id="system.numberAppearing.value"
-              name="system.numberAppearing.value"
-              value="{{system.numberAppearing.value}}"
-              data-dtype="String"
-              title="Enter a number (1), range (10-40), or multiple ranges (10-40, 50-100)"
-            />
+            <input data-dtype="String" name="system.msaves.value" type="text" value="{{system.msaves.value}}" title="{{localize 'TLGCC.MonsterSavesHover'}}"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.monsterINT.value">
-            <a class="resource-label"
-               data-label="{{localize 'TLGCC.MonsterINT'}} ({{system.monsterINT.value}})">{{localize
-              'TLGCC.MonsterINT'}}</a></label>
+          <label class="resource-label">{{localize "TLGCC.MonsterNumberAppearing"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.monsterINT.value" name="system.monsterINT.value" type="text"
-                   value="{{system.monsterINT.value}}" />
+            <input data-dtype="String" class="rollable" data-roll-type="numberAppearing" name="system.numberAppearing.value" type="text" value="{{system.numberAppearing.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.treasureType.value">{{localize 'TLGCC.MonsterTreasureType'}}</label>
+          <label class="resource-label">{{localize "TLGCC.MonsterINT"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.treasureType.value" name="system.treasureType.value" type="text"
-                   value="{{system.treasureType.value}}" />
+            <input data-dtype="String" name="system.monsterINT.value" type="text" value="{{system.monsterINT.value}}" />
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.xp.value">{{localize system.xp.abbr}}</label>
+          <label class="resource-label">{{localize "TLGCC.MonsterTreasureType"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.xp.value" name="system.xp.value" type="text"
-                   value="{{system.xp.value}}" />
+            <input data-dtype="String" name="system.treasureType.value" type="text" value="{{system.treasureType.value}}" />
           </div>
         </div>
+
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.alignment.value">{{localize 'TLGCC.Alignment'}} </label>
+          <label class="resource-label">{{localize "TLGCC.ExperiencePointsAbbr"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.alignment.value" name="system.alignment.value" type="text"
-                   value="{{system.alignment.value}}" />
+            <input data-dtype="String" name="system.xp.value" type="text" value="{{system.xp.value}}" />
           </div>
         </div>
+
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.size.value">{{localize 'TLGCC.Size'}}</label>
+          <label class="resource-label">{{localize "TLGCC.Alignment"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.size.value" name="system.size.value" type="text"
-                   value="{{system.size.value}}" />
+            <input data-dtype="String" name="system.alignment.value" type="text" value="{{system.alignment.value}}" />
           </div>
         </div>
+
         <div class="resource flex-group-center">
-          <label class="resource-label" for="system.type.value">{{localize 'TLGCC.MonsterType'}}</label>
+          <label class="resource-label">{{localize "TLGCC.Size"}}</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" id="system.type.value" name="system.type.value" type="text"
-                   value="{{system.type.value}}" />
+            <input data-dtype="String" name="system.size.value" type="text" value="{{system.size.value}}" />
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label class="resource-label">{{localize "TLGCC.MonsterType"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input data-dtype="String" name="system.type.value" type="text" value="{{system.type.value}}" />
           </div>
         </div>
       </div>
@@ -117,7 +87,6 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="combat">{{localize 'TLGCC.CombatTab'}}</a>
     <a class="item" data-tab="spells">{{localize 'TLGCC.SpellsTab'}}</a>
     <a class="item" data-tab="description">{{localize 'TLGCC.DescriptionTab'}}</a>
@@ -125,102 +94,38 @@
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-
     {{!-- Combat Tab --}}
     <div class="tab combat" data-group="primary" data-tab="combat">
       <section class="grid grid-3col">
-        <aside class="sidebar">
-
+        <!-- <aside class="sidebar">
           <div class="abilities flexcol">
             {{#each system.saves as |save key|}}
             <div class="ability flexrow flex-group-center">
-              <label class="resource-label rollable flexlarge align-left" data-label="Saving Throw - {{save.label}}"
-                     data-roll="d20" for="system.saves.{{key}}.value">{{save.label}}</label>
-              <input data-dtype="Number" id="system.saves.{{key}}.value" name="system.saves.{{key}}.value" type="text"
-                     value="{{save.value}}" />
+              <label class="resource-label rollable flexlarge align-left" data-roll="d20">
+                {{localize (concat 'TLGCC.Save' key)}}
+              </label>
+              <input data-dtype="Number" name="system.saves.{{key}}.value" type="text" value="{{save.value}}" />
             </div>
             {{/each}}
           </div>
-        </aside>
+        </aside> -->
 
-        {{!-- For the main combat list, span the right two columns --}}
-        <section class="main grid-span-2">
+        {{!-- Combat Stats --}}
+        <section class="main grid-span-3">
           {{> "systems/castles-and-crusades/templates/actor/parts/monster-combat.html"}}
           {{> "systems/castles-and-crusades/templates/actor/parts/actor-features.html"}}
         </section>
-
       </section>
     </div>
 
     {{!-- Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
-      <div class="resource flex-group-center">
-        <h3 title="{{localize 'TLGCC.spellsKnownhover'}}">{{localize 'TLGCC.spellsKnown'}}</h3>
-      </div>
-      <ol class="items-list">
-        {{#each spells as |spells spellLevel|}}
-        <li class="item flexrow items-header">
-          <div class="item-name">{{localize 'TLGCC.SpellLevel'}} {{spellLevel}} {{localize 'TLGCC.SpellsPerLevel'}}</div>
-          <div class="item-detail">{{localize 'TLGCC.SpellPrepared'}}</div>
-          <div class="item-controls">
-            <a class="item-control item-create" data-spell-level-value="{{spellLevel}}" data-type="spell" title="Create item">
-              <i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}
-            </a>
-          </div>
-        </li>
-        {{#each spells as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name flexrow">
-            <div class="item-image">
-              <a class="rollable"
-                 data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"
-                 data-roll-type="item">
-                <img height="24"
-                     src="{{item.img}}"
-                     title="Cast Spell: {{item.name}}"
-                     width="24"/>
-              </a>
-            </div>
-            <h4 title="{{item.system.spell.summary}}">{{item.name}}</h4>
-            {{#if (ne item.system.spelldmg.value "")}}
-            <a class="rollable"
-               data-roll-type="damage"
-               data-roll="{{item.system.spelldmg.value}}"
-               data-label="{{item.name}} Damage">
-              <img height="24"
-                   src="systems/castles-and-crusades/styles/damage.svg"
-                   title="Roll damage for {{item.name}}"
-                   width="24"/>
-            </a>
-            {{/if}}
-          </div>
-          <div class="item-prop grid grid-3col">
-            <div class="flex-group-right">
-              <a class="item-control spell-prepare" data-change="-1">
-                <i class="fas fa-minus"></i>
-              </a>
-            </div>
-            <div class="flex-group-center">{{item.system.prepared.value}}</div>
-            <div class="flex-group-left">
-              <a class="item-control spell-prepare" data-change="+1">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-          <div class="item-controls">
-            <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        {{/each}}
-        {{/each}}
-      </ol>
+      {{> "systems/castles-and-crusades/templates/actor/parts/actor-spells.html"}}
     </div>
 
     {{!-- Description Tab --}}
-    <div class="tab description" data-group="primary" data-tab="description">
-      {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
+    <div class="tab biography" data-group="primary" data-tab="description">
+      {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
     </div>
-
   </section>
 </form>

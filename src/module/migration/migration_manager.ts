@@ -11,7 +11,7 @@ export class MigrationManager {
   private static readonly migrations = [
     Migration001CleanLevelValues,
     Migration002AddMonsterSanity,
-    Migration003RemoveMonsterFields
+    // Migration003RemoveMonsterFields
   ];
 
   static async checkAndMigrate(): Promise<void> {

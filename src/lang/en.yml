@@ -99,8 +99,8 @@ TLGCC.MonsterINT: INT
 TLGCC.MonsterType: Type
 TLGCC.MonsterSaves: Saves
 TLGCC.MonsterSavesHover: Physical(P) Str,Dex,Con. Mental(M) is Wis,Int,Cha. Roll d20+monster hd number
-TLGCC.MonsterNumberAppearing: No. Appearing
-TLGCC.MonsterTreasureType: Treasure Type
+TLGCC.MonsterNumberAppearing: Number
+TLGCC.MonsterTreasureType: Treasure
 TLGCC.MonsterSanity: Sanity
 TLGCC.MonsterSanityTooltip: When a character first encounters this monster, they must make a wisdom saving throw against the monster's CL. Success means they suffer damage to their Sanity equal to the first number in the rating, failure means they suffer damage equal to the second number.
 

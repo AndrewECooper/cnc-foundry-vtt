@@ -382,6 +382,10 @@ export class TlgccActorSheet extends ActorSheet<
       return this._rollNumberAppearing(element);
     }
 
+    if (dataset.rollType === 'monster-save') {
+      return this._rollMonsterSave();
+    }
+
     if (dataset.rollType === 'weapon') {
       return this._rollWeapon(element, dataset);
     } else if (dataset.rollType === 'damage') {
@@ -393,13 +397,35 @@ export class TlgccActorSheet extends ActorSheet<
     }
   }
 
-  /*private _isFinesseMeleeWeapon(weaponName: string | null): boolean {
-    if (!weaponName) return false;
-    const finesseWeapons = ['dagger', 'rapier', 'short sword'];
-    return finesseWeapons.some((weapon) =>
-      weaponName.toLowerCase().includes(weapon),
-    );
-  }*/
+  private _rollMonsterSave(): Roll | undefined {
+    if (!this.actor || this.actor.type !== 'monster') return;
+
+    const actorData = this.actor.system;
+    const hitDice = Number(actorData.hitDice?.number) || 0;
+    
+    // In C&C, monster saves are based on Hit Dice
+    let saveBonus = Math.floor(hitDice);
+    if (saveBonus < 0) saveBonus = 0;
+
+    const rollParts = ['1d20'];
+    if (saveBonus) rollParts.push(`${saveBonus}`);
+
+    const rollFormula = rollParts.join(' + ');
+    const roll = new Roll(rollFormula);
+
+    let flavor = `Roll: <b>Monster Save (HD ${hitDice})</b>`;
+    if (Settings.showDetailedFormulas) {
+      flavor += `<br><em>(${rollParts.join(' + ')})</em>`;
+    }
+
+    roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: flavor,
+      rollMode: this.ROLL_MODE,
+    });
+
+    return roll;
+  }
 
   private _rollWeapon(element: HTMLElement, dataset: DOMStringMap): Roll | undefined {
     const itemElement = element.closest('.item') as HTMLElementWithDataset | null;

@@ -102,7 +102,15 @@ TLGCC.MonsterSavesHover: '(F)ísica: FUE,DES,CON. (M)entales: CAR,SAB,INT. Tirad
 TLGCC.MonsterNumberAppearing: Cantidad
 TLGCC.MonsterTreasureType: Valor Tesoro
 TLGCC.MonsterSanity: Cordura
-TLGCC.MonsterSanityTooltip: Cuando un personaje se encuentra por primera vez con este monstruo, debe realizar una tirada de salvación de Sabiduría contra el NE del monstruo. Si tiene éxito, sufre daño a su Cordura igual al primer número de la clasificación; si falla, sufre daño igual al segundo número.
+TLGCC.MonsterSanityTooltip: Cuando un personaje se encuentra con este monstruo por primera vez, debe hacer una tirada de salvación de sabiduría contra el ND del monstruo. El éxito significa que sufren daño a su Cordura igual al primer número en la calificación, el fracaso significa que sufren daño igual al segundo número.
+
+# Monster Environment and Combat
+TLGCC.Attacks: Ataques
+TLGCC.AttacksTooltip: Lista de ataques naturales y habilidades especiales de combate
+TLGCC.Biome: Bioma
+TLGCC.BiomeTooltip: El tipo general de ecosistema o entorno donde vive este monstruo
+TLGCC.Climate: Clima
+TLGCC.ClimateTooltip: Las condiciones meteorológicas y rangos de temperatura donde se puede encontrar este monstruo
 
 # Character Attributes
 TLGCC.Age: Edad

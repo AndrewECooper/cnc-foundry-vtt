@@ -161,6 +161,18 @@ Actor:
       value: ''
       label: TLGCC.Sanity
       tooltip: TLGCC.SanityTooltip
+    attacks:
+      value: ''
+      label: TLGCC.Attacks
+      tooltip: TLGCC.AttacksTooltip
+    biome:
+      value: ''
+      label: TLGCC.Biome
+      tooltip: TLGCC.BiomeTooltip
+    climate:
+      value: ''
+      label: TLGCC.Climate
+      tooltip: TLGCC.ClimateTooltip
     xp:
       value: 0
       label: TLGCC.ExperiencePoints

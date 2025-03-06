@@ -104,6 +104,14 @@ TLGCC.MonsterTreasureType: Treasure
 TLGCC.MonsterSanity: Sanity
 TLGCC.MonsterSanityTooltip: When a character first encounters this monster, they must make a wisdom saving throw against the monster's CL. Success means they suffer damage to their Sanity equal to the first number in the rating, failure means they suffer damage equal to the second number.
 
+# Monster Environment and Combat
+TLGCC.Attacks: Attacks
+TLGCC.AttacksTooltip: List of natural attacks and special combat abilities
+TLGCC.Biome: Biome
+TLGCC.BiomeTooltip: The general ecosystem or environment type where this monster typically lives
+TLGCC.Climate: Climate
+TLGCC.ClimateTooltip: The weather conditions and temperature ranges where this monster can be found
+
 # Character Attributes
 TLGCC.Age: Age
 TLGCC.Alignment: Disposition

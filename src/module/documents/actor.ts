@@ -70,9 +70,21 @@ export class tlgccActor extends Actor {
     logger.debug('Character data:', actorData);
     const data = actorData.system;
 
+    // Initialize abilities
     for (const [, ability] of Object.entries(data.abilities)) {
       // @ts-ignore
       ability.bonus = this._calculateAbilityBonus(ability.value);
+    }
+
+    // Initialize resources if they don't exist
+    if (!data.resources) {
+      data.resources = {
+        resource1: { name: 'Resource 1', value: 0 },
+        resource2: { name: 'Resource 2', value: 0 },
+        resource3: { name: 'Resource 3', value: 0 },
+        resource4: { name: 'Resource 4', value: 0 },
+        resource5: { name: 'Resource 5', value: 0 }
+      };
     }
   }
 

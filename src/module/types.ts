@@ -19,6 +19,12 @@ export interface ActorSystemData {
   };
   attackBonus?: { value: number };
   type?: string;
+  resources?: {
+    [key: string]: {
+      name: string;
+      value: number;
+    };
+  };
 }
 
 export interface ItemSystemData {

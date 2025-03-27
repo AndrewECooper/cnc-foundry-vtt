@@ -23,15 +23,19 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 -->
 ## [Unreleased]
 
-## [1.0.5] - 2025-01-02
-
-### Bug Fixes
-
-- INT Field disappears (!98) [@KillerWabbit]
-- Strength Added to Ranged attack damage (!99) [@KillerWabbit]
+## [1.0.5] - 2025-03-27
 
 ### Changed
+- Update monster template sheet. Fixes #102 [@KillerWabbit]
+- Split out status effects [@KillerWabbit]
+- Update monster saves label [@KillerWabbit]
+- Update changelog, template, localization and labels in sheets [@KillerWabbit]
+- Comment out migration removing elements until later [@KillerWabbit]
 - Monster Actors - Remove Resources and add Sanity (!102) [@KillerWabbit]
+
+### Fixed
+- Fix potential problem areas in spell and weapon sheets [@KillerWabbit]
+- Fix typo in monster sheet. Fixes #98 [@KillerWabbit]
 
 ## [1.0.4] - 2024-11-26
 
@@ -40,8 +44,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Spell damage button not working on spell page (!87) [@KillerWabbit]
 - Edit spell not showing localized labels (!86) [@KillerWabbit]
 - Level box appends comma and class when changed (!84) [@KillerWabbit]
-- Spell Items are broken (!59) [@roman.weindl]
-- Character sheet doesn't add STR or DEX modifier on attack or damage rolls (!57) [@yschnoe]
 
 ### New Features
 
@@ -59,7 +61,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Change 'HD Size' to 'Level' on monster sheet (!92) [@KillerWabbit]
 - Add level bonus to monster to hit roll on monster sheet (!91) [@KillerWabbit]
 - 1.04 pre-release fixes (!90) [@KillerWabbit]
-- Saving Throws for Monsters (!76) [@rippedtabard]
 - Update System to FoundryVTT v12 compatibility (!62) [@KillerWabbit]
 
 ## [1.0.3] - 2024-06-28
@@ -173,6 +174,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Corrected how item AC is displayed.
 
 [unreleased]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/compare/main...develop?from_project_id=36291450&straight=false
+[1.0.5]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.5
 [1.0.4]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.4
 [1.0.3]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.3
 [1.0.2]: https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/releases/v1.0.2

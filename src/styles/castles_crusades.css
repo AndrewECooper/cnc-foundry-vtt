@@ -150,6 +150,9 @@
 .grid-5col {
   grid-column: span 5 / span 5;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+  margin: 10px 0;
+  padding: 0 10px;
 }
 
 .grid-6col {
@@ -432,6 +435,27 @@
 .tlgcc .resource-label {
   font-weight: bold;
   font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.tlgcc .resource {
+  margin: 0 3px;
+  padding: 0 3px;
+}
+
+.tlgcc .resource-content {
+  display: flex;
+  gap: 4px;
+}
+
+.tlgcc .resource-content input {
+  min-width: 20px;
+  flex: 1;
+}
+
+.tlgcc .resources.grid {
+  gap: 4px;
+  padding: 4px;
 }
 
 .tlgcc .items-header {
@@ -613,16 +637,6 @@
 
 .tlgcc .effects .item .effect-controls {
   border: none;
-}
-
-.tlgcc .grid-5col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 15px;
-  /* Increase from 10px to 15px */
-  margin: 10px 0;
-  padding: 0 10px;
-  /* Add padding */
 }
 
 .ability-header {

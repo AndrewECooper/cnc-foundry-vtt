@@ -292,10 +292,9 @@ export class TlgccActorSheet extends ActorSheet<
     super.activateListeners(html);
 
     // Add new listeners for monster attribute checks and saves
-    if (this.actor.type === 'monster') {
-      html.find('.monster-attribute-check').click(this._rollMonsterAttributeCheck.bind(this));
-      html.find('.monster-save').click(this._onMonsterSave.bind(this));
-    }
+    // if (this.actor.type === 'monster') {
+    //   html.find('.monster-save').click(this._onMonsterSave.bind(this));
+    // }
 
     html.find('.item-edit').click(this._onItemEdit.bind(this));
     if (!this.isEditable) return;
@@ -378,10 +377,6 @@ export class TlgccActorSheet extends ActorSheet<
       rollType: dataset.rollType,
     });
 
-    if (dataset.rollType === 'numberAppearing') {
-      return this._rollNumberAppearing(element);
-    }
-
     if (dataset.rollType === 'monster-save') {
       return this._rollMonsterSave();
     }
@@ -398,10 +393,14 @@ export class TlgccActorSheet extends ActorSheet<
   }
 
   private _rollMonsterSave(): Roll | undefined {
+    logger.info('Monster save clicked');
     if (!this.actor || this.actor.type !== 'monster') return;
 
     const actorData = this.actor.system;
     const hitDice = Number(actorData.hitDice?.number) || 0;
+    // @ts-ignore
+    const saveText = actorData.msaves?.value || '';
+    logger.info(`saveText: ${saveText}`);
     
     // In C&C, monster saves are based on Hit Dice
     let saveBonus = Math.floor(hitDice);
@@ -414,6 +413,9 @@ export class TlgccActorSheet extends ActorSheet<
     const roll = new Roll(rollFormula);
 
     let flavor = `Roll: <b>Monster Save (HD ${hitDice})</b>`;
+    if (saveText) {
+      flavor += ` (${saveText})`;
+    }
     if (Settings.showDetailedFormulas) {
       flavor += `<br><em>(${rollParts.join(' + ')})</em>`;
     }
@@ -642,84 +644,58 @@ export class TlgccActorSheet extends ActorSheet<
     return roll;
   }
 
-  private _rollNumberAppearing(element: HTMLElement): Roll | undefined {
-    try {
-      // @ts-ignore
-      const format = this.actor.system.numberAppearing.value;
+  // private _rollMonsterAttributeCheck(event: JQuery.ClickEvent): void {
+  //   // const element = event.currentTarget;
+  //   // const dataset = element.dataset;
+  //   // const attribute = dataset.attribute;
 
-      // Early return if the value is "1"
-      if (!NumberAppearingRoller.needsRoll(format)) {
-        return undefined;
-      }
+  //   // if (this.actor.type !== 'monster') return;
 
-      const result = NumberAppearingRoller.roll(format);
+  //   // // @ts-ignore
+  //   // const hitDice = this.actor.system.hitDice.number;
+  //   // const roll = new Roll(`1d20+${hitDice}`);
 
-      // Create a roll to represent this result
-      const roll = new Roll('1d1', { result: result.value });
-      roll.evaluate({ async: false });
+  //   // let label = `${this.actor.name} - ${attribute} Check`;
+  //   // if (Settings.showDetailedFormulas) {
+  //   //   label += `<br><em>(1d20 + ${hitDice} [HD])</em>`;
+  //   // }
 
-      // Create chat message with private roll mode
-      ChatMessage.create({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: `<h2>${this.actor.name}: Number Appearing</h2>${result.detail}`,
-        content: `<h3>Total: ${result.value}</h3>`,
-        rollMode: 'gmroll',
-        // @ts-ignore - whisper property exists but isn't in types
-        whisper: [game.user?.id || '']
-      });
+  //   // roll.toMessage({
+  //   //   speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+  //   //   flavor: label,
+  //   //   rollMode: this.ROLL_MODE
+  //   // });
+  // }
 
-      return roll;
-    } catch (error) {
-      logger.error('Error in _rollNumberAppearing:', error);
-      ui.notifications?.error('Error rolling number appearing. Check the console for details.');
-      return undefined;
-    }
-  }
+  // private _onMonsterSave(event: JQuery.ClickEvent): void {
+  //   console.log('Direct console log - Monster save clicked'); // Direct console log
+  //   logger.info('Monster save clicked');
+  //   if (this.actor.type !== 'monster') return;
 
-  private _rollMonsterAttributeCheck(event: JQuery.ClickEvent): void {
-    const element = event.currentTarget;
-    const dataset = element.dataset;
-    const attribute = dataset.attribute;
+  //   const element = event.currentTarget;
+  //   const dataset = element.dataset;
+  //   const save = dataset.save;
+  //   // @ts-ignore
+  //   const hitDice = this.actor.system.hitDice.number;
+  //   // @ts-ignore
+  //   const saveText = this.actor.system.msaves?.value || '';
+  //   console.log('Direct log - save:', save, 'saveText:', saveText); // Direct console log
+  //   logger.info(`save: ${save}, saveText: ${saveText}`);
 
-    if (this.actor.type !== 'monster') return;
+  //   const roll = new Roll(`1d20+${hitDice}`);
 
-    // @ts-ignore
-    const hitDice = this.actor.system.hitDice.number;
-    const roll = new Roll(`1d20+${hitDice}`);
+  //   let label = `${this.actor.name} - ${save} Save`;
+  //   if (saveText) {
+  //     label += ` (${saveText})`;
+  //   }
+  //   if (Settings.showDetailedFormulas) {
+  //     label += `<br><em>(1d20 + ${hitDice} [HD])</em>`;
+  //   }
 
-    let label = `${this.actor.name} - ${attribute} Check`;
-    if (Settings.showDetailedFormulas) {
-      label += `<br><em>(1d20 + ${hitDice} [HD])</em>`;
-    }
-
-    roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor: label,
-      rollMode: this.ROLL_MODE
-    });
-  }
-
-  private _onMonsterSave(event: JQuery.ClickEvent): void {
-    if (this.actor.type !== 'monster') return;
-
-    const element = event.currentTarget;
-    const dataset = element.dataset;
-    const save = dataset.save;
-    // @ts-ignore
-    const hitDice = this.actor.system.hitDice.number;
-
-    const roll = new Roll(`1d20+${hitDice}`);
-
-    let label = `${this.actor.name} - ${save} Save`;
-    if (Settings.showDetailedFormulas) {
-      label += `<br><em>(1d20 + ${hitDice} [HD])</em>`;
-    }
-
-    roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor: label,
-      rollMode: this.ROLL_MODE
-    });
-  }
-
+  //   roll.toMessage({
+  //     speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+  //     flavor: label,
+  //     rollMode: this.ROLL_MODE,
+  //   });
+  // }
 }

@@ -25,6 +25,9 @@ export interface ActorSystemData {
       value: number;
     };
   };
+  hitDice?: {
+    number: number;
+  };
 }
 
 export interface ItemSystemData {

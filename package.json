@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "castles-and-crusades",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Castles & Crusades game system for FoundryVTT",
   "author": "Andrew Cooper",
   "license": "CC-BY-4.0",

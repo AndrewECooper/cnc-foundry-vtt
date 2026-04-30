@@ -27,3 +27,4 @@ repo_files.txt
 .claudeignore
 
 .claudesync/
+.claude/

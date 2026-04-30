@@ -1,18 +1,18 @@
 {
   "private": true,
   "name": "castles-and-crusades",
-  "version": "1.0.5",
-  "description": "Troll Lord Games Castles & Crusades game system for FoundryVTT",
-  "author": "Troll Lord Games",
-  "license": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/raw/main/LICENSE.txt",
-  "homepage": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades",
+  "version": "1.0.6",
+  "description": "Castles & Crusades game system for FoundryVTT",
+  "author": "Andrew Cooper",
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/AndrewECooper/cnc-foundry-vtt",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades"
+    "url": "https://github.com/AndrewECooper/cnc-foundry-vtt"
   },
   "bugs": {
-    "url": "https://gitlab.com/troll-lord/foundry-vtt/ruleset/castles-and-crusades/-/issues"
+    "url": "https://github.com/AndrewECooper/cnc-foundry-vtt/issues"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=development rollup -c",

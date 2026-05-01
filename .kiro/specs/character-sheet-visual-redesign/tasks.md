@@ -8,29 +8,29 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
 
 ## Tasks
 
-- [ ] 1. Bundle webfonts
+- [x] 1. Bundle webfonts
   - Download Crimson Text (400 normal, 400 italic, 600 normal, 600 italic) and IBM Plex Sans (400, 500, 600) from Google Fonts or Fontsource as woff2 + woff files, Latin subset
   - Place all 14 font files in `src/styles/` using the naming convention: `crimsontext-regular-webfont.woff2`, `crimsontext-regular-webfont.woff`, `crimsontext-italic-webfont.woff2`, `crimsontext-italic-webfont.woff`, `crimsontext-semibold-webfont.woff2`, `crimsontext-semibold-webfont.woff`, `crimsontext-semibolditalic-webfont.woff2`, `crimsontext-semibolditalic-webfont.woff`, `ibmplexsans-regular-webfont.woff2`, `ibmplexsans-regular-webfont.woff`, `ibmplexsans-medium-webfont.woff2`, `ibmplexsans-medium-webfont.woff`, `ibmplexsans-semibold-webfont.woff2`, `ibmplexsans-semibold-webfont.woff`
   - Append 14 `@font-face` declarations to `src/styles/castles_crusades.css` following the exact same pattern as the existing Soutane declarations (woff2 + woff only — no eot/ttf/svg needed for Foundry's Chromium runtime)
   - Do NOT add any `@import` URL pointing to an external CDN
   - _Requirements: 1.1, 1.2, 1.3_
 
-- [ ] 2. Add CSS design tokens and component styles
-  - [ ] 2.1 Declare CSS custom properties and base layout styles
+- [x] 2. Add CSS design tokens and component styles
+  - [x] 2.1 Declare CSS custom properties and base layout styles
     - Append a clearly-marked `/* === Tabletop Hybrid Redesign === */` section to `src/styles/castles_crusades.css`
     - Declare all 11 CSS custom properties on `.tlgcc`: `--cc-outer-bg`, `--cc-text`, `--cc-muted`, `--cc-accent`, `--cc-parchment`, `--cc-plain`, `--cc-card-border`, `--cc-card-line`, `--cc-sidebar-bg`, `--cc-tab-active-bg`, `--cc-tab-text` with the exact values from the design document
     - Add `.cc-sheet-body` flex-row container styles (fills window, no overflow)
     - Add wood-mat background on `.tlgcc` form: `--cc-outer-bg` base + radial gradient + repeating linear gradient texture
     - _Requirements: 2.1, 2.2, 2.3, 3.2_
 
-  - [ ] 2.2 Add sidebar and tab navigation styles
+  - [x] 2.2 Add sidebar and tab navigation styles
     - Add `.cc-sidebar` styles: 140px fixed width, `--cc-sidebar-bg`, flex column, `padding: 14px 0`, inset right shadow
     - Add `.tlgcc .sheet-tabs .item` (inactive) styles: transparent bg, `--cc-tab-text` color, 3px transparent left border, full-width block display
     - Add `.tlgcc .sheet-tabs .item.active` styles: `--cc-tab-active-bg` bg, 3px `--cc-accent` left border, Crimson Text 600 italic, glyph in `--cc-accent`
     - Add `.cc-sidebar-identity` styles: `padding: 12px 14px`, `border-top: 1px solid rgba(0,0,0,0.3)`, name 13px Crimson Text `#f0e0c0`, meta 10px `#b8a888`
     - _Requirements: 3.1, 4.3, 4.4, 4.6_
 
-  - [ ] 2.3 Add paper card and sheet header styles
+  - [x] 2.3 Add paper card and sheet header styles
     - Add `.cc-paper-card` styles: `--cc-parchment` bg, padding, folded-corner `clip-path`, box-shadow, flex column, gap 12px, overflow hidden, `position: relative`
     - Add `.cc-paper-card::before` tape-strip pseudo-element: 110×18px, `rgba(220,200,150,0.7)`, striped overlay, `rotate(-1.2deg)`, centered top
     - Add `.cc-sheet-header` flex-row styles
@@ -42,7 +42,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
     - Add `.cc-stamp-inputs` and value input styles: 13px Crimson Text, `--cc-text` color
     - _Requirements: 3.3, 3.4, 5.1, 5.2, 5.3, 5.4_
 
-  - [ ] 2.4 Add stat panel styles
+  - [x] 2.4 Add stat panel styles
     - Add `.cc-stat-grid` 6-column grid styles
     - Add `.cc-stat-panel` base styles: `padding: 8px 4px 6px`, `text-align: center`, `position: relative`, `--cc-plain` bg, `1px dashed --cc-muted` border, `rotate(0.2deg)`
     - Add `.cc-stat-panel--prime` override styles: `2px solid --cc-accent` border, `rotate(-0.4deg)`, `#fff8e1` bg, box-shadow
@@ -53,7 +53,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
     - Add `.cc-stat-roll` styles: 9px, uppercase, letter-spacing, `--cc-muted`
     - _Requirements: 6.2, 6.3, 6.4, 6.5_
 
-  - [ ] 2.5 Add section card, table, and remaining component styles
+  - [x] 2.5 Add section card, table, and remaining component styles
     - Add `.cc-section` styles: `--cc-plain` bg, `1px solid --cc-muted` border, `0 1px 3px rgba(0,0,0,0.1)` shadow, flex column, `position: relative`
     - Add `.cc-section-header` styles: `6px 10px` padding, `1px solid --cc-muted` bottom border, `rgba(0,0,0,0.03)` bg, flex row space-between
     - Add `.cc-section-title` styles: 14px Crimson Text 600 italic, `--cc-text`
@@ -78,7 +78,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
     - Add `.cc-prose-row` 2-column grid styles
     - _Requirements: 7.4, 8.4, 9.1, 9.2, 10.1, 10.2, 11.5, 13.1, 13.2, 13.3, 13.4_
 
-- [ ] 3. Restructure root template (`actor-character-sheet.html`)
+- [x] 3. Restructure root template (`actor-character-sheet.html`)
   - Replace the `<form>` class list: remove `tlgbackground`, keep `{{cssClass}} {{actor.type}} tlgcc sheet actor flexcol`
   - Replace the entire form body with the new `.cc-sheet-body` flex structure:
     - `.cc-sidebar` containing `<nav class="sheet-tabs tabs" data-group="primary">` with five `<a class="item" data-tab="...">` links using the Unicode glyphs (⚔ Combat, ✦ Abilities, ⚒ Equipment, ✶ Spells, ☙ Description) and `.cc-sidebar-identity` strip below
@@ -91,7 +91,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
   - Before marking complete: diff against the original and confirm every Functional_Hook attribute listed in Requirement 12 is present
   - _Requirements: 3.1, 3.3, 3.4, 3.5, 3.6, 4.1, 4.2, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 12.1–12.8_
 
-- [ ] 4. Rewrite `actor-combat.html` partial
+- [x] 4. Rewrite `actor-combat.html` partial
   - Add the six-up `.cc-stat-grid` with `.cc-stat-panel` / `.cc-stat-panel--prime` cards using `{{#each system.abilities}}`
     - Each panel: `.cc-stat-abbr.rollable` with existing `data-roll` and `data-label` attributes, `.cc-stat-value` input with `name="system.abilities.{{key}}.value"`, `.cc-stat-mod` span, `.cc-prime-stamp` conditional on `{{ability.ccprimary}}`, `.cc-prime-checkbox` with `name="system.abilities.{{key}}.ccprimary"`
   - Add `.cc-combat-columns` two-column grid below the stat grid
@@ -100,7 +100,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
   - Before marking complete: diff against original `actor-combat.html` and the ability grid in the original root template; confirm every Functional_Hook is present
   - _Requirements: 6.1–6.7, 7.1–7.5, 12.1–12.8_
 
-- [ ] 5. Rewrite `actor-features.html` partial
+- [x] 5. Rewrite `actor-features.html` partial
   - Wrap content in a `.cc-section` "Special Abilities & Class Features" with `.cc-section-header` and `.cc-section-body`
   - Replace the `<ol class="items-list">` with a `.cc-table` inside `.cc-section-body`
   - Table header row: Feature · Formula · Actions (9px IBM Plex Sans uppercase)
@@ -109,7 +109,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
   - Before marking complete: diff against original `actor-features.html`; confirm every Functional_Hook is present
   - _Requirements: 8.1–8.4, 12.1–12.8_
 
-- [ ] 6. Rewrite `actor-items.html` partial
+- [x] 6. Rewrite `actor-items.html` partial
   - Replace the money grid with a `.cc-coin-row` containing four `.cc-coin-tile` elements (`.cc-coin-tile--platinum`, `--gold`, `--silver`, `--copper`) preserving `name="system.money.{pp,gp,sp,cp}.value"` inputs, plus a `.cc-valuables-tile` preserving `name="system.valuables.value"`
   - Replace the gear `<ol class="items-list">` with a `.cc-section` "Equipment" containing a `.cc-table`
   - Table header row: Qty · Item · Weight · Actions, with carried weight shown in the header
@@ -118,7 +118,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
   - Before marking complete: diff against original `actor-items.html`; confirm every Functional_Hook is present
   - _Requirements: 9.1–9.4, 12.1–12.8_
 
-- [ ] 7. Rewrite `actor-spells.html` partial
+- [x] 7. Rewrite `actor-spells.html` partial
   - Replace the spell slots section with a `.cc-spell-slots` dashed-border tile containing a `.cc-slot-grid` (10 columns) using `{{#each system.spellsPerLevel.value}}`, preserving `name="system.spellsPerLevel.value.{{level}}"` inputs
   - Replace the spell list `<ol>` with a `.cc-section` "Spells Known & Prepared" containing grouped spell rows
   - For each spell level group: `.cc-spell-level-header` tinted band with level number and "Prepared" label; preserve `.item-create` anchor with `data-spell-level-value="{{spellLevel}}"` and `data-type="spell"`
@@ -126,7 +126,7 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
   - Before marking complete: diff against original `actor-spells.html`; confirm every Functional_Hook is present
   - _Requirements: 10.1–10.4, 12.1–12.8_
 
-- [ ] 8. Rewrite `actor-description.html` partial
+- [x] 8. Rewrite `actor-description.html` partial
   - Replace the facts grid with a `.cc-fact-row` (5-column) containing five `.cc-stamp-field` tiles for Size, Height, Sex, Weight, Age — preserving all `id` and `name="system.*"` attributes and `{{localize}}` calls
   - Add a `.cc-text-row` (2-column) with Language and Origin tiles, preserving `name="system.language.value"` and `name="system.origin.value"`
   - Add a `.cc-prose-row` (2-column) containing:
@@ -135,12 +135,12 @@ All edits are in `src/` only. The build copies `src/styles/`, `src/templates/`, 
   - Before marking complete: diff against original `actor-description.html`; confirm every `{{editor}}` and `{{localize}}` call is unchanged and every `name="system.*"` attribute is preserved
   - _Requirements: 11.1–11.5, 12.7, 12.8_
 
-- [ ] 9. Update sheet width in `actor-sheet.ts`
+- [x] 9. Update sheet width in `actor-sheet.ts`
   - Change `width: 780` to `width: 880` in `TlgccActorSheet.defaultOptions` to accommodate the 140px sidebar without compressing the paper card content area
   - This is the only change to `actor-sheet.ts`
   - _Requirements: 14.2_
 
-- [ ] 10. Build verification and functional audit
+- [x] 10. Build verification and functional audit
   - Run `npm run build` and confirm it completes without errors
   - Confirm all modified template files appear in `dist/templates/` and all new font files appear in `dist/styles/`
   - Open a character sheet in Foundry and perform the functional regression checklist from the design document's Testing Strategy section:

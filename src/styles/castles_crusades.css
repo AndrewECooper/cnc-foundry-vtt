@@ -105,6 +105,62 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('crimsontext-regular-webfont.woff2') format('woff2'),
+       url('crimsontext-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('crimsontext-italic-webfont.woff2') format('woff2'),
+       url('crimsontext-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('crimsontext-semibold-webfont.woff2') format('woff2'),
+       url('crimsontext-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('crimsontext-semibolditalic-webfont.woff2') format('woff2'),
+       url('crimsontext-semibolditalic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('ibmplexsans-regular-webfont.woff2') format('woff2'),
+       url('ibmplexsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('ibmplexsans-medium-webfont.woff2') format('woff2'),
+       url('ibmplexsans-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('ibmplexsans-semibold-webfont.woff2') format('woff2'),
+       url('ibmplexsans-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Global styles */
 .game {
   font-family: 'Soutane', 'Century Gothic', 'TeX Gyre Adventor',
@@ -406,6 +462,15 @@
   flex: 0;
 }
 
+/* Sidebar nav overrides — reset Foundry's horizontal flex on .sheet-tabs */
+.tlgcc .cc-sidebar .sheet-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
 .tlgcc .sheet-body,
 .tlgcc .sheet-body .description,
 .tlgcc .sheet-body .editor,
@@ -421,7 +486,7 @@
 .tlgcc .editor-content {
   font-family: 'Century Gothic', 'TeX Gyre Adventor', 'Soutane', sans-serif, var(--font-primary);
   font-size: 18px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .tlgcc .tox .tox-editor-container {
@@ -755,4 +820,766 @@
 /* Keep the tooltip for reference but make it less prominent */
 .attack-button.disabled::after {
   opacity: 0.5;
+}
+
+/* === Tabletop Hybrid Redesign === */
+
+/* --- 2.1 Design Tokens & Base Layout --- */
+
+.tlgcc {
+  --cc-outer-bg: #3a2a1a;
+  --cc-text: #2a2418;
+  --cc-muted: #7a6b56;
+  --cc-accent: #a02a2a;
+  --cc-parchment: #f7efde;
+  --cc-plain: #fbf6e8;
+  --cc-card-border: #d4c5a0;
+  --cc-card-line: #c8b890;
+  --cc-sidebar-bg: linear-gradient(180deg, #4a3826 0%, #3a2a1a 100%);
+  --cc-tab-active-bg: rgba(255, 250, 235, 0.95);
+  --cc-tab-text: #d8c8a8;
+}
+
+.tlgcc.sheet.actor form,
+.tlgcc form {
+  background: var(--cc-outer-bg);
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(120, 90, 60, 0.4), transparent 70%),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0 2px, transparent 2px 6px);
+}
+
+.tlgcc .cc-sheet-body {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* --- 2.2 Sidebar & Tab Navigation --- */
+
+.tlgcc .cc-sidebar {
+  width: 140px;
+  flex-shrink: 0;
+  background: var(--cc-sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0;
+  box-shadow: inset -2px 0 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.tlgcc .sheet-tabs .item {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border-left: 3px solid transparent;
+  color: var(--cc-tab-text);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tlgcc .sheet-tabs .item:hover {
+  background: rgba(255, 250, 235, 0.1);
+}
+
+.tlgcc .sheet-tabs .item.active {
+  background: var(--cc-tab-active-bg);
+  border-left: 3px solid var(--cc-accent);
+  color: var(--cc-text);
+  font-family: "Crimson Text", Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.tlgcc .sheet-tabs .item.active .cc-tab-glyph {
+  color: var(--cc-accent);
+}
+
+.tlgcc .cc-sidebar-identity {
+  margin-top: auto;
+  padding: 12px 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.tlgcc .cc-sidebar-name {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  color: #f0e0c0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tlgcc .cc-sidebar-meta {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 10px;
+  color: #b8a888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- 2.3 Paper Card & Sheet Header --- */
+
+.tlgcc .cc-paper-card {
+  flex: 1;
+  background: var(--cc-parchment);
+  padding: 18px 22px 20px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: visible;
+  position: relative;
+}
+
+.tlgcc .cc-paper-card::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.2deg);
+  width: 110px;
+  height: 18px;
+  background: rgba(220, 200, 150, 0.7);
+  background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0 4px, transparent 4px 8px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.tlgcc .cc-sheet-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tlgcc .cc-portrait {
+  width: 96px;
+  height: 96px;
+  border: 1px dashed var(--cc-muted);
+  position: relative;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.tlgcc .cc-portrait img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  display: block;
+}
+
+.tlgcc .cc-portrait::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 36px;
+  height: 12px;
+  background: rgba(220, 200, 150, 0.8);
+  background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0 3px, transparent 3px 6px);
+  z-index: 2;
+}
+
+.tlgcc .cc-identity {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tlgcc .cc-char-name {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--cc-accent);
+  border: none;
+  border-bottom: 2px solid var(--cc-accent);
+  background: transparent;
+  display: inline-block;
+  transform: rotate(-0.3deg);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.tlgcc .cc-stamp-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tlgcc .cc-stamp-field {
+  border: 1px dashed var(--cc-muted);
+  background: rgba(255, 255, 255, 0.4);
+  padding: 2px 8px;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 40px;
+}
+
+.tlgcc .cc-stamp-label {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+}
+
+.tlgcc .cc-stamp-inputs {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tlgcc .cc-stamp-inputs input,
+.tlgcc .cc-stamp-field > input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+  min-width: 24px;
+}
+
+.tlgcc .cc-stamp-inputs span {
+  font-size: 11px;
+  color: var(--cc-muted);
+}
+
+/* --- 2.4 Stat Panels --- */
+
+.tlgcc .cc-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+.tlgcc .cc-stat-panel {
+  padding: 8px 4px 6px;
+  text-align: center;
+  position: relative;
+  background: var(--cc-plain);
+  border: 1px dashed var(--cc-muted);
+  transform: rotate(0.2deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.tlgcc .cc-stat-panel--prime {
+  border: 2px solid var(--cc-accent);
+  transform: rotate(-0.4deg);
+  background: #fff8e1;
+  box-shadow: 0 2px 0 rgba(160, 42, 42, 0.15);
+}
+
+.tlgcc .cc-prime-stamp {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background: var(--cc-accent);
+  color: #fff8e1;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 8px;
+  letter-spacing: 1px;
+  padding: 2px 5px;
+  font-weight: 600;
+  transform: rotate(8deg);
+  border: 1px solid #fff;
+  z-index: 1;
+}
+
+.tlgcc .cc-stat-abbr {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cc-muted);
+  cursor: pointer;
+  display: block;
+}
+
+.tlgcc .cc-stat-value {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--cc-text);
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.tlgcc .cc-stat-mod {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--cc-accent);
+}
+
+.tlgcc .cc-stat-roll {
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  min-width: 1em;
+  min-height: 1em;
+}
+
+/* On hover: hide "ROLL" text and show a d20 die glyph */
+.tlgcc .cc-stat-roll.rollable:hover {
+  font-size: 0;
+  color: var(--cc-accent);
+  text-shadow: none;
+}
+
+.tlgcc .cc-stat-roll.rollable:hover::after {
+  content: '🎲';
+  font-size: 16px;
+  display: block;
+  line-height: 1;
+  color: initial;
+}
+
+.tlgcc .cc-prime-checkbox {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+/* --- 2.5 Section Cards, Tables, and Remaining Components --- */
+
+.tlgcc .cc-section {
+  background: var(--cc-plain);
+  border: 1px solid var(--cc-muted);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tlgcc .cc-section-header {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--cc-muted);
+  background: rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tlgcc .cc-section-title {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--cc-text);
+}
+
+.tlgcc .cc-add-btn {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 11px;
+  color: var(--cc-muted);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tlgcc .cc-add-btn:hover {
+  color: var(--cc-accent);
+}
+
+.tlgcc .cc-section--pinned {
+  position: relative;
+}
+
+.tlgcc .cc-section--pinned::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff6868, #b02020);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.tlgcc .cc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tlgcc .cc-table th {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f0e0c0;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.tlgcc .cc-table td {
+  padding: 6px 8px;
+  border-bottom: 1px dotted var(--cc-card-line);
+  vertical-align: middle;
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  color: var(--cc-text);
+}
+
+.tlgcc .cc-table tr:last-child td {
+  border-bottom: none;
+}
+
+.tlgcc .cc-table .item-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.tlgcc .cc-table .item-controls a {
+  font-size: 11px;
+  color: var(--cc-muted);
+  cursor: pointer;
+}
+
+.tlgcc .cc-table .item-controls a:hover {
+  color: var(--cc-accent);
+}
+
+.tlgcc .cc-combat-columns {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px;
+}
+
+.tlgcc .cc-combat-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tlgcc .cc-combat-stat-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.tlgcc .cc-combat-stat-row .cc-stamp-field {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+.tlgcc .cc-combat-stat-row .cc-stamp-field input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--cc-text);
+  text-align: center;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.tlgcc .cc-coin-row {
+  display: grid;
+  grid-template-columns: repeat(4, 80px) 1fr;
+  gap: 6px;
+}
+
+.tlgcc .cc-coin-tile {
+  background: var(--cc-plain);
+  border: 1px dashed var(--cc-muted);
+  padding: 6px 8px;
+  text-align: center;
+  position: relative;
+}
+
+.tlgcc .cc-coin-tile .cc-stamp-label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.tlgcc .cc-coin-tile input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.tlgcc .cc-coin-tile::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tlgcc .cc-coin-tile--platinum::after { background: #a0a0b8; }
+.tlgcc .cc-coin-tile--gold::after     { background: #c8a13a; }
+.tlgcc .cc-coin-tile--silver::after   { background: #a8a8a0; }
+.tlgcc .cc-coin-tile--copper::after   { background: #b07050; }
+
+.tlgcc .cc-valuables-tile {
+  background: var(--cc-plain);
+  border: 1px dashed var(--cc-muted);
+  padding: 6px 8px;
+  position: relative;
+}
+
+.tlgcc .cc-valuables-tile input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+.tlgcc .cc-spell-slots {
+  border: 1px dashed var(--cc-muted);
+  padding: 8px 10px;
+  background: var(--cc-plain);
+}
+
+.tlgcc .cc-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.tlgcc .cc-slot-tile {
+  text-align: center;
+  border: 1px dashed var(--cc-muted);
+  padding: 4px 2px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.tlgcc .cc-slot-tile label {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+  display: block;
+}
+
+.tlgcc .cc-slot-tile input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.tlgcc .cc-spell-level-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  background: var(--cc-plain);
+  border-bottom: 1px solid var(--cc-card-line);
+}
+
+.tlgcc .cc-spell-level-header .cc-level-num {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--cc-accent);
+}
+
+.tlgcc .cc-spell-level-header .cc-prepared-label {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--cc-muted);
+}
+
+.tlgcc .cc-ruled-prose {
+  background: var(--cc-plain);
+  border: 1px solid var(--cc-muted);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tlgcc .cc-ruled-prose-body {
+  padding: 10px 14px;
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--cc-text);
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  position: relative;
+}
+
+/* Ensure Foundry's editor widget fills the prose body */
+.tlgcc .cc-ruled-prose-body .editor {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tlgcc .cc-ruled-prose-body .editor-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  height: auto;
+}
+
+/* ProseMirror editor container stretch */
+.tlgcc .cc-ruled-prose-body .prosemirror-editor-container,
+.tlgcc .cc-ruled-prose-body .editor-container,
+.tlgcc .cc-ruled-prose-body .ProseMirror {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+}
+
+/* TinyMCE (tox) stretch — used in older Foundry versions */
+.tlgcc .cc-ruled-prose-body .tox.tox-tinymce {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100% !important;
+}
+
+.tlgcc .cc-ruled-prose-body .tox .tox-editor-container {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.tlgcc .cc-ruled-prose-body .tox .tox-edit-area,
+.tlgcc .cc-ruled-prose-body .tox .tox-edit-area__iframe {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100% !important;
+}
+
+/* Make the edit pencil button visible on hover */
+.tlgcc .cc-ruled-prose-body .editor-edit {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tlgcc .cc-ruled-prose-body:hover .editor-edit {
+  opacity: 1;
+}
+
+.tlgcc .cc-fact-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.tlgcc .cc-text-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.tlgcc .cc-prose-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Ruled prose containers stretch to fill the prose row */
+.tlgcc .cc-prose-row .cc-ruled-prose {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Sheet body scroll */
+.tlgcc .sheet-body {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* Override the old height-based tab rules for the new flex layout */
+.tlgcc .cc-paper-card .sheet-body,
+.tlgcc .cc-paper-card .sheet-body .tab,
+.tlgcc .cc-paper-card .sheet-body .tab .editor {
+  height: auto;
+}
+
+/* Active tab: flex column layout. Inactive tabs: Foundry sets display:none — don't override it */
+.tlgcc .sheet-body .tab.active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 0;
+  overflow-y: auto;
+}
+
+/* Description tab: override the old max-height cap and let the prose row fill remaining space */
+.tlgcc .sheet-body .tab.biography.active {
+  max-height: none;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+/* Item image in tables */
+.tlgcc .cc-item-img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* Weapon attack buttons in table */
+.tlgcc .cc-attack-btns {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

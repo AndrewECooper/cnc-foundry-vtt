@@ -1,13 +1,15 @@
-<div class="resource flex-group-center">
-  <h3 title="{{localize 'TLGCC.spellsKnownhover'}}">
-    {{localize 'TLGCC.spellsKnown'}}
-  </h3>
-</div>
-<section class="resources grid grid-10col">
-  {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
-  <div class="resource flex-group-center">
-    <label class="resource-label" for="system.spellsPerLevel.{{level}}">{{level}}</label>
-    <div class="resource-content flexrow flex-center flex-between">
+{{!-- Spell Slots Strip --}}
+<div class="cc-spell-slots">
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+    <span style="font-family: 'Crimson Text', Georgia, serif; font-size: 14px; font-weight: 600; font-style: italic; color: var(--cc-text);"
+          title="{{localize 'TLGCC.spellsKnownhover'}}">
+      {{localize 'TLGCC.spellsKnown'}}
+    </span>
+  </div>
+  <div class="cc-slot-grid">
+    {{#each system.spellsPerLevel.value as |spellsPerLevel level|}}
+    <div class="cc-slot-tile">
+      <label for="system.spellsPerLevel.{{level}}">{{level}}</label>
       <input
         data-dtype="Number"
         id="system.spellsPerLevel.{{level}}"
@@ -16,74 +18,78 @@
         value="{{spellsPerLevel}}"
       />
     </div>
+    {{/each}}
   </div>
-  {{/each}}
-</section>
+</div>
 
-<ol class="items-list">
+{{!-- Spells Known & Prepared --}}
+<div class="cc-section">
+  <div class="cc-section-header">
+    <span class="cc-section-title">{{localize 'TLGCC.SpellLevel'}} — {{localize 'TLGCC.SpellsPerLevel'}}</span>
+  </div>
   {{#each spells as |spells spellLevel|}}
-  <li class="item flexrow items-header">
-    <div class="item-name">
-      {{localize 'TLGCC.SpellLevel'}} {{spellLevel}} {{localize 'TLGCC.SpellsPerLevel'}}
-    </div>
-    <div class="item-detail">{{localize 'TLGCC.SpellPrepared'}}</div>
-    <div class="item-controls">
-      <a
-        class="item-control item-create"
-        data-spell-level-value="{{spellLevel}}"
-        data-type="spell"
-        title="Create item"
-      ><i class="fas fa-plus"></i> {{localize 'TLGCC.Add'}}</a>
-    </div>
-  </li>
-  {{#each spells as |item id|}}
-  <li class="item flexrow" data-item-id="{{item._id}}">
-    <div class="item-name flexrow">
-      <div class="item-image">
-        <a class="rollable"
-           data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"
-           data-roll-type="item">
-          <img height="24"
-               src="{{item.img}}"
-               title="Cast Spell: {{item.name}}"
-               width="24" />
-        </a>
-      </div>
-      <h4 title="{{item.system.spell.summary}}">{{item.name}}</h4>
-      {{#if (ne item.system.spelldmg.value "")}}
-      <a class="rollable"
-         data-roll-type="damage"
-         data-roll="{{item.system.spelldmg.value}}"
-         data-label="{{item.name}} Damage">
-        <img height="24"
-             src="systems/castles-and-crusades/styles/damage.svg"
-             title="Roll damage for {{item.name}}"
-             width="24"/>
-      </a>
-      {{/if}}
-    </div>
-    <div class="item-prop grid grid-3col">
-      <div class="flex-group-right">
-        <a class="item-control spell-prepare" data-change="-1">
-          <i class="fas fa-minus"></i>
-        </a>
-      </div>
-      <div class="flex-group-center">{{item.system.prepared.value}}</div>
-      <div class="flex-group-left">
-        <a class="item-control spell-prepare" data-change="+1">
-          <i class="fas fa-plus"></i>
-        </a>
-      </div>
-    </div>
-    <div class="item-controls">
-      <a class="item-control item-edit" title="Edit Item">
-        <i class="fas fa-edit"></i>
-      </a>
-      <a class="item-control item-delete" title="Delete Item">
-        <i class="fas fa-trash"></i>
+  <div class="cc-spell-level-header">
+    <span class="cc-level-num">{{localize 'TLGCC.SpellLevel'}} {{spellLevel}}</span>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <span class="cc-prepared-label">{{localize 'TLGCC.SpellPrepared'}}</span>
+      <a class="item-create cc-add-btn"
+         data-spell-level-value="{{spellLevel}}"
+         data-type="spell"
+         title="Create item">
+        + {{localize 'TLGCC.Add'}}
       </a>
     </div>
-  </li>
+  </div>
+  <table class="cc-table">
+    <tbody>
+      {{#each spells as |item id|}}
+      <tr class="item" data-item-id="{{item._id}}">
+        <td>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <a class="rollable"
+               data-label="@actor.name casts @item.name with a Save of @spell.savevalue and duration @spell.duration"
+               data-roll-type="item">
+              <img class="cc-item-img" height="24"
+                   src="{{item.img}}"
+                   title="Cast Spell: {{item.name}}"
+                   width="24" />
+            </a>
+            <span title="{{item.system.spell.summary}}">{{item.name}}</span>
+            {{#if (ne item.system.spelldmg.value "")}}
+            <a class="rollable"
+               data-roll-type="damage"
+               data-roll="{{item.system.spelldmg.value}}"
+               data-label="{{item.name}} Damage">
+              <img class="cc-item-img" height="24"
+                   src="systems/castles-and-crusades/styles/damage.svg"
+                   title="Roll damage for {{item.name}}"
+                   width="24"/>
+            </a>
+            {{/if}}
+          </div>
+        </td>
+        <td style="text-align: center; white-space: nowrap;">
+          <a class="item-control spell-prepare" data-change="-1">
+            <i class="fas fa-minus"></i>
+          </a>
+          <span style="margin: 0 4px; font-family: ui-monospace, monospace; font-size: 11px;">{{item.system.prepared.value}}</span>
+          <a class="item-control spell-prepare" data-change="+1">
+            <i class="fas fa-plus"></i>
+          </a>
+        </td>
+        <td>
+          <div class="item-controls">
+            <a class="item-control item-edit" title="Edit Item">
+              <i class="fas fa-edit"></i>
+            </a>
+            <a class="item-control item-delete" title="Delete Item">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
   {{/each}}
-  {{/each}}
-</ol>
+</div>

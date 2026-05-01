@@ -48,7 +48,7 @@ export class TlgccActorSheet extends ActorSheet<
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['tlgcc', 'sheet', 'actor'],
       template: 'systems/castles-and-crusades/templates/actor/actor-sheet.html',
-      width: 780,
+      width: 880,
       height: 600,
       tabs: [
         {
@@ -387,6 +387,8 @@ export class TlgccActorSheet extends ActorSheet<
       return this._rollDamage(element, dataset);
     } else if (dataset.rollType === 'item') {
       return this._rollItem(element);
+    } else if (dataset.rollType === 'ability-check') {
+      return this._rollAbilityCheck(dataset);
     } else if (dataset.roll) {
       return this._rollGeneric(dataset);
     }
@@ -499,21 +501,7 @@ export class TlgccActorSheet extends ActorSheet<
 
     // Create attack type label
     const attackLabel = attackType === 'melee' ? 'Melee Attack' : 'Ranged Attack';
-    let flavor = `Roll: <b>${attackLabel} &rarr; ${item.name}</b>`;
-
-    // Add formula details if enabled
-    if (Settings.showDetailedFormulas) {
-      const detailedParts = [];
-      detailedParts.push('1d20');
-      if (baseAttackBonus) detailedParts.push('@ab');
-      if (abilityMod) {
-        const abilityKey = abilityUsed.toLowerCase();
-        detailedParts.push(`@abilities.${abilityKey}.bonus`);
-      }
-      if (weaponBonus) detailedParts.push(`${weaponBonus}`);
-
-      flavor += `<br><em>(${detailedParts.join(' + ')})</em>`;
-    }
+    const flavor = `Roll: <b>${attackLabel} &rarr; ${item.name}</b>`;
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
@@ -630,6 +618,33 @@ export class TlgccActorSheet extends ActorSheet<
     const itemId = element.closest('.item')?.dataset.itemId;
     // @ts-ignore
     return this.actor.items.get(itemId)?.roll();
+  }
+
+  private async _rollAbilityCheck(dataset: DOMStringMap): Promise<Roll> {
+    const isPrime = dataset.isPrime === 'true';
+    const label = dataset.label ?? '';
+    const roll = new Roll(dataset.roll ?? '', this.actor.getRollData());
+
+    await roll.evaluate({ async: true });
+
+    const total = roll.total ?? 0;
+    const threshold = isPrime ? 12 : 18;
+    const cr = total - threshold;
+
+    let crLine: string;
+    if (cr < 0) {
+      crLine = '<br><em>Fails all Challenge Ratings.</em>';
+    } else {
+      crLine = `<br><em>Succeeds against Challenge Rating <strong>${cr}</strong> and lower.</em>`;
+    }
+
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: `Roll: ${label}${crLine}`,
+      rollMode: this.ROLL_MODE,
+    });
+
+    return roll;
   }
 
   private _rollGeneric(dataset: DOMStringMap): Roll {

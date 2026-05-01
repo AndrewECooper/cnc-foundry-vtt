@@ -1,114 +1,55 @@
-<section class="resources grid grid-5col">
-  <div class="resource flex-group-center">
-    <label for="system.size.value" class="resource-label"
-      >{{localize 'TLGCC.Size'}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.size.value"
-        name="system.size.value"
-        value="{{system.size.value}}"
-        data-dtype="String"
-      />
+{{!-- Fact tiles: Size, Height, Sex, Weight, Age --}}
+<div class="cc-fact-row">
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize 'TLGCC.Size'}}</span>
+    <input type="text" id="system.size.value" name="system.size.value" value="{{system.size.value}}" data-dtype="String"/>
+  </div>
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize 'TLGCC.Height'}}</span>
+    <input type="text" id="system.height.value" name="system.height.value" value="{{system.height.value}}" data-dtype="String"/>
+  </div>
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize system.sex.label}}</span>
+    <input type="text" id="system.sex.value" name="system.sex.value" value="{{system.sex.value}}" data-dtype="String"/>
+  </div>
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize system.weight.label}}</span>
+    <input type="text" id="system.weight.value" name="system.weight.value" value="{{system.weight.value}}" data-dtype="String"/>
+  </div>
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize system.age.label}}</span>
+    <input type="text" id="system.age.value" name="system.age.value" value="{{system.age.value}}" data-dtype="String"/>
+  </div>
+</div>
+
+{{!-- Text tiles: Language, Origin --}}
+<div class="cc-text-row">
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize 'TLGCC.language'}}</span>
+    <input type="text" id="system.language.value" name="system.language.value" value="{{system.language.value}}" data-dtype="String"/>
+  </div>
+  <div class="cc-stamp-field">
+    <span class="cc-stamp-label">{{localize system.origin.label}}</span>
+    <input type="text" id="system.origin.value" name="system.origin.value" value="{{system.origin.value}}" data-dtype="String"/>
+  </div>
+</div>
+
+{{!-- Prose row: Appearance + Biography --}}
+<div class="cc-prose-row">
+  <div class="cc-ruled-prose">
+    <div class="cc-section-header">
+      <span class="cc-section-title">{{localize 'TLGCC.Appearance'}}</span>
+    </div>
+    <div class="cc-ruled-prose-body">
+      {{editor system.appearance target="system.appearance" rollData=rollData button=true owner=owner editable=editable}}
     </div>
   </div>
-  <div class="resource flex-group-center">
-    <label for="system.height.value" class="resource-label"
-      >{{localize 'TLGCC.Height'}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.height.value"
-        name="system.height.value"
-        value="{{system.height.value}}"
-        data-dtype="String"
-      />
+  <div class="cc-ruled-prose">
+    <div class="cc-section-header">
+      <span class="cc-section-title">{{localize 'TLGCC.Notes'}}</span>
     </div>
-  </div>
-  <div class="resource flex-group-center">
-    <label for="system.sex.value" class="resource-label"
-      >{{localize system.sex.label}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.sex.value"
-        name="system.sex.value"
-        value="{{system.sex.value}}"
-        data-dtype="String"
-      />
+    <div class="cc-ruled-prose-body">
+      {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
     </div>
-  </div>
-  <div class="resource flex-group-center">
-    <label for="system.weight.value" class="resource-label"
-      >{{localize system.weight.label}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.weight.value"
-        name="system.weight.value"
-        value="{{system.weight.value}}"
-        data-dtype="String"
-      />
-    </div>
-  </div>
-  <div class="resource flex-group-center">
-    <label for="system.age.value" class="resource-label"
-      >{{localize system.age.label}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.age.value"
-        name="system.age.value"
-        value="{{system.age.value}}"
-        data-dtype="String"
-      />
-    </div>
-  </div>
-  <div class="resource flex-group-center grid-span-3">
-    <label for="system.language.value" class="resource-label"
-      >{{localize 'TLGCC.language'}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.language.value"
-        name="system.language.value"
-        value="{{system.language.value}}"
-        data-dtype="String"
-      />
-    </div>
-  </div>
-  <div class="resource flex-group-center grid-span-2">
-    <label for="system.origin.value" class="resource-label"
-      >{{localize system.origin.label}}</label
-    >
-    <div class="resource-content flexrow flex-center flex-between">
-      <input
-        type="text"
-        id="system.origin.value"
-        name="system.origin.value"
-        value="{{system.origin.value}}"
-        data-dtype="String"
-      />
-    </div>
-  </div>
-</section>
-<div class="grid grid-2col">
-  <div class="flex-group-left" style="border: 1px black">
-    <h2>{{localize 'TLGCC.Appearance'}}</h2>
-    {{editor system.appearance target="system.appearance" rollData=rollData
-    button=true owner=owner editable=editable}}
-  </div>
-  <div class="flex-group-left">
-    <h2 title="Click the pencil icon at far right to edit.">
-      {{localize 'TLGCC.Notes'}}
-    </h2>
-    {{editor system.biography target="system.biography" rollData=rollData
-    button=true owner=owner editable=editable}}
   </div>
 </div>

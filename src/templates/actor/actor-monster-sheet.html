@@ -1,141 +1,152 @@
 <form autocomplete="off" class="{{cssClass}} {{actor.type}} flexcol">
-  {{!-- Sheet Header --}}
-  <header class="sheet-header">
-    <img class="profile-img" data-edit="img" height="100" src="{{actor.img}}" title="{{actor.name}}" width="100" />
-    <div class="header-fields">
-      <h1 class="charname">
-        <input name="name" placeholder="{{localize 'TLGCC.Name'}}" type="text" value="{{actor.name}}" />
-      </h1>
+  <div class="cc-sheet-body">
 
-      <div class="resources grid grid-5col">
-        <div class="resource flex-group-center">
-          <label class="resource-label" title="{{localize 'TLGCC.MonsterHitDiceHover'}}">{{localize "TLGCC.Level"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="Number" name="system.hitDice.number" type="text" value="{{system.hitDice.number}}" />
-            <input data-dtype="String" name="system.hitDice.size" type="text" value="{{system.hitDice.size}}" />
-            <input data-dtype="Number" name="system.hitDice.mod" type="text" value="{{system.hitDice.mod}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize 'TLGCC.HitPointsAbbr'}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="Number" title="{{localize 'TLGCC.HitPointsCurrent'}}" name="system.hitPoints.value" type="text" value="{{system.hitPoints.value}}" />
-            <span class="sep">/</span> 
-            <input data-dtype="Number" title="{{localize 'TLGCC.HitPointsMax'}}" name="system.hitPoints.max" type="text" value="{{system.hitPoints.max}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label rollable" data-roll-type="monster-save" title="{{localize 'TLGCC.MonsterSavesHover'}}">{{localize "TLGCC.MonsterSaves"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.msaves.value" type="text" value="{{system.msaves.value}}" title="{{localize 'TLGCC.MonsterSavesHover'}}"/>
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.MonsterNumberAppearing"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.numberAppearing.value" type="text" value="{{system.numberAppearing.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.MonsterINT"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.monsterINT.value" type="text" value="{{system.monsterINT.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.MonsterTreasureType"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.treasureType.value" type="text" value="{{system.treasureType.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.ExperiencePointsAbbr"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.xp.value" type="text" value="{{system.xp.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.Alignment"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.alignment.value" type="text" value="{{system.alignment.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.Size"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.size.value" type="text" value="{{system.size.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label">{{localize "TLGCC.MonsterType"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.type.value" type="text" value="{{system.type.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center">
-          <label class="resource-label" title="{{localize 'TLGCC.AttacksTooltip'}}">{{localize "TLGCC.Attacks"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.attacks.value" type="text" value="{{system.attacks.value}}" title="{{system.attacks.value}}" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center" style="grid-column: span 2;">
-          <label class="resource-label" title="{{localize 'TLGCC.BiomeTooltip'}}">{{localize "TLGCC.Biome"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.biome.value" type="text" value="{{system.biome.value}}" title="{{system.biome.value}}" style="width: 100%;" />
-          </div>
-        </div>
-
-        <div class="resource flex-group-center" style="grid-column: span 2;">
-          <label class="resource-label" title="{{localize 'TLGCC.ClimateTooltip'}}">{{localize "TLGCC.Climate"}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input data-dtype="String" name="system.climate.value" type="text" value="{{system.climate.value}}" title="{{system.climate.value}}" style="width: 100%;" />
-          </div>
-        </div>
+    {{!-- Sidebar: vertical tab nav + monster identity strip --}}
+    <div class="cc-sidebar">
+      <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="combat"><span class="cc-tab-glyph">⚔</span> {{localize "TLGCC.CombatTab"}}</a>
+        <a class="item" data-tab="spells"><span class="cc-tab-glyph">✶</span> {{localize "TLGCC.SpellsTab"}}</a>
+        <a class="item" data-tab="description"><span class="cc-tab-glyph">☙</span> {{localize "TLGCC.DescriptionTab"}}</a>
+      </nav>
+      <div class="cc-sidebar-identity">
+        <div class="cc-sidebar-name">{{actor.name}}</div>
+        <div class="cc-sidebar-meta">{{system.size.value}} · {{system.type.value}}</div>
+        <div class="cc-sidebar-meta">HD {{system.hitDice.number}}{{system.hitDice.size}} · {{system.alignment.value}}</div>
       </div>
     </div>
-  </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="combat">{{localize 'TLGCC.CombatTab'}}</a>
-    <a class="item" data-tab="spells">{{localize 'TLGCC.SpellsTab'}}</a>
-    <a class="item" data-tab="description">{{localize 'TLGCC.DescriptionTab'}}</a>
-  </nav>
+    {{!-- Paper card --}}
+    <div class="cc-paper-card" style="position: relative;">
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Combat Tab --}}
-    <div class="tab combat" data-group="primary" data-tab="combat">
-      <section class="grid grid-3col">
-        
-        
-        {{!-- Combat Stats --}}
-        <section class="main grid-span-3">
+      {{!-- Bestiary stamp: decorative rotated corner badge --}}
+      <div class="cc-monster-bestiary-stamp">
+        {{#if actor.id}}Bestiary · No. {{actor.id}}{{else}}Bestiary{{/if}}
+      </div>
+
+      {{!-- Sheet header: portrait + identity + stamp fields --}}
+      <div class="cc-sheet-header">
+        <div class="cc-portrait">
+          <img class="profile-img" data-edit="img" src="{{actor.img}}" title="{{actor.name}}" width="96" height="96" />
+        </div>
+        <div class="cc-identity">
+          <input class="cc-char-name" name="name" type="text" value="{{actor.name}}" />
+          <div class="cc-char-subtitle">{{system.size.value}} · {{system.type.value}}</div>
+          <div class="cc-stamp-row">
+
+            {{!-- HD stamp: three inputs for number, size, mod --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.HitDice"}}</span>
+              <div class="cc-stamp-inputs">
+                <input type="text" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
+                <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" />
+                <input type="text" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number" />
+              </div>
+            </div>
+
+            {{!-- HP stamp: value / max --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.HitPointsAbbr"}}</span>
+              <div class="cc-stamp-inputs">
+                <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number" />
+                <span class="cc-stamp-sep">/</span>
+                <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number" />
+              </div>
+            </div>
+
+            {{!-- SAVES stamp --}}
+            <div class="cc-stamp-field">
+              <a class="rollable cc-stamp-label" data-roll-type="monster-save" title="{{localize 'TLGCC.MonsterSavesHover'}}">{{localize "TLGCC.MonsterSaves"}}</a>
+              <input type="text" name="system.msaves.value" value="{{system.msaves.value}}" data-dtype="String" title="{{localize 'TLGCC.MonsterSavesHover'}}" />
+            </div>
+
+            {{!-- NUMBER stamp --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.MonsterNumberAppearing"}}</span>
+              <input type="text" name="system.numberAppearing.value" value="{{system.numberAppearing.value}}" />
+            </div>
+
+            {{!-- INT stamp --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.MonsterINT"}}</span>
+              <input type="text" name="system.monsterINT.value" value="{{system.monsterINT.value}}" />
+            </div>
+
+            {{!-- DISPOSITION stamp --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.Alignment"}}</span>
+              <input type="text" name="system.alignment.value" value="{{system.alignment.value}}" />
+            </div>
+
+            {{!-- TREASURE stamp --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.MonsterTreasureType"}}</span>
+              <input type="text" name="system.treasureType.value" value="{{system.treasureType.value}}" />
+            </div>
+
+            {{!-- XP stamp --}}
+            <div class="cc-stamp-field">
+              <span class="cc-stamp-label">{{localize "TLGCC.ExperiencePointsAbbr"}}</span>
+              <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="Number" />
+            </div>
+
+          </div>{{!-- .cc-stamp-row --}}
+        </div>{{!-- .cc-identity --}}
+      </div>{{!-- .cc-sheet-header --}}
+
+      {{!-- Tab content panes --}}
+      <section class="sheet-body" data-group="primary">
+
+        {{!-- Combat tab --}}
+        <div class="tab" data-group="primary" data-tab="combat">
           {{> "systems/castles-and-crusades/templates/actor/parts/monster-combat.html"}}
-          {{> "systems/castles-and-crusades/templates/actor/parts/actor-features.html"}}
-        </section>
-      </section>
-    </div>
+        </div>
 
-    {{!-- Spells Tab --}}
-    <div class="tab spells" data-group="primary" data-tab="spells">
-      {{> "systems/castles-and-crusades/templates/actor/parts/actor-spells.html"}}
-    </div>
+        {{!-- Spells tab --}}
+        <div class="tab" data-group="primary" data-tab="spells">
+          {{#unless hasSpells}}
+          <div class="cc-monster-spells-empty">
+            <div class="cc-monster-spells-empty-title">{{localize "TLGCC.NoSpellsKnown"}}</div>
+            <div class="cc-monster-spells-empty-hint">{{localize "TLGCC.NoSpellsHint"}}</div>
+          </div>
+          {{/unless}}
+          {{> "systems/castles-and-crusades/templates/actor/parts/actor-spells.html"}}
+        </div>
 
-    {{!-- Description Tab --}}
-    <div class="tab biography" data-group="primary" data-tab="description">
-      {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
-    </div>
-  </section>
+        {{!-- Description tab --}}
+        <div class="tab cc-monster-desc-tab" data-group="primary" data-tab="description">
+          <div class="cc-monster-desc-tiles">
+            <div class="cc-monster-desc-tile">
+              <span class="cc-stamp-label">{{localize "TLGCC.Biome"}}</span>
+              <input type="text" name="system.biome.value" value="{{system.biome.value}}" />
+            </div>
+            <div class="cc-monster-desc-tile">
+              <span class="cc-stamp-label">{{localize "TLGCC.Climate"}}</span>
+              <input type="text" name="system.climate.value" value="{{system.climate.value}}" />
+            </div>
+            <div class="cc-monster-desc-tile">
+              <span class="cc-stamp-label">{{localize "TLGCC.MonsterType"}}</span>
+              <input type="text" name="system.type.value" value="{{system.type.value}}" />
+            </div>
+            <div class="cc-monster-desc-tile">
+              <span class="cc-stamp-label">{{localize "TLGCC.Size"}}</span>
+              <input type="text" name="system.size.value" value="{{system.size.value}}" />
+            </div>
+          </div>
+          <div class="cc-monster-desc-prose">
+            <div class="cc-ruled-prose">
+              <div class="cc-section-header">
+                <span class="cc-section-title">{{localize "TLGCC.DescriptionTab"}}</span>
+              </div>
+              <div class="cc-ruled-prose-body">
+                {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>{{!-- .sheet-body --}}
+
+    </div>{{!-- .cc-paper-card --}}
+
+  </div>
 </form>

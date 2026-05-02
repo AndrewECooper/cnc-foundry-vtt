@@ -107,6 +107,9 @@ TLGCC.MonsterSanityTooltip: Cuando un personaje se encuentra con este monstruo p
 # Monster Environment and Combat
 TLGCC.Attacks: Ataques
 TLGCC.AttacksTooltip: Lista de ataques naturales y habilidades especiales de combate
+TLGCC.WeaponsNaturalAttacks: Armas y Ataques Naturales
+TLGCC.NoSpellsKnown: No se conocen hechizos.
+TLGCC.NoSpellsHint: Los monstruos lanzadores de hechizos listan los hechizos conocidos agrupados por nivel aquí, con interruptores de preparación y opciones de Lanzar.
 TLGCC.Biome: Bioma
 TLGCC.BiomeTooltip: El tipo general de ecosistema o entorno donde vive este monstruo
 TLGCC.Climate: Clima
@@ -164,6 +167,7 @@ TLGCC.spellsKnownhover: Combinación de todos los hechizos por día + el Bonus d
 # Features
 TLGCC.FeatureTitle: Texto flotante sobre característica
 TLGCC.SpecialAbility: Habilidades Especiales
+TLGCC.SpecialAbilities: Habilidades Especiales
 
 # Effects
 TLGCC.EffectCreate: Crear Efecto
@@ -179,6 +183,7 @@ TLGCC.Notes: Biografía y Notas
 
 # UI Elements
 TLGCC.Add: Añadir
+TLGCC.Actions: Acciones
 TLGCC.Unknown: Desconocido
 TLGCC.Formula: Fórmula de Tirada
 TLGCC.language: Idiomas

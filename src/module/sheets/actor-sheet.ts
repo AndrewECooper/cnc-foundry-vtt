@@ -124,6 +124,7 @@ export class TlgccActorSheet extends ActorSheet<
     context: Record<string, any>,
   ): Promise<void> {
     this._prepareItems(context);
+    context.hasSpells = (context.spells as any[][]).some((level: any[]) => level.length > 0);
     this._prepareActorData(context);
     await this._enrichTextFields(context, ['system.biography']);
   }

@@ -107,6 +107,9 @@ TLGCC.MonsterSanityTooltip: When a character first encounters this monster, they
 # Monster Environment and Combat
 TLGCC.Attacks: Attacks
 TLGCC.AttacksTooltip: List of natural attacks and special combat abilities
+TLGCC.WeaponsNaturalAttacks: Weapons & Natural Attacks
+TLGCC.NoSpellsKnown: No spells known.
+TLGCC.NoSpellsHint: Spellcasting monsters list known spells grouped by level here, with prepared toggles and Cast affordances.
 TLGCC.Biome: Biome
 TLGCC.BiomeTooltip: The general ecosystem or environment type where this monster typically lives
 TLGCC.Climate: Climate
@@ -164,6 +167,7 @@ TLGCC.spellsKnownhover: Combine all spells per day + bonus spells to get this nu
 # Features
 TLGCC.FeatureTitle: Feature Hover Text
 TLGCC.SpecialAbility: Special Abilities
+TLGCC.SpecialAbilities: Special Abilities
 
 # Effects
 TLGCC.EffectCreate: Create Effect
@@ -179,6 +183,7 @@ TLGCC.Notes: Biography and Notes
 
 # UI Elements
 TLGCC.Add: Add
+TLGCC.Actions: Actions
 TLGCC.Unknown: Unknown
 TLGCC.Formula: Roll Formula
 TLGCC.language: Languages

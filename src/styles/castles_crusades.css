@@ -846,6 +846,9 @@
   background-image:
     radial-gradient(ellipse at 20% 30%, rgba(120, 90, 60, 0.4), transparent 70%),
     repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0 2px, transparent 2px 6px);
+  /* Foundry V13: window-content no longer auto-grows children; force form to fill */
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .tlgcc .cc-sheet-body {
@@ -1582,4 +1585,225 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+/* === Monster Sheet === */
+
+.tlgcc .cc-monster-bestiary-stamp {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  transform: rotate(8deg);
+  border: 2px solid var(--cc-accent);
+  color: var(--cc-accent);
+  padding: 3px 10px;
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: rgba(255, 250, 235, 0.4);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tlgcc .cc-monster-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.tlgcc .cc-monster-stat-tile {
+  padding: 6px 4px;
+  text-align: center;
+  background: var(--cc-plain);
+  border: 1px dashed var(--cc-muted);
+  transform: rotate(0.2deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.tlgcc .cc-monster-stat-tile:hover {
+  border-color: var(--cc-accent);
+}
+
+.tlgcc .cc-monster-stat-abbr {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cc-muted);
+}
+
+.tlgcc .cc-monster-stat-value {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.tlgcc .cc-monster-stat-roll {
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+}
+
+.tlgcc .cc-monster-combat-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.tlgcc .cc-monster-combat-tile {
+  background: var(--cc-plain);
+  border: 1px dashed var(--cc-muted);
+  padding: 7px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.tlgcc .cc-monster-combat-tile .cc-stamp-label {
+  display: block;
+}
+
+.tlgcc .cc-monster-combat-tile input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Attacks tile: smaller font for text routine */
+.tlgcc .cc-monster-combat-tile--attacks input {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tlgcc .cc-monster-desc-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.tlgcc .cc-monster-desc-tile {
+  background: var(--cc-plain);
+  border: 1px dashed var(--cc-muted);
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tlgcc .cc-monster-desc-tile input {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--cc-text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.tlgcc .cc-monster-desc-prose {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tlgcc .cc-monster-desc-prose .cc-ruled-prose {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Foundry V13 broke the flex chain that V12 supplied via .window-content > * { flex: 1 }.
+   Force the paper card to be a flex column and the sheet-body section to grow into it
+   so the active description tab (positioned absolutely below) has space to fill. */
+.cc-paper-card {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.cc-paper-card > section.sheet-body,
+.cc-paper-card .sheet-body {
+  position: relative !important;
+  flex: 1 1 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Monster description tab fills the section, then the prose chain stretches to the bottom */
+.cc-monster-desc-tab.active {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+.cc-monster-desc-tab.active .cc-monster-desc-tiles {
+  flex: 0 0 auto;
+}
+
+.cc-monster-desc-tab.active .cc-monster-desc-prose {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-monster-desc-tab.active .cc-ruled-prose {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-monster-desc-tab.active .cc-ruled-prose-body {
+  flex: 1 1 0;
+  min-height: 0;
+  position: relative;
+}
+
+.tlgcc .cc-monster-spells-empty {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.tlgcc .cc-monster-spells-empty-title {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 6px;
+  color: var(--cc-muted);
+}
+
+.tlgcc .cc-monster-spells-empty-hint {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--cc-muted);
 }

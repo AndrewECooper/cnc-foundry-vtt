@@ -163,6 +163,8 @@ TLGCC.SpellLevel: Level
 TLGCC.spellSummary: Spell Summary
 TLGCC.spellsKnown: Spells Known
 TLGCC.spellsKnownhover: Combine all spells per day + bonus spells to get this number
+TLGCC.SpellDescription: Spell Description
+TLGCC.SpellDescriptionAlert: Click the pencil icon at far right to edit. Note — please place full spell data below until we get roll data working.
 
 # Features
 TLGCC.FeatureTitle: Feature Hover Text

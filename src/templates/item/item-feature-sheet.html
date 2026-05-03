@@ -1,57 +1,46 @@
 <form autocomplete="off" class="{{cssClass}}">
-  <header class="sheet-header">
-    <img
-      class="profile-img"
-      data-edit="img"
-      src="{{item.img}}"
-      title="{{item.name}}"
-    />
-    <div class="header-fields">
-      <h1 class="charname">
-        <input
-          name="name"
-          placeholder="{{localize 'TLGCC.Name'}}"
-          type="text"
-          value="{{item.name}}"
-        />
-      </h1>
-      <div class="grid grid-1col">
-        <div class="resource">
-          <label class="resource-label" for="system.formula.value"
-          >{{localize 'TLGCC.Formula'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.formula.value"
-            name="system.formula.value"
-            type="text"
-            value="{{system.formula.value}}"
-          />
-        </div>
-      </div>
-    </div>
-  </header>
+  <div class="cc-item-paper">
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="description">
-      <div class="grid grid-2col">
-        <div class="resource grid-span-2">
-          <label class="resource-label" for="system.feature.value"
-          >{{localize 'TLGCC.FeatureTitle'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.feature.value"
-            name="system.feature.value"
-            type="text"
-            value="{{system.feature.value}}"
-          />
-        </div>
+    {{!-- Header: icon + name + type stamp --}}
+    <div class="cc-item-header">
+      <div class="cc-item-icon">
+        <img class="profile-img" data-edit="img" src="{{item.img}}" title="{{item.name}}" />
       </div>
-      {{editor system.description target="system.description" rollData=rollData
-      button=true owner=owner editable=editable}}
+      <div class="cc-item-identity">
+        <input class="cc-item-name"
+               name="name"
+               type="text"
+               value="{{item.name}}"
+               placeholder="{{localize 'TLGCC.Name'}}" />
+        <span class="cc-type-stamp">{{localize "TYPES.Item.feature"}}</span>
+      </div>
     </div>
-  </section>
+
+    {{!-- Roll Formula --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Formula")
+          name="system.formula.value"
+          value=system.formula.value
+          mono=true
+          width=180}}
+    </div>
+
+    {{!-- Feature Hover Text --}}
+    {{> "systems/castles-and-crusades/templates/item/parts/stamp-multiline.html"
+        label=(localize "TLGCC.FeatureTitle")
+        name="system.feature.value"
+        value=system.feature.value
+        rows=3}}
+
+    {{!-- Description editor --}}
+    <section class="cc-form-section">
+      <div class="cc-form-section-header">{{localize "TLGCC.Notes"}}</div>
+      <div class="cc-form-section-body">
+        {{editor system.description target="system.description" rollData=rollData
+          button=true owner=owner editable=editable}}
+      </div>
+    </section>
+
+  </div>
 </form>

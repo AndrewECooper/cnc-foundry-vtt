@@ -66,7 +66,7 @@
           <tr class="item" data-item-id="{{weapon._id}}">
             <td>
               <img class="cc-item-img" src="{{weapon.img}}" title="{{weapon.name}}" width="24" height="24"/>
-              {{weapon.name}}
+              <a class="cc-item-name-toggle">{{weapon.name}}</a>
             </td>
             <td>
               <div class="cc-attack-btns">
@@ -101,6 +101,19 @@
               </div>
             </td>
           </tr>
+          <tr class="cc-item-detail" data-item-id="{{weapon._id}}">
+            <td colspan="3">
+              <div class="cc-item-detail-stats">
+                {{#if weapon.system.damage.value}}<span><strong>{{localize 'TLGCC.Damage'}}:</strong> {{weapon.system.damage.value}}</span>{{/if}}
+                {{#if weapon.system.bonusAb.value}}<span><strong>{{localize 'TLGCC.BonusAttackBonus'}}:</strong> {{weapon.system.bonusAb.value}}</span>{{/if}}
+                {{#if weapon.system.range.value}}<span><strong>{{localize 'TLGCC.Range'}}:</strong> {{weapon.system.range.value}}</span>{{/if}}
+                {{#if weapon.system.price.value}}<span><strong>{{localize 'TLGCC.Price'}}:</strong> {{weapon.system.price.value}}</span>{{/if}}
+                {{#if weapon.system.weight.value}}<span><strong>{{localize 'TLGCC.Weight'}}:</strong> {{weapon.system.weight.value}}</span>{{/if}}
+                {{#if weapon.system.itemev.value}}<span><strong>{{localize 'TLGCC.ItemEV'}}:</strong> {{weapon.system.itemev.value}}</span>{{/if}}
+              </div>
+              <div class="cc-item-detail-desc">{{{weapon.enrichedDescription}}}</div>
+            </td>
+          </tr>
           {{/each}}
         </tbody>
       </table>
@@ -127,7 +140,7 @@
           <tr class="item" data-item-id="{{armor._id}}">
             <td>
               <img class="cc-item-img" src="{{armor.img}}" title="{{armor.name}}" width="24" height="24"/>
-              {{armor.name}}
+              <a class="cc-item-name-toggle">{{armor.name}}</a>
             </td>
             <td>{{localize armor.system.armorClass.abbr}} +{{armor.system.armorClass.value}}</td>
             <td>
@@ -135,6 +148,17 @@
                 <a class="item-control item-edit" title="{{localize 'Edit Item'}}"><i class="fas fa-edit"></i></a>
                 <a class="item-control item-delete" title="{{localize 'Delete Item'}}"><i class="fas fa-trash"></i></a>
               </div>
+            </td>
+          </tr>
+          <tr class="cc-item-detail" data-item-id="{{armor._id}}">
+            <td colspan="3">
+              <div class="cc-item-detail-stats">
+                {{#if armor.system.armorClass.value}}<span><strong>{{localize 'TLGCC.ArmorClass'}}:</strong> +{{armor.system.armorClass.value}}</span>{{/if}}
+                {{#if armor.system.price.value}}<span><strong>{{localize 'TLGCC.Price'}}:</strong> {{armor.system.price.value}}</span>{{/if}}
+                {{#if armor.system.weight.value}}<span><strong>{{localize 'TLGCC.Weight'}}:</strong> {{armor.system.weight.value}}</span>{{/if}}
+                {{#if armor.system.itemev.value}}<span><strong>{{localize 'TLGCC.ItemEV'}}:</strong> {{armor.system.itemev.value}}</span>{{/if}}
+              </div>
+              <div class="cc-item-detail-desc">{{{armor.enrichedDescription}}}</div>
             </td>
           </tr>
           {{/each}}

@@ -200,3 +200,6 @@ TLGCC.Settings.LogLevel:
 TLGCC.Settings.UseMinimalStatusEffects:
   Name: Use Minimal Status Effects
   Hint: If enabled, only shows 'Dead' and 'Unconscious' status effect icons on the token HUD
+TLGCC.Settings.RerollInitiativeEachRound:
+  Name: Reroll Initiative Each Round
+  Hint: If enabled, initiative is automatically rerolled for all combatants at the start of each new round, matching the Castles & Crusades rules. Disable to use Foundry's default fixed-order behavior.

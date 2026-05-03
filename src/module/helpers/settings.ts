@@ -104,6 +104,16 @@ export default class Settings {
       default: false,
       onChange: async (value: boolean) => await Settings.updateStatusEffects(value)
     });
+
+    // @ts-ignore
+    game.settings.register(TLGCC.SYSTEM_ID, 'rerollInitiativeEachRound', {
+      name: 'TLGCC.Settings.RerollInitiativeEachRound.Name',
+      hint: 'TLGCC.Settings.RerollInitiativeEachRound.Hint',
+      scope: 'world',
+      config: true,
+      type: Boolean,
+      default: true
+    });
   }
 
   // Getters with simplified error handling
@@ -125,5 +135,10 @@ export default class Settings {
   static get useMinimalStatusEffects(): boolean {
     // @ts-ignore
     return game.settings.get(TLGCC.SYSTEM_ID, 'useMinimalStatusEffects') ?? false;
+  }
+
+  static get rerollInitiativeEachRound(): boolean {
+    // @ts-ignore
+    return game.settings.get(TLGCC.SYSTEM_ID, 'rerollInitiativeEachRound') ?? true;
   }
 }

@@ -1439,6 +1439,11 @@
   color: var(--cc-muted);
 }
 
+/* Align the PREPARED column header over the centered prepared-count cell. */
+.tlgcc .cc-spell-table th.cc-spell-prepared-col {
+  text-align: center;
+}
+
 .tlgcc .cc-ruled-prose {
   background: var(--cc-plain);
   border: 1px solid var(--cc-muted);
@@ -2157,4 +2162,101 @@
 .application.tlgcc .window-header a,
 .application.tlgcc .window-header i {
   color: var(--cc-title-bar-text);
+}
+
+/* Header stamp rows: stack two equal-width grid rows so each field
+   has enough room for its label + input. Used on the actor/monster
+   sheet headers when there are too many fields to fit in one line. */
+.tlgcc .cc-stamp-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tlgcc .cc-stamp-row--quad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.tlgcc .cc-stamp-row--quad .cc-stamp-field {
+  min-width: 0;
+}
+
+/* Inline detail rows: clickable item names expand a description /
+   stats panel beneath the item row. */
+.tlgcc .cc-item-name-toggle {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tlgcc .cc-item-name-toggle:hover {
+  color: var(--cc-accent);
+}
+
+.tlgcc tr.cc-item-detail {
+  display: none;
+}
+
+.tlgcc tr.cc-item-detail.cc-expanded {
+  display: table-row;
+}
+
+.tlgcc tr.cc-item-detail > td {
+  background: rgba(255, 255, 255, 0.35);
+  border-top: 1px dashed var(--cc-card-line);
+  padding: 8px 12px;
+}
+
+.tlgcc .cc-item-detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-bottom: 6px;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 11px;
+  color: var(--cc-text);
+}
+
+.tlgcc .cc-item-detail-stats > span > strong {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+  margin-right: 4px;
+}
+
+.tlgcc .cc-item-detail-desc {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--cc-text);
+}
+
+.tlgcc .cc-item-detail-desc p {
+  margin: 0 0 6px;
+}
+
+/* Equipment table totals row */
+.tlgcc .cc-equipment-totals {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 6px;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+}
+
+.tlgcc .cc-equipment-totals strong {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--cc-text);
+  margin-left: 4px;
 }

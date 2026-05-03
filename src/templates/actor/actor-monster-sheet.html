@@ -31,65 +31,67 @@
         <div class="cc-identity">
           <input class="cc-char-name" name="name" type="text" value="{{actor.name}}" />
           <div class="cc-char-subtitle">{{system.size.value}} · {{system.type.value}}</div>
-          <div class="cc-stamp-row">
+          <div class="cc-stamp-rows">
 
-            {{!-- HD stamp: three inputs for number, size, mod --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.HitDice"}}</span>
-              <div class="cc-stamp-inputs">
-                <input type="text" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
-                <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" />
-                <input type="text" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number" />
+            {{!-- Row 1: HD, HP, Saves, XP --}}
+            <div class="cc-stamp-row cc-stamp-row--quad">
+
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.HitDice"}}</span>
+                <div class="cc-stamp-inputs">
+                  <input type="text" name="system.hitDice.number" value="{{system.hitDice.number}}" data-dtype="Number" />
+                  <input type="text" name="system.hitDice.size" value="{{system.hitDice.size}}" />
+                  <input type="text" name="system.hitDice.mod" value="{{system.hitDice.mod}}" data-dtype="Number" />
+                </div>
               </div>
-            </div>
 
-            {{!-- HP stamp: value / max --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.HitPointsAbbr"}}</span>
-              <div class="cc-stamp-inputs">
-                <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number" />
-                <span class="cc-stamp-sep">/</span>
-                <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number" />
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.HitPointsAbbr"}}</span>
+                <div class="cc-stamp-inputs">
+                  <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number" />
+                  <span class="cc-stamp-sep">/</span>
+                  <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number" />
+                </div>
               </div>
+
+              <div class="cc-stamp-field">
+                <a class="rollable cc-stamp-label" data-roll-type="monster-save" title="{{localize 'TLGCC.MonsterSavesHover'}}">{{localize "TLGCC.MonsterSaves"}}</a>
+                <input type="text" name="system.msaves.value" value="{{system.msaves.value}}" data-dtype="String" title="{{localize 'TLGCC.MonsterSavesHover'}}" />
+              </div>
+
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.ExperiencePointsAbbr"}}</span>
+                <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="Number" />
+              </div>
+
             </div>
 
-            {{!-- SAVES stamp --}}
-            <div class="cc-stamp-field">
-              <a class="rollable cc-stamp-label" data-roll-type="monster-save" title="{{localize 'TLGCC.MonsterSavesHover'}}">{{localize "TLGCC.MonsterSaves"}}</a>
-              <input type="text" name="system.msaves.value" value="{{system.msaves.value}}" data-dtype="String" title="{{localize 'TLGCC.MonsterSavesHover'}}" />
+            {{!-- Row 2: Number, Int, Disposition, Treasure --}}
+            <div class="cc-stamp-row cc-stamp-row--quad">
+
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.MonsterNumberAppearing"}}</span>
+                <input type="text" name="system.numberAppearing.value" value="{{system.numberAppearing.value}}" />
+              </div>
+
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.MonsterINT"}}</span>
+                <input type="text" name="system.monsterINT.value" value="{{system.monsterINT.value}}" />
+              </div>
+
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.Alignment"}}</span>
+                <input type="text" name="system.alignment.value" value="{{system.alignment.value}}" />
+              </div>
+
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize "TLGCC.MonsterTreasureType"}}</span>
+                <input type="text" name="system.treasureType.value" value="{{system.treasureType.value}}" />
+              </div>
+
             </div>
 
-            {{!-- NUMBER stamp --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.MonsterNumberAppearing"}}</span>
-              <input type="text" name="system.numberAppearing.value" value="{{system.numberAppearing.value}}" />
-            </div>
-
-            {{!-- INT stamp --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.MonsterINT"}}</span>
-              <input type="text" name="system.monsterINT.value" value="{{system.monsterINT.value}}" />
-            </div>
-
-            {{!-- DISPOSITION stamp --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.Alignment"}}</span>
-              <input type="text" name="system.alignment.value" value="{{system.alignment.value}}" />
-            </div>
-
-            {{!-- TREASURE stamp --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.MonsterTreasureType"}}</span>
-              <input type="text" name="system.treasureType.value" value="{{system.treasureType.value}}" />
-            </div>
-
-            {{!-- XP stamp --}}
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize "TLGCC.ExperiencePointsAbbr"}}</span>
-              <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="Number" />
-            </div>
-
-          </div>{{!-- .cc-stamp-row --}}
+          </div>{{!-- .cc-stamp-rows --}}
         </div>{{!-- .cc-identity --}}
       </div>{{!-- .cc-sheet-header --}}
 

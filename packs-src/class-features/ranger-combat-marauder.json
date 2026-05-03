@@ -1,0 +1,24 @@
+{
+  "_id": "c00570478dc5ebee",
+  "_key": "!items!c00570478dc5ebee",
+  "name": "Combat Marauder",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p>Rangers possess an extraordinary ability to combat their most common foes, humanoids and giants, due to intense training and study of their enemy's fighting techniques. When fighting humanoids (bugbears, gnolls, goblins, hobgoblins, kobolds, orcs and the like) or giants (giants, ogres and the like), a ranger inflicts extra damage. This damage bonus is +1 at 1st level, with an additional +1 gained at every level beyond first. For example, a 5th level ranger would inflict an additional 5 hp of damage for each successful hit against a humanoid or giant. The use of this ability is dependent upon the armor worn. Wearing armors other than those allowed reduces the ranger's mobility and swiftness of arm such that he cannot effectively use this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

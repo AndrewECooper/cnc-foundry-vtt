@@ -1,0 +1,24 @@
+{
+  "_id": "1c437d4e8aa32422",
+  "_key": "!items!1c437d4e8aa32422",
+  "name": "Traps",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Intelligence</em></p><p>An assassin may use this to do one of the following: find, disable or set traps. Each use requires a separate attribute check and each check may be made only once in a given circumstance.</p><p>To find a trap, an assassin spends time intently studying and searching an area to deduce possible trap locations. It takes one round to locate a trap in a specific area such as a lock or a doorknob, and one minute to locate a trap in a 10 by 10 foot area. A successful check indicates the assassin finds one trap, if any are present. The trap discovered is the simplest or most obvious trap in the area. If multiple traps are in an area, multiple successful checks are required to find them all. An assassin can find magical traps with this ability, although it may be much more difficult than finding mundane traps. The Castle Keeper determines any penalties to the check basing those penalties on the level or hit dice of those who set them.</p><p>To disable a trap, an assassin must first know its location. Once a trap is located, a successful check means the assassin has disarmed the trap. The attempt can only be made once and failure indicates that the assassin set off the trap. An assassin can disarm a magic trap, although it may be much more difficult than disarming a mundane trap. In most cases, assassin's tools are needed to disarm a trap. Generally, it takes 1d4 rounds to disarm a trap, depending on its complexity.</p><p>To set a trap, or to reset a previously disabled trap, an assassin must make a successful traps check. If an assassin is resetting a trap that they previously disabled, the assassin gains a +5 bonus to the check. The amount of time required to set or reset a trap depends on the complexity of the trap, typically taking 1d4 rounds.</p><p>Locating traps is not affected by the armor worn, however, disabling and setting traps is affected by wearing armor not on the assassin armor list.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

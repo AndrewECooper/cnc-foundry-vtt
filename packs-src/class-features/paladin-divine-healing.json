@@ -1,0 +1,24 @@
+{
+  "_id": "227626eac012e1f4",
+  "_key": "!items!227626eac012e1f4",
+  "name": "Divine Healing",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>At 12th level, a paladin can call upon his deity to aid those in need of healing. Divine healing enables the character to wipe away disease and injury. It completely cures all diseases, blindness, deafness, hit point damage and all temporary ability damage. It neutralizes poisons in the subject's system, so that no additional damage or effects are suffered. It dispels the effects of a feeblemind spell. It cures those mental disorders caused by spells or injury to the brain. Only a single application of the ability is needed to simultaneously achieve all these effects. The ability does not remove negative levels, restore permanently drained levels or restore permanently drained ability scores. The paladin can use the ability once per week.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "9594d9cd300e07bb",
+  "_key": "!items!9594d9cd300e07bb",
+  "name": "Divine Health",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>The paladin is immune to all diseases, of any origin.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

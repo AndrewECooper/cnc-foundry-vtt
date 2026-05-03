@@ -1,0 +1,24 @@
+{
+  "_id": "401e72c59550be67",
+  "_key": "!items!401e72c59550be67",
+  "name": "Call-To-Arms",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p>At 10th level, a knight reaches a level of renown that allows him to attract followers to his cause. By establishing a stronghold, a knight can attract 2d10 followers of 0 level every month. For every 40 followers that flock to the knight's standard, a 1st level knight heeds the call as well. When 80 followers have been attracted, a knight of at least 5th level is attracted. This cycle repeats until the knight can no longer pay for the upkeep of his followers. Thus, when 120 followers are reached, another 1st level knight comes, and when 160 followers are reached, another 5th level knight arrives.</p><p>Followers must be supported or they leave. 0 level followers require 2gp per month and 1st level knights cost 100 gp per month. Every knight of a higher level requires 100 gp per level per month.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

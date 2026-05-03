@@ -1,0 +1,24 @@
+{
+  "_id": "4eb989c1992baca5",
+  "_key": "!items!4eb989c1992baca5",
+  "name": "Iron Mind",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>At 9th level, a monk gains a +3 bonus to saving throws against confusion, charm, fear, and spells that affect the mind. The bonus increases to +4 at 11th level, and +5 at 14th level.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

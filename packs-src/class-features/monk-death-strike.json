@@ -1,0 +1,24 @@
+{
+  "_id": "d0152f8c67f60dc7",
+  "_key": "!items!d0152f8c67f60dc7",
+  "name": "Death Strike",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>At 10th level, a monk gains a fearsome attack capable of dealing death with a single blow. The monk can use this attack once per week. The attack must be announced before an attack roll is made. The monk must be of higher level than the target, or have more levels than the target's hit dice. If the monk successfully deals damage with the attack, the death strike succeeds and unless the victim makes a constitution check, the victim is immediately slain.</p><p>At 12th level, after a successful death strike, the monk can choose to delay the victim's death by up to 1 round per level. The monk merely wills the target to die at any point within the alloted time. However, if the monk wishes, the monk need not inflict death on his victim. Instead, the monk can release the victim from the death sentence upon a successful touch attack. For example, a 12th level monk successfully strikes a 5th level fighter. The monk can will the fighter to die any time within the following twelve rounds. Or, the monk can release the fighter from the death strike by a successful touch attack.</p><p>The death strike has no effect on undead, oozes, elementals or creatures that can only be struck by magic weapons, unless the monk is able to hit the creature with the iron fists ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

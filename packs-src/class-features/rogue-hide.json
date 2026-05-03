@@ -1,0 +1,24 @@
+{
+  "_id": "9c683000b5aaffa9",
+  "_key": "!items!9c683000b5aaffa9",
+  "name": "Hide",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p><em>Attribute Check: Dexterity</em></p><p>Rogues use this ability to conceal themselves from others. A successful check means that the rogue is hidden so well as to be almost invisible. The rogue can move up to one-half normal speed and remain hidden. Hide checks suffer no penalty in this circumstance. At more than one-half and up to full speed, the character suffers a -5 penalty to the check to remain hidden. It's practically impossible (-20 penalty) to hide while running or charging.</p><p>If the character is being observed, even casually, they cannot hide. If observers are momentarily distracted however, the character can attempt to hide. While the observer averts its attention from the character, the character can attempt to get to a hiding place. This check, however, is at a -10 penalty because the character has to move quickly to the hiding place. A rogue cannot hide if there is nothing to hide behind or conceal oneself with. Deep shadows can count as concealment at the Castle Keeper's discretion.</p><p>Rogues cannot hide and move silently at the same time until they reach 3rd level. At this level and beyond, a rogue can attempt both but must make a successful conceal and move silent check at -5. In this case, movement is reduced to one quarter the normal movement rate.</p><p>Wearing armor not on the rogue armor list affects this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

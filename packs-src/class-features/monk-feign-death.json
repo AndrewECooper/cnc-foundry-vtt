@@ -1,0 +1,24 @@
+{
+  "_id": "32c52eba21885d1b",
+  "_key": "!items!32c52eba21885d1b",
+  "name": "Feign Death",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>At 6th level, a monk has mastery over vital bodily functions, and can slow them until he or she appears to be dead. The monk may maintain this state of feigned death for a number of minutes equal to the character's level.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

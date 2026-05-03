@@ -1,0 +1,24 @@
+{
+  "_id": "4603b9805d39b6f2",
+  "_key": "!items!4603b9805d39b6f2",
+  "name": "Bonus Languages",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Druid</em></p><p>Druids have a secret language used for communicating with one another. They are forbidden from teaching this language to any but their brethren.</p><p>Additionally, if a druid has a high enough intelligence to learn an additional language, the following languages are available to them: aquan, auran, elf, fey, giant, gnome, sylvan and terran. The druid must have lived in or near a community of those whose language they seek to learn.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "9cbbaab55289cc7c",
+  "_key": "!items!9cbbaab55289cc7c",
+  "name": "Woodland Stride",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Druid</em></p><p>At 3rd level, druids gain the ability to move through natural thorns, briars, overgrown areas and similar terrain at normal speed and without suffering damage or other impairment. When doing so, druids leave no trail in the natural surroundings and cannot be tracked. However, thorns, briars and overgrown areas that are enchanted or magically manipulated to impede motion still affect druids.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

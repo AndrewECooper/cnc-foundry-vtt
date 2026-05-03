@@ -1,0 +1,24 @@
+{
+  "_id": "191e15d8665d93b9",
+  "_key": "!items!191e15d8665d93b9",
+  "name": "Decipher Script",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Bard</em></p><p><em>Attribute Check: Intelligence</em></p><p>Bards often need to decipher and interpret legends and secret writings to acquire more knowledge. This ability allows the bard to decipher writing in an unfamiliar language, a message written in an incomplete or archaic form or a message written in code. If the check succeeds, the character understands the general content of a piece of writing. It takes ten minutes to decipher each page of a script. A decipher script check may be made only once per writing. A bard may use this ability to decipher and then use an arcane scroll, as a wizard or illusionist would, if a successful check is made at a penalty of –10. This ability may not be used to decipher divine scrolls.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

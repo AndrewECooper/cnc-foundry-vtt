@@ -1,0 +1,24 @@
+{
+  "_id": "8ea8ec8cde752cde",
+  "_key": "!items!8ea8ec8cde752cde",
+  "name": "Detect Evil",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>Beginning at first level, paladins have the ability to detect evil in the same manner as the spell. However, this ability is innate and no spell casting is involved. A paladin simply concentrates for one round on an area or individual within 60 feet to use the ability. The paladin must face toward the area or individual being examined. The paladin can do this as often as desired, but must be able to concentrate for at least one round to do so.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

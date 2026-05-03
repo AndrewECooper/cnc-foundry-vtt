@@ -1,0 +1,24 @@
+{
+  "_id": "72e1774e966101d8",
+  "_key": "!items!72e1774e966101d8",
+  "name": "Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Illusionist</em></p><p>An illusionist casts arcane spells like a wizard; however, illusion magic is inherently different and requires a unique spell list. Like a wizard though, an illusionist is limited to a certain number of spells of each spell level per day. The Illusionist Spells Per Day Table shows the number of spells per day an illusionist may cast. An illusionist must prepare spells before casting them. This is done by studying spells from a spell book. While studying, the illusionist decides which spells to prepare. Spell memorization and descriptions are covered in detail in the Magic section (page 68).</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

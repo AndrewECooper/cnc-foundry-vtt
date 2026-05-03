@@ -1,0 +1,24 @@
+{
+  "_id": "ff331c20a1d8d511",
+  "_key": "!items!ff331c20a1d8d511",
+  "name": "Move Silently",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Dexterity</em></p><p>The ranger is able to move silently in wilderness areas with a successful dexterity check. The ranger can move up to one-half the character's normal speed at no penalty. At more than one-half and up to the character's full speed, the character suffers a -5 penalty. It's practically impossible (-20 penalty) to move silently while running or charging. Rangers cannot perform this ability indoors. See conceal above for information on moving silently while attempting to conceal oneself.</p><p>This ability cannot be used if armors other than those allowed are worn.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

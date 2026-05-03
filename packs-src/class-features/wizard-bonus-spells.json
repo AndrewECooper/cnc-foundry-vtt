@@ -1,0 +1,24 @@
+{
+  "_id": "543b45a9295bd558",
+  "_key": "!items!543b45a9295bd558",
+  "name": "Bonus Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Wizard</em></p><p>With a high intelligence score, a wizard gains bonus spells. If the wizard has an intelligence of between 13-15, they can memorize an extra 1st level spell. If the intelligence score is 16-17 or higher, the wizard can memorize an extra 2nd level spell, and if 18-19 or higher, the wizard can memorize an extra 3rd level spell. Bonus spells can only be acquired if the wizard is at a high enough level to cast them. Bonus spells are cumulative.</p><blockquote><p>For example, a 4th level wizard with an 18 intelligence receives four 0 level spells, four 1st level spells, and three 2nd level spells. No bonus 3rd level spell is acquired until the wizard reaches 5th level.</p></blockquote>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "c6a2da86ab43fd91",
+  "_key": "!items!c6a2da86ab43fd91",
+  "name": "Whirlwind Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p>At 4th level, a barbarian's combat sense and athleticism merge in a fearsome and deadly ability. With this ability, the barbarian can combat multiple enemies surrounding him. The barbarian must announce use of the ability before attacking and he cannot retreat before using it. The whirlwind attack is usable only once per combat encounter and replaces their normal combat action. When used, the barbarian gains an attack roll against two opponents as long as those enemies are within 5 feet or less of the barbarian and possess no more than one-half of the barbarian's hit dice. For example, two second level fighters attempt to jump a barbarian in an alley; the barbarian may make a whirlwind attack, gaining one attack against each of the fighters. The number of foes subject to the whirlwind attack increases as the barbarian rises in levels. At 6th level the barbarian can attack up to 3 opponents, and at 10th level a barbarian can attack 4 opponents. The ability does not progress beyond 10th level.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

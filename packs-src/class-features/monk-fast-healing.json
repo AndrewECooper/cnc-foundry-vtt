@@ -1,0 +1,24 @@
+{
+  "_id": "0637bc11621a160e",
+  "_key": "!items!0637bc11621a160e",
+  "name": "Fast Healing",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>At 7th level, a monk's body naturally heals faster than normal. Each day, a monk heals 1d4+1 hit point per level as long as rest, sleep and meditation is possible. The monk must be in a calm environment, under no physical duress or mental stress, able to sleep undisturbed for 12 hours, and generally rest without exertion for another 6 hours. Food and water should be readily available.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "9b6c98a73b9066a1",
+  "_key": "!items!9b6c98a73b9066a1",
+  "name": "Weapon Selection",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Cleric</em></p><p>The cleric is only allowed to use certain weapons. They can, if they choose, pick a weapon off the list that is identical to the major weapon in use by the deity which they worship. If no single deity is worshipped and a pantheon is instead worshipped, weapon selection is limited to the pantheon's major deities or the deity most closely associated with the activities the cleric intends to undertake.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

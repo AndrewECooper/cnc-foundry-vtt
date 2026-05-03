@@ -1,0 +1,24 @@
+{
+  "_id": "0d588d1d17d09b83",
+  "_key": "!items!0d588d1d17d09b83",
+  "name": "Horsemanship",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p><em>Attribute Check: Dexterity</em></p><p>Knights are trained in mounted combat and are familiar with all types of horses, from mounts used for riding to heavy war horses. Without the need for an attribute check, knights can saddle, mount, ride and dismount; perform simple leaps and obstacle maneuvers (no more than 3 feet in height and move around small items such as barrels); fight from a mount during combat (melee and ranged) without penalty; control the mount in combat; guide a mount with the knees; and stay in the saddle when a mount rears or bolts. When viewing a horse or a group of mounts, knights can determine the strengths and weaknesses of each horse, and can generally pick out the strongest, fastest or all-around best horse. When fighting from a war-trained mount (light to heavy war horse), a knight can direct the mount to attack and still make his or her attack normally.</p><p>With a successful check, and by foregoing any attack or other action, knights may direct their mounts to perform the following actions while mounted: cover, deflect, fall softly, leap and charge.</p><p><strong>Cover:</strong> A knight can drop and hang alongside a mount, using it as three-fourth's cover.</p><p>This grants a +6 bonus to the knight's armor class from those on the opposite side of the horse. The knight cannot attack or be holding anything while using this ability.</p><p><strong>Deflect:</strong> This entails the mount being moved between the opponent and the knight or positioned to offer maximum cover for the knight, while at the same time allowing the mount to avoid blows. This maneuver gives a +4 bonus to the knight's armor class and a +2 bonus to the mount's armor class.</p><p><strong>Fall Softly:</strong> A knight can attempt to take no damage after falling from a mount, by rolling to the side or leaping off, including when the mount itself falls. A character takes 1d6 points of falling damage on any failed attribute check.</p><p><strong>Leap:</strong> The knight may direct a mount to leap obstacles as part of its movement. The obstacles jumped can be no taller than 2/3rds. the height of the horse.</p><p><strong>Charge:</strong> A knight is well trained in the use of a lance. When fighting from a mount and charging, a knight inflicts triple damage upon a successful hit when wielding a lance.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

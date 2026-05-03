@@ -1,0 +1,24 @@
+{
+  "_id": "a73f962c68abae7b",
+  "_key": "!items!a73f962c68abae7b",
+  "name": "Fascinate",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Bard</em></p><p>At 4th level, a bard gains the ability to place a single creature into a trance. The creature to be fascinated must be able to see and hear the bard, and the bard must also see the creature. The creature must be able to pay attention to the bard. The distraction of a nearby combat or other danger will prevent the ability from working. The Bard can use music, poetry, chanting, speech, whistling, playing an instrument or any combination of the above to produce the intended effect on the creature, as long as some verbal performance is included. Bards can use this ability three times per day, and can maintain the effect for a number of rounds equal to their level.</p><p>When a bard uses this ability, the target makes a charisma saving throw to resist the bard's spellsong. If the saving throw fails, the creature sits quietly and listens to the bard for up to the full duration of the effect. While using this ability, a bard must concentrate, as if casting or maintaining a spell. While fascinated, the target is treated as if prone and also suffers a -4 penalty to all saving throws and a -5 to armor class. If the creature's saving throw succeeds, the bard cannot attempt to fascinate that creature again for 24 hours. Any threat that is obvious to the fascinated creature, such as the casting of a spell, drawing of a sword or aiming of a weapon automatically breaks the effect.</p><p>As the bard rises in levels, the power of the fascination increases as well, allowing the bard to further influence the listener through suggestion. These specialized uses of the fascinate ability can only be performed on creatures who are under the influence of the bard's fascinate ability. At 5th level, a bard may attempt a charm person on a fascinated creature. At 8th level, a bard may attempt to implant a suggestion into a fascinated creature. At 12th level, a bard may attempt antipathy/ sympathy on a fascinated creature. At 18th level, a bard may attempt a mass suggestion on fascinated creatures. In each case, the creature receives a saving throw to attempt to resist the spellsong.</p><p>As the bard gains experience, the number of creatures that can be affected by the fascination, or one of its specialized uses, increases. The number of creatures is equal to two fewer than the level of the bard. For example, a 4th level bard can fascinate 2 creatures, a 6th level bard can fascinate 4 creatures, and a 12th level bard can fascinate 10 creatures.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

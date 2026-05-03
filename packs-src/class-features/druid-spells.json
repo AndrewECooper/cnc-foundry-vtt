@@ -1,0 +1,24 @@
+{
+  "_id": "f923e66bb4284e58",
+  "_key": "!items!f923e66bb4284e58",
+  "name": "Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Druid</em></p><p>A druid casts divine spells. The spells available are listed on the druid spell list. Each druid can cast a limited number of spells from each spell level per day. The Cleric and Druid Spells Per Day Table (page 28) shows the number of spells per day a druid may cast for each spell level. Druids prepare and cast spells by praying for them. This process is covered in greater detail in the Magic section.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

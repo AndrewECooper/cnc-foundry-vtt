@@ -1,0 +1,24 @@
+{
+  "_id": "9ed44badd372b762",
+  "_key": "!items!9ed44badd372b762",
+  "name": "Favored Enemy",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p>At 6th level, a ranger chooses one specific type of creature as a favored enemy. For example, a ranger might choose goblin, or gnoll or hill giant. The Castle Keeper should require the player to choose an enemy that is consistent with the past history and storylines involving the character; ideally, a type of creature that the character has encountered and fought on several occasions in past adventures.</p><p>Knowledge of the favored enemy confers numerous bonuses to the ranger's ability checks. When combating a favored enemy, the ranger gains additional combat bonuses due to an advanced fighting style developed through the experience of repeatedly fighting that type of creature. The ranger gains a +2 bonus to hit against a favored enemy. The ranger also receives a +2 bonus to armor class when fighting a favored enemy. Further, when tracking the favored enemy, the ranger receives a +2 bonus to the tracking check. The ranger is also able to neutralize poisons of the favored enemy, whether manufactured or natural.</p><p>The combat bonus of this ability cannot be used if armors other than those allowed are worn.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

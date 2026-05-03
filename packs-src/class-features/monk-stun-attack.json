@@ -1,0 +1,24 @@
+{
+  "_id": "db18258bd934583c",
+  "_key": "!items!db18258bd934583c",
+  "name": "Stun Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>Monks can focus a hand-to-hand attack so as to stun an opponent. The monk must declare use of the stun attack before making the attack roll. A foe successfully struck by the attack must make a constitution saving throw or be stunned and unable to act for 1d4 rounds. Those struck by a stun attack take normal unarmed attack damage. The monk can use this ability once per round, but but no more than once per level per day. A missed attack counts against the monk's daily limitation of use of the ability. The first stun attack must be a primary attack (be it by hand or weapon).</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "71e7dfaf1c9dd70c",
+  "_key": "!items!71e7dfaf1c9dd70c",
+  "name": "Sneak Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p>At 4th level, a rogue has learned to adapt back attack skills to more general situations. When an opponent or victim is aware of the rogue, but unsuspecting of an attack, a rogue can use the sneak attack ability. For example, a rogue could be having a conversation with a potential victim while hiding a poisoned stiletto up his sleeve, intending to strike once a piece of vital information is learned. Or, a rogue could be perched in the shadows of a tree, waiting for the perfect opportunity to fire a crossbow. Unlike the back attack, sneak attack situations do not necessarily require a previously successful hide or move silently check, although the Castle Keeper could require success in one or both, depending upon the circumstances if necessary. The opponent is not allowed to roll for initiative until the round following the attack.</p><p>A rogue making a sneak attack gains a +2 bonus to hit and a +4 bonus to damage. Ranged weapons can be used for sneak attacks if the target is within 30 feet. A rogue cannot aim with deadly accuracy from beyond that range. A sneak attack cannot be combined with back attack.</p><p>Wearing armor not on the rogue armor list affects this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

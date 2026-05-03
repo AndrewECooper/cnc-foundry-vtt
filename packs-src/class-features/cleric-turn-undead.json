@@ -1,0 +1,24 @@
+{
+  "_id": "a44f5c960b4bb3dc",
+  "_key": "!items!a44f5c960b4bb3dc",
+  "name": "Turn Undead",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Cleric</em></p><p><em>Attribute Check: Wisdom</em></p><p>A cleric has the ability to turn, or even destroy, undead monsters. To turn undead, a cleric must declare the attempt as an attack and then make a successful wisdom attribute check. The character must display a holy symbol toward the undead and utter a prayer, chant or other invocation of the character's deity. Turn undead is considered a special attack and takes one round. Turn undead has a maximum range of 60 feet.</p><p>Turning undead consists of channelling divine power. The ability to channel divine power is measured by the cleric's own willpower. Accordingly, charisma, not wisdom, affects the number of undead creatures that are turned with a successful turn undead check. In most cases, the number of undead turned will be 1d12 plus the cleric's charisma modifier. When a cleric is five or more levels higher than the undead being turned, the undead are instead destroyed.</p><p>Evil clerics may, instead of turning undead, control them. An evil cleric must be at least five levels higher than the hit dice of the undead sought to be controlled. Evil clerics can also turn paladins.</p><p>Turn undead is covered in greater detail in <em>Turning Undead</em>, page 180.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

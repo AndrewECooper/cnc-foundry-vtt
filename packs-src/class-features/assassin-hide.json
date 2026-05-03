@@ -1,0 +1,24 @@
+{
+  "_id": "887fce7c1ceecc73",
+  "_key": "!items!887fce7c1ceecc73",
+  "name": "Hide",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Dexterity</em></p><p>Assassins use this ability to conceal themselves from others. A successful check means that the assassin is hidden so well as to be almost invisible. The assassin can move up to one-half normal speed and remain hidden. Hide checks suffer no penalty in this circumstance. At more than one-half and up to full speed, the character suffers a -5 penalty to the check to remain hidden. It's practically impossible (-20 penalty) to hide while running or charging.</p><p>If the character is being observed, even casually, they can't hide. If observers are momentarily distracted however, the character can attempt to hide. While the observer averts its attention from the character, the character can attempt to get to a hiding place. This check, however, is at a –10 penalty because the character has to move quickly to the hiding place. An assassin cannot hide if there is nothing to hide behind or conceal oneself with. Deep shadows can count as concealment at the Castle Keeper's discretion.</p><p>Assassins cannot hide and move silently at the same time until they reach 3rd level. At this level and beyond, an assassin can attempt both but must make a successful conceal and move silent check at -5. In this case, movement is reduced to one quarter the normal movement rate.</p><p>This ability is affected by wearing armor not on the assassin armor list.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

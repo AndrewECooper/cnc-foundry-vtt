@@ -1,0 +1,24 @@
+{
+  "_id": "daf48ec7b01d5269",
+  "_key": "!items!daf48ec7b01d5269",
+  "name": "Back Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p>A rogue normally avoids face-to-face combat if possible, preferring instead to use stealth to catch an opponent unaware. A rogue able to attack an opponent from the rear, who is unaware of the rogue's presence, gains a bonus to hit and to damage. To catch an opponent unaware, a rogue must make a successful move silently check to sneak up behind the foe, or make a successful hide check while behind the opponent. A rogue that succeeds in one or the other of these can make a back attack at a +4 bonus to hit. A successful hit inflicts double the normal damage.</p><p>When making a back attack, a rogue must use a close-quarters melee weapon. This weapon must be shorter than the character's arm. A rogue can only use this attack on creatures with a discernible back. The rogue must be able to see the target well enough to pick out a vital spot, and then must be able to reach it.</p><p>As the rogue gains experience, the damage inflicted increases. At 5th level, a back attack deals triple damage, and at 9th level a back attack inflicts quadruple damage. A back attack cannot be combined with the sneak attack ability.</p><p>Wearing armor not on the rogue armor list affects this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

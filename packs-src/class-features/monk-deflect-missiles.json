@@ -1,0 +1,24 @@
+{
+  "_id": "a4d4a6f0b10ad94c",
+  "_key": "!items!a4d4a6f0b10ad94c",
+  "name": "Deflect Missiles",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>At 2nd level, a monk's reflexes and body control allows him the ability to deflect non-magical missiles, including but not limited to, arrows, axes, bolas, bolts, bullets, clubs, daggers, darts, hammers, harpoons, javelins, nets, rocks, and spears. The monk must have at least one hand free to use this ability. When the monk would normally be hit by a ranged weapon, the monk can attempt to deflect the attack by making a dexterity check. If the check succeeds, the monk deflects the weapon and suffers no damage. This can be done once per round for levels 2-5, twice per round for levels 6-10, three times per round for levels 11 to 15, four times per round for levels 16-19, and five times per round for levels 20 and up.</p><p>The monk must be aware of the attack to use this ability. An attempt to deflect a ranged weapon counts as a monk's primary unarmed attack. If a monk is high enough level to have a secondary unarmed attack, the monk may still make the secondary attack if the deflect missile ability has only been used once or twice. If three or more missiles are deflected, the secondary attack is considered used. This ability cannot be used against siege weapon ammunition.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

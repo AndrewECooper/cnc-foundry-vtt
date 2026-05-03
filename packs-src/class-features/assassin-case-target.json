@@ -1,0 +1,24 @@
+{
+  "_id": "f4ec24e3c1ce0805",
+  "_key": "!items!f4ec24e3c1ce0805",
+  "name": "Case Target",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Wisdom</em></p><p>Using this ability, the assassin can determine information and weaknesses about a potential opponent or target through detailed observation and deductive reasoning. An assassin must spend 1d3x10 minutes observing an opponent before a check is allowed. A successful check results in knowledge of the approximate level or HD of the opponent within 10%, alignment, hidden weapons or unusual items, distinguishing habits and mannerisms, and any other details that might not be apparent to normal observation. The CK must decide what the assassin can learn about the target and deems appropriate to convey. This check can be adjusted by the level or hit dice of the observed creature.</p><p>This ability is unaffected by wearing armor not on the assassin armor list but is affected by helmets</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

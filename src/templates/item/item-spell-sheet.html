@@ -1,186 +1,115 @@
 <form autocomplete="off" class="{{cssClass}}">
-  <header class="sheet-header">
-    <img
-      alt="{{item.name}}"
-      class="profile-img"
-      data-edit="img"
-      src="{{item.img}}"
-      title="{{item.name}}"
-    />
-    <div class="header-fields">
-      <h1 class="charname">
-        <input
-          name="name"
-          placeholder="{{localize 'TLGCC.Name'}}"
-          type="text"
-          value="{{item.name}}"
-        />
-      </h1>
-      <div class="grid grid-5col">
-        <div class="resource">
-          <label class="resource-label" for="system.cast.value"
-          >{{localize 'TLGCC.SpellCastTime'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.cast.value"
-            name="system.cast.value"
-            type="text"
-            value="{{system.cast.value}}"
-          />
-        </div>
+  <div class="cc-item-paper">
 
-        <div class="resource">
-          <label class="resource-label" for="system.range.value"
-          >{{localize 'TLGCC.SpellRange'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.range.value"
-            name="system.range.value"
-            type="text"
-            value="{{system.range.value}}"
-          />
-        </div>
-
-        <div class="resource grid-span-2">
-          <label class="resource-label" for="system.duration.value"
-          >{{localize 'TLGCC.SpellDuration'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.duration.value"
-            name="system.duration.value"
-            type="text"
-            value="{{system.duration.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.spell.spelllevel"
-          >{{localize 'TLGCC.SpellLevel'}}</label
-          >
-          <input
-            data-dtype="Number"
-            id="system.spell.spelllevel"
-            name="system.spell.spelllevel"
-            type="text"
-            value="{{system.spell.spelllevel}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.savevalue.value"
-          >{{localize 'TLGCC.SaveValue'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.savevalue.value"
-            name="system.savevalue.value"
-            type="text"
-            value="{{system.savevalue.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.spellresist.value"
-          >{{localize 'TLGCC.SpellResistance'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.spellresist.value"
-            name="system.spellresist.value"
-            type="text"
-            value="{{system.spellresist.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.spellcomp.value"
-          >{{localize 'TLGCC.SpellComponents'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.spellcomp.value"
-            name="system.spellcomp.value"
-            type="text"
-            value="{{system.spellcomp.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.spelldmg.value"
-          >{{localize 'TLGCC.SpellDamage'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.spelldmg.value"
-            name="system.spelldmg.value"
-            type="text"
-            value="{{system.spelldmg.value}}"
-          />
-        </div>
-
-        <div class="resource">
-          <label class="resource-label" for="system.prepared.value"
-          >{{localize 'TLGCC.SpellPrepared'}}</label
-          >
-          <input
-            data-dtype="Number"
-            id="system.prepared.value"
-            name="system.prepared.value"
-            type="number"
-            value="{{system.prepared.value}}"
-          />
-        </div>
-        <div class="resource grid-span-3">
-          <label class="resource-label" for="system.component.value"
-          >{{localize 'TLGCC.SpellComponent'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.component.value"
-            name="system.component.value"
-            type="text"
-            value="{{system.component.value}}"
-          />
-        </div>
-        <div class="resource grid-span-2">
-          <label class="resource-label" for="system.class.value"
-          >{{localize system.class.label}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.class.value"
-            name="system.class.value"
-            type="text"
-            value="{{system.class.value}}"
-          />
-        </div>
+    {{!-- Header: icon + name + type stamp --}}
+    <div class="cc-item-header">
+      <div class="cc-item-icon">
+        <img class="profile-img" data-edit="img" src="{{item.img}}" title="{{item.name}}" />
+      </div>
+      <div class="cc-item-identity">
+        <input class="cc-item-name"
+               name="name"
+               type="text"
+               value="{{item.name}}"
+               placeholder="{{localize 'TLGCC.Name'}}" />
+        <span class="cc-type-stamp">{{localize "TYPES.Item.spell"}}</span>
       </div>
     </div>
-  </header>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    <div class="grid grid-2col">
-      <div class="resource grid-span-2">
-        <label class="resource-label" for="system.spell.summary"
-        >{{localize 'TLGCC.spellSummary'}}</label
-        >
-        <input
-          data-dtype="String"
-          id="system.spell.summary"
-          name="system.spell.summary"
-          type="text"
-          value="{{system.spell.summary}}"
-        />
+    {{!-- Row 1: cast time, range, duration, level --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellCastTime")
+          name="system.cast.value"
+          value=system.cast.value
+          mono=true
+          width=100}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellRange")
+          name="system.range.value"
+          value=system.range.value
+          mono=true
+          width=90}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellDuration")
+          name="system.duration.value"
+          value=system.duration.value
+          mono=true
+          width=130}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellLevel")
+          name="system.spell.spelllevel"
+          value=system.spell.spelllevel
+          dtype="Number"
+          mono=true
+          width=70}}
+    </div>
+
+    {{!-- Row 2: SV, SR, comp, damage, prepared --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SaveValue")
+          name="system.savevalue.value"
+          value=system.savevalue.value
+          mono=true
+          width=80}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellResistance")
+          name="system.spellresist.value"
+          value=system.spellresist.value
+          mono=true
+          width=80}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellComponents")
+          name="system.spellcomp.value"
+          value=system.spellcomp.value
+          mono=true
+          width=100}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellDamage")
+          name="system.spelldmg.value"
+          value=system.spelldmg.value
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellPrepared")
+          name="system.prepared.value"
+          value=system.prepared.value
+          dtype="Number"
+          mono=true
+          width=80}}
+    </div>
+
+    {{!-- Row 3: components (flex), class (fixed) --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.SpellComponent")
+          name="system.component.value"
+          value=system.component.value}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize system.class.label)
+          name="system.class.value"
+          value=system.class.value
+          width=180}}
+    </div>
+
+    {{!-- Spell summary (full width) --}}
+    {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+        label=(localize "TLGCC.spellSummary")
+        name="system.spell.summary"
+        value=system.spell.summary}}
+
+    {{!-- Spell description (ruled-paper editor) --}}
+    <section class="cc-form-section">
+      <div class="cc-form-section-header"
+           title="{{localize 'TLGCC.SpellDescriptionAlert'}}">
+        {{localize "TLGCC.SpellDescription"}}
       </div>
-    </div>
-    {{!-- Description Tab --}}
-    <div class="description">
-      <h2
-        title="Click the pencil icon at far right to edit. !!Note Please place full spell data below until we get roll data working"
-      >
-        Spell Description - Hover for important alert
-      </h2>
-      {{editor system.description target="system.description" rollData=rollData
-      button=true owner=owner editable=editable}}
-    </div>
-  </section>
+      <div class="cc-form-section-body">
+        {{editor system.description target="system.description" rollData=rollData
+          button=true owner=owner editable=editable}}
+      </div>
+    </section>
+
+  </div>
 </form>

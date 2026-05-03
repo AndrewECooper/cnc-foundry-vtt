@@ -1,80 +1,60 @@
 <form autocomplete="off" class="{{cssClass}}">
-  <header class="sheet-header">
-    <img
-      class="profile-img"
-      data-edit="img"
-      src="{{item.img}}"
-      title="{{item.name}}"
-    />
-    <div class="header-fields">
-      <h1 class="charname">
-        <input
-          name="name"
-          placeholder="{{localize 'TLGCC.Name'}}"
-          type="text"
-          value="{{item.name}}"
-        />
-      </h1>
-      <div class="grid grid-4col">
-        <div class="resource">
-          <label class="resource-label" for="system.price.value"
-          >{{localize 'TLGCC.Price'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.price.value"
-            name="system.price.value"
-            type="text"
-            value="{{system.price.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.weight.value"
-          >{{localize 'TLGCC.Weight'}}</label
-          >
-          <input
-            data-dtype="Number"
-            id="system.weight.value"
-            name="system.weight.value"
-            type="text"
-            value="{{system.weight.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.itemev.value"
-          >{{localize 'TLGCC.ItemEV'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.itemev.value"
-            name="system.itemev.value"
-            type="text"
-            value="{{system.itemev.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.armorClass.value"
-          >{{localize 'TLGCC.ArmorClassAbbr'}}</label
-          >
-          <input
-            data-dtype="Number"
-            id="system.armorClass.value"
-            name="system.armorClass.value"
-            title="{{localize 'TLGCC.AChovertext'}}"
-            type="text"
-            value="{{system.armorClass.value}}"
-          />
-        </div>
+  <div class="cc-item-paper">
+
+    {{!-- Header: icon + name + type stamp --}}
+    <div class="cc-item-header">
+      <div class="cc-item-icon">
+        <img class="profile-img" data-edit="img" src="{{item.img}}" title="{{item.name}}" />
+      </div>
+      <div class="cc-item-identity">
+        <input class="cc-item-name"
+               name="name"
+               type="text"
+               value="{{item.name}}"
+               placeholder="{{localize 'TLGCC.Name'}}" />
+        <span class="cc-type-stamp">{{localize "TYPES.Item.armor"}}</span>
       </div>
     </div>
-  </header>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="description">
-      {{editor system.description target="system.description" rollData=rollData
-      button=true owner=owner editable=editable}}
+    {{!-- Stats: price, weight, EV, AC --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Price")
+          name="system.price.value"
+          value=system.price.value
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Weight")
+          name="system.weight.value"
+          value=system.weight.value
+          dtype="Number"
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.ItemEV")
+          name="system.itemev.value"
+          value=system.itemev.value
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.ArmorClassAbbr")
+          name="system.armorClass.value"
+          value=system.armorClass.value
+          dtype="Number"
+          mono=true
+          width=120
+          title=(localize "TLGCC.AChovertext")}}
     </div>
-  </section>
+
+    {{!-- Description editor --}}
+    <section class="cc-form-section">
+      <div class="cc-form-section-header">{{localize "TLGCC.Notes"}}</div>
+      <div class="cc-form-section-body">
+        {{editor system.description target="system.description" rollData=rollData
+          button=true owner=owner editable=editable}}
+      </div>
+    </section>
+
+  </div>
 </form>

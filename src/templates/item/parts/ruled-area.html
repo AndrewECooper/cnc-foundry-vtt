@@ -1,0 +1,11 @@
+{{!--
+  Borderless textarea over a ruled-paper background. Renders a plain
+  textarea (used when the rich-text editor is not desired).
+  Params:
+    name  — form field name
+    value — current value
+    rows  — textarea row count (default 6)
+--}}
+<textarea class="cc-ruled-area"
+          name="{{name}}"
+          rows="{{#if rows}}{{rows}}{{else}}6{{/if}}">{{value}}</textarea>

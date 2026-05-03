@@ -1,0 +1,24 @@
+{
+  "_id": "158a82de7f1825b1",
+  "_key": "!items!158a82de7f1825b1",
+  "name": "Bonus Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Cleric</em></p><p>High wisdom indicates a greater divine connection. Clerics with a high wisdom gain bonus spells. If they have a wisdom of 13-15 or higher, they receive an extra 1st level spell. If the wisdom score is 16-17 or higher, they receive an extra 2nd level spell and if 18-19 or higher, an extra 3rd level spell. Bonus spells can only be acquired if the cleric is at a high enough level to cast them. Bonus spells are cumulative.</p><blockquote><p>For example, a 4th level cleric with an 18 wisdom receives four 0 level spells, four 1st level spells and three 2nd level spells. No bonus 3rd level spell is acquired until the cleric reaches 5th level.</p></blockquote>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

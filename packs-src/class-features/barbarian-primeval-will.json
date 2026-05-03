@@ -1,0 +1,24 @@
+{
+  "_id": "1bf85fe794769f35",
+  "_key": "!items!1bf85fe794769f35",
+  "name": "Primeval Will",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p>At 6th level, a barbarian's stoic nature increases his longevity on the battlefield. When fighting a hard pressed combat with mounting wounds the barbarian can call upon this ability. To use the ability, the barbarian's hit points must be reduced to a specific number, as follows: 12 hit points or less at levels 6-9; 18 hit points or less at levels 10-14; and 24 hit points or less at levels 15 and up.</p><p>When battle or circumstances reduce a barbarian's hit points to the specified number of hit points or less, the character can use this ability to immediately gain an additional 12 hit points. Damage inflicted after the barbarian activates the ability is first absorbed by the 12 hit points granted by primeval will. The additional hit points last only for the duration of the combat. When the affects of the ability wear off, the barbarian must remove any hit points remaining from the 12. The ability can be used only once per day.</p><p>Primeval will grants an additional, unique ability as well. It can save the barbarian from an attack that would normally strike the character dead or unconscious. If a barbarian suffers damage such that reduces the character to zero or negative hit points before the barbarian can use this ability, it automatically activates and imparts an additional 12 hit points. If the additional hit points raise the barbarian character's total hit points to 1 or more, the barbarian may keep fighting. Note that if a blow strikes the barbarian and reduces their hit point to -10 hit points or beyond, the primeval will ability cannot save the character. Also, removal of these hit points cannot reduce the barbarian beneath 1 hit point.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "4b08c7723af06928",
+  "_key": "!items!4b08c7723af06928",
+  "name": "Exalt",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Bard</em></p><p><em>Attribute Check: Charisma</em></p><p>This is the bard's ability to inspire companions and listeners, allowing them to surpass their normal level of performance. Some bards invoke this ability through song and music, while others do so through oration, battle cries or sheer acting and demeanor. With a successful attribute check, a bard can help allies succeed at a task. The ally gets a +2 bonus on any action requiring an attribute check, including class ability checks, saving throws and standard attribute checks. This ability does not affect attack rolls. The allies must be able to see and hear the bard, and must be within 60 feet. The Castle Keeper may rule that certain uses of this ability are infeasible. The bard can use this ability once per day per level, and can maintain the effect for a number of rounds equal to the bard's level. The bard can take other actions while using this ability, unless the Castle Keeper rules otherwise. As the bard rises in levels, the bonus imparted increases as well. It rises to +3 at 6th level, +4 at 12th level and +5 at 18th level.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

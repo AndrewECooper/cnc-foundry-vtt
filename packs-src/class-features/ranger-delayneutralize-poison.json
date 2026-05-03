@@ -1,0 +1,24 @@
+{
+  "_id": "b3ee16498f8d3c30",
+  "_key": "!items!b3ee16498f8d3c30",
+  "name": "Delay/Neutralize Poison",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Wisdom</em></p><p>A knowledge of flora and fauna enables a ranger to identify dangerous toxins and their symptoms, and rangers can apply remedies to slow or even nullify their effects. This ability can only be used with natural poisons (animals, plants, fungi, etc.) familiar to the ranger – usually those found in the region where the ranger spends most of their time, be it forest, desert or mountain. The only manufactured poisons with which a ranger is familiar are those produced by their favored enemy (see below). To succeed at this task, the ranger must have access to herbs and antidotes. The Castle Keeper must decide if the herbs are available or antidotes can be produced.</p><p>On a successful delay poison roll, the ranger can temporarily delay the effect of poisons. The onset or continuation of the effects of the poison are delayed for one hour per level of the ranger. This does not cure any damage the poison may have already caused. It takes one round to perform this action and the ranger may make only one attempt at this task.</p><p>If the delay poison roll exceeds the total score needed for success by 6 or more, then the ranger has successfully neutralized the poison in the victim. The afflicted creature suffers no additional damage or effect from the poison. Any temporary effects are ended, but the neutralization of the poison does not reverse any damage or effects that have already occurred.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

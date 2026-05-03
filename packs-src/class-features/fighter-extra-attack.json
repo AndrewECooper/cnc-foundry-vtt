@@ -1,0 +1,24 @@
+{
+  "_id": "81dfa7ecd368b850",
+  "_key": "!items!81dfa7ecd368b850",
+  "name": "Extra Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Fighter</em></p><p>At 10th level, the fighter gains one additional attack each combat round with any weapon. This ability does not combine with Combat Dominance. When in a combat where both abilities could be used, the player must choose to use either the Extra Attack or Combat Dominance ability during each round. The Extra Attack ability is useable with melee and ranged weapons.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

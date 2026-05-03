@@ -1,0 +1,24 @@
+{
+  "_id": "e2f55047088af0a1",
+  "_key": "!items!e2f55047088af0a1",
+  "name": "Divine Mount",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>At 4th level, the paladin gains the ability to call a divine warhorse or other mount. A paladin's deity confers this grace upon the paladin as a reward for faithful service. The divine mount is unusually intelligent, strong, loyal, and ready to serve the paladin in his or her crusade against evil. The mount is usually a heavy warhorse (for a medium-sized paladin) or a war pony (for a small-sized paladin). Should the paladin's mount die, a year and a day must pass before another can be called. The Castle Keeper provides information about the mount that responds to the paladin's call.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "904760547ee410fd",
+  "_key": "!items!904760547ee410fd",
+  "name": "Slow Fall",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>At 4th level, a monk's body control allows him to slow his fall if within 10 feet of a vertical surface. By using the wall or surface, the monk breaks his fall and takes less damage than normal. The damage is reduced as if the fall were 20 feet shorter than it actually is. As the monk progresses in levels, the damage reduction increases as follows: 25 feet at 6th level, 30 feet at 9th level, 35 feet at 13th level, and 40 feet at 18th level.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

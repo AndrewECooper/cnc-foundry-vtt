@@ -1,0 +1,24 @@
+{
+  "_id": "5ca1119e467284f6",
+  "_key": "!items!5ca1119e467284f6",
+  "name": "Smite Evil",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>Once per day, a paladin of 9th level or higher may attempt to smite evil with one normal melee attack. Smite evil adds the paladin's charisma modifier (if positive) to the attack roll, and deals 1 extra hit point of damage per level of the paladin. It lasts for 1 round per level of the paladin. This ability can be used once per day, and only on creatures of evil alignment.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

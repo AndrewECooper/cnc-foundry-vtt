@@ -1,0 +1,24 @@
+{
+  "_id": "c7eeab5ea6159965",
+  "_key": "!items!c7eeab5ea6159965",
+  "name": "Legend Lore",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Bard</em></p><p><em>Attribute Check: Charisma</em></p><p>Bards are lore masters of myth and archaic knowledge. With a successful attribute check, a bard gains or remembers some relevant information about local notables, a legendary item, a noteworthy place or any other relevant bit of information. Gaining the information may entail speaking to local inhabitants and/ or doing research. The information might prove useful in diplomacy, entertaining, or otherwise influencing others. The ability also might impart a full or partial understanding of local or secret languages, including rogue's cant, the secret druidic language or ranger signs.</p><p>The check will not reveal the powers of a magic item, but may give a hint to its history, general function or activation. The Castle Keeper gauges the challenge level of the check based on whether the knowledge is:</p><p><strong>Common:</strong> This constitutes information known by at least a substantial minority of the local population.</p><p><strong>Uncommon:</strong> The information is known by only a few people in the area, though easy to track down.</p><p><strong>Obscure:</strong> The information is known by a few, but rather hard to come by.</p><p><strong>Extremely Obscure:</strong> The information is known by very few scholars and sages, possibly forgotten by most who once knew it, or possibly known only by those who don't understand the significance of the knowledge.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

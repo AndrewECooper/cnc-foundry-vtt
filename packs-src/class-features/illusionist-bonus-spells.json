@@ -1,0 +1,24 @@
+{
+  "_id": "11a78177a74afe3e",
+  "_key": "!items!11a78177a74afe3e",
+  "name": "Bonus Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Illusionist</em></p><p>With a high intelligence score, an illusionist gains bonus spells. If the character has an intelligence of between 13-15, they can memorize an extra 1st level spell. If the intelligence score is 16 or 17, they can memorize an extra 2nd level spell and if 18 or 19, they can memorize an extra 3rd level spell. The bonus spells can only be acquired if the illusionist is at a high enough level to cast that spell level. Bonus spells are cumulative.</p><blockquote><p>For example, a 4th level illusionist with an 18 intelligence receives four 0 level spells, four 1st level spells, and three 2nd level spells. No bonus 3rd level spell is acquired until the illusionist reaches 5th level.</p></blockquote>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

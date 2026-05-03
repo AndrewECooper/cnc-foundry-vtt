@@ -16,6 +16,12 @@ docs/*
 jsconfig.json
 foundry
 
+# Compiled compendium packs (built from packs-src/)
+/packs/
+
+# Source materials used to author packs (not for distribution)
+/tools/source/
+
 # ignore visualizer stats
 stats.html
 repo_files.txt

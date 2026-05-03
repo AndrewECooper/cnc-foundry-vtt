@@ -1,0 +1,24 @@
+{
+  "_id": "a1b7183456c4f7e6",
+  "_key": "!items!a1b7183456c4f7e6",
+  "name": "Deerstalker",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p>This ability comes naturally to all barbarians and covers a wide range of survival skills. In short it is their natural ability to endure environments that lesser men would find harsh.</p><p>The Deerstalker is able to forage off the land, finding shelter, food, and water for themselves, start a fire, and determine direction. As long as adequate food, water, and shelter sources are present in the environment, a barbarian can find these resources without the need for an attribute check. This requires 1d6+2 hours of hunting, foraging, building, and gathering. He can do this only for himself. A barbarian can start a fire in 1d10 minutes by natural means, as long as the needed materials are available. A barbarian also can determine true north in relation to the character, as long as he is in a wilderness environment.</p><p>With the deerstalker ability barbarians are capable of climbing typical natural slopes and inclines, such as a steep, rocky hillside cliff, without the need to make an attribute check. Barbarians can ford and swim typical rivers and bodies of fresh water. When climbing or swimming, the barbarian moves at one-half normal movement. When climbing or swimming a barbarian cannot wear armor weighing more than 25 lb, and must set aside any accoutrements that weigh over 25 lb or are unusually encumbering.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

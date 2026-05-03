@@ -1,0 +1,24 @@
+{
+  "_id": "48c3871f77f58708",
+  "_key": "!items!48c3871f77f58708",
+  "name": "Inspire",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p>The mere presence of a knight upon the field of battle can alter the mood of armies and change the tide of combat. This gives the knight the ability to inspire companions and followers. Any person friendly to a knight's immediate endeavor gains a bonus to hit equal to the knight's charisma modifier. This ability can be used once per day and lasts a number of rounds equal to the knight's level. The number of persons that are affected increases as the knight gains levels. At 1st level, the knight can affect up to 12 creatures. The ability affects up to 25 creatures at 3rd level, up to 50 creatures at 5th level, up to 250 creatures at 7th level, up to 1000 creatures at 9th level, up to 5,000 creatures at 12th level and 20,000 creatures at 16th level. This ability cannot be used in conjunction with embolden or demoralize.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

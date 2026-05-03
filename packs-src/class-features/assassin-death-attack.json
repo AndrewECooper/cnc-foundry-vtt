@@ -1,0 +1,24 @@
+{
+  "_id": "20812cf124efecd8",
+  "_key": "!items!20812cf124efecd8",
+  "name": "Death Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p>If an assassin studies a victim for 3 rounds and makes a sneak attack (see below) that successfully deals damage, the sneak attack can potentially kill the target instantly. While studying a victim prior to an attack, the assassin can undertake other actions, but must stay focused on the target. If the target knows the assassin is present, a death attack is not possible. The victim of such an attack must make a constitution saving throw. If the saving throw fails, the victim dies instantly. If the saving throw succeeds, the attack is treated as a normal sneak attack.</p><p>After completing 3 rounds of study, the assassin must attack within the next 3 rounds to use this ability. If a death attack is attempted and fails because the victim succeeds at the saving throw, the assassin cannot make another attempt at a death attack in this circumstance because the victim will almost certainly be aware of the assassin's status as an enemy. If the assassin attacks and misses (and the target is not aware of the attack), or if the assassin does not launch the attack within 3 rounds of completing the study, 3 new rounds of study are required before attempting another death attack.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "802e3ab3c6c742f9",
+  "_key": "!items!802e3ab3c6c742f9",
+  "name": "Cant",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p>Rogues often use a street language known only to those in the trade, called cant. Code words, hand signals, demeanor, and other signs comprise the cant. The cant can be used to convey complex ideas. The language may vary to some degree both geographically and culturally, making cants unique to each region, city, or even within a city.</p><p>Wearing armor not on the rogue armor list affects this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

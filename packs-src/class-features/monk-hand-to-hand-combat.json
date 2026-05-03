@@ -1,0 +1,24 @@
+{
+  "_id": "b6ec075a90c4e768",
+  "_key": "!items!b6ec075a90c4e768",
+  "name": "Hand-To-Hand Combat",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>A monk specializes in hand-to-hand combat, be it boxing, brawling, wrestling, or a complex, disciplined martial art. This martial skill imparts the unique ability to attack with hand, foot, other body part, or the whole body, and aids in defense.</p><p>The monk's hand-to-hand attacks and damage are shown in the Monk Special Abilities table. A monk begins with a single hand-to-hand attack, and at 6th level gains an additional off-hand, secondary attack. The amount of damage theses attacks inflict is shown in the table. A monk character may choose whether damage inflicted by a successful hand-to-hand attack inflicts normal damage or subdual damage as described in the Damage entry of The Castle Keeper &amp; The Game section of this book.</p><p>A monk's martial skill and body control allows him to use his body for defense. A monk's base armor class increases with experience as indicated on the table.</p><p>The monk adds +2 to all overbearing and grappling attacks.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

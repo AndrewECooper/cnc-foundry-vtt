@@ -1,0 +1,24 @@
+{
+  "_id": "4b89d30cf5b0969d",
+  "_key": "!items!4b89d30cf5b0969d",
+  "name": "Primeval Instincts",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p>Barbarians are able to tap into a strength that goes beyond the physical and gives them a fearless edge. This strength is primeval in its nature, driven by instincts that are closer to those of animals than men. Under difficult circumstances they tap into this primeval instinct in attempting Herculean tasks. This ability is only accessible if the barbarian throws himself at the challenge, whether in the beginning of the round or as a last ditch effort. Any move on the character's part to flee, hesitate, or to debate the action, immediately negates the primeval instincts and the barbarian cannot act upon them or use them to overcome the action. When using this ability, if the physical action is of such difficulty that the Castle Keeper requires a physical attribute check (strength, dexterity, or constitution), the barbarian gains a +4 to the check. The barbarian cannot use this ability if they are wearing armor weighing 25 lb or more, or has fled from the challenge. It is important to note that even if the situation is a last ditch effort, if the barbarian has fled previously, he cannot use primeval instinct.</p><p>This ability also allows the barbarian to hold his breath for a period of time, run long distances, and survive longer in extreme temperatures and weather conditions. None of these abilities require an attribute check. Instead, they are limited in duration. Barbarians can hold their breath for a number of rounds equal to their constitution score. Barbarians can survive in extreme environments, temperature, and weather conditions for one day more than a normal person could do so. And, a barbarian's great fortitude allows them to run long distances without tiring easily. When calling upon this inner fortitude, the distance a barbarian can travel in a day is doubled.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

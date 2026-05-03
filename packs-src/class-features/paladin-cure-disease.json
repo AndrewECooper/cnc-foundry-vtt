@@ -1,0 +1,24 @@
+{
+  "_id": "59e99c272522e7ef",
+  "_key": "!items!59e99c272522e7ef",
+  "name": "Cure Disease",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>At 1st level, the paladin can cure any disease, no matter the origin, once per week. This ability improves as the paladin rises in levels. At 6th level, the paladin can cure disease two times per week, and at 12th level, three times per week.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

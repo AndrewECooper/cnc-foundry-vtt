@@ -1,0 +1,24 @@
+{
+  "_id": "a20c8134272fac06",
+  "_key": "!items!a20c8134272fac06",
+  "name": "Birthright Mount",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p>A trained and healthy mount is important to a knight's station and status. In addition to their starting money, knights begin play with a fully outfitted riding horse (saddle, blankets, saddlebags, bit and bridle, harness, horseshoes, and meal). The mounts are hardier than most, having 2d8+2 hit points. A riding horse is not trained for combat, and a knight has some difficulty fighting from a riding horse (see mounted combat).</p><blockquote><p><strong>RIDING HORSE</strong> (Their vital stats are HD 2d8+2, AC 13, MV 60. Their primary attributes are physical. They attack with 2 hooves for 1d4+1 points of damage.)</p><p><strong>LIGHT WAR HORSE</strong> (Their vital stats are HD 3d10, AC14, MV 60. Their primary attributes are physical. They attack with 2 hooves for 1d4+2, or a bite for 1d4 points of damage.)</p></blockquote>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

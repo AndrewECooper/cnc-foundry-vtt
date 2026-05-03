@@ -1,0 +1,24 @@
+{
+  "_id": "d2af92aced9e7da5",
+  "_key": "!items!d2af92aced9e7da5",
+  "name": "Intimidate",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p><em>Attribute Check: Constitution</em></p><p>Barbarians offer an imposing display of ferocious raw power. They instinctively realize that victory lies in the wine-besotted, soft demeanors of their foe and that brute force works best when combined with overwhelming terror. Barbarians are able to project themselves as this brutal, terrifying force. Whether through sheer force of will, or savage decorum, a barbarian is able to strike fear into and intimidate his opponents. While attacking and upon a successful constitution check any creature of equal or lesser hit dice of the barbarian suffers -2 to all rolls, including but not limited to initiative, attack, damage and attribute checks. This ability takes effect as soon as the barbarian uses the ability. He must announce it before rolling initiative. It has a 15 foot radius area of effect. Intimidate is usable only once per combat encounter.</p><p>At 1st level, a barbarian can intimidate one creature. The number of creatures intimidated increases with level as follows: up to 2 creatures at 3rd level, up to 4 creatures at 6th level, up to 8 creatures at 10th level, and up to 16 creatures at 15th level. The intimidation ends the moment the barbarian fails to strike the intimidated creature.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

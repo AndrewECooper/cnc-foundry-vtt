@@ -29,6 +29,19 @@
   ],
   "esmodules": ["castles_crusades.js"],
   "styles": ["styles/castles_crusades.css"],
+  "packs": [
+    {
+      "name": "class-features",
+      "label": "Class Features",
+      "path": "packs/class-features",
+      "type": "Item",
+      "system": "castles-and-crusades",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
   "languages": [
     {
       "lang": "en",

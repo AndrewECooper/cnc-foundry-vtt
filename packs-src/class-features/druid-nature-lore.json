@@ -1,0 +1,24 @@
+{
+  "_id": "2ccb067acc4251d7",
+  "_key": "!items!2ccb067acc4251d7",
+  "name": "Nature Lore",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Druid</em></p><p><em>Attribute Check: Wisdom</em></p><p>Druids are connected to the forces of nature. They mystically coexist with their environment, gradually becoming a larger part of it. This relationship imparts to them a specialized knowledge of the wilds. A druid can identify plants and animals with perfect accuracy in the type of environment where the druid was trained or currently lives. In unfamiliar environments, the druid must succeed at a wisdom check to successfully use this ability.</p><p>This identification ability allows the druid to determine the species of a plant or animal and the special qualities or abilities of the species. The druid can also determine whether water is safe or dangerous to drink. Additionally, druids can find shelter and forage for food. A druid always succeeds in finding basic shelter and enough food for individual daily sustenance. If the druid wishes to support additional people, they must spend 6 hours hunting and gathering to produce enough food and water to feed 2-8 people for a day. If the druid wishes to feed or shelter a larger group of people than the die indicate, a successful wisdom check is necessary. If successful, the druid must spend an additional 6 hours gathering food to feed and water an additional 2-8 people. A third attempt to gather food can be made. A wisdom check at -4 is made but if successful, another 6 hours of searching can feed an additional 1-4 people. This additional effort allows the druid to gather food and water for up to 5-20 creatures total. The druid can only hunt and forage for food three times per day.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

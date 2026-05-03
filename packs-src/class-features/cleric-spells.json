@@ -1,0 +1,24 @@
+{
+  "_id": "7b2a801e0fd6a1ad",
+  "_key": "!items!7b2a801e0fd6a1ad",
+  "name": "Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Cleric</em></p><p>A cleric casts divine spells. The spells available are listed on the cleric spell list. A cleric is limited to a certain number of spells of each spell level per day. The Cleric and Druid Spells Per Day Table (pg 28) shows the number of spells per day a character of the class may cast. Clerics prepare spells each day through prayer to their deity or deities, followed by contemplation and study.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

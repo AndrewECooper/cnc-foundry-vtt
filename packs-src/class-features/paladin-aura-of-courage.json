@@ -1,0 +1,24 @@
+{
+  "_id": "a8715255d8065523",
+  "_key": "!items!a8715255d8065523",
+  "name": "Aura Of Courage",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>At 6th level, a paladin is immune to fear (magical or otherwise). Allies within 10 feet of the paladin gain a +4 bonus on saving throws against fear effects.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

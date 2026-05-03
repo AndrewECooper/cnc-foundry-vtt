@@ -1,0 +1,24 @@
+{
+  "_id": "4fe11b218e66bf2c",
+  "_key": "!items!4fe11b218e66bf2c",
+  "name": "Weapon Specialization",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Fighter</em></p><p>At 1st level, the fighter can choose one weapon with which to specialize. All weapons are eligible, including ranged weapons such as the bow or sling. The weapon with which the fighter specializes is usually common to the fighter's culture or society, but it need not be. The Castle Keeper and player should consult to determine which weapons are available for specialization, bearing in mind culture, location and availability.</p><p>The fighter can only choose one weapon with which to specialize. Once chosen, the weapon cannot be changed. For fighters between 1st and 6th level, this specialization imparts a +1 bonus to hit and a +1 bonus to damage when being used. At 7th level and above, the bonuses increase to a +2 to hit and +2 to damage.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

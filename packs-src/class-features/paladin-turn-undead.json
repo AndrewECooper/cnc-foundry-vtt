@@ -1,0 +1,24 @@
+{
+  "_id": "4e355768b3dbf4d9",
+  "_key": "!items!4e355768b3dbf4d9",
+  "name": "Turn Undead",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p><em>Attribute Check: Wisdom</em></p><p>At 3rd level, the paladin gains the ability to turn undead as a cleric of 1st level. When making a wisdom check to turn undead, a paladin adds his \"turning level\" to the roll, not the character's actual level. This ability improves with each level, so a 5th level paladin turns undead like a 3rd level cleric, etc.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

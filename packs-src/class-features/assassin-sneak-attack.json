@@ -1,0 +1,24 @@
+{
+  "_id": "5bfe58a8311538c2",
+  "_key": "!items!5bfe58a8311538c2",
+  "name": "Sneak Attack",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p>Assassins are capable of quick and deadly strikes upon unsuspecting targets. When an opponent or victim is aware of the assassin, but unsuspecting of any attack, this ability can be used. For example, an assassin could casually walk next to a target, quickly stabbing him with a poisoned blade. These situations do not necessarily require a previously successful hide or move silently check, although the Castle Keeper could require success in one or both skills, depending upon the circumstances. The opponent is not allowed to roll for initiative until the round following the attack.</p><p>An assassin making a sneak attack gains a +2 bonus to hit and a +4 bonus to damage. Ranged weapons can be used for sneak attacks if the target is within 30 feet. An assassin cannot aim with deadly accuracy from beyond that range.</p><p>This ability is affected by wearing armor not on the assassin armor list.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "e4be68a053b43c8d",
+  "_key": "!items!e4be68a053b43c8d",
+  "name": "Demoralize",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p>At 5th level, the knight causes fear and dread in the ranks of foes and enemy forces. Enemies to the knight's immediate endeavor suffer a penalty of -4 to charisma checks. In addition, the affected foes must successfully save versus fear at a -4 penalty or suffer a -1 penalty to hit. This ability can be used once per day and lasts a number of rounds equal to the knight's level. The number of creatures that can be affected increases as the knight gains levels. At 5th level, the knight can affect up to 25 creatures. The ability affects up to 100 creatures at 7th level, up to 250 creatures at 9th level, up to 1,000 creatures at 12th level and 5,000 creatures at 16th level. This ability cannot be use in conjunction with embolden and inspire.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

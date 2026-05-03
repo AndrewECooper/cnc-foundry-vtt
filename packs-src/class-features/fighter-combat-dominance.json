@@ -1,0 +1,24 @@
+{
+  "_id": "57363c74bd539a45",
+  "_key": "!items!57363c74bd539a45",
+  "name": "Combat Dominance",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Fighter</em></p><p>At 4th level, the fighter gains an extra attack with any weapon when fighting opponents with 1 hit die or less. In order to use this ability, the fighter must direct all attacks in a combat round against opponents that meet these criteria. The fighter can split the available attacks among qualified opponents as desired. This ability improves as the fighter progresses in levels. The fighter gains an additional attack for every four levels gained after 4th level. So, at 8th level, the fighter is allowed a total of three attacks, and at 12th level, the fighter gains four attacks against these opponents. This ability does not combine with the Extra Attack ability described below. This ability is only useable with melee weapons and cannot be applied to ranged combat.</p><blockquote><p>For example, an 8th level fighter is battling 5 kobolds in a dank cavern. The kobolds have 1HD. When it comes time to attack, the fighter is allowed three swings against the kobolds; one swing for the class and two swings for the Combat Dominance ability. The fighter can choose to attack one kobold three times or three different kobolds one time each.</p></blockquote>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "ad04ffeac988e178",
+  "_key": "!items!ad04ffeac988e178",
+  "name": "Fast Movement",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>A monk moves faster than normal. A monk carrying a medium or heavy load loses this extra speed and moves at 30'. See the Monk Special Abilities Chart for a monk's movement rate.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

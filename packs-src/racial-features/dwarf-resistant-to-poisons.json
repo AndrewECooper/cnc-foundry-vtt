@@ -1,0 +1,24 @@
+{
+  "_id": "3615c95633e0b1be",
+  "_key": "!items!3615c95633e0b1be",
+  "name": "Resistant To Poisons",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p><em>Attribute Check: Constitution</em></p><p>Dwarves are imbued with great constitutional fortitude. Poisons that might fell a normal human are less likely to affect a dwarf. Dwarves receive a +2 bonus to all poison saving throws.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

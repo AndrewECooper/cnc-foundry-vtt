@@ -1,0 +1,24 @@
+{
+  "_id": "37fc5cccfce81c58",
+  "_key": "!items!37fc5cccfce81c58",
+  "name": "Hide",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Halfling</em></p><p><em>Attribute Check: Dexterity</em></p><p>Halflings are practised at avoiding the prying eyes of others in outdoor settings. A successful check allows the halfling to hide making him or her almost invisible. If a halfling decides to move while attempting to remain concealed, he or she can still hide, but will suffer a penalty to the check. At up to one-half their movement rate, halflings suffer a -5 penalty to the check. At one-half their normal movement rate to full speed, they suffer a -10 to the check. It is impossible for a halfling to move faster than normal speed while hiding. If the halfling is being observed, even casually, the character cannot hide. If the observers are momentarily distracted, however, the halfling can attempt to hide. This check, however, has a -10 penalty because the character has to move quickly into hiding.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "5e82998f869df45c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

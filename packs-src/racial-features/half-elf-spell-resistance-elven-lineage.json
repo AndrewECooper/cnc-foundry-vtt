@@ -1,0 +1,24 @@
+{
+  "_id": "ce3ff157b02ccfde",
+  "_key": "!items!ce3ff157b02ccfde",
+  "name": "Spell Resistance (Elven Lineage)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Elf</em></p><p><em>Lineage: Elven Lineage</em></p><p><em>Attribute Check: Wisdom</em></p><p>Half-elves of elven lineage are particularly resistant to spells and spell-like abilities that charm or unnaturally cause sleep. When making saving throws against these types of spells, a half-elf receives a +4 bonus. Half–Elf spell resistance allows a saving throw against <em>sleep</em>, even though <em>sleep</em> normally does not have a saving throw.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "ba192ca0f6db72fd",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

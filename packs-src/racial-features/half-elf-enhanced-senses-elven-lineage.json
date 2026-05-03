@@ -1,0 +1,24 @@
+{
+  "_id": "01d2a709f2345ca1",
+  "_key": "!items!01d2a709f2345ca1",
+  "name": "Enhanced Senses (Elven Lineage)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Elf</em></p><p><em>Lineage: Elven Lineage</em></p><p>Half-elves of elven lineage can see farther than humans in just about every circumstance, including torchlight, and can see clearly enough to read a road sign or spot a shield device that is up to two miles distant when outside during the day. They can also hear very well, and receive a +2 bonus to all checks involving listening.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "ba192ca0f6db72fd",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

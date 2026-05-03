@@ -1,0 +1,24 @@
+{
+  "_id": "c224df9b6d003daa",
+  "_key": "!items!c224df9b6d003daa",
+  "name": "Stonecraft",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p><em>Attribute Check: Wisdom</em></p><p>Dwarves spend much of their lives carving halls, castles and underground fortresses out of solid rock, so they possess an extensive knowledge of stoneworking and construction. They possess almost a sixth sense in this regard which gives them various bonuses and abilities.</p><p>Dwarves are capable of spotting unusual or unique construction or stonework features including new construction, unfamiliar architecture, sliding walls, stonework traps, unsafe stone surfaces, unstable ceilings and secret or concealed doorways constructed or disguised as stone. A dwarf passing within 10 feet of one of these features is entitled to a wisdom check at +2 to recognize the feature, as if actively looking for it. Should a dwarf actively search for these features, the bonus to the wisdom check is +4. When examining a feature, a successful wisdom check reveals other bits of knowledge, such as which race created the feature, its approximate age, and if applicable, the approximate value of a stone or metal object.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

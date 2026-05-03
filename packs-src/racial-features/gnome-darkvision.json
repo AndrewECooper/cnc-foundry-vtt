@@ -1,0 +1,24 @@
+{
+  "_id": "c7e3eb40f3694e75",
+  "_key": "!items!c7e3eb40f3694e75",
+  "name": "Darkvision",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Gnome</em></p><p>In a similar manner to dwarves, gnomes can see in complete darkness for up to 60 feet. Darkvision produces images that are in shades of gray, but it is otherwise like normal sight. Gnomes can function well with no light at all. Bright lights, such as from a lantern or other light source, spoil darkvision. A gnome requires one minute to adjust his or her eyes when a light source is extinguished before gaining full use of darkvision.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "1a0e177eed0ac19b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

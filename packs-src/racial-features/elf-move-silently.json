@@ -1,0 +1,24 @@
+{
+  "_id": "6ce55cdf8f423d31",
+  "_key": "!items!6ce55cdf8f423d31",
+  "name": "Move Silently",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Elf</em></p><p><em>Attribute Check: Dexterity</em></p><p>This ability allows an elf to move silently in wilderness areas. The elf can move up to one-half normal speed at no penalty. At more than one-half, and up to the character's full speed, the character suffers a -5 penalty to the check. It's practically impossible (-20 penalty) to move silently while running or charging.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "b6c7ac1b4ec1fe7e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

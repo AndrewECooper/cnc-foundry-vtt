@@ -1,0 +1,24 @@
+{
+  "_id": "a1275b734308cf85",
+  "_key": "!items!a1275b734308cf85",
+  "name": "Deepvision",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>Ages spent beneath the earth in the dark and quiet places of the world have imbued dwarves with the ability to see in darkness where a human would find it impenetrable. This vision extends up to 120 feet in even the darkest of nights and deepest of tunnels. Colors tend to erode with deepvision, and objects appear in many shades of gray. It is otherwise like normal sight, and dwarves can function well with no light at all. Bright lights, such as from a lantern or other light source, spoil deepvision. A dwarf requires one minute to adjust his or her eyes when a light source is extinguished before gaining full use of deepvision.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

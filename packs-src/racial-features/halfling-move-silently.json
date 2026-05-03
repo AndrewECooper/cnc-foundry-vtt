@@ -1,0 +1,24 @@
+{
+  "_id": "0a642332d7830d88",
+  "_key": "!items!0a642332d7830d88",
+  "name": "Move Silently",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Halfling</em></p><p><em>Attribute Check: Dexterity</em></p><p>Halflings, being naturally small and dexterous, can move as quietly as a breeze upon a summer morn. With a successful dexterity check, halflings can move silently. They can move up to one-half their normal movement rate with no penalty to this check. For moving at one-half of their normal rate up to the character's full speed, the character suffers a -5 penalty to the check. It's practically impossible to move silently while running or charging, so this type of action incurs a -20 to the check.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "5e82998f869df45c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

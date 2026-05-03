@@ -1,0 +1,24 @@
+{
+  "_id": "adb112cfd812f2cc",
+  "_key": "!items!adb112cfd812f2cc",
+  "name": "Darkvision",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Orc</em></p><p>In a similar manner to dwarves, half-orcs can see in complete darkness for up to 60 feet. Darkvision produces images that are in shades of gray, but it is otherwise like normal sight. Half-orcs can function well with no light at all. Bright lights, such as from a lantern or other light sources, spoil darkvision. A half-orc requires one minute to adjust his or her eyes when a light source is extinguished before gaining full use of darkvision.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3c310b460a7c8fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "5824195ffa6414bd",
+  "_key": "!items!5824195ffa6414bd",
+  "name": "Animal Empathy",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Gnome</em></p><p>The gnomish relationship with nature and its creatures allows them to communicate with burrowing mammals (badger, fox, mole, rabbit, etc.). The communication is more telepathic and empathic than it is conversational, though posture and sounds can communicate emotions such as stress and fear. The information communicated must be relatively simple, taking place on the animal's level of understanding and comprehension, not the gnome's.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "1a0e177eed0ac19b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

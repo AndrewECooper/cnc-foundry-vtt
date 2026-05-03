@@ -40,6 +40,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "racial-features",
+      "label": "Racial Features",
+      "path": "packs/racial-features",
+      "type": "Item",
+      "system": "castles-and-crusades",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "languages": [

@@ -1,0 +1,24 @@
+{
+  "_id": "456ca1c7816b629e",
+  "_key": "!items!456ca1c7816b629e",
+  "name": "Defensive Expertise (Giants/Ogres)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>Long regarded as a food source by many giants, dwarves have developed considerable expertise in fighting them. Combined with their small size, this tactical expertise allows dwarves to offer resistance to the powerful giants. When fighting giants or ogres, dwarves receive a +4 bonus to armor class.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

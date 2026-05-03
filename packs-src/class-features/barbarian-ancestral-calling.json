@@ -1,0 +1,24 @@
+{
+  "_id": "63f047b6ba44cb46",
+  "_key": "!items!63f047b6ba44cb46",
+  "name": "Ancestral Calling",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p>At 10th level a barbarian's reputation and prestige allows them to call upon others to fight alongside the barbarian with heightened ability. The affected creature gains hit points equal to the maximum of one extra hit die for the creature. For example, an affected fighter would gain an additional 10 hit points. The ability affects a number of creatures equal to twice the barbarian's level. The ability only affects creatures of equal or lesser hit dice. The effect lasts for no more than one day, or until completion of a specific task, or as long as the Castle Keeper allows. The barbarian can only use this ability once per week and it cannot be used in conjunction with another barbarian's use of the same ability. It is important to note that this ability does not affect morale nor is it based upon a barbarian's charisma. Instead, it is the barbarian's force of will and reputation that causes those around him to heed his call and rise to the task set before them.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

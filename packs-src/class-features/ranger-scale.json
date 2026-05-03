@@ -1,0 +1,24 @@
+{
+  "_id": "421993426fe9d941",
+  "_key": "!items!421993426fe9d941",
+  "name": "Scale",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Dexterity</em></p><p>With this ability, rangers can climb and scale typical natural slopes and inclines, such as steep but rocky hillsides. No attribute check is needed to scale such surfaces.</p><p>Additionally, this extraordinary ability allows a ranger to climb up, down, or across a dangerous natural slope or inverted incline that others would find impossible to climb. When doing so, the ranger moves at one-half the character's normal speed. A failed scale check means that the character makes no progress. A check that fails by 5 or more means that the character falls from the currently attained height and must suffer falling damage.</p><p>In both situations above, nothing can be carried in the ranger's hands while climbing. Also, the ability cannot be used if armors other than those allowed are worn.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

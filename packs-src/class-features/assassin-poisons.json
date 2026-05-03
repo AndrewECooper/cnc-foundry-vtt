@@ -1,0 +1,24 @@
+{
+  "_id": "f2eb98b6d26b3663",
+  "_key": "!items!f2eb98b6d26b3663",
+  "name": "Poisons",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Intelligence</em></p><p>An assassin can identify and make poisons and antitoxins. An assassin can identify a poison or antitoxin on a successful check. To make a poison or antitoxin, the assassin needs some alchemical equipment and raw materials costing one third of the street value of the poison or antitoxin to be made. An assassin's training in the use of poison means that an assassin never risks accidental poisoning when applying poison to a blade. Moreover, assassins train with poisons of all types, and they slowly grow more resistant to their effects. This is reflected by a +1 bonus to saving throws versus poisons gained at 3rd level. Some common poisons, their effects and costs are listed below.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

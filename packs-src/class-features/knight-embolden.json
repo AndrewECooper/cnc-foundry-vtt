@@ -1,0 +1,24 @@
+{
+  "_id": "c55f1648c5c87fc1",
+  "_key": "!items!c55f1648c5c87fc1",
+  "name": "Embolden",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p>At 3rd level, the knight's confidence and fearlessness in the face of danger instills courage in their companions and followers. Any companions or followers within 30 feet of the knight gains a bonus of +1 to strength, constitution, dexterity, and intelligence saving throws, and a +2 to wisdom and charisma saving throws. This ability can be used once per day and lasts a number of rounds equal to the knight's level. This ability cannot be used in conjunction with demoralize or inspire.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

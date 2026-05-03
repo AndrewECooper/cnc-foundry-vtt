@@ -1,0 +1,24 @@
+{
+  "_id": "caf8ada727aa837e",
+  "_key": "!items!caf8ada727aa837e",
+  "name": "Pick Pocket",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p><em>Attribute Check: Dexterity</em></p><p>A rogue can use this ability, on a successful dexterity check, to remove the contents of a pocket or pouch (or otherwise take something from a person) without being noticed. Success may require the rogue to cut the purse or pouch from the target. A penalty to check is equal to the level or hit dice of the targeted victim.</p><p>This ability also allows the rogue to perform \"sleight of hand\" maneuvers. A successful dexterity check indicates the rogue has hidden or moved an item in such a manner so that observers are not aware of where the item has been hidden. Such typical maneuvers are hiding a coin, sliding a card up a sleeve, performing the shell game, and the like. A penalty to the check may be applied if there is an observer present that is determined to note where an item is moved. This penalty is equal to the wisdom attribute bonus for the observer.</p><p>Wearing armor not on the rogue armor list affects this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

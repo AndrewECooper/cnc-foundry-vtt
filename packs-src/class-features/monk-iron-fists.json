@@ -1,0 +1,24 @@
+{
+  "_id": "0629571e4a82c0db",
+  "_key": "!items!0629571e4a82c0db",
+  "name": "Iron Fists",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Monk</em></p><p>Beginning at 3rd level, a monk has begun to master his martial ability to such an extent that his unarmed attacks strike as if dealt by a magic weapon. Thus, the monk can strike and damage creatures hit only by magic weapons. At 3rd level, the monk's unarmed attack is equal a +1 magic weapon. This ability improves as the monk rises in levels as follows: +2 at 5th, +3 at 8th, +4 at 12th and +5 at 17th. This ability does not confer any actual bonus to hit and damage.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

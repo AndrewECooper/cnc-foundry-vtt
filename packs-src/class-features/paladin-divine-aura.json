@@ -1,0 +1,24 @@
+{
+  "_id": "6100ddff26eed515",
+  "_key": "!items!6100ddff26eed515",
+  "name": "Divine Aura",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>Paladins emanate a permanent divine aura that wards against attacks from evil, summoned or conjured creatures. It creates a magical barrier around the paladin that conveys a +2 bonus to armor class and a +2 bonus on all saving throws against evil creatures. The divine aura also prevents bodily contact by summoned or conjured creatures. This causes the natural weapon attacks of such creatures to fail, and the creatures to recoil, if such attacks require touching the warded creature. Good elementals and outsiders are immune to this effect.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

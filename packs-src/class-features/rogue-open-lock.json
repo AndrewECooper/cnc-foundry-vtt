@@ -1,0 +1,24 @@
+{
+  "_id": "0022f4f196966fd9",
+  "_key": "!items!0022f4f196966fd9",
+  "name": "Open Lock",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p><em>Attribute Check: Dexterity</em></p><p>A rogue can use this ability to open any sort of mechanical lock that would normally require a key to open. A successful check indicates the lock has been opened. This ability requires the use of a set of rogue's tools, including picks, blank keys, wires or other appropriate tools. A rogue may only make one attempt per lock. If that attempt fails, the rogue cannot try to open the same lock again until gaining one more level as it is beyond the current ability of the rogue to pick it.</p><p>This ability is affected by wearing metal or large gloves.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

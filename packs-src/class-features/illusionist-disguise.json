@@ -1,0 +1,24 @@
+{
+  "_id": "b203be9da5e44965",
+  "_key": "!items!b203be9da5e44965",
+  "name": "Disguise",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Illusionist</em></p><p><em>Attribute Check: Charisma</em></p><p>Using magic and props, the illusionist can disguise himself and impersonate others. The effort requires 1d3x10 minutes of work. A disguise can include an apparent change of height or weight of no more than one-tenth the original. The Castle Keeper makes the character's check secretly, so that the player is not sure if the disguise is successful. Illusionists can use spells, like change self, to augment their disguise and give them a greater chance of success. The following modifiers are applied to a disguise check when appropriate: sex difference -2; race difference -2; age difference -2 per 10 years.</p><p>Success indicates a disguise good enough to fool normal observers. The Castle Keeper may allow a suspicious observer an intelligence check to see through the disguise. If the observer is familiar with the person being impersonated, they gain a bonus of +4 to the intelligence check. If the person being impersonated is a close associate or friend of the observer, the check is made at +8. Additionally, disguises must be occasionally changed to remove suspicion.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

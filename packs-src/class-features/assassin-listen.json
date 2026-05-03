@@ -1,0 +1,24 @@
+{
+  "_id": "c5c436926480756b",
+  "_key": "!items!c5c436926480756b",
+  "name": "Listen",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Wisdom</em></p><p>An assassin can use this ability to listen intently and hear noises that others might not detect, even through an obstacle such as a door. Success indicates the assassin can hear soft sounds, like a whisper or cat stalking, while outside or in the open and up to a range of 30 feet. It also indicates success if the assassin is listening for sounds on the other side of a door, but the assassin must be adjacent to the door. However, exactly what is heard is up to the Castle Keeper's discretion as each case is unique. If listening through a stone wall, the assassin suffers a -10 penalty to the check. For other materials, vary the penalty as appropriate. An assassin can retry this ability once a round.</p><p>This ability is affected by wearing a metal or large helmet.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

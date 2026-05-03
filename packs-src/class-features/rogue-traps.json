@@ -1,0 +1,24 @@
+{
+  "_id": "fa29dd5453df5c19",
+  "_key": "!items!fa29dd5453df5c19",
+  "name": "Traps",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p><em>Attribute Check: Intelligence</em></p><p>A rogue has three ways to use this ability: finding, disabling or setting traps. Each use requires a separate attribute check and each check may be made only once in a given circumstance. The player must also describe how the actions are being performed to use this ability.</p><p>To find a trap, a rogue spends time intently studying and searching an area to deduce possible trap locations. It takes one round to locate a trap in a specific area such as a lock or a doorknob, and one minute to locate a trap in a 10 by 10 foot area. A successful check indicates the rogue finds one trap, if any are present. The trap discovered is the simplest or most obvious trap in the area. If multiple traps are in an area, multiple successful checks are required to find them all. A rogue can find magical traps with this ability, although it may be much more difficult than finding mundane traps. The Castle Keeper determines any penalties to the check basing those penalties on the level or hit dice of those who set them.</p><p>To disable a trap, a rogue must first know its location. Once a trap is located, a successful check means the rogue has disarmed the trap. The attempt can only be made once and failure indicates that the rogue set off the trap. A rogue can disarm a magic trap, although it may be much more difficult than disarming a mundane trap. In most cases, rogue's tools are needed to disarm a trap. Generally, it takes 1d4 rounds to disarm a trap, depending on its complexity.</p><p>To set a trap, or to reset a previously disabled trap, a rogue must make a successful traps check. If a rogue is resetting a trap that was previously disabled, the rogue gains a +5 bonus to the check. The amount of time required to set or reset a trap depends on the complexity of the trap, typically taking 1d4 rounds.</p><p>Locating traps is not affected by the armor worn. However, disabling and setting traps is affected by wearing armor not on the armor list for the rogue.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

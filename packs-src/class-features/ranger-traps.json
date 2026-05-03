@@ -1,0 +1,24 @@
+{
+  "_id": "da1ab97a837eb9db",
+  "_key": "!items!da1ab97a837eb9db",
+  "name": "Traps",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Wisdom</em></p><p>A ranger is able to detect and build simple traps in a wilderness environment. When passing within 25 feet of a wilderness trap, a ranger is entitled to an attribute check to spot it. When actively searching for traps, the ranger receives a +2 bonus to the check. It takes one round to locate a trap in a 5 by 5 foot area, or one minute spent searching to locate a trap in a 25 by 25 foot area. A ranger cannot find magical traps with this ability.</p><p>A ranger can set simple traps in a wilderness environment. These include snares, pit traps and similar devices. Rangers cannot set complicated mechanical traps such as those found on treasure chests or on doorways. On a successful traps check, the ranger successfully builds and conceals a snare or pit trap. Snares can capture and hold creatures of up to medium height, and pit traps can be dug to deliver 1d4 points of damage (halved if the creature falling in it makes a successful dexterity saving throw). Rangers can also disable simple wilderness traps (of any type they can build) with little or no effort. No traps check need be made to do this.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

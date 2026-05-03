@@ -1,0 +1,24 @@
+{
+  "_id": "c753d26962322e4e",
+  "_key": "!items!c753d26962322e4e",
+  "name": "Lay On Hands",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Paladin</em></p><p>A paladin can cure 2 hit points per level once per day. This ability can be used on the paladin or on others, but the healing cannot be divided among multiple recipients.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

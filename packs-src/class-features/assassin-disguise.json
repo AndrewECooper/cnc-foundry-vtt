@@ -1,0 +1,24 @@
+{
+  "_id": "9efc272bdb3f442d",
+  "_key": "!items!9efc272bdb3f442d",
+  "name": "Disguise",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Charisma</em></p><p>With a successful check in this ability, assassins can disguise themselves or impersonate people. The ability allows the assassin to impersonate general types of people, as well as individuals. For example, a human assassin might impersonate a taller elf mage, or perhaps a traveler, even though the assassin is a local.</p><p>For a general impersonation such as a beggar or merchant, the effort requires a few props, makeup, and 1d3x10 minutes of work to complete. Where specific individuals are being impersonated, at least one month's preparation time is required to avoid detection. A disguise can include an apparent change of height or weight of no more than one-tenth the original height or weight of the assassin. The Castle Keeper makes the character's disguise check secretly so that the character is not sure of its success. The following penalties are applied to a disguise check when appropriate: sex difference -2, race difference -2, and a -2 for an age difference of more than ten years.</p><p>A successful disguise does not fool an observer in all instances. Success indicates that the assassin is disguised well enough to fool normal, non-suspicious observers. If a suspicious individual observes the assassin, the CK may allow the observer an intelligence check to see through the disguise. If an assassin is impersonating a particular individual, all who know that individual are permitted to make an intelligence check to detect the disguise. If the observer would recognize the impersonated individual on sight, the check is made at +4. If the observer is a friend or close associate, the check is made at +8 and if intimate, the check is at +12.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "ac64807de9ee163f",
+  "_key": "!items!ac64807de9ee163f",
+  "name": "Exhort Greatness",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Bard</em></p><p>At 9th level, a bard can inspire greatness in one other creature. For every two levels the bard attains beyond 9th, the bard can inspire greatness in an additional creature. To inspire greatness, the bard must use song, poetry or some sort of oration. The creature to be inspired must be able to hear the bard, and must be within 30 feet for the effect to take place. A creature inspired with greatness gains temporary hit points and attack bonuses for as long as the bard is within its hearing and the bard continues to sing or orate. This effect lasts for one minute, or six rounds, at 9th level, and the duration increases by one additional round for every level beyond 9th. The creature can move out of the 30 foot radius once the exhortation has begun, but it must still be able to hear the bard at all times.</p><p>The target creature gains a +2 bonus on all 'to hit' rolls, and gains temporary hit points as if two hit dice (or levels) higher. Apply the creature's constitution modifier, if any, to each bonus hit point roll. See the combat section for a detailed explanation of temporary hit points.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

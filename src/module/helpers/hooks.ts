@@ -106,6 +106,30 @@ Hooks.on('createActor', async function (actor: Actor) {
   }
 });
 
+/**
+ * Reroll initiative for all combatants at the start of each new round.
+ * In Castles & Crusades, initiative is rerolled every round rather than
+ * keeping a single fixed order for the entire combat.
+ *
+ * Guarded so it only fires on the active GM client (avoiding double rolls
+ * with multiple GMs connected) and skipped at combat start (round 0 → 1)
+ * since the initial roll has already happened.
+ */
+Hooks.on('updateCombat', async function (combat: any, changed: any) {
+  if (!('round' in changed)) return;
+  if (!combat?.started) return;
+  if (changed.round <= 1) return;
+
+  // @ts-ignore - activeGM exists on Users in v11+
+  if (game.users?.activeGM?.id !== game.user?.id) return;
+
+  if (!Settings.rerollInitiativeEachRound) return;
+
+  logger.debug(`Rerolling initiative for combat round ${changed.round}`);
+  await combat.resetAll();
+  await combat.rollAll();
+});
+
 Hooks.on('createToken', async function (token: TokenDocument, options: any, id: string) {
   logger.debug('createToken hook called');
   if (token.actor && token.actor.type === 'monster') {

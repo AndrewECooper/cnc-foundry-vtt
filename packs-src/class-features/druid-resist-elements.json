@@ -1,0 +1,24 @@
+{
+  "_id": "3abab6d6ca3bd51e",
+  "_key": "!items!3abab6d6ca3bd51e",
+  "name": "Resist Elements",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Druid</em></p><p>At 2nd level, druids gain a +2 bonus to saving throws against fire, water, earth, air, cold and lightning attacks.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

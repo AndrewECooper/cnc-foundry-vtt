@@ -1,0 +1,24 @@
+{
+  "_id": "39c4fedbb27335dc",
+  "_key": "!items!39c4fedbb27335dc",
+  "name": "Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Wizard</em></p><p>A wizard casts arcane spells. Wizards can only cast a limited number of spells, from each spell level, per day. The Wizard Spells Per Day Table lists the number of spells per day a wizard may cast of each spell level. For example, a 5th level wizard can cast five 0 level spells, four 1st level spells, two 2nd level spells and one 3rd level spell per day.</p><p>A wizard must prepare spells before casting them by studying from a spell book. While studying, the wizard decides which spells to prepare. Spell memorization and spell descriptions are covered in detail in the Magic chapter (page 68).</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "ca4330393ef51692",
+  "_key": "!items!ca4330393ef51692",
+  "name": "Decipher Script",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Rogue</em></p><p><em>Attribute Check: Intelligence</em></p><p>This ability allows a rogue to decipher writing in an unfamiliar language, a message written in an incomplete or archaic form or a message written in code. If the check succeeds, the character understands the general content of a piece of writing. It takes 2d8 minutes to decipher each page of a script. The attempt may be made only once per writing.</p><p>A rogue may use this ability to decipher arcane script if a successful check is made at a penalty of -10. If successful he can read the spell but not cast the spell. This ability may not be used to decipher divine scrolls.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

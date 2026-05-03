@@ -1,0 +1,24 @@
+{
+  "_id": "261898ad914611a8",
+  "_key": "!items!261898ad914611a8",
+  "name": "Survival",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Wisdom</em></p><p>In wilderness environments the character can find shelter, food and water for themselves, start a fire, and determine direction. As long as adequate food, water, and shelter sources are present in the environment, the ranger can find food, water and shelter without the need for an attribute check. Also, a ranger can start a fire in 1d10 minutes by natural means, as long as the needed materials are available. A ranger also can determine true north in relation to the character, as long as he is in a wilderness environment.</p><p>A ranger can also provide decent food and water for several people without the need for an attribute check unless it is a large number of people. The ranger must spend 8 hours hunting and gathering to produce enough food and water to feed 2-8 people for a day. If the ranger wishes to feed or shelter a larger group of people than the die indicate, a successful wisdom check is necessary. If successful, the ranger must spend an additional 8 hours gathering food to feed and water an additional 2-8 people. This additional effort allows the ranger to gather food and water for up to 4-16 creatures. The ranger can only hunt and forage for food twice per day.</p><blockquote><p>For example, a ranger is attempting to feed 12 people. For 8 hours of effort, the ranger feeds 2-8 people automatically. The result is a 6, so the ranger has to feed 6 more people. On a successful wisdom check, the ranger can forage for another 8 eight hours and feed 2-8 more people.</p></blockquote>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

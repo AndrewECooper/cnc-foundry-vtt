@@ -1,0 +1,24 @@
+{
+  "_id": "ac17d5eb60fb322d",
+  "_key": "!items!ac17d5eb60fb322d",
+  "name": "Sharp Senses",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Illusionist</em></p><p>An illusionist's innate ability to distinguish the real from the unreal imparts a +1 bonus to all illusion saving throws. The bonus increases to +2 at 4th level, +3 at 7th level, +4 at 10th level, +5 at 13th level and +6 at 16th level.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

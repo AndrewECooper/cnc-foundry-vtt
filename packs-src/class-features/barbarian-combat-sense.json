@@ -1,0 +1,24 @@
+{
+  "_id": "f8e0587f1736062f",
+  "_key": "!items!f8e0587f1736062f",
+  "name": "Combat Sense",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Barbarian</em></p><p>A barbarian has an uncanny sense for the presence of foes in the immediate vicinity, reducing the effectiveness of surprise, flank and rear attacks against them. Barbarians gain a +2 bonus when rolling a surprise check against foes attempting to surprise them. Also, attackers do not get any bonus when attacking a barbarian from the flank. Similarly, back and rear attacks against a barbarian are halved, including special attacks such as the rogue's back attack. Thus, for example, a rogue using the back attack ability against a barbarian gains only a +2 bonus to hit instead of +4.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

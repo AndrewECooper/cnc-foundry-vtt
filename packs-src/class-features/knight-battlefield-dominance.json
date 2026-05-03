@@ -1,0 +1,24 @@
+{
+  "_id": "9a45cb3f11af0ae1",
+  "_key": "!items!9a45cb3f11af0ae1",
+  "name": "Battlefield Dominance",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Knight</em></p><p>At 8th level, the knight can use demoralize, embolden and inspire in the same round. This is in addition to their regular use individually.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

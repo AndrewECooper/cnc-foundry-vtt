@@ -1,0 +1,24 @@
+{
+  "_id": "18770e6743735f71",
+  "_key": "!items!18770e6743735f71",
+  "name": "Climb",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Assassin</em></p><p><em>Attribute Check: Dexterity</em></p><p>This extraordinary ability allows an assassin to climb up, down, or across a slope, wall, steep incline (even a ceiling with handholds), or unusually angled natural or man made slope or incline that others would find impossible to climb. When doing so, the assassin moves at one-half the character's normal speed. A failed climb check means that the character makes no progress. A check that fails by 5 or more means that the character falls from the currently attained height, and must suffer falling damage. Assassins can not carry anything in their hands while climbing. When climbing typical natural slopes and man made inclines, such as a cliff faces or steep steps, an assassin does not need to make an attribute check to climb the surface.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

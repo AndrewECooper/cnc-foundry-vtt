@@ -1,0 +1,24 @@
+{
+  "_id": "34ac0af74b3c700b",
+  "_key": "!items!34ac0af74b3c700b",
+  "name": "Totem Shape",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Druid</em></p><p>At 6th level, druids gain the spell-like ability to change into a small or medium-size animal and back again once per day. This ability operates like the spell polymorph self. Upon attaining this ability, a druid must choose a totem shape. The selection is permanent, and cannot be changed. Each time a druid uses this ability, the character regains 1d4 hit points.</p><p>At 7th and 8th levels, the druid gains a new totem shape. Each shape can be assumed once per day. At 12th level, the druid gains the ability to take the shape of a large version of one of the previously chosen totem forms. This large form can be assumed once per day, and the druid can decide between the three forms each time this ability is used. When assuming the large version of a totem form, the druid heals 5d8 hit points. At 15th level, the druid can take a totem shape twice per day and at 18th level, three times per day.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

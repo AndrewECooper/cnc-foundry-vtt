@@ -1,0 +1,24 @@
+{
+  "_id": "388aacac3ca65518",
+  "_key": "!items!388aacac3ca65518",
+  "name": "Conceal",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Dexterity</em></p><p>Rangers can conceal themselves extremely well in wilderness areas. With a successful dexterity check, rangers can camouflage themselves so well as to be unnoticeable by most passers-by. Rangers cannot conceal themselves and move silently at the same time until they reach 5th level. At this level and beyond, a ranger can attempt both but must make a successful conceal and move silent check at -5. In this case, movement is reduced to one quarter the normal movement rate.</p><p>Rangers cannot conceal themselves if being observed, even casually, before the conceal check is attempted. If the observer is momentarily distracted, the ranger can attempt to use this ability. While the observer averts its attention, the character can attempt to get to a hiding place of some kind. The attribute check, however, is at a -10 penalty because the character has to move quickly to the hiding place.</p><p>This ability cannot be used if armors other than those allowed are worn.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

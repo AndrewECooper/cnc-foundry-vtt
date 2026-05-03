@@ -1,0 +1,24 @@
+{
+  "_id": "5469651882ebb5ae",
+  "_key": "!items!5469651882ebb5ae",
+  "name": "Track",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Class: Ranger</em></p><p><em>Attribute Check: Wisdom</em></p><p>The ranger can successfully track any creature in a wilderness setting that leaves a discernable trace. They can also determine characteristics about the creature being tracked. With a successful wisdom check, a ranger can find and follow a creature's tracks or trail for 5 hours. The ranger can also hide tracks at the same level of ability.</p><p>When tracking or hiding tracks from humanoids or giants, a ranger receives a +2 bonus to the attribute check. The Castle Keeper may apply bonuses or penalties for varying conditions, such as the length of time elapsed since the tracks were made, weather conditions, the number of creatures tracked and whether the tracked creature moved through water or a secret door.</p><p>A successful track check may also impart information about the creature(s) being tracked. Once a trail is found, a track check can determine the general number and type of creatures being tracked. The number of creatures tracked should be disclosed to the player by using one of the following categories: individuals (1-6), band (6-30), troop (20-100), or army (100+), and also one from the following categories: beast, fey, giant, humanoid, plant, vermin, or other (aberration, construct, dragon, elemental, magical beast, ooze, outsider, shapechanger, or undead). For many creatures, the ranger can not identify its exact type; only that it is a creature of such nature until some experience has been gained tracking it. A ranger can identify specific animal tracks with no effort. After having tracked a particular type of creature several times, the ranger can later identify its tracks.</p><p>At 3rd level, a ranger can ascertain distinguishing characteristics about the creatures tracked, such as whether they are wounded, exhausted, carrying heavy objects or wearing certain armor. The ranger might even be able to determine if a spellcaster is in the group being tracked. The marks or characteristics determined are limited only by the Castle Keeper's imagination and desire to provide or enhance story elements during game play.</p><p>At 5th level, a ranger can identify the specific type of creature(s) being tracked if belonging to one of the following categories and with which the ranger has had some interaction: beast, fey, giant, humanoid, plant or vermin.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

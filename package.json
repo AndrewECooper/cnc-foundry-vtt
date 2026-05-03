@@ -19,6 +19,7 @@
     "build:watch": "cross-env NODE_ENV=development rollup -cw",
     "build:packs": "cross-env NODE_ENV=development node ./utils/build-packs.js",
     "build:class-features": "node ./tools/build-class-features.js",
+    "build:racial-features": "node ./tools/build-racial-features.js",
     "pack": "node ./tools/pack.js",
     "unpack": "node ./tools/unpack.js",
     "build:ci": "cross-env NODE_ENV=production node ./utils/build-packs.js && npm run pack && rollup -c",

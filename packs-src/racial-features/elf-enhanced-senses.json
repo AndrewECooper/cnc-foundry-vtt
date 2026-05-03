@@ -1,0 +1,24 @@
+{
+  "_id": "1c262a6944293d64",
+  "_key": "!items!1c262a6944293d64",
+  "name": "Enhanced Senses",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Elf</em></p><p>Elvish physiology is blessed with enhanced vision and hearing. Elves can see farther than humans in just about every circumstance, including torchlight, and can see clearly enough to read a road sign or spot a shield device up to two miles distant when outside during the day. They can also hear very well, and receive a +2 bonus to all checks involving listening.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "b6c7ac1b4ec1fe7e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

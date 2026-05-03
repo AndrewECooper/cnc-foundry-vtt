@@ -1,0 +1,24 @@
+{
+  "_id": "c2eccba380954166",
+  "_key": "!items!c2eccba380954166",
+  "name": "Fearless",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Halfling</em></p><p>Halflings, for the most part, lead sequestered lives and are often considered naive. This is not entirely accurate; halflings are not raised with fears and trepidation imparted to them by myth and fancy, but are reared on tales of self-dependence and the overcoming of life's many hurdles. For either or both reasons, halflings possess stout hearts and are not easily frightened, even in dire circumstances. This trait imparts a +2 bonus on all saving throws against fear.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "5e82998f869df45c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

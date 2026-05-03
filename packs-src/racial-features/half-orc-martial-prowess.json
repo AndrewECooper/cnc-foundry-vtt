@@ -1,0 +1,24 @@
+{
+  "_id": "43670765c9380ac1",
+  "_key": "!items!43670765c9380ac1",
+  "name": "Martial Prowess",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Orc</em></p><p>Half-orcs come from very violent societies in which fights and contests of strength are common and necessary for survival. This has inured them to great amounts of pain and given most a great capacity to fend off blows and fight unarmed. As such, half-orcs receive a +1 to their armor class whenever they are not wearing armor of any type. This ability combines with magical rings, robes and other similar devices that confer an armor class bonus but are not armor. This bonus adds to the unarmored armor class of half-orc monks.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3c310b460a7c8fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

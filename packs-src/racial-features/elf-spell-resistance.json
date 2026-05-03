@@ -1,0 +1,24 @@
+{
+  "_id": "12f71443a86fa8e2",
+  "_key": "!items!12f71443a86fa8e2",
+  "name": "Spell Resistance",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Elf</em></p><p><em>Attribute Check: Wisdom</em></p><p>Elves are particularly resistant to spells and spell-like abilities that charm or unnaturally cause sleep. When making saving throws against these types of spells, an elf receives a +10 bonus. Elf spell resistance allows a saving throw against <em>sleep</em>, even though <em>sleep</em> normally does not have a saving throw.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "b6c7ac1b4ec1fe7e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

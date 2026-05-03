@@ -1,0 +1,24 @@
+{
+  "_id": "7e4dad426387d8ed",
+  "_key": "!items!7e4dad426387d8ed",
+  "name": "Resistant",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Halfling</em></p><p>A lifetime of good food, when combined with hard work and a self-reliant spirit, makes for a healthy people. Halflings are more resistant to the ills of life than most other races, so they receive a +1 bonus to all constitution saving throws.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "5e82998f869df45c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "94fa71e4344c2a4b",
+  "_key": "!items!94fa71e4344c2a4b",
+  "name": "Resistant To Disease",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Orc</em></p><p>Half-orcs possess a resistance to disease passed down from their goblinoid parent. They receive a +2 bonus to all disease saving throws.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3c310b460a7c8fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

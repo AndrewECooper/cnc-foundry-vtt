@@ -1,0 +1,24 @@
+{
+  "_id": "9a2fce01b8c1f207",
+  "_key": "!items!9a2fce01b8c1f207",
+  "name": "Primary Attributes",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Human</em></p><p>Because of the unique nature of humankind, humans choose an additional primary attribute, for a total of three.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "cb5f74a0053648f9",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

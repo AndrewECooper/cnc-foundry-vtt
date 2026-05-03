@@ -1,0 +1,24 @@
+{
+  "_id": "f1d837574029ea66",
+  "_key": "!items!f1d837574029ea66",
+  "name": "Animosity (Elves)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>The disparate personalities of dwarves and elves have resulted in eons of misunderstandings, squabbles and even wars between the two races. Dwarves consider elves to be disloyal and untrustworthy partners in war or trade. As a result, dwarves suffer a -2 penalty to charisma checks when dealing with elves to whom they are not closely associated.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

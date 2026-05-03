@@ -1,0 +1,24 @@
+{
+  "_id": "93a7ed131b6eee11",
+  "_key": "!items!93a7ed131b6eee11",
+  "name": "Determine Depth And Direction",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>The world beneath mountains and in the deeps of the earth is the natural home of the dwarf. Dwarves can sense their approximate depth underground as naturally as a human can sense which way is up. The dwarf can determine direction underground just as easily.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

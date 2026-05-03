@@ -1,0 +1,24 @@
+{
+  "_id": "8b6f0be4078a4363",
+  "_key": "!items!8b6f0be4078a4363",
+  "name": "Enmity (Goblins/Orcs)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>Eternal wars against goblins and orcs have created an undying crucible of hatred for these vile creatures. When in combat against goblins or orcs, this fury and hatred allows dwarves a +1 bonus to hit these creatures. Dwarves have a similar distrust of half-orcs. Dwarves find inter-breeding with goblinoids to be the worst of all sins, and their powerful antipathy towards pure goblinoids negatively affects dwarven relations with half-orcs. Dwarves suffer a -4 to charisma checks when interacting with half-orcs, goblins and orcs.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

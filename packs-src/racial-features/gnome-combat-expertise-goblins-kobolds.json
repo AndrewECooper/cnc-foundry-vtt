@@ -1,0 +1,24 @@
+{
+  "_id": "35713d3798367876",
+  "_key": "!items!35713d3798367876",
+  "name": "Combat Expertise (Goblins, Kobolds)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Gnome</em></p><p>Gnomes have battled goblins and kobolds in the forests and mountains since the dawn of their race. Because of these frequent and bloody encounters, gnomes have developed special techniques for fighting goblins and kobolds. Gnomes receive a +1 bonus to hit kobolds and goblins using hand held weapons in melee combat. Using missile weapons does not confer a bonus.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "1a0e177eed0ac19b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

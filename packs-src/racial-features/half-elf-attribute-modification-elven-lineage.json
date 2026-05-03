@@ -1,0 +1,24 @@
+{
+  "_id": "78845a700c4eee9c",
+  "_key": "!items!78845a700c4eee9c",
+  "name": "Attribute Modification (Elven Lineage)",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Elf</em></p><p><em>Lineage: Elven Lineage</em></p><p>+1 to dexterity and -1 to constitution.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "ba192ca0f6db72fd",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

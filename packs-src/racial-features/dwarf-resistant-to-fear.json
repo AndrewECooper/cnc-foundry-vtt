@@ -1,0 +1,24 @@
+{
+  "_id": "cc404087e3f04415",
+  "_key": "!items!cc404087e3f04415",
+  "name": "Resistant To Fear",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>Dwarven loyalty, duty, stubbornness and honor lend them courage where other races might falter. Dwarves receive a +2 bonus to all saving throws against fear.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

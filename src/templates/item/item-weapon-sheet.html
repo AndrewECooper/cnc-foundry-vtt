@@ -1,104 +1,74 @@
 <form autocomplete="off" class="{{cssClass}}">
-  <header class="sheet-header">
-    <img
-      alt="{{item.name}}"
-      class="profile-img"
-      data-edit="img"
-      src="{{item.img}}"
-      title="{{item.name}}"
-    />
-    <div class="header-fields">
-      <h1 class="charname">
-        <input
-          name="name"
-          placeholder="{{localize 'TLGCC.Name'}}"
-          type="text"
-          value="{{item.name}}"
-        />
-      </h1>
-      <div class="grid grid-4col">
-        <div class="resource">
-          <label class="resource-label" for="system.price.value"
-          >{{localize 'TLGCC.Price'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.price.value"
-            name="system.price.value"
-            type="text"
-            value="{{system.price.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.weight.value"
-          >{{localize 'TLGCC.Weight'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.weight.value"
-            name="system.weight.value"
-            type="text"
-            value="{{system.weight.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.itemev.value"
-          >{{localize 'TLGCC.ItemEV'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.itemev.value"
-            name="system.itemev.value"
-            type="text"
-            value="{{system.itemev.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.damage.value"
-          >{{localize 'TLGCC.Damage'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.damage.value"
-            name="system.damage.value"
-            type="text"
-            value="{{system.damage.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.bonusAb.value"
-          >{{localize 'TLGCC.BonusAttackBonus'}}</label
-          >
-          <input
-            data-dtype="Number"
-            id="system.bonusAb.value"
-            name="system.bonusAb.value"
-            type="text"
-            value="{{system.bonusAb.value}}"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label" for="system.range.value"
-          >{{localize 'TLGCC.Range'}}</label
-          >
-          <input
-            data-dtype="String"
-            id="system.range.value"
-            name="system.range.value"
-            type="text"
-            value="{{system.range.value}}"
-          />
-        </div>
+  <div class="cc-item-paper">
+
+    {{!-- Header: icon + name + type stamp --}}
+    <div class="cc-item-header">
+      <div class="cc-item-icon">
+        <img class="profile-img" data-edit="img" src="{{item.img}}" title="{{item.name}}" />
+      </div>
+      <div class="cc-item-identity">
+        <input class="cc-item-name"
+               name="name"
+               type="text"
+               value="{{item.name}}"
+               placeholder="{{localize 'TLGCC.Name'}}" />
+        <span class="cc-type-stamp">{{localize "TYPES.Item.weapon"}}</span>
       </div>
     </div>
-  </header>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-    {{!-- Description Tab --}}
-    <div class="description">
-      {{editor system.description target="system.description" rollData=rollData
-      button=true owner=owner editable=editable}}
+    {{!-- Stats: price, weight, EV, damage --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Price")
+          name="system.price.value"
+          value=system.price.value
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Weight")
+          name="system.weight.value"
+          value=system.weight.value
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.ItemEV")
+          name="system.itemev.value"
+          value=system.itemev.value
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Damage")
+          name="system.damage.value"
+          value=system.damage.value
+          mono=true
+          width=130}}
     </div>
-  </section>
+
+    {{!-- Combat: bonus AB, range --}}
+    <div class="cc-stamp-row">
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.BonusAttackBonus")
+          name="system.bonusAb.value"
+          value=system.bonusAb.value
+          dtype="Number"
+          mono=true
+          width=120}}
+      {{> "systems/castles-and-crusades/templates/item/parts/stamp-input.html"
+          label=(localize "TLGCC.Range")
+          name="system.range.value"
+          value=system.range.value
+          mono=true
+          width=150}}
+    </div>
+
+    {{!-- Description editor --}}
+    <section class="cc-form-section">
+      <div class="cc-form-section-header">{{localize "TLGCC.Notes"}}</div>
+      <div class="cc-form-section-body">
+        {{editor system.description target="system.description" rollData=rollData
+          button=true owner=owner editable=editable}}
+      </div>
+    </section>
+
+  </div>
 </form>

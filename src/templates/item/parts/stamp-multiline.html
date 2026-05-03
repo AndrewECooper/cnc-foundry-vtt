@@ -1,0 +1,19 @@
+{{!--
+  Stamp-style multiline textarea with micro-label and dashed border.
+  Params:
+    label  — display text above the textarea (already localized)
+    name   — form field name
+    value  — current value
+    id     — input id (defaults to name)
+    rows   — textarea row count (default 3)
+    dtype  — Foundry data type (default String)
+    title  — optional tooltip
+--}}
+<div class="cc-stamp-field">
+  <label for="{{#if id}}{{id}}{{else}}{{name}}{{/if}}">{{label}}</label>
+  <textarea id="{{#if id}}{{id}}{{else}}{{name}}{{/if}}"
+            name="{{name}}"
+            rows="{{#if rows}}{{rows}}{{else}}3{{/if}}"
+            data-dtype="{{#if dtype}}{{dtype}}{{else}}String{{/if}}"
+            {{#if title}}title="{{title}}"{{/if}}>{{value}}</textarea>
+</div>

@@ -838,6 +838,8 @@
   --cc-sidebar-bg: linear-gradient(180deg, #4a3826 0%, #3a2a1a 100%);
   --cc-tab-active-bg: rgba(255, 250, 235, 0.95);
   --cc-tab-text: #d8c8a8;
+  --cc-title-bar-bg: linear-gradient(#2a1f12, #1f160a);
+  --cc-title-bar-text: #e0d0a8;
 }
 
 .tlgcc.sheet.actor form,
@@ -1806,4 +1808,353 @@
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   font-size: 12px;
   color: var(--cc-muted);
+}
+
+/* ── Item Sheet Shell ──────────────────────────────────────────── */
+
+.tlgcc.sheet.item form,
+.tlgcc.sheet.item {
+  background: var(--cc-outer-bg);
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(120, 90, 60, 0.4), transparent 70%),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.06) 0 2px, transparent 2px 6px);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  color: var(--cc-text);
+}
+
+.tlgcc.sheet.item form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.tlgcc .cc-item-paper {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  background: var(--cc-parchment);
+  background-image:
+    radial-gradient(ellipse at 30% 20%, rgba(255, 255, 240, 0.9), transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(170, 130, 80, 0.12), transparent 50%);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  padding: 20px 22px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0 100%
+  );
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tlgcc .cc-item-paper::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.2deg);
+  width: 110px;
+  height: 18px;
+  background-color: rgba(220, 200, 150, 0.7);
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3) 0 4px,
+    transparent 4px 8px
+  );
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ── Item Header ──────────────────────────────────────────────── */
+
+.tlgcc .cc-item-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tlgcc .cc-item-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #ede0bf;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0 6px,
+    rgba(120, 90, 60, 0.06) 6px 7px
+  );
+  border: 2px solid var(--cc-muted);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tlgcc .cc-item-icon::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 32px;
+  height: 11px;
+  background: rgba(220, 200, 150, 0.8);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tlgcc .cc-item-icon img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  border: none;
+}
+
+.tlgcc .cc-item-identity {
+  flex: 1 1 0;
+  min-width: 0;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tlgcc .cc-item-name {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--cc-accent);
+  line-height: 1.05;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--cc-accent);
+  padding: 0 0 2px 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transform: rotate(-0.3deg);
+  transform-origin: left center;
+  height: auto;
+}
+
+.tlgcc .cc-item-name:focus {
+  box-shadow: none;
+  outline: none;
+  border-bottom: 2px solid var(--cc-accent);
+}
+
+.tlgcc .cc-type-stamp {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 3px 10px;
+  border: 1.5px solid var(--cc-accent);
+  color: var(--cc-accent);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(-0.6deg);
+}
+
+/* ── Field Primitives (stamp inputs) ──────────────────────────── */
+
+.tlgcc .cc-stamp-row {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.tlgcc .cc-stamp-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.tlgcc .cc-stamp-field.cc-fixed {
+  flex: 0 0 auto;
+}
+
+.tlgcc .cc-stamp-field > label {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--cc-muted);
+  margin-bottom: 3px;
+}
+
+.tlgcc .cc-stamp-field input,
+.tlgcc .cc-stamp-field textarea,
+.tlgcc .cc-stamp-field select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px dashed var(--cc-muted);
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 5px 8px;
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--cc-text);
+  line-height: 1.2;
+  outline: none;
+  height: auto;
+}
+
+.tlgcc .cc-stamp-field textarea {
+  padding: 6px 8px;
+  resize: none;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.tlgcc .cc-stamp-field.mono input,
+.tlgcc .cc-stamp-field.mono textarea {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tlgcc .cc-stamp-field input:focus,
+.tlgcc .cc-stamp-field textarea:focus,
+.tlgcc .cc-stamp-field select:focus {
+  outline: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.75);
+  border-color: var(--cc-accent);
+}
+
+.tlgcc .cc-stamp-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0 L5 6 L10 0' fill='%237a6b56'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 24px;
+}
+
+/* ── Form Section (bordered card) ─────────────────────────────── */
+
+.tlgcc .cc-form-section {
+  position: relative;
+  background: var(--cc-plain);
+  border: 1px solid var(--cc-muted);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.tlgcc .cc-form-section.cc-fixed {
+  flex: 0 0 auto;
+}
+
+.tlgcc .cc-form-section-header {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--cc-muted);
+  background: rgba(0, 0, 0, 0.03);
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--cc-text);
+  flex-shrink: 0;
+}
+
+.tlgcc .cc-form-section-body {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: auto;
+}
+
+.tlgcc .cc-ruled-area {
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: repeating-linear-gradient(
+    transparent 0 22px,
+    var(--cc-card-line) 22px 23px
+  );
+  background-position: 0 6px;
+  padding: 6px 14px 10px;
+  font-family: "Crimson Text", Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 23px;
+  color: var(--cc-text);
+}
+
+/* The Foundry rich-text editor inside a form section: kill the default border
+ * and let the editor fill the section body. Plain background — no rules — so
+ * paragraph text remains easy to read. */
+.tlgcc .cc-form-section-body .editor,
+.tlgcc .cc-form-section-body .editor-content {
+  height: 100%;
+  min-height: 120px;
+  background: transparent;
+  border: none;
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--cc-text);
+  padding: 8px 12px;
+}
+
+.tlgcc .cc-form-section-body .editor a.editor-edit {
+  background: var(--cc-accent);
+  color: #fff8e1;
+  border: none;
+  opacity: 0.85;
+}
+
+/* ── Window title bar (Foundry chrome) ───────────────────────────
+ * Foundry V13's default window header inherits text color from theme,
+ * which renders as dark-on-dark for our wood gradient. Force the cream
+ * tone for any .tlgcc window so the title (and ⚙ Sheet / ✕ Close
+ * controls) stays legible. */
+.window-app.tlgcc .window-header,
+.application.tlgcc .window-header {
+  color: var(--cc-title-bar-text);
+}
+
+.window-app.tlgcc .window-header .window-title,
+.window-app.tlgcc .window-header a,
+.window-app.tlgcc .window-header i,
+.application.tlgcc .window-header .window-title,
+.application.tlgcc .window-header a,
+.application.tlgcc .window-header i {
+  color: var(--cc-title-bar-text);
 }

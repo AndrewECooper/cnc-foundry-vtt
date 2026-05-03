@@ -12,5 +12,9 @@ export const preloadHandlebarsTemplates = async function () {
     'systems/castles-and-crusades/templates/actor/parts/actor-spells.html',
     'systems/castles-and-crusades/templates/actor/parts/actor-features.html',
     'systems/castles-and-crusades/templates/actor/parts/monster-combat.html',
+    // Item partials.
+    'systems/castles-and-crusades/templates/item/parts/stamp-input.html',
+    'systems/castles-and-crusades/templates/item/parts/stamp-multiline.html',
+    'systems/castles-and-crusades/templates/item/parts/ruled-area.html',
   ]);
 };

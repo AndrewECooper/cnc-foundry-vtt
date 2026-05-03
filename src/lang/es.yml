@@ -163,6 +163,8 @@ TLGCC.SpellLevel: Nivel
 TLGCC.spellSummary: Descripción
 TLGCC.spellsKnown: Hechizos conocidos
 TLGCC.spellsKnownhover: Combinación de todos los hechizos por día + el Bonus de lanzamiento para obtener este número
+TLGCC.SpellDescription: Descripción del Hechizo
+TLGCC.SpellDescriptionAlert: Haz clic en el icono de lápiz a la derecha para editar. Nota — por favor coloca aquí los datos completos del hechizo hasta que tengamos los datos de tirada funcionando.
 
 # Features
 TLGCC.FeatureTitle: Texto flotante sobre característica

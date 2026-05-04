@@ -1,0 +1,68 @@
+{
+  "_id": "4166491fec6f7e6e",
+  "_key": "!items!4166491fec6f7e6e",
+  "name": "Undetectable Aura",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to mask a magic item's aura from detection. If the object bearing <em>undetectable aura</em> has <em>identify</em> cast on it or is similarly examined, the examiner recognizes that the aura is false and detects the object's actual qualities. The object so hidden can weigh 5 pounds per level of the caster.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (object)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

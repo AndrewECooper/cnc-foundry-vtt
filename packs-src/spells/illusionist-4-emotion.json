@@ -1,0 +1,68 @@
+{
+  "_id": "3dff0f0212ceb9b3",
+  "_key": "!items!3dff0f0212ceb9b3",
+  "name": "Emotion",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell induces a powerful emotion in the hearts and minds of the creatures it effects, eclipsing their natural feelings. It affects a 25 foot x 25 foot area.</p><p>The caster may choose which emotion to inflict:</p><p><strong>Despair:</strong> A lack of all hope crushes the targeted creatures' morale. They suffer a -2 penalty to all saves, attacks, attribute checks, ability checks and damage rolls. <em>Despair</em> dispels <em>Hate</em>.</p><p><strong>Fear:</strong> Fear of the caster grips the hearts of the targeted creatures. They flee as if subject to a <em>fear</em> spell. <em>Fear</em> dispels <em>Rage</em>.</p><p><strong>Hate:</strong> Fiery hate and bile rise in the targeted creatures. They react poorly to others and may become antagonistic or hostile. They gain a +2 bonus to saves, attacks, attribute checks, ability checks and damage rolls. <em>Hate</em> dispels <em>Despair</em>.</p><p><strong>Rage:</strong> Sheer blind fury and wrath engulfs the targeted creatures, and they are compelled to fight, heedless of danger. They gain a +2 bonus to strength and constitution scores, and a +1 bonus to saves against fear, but suffer a -1 penalty to armor class. <em>Rage</em> dispels <em>Fear</em>.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "concentration",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "abdecddf2e76ae4e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

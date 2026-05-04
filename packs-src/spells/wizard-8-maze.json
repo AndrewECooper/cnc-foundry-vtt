@@ -1,0 +1,68 @@
+{
+  "_id": "4d32c555aca40aa2",
+  "_key": "!items!4d32c555aca40aa2",
+  "name": "Maze",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster conjures up an extra-dimensional labyrinth, and the subject vanishes into it. The subject's intelligence score determines the time it takes to find a way out of the maze: under 3 takes 2d4 days; 3-5 takes 1d4 days; 6-8 takes 5d4 hours; 9-12 takes 4d4 minutes; 13-15 takes 3d4 rounds; 16-17 takes 2d4 rounds; 18 takes 1d4 rounds.</p><p>On leaving the maze, the subject reappears in the spot it had been in when the <em>maze</em> spell was cast. If this spot is filled with a solid object, the subject appears nearby. Spells and abilities that move a creature within a plane do not help a creature escape a <em>maze</em> spell, although the character can escape by using spells to a different plane. Minotaurs and the like are not affected by this spell.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "25 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "7b2db668931d83f5",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

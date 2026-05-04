@@ -1,0 +1,68 @@
+{
+  "_id": "7acdf45dc0bd1f26",
+  "_key": "!items!7acdf45dc0bd1f26",
+  "name": "Shout",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell enchants the caster's vocal cords with mighty power. The caster can then release a concentrated sonic blast in a cone up to 10 feet wide and 50 feet long; the sound deals 2d6 damage to any creature in the area of effect. Additionally, those that fail a Constitution save are deafened for a number of rounds equal to the damage they suffered. Any brittle substances in the path of this cone are treated as if subjected to a <em>shatter</em> spell. A <em>shout</em> spell will cancel a <em>silence</em> spell, but the cancellation also negates any damage or deafening effect.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

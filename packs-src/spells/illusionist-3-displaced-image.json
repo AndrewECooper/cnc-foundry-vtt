@@ -1,0 +1,68 @@
+{
+  "_id": "0e3b22ffb00e1142",
+  "_key": "!items!0e3b22ffb00e1142",
+  "name": "Displaced Image",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster looks at a being and creates an illusion of that being. The illusion then begins appearing aggressive and dangerous to all the foes in the area, trying to attract attacks. It doesn't matter if the illusion takes damage, it appears to be hit and goes right on appearing to fight. The illusion isn't able to do any damage.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 feet",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0989ad6c26833a69",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

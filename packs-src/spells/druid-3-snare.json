@@ -1,0 +1,68 @@
+{
+  "_id": "4efa7f5617da7f87",
+  "_key": "!items!4efa7f5617da7f87",
+  "name": "Snare",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster creates a magical snare that is unlikely to be detected by anyone actively searching for it without magical means. Treat the snare as if it was set and hidden by a 12th level rogue. It can be created from a supple vine, rope, leather or any such similar material. Once enchanted, the snare blends into its environment and will wrap its loop around anything that steps within it. The snare can be up to 20 feet long.</p><p>If a supple tree is nearby, the snare will attach its other end to the tree and bend it down, snapping it up again when the snare is activated; this pulls the victim up into the air and causes 1d6 damage. If a tree is not available, the loop will whip around the victim, causing no damage but tightly binding it. A snared creature suffers a -2 penalty to attack rolls and suffers a -4 penalty to dexterity. To break free requires a strength check against challenge level 5. The snare has 5 hit points and armor class 7.</p><p>The material component for this spell is a tree vine.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "triggered or broken",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "3",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

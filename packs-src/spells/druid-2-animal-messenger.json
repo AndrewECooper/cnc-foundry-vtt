@@ -1,0 +1,68 @@
+{
+  "_id": "dc33626ac8405929",
+  "_key": "!items!dc33626ac8405929",
+  "name": "Animal Messenger",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Using food to initiate the spell the caster compels a small animal to go to a spot the caster designates. The spell has no effect on an animal tamed, trained or under the influence of someone else. The caster can mentally impress on the animal a certain place well known to the caster or an obvious landmark. The directions must be simple, as the animal depends on the caster's knowledge and can't find a destination on its own. The caster can attach a small item or note to the messenger. The animal travels to the location and waits there until the spell expires. During the period of waiting, the animal allows others to approach it and remove any scroll or token it carries. The intended recipient of a message gains no special ability to communicate with the animal or read any attached message.</p><p>The material component for this spell is a small bag of food.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 day/lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "79e5de598b9405d7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

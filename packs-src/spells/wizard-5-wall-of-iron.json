@@ -1,0 +1,68 @@
+{
+  "_id": "983c09fd8bf356f2",
+  "_key": "!items!983c09fd8bf356f2",
+  "name": "Wall Of Iron",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes an anchored, vertical iron wall to spring into being. A piece of iron once used in a wall of a fortress is necessary to enact this spell. The wall cannot be conjured to occupy the same space as a creature or another object. The wall inserts itself into the surroundings, anchoring itself if possible. The wall must always form a flat plane, though the caster can shape its edges to fit available space. Like any iron wall, this wall is subject to rust, perforation and other natural phenomena.</p><p>The wall of iron is 1 inch thick per four caster levels, and up to 5 feet by 5 feet per caster level. The caster can double the wall's area by halving its thickness. Each 5 foot square of the wall has 30 hit points per inch of thickness. Creatures can hit the wall automatically, but it is so hard that the first 10 points of damage from each blow are ignored. A section of wall whose hit points drop to 0 is breached.</p><p>If the wall is created where it cannot anchor itself, either vertically resting on a flat surface or in the air, it falls on creatures beneath it. An unanchored vertical wall is 50% likely to tip in either direction if left unpushed after 2 rounds. It can be pushed with a strength check (CL 10). Creatures with room to flee the falling wall may do so by making a successful dexterity save. Creatures who fail take 10d6 points of damage.</p><p>The material component for this spell is iron dust.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

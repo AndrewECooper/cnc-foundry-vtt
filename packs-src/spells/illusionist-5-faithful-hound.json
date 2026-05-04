@@ -1,0 +1,68 @@
+{
+  "_id": "a9633ee2dc7130dd",
+  "_key": "!items!a9633ee2dc7130dd",
+  "name": "Faithful Hound",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Arcane energy forms into a phantom hound dedicated to guarding an area or the caster. The caster may order the hound to do either at any time during the spell's duration. The hound will consider party members as allies unless ordered otherwise. Should a larger creature approach within 50 feet, the hound immediately lets out a frightful and eerie howl. Those hearing the howl must save versus fear or suffer a -2 to attacks and morale. This also effects allies of the caster. If an intruder approaches to within 10 feet of the hound or caster, the guard dog ceases barking and attacks with a vicious bite. The hound's bite is considered a magical weapon, and it attacks once per round. The hound gains a bonus to hit equal to the caster's level, and it deals 2d6+3 damage upon a successful bite. It continues to attack until the intruder retreats at least 25 feet away.</p><p>The most effective way to combat the hound is by dispelling it, but it can be hurt by magic and weapons. The hound has an armor class of 18 and as many hit points as the caster did when the spell was cast. If the caster is ever more than 150 feet from the hound, the spell ends. The spell lasts for 1 hour per caster level, but once the hound begins barking, it lasts only 1 round per level.</p><p>The material component for this spell is the dust of a dog bone.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "2",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

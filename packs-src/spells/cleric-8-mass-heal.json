@@ -1,0 +1,68 @@
+{
+  "_id": "9f10ed9ec8121b62",
+  "_key": "!items!9f10ed9ec8121b62",
+  "name": "Mass Heal",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This powerful curative enables the caster to wipe away disease and injury in several creatures within a 25 square foot area. It completely cures all hit point damage, all diseases, blindness, deafness and all temporary ability damage. It neutralizes poisons in a subject's system, so that no additional damage or effects are suffered. It nullifies a <em>feeblemind</em> spell. It cures mental disorders caused by nature, spell or injury to the brain. <em>Mass heal</em> does not restore permanently drained levels, or restore permanently drained ability scores. The reverse of the spell, <em>mass harm</em>, drains the targets of all but 4 hit points and causes disease in the subjects (see <em>remove disease</em>).</p><p>A <em>mass heal</em> spell cast upon undead creatures affects them as if the <em>mass harm</em> spell were cast. A <em>mass harm</em> spell cast upon undead creatures affects them as if the <em>mass heal</em> spell were cast.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "25 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e5708363043138ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

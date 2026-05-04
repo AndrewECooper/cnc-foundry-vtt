@@ -1,0 +1,68 @@
+{
+  "_id": "33ee8c77a15a5643",
+  "_key": "!items!33ee8c77a15a5643",
+  "name": "Dragon Armor",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The spell places the illusion of plate armor on anyone the caster touches. They move and sound like they have plate armor, but are not encumbered by the illusion. This effect also adds +1 to the recipients AC. This bonus AC is not a cumulative effect.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

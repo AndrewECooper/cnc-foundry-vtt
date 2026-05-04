@@ -1,0 +1,68 @@
+{
+  "_id": "0f1bda5961d9e59a",
+  "_key": "!items!0f1bda5961d9e59a",
+  "name": "Plant Growth",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell causes normal vegetation within range to become thick and overgrown. The plants intertwine to form a thicket or jungle that creatures must hack or force a way through. Speed drops to 10 feet per round for man-sized or smaller creatures, or 20 feet per round for larger creatures. The Castle Keeper may allow faster movement for very small or very large creatures. The area must have brush and trees in it for this spell to take effect. The new growth is permanent unless destroyed or dispelled. At the caster's option, the area can be a circle with a radius of 100 feet, a semicircle with a radius of 150 feet or a quarter circle with a radius of 200 feet. The caster may also designate areas within the area that are not affected.</p><p>Alternately, <em>plant growth</em> can be used to create a 50% improvement in the vitality and production of all crops within a two mile radius of the caster. This usage can affect a given area only once per year.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "3",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "c0db94a6268f320d",
+  "_key": "!items!c0db94a6268f320d",
+  "name": "Cloak",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A long cloak with a hood and clasp at the throat.</p>",
+    "price": {
+      "value": "5 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

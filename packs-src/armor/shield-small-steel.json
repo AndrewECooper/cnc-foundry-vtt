@@ -1,0 +1,33 @@
+{
+  "_id": "5795dedda7d2a9ed",
+  "_key": "!items!5795dedda7d2a9ed",
+  "name": "Shield, Small Steel",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small round steel shield used to block blows from a single foe at a time.</p>",
+    "price": {
+      "value": "9 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "22238e0d7cb6f583",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

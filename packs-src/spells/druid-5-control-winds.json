@@ -1,0 +1,68 @@
+{
+  "_id": "d109e83bbfc82c19",
+  "_key": "!items!d109e83bbfc82c19",
+  "name": "Control Winds",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster alters wind force in a 100 foot diameter sphere/level, centered on the caster. The caster can make the wind blow in a certain direction or manner, and increase or decrease its strength. The new wind direction and strength persist until the spell ends or the caster chooses to alter the spell, which requires concentration. The caster may create an \"eye\" of calm air up to 50 feet in diameter at the center of the area if the character so desires, and the character may choose to limit the effect to any area less than the spell's full area of effect.</p><p><strong>Wind Direction:</strong> The caster may choose one of four basic wind patterns to function over the spell's area: a downdraft blows from the center outward in equal strength in all directions; an updraft blows from the outer edges in toward the center in equal strength from all directions, veering upward before impinging on the eye in the center; a rotation causes the winds to circle the center in clockwise or counterclockwise fashion; a blast simply causes the winds to blow in one direction across the entire area from one side to the other.</p><p><strong>Wind Force:</strong> For every three caster levels, the character can increase or decrease wind force by one level of strength. Strong winds (21+ mph) make sailing difficult. A severe wind (31+ mph) causes minor ship and building damage. A windstorm (51+ mph) drives most flying creatures from the skies, uproots small trees, knocks down light wooden structures, tears off roofs and endangers ships. Hurricane force winds (75+ mph) destroy wooden buildings, sometimes uproot even large trees and cause most ships to founder. A tornado (175+ mph) destroys all non fortified buildings and often uproots large trees.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "91a80f29d8a51e6b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

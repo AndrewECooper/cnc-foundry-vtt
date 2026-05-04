@@ -1,0 +1,33 @@
+{
+  "_id": "f92a35fb785dbece",
+  "_key": "!items!f92a35fb785dbece",
+  "name": "Brigadine",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A jacket of cloth or leather lined with small overlapping steel plates riveted into place.</p>",
+    "price": {
+      "value": "85 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "25",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 4,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

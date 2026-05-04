@@ -1,0 +1,68 @@
+{
+  "_id": "e45a534d2a2e777e",
+  "_key": "!items!e45a534d2a2e777e",
+  "name": "Awaken",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster awakens a tree or animal to humanlike sentience. To succeed, the caster must make a wisdom save, with the target's hit dice constituting the challenge level. The awakened animal or tree is friendly toward the caster.</p><p>The caster has no special empathy or connection with the awakened creature, although it serves the caster in specific tasks or endeavors if the caster can communicate their desires to it. An awakened tree has characteristics of an animated object. Awakened trees gain the ability to move their limbs, roots, vines, creepers, etc., and have senses similar to a human's. An awakened animal gets 3d6 intelligence, a +1 charisma bonus, and +2 hit dice. An awakened tree or animal can speak one language that the caster knows.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 day",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "91a80f29d8a51e6b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

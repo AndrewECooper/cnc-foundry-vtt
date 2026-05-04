@@ -1,0 +1,68 @@
+{
+  "_id": "cf62135909b7df1b",
+  "_key": "!items!cf62135909b7df1b",
+  "name": "Fireball",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>With a gesture, the caster sends a small ball of fire hurtling through the air to detonate with a low roar at the height and distance the caster desires, as long as it is within the spell's maximum range. The explosion fills the area of effect with intense fire and heat, causing 1d6 damage per caster level to all creatures and objects within the area. It ignites combustibles, damages objects and melts anything with a low melting point such as bronze, copper, silver, lead or gold. The explosion creates almost no pressure. It affects a 40 foot diameter sphere. The material component is a small lump of coal.</p><p>The <em>fireball</em> follows a straight path, and if it impacts a solid barrier prior to attaining the prescribed range, the impact causes early detonation. If the caster attempts to send the ball through a narrow passage, such as an arrow slit, the character must hit with a ranged attack roll, or else the bead strikes the barrier and detonates prematurely.</p><p>The material component for this spell is ash or coal.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

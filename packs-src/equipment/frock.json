@@ -1,0 +1,32 @@
+{
+  "_id": "712478d04c13a8c3",
+  "_key": "!items!712478d04c13a8c3",
+  "name": "Frock",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A loose long robe — common dress for laborers and clergy.</p>",
+    "price": {
+      "value": "5 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

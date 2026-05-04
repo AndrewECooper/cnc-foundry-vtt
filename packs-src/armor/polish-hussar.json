@@ -1,0 +1,33 @@
+{
+  "_id": "2272aabf77d6071b",
+  "_key": "!items!2272aabf77d6071b",
+  "name": "Polish Hussar",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A finely articulated plate harness in the style of a Polish winged hussar — among the finest armors made.</p>",
+    "price": {
+      "value": "1750 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "50",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 8,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

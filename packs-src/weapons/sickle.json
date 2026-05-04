@@ -1,0 +1,45 @@
+{
+  "_id": "02469c1bd6aae835",
+  "_key": "!items!02469c1bd6aae835",
+  "name": "Sickle",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A short curved farm blade — an improvised weapon and a favored ritual implement.</p>",
+    "price": {
+      "value": "6 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d4",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

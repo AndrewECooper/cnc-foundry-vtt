@@ -1,0 +1,68 @@
+{
+  "_id": "127e3e278b0cacd3",
+  "_key": "!items!127e3e278b0cacd3",
+  "name": "Illusory Script",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell writes instructions or other information on any suitable writing material. The script appears to be some form of foreign or magic writing. Only the person (or people) designated by the character at the time of the casting are able to read the writing. The script is completely unintelligible to any other character, although an illusionist will recognize it as illusory script.</p><p>Any unauthorized creature attempting to read the script triggers a potent illusory effect and must make an intelligence saving throw, or become subject to a <em>suggestion</em> implanted in the script by the caster. The suggestion lasts only 30 minutes.</p><p>If successfully dispelled by <em>dispel magic</em>, the illusory script and its secret message disappear. The hidden message can be read by a combination of the <em>true seeing</em> spell with the <em>read magic</em> or <em>comprehend languages</em> spell. The casting time depends on the length of the message written, but it is always at least 1 minute.</p><p>The material component for this spell is special ink valued at 50gp.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0989ad6c26833a69",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

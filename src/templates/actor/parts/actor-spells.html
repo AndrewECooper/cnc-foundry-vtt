@@ -28,8 +28,11 @@
     <span class="cc-section-title">{{localize 'TLGCC.SpellLevel'}} — {{localize 'TLGCC.SpellsPerLevel'}}</span>
   </div>
   {{#each spells as |spells spellLevel|}}
-  <div class="cc-spell-level-header">
-    <span class="cc-level-num">{{localize 'TLGCC.SpellLevel'}} {{spellLevel}}</span>
+  <div class="cc-spell-level-header cc-collapsed" data-spell-level="{{spellLevel}}">
+    <span class="cc-level-num">
+      <i class="fas fa-chevron-down cc-collapse-chevron"></i>
+      {{localize 'TLGCC.SpellLevel'}} {{spellLevel}}
+    </span>
     <a class="item-create cc-add-btn"
        data-spell-level-value="{{spellLevel}}"
        data-type="spell"
@@ -37,13 +40,13 @@
       + {{localize 'TLGCC.Add'}}
     </a>
   </div>
-  <table class="cc-table cc-spell-table">
+  <table class="cc-table cc-spell-table cc-collapsed" data-spell-level="{{spellLevel}}">
     {{#if spells.length}}
     <thead>
       <tr>
-        <th></th>
+        <th>{{localize 'TLGCC.Name'}}</th>
         <th class="cc-spell-prepared-col">{{localize 'TLGCC.SpellPrepared'}}</th>
-        <th></th>
+        <th class="cc-spell-actions-col">{{localize 'TLGCC.Actions'}}</th>
       </tr>
     </thead>
     {{/if}}

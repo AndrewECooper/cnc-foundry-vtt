@@ -1,0 +1,45 @@
+{
+  "_id": "498902c10a246e4b",
+  "_key": "!items!498902c10a246e4b",
+  "name": "Crowbill",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A short hammer-like weapon with a long curved spike, made to puncture plate.</p>",
+    "price": {
+      "value": "15 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "6",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d6",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

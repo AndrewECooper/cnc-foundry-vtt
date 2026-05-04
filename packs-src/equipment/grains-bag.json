@@ -1,0 +1,32 @@
+{
+  "_id": "8b345047f7165e6e",
+  "_key": "!items!8b345047f7165e6e",
+  "name": "Grains, Bag",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small bag of milled grain or oats — animal feed or porridge fixings.</p>",
+    "price": {
+      "value": "4 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5271d55d416b3598",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

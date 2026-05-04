@@ -1,0 +1,32 @@
+{
+  "_id": "40e30b23e86b9f9c",
+  "_key": "!items!40e30b23e86b9f9c",
+  "name": "Saw, Metal",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small handsaw with hardened teeth for cutting wood or soft metal.</p>",
+    "price": {
+      "value": "5 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

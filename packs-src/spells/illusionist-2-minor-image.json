@@ -1,0 +1,68 @@
+{
+  "_id": "74a648b5d57173da",
+  "_key": "!items!74a648b5d57173da",
+  "name": "Minor Image",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates the illusion of an object, creature or force as visualized by the caster. Its area of effect is a 40 foot cube + 10 cubic feet per level. The spell includes some minor sounds, but not understandable speech. The illusion does not create smell, texture or temperature. The caster's can move the image within the limits of the spell's area of effect. The image persists for 2 rounds after the caster's concentration ceases.</p><p>Creatures who view the illusion believe it, and can suffer damage from it. The image disappears if the viewer makes a saving throw.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence (if disbelieves)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "970419e5bee1392b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "f9184109ff456fc0",
+  "_key": "!items!f9184109ff456fc0",
+  "name": "Create Food And Water",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates simple food of the caster's choice and a volume of drinking water. The food decays as normal food, but the water does not go bad. The caster can create enough food and water to sustain three humans or one horse for 1 day per caster level. The reverse of this spell, <em>spoil food and water</em>, makes the same amount of food or water inedible.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9a26512921b53303",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

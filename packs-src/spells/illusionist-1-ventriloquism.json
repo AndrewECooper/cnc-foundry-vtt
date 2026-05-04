@@ -1,0 +1,68 @@
+{
+  "_id": "b893eab2e049ebcb",
+  "_key": "!items!b893eab2e049ebcb",
+  "name": "Ventriloquism",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster can make his voice (or any sound that the caster can normally make vocally) seem to issue from some place else. The caster can speak in any language the caster knows. Anyone who hears the voice and rolls a successful intelligence save recognizes the sound as illusory (but still hears it).</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "3 rd.+1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence to disbelieve",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

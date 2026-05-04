@@ -1,0 +1,68 @@
+{
+  "_id": "5b3ca47b8cbd9fbf",
+  "_key": "!items!5b3ca47b8cbd9fbf",
+  "name": "Plane Shift",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster and up to 8 creatures are transported to another plane of existence or alternate dimension. If several willing persons link hands in a circle, up to eight creatures, including the caster, can be affected by the spell. The spell transports the creatures to the designated plane or dimension only. All beings transported must find other means to travel back to the originating plane. Unwilling recipients of the <em>plane shift</em> can resist the effect with a successful wisdom save. The Castle Keeper determines whether the caster reaches a specific destination and all other matter related to the travel and arrival on the other plane.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "Permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e999624dd21ebc1f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

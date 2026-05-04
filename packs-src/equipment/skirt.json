@@ -1,0 +1,32 @@
+{
+  "_id": "5fe0b3a45f86bae8",
+  "_key": "!items!5fe0b3a45f86bae8",
+  "name": "Skirt",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A simple cloth skirt.</p>",
+    "price": {
+      "value": "4 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

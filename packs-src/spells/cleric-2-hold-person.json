@@ -1,0 +1,68 @@
+{
+  "_id": "cabb7804c87be18b",
+  "_key": "!items!cabb7804c87be18b",
+  "name": "Hold Person",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell holds a single medium-sized or less humanoid target rigidly in place. It is aware and breathes normally but cannot take any physical action. It can, however, execute purely mental actions. The illusionist version of this spell simply tricks the victim's mind into believing they are held.</p><p>The material component for this spell is spider silk from a giant spider.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c802faccb6196725",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

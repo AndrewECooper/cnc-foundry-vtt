@@ -1,0 +1,45 @@
+{
+  "_id": "cb76a3b9c89bec09",
+  "_key": "!items!cb76a3b9c89bec09",
+  "name": "Sword, Flamberg",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A two-handed sword with a wavy flame-shaped blade, made for sweeping cuts and feints.</p>",
+    "price": {
+      "value": "75 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "4",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "2d4+2",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

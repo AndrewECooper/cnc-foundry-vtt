@@ -1,0 +1,68 @@
+{
+  "_id": "b428931755a4d686",
+  "_key": "!items!b428931755a4d686",
+  "name": "Sound Burst",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster evokes a thunderclap of sound, emanating from any point up to 50 feet away and in a 20 foot diameter circle. Any creature within the area of effect takes 1d8 damage and must make a successful wisdom saving throw to avoid being stunned for 1 round.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "20bf402ac5266eb7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

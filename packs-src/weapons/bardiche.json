@@ -1,0 +1,45 @@
+{
+  "_id": "ebcf3f59591569fb",
+  "_key": "!items!ebcf3f59591569fb",
+  "name": "Bardiche",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A long-hafted polearm with an enormous curved blade — a peasant's great axe.</p>",
+    "price": {
+      "value": "15 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "10",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "2d4",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

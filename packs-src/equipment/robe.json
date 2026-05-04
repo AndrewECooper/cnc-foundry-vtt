@@ -1,0 +1,32 @@
+{
+  "_id": "d268a3851c34af75",
+  "_key": "!items!d268a3851c34af75",
+  "name": "Robe",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A long flowing robe suited to scholars, clerics, and wizards.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "4",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

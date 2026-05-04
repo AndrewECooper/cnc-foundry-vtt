@@ -1,0 +1,32 @@
+{
+  "_id": "1aaf4b9977b8f336",
+  "_key": "!items!1aaf4b9977b8f336",
+  "name": "Dust, Bag of",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small sack of fine dust, useful for revealing invisible foes or marking surfaces.</p>",
+    "price": {
+      "value": "",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

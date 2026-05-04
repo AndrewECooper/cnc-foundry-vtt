@@ -1,0 +1,68 @@
+{
+  "_id": "f6d5327d273b7756",
+  "_key": "!items!f6d5327d273b7756",
+  "name": "Sleet Storm",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a driving storm of sleet that obscures the vision of anyone within it. The storm also causes ground surfaces to become icy and slick, reducing movement rates by half. Any creature moving within the sleet must make a successful dexterity save each round or fall down. The spell affects an area 50 by 50 by 20 feet.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

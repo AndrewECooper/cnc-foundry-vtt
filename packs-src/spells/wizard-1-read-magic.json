@@ -1,0 +1,68 @@
+{
+  "_id": "cf42c36f3ba3d19f",
+  "_key": "!items!cf42c36f3ba3d19f",
+  "name": "Read Magic",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to read magical inscriptions. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the caster has read the magical inscription, that writing can be read without recourse to the use of read magic.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "personal",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "36c5a2e3bfb00661",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

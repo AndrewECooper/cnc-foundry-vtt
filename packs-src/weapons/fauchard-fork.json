@@ -1,0 +1,45 @@
+{
+  "_id": "00f8499fff9eaff1",
+  "_key": "!items!00f8499fff9eaff1",
+  "name": "Fauchard Fork",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A fauchard with an additional thrusting fork at the tip for added piercing capability.</p>",
+    "price": {
+      "value": "15 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "6",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d8",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

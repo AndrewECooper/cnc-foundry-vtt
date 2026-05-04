@@ -1,0 +1,32 @@
+{
+  "_id": "127f3152352d0008",
+  "_key": "!items!127f3152352d0008",
+  "name": "Barding, Padded",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A quilted horse blanket worn beneath barding or as light protection on its own.</p>",
+    "price": {
+      "value": "20 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "25",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5bb847eb456821b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

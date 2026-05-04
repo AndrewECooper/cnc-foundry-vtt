@@ -1,0 +1,32 @@
+{
+  "_id": "e66040edd143cdfa",
+  "_key": "!items!e66040edd143cdfa",
+  "name": "Boots, Soft",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A pair of soft-soled boots for indoor wear or quiet walking.</p>",
+    "price": {
+      "value": "4 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "2",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

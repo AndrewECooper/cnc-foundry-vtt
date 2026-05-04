@@ -1,0 +1,45 @@
+{
+  "_id": "b300c370affde011",
+  "_key": "!items!b300c370affde011",
+  "name": "Sword, Bastard",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A hand-and-a-half sword that can be used in either one or two hands.</p>",
+    "price": {
+      "value": "25 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d10",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

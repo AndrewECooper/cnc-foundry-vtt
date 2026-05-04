@@ -1,0 +1,68 @@
+{
+  "_id": "9a0f0d9234b3a008",
+  "_key": "!items!9a0f0d9234b3a008",
+  "name": "Greater Scrying",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Focusing on a mental image of the person they wish to observe, the caster sends their mind's eye to gaze over the character, watching and listening regardless of distance. Astute characters (intelligence 13+) may, upon a successful intelligence check, get the feeling they are being watched. Successfully focusing the mind's eye in this manner is difficult, and requires an intelligence check adjusted by the following cumulative modifiers:</p><table><thead><tr><th>Condition</th><th>Modifier</th></tr></thead><tbody><tr><td>Caster knows the character well</td><td>+5</td></tr><tr><td>Caster has likeness of character</td><td>+5</td></tr><tr><td>Caster has possession of the character</td><td>+5</td></tr><tr><td>Caster has body part (like a lock of hair)</td><td>+5</td></tr><tr><td>Caster has only met the character</td><td>-5</td></tr><tr><td>Caster has only heard of the character</td><td>-10</td></tr><tr><td>Caster has no knowledge of character</td><td>-15</td></tr><tr><td>Character is on another plane</td><td>-15</td></tr></tbody></table><p>If the scrying is successful, the caster may cast the following spells through the scrying: <em>comprehend languages, detect alignment, detect magic, message, read magic, tongues</em>.</p><p>The material component for this spell is a 1000gp gem.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "762c10d5c406fb67",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

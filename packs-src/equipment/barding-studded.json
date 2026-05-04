@@ -1,0 +1,32 @@
+{
+  "_id": "bccc0021e6965c24",
+  "_key": "!items!bccc0021e6965c24",
+  "name": "Barding, Studded",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Horse barding of leather reinforced with metal studs.</p>",
+    "price": {
+      "value": "100 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "60",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "6",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5bb847eb456821b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

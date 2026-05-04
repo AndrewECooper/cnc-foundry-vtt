@@ -1,0 +1,45 @@
+{
+  "_id": "e068c6aaf3c8a973",
+  "_key": "!items!e068c6aaf3c8a973",
+  "name": "Crossbow, Light",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small crossbow that can be cocked by hand and fired one-handed.</p>",
+    "price": {
+      "value": "35 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "6",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d6",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "80 ft.",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "476a030cc61ba530",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

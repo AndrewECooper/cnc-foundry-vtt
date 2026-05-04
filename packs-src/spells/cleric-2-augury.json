@@ -1,0 +1,68 @@
+{
+  "_id": "bd834114f9a950c0",
+  "_key": "!items!bd834114f9a950c0",
+  "name": "Augury",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By using a suitable focus worth at least 25gp an <em>augury</em> can tell the caster whether a particular action will bring good or bad results for the caster in the immediate future. The base chance for receiving a meaningful reply is 70% + 1% per caster level; the Castle Keeper makes the roll secretly. The Castle Keeper may determine that the question is so straightforward that a successful result is automatic, or so vague as to have no chance of success. If the <em>augury</em> succeeds, the caster gets one of four results: (1) Weal (if the action will probably bring good results), (2) Woe (for bad results), (3) Weal and woe (for both), or (4) Nothing (for actions that don't have especially good or bad results). If the spell fails, the caster gets the nothing result. A cleric who gets the nothing result has no way to tell whether it resulted from a failed or successful augury.</p><p>The augury can see into the future only about half an hour, so anything that might happen after that does not affect the augury. Thus, it might miss the long-term consequences of the contemplated action. All <em>auguries</em> cast by the same person upon the same topic use the same dice result as the first augury.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "person",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c802faccb6196725",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

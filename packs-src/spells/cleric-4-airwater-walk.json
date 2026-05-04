@@ -1,0 +1,68 @@
+{
+  "_id": "624b235e2756ca31",
+  "_key": "!items!624b235e2756ca31",
+  "name": "Air/Water Walk",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows a single target creature to tread on air or liquid as if walking on solid ground. The caster must choose the version of the spell desired upon the initial casting of the spell.</p><p><em>Air Walk:</em> The maximum upward or downward angle possible is 45 degrees, at a rate equal to one-half the creature's normal movement. A strong wind (21+ mph) can push an air walker along or hold the walker back. Each round at the end of the walker's turn, the wind blows the walker 5 feet for each 5 miles per hour of wind speed.</p><p><em>Water Walk:</em> The creature's feet hover an inch above the surface. Any liquid may be traversed, including mud, oil, snow, quicksand, running water, ice, and even lava (although creatures crossing molten lava or other harmful surfaces still take damage from the heat or other harm). The creature can walk, run, charge, or otherwise move across the surface as if it were normal ground. If the spell is cast underwater (or while the subject is partially submerged), the subject is borne toward the surface at 60 feet per round until they can stand on it.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "648ff0fd4c816377",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

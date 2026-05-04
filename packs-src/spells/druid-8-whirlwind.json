@@ -1,0 +1,68 @@
+{
+  "_id": "84944cc8f2a409fe",
+  "_key": "!items!84944cc8f2a409fe",
+  "name": "Whirlwind",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a powerful cyclone of raging wind that is 10 feet wide at the base, 30 feet tall and 30 feet wide at the top that moves through the air, along the ground or over water at a speed of 60 feet per round. The caster can concentrate on controlling the cyclone's every movement or specify a simple course of motion (that cannot be changed once set). The whirlwind moves during the caster's turn in the initiative order. If the cyclone exceeds the spell's range, it moves in a random, uncontrolled fashion for 1d3 rounds possibly endangering the caster or the caster's allies before it dissipates. Even if the cyclone moves back to within range the caster cannot regain control over it.</p><p>Any creature less than 40 feet tall/long that comes in contact with the whirlwind must succeed at a dexterity save or take 3d6 points of damage. Medium-size or smaller creatures who fail their first save must succeed at a second one or be picked up bodily by the whirlwind and held suspended in its powerful winds, taking 1d8 points of damage each round with no save allowed. The caster may direct the cyclone to eject any carried creatures whenever the caster wishes, depositing the hapless souls wherever the whirlwind happens to be when they are released.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9ed968d1395613fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

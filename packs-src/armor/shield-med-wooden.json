@@ -1,0 +1,33 @@
+{
+  "_id": "d1dc038be5e22904",
+  "_key": "!items!d1dc038be5e22904",
+  "name": "Shield, Med. Wooden",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A medium wooden shield faced with hide or leather and rimmed with iron.</p>",
+    "price": {
+      "value": "5 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "6",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "22238e0d7cb6f583",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

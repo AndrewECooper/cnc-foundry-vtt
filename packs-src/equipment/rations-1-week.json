@@ -1,0 +1,32 @@
+{
+  "_id": "c3442a2781b6639d",
+  "_key": "!items!c3442a2781b6639d",
+  "name": "Rations (1 week)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A week's supply of preserved travel rations packed for the road.</p>",
+    "price": {
+      "value": "3 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "7",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5271d55d416b3598",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

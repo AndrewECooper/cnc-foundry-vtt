@@ -1,0 +1,68 @@
+{
+  "_id": "12e088b1c3a7cae4",
+  "_key": "!items!12e088b1c3a7cae4",
+  "name": "Shape Stone Or Wood",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By use of this dweomer, the caster can shape a piece of stone or wood into any desired form. A stone or wooden weapon or piece of furniture or any other item is possible. Doors can be reshaped to allow entry/exit, walls parted with a passage, or anything else that the druid can imagine and that fits within the range of material that the spell effects is possible. It takes one round to shape each 1 cubic foot of material. Note that the creations will inevitably be crude, as fine workmanship and finishing are beyond the scope of this invocation. The spell's area of effect is 10 cubic feet +1 cubic foot per level.</p><p>The material component is a splinter of wood or stone set in clay.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

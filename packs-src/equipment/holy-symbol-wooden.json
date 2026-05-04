@@ -1,0 +1,32 @@
+{
+  "_id": "eaf47171d24a79d4",
+  "_key": "!items!eaf47171d24a79d4",
+  "name": "Holy Symbol, Wooden",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A simple carved wooden holy symbol of a chosen deity.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

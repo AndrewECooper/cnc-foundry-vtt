@@ -1,0 +1,32 @@
+{
+  "_id": "5c536fc496dc4f37",
+  "_key": "!items!5c536fc496dc4f37",
+  "name": "Wolvesbane",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bundle of dried wolfsbane (aconite), a herb said to ward against werewolves.</p>",
+    "price": {
+      "value": "2 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

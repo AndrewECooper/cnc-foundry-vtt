@@ -1,0 +1,33 @@
+{
+  "_id": "99db51fa533666fd",
+  "_key": "!items!99db51fa533666fd",
+  "name": "Full Chain Suit",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A full suit of chain mail covering the torso, limbs, and head with attached coif and chausses.</p>",
+    "price": {
+      "value": "200 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "45",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

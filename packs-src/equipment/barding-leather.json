@@ -1,0 +1,32 @@
+{
+  "_id": "043721ab82de9ad2",
+  "_key": "!items!043721ab82de9ad2",
+  "name": "Barding, Leather",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A horse caparison of stiffened leather plates — light barding for skirmishing.</p>",
+    "price": {
+      "value": "50 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "50",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5bb847eb456821b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

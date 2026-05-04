@@ -1,0 +1,33 @@
+{
+  "_id": "0b6df3c67ac3a019",
+  "_key": "!items!0b6df3c67ac3a019",
+  "name": "Padded Armor",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A quilted coat of layered cloth, the cheapest of armors and a common base layer beneath heavier mail.</p>",
+    "price": {
+      "value": "5 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "10",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "0ab8d9fdd6806b20",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

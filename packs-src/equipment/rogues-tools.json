@@ -1,0 +1,32 @@
+{
+  "_id": "1f366e8ef293da89",
+  "_key": "!items!1f366e8ef293da89",
+  "name": "Rogue's Tools",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small case of picks, files, and probes for opening locks and disabling traps.</p>",
+    "price": {
+      "value": "30 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

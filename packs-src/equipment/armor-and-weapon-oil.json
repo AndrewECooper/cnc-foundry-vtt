@@ -1,0 +1,32 @@
+{
+  "_id": "5c062a71436e523f",
+  "_key": "!items!5c062a71436e523f",
+  "name": "Armor and Weapon Oil",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small flask of oil for cleaning, lubricating, and protecting steel from rust.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

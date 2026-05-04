@@ -1,0 +1,68 @@
+{
+  "_id": "54952e42922e20a4",
+  "_key": "!items!54952e42922e20a4",
+  "name": "Silence",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster invokes silence in a 15 foot radius around the target. Within this silent area, no conversations can be made and no verbal spells cast. No one moving within the area can be heard. The dweomer can be cast at a target location or even at a point in the air. When cast on a creature or object, the area of silence moves with it. Anyone having the spell cast directly upon them may avoid it with a successful dexterity save, in which case the spell is cast upon a point immediately next to the target.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c802faccb6196725",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

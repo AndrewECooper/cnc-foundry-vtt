@@ -1,0 +1,68 @@
+{
+  "_id": "a94b10e8d87cc61f",
+  "_key": "!items!a94b10e8d87cc61f",
+  "name": "Hallucinatory Terrain",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster makes natural terrain look, sound and smell like some other sort of natural terrain. Structures, equipment and creatures within the area are not hidden or changed in appearance. The illusion persists until dispelled or disbelieved by an intelligent creature. It affects a 10 foot x 10 foot area per level of the caster.</p><p>The material component for this spell is the dust of a fey's arrow.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

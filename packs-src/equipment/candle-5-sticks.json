@@ -1,0 +1,32 @@
+{
+  "_id": "e3d8aa944ea2ad78",
+  "_key": "!items!e3d8aa944ea2ad78",
+  "name": "Candle (5 sticks)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bundle of five tallow candles, each burning for about an hour.</p>",
+    "price": {
+      "value": "5 cp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

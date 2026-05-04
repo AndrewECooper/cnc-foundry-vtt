@@ -1,0 +1,68 @@
+{
+  "_id": "1a9571a773484c79",
+  "_key": "!items!1a9571a773484c79",
+  "name": "Purify Food And Drink",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell makes spoiled, rotten, poisonous or otherwise contaminated food and water pure and suitable for eating and drinking. It does not prevent subsequent natural decay or spoilage. Unholy water and similar food and drink of significance is spoiled by <em>purify food and drink</em>, but the spell has no effect on creatures of any type, nor upon magic potions. The caster can purify 1 cubic foot per level. Note: one cubic foot of water contains roughly 8 gallons and weighs about 65 pounds.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "da0f119b5625406c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

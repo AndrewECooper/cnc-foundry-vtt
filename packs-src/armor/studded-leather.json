@@ -1,0 +1,33 @@
+{
+  "_id": "b4158862e5fc6f1a",
+  "_key": "!items!b4158862e5fc6f1a",
+  "name": "Studded Leather",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Leather armor reinforced with tightly spaced metal studs to deflect cutting weapons.</p>",
+    "price": {
+      "value": "25 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "20",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 3,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "0ab8d9fdd6806b20",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

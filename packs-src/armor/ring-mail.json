@@ -1,0 +1,33 @@
+{
+  "_id": "a31c51dbd6c2afde",
+  "_key": "!items!a31c51dbd6c2afde",
+  "name": "Ring Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Heavy leather sewn with metal rings, providing modest protection against slashing weapons.</p>",
+    "price": {
+      "value": "30 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "20",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 3,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "0ab8d9fdd6806b20",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

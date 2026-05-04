@@ -1,0 +1,68 @@
+{
+  "_id": "9a8f0291ddcd558b",
+  "_key": "!items!9a8f0291ddcd558b",
+  "name": "Imprisonment",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell requires a successful touch attack to affect the target, who is then entombed, in a state of suspended animation in a small sphere, far beneath the surface of the earth. For the victim, time ceases to flow. The creature does not grow older, its body functions virtually cease, it does not need food or water and no force or effect can harm it. Most divinations will not reveal the creature but <em>discern location</em> does. The subject remains entombed unless the reverse of this spell, <em>freedom</em>, is cast where the imprisonment took place. A <em>wish</em> spell will not free a creature but will reveal where it is entombed. The <em>imprisonment</em> spell functions only if the target's name and some facts about its life are known.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

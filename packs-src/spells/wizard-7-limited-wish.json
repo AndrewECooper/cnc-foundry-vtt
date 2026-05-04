@@ -1,0 +1,68 @@
+{
+  "_id": "9e0b39e6c8aac443",
+  "_key": "!items!9e0b39e6c8aac443",
+  "name": "Limited Wish",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Though the scope of the wish granted by this potent spell may be limited, much can be accomplished by the imaginative caster within its strict bounds. This spell may duplicate the effects of any wizard spell of 6th level or lower, any illusionist spell of 5th level or lower or any cleric or druid spell of 4th level or lower. It may also grant other effects in line with the power of such spells, although any effects must be approved by the Castle Keeper. The caster must be cautious in phrasing the spell though, for the desires of the greedy often end in disaster, and the spell is very literal in its fulfilment of the caster's wish. Duplicated spells allow saving throws and spell resistance as normal.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "762c10d5c406fb67",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

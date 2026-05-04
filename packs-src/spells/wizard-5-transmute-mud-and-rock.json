@@ -1,0 +1,68 @@
+{
+  "_id": "1e8f0da5b569635a",
+  "_key": "!items!1e8f0da5b569635a",
+  "name": "Transmute Mud And Rock",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell can transform normal mud or quicksand of any depth into soft stone permanently. Creatures in the mud are allowed a dexterity save to escape before the area is hardened to stone. Alternatively, the spell turns natural, uncut or unworked rock of any sort into an equal volume of mud. Magical or enchanted stone is not affected. The depth of the mud created cannot exceed 10 feet. Creatures unable to levitate, fly or otherwise free themselves from the mud will sink and potentially asphyxiate. If the spell is cast upon the ceiling of a cavern or tunnel, the mud falls to the floor and spreads out in a pool at a depth of 5 feet. The falling mud and the ensuing cave-in deal 8d6 points of damage to anyone caught directly beneath the area, or half damage to those who succeed at dexterity saves. Castles and large stone buildings are generally immune to the effects of the spell because the spell can't affect worked stone and doesn't reach deep enough to undermine such buildings' foundations. However, small buildings or structures often rest upon foundations shallow enough to be damaged or even partially toppled by this spell. Each substance changed remains thus unless natural forces such as evaporation or magical forces restore its state but not necessarily its form. Each version of this spell dispels the other, but again, does not restore the original form. The spell can effect two 20 foot cubes per level.</p><p>The material component for this spell is a piece of clay.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

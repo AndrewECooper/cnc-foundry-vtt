@@ -1,0 +1,33 @@
+{
+  "_id": "d482e6dbb36ae07f",
+  "_key": "!items!d482e6dbb36ae07f",
+  "name": "War Hat",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A wide-brimmed steel hat (kettle hat) that shelters the head and shoulders from blows from above.</p>",
+    "price": {
+      "value": "7 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "6",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 2,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

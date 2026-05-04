@@ -1,0 +1,68 @@
+{
+  "_id": "09e4ff29b0f25a3c",
+  "_key": "!items!09e4ff29b0f25a3c",
+  "name": "Cloudkill",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bank of yellowish-green poisonous fog billows out from the point the caster designates and affects a 20 foot high x 30 foot wide x 20 foot thick area. The fog obscures all sight, including extraordinary vision, beyond 5 feet. A creature within 5 feet has one-half concealment. Creatures farther away have total concealment. The fog's vapors kill any living creature with 3 or fewer HD (no save) and causes creatures with 4 to 6 HD to make constitution saving throws or die. Living creatures above 6 HD, and creatures of 4 to 6 HD who make their saving throws, take 1d10 points of poison damage each round while in the cloud. Holding one's breath doesn't help unfortunately.</p><p>The cloud moves away from the caster at 10 feet per round, rolling along the surface of the ground. Because the vapors are heavier than air, they sink to the lowest level of the land, even pouring down openings. A moderate wind (11+ mph) disperses the fog in four rounds; a strong wind (21+ mph) disperses the fog in one round.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

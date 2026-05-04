@@ -1,0 +1,68 @@
+{
+  "_id": "c8212e13117e5bde",
+  "_key": "!items!c8212e13117e5bde",
+  "name": "Shadow Walk",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows for rapid travel along a shadow pathway. To cast this spell, the caster must be in an area of heavy shadows. The caster and any creature touched, up to 1 per level, are then transported along a swirling pathway of shadowstuff to the edge of normal reality, where it borders a plane of shadow. The effect is largely illusory, but the path is quasi-real. Travelers on the shadow path move at a rate of up to seven miles every 10 minutes. Movement appears normal on the shadow path, but is in reality rapid relative to the material plane. The caster is innately aware of location relative to the material plane and therefore will know exactly where the party will emerge. Any creature unwilling to continue traveling with the caster will either wander off into the plane of shadow, or return to a random spot on the material plane (50% chance of each).</p><p>The spell may also be used to travel to other planes that border the plane of shadow, but this requires the caster to actually traverse the plane of shadow and face its perils. Such a journey requires 1d4 hours to complete.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "1f5e85bd7531001f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

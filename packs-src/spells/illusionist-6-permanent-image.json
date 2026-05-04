@@ -1,0 +1,68 @@
+{
+  "_id": "bc80856342560a2a",
+  "_key": "!items!bc80856342560a2a",
+  "name": "Permanent Image",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a permanent illusion of an object, creature or force, as visualized by the character. Sound, smell and thermal illusions are included in the spell effect. The illusion can cover a 20 foot cubic area plus 10 cubic feet per level of the spell caster. Creatures who view the illusion believe it, and can suffer damage from it. Hit point damage is suffered from damage to the mind/psyche. The illusion follows a script determined by the caster, without requiring the caster's concentration. The illusion can include intelligible speech if the caster wishes. The image disappears if an opponent disbelieves for some reason and makes the required saving throw.</p><p>The material component for this spell is a 100gp lens.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "42fc932ab27c891b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

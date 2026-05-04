@@ -1,0 +1,68 @@
+{
+  "_id": "1285edb51511f203",
+  "_key": "!items!1285edb51511f203",
+  "name": "Teleport",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell instantly transports the caster, and a certain amount of additional weight, to any designated destination on the same plane of existence. The caster can transport his body and gear, willing creatures, and objects not held by other creatures. All of these items can total no more than 50 pounds per caster level. The character must have some clear idea of the location and layout of the destination. The clearer the character's mental image, the more likely the teleportation works (see table). Areas of strong physical or magical energies may make teleportation more hazardous or even impossible.</p><p>Teleportation is instantaneous travel through the astral plane; anything that blocks astral travel also blocks teleportation. To see how well the teleportation works, roll d% and consult the teleport table below. Refer to the information below for definitions of the terms:</p><p>#### Teleportation Location Familiarity</p><table><thead><tr><th>Familiarity</th><th>On Target</th><th>Off Target</th><th>Similar Area</th><th>Mishap</th></tr></thead><tbody><tr><td>Very familiar</td><td>01-97</td><td>98-99</td><td>100</td><td>—</td></tr><tr><td>Studied carefully</td><td>01-94</td><td>95-97</td><td>98-99</td><td>100</td></tr><tr><td>Seen casually</td><td>01-88</td><td>89-94</td><td>95-98</td><td>99-100</td></tr><tr><td>Viewed once</td><td>01-76</td><td>77-88</td><td>89-96</td><td>97-100</td></tr><tr><td>Description</td><td>01-52</td><td>53-76</td><td>77-92</td><td>93-100</td></tr><tr><td>False destination (1d20+80)</td><td>—</td><td>81-92</td><td>93-100</td><td>—</td></tr></tbody></table><p><strong>Very Familiar:</strong> A place where the caster has been very often and feels at home.</p><p><strong>Studied Carefully:</strong> A place the caster knows well, either because they have been there often or have used other means to study the place.</p><p><strong>Seen Casually:</strong> A place that the caster has seen more than once, but with which the character is not very familiar.</p><p><strong>Viewed Once:</strong> A place that the caster has seen once.</p><p><strong>Description:</strong> A place whose location and appearance the caster knows only through someone else's description, perhaps even from a precise map.</p><p><strong>False Destination:</strong> A place that does not exist. When traveling to a false destination, roll 1d20+80 to obtain results on the table, rather than rolling d%, since there is no real destination for the character to hope to arrive at, or even be off target from.</p><p><strong>On Target:</strong> The caster appears at the desired location.</p><p><strong>Off Target:</strong> The character appears safely a random distance away from the destination in a random direction. Distance off target is 1d10 x 1d10% of the distance that was to be traveled. The Castle Keeper determines the direction off target randomly.</p><p><strong>Similar Area:</strong> The caster winds up in an area that's visually or thematically similar to the target area. Generally, the caster appears in the closest similar place, but since the spell has no range limit, they could conceivably wind up somewhere else across the globe.</p><p><strong>Mishap:</strong> The caster and those teleporting with the caster suffer one of the following: 1-3 scrambled; 4-5 appear above; 6 appear below the intended destination. Scrambled travelers each take 1d10 points of damage, and the CK re-rolls on the chart to see where the travelers wind up. For these re-rolls, roll 1d20+80 and each time mishap comes up, the characters take more damage and must re roll. Characters appearing above do so 1d6x10 feet above the intended destination and suffer appropriate damage if they fall. Characters appearing below do so 1d6x10 feet below the intended destination and either instantly die from teleporting into a solid surface or appear in whatever open space exists underground.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

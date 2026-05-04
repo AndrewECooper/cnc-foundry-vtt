@@ -1,0 +1,68 @@
+{
+  "_id": "9a899dc8d88939a9",
+  "_key": "!items!9a899dc8d88939a9",
+  "name": "Transmute Flesh And Stone",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>In an instant, this spell transforms one creature and all objects it carries into stone, bereft of sense, thought or the faintest glimmer of life. Alternately, this spell can transform a mass of stone into an equal mass of flesh, though the flesh will possess no bones, organs or life unless the spell is being used to restore a petrified creature. When a petrified creature is turned back to flesh, any damage it or anything it bears has suffered afflicts the creature or object, unless the broken pieces are joined with them as they return to flesh. Only creatures made of flesh may be petrified by this spell.</p><p>The material component for this spell is a drop of blood, clay, dirt or stone.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d17b6041650219b9",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

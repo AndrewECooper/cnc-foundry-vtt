@@ -1,0 +1,68 @@
+{
+  "_id": "356c881084c01246",
+  "_key": "!items!356c881084c01246",
+  "name": "Sequester",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell provides complete protection from divination spells for one creature or object for the duration of the illusion, and renders the affected creature or object invisible to any form of sight, divination or scrying. The spell does not prevent the subject from being discovered by touch or through the use of magic devices. Living or undead creatures affected by <em>sequester</em> become comatose, and are effectively in a state of suspended animation until the spell wears off or is dispelled. If the spell is cast upon an unwilling creature, the target may resist the spell on a successful charisma save. There is no save to see the sequestered creature or object, or to detect it with a divination spell.</p><p>The material component is an eye/eyestalk worth 500gp or more.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 day/lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "3",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "762c10d5c406fb67",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

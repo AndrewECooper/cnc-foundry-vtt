@@ -1,0 +1,68 @@
+{
+  "_id": "86118eb4eacfe4d6",
+  "_key": "!items!86118eb4eacfe4d6",
+  "name": "Dream",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster, or a messenger touched by the caster, sends a phantasmal message to others in the form of a dream. At the beginning of the spell, the caster must name the recipients or identify them by title and which in no way leaves any doubt as to their identities. The messenger then enters a trance, appears in the intended recipient's next dream, and delivers the message. The message can be of any length, and the recipient remembers it perfectly upon waking. The communication is one-way: the recipient cannot ask questions or offer information, nor can the messenger gain any information by observing the recipient's dreams. Once the message is delivered, the messenger's mind returns instantly to his or her body. The duration of the spell is the time required for the messenger to enter the recipient's dream and deliver the message.</p><p>If the recipient is awake when the spell begins, the messenger can choose to remain in the trance or to awaken (ending the spell). The messenger can remain in the trance until the recipient goes to sleep, then enter the recipient's dream and deliver the message as normal. Creatures who don't sleep or dream cannot be contacted by this spell.</p><p>If the messenger is disturbed during the trance, the messenger awakens, and the spell ends. The messenger is unaware of his or her own surroundings or the activities around him or her while in the trance. The messenger is defenseless, both physically and mentally (always fails any saving throw, for example) while in the trance.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "unlimited",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

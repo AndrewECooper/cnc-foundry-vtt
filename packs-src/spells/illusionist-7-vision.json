@@ -1,0 +1,68 @@
+{
+  "_id": "1f1b5d08835fb77e",
+  "_key": "!items!1f1b5d08835fb77e",
+  "name": "Vision",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Vision</em> quickly brings to the caster's mind legends about an important person, place or thing, but produces some strain on the caster. The caster poses a question about some person, place or object, then casts the spell and goes to sleep. If the person or object is at hand, or if the character is in the place in question, the caster receives a vision about it with a successful intelligence check.</p><p>If the person, place or object is not at hand, but detailed information is known by the caster, the intelligence check is made at -5, and any information gained is incomplete. Incomplete information often provides enough clues to help the caster find the person, place or thing. This allows for a better vision when the spell is next cast. If only rumors are known, the intelligence check is made at -10, and any information gained is vague (though it often directs the caster to more detailed information, thus allowing a better vision).</p><p>When completed, the divination brings legends (if any) about the person, place or thing to the caster's mind. These may be legends that are still current, legends that have been forgotten or even information that has never been generally known. If the person, place or thing is not of legendary importance, the caster gains no information.</p><p>As a rule of thumb, characters 10th level and higher are legendary, as are the sorts of creatures they contend with, the major magic items they wield and the places where they perform their key deeds.</p><p># W</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "1f5e85bd7531001f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "1bba7358cca83205",
+  "_key": "!items!1bba7358cca83205",
+  "name": "Teleportation Circle",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By casting this spell, the caster creates a 10-foot diameter circle on any horizontal surface that teleports any creature on it to a designated location. Once the caster chooses the destination, it cannot be changed. The spell fails if the caster attempts to set the circle to teleport creatures into a solid object, to a place with which the caster is not familiar and has no clear description or to another plane. The circle itself is nearly impossible to notice. If the caster intends to keep creatures from activating it accidentally, the circle must be marked in some way. Teleportation is instantaneous travel through the astral plane; anything that blocks astral travel also blocks teleportation.</p><p>The material component for this spell is a 100gp loop of golden thread.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "7b2db668931d83f5",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

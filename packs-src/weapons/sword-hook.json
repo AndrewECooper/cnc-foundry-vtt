@@ -1,0 +1,45 @@
+{
+  "_id": "2f65b9855af58c15",
+  "_key": "!items!2f65b9855af58c15",
+  "name": "Sword, Hook",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A curved Chinese-style sword with a hook at the tip for catching limbs and weapons.</p>",
+    "price": {
+      "value": "25 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "4",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d4+1",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

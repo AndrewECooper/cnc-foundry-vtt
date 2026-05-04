@@ -1,0 +1,68 @@
+{
+  "_id": "4417a8d7afd1f2d8",
+  "_key": "!items!4417a8d7afd1f2d8",
+  "name": "Haste",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Haste</em> is a powerful but dangerous magic that is usually cast in times of great desperation. <em>Haste</em> affects one creature and doubles the affected creature's movement rate and number of attacks per round. Neither spell casting nor other actions are accelerated. A creature affected by <em>haste</em> ages one year, and assumes the risk of permanent bodily damage from the strain of the spell. At the end of the spell's duration, an affected creature must make a successful constitution saving throw or lose 1 hit point permanently.</p><p><em>Slow</em> is the reverse of <em>haste</em>. It reduces by ½ a creature's movement and number of attacks per round. A creature affected by <em>slow</em> suffers no aging or other bodily strain. <em>Haste</em> dispels and counters <em>slow</em>, and vice-versa.</p><p>The material component for this spell is a hawk arrow.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "constitution (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

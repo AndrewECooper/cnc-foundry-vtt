@@ -1,0 +1,45 @@
+{
+  "_id": "29504a2b348751ed",
+  "_key": "!items!29504a2b348751ed",
+  "name": "Bolts (12)",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A dozen short bolts for use with a crossbow.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "as x-bow",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "476a030cc61ba530",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

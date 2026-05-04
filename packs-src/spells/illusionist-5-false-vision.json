@@ -1,0 +1,68 @@
+{
+  "_id": "326a80faa08f0caf",
+  "_key": "!items!326a80faa08f0caf",
+  "name": "False Vision",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>To cast <em>false vision</em> the illusionist needs the shattered fragments of a deliberately distorted mirror (5 gp) placed in a small bowl of water, and a pinch of powdered moonstone (50gp) cast into the air.</p><p>The caster cloaks the area of effect with a shroud of magic, making everything within undetectable to any scrying. Also, if the caster is aware of an attempt to scry, they may concentrate on creating an illusory image with sound effects, which is what the person scrying will see and hear. It effects a 25 foot x 25 foot area.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

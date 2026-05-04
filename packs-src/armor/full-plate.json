@@ -1,0 +1,33 @@
+{
+  "_id": "a45695e74cadb032",
+  "_key": "!items!a45695e74cadb032",
+  "name": "Full Plate",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A full suit of articulated plate armor, fully enclosing the wearer in steel.</p>",
+    "price": {
+      "value": "1000 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "50",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 8,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

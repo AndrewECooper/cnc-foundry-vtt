@@ -1,0 +1,45 @@
+{
+  "_id": "5423f4b5fafb2e63",
+  "_key": "!items!5423f4b5fafb2e63",
+  "name": "Dart",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A weighted thrown spike, usually carried in a quiver of several at a time.</p>",
+    "price": {
+      "value": "5 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d3",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "20 ft.",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "476a030cc61ba530",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

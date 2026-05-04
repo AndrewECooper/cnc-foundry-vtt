@@ -1,0 +1,68 @@
+{
+  "_id": "91fb59a3f6042d2e",
+  "_key": "!items!91fb59a3f6042d2e",
+  "name": "Heal",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This powerful curative enables the caster to wipe away disease and injury. It completely cures all hit point damage, all diseases, blindness, deafness and all temporary ability damage. It neutralizes poisons in the subject's system, so that no additional damage or effects are suffered. It nullifies a <em>feeblemind</em> spell. It cures mental disorders caused by nature, spell, or injury to the brain. <em>Heal</em> does not remove negative levels, restore permanently drained levels, or restore permanently drained ability scores. The reverse of the spell, <em>harm</em>, drains the target of all but 4 hit points and causes disease in the subject (see <em>remove disease</em>).</p><p>A <em>heal</em> spell cast upon an undead creature affects it as if the <em>harm</em> spell were cast upon it. A <em>harm</em> spell cast upon an undead creature affects it as if a <em>heal</em> spell were cast.</p><p>The illusionist version of the spell acts in the same manner with two important exceptions. The spell recipient of the spell must make an intelligence saving throw. If the creature fails the saving throw, the spell acts normally. If the creature makes the saving throw, the spell fails as the creature realizes that the spell is an illusion. Also, the illusionist version has no effect on undead.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4a8ec54e9b481630",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

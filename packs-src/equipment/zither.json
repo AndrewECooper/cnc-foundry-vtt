@@ -1,0 +1,32 @@
+{
+  "_id": "0aad1c1aac4f734c",
+  "_key": "!items!0aad1c1aac4f734c",
+  "name": "Zither",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A flat stringed instrument played in the lap with picks and fingers.</p>",
+    "price": {
+      "value": "40 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f058ddb571c33d82",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

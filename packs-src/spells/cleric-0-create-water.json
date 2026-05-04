@@ -1,0 +1,68 @@
+{
+  "_id": "d9fa8b7a0774ada8",
+  "_key": "!items!d9fa8b7a0774ada8",
+  "name": "Create Water",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell generates wholesome, drinkable water. Water can be created in an area as small as will actually contain the liquid, or in an area three times as large (possibly creating a downpour or filling many small receptacles). The caster can create 2 gallons of water per caster level (enough to fill 4 waterskins).</p><p>Water weighs about 8 pounds per gallon, and one cubic foot of water contains roughly 8 gallons and weighs about 65 pounds.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a56bdbfdde36c793",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

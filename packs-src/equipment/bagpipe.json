@@ -1,0 +1,32 @@
+{
+  "_id": "cfc81056db2a3cb9",
+  "_key": "!items!cfc81056db2a3cb9",
+  "name": "Bagpipe",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A folk wind instrument with a leather bag and several pipes — droning and unmistakable.</p>",
+    "price": {
+      "value": "35 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f058ddb571c33d82",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

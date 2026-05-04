@@ -1,0 +1,32 @@
+{
+  "_id": "c33627f4bcf160e4",
+  "_key": "!items!c33627f4bcf160e4",
+  "name": "Shoes, Normal",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A pair of plain leather shoes.</p>",
+    "price": {
+      "value": "2 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

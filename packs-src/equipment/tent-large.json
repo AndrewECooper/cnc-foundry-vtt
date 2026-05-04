@@ -1,0 +1,32 @@
+{
+  "_id": "9d16be9260bbce12",
+  "_key": "!items!9d16be9260bbce12",
+  "name": "Tent, large",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A large pavilion tent that sleeps up to five.</p>",
+    "price": {
+      "value": "45 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "50",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "10",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

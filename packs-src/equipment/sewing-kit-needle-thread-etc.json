@@ -1,0 +1,32 @@
+{
+  "_id": "985e00e761f55428",
+  "_key": "!items!985e00e761f55428",
+  "name": "Sewing Kit (needle, thread, etc.)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small kit of needles, thread, and patches for mending clothing and gear.</p>",
+    "price": {
+      "value": "5 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

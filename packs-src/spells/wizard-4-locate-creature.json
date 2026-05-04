@@ -1,0 +1,68 @@
+{
+  "_id": "5b35e857a6f4c35a",
+  "_key": "!items!5b35e857a6f4c35a",
+  "name": "Locate Creature",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Using this spell, the caster may locate the nearest creature of a known type that they have encountered before (such as a human or unicorn), or a specific individual creature whom the caster has met, provided it is within range. The caster must possess part of the creature type sought (such as a goblin's tooth), or part or all of an item, garment, or part of an individual creature sought (such as a lock of hair, a strip of cloth from an individual's cloak, etc. in order to use the spell. The caster slowly turns on the spot after casting the spell, attempting to sense the direction of the creature. The spell locates the nearest creature of a given type if more than one such creature is within range. Running water blocks the spell, and it can be fooled by <em>mislead, non detection,</em> and <em>polymorph</em> spells. It cannot detect objects.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

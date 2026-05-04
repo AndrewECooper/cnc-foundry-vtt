@@ -1,0 +1,68 @@
+{
+  "_id": "0e2413fe35d42de3",
+  "_key": "!items!0e2413fe35d42de3",
+  "name": "Storm Of Vengeance",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Upon invoking this spell, the caster summons and directs a maelstrom of thunder and lightning. Creatures exposed to the storm must make a constitution saving throw or be deafened for 1d4 minutes. If concentration ceases, so does the spell. For each additional round the caster concentrates after the first, the storm has the following additional effect. The area of effect for this spell is a 750 foot diameter circle that is 300 feet tall.</p><table><thead><tr><th>Round</th><th>Effect</th></tr></thead><tbody><tr><td>2</td><td>Acid rains down in the area, dealing 1d6 points of acid damage. No save is allowed.</td></tr><tr><td>3</td><td>The character calls six bolts of lightning down from the cloud. The character decides where the bolts strike. All may be directed at a single target, or they may be directed at up to six separate targets. Each bolt deals 10d6 points of electricity damage, with a dexterity save for half damage.</td></tr><tr><td>4</td><td>Hailstones rain down in the area, dealing 5d6 points of damage (no save).</td></tr><tr><td>5-10</td><td>Violent rain and wind gusts reduce visibility. The rain obscures all sight, including special visions. Movement is reduced to 1/4th normal. Ranged attacks within the area are impossible. Spells cast within the area are disrupted unless the caster makes an intelligence check versus the storm-caster's level.</td></tr></tbody></table>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "up to 10 rd.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "2",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4a8ec54e9b481630",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

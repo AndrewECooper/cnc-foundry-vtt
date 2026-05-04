@@ -1,0 +1,68 @@
+{
+  "_id": "6d31cc487e445d52",
+  "_key": "!items!6d31cc487e445d52",
+  "name": "Contact Other Plane",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster projects his mind to another plane of existence in hopes of receiving advice and information from powers that reside there. The powers reply in a language the character understands, or by telepathy, but they often resent such contact and as a result give brief answers. The Castle Keeper will answers questions with yes, no, maybe, never, unclear, irrelevant or some other one-word answer.</p><p>The character must concentrate to maintain the spell, and may ask one question per round. The question is answered during the same round. A caster may ask one question for every two caster levels. Upon first making contact, the caster must make an intelligence saving throw. Failure results in the spell ending immediately, and the caster suffering an attribute loss and possible insanity as indicated on the table below.</p><p>The caster can contact an elemental plane or some plane further removed. Contact with a mind far removed from the caster's home plane increases the likelihood of a successful answer, but likewise increases the probability that the caster will suffer adverse effects. On rare occasions, this form of divination may be blocked by an act of certain deities or forces. The following table shows the possible consequences and results of the attempt.</p><p><strong>Failed Saving Throw:</strong> If the caster fails an intelligence save against the indicated CL, the caster's intelligence and charisma scores are decreased as indicated on the table below for one week's duration. Lowering of intelligence can result in the loss of bonus spells, and if reduced to 8 or less, the loss of daily spells entirely. Additionally, the caster may go insane when contacting a plane other than an elemental plane. A saving throw failed by 5 or more results in insanity in the caster. A saving throw roll of natural 1 always results in insanity. Insanity lasts as follows:</p><p><em>Astral:</em> 1 week <em>Demigod:</em> 1d4 weeks <em>Lesser Deity:</em> 2d4 weeks <em>Greater Deity:</em> 3d4 weeks</p><p><strong>Results of a Successful Contact:</strong> The Castle Keeper rolls D% to generate the result shown on the table:</p><p><em>True Answer:</em> The character gets a true, one-word answer. Questions not capable of being answered in this way are answered as unclear.</p><p><em>Don't Know:</em> The entity tells the character that it doesn't know.</p><p><em>Lie:</em> The entity intentionally lies to the character.</p><p><em>Random Answer:</em> The entity tries to lie but doesn't know the answer, so it makes one up.</p><p>#### Contact Other Plane</p><table><thead><tr><th>Plane Contacted</th><th>Saving Throw Challenge Level</th><th>Loss of Int</th><th>Loss of Cha</th><th>True Answer</th><th>Don't Know</th><th>Lie</th><th>Random Answer</th></tr></thead><tbody><tr><td>Elemental Plane</td><td>3</td><td>1</td><td></td><td>01-35</td><td>36-65</td><td>66-85</td><td>86-100</td></tr><tr><td>Astral Plane</td><td>5</td><td>2</td><td>1</td><td>01-40</td><td>41-65</td><td>66-85</td><td>86-100</td></tr><tr><td>Outer Plane, demigod</td><td>7</td><td>4</td><td>2</td><td>01-55</td><td>56-75</td><td>76-90</td><td>91-100</td></tr><tr><td>Outer Plane, lesser deity</td><td>9</td><td>6</td><td>3</td><td>01-70</td><td>71-85</td><td>86-95</td><td>96-100</td></tr><tr><td>Outer Plane, greater deity</td><td>12</td><td>8</td><td>4</td><td>01-90</td><td></td><td>91-92</td><td>93-100</td></tr></tbody></table>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./2 lvls.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "e42a53f871641919",
+  "_key": "!items!e42a53f871641919",
+  "name": "Meld Into Stone",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster's body and possessions meld into stone (the stone must be large enough to accommodate the body in all three dimensions). While in the stone, the caster remains in contact with the face of the stone, remains aware of the passage of time, and can cast personal spells while hiding. Nothing that goes on outside the stone can be seen, but it can be heard. At any time before the spell expires, the caster can step out of the stone through the surface originally entered. If the spell's duration runs out or the effect is dispelled before the caster voluntarily exits the stone, the caster is expelled.</p><p>Minor physical damage to the stone does not harm the caster, but its partial destruction, to the extent that the caster no longer fits within it, expels the caster and deals 5d6 damage. The stone's complete destruction expels and slays the caster instantly unless a successful constitution save is made at +3. The following spells cause harm to the caster if cast upon the stone: <em>stone to flesh</em> expels the caster and deals 5d6 damage; <em>stone shape</em> deals 3d6 damage but does not expel the character; <em>transmute rock to mud</em> expels and slays the caster unless a constitution save at +3 is made; <em>passwall</em> expels without damage.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

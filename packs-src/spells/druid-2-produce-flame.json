@@ -1,0 +1,68 @@
+{
+  "_id": "f900cd6a30509470",
+  "_key": "!items!f900cd6a30509470",
+  "name": "Produce Flame",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Upon casting this spell, a bright flame, about the size of a torch, appears in the caster's hand. The flames illuminate as torches do, and will not harm the caster. The flame is real and will ignite combustible materials that are brought into contact with it.</p><p>The flames can be used to attack. The caster can hurl them or use them to touch enemies. Successful touch attacks deal 1d4+1 point per two caster levels. The flame can be thrown up to 50 feet, igniting any combustible materials at the point of impact and causing the same damage as a touch attack to any creature struck. The spell ends immediately after the attack.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "79e5de598b9405d7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "aa7c6235a0e245bd",
+  "_key": "!items!aa7c6235a0e245bd",
+  "name": "Detect Magic",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By means of this spell, the caster can detect the presence of magical auras in the direction the caster is facing, along a path 50 feet long and 10 feet wide. The caster must spend one round concentrating along the path to detect magic, although the caster may both cast the spell and begin detecting in the same round that the spell is cast. The strength of the magic detected will be revealed as lingering, faint, moderate, strong or overwhelming. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead or 3 feet of wood or dirt blocks it. Outsiders and elementals are not inherently magical, but if they have been conjured, the conjuration spell will be detected.</p><p>Magical areas, multiple types of magic or strong local magical emanations may confuse or conceal weaker auras, although the Castle Keeper may allow the caster to spend additional rounds concentrating to decipher the confusion or reveal weaker auras. The Castle Keeper may require a intelligence check to do so.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft. x 10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "970419e5bee1392b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

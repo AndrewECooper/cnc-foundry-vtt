@@ -1,0 +1,32 @@
+{
+  "_id": "950e5b30a9fa2bd6",
+  "_key": "!items!950e5b30a9fa2bd6",
+  "name": "Firewood, per day",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bundle of split firewood sufficient to keep a small camp fire for a day.</p>",
+    "price": {
+      "value": "1 cp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "20",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "8",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

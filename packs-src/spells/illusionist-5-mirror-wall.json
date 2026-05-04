@@ -1,0 +1,68 @@
+{
+  "_id": "cf3ea52423406396",
+  "_key": "!items!cf3ea52423406396",
+  "name": "Mirror Wall",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The spell creates the illusion of a perfect mirror filling a corridor, portal, or the space between the caster and the victims of the illusion. The mirror wall is 5 square feet per level of the caster and is one inch thick. If the victims fail to make their save, the mirror is an impenetrable wall that can only be brought down by <em>dispel magic, disintegrate, rod of cancellation, a sphere of annihilation, disjunction</em>, or similar spell or power. It also bounces every spell or ranged attack back at the caster or attacker if they fail to make a second intelligence save.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "2 rds./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

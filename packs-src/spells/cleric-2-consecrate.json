@@ -1,0 +1,68 @@
+{
+  "_id": "34bca78f2b3efe54",
+  "_key": "!items!34bca78f2b3efe54",
+  "name": "Consecrate",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell blesses an area 50 feet x 50 feet with positive energy. All attempts to turn undead made within the area gain a +3 bonus. Undead entering this area suffer minor disruption, giving them a -1 penalty on attack, damage and saving throws. Undead cannot be created or summoned into a consecrated area. If the consecrated area contains a permanent fixture dedicated to the character's deity, pantheon or aligned higher power, the modifiers listed above are doubled. <em>Consecrate</em> counters and dispels <em>desecrate</em>, but not within a permanent fixture of the opposing spell caster's deity. The cast needs religious materials worth 25gp to cast the spell.</p><p><em>Desecrate</em> is the reverse of this spell. It imbues an area with negative energy, and all attempts to turn undead within it suffer a -3 penalty. Undead entering this area gain +1 to attack, damage and saving throws. Undead created within or summoned into a desecrated area gain +1 hit points per HD. If the desecrated area contains an altar, shrine or other permanent fixture dedicated to the caster's deity, pantheon or aligned higher power, the effects are doubled. <em>Desecrate</em> counters and dispels <em>consecrate</em>, but not within a permanent fixture of the opposing spell-caster's deity.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "2 hrs./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "3",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c802faccb6196725",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

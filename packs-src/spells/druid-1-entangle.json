@@ -1,0 +1,68 @@
+{
+  "_id": "2bf0549127356794",
+  "_key": "!items!2bf0549127356794",
+  "name": "Entangle",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell animates all plants in the affected area, causing them to attempt to intertwine about and entangle any creature within, or moving through, their location, holding them fast. A successful dexterity save means that the creature manages to avoid becoming entangled for that particular round. An entangled creature suffers a -2 penalty to attack, a -4 penalty to effective dexterity, and cannot move, making the casting of spells with a somatic component impossible. Breaking free requires a successful strength check. Each round, the plants once again attempt to entangle all creatures who have avoided or escaped entanglement. Area of effect is a 50' diameter circle.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity (see below)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "8ff70d13d5cc704c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

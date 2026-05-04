@@ -1,0 +1,68 @@
+{
+  "_id": "a5fce0c19077755f",
+  "_key": "!items!a5fce0c19077755f",
+  "name": "Remove Disease",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell cures all diseases that the subject is suffering from, whether the source was normal or magical. It can only be applied to one creature. The reverse of this spell, <em>cause disease</em>, causes a random disease in the creature touched, although the severity of the disease is often tied to the level of the caster. The exact effect is determined by the Castle Keeper. There is no saving throw for remove disease, or for cause disease. However <em>remove disease</em> counters and dispels, the reverse of the spell, and vice-versa.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

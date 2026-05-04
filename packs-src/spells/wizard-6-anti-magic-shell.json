@@ -1,0 +1,68 @@
+{
+  "_id": "c56c8220977834f1",
+  "_key": "!items!c56c8220977834f1",
+  "name": "Anti-Magic Shell",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a mobile, 20 ft. diameter sphere of energy around the caster that is impervious to most magical effects, including spells, spell-like abilities and supernatural abilities. An <em>anti-magic shell</em> suppresses any spell or magical effect used within, brought into or cast into the area, but does not dispel it. Time spent within an <em>anti-magic shell</em> counts against the suppressed spell's duration. Likewise, the shell prevents the functioning of any magic items or spells within its confines. The shell prevents the entrance of summoned or conjured creatures and incorporeal undead; if the caster casts <em>anti-magic shell</em> in an area occupied by such a creature which has spell resistance, the caster must make a check against the creature's SR or the spell fails.</p><p>Normal creatures can enter the area, as can normal missiles. Unless they are summoned, golems and other magical constructs, elementals, outsiders, and corporeal undead may enter in an anti-magic area, but the anti-magic area temporarily nullifies their spell-casting supernatural, spell-like, and other magic abilities.</p><p>The shell is transparent, but it is not invisible. Should the character be larger than the area enclosed by the shell, any part of the character's person that lies outside the barrier is unaffected by the field.</p><p><em>Dispel magic</em> does not affect an <em>anti-magic shell</em>. Certain spells remain unaffected by an anti-magic field, as detailed in their descriptions. Artifacts, relics, and creatures of demigod or higher status are unaffected. Two or more <em>anti-magic shells</em> sharing any of the same space have no effect on each other.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "person",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d17b6041650219b9",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "9e8984b2ceec873f",
+  "_key": "!items!9e8984b2ceec873f",
+  "name": "Holy Water, Flask",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A flask of water blessed by a priest, harmful to undead and infernal creatures.</p>",
+    "price": {
+      "value": "30 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

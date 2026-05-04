@@ -1,0 +1,68 @@
+{
+  "_id": "496c6387a508b4bc",
+  "_key": "!items!496c6387a508b4bc",
+  "name": "Detect Neutrality",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By means of this spell, the caster can sense the presence of neutrality in the direction the caster is facing along a path 150 feet long and 10 feet wide. The caster must spend one round concentrating along the path, although the caster may cast the spell and detect in the round the spell is cast. If an additional round is spent concentrating, the spell reveals the type of neutrality, either lawful neutral, neutral good, neutral, neutral evil, or chaotic neutral. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead or 3 feet of wood or dirt blocks it.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft. x 10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "da0f119b5625406c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

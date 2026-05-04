@@ -1,0 +1,32 @@
+{
+  "_id": "eeb25bf0c7d41936",
+  "_key": "!items!eeb25bf0c7d41936",
+  "name": "Panpipes",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A row of bound reed pipes of varying length, played by blowing across the openings.</p>",
+    "price": {
+      "value": "11 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f058ddb571c33d82",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "9563bbc663945168",
+  "_key": "!items!9563bbc663945168",
+  "name": "Mind Blank",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The subject is protected from all devices and spells that detect, influence, or read emotions or thoughts, and is immune against all mind-affecting spells and effects as well as information gathering by divination spells or effects. <em>Mind blank</em> even foils <em>limited wish</em> and <em>wish</em>, when they are used in such a way as to affect a subject's mind or to gain information about him. In the case of scrying that scans an area the spell's subject is in, the spell works but the spell's subject simply isn't detected. Scrying attempts targeted specifically at the subject do not work at all.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 day",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "25 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3d11a7f6d524894",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

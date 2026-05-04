@@ -1,0 +1,33 @@
+{
+  "_id": "0beefbd091c770a0",
+  "_key": "!items!0beefbd091c770a0",
+  "name": "Shield, Large Steel",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A large steel shield, the size of a small door — bulky to wield but excellent cover.</p>",
+    "price": {
+      "value": "20 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "15",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "22238e0d7cb6f583",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

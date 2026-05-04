@@ -1,0 +1,33 @@
+{
+  "_id": "55fe0559c6b5b6c9",
+  "_key": "!items!55fe0559c6b5b6c9",
+  "name": "Shield, Large Wooden",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A large wooden shield, often kite-shaped, suited for foot soldiers and cavalry alike.</p>",
+    "price": {
+      "value": "7 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "10",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "22238e0d7cb6f583",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

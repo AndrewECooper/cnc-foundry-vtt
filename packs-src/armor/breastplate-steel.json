@@ -1,0 +1,33 @@
+{
+  "_id": "0b9f8e86dc0d06d5",
+  "_key": "!items!0b9f8e86dc0d06d5",
+  "name": "Breastplate, steel",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A finely shaped steel cuirass that protects the torso while leaving the limbs unencumbered.</p>",
+    "price": {
+      "value": "300 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "30",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 5,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "ae3a65cd49cfb992",
+  "_key": "!items!ae3a65cd49cfb992",
+  "name": "Hypnotism",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster gestures and utters a droning incantation which causes nearby creatures to stop and stare blankly at the character. The caster can use this rapt attention to make suggestions and requests seem quite plausible. The spell affects 2d4 HD of creatures in a 25 foot x 25 foot area. Creatures with fewer HD are affected first. Only creatures that can see or hear the character are affected. Hypnosis can succeed regardless of whether or not the target creatures can comprehend the caster's speech.</p><p>Hypnotized creatures cannot move or act, though they can be \"snapped out of it\" if attacked or disturbed in any way. Hypnotized creatures will not remember being entranced. <em>Hypnotism</em> will not succeed in the thick of combat or other dangerous situations.</p><p>While the subject is hypnotized, the caster can make a suggestion or request. The suggestion must be brief and reasonable. Each suggestion takes one round to communicate. If the suggestion is reasonable, it can influence the subject's actions, according to the discretion of the Castle Keeper. The Castle Keeper may allow additional intelligence saves for the subject if the suggestion is less than reasonable. Even once the spell ends, an affected creature retains its new attitude toward the caster, but only with respect to a particular suggestion.</p><p># I</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1d2 rd.+1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "25 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

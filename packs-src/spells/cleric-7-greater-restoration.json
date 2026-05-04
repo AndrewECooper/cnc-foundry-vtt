@@ -1,0 +1,68 @@
+{
+  "_id": "e3a2bef34e3275e6",
+  "_key": "!items!e3a2bef34e3275e6",
+  "name": "Greater Restoration",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell cures the draining touch of the undead as well as many other deleterious effects. <em>Greater restoration</em> dispels all effects reducing or penalizing a character's abilities, cures all temporary and permanently drained attribute scores, and also removes all forms of insanity, confusion, feeblemind or similar mental effects. Even more potently, it restores all levels previously drained (and all class benefits such as hit points and abilities) by undead.</p><p>Drained levels can only be restored if this spell is cast no more than 1 week per caster level after the drain.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 hour",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0168b1fa5dc0c76c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

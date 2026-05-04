@@ -1,0 +1,68 @@
+{
+  "_id": "f7c6bf305aceca40",
+  "_key": "!items!f7c6bf305aceca40",
+  "name": "Tiny Hut",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster creates an unmoving, opaque sphere of force around his or her self. A small opaque glass ball is fixed in place, and does not move with the caster. The sphere can be of any color. Half of the sphere projects above the ground, and the lower hemisphere passes through the ground. Up to nine other human-size or smaller creatures can fit into the field with the caster and they can freely pass into and out of the hut without harming it. However, if the caster leaves the hut, the spell ends. The temperature inside the hut is 70˚ F if the exterior temperature is between 0˚ and 100˚ F. An exterior temperature below 0 degrees or above 100 degrees lowers or raises, respectively, the interior temperature on a degree for degree basis (thus, if it's -20 degrees outside, inside it'll be 50 degrees). The hut also provides protection against the elements, such as rain, dust and sandstorms. The hut withstands any wind of less than hurricane force, but a hurricane (75+ mph wind speed) or greater force destroys it. The caster can dimly illuminate the interior upon command or extinguish the light as desired. Note that although the force field is opaque from the outside, it is transparent from within. Missiles, weapons and most spell effects can pass through the hut without affecting it, although the occupants cannot be seen from outside the hut, and thus have total concealment.</p><p>The material component for this spell is an opaque glass ball.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "dd9a66337367d905",
+  "_key": "!items!dd9a66337367d905",
+  "name": "Banishment",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Banishment</em> enables the caster to force extraplanar creatures within a 25 x 25 foot area, back to their home plane. Up to 2 hit dice of creatures per caster level can be banished. To target a creature, the character must present at least one object or substance that it hates, fears or otherwise opposes. For each such object or substance, the creature suffers a -2 penalty on its saving throw, and the caster gains +1 bonus on the check to overcome the target's SR (if any).</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4f060dd90f1d4aad",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

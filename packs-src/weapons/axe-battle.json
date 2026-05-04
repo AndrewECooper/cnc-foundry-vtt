@@ -1,0 +1,45 @@
+{
+  "_id": "aa97cb3de31036e4",
+  "_key": "!items!aa97cb3de31036e4",
+  "name": "Axe, Battle",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A single-bladed war axe well balanced for one-handed combat.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d8",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

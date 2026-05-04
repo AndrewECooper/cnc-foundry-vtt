@@ -1,0 +1,68 @@
+{
+  "_id": "f11d3cf75739212e",
+  "_key": "!items!f11d3cf75739212e",
+  "name": "Resist Elements",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The target becomes suffuse with protective magical energies providing some measure of protection against one element: acid, cold/ice, heat/fire, electricity/lightning or sonic/air. The dweomer grants a +2 saving throw bonus against the specified energy type, regardless of whether the source of damage is natural or magical. The spell protects the recipient's equipment as well.</p><p><em>Resist elements</em> absorbs only damage: The caster could still suffer unfortunate side effects. <em>Resist elements</em> overlaps <em>endure elements</em> and <em>protection from elements</em>.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "20bf402ac5266eb7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

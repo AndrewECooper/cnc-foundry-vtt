@@ -1,0 +1,32 @@
+{
+  "_id": "a6488538280d6a82",
+  "_key": "!items!a6488538280d6a82",
+  "name": "Mug or Tankard",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A common ceramic or wooden drinking mug.</p>",
+    "price": {
+      "value": "2 cp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

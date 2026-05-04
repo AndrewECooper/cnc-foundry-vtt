@@ -1,0 +1,32 @@
+{
+  "_id": "257262a34e5da910",
+  "_key": "!items!257262a34e5da910",
+  "name": "Flint and Steel",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A piece of flint and a steel striker for starting fires.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

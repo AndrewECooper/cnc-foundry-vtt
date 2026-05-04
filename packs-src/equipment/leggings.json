@@ -1,0 +1,32 @@
+{
+  "_id": "bc456268ac14b7a4",
+  "_key": "!items!bc456268ac14b7a4",
+  "name": "Leggings",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A pair of cloth or leather leggings worn beneath a tunic or robe.</p>",
+    "price": {
+      "value": "5 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

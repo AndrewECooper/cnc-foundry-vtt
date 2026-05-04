@@ -1,0 +1,32 @@
+{
+  "_id": "d3b04219f96dd1b7",
+  "_key": "!items!d3b04219f96dd1b7",
+  "name": "Wine, Common (Bottle)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bottle of common table wine.</p>",
+    "price": {
+      "value": "2 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5271d55d416b3598",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

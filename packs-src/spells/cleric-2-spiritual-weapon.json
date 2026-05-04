@@ -1,0 +1,68 @@
+{
+  "_id": "30d52bbb148f02c2",
+  "_key": "!items!30d52bbb148f02c2",
+  "name": "Spiritual Weapon",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By invoking a prayer, the caster creates a magical weapon out of divine energy which moves by telepathic command. It will move to attack foes in melee with or at a distance from the caster. The weapon will usually take the form of the favored weapon of the caster's patron deity or that of the caster's chosen weapon if the deity has no preferred weapon. The weapon is guided by the caster, and strikes as if the caster were wielding it in melee (at caster's level with strength bonuses). It does not have any special bonus to hit, and it deals 1d8 damage. The weapon can strike creatures only hit by magic weapons (+1 for every 3 caster levels) as well as incorporeal creatures.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c802faccb6196725",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

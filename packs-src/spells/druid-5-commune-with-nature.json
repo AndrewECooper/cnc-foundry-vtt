@@ -1,0 +1,68 @@
+{
+  "_id": "a635084f969e804c",
+  "_key": "!items!a635084f969e804c",
+  "name": "Commune With Nature",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Through supernatural contact with nature and the elements, the caster gains knowledge of the surrounding area or territory. The caster gains knowledge of up to three facts from the following subjects: the ground or terrain, plants, minerals, bodies of water, people, general animal population, presence of woodland creatures, powerful unnatural creatures or the general state of the natural setting. The spell has a range of one mile per level outdoors, and 100 feet per level underground. The spell does not function where nature has been replaced totally by construction or settlement.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "Permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "91a80f29d8a51e6b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

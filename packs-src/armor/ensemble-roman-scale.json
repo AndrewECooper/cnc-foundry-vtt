@@ -1,0 +1,33 @@
+{
+  "_id": "8c591210e974ce5b",
+  "_key": "!items!8c591210e974ce5b",
+  "name": "Ensemble, Roman (Scale)",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Roman scale armor with copper greaves, vambraces, and helmet — armor of an auxiliary soldier.</p>",
+    "price": {
+      "value": "240 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "30",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

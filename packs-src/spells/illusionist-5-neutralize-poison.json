@@ -1,0 +1,68 @@
+{
+  "_id": "63032f078c0ae8ea",
+  "_key": "!items!63032f078c0ae8ea",
+  "name": "Neutralize Poison",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster detoxifies any sort of venom in one creature or in one object touched. A poisoned creature suffers no additional damage or effects from the poison, and any temporary effects are ended. But the spell does not reverse effects the poison may have already inflicted, such as hit point damage, temporary ability damage, or effects that don't go away on their own.</p><p>This spell also neutralizes the poison in a poisonous creature or object. A poisonous creature replenishes its poison at its normal rate.</p><p>The illusionist version of the spell acts in the same manner with one important exception. The spell recipient of the spell must make an intelligence saving throw. If the creature fails the saving throw, the spell acts normally. If the creature makes the saving throw, the spell fails as the creature realizes that the spell is an illusion.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "constitution negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

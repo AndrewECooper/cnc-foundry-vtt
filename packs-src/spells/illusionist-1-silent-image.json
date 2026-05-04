@@ -1,0 +1,68 @@
+{
+  "_id": "b2b5bf800bc32e53",
+  "_key": "!items!b2b5bf800bc32e53",
+  "name": "Silent Image",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a visual illusion of an object, creature or force, as visualized by the caster in a 40 foot cube, + 10 cubic feet per level. It cannot create sound, smell or tactile illusions. Creatures who view the illusion believe it, and can suffer damage from illusions. Hit point damage is suffered from damage to the mind/psyche. While concentrating, the caster can move the image within the range. The illusion disappears if an opponent makes the saving throw.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "concentration",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence disbelieves",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "5adad796a4c3cfa5",
+  "_key": "!items!5adad796a4c3cfa5",
+  "name": "Axe, Two-Handed",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A great two-handed axe wielded with massive sweeping blows.</p>",
+    "price": {
+      "value": "20 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "15",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d12",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

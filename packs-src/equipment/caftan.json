@@ -1,0 +1,32 @@
+{
+  "_id": "fbb4c9f55bb270e2",
+  "_key": "!items!fbb4c9f55bb270e2",
+  "name": "Caftan",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A long loose robe with full sleeves, common in eastern lands.</p>",
+    "price": {
+      "value": "3 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "2",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

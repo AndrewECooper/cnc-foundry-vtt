@@ -1,0 +1,68 @@
+{
+  "_id": "1aaf662301220312",
+  "_key": "!items!1aaf662301220312",
+  "name": "Wall Of Ice",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Similar to <em>wall of fire</em>, this spell creates an anchored sheet or hemisphere of ice. Unlike <em>wall of fire</em>, a <em>wall of ice</em> cannot form in an area occupied by physical objects or creatures. Its surface must be smooth and unbroken when created. Fire can melt a wall of ice. Suddenly melting the wall of ice creates a great cloud of steamy fog that lasts for 10 minutes. There are two versions of the spell available:</p><p><strong>Sheet of ice:</strong> A sheet of strong, hard ice appears. The wall may be created either vertically or horizontally/slanting. Vertical walls anchor themselves to the floor, while a horizontal or slanting wall must have two opposite surfaces to anchor itself. The sheet has two possible measurements: (1) up to 10 feet per caster level long, 1 inch per caster level thick, and 10 feet tall/wide, or (2) up to 5 feet per caster level long, 1 inch per caster level thick, and 20 feet tall/wide. A horizontal sheet of ice created in the air without two anchor points acts as a <em>sleet storm</em> spell, but lasts only 5 rounds and covers an area equaling one of the two possible measurements.</p><p>Each 10-foot length (for the former) or 5-foot length (for the latter) has 3 hit points per inch of thickness. Creatures can hit the wall automatically, and a section of wall whose hit points drop to 0 is breached. Even when the ice has been broken through, a sheet of frigid air remains that deals 1d6 +1 point per caster level of cold damage to any creature stepping through it. Fire-using creatures passing through this cold air suffer double damage, while cold-using creatures suffer no damage.</p><p><strong>Hemisphere of Ice:</strong> The wall takes the form of a hemisphere of ice over the caster or a designated target. The hemisphere has a maximum possible diameter of 2 feet per caster level. It is as hard to break through as the sheet of ice, but it does not deal damage to those who go through a breach. The caster can create the hemisphere so that it traps one or more creatures, though these creatures can avoid being trapped by making successful dexterity saves.</p><p>The material component for this spell is a paper thin crystal.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

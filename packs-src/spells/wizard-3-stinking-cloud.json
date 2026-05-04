@@ -1,0 +1,68 @@
+{
+  "_id": "2d64130f47616165",
+  "_key": "!items!2d64130f47616165",
+  "name": "Stinking Cloud",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell invokes a 20 by 20 by 20 foot cloud of billowing, nauseous gas that is impenetrable to sight or special visions. Anyone caught within it must make a successful constitution save every round while within the cloud or become nauseated and helpless for 1d4+1 rounds. Helpless characters can only move out of the cloud in a random direction. A moderate wind (11+ mph) disperses the cloud in four rounds; a strong wind (21+ mph) disperses the cloud in 1 round.</p><p>The material component for this spell is a bit of rotting food, baby poo or other foul smelling item.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "constitution negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "30 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_id": "f44f0ab3148bca29",
+  "_key": "!items!f44f0ab3148bca29",
+  "name": "Flail, Heavy",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A long-hafted flail with a heavy spiked or studded head joined to the haft by chain.</p>",
+    "price": {
+      "value": "15 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d10",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

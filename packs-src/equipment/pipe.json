@@ -1,0 +1,32 @@
+{
+  "_id": "86081306f1ff4abf",
+  "_key": "!items!86081306f1ff4abf",
+  "name": "Pipe",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small wood or clay smoking pipe with a long stem.</p>",
+    "price": {
+      "value": "5 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "590416674a460abd",
+  "_key": "!items!590416674a460abd",
+  "name": "Barkskin",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>There are two versions of this spell. The caster chooses one when the spell is cast.</p><p><strong>Barkskin armor:</strong> This version grants a +3 bonus to AC due to the toughening of the caster's skin. This bonus increases to +4 at 6th level and to +5 at 12th level and higher.</p><p><strong>Tree Shape:</strong> This version causes the caster to assume the form of a small, living tree or shrub; or a large, dead tree trunk with a small number of limbs. The closest inspection cannot reveal that the tree in question is actually a magically concealed creature. To all normal tests the caster is, in fact, a tree or shrub, although a <em>detect magic</em> spell reveals a faint magic upon the tree. While in tree form, the caster can observe all that transpires nearby just as if the caster were in the caster's normal form, and the caster's hit points and saves remain unaffected. The caster gains a +10 bonus to AC but loses any dexterity bonus to armor class (effective dexterity score of one). All clothing and gear carried or worn changes with the character. The caster can dismiss the tree shape at any time.</p><p>The material component for this spell is a piece of bark.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "self",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "79e5de598b9405d7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

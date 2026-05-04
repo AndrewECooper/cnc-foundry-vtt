@@ -1,0 +1,68 @@
+{
+  "_id": "35f1e938496153df",
+  "_key": "!items!35f1e938496153df",
+  "name": "Fire Shield",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Wispy, colorful flame wreathes the caster, surrounding the character like a cloak of fire. The fire may be freezing cold or burning hot, whichever the caster desires. Any creature striking the caster with its body or hand held weapons deals normal damage, but at the same time the attacker takes 1d6 points of damage +1 per caster level due to the intense flames. Spell resistance applies to this damage. Weapons with exceptional reach do not endanger the attacker.</p><p>The flame-clad character gives off light like a dim torch, the color of which is selected by the caster (blue or green for a chill shield, violet or reddish-orange for a hot shield). Characters surrounded by a hot shield take only half damage from cold-based attacks, and no damage if the attack allows a save for half damage and the caster succeeds. Chill shields operate exactly the same way, but protect against heat/fire-based attacks.</p><p>The material component for this spell is an open flame.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

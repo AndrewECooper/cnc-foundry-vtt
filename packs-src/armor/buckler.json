@@ -1,0 +1,33 @@
+{
+  "_id": "f1a6709ed8efa195",
+  "_key": "!items!f1a6709ed8efa195",
+  "name": "Buckler",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small steel disk strapped to the forearm, used to parry incoming blows.</p>",
+    "price": {
+      "value": "2 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "2",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "22238e0d7cb6f583",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

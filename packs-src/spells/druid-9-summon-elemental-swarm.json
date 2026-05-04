@@ -1,0 +1,68 @@
+{
+  "_id": "5e7ee3e2c1d469c7",
+  "_key": "!items!5e7ee3e2c1d469c7",
+  "name": "Summon Elemental Swarm",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A portal to an elemental plane of the caster's choice (air, earth, fire or water) is torn open with this spell, drawing a small army of elementals to the caster's service. When the spell is complete, 2d4 elementals of 8HD in size appear. 10 minutes later, 1d4 elementals of 12 HD in size appear. 10 minutes after that, 1 elemental of 16HD appears. Each elemental has at least 5 HP per HD. Once the elementals appear, they serve the character for the duration of the spell. The elementals obey the caster explicitly and never attack them, even if someone else manages to usurp or gain control over them. The caster does not need to maintain control over the elementals, and can dismiss them singly or in groups at any time.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4a8ec54e9b481630",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

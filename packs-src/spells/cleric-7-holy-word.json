@@ -1,0 +1,68 @@
+{
+  "_id": "fad2214cb23078d5",
+  "_key": "!items!fad2214cb23078d5",
+  "name": "Holy Word",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A powerful cleric uttering a <em>holy word</em> (good) or <em>unholy word</em> (evil) speaks with the voice of their deity. The spell instantly banishes extraplanar creatures within a 25-foot radius area to their home planes. Creatures so banished cannot return for at least 1 day. This effect takes place regardless of whether the creatures hear the holy word. Additionally, creatures in the area of effect who hear the holy word and are not good (or evil in the case of <em>unholy word</em>) suffer the following effects:</p><table><thead><tr><th>Level or HD</th><th>Effect</th></tr></thead><tbody><tr><td>12 or more</td><td>Deafened</td></tr><tr><td>Less than 12</td><td>Blinded, deafened</td></tr><tr><td>Less than 8</td><td>Paralyzed, blinded, deafened</td></tr><tr><td>Less than 4</td><td>Killed</td></tr></tbody></table><p>Deafness lasts 1d4 rounds. Blindness lasts 2d4 rounds. Paralyzation lasts 1d10 minutes with the subject unable to move or act in any way. Killed means that living creatures instantly die (undead are destroyed).</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0168b1fa5dc0c76c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

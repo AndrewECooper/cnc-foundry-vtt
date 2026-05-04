@@ -1,0 +1,68 @@
+{
+  "_id": "9fc93be1b3e38bbb",
+  "_key": "!items!9fc93be1b3e38bbb",
+  "name": "Gust Of Wind",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A powerful, howling blast of air originates from the caster in the direction they are facing, and extending out to 10 feet high and 10 feet wide. This gust automatically extinguishes candles, torches, and similar small unprotected flames. It fans larger flames such as bonfires. It scatters any small, light items such as a wind ordinarily would, and it causes protected flames, such as those of lanterns, to dance wildly, with a 50% chance that they too will be extinguished. Small-sized flying creatures must make a strength save to avoid being blown wildly out of control by the spell, while small and medium-sized land borne creatures, as well as medium-sized flying creatures, must make a strength save to successfully continue moving normally.</p><p># H</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "strength negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

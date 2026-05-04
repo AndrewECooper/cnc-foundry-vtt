@@ -1,0 +1,68 @@
+{
+  "_id": "d2b15ad9956b6636",
+  "_key": "!items!d2b15ad9956b6636",
+  "name": "Control Water",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The spell allows the caster to either raise or lower water.</p><p><strong>Lower Water:</strong> This use of the spell causes water (or any similar liquid) to sink away to a minimum depth of 1 inch. The depth can be lowered by up to 2 feet per caster level. The water is lowered within a squarish depression whose sides are up to 10 feet long per caster level. In extremely large and deep bodies of water, a powerful caster can create a whirlpool that sweeps ships downward, putting them at risk of damage and rendering them unable to leave by normal movement for the duration of the spell. When cast on water elementals and other water-based creatures, this spell acts as a <em>slow</em> spell. The spell has no effect on other creatures.</p><p><strong>Raise Water:</strong> This use of the spell causes water (or any similar liquid) to rise in height. Boats raised in this way slide down the sides of the hump that the spell creates. If the area affected by the spell is adjacent to land, the water can spill over onto dry land.</p><p>The material component for this spell is a vial of warm air.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "648ff0fd4c816377",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

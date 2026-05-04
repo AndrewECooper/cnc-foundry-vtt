@@ -1,0 +1,68 @@
+{
+  "_id": "fe7bf5b53045156a",
+  "_key": "!items!fe7bf5b53045156a",
+  "name": "Web",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a many-layered 20 x 20 x 10 foot thick mass of strong, sticky strands resembling a giant spider's web, that trap objects and creatures caught in them. A strand or wad of web from a spider's web is used to enact this spell. The webs must be anchored to two or more solid and diametrically opposed points or else it collapses upon itself. Creatures caught within a web or simply touching its strands become entangled among the gluey fibers. Anyone in the spell's area of effect when it is cast must make a dexterity save or become stuck. An entangled creature suffers a -2 penalty to attack and damage rolls, a -4 penalty to effective dexterity and can't move. An entangled character cannot cast spells with somatic components. A stuck creature can break loose by succeeding at a strength check.</p><p>Once loose (either by making the initial dexterity save or a later strength check), a creature may progress through the web very slowly at a rate of 5 feet per round. Each 5 feet of movement requires a new strength check to avoid becoming stuck again.</p><p>The webs are flammable and fire burns 5 square feet in 1 round. All creatures in the webs take 2d4 points of damage from the flames.</p><p>The material component for this spell is spider silk.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

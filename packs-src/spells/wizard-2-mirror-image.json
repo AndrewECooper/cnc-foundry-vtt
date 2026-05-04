@@ -1,0 +1,68 @@
+{
+  "_id": "1cdea644703d65d8",
+  "_key": "!items!1cdea644703d65d8",
+  "name": "Mirror Image",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illusory duplicates of the caster pop into being and mimic the caster's actions, making it difficult for enemies to know which target to attack. The spell creates 1d4+1 images. The images stay near the caster and disappear when struck. The images remain in a cluster or form a line, each within 5 feet of at least one other figment or the caster. Observers can't use vision or hearing to tell which one is the caster and which the image. Enemies attempting to attack the caster or cast spells at the caster must select from among indistinguishable targets.</p><p>Generally, roll randomly to see whether the selected target is real or a figment. Any successful attack roll against a figment destroys it. A figment's armor class is equal to the caster's. An attacker must be able to see the images to be fooled.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "3 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "0b46450f40e8b381",
+  "_key": "!items!0b46450f40e8b381",
+  "name": "Laminar, Leather",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Strips of hardened leather lashed together in horizontal bands, offering flexible protection.</p>",
+    "price": {
+      "value": "55 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "25",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 3,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "0ab8d9fdd6806b20",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

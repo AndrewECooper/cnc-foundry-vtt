@@ -1,0 +1,32 @@
+{
+  "_id": "c3b2d8ec599b2cca",
+  "_key": "!items!c3b2d8ec599b2cca",
+  "name": "Canteen",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A flat metal or leather flask carried on a strap, sized to hold half a gallon of water.</p>",
+    "price": {
+      "value": "2 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "2",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "92b9ae681ab9538b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

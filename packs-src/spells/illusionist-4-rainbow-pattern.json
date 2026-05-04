@@ -1,0 +1,68 @@
+{
+  "_id": "c80cd90881d2d75c",
+  "_key": "!items!c80cd90881d2d75c",
+  "name": "Rainbow Pattern",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A glowing, rainbow-hued pattern of interweaving colors captivates those within a 25-foot diameter sphere. The pattern captivates a maximum of 24 HD of creatures. Creatures with the fewest HD are affected first. Among creatures with equal HD, those who are closest to the spell's point of origin are affected first. Creatures that fail their saves are captivated by the swirling pattern. Captivated creatures cannot move away from the pattern, nor can they take actions other than to defend themselves. An attack on a captivated creature frees it from the spell immediately. The spell does not affect sightless creatures.</p><p>With a simple gesture, the caster can make the rainbow pattern move up to 30 feet per round (moving its effective point of origin). All captivated creatures follow the moving rainbow of light, trying to get to, or remain within the effect. Captivated creatures that are restrained and removed from the pattern still try to follow it. If the pattern leads its subjects into a dangerous area, each captivated creature gets a second save.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "abdecddf2e76ae4e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

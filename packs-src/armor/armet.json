@@ -1,0 +1,33 @@
+{
+  "_id": "01d7cdde272bbe6f",
+  "_key": "!items!01d7cdde272bbe6f",
+  "name": "Armet",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A fully enclosed late-medieval helmet with a hinged visor and rounded skull, offering excellent protection to the head and face.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "7",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

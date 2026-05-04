@@ -1,0 +1,68 @@
+{
+  "_id": "febcb89cdc8b3328",
+  "_key": "!items!febcb89cdc8b3328",
+  "name": "Pyrotechnics",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Casting this spell transforms a fire into either a burst of blinding fireworks or a thick cloud of choking smoke, as chosen by the caster. The fireworks are a flashing, fiery, momentary burst of glowing and colored aerial lights. This effect blinds creatures within 100 feet of the fire source for 1d4 rounds (dexterity negates). Creatures must have line of sight to the fire in order to be affected. Spell resistance can prevent blindness. The smoke cloud is a writhing stream of choking smoke, billowing out from the source. The cloud spreads 20 feet in all directions and lasts for 1 round per caster level. All forms of natural sight including darkvision, deepvision, and twilight vision, are ineffective in or through the cloud. The spell consumes one fire source, which is immediately extinguished. Magical fires are not affected.</p><p>The material component for this spell is an open flame.</p><p># Q</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

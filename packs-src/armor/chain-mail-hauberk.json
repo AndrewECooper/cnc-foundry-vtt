@@ -1,0 +1,33 @@
+{
+  "_id": "d0b4138403e8651f",
+  "_key": "!items!d0b4138403e8651f",
+  "name": "Chain Mail Hauberk",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A long-sleeved coat of interlocking steel rings reaching to the knees.</p>",
+    "price": {
+      "value": "150 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "35",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 5,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "139ec3aadad314cc",
+  "_key": "!items!139ec3aadad314cc",
+  "name": "Veil",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster instantly changes the appearance of the target creature and then maintains that appearance for the spell's duration. The caster can affect one creature per two levels of experience. The recipients of the spell can not be more than 30 feet apart. The caster makes the subjects appear to be anything the caster wishes. The subjects look, feel, and smell just like the creatures whose appearance the target takes. Affected creatures resume their normal appearances if slain. The caster must succeed at an intelligence check at +6 to duplicate the appearance of a specific individual. Unwilling targets can negate the spell's effect by making intelligence saves. Those who interact with the subjects can attempt intelligence (disbelief) saves to see through the glamour, but SR doesn't help to detect the illusion.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "42fc932ab27c891b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -332,6 +332,7 @@ export class TlgccActorSheet extends ActorSheet<
 
     html.find('.item-edit').click(this._onItemEdit.bind(this));
     html.find('.cc-item-name-toggle').click(this._onItemNameToggle.bind(this));
+    html.find('.cc-spell-level-header').click(this._onSpellLevelToggle.bind(this));
     if (!this.isEditable) return;
 
     html.find('.item-create').click(this._onItemCreate.bind(this));
@@ -367,6 +368,20 @@ export class TlgccActorSheet extends ActorSheet<
       .closest('table')
       .find(`tr.cc-item-detail[data-item-id="${itemId}"]`)
       .toggleClass('cc-expanded');
+  }
+
+  private _onSpellLevelToggle(event: JQuery.ClickEvent): void {
+    // Don't toggle when clicking the "+ Add" button inside the header.
+    if ($(event.target).closest('.item-create').length) return;
+    event.preventDefault();
+    const $header = $(event.currentTarget);
+    const level = $header.data('spellLevel');
+    if (level === undefined) return;
+    $header.toggleClass('cc-collapsed');
+    $header
+      .closest('.cc-section')
+      .find(`table.cc-spell-table[data-spell-level="${level}"]`)
+      .toggleClass('cc-collapsed');
   }
 
   private _onItemCreate(event: JQuery.ClickEvent): void {

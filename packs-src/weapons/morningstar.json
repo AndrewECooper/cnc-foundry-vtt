@@ -1,0 +1,45 @@
+{
+  "_id": "fded15e791dd7ded",
+  "_key": "!items!fded15e791dd7ded",
+  "name": "Morningstar",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A spiked club with a star-shaped head fitted to a stout wooden haft.</p>",
+    "price": {
+      "value": "8 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "2d4",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "bc1920f23f25f592",
+  "_key": "!items!bc1920f23f25f592",
+  "name": "Mass Charm",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This charm affects from one to a number of creatures whose combined HD do not exceed twice the caster's level, and are located in a 50 square foot area. If there are more potential targets than the caster can affect, the caster chooses them one at a time until reaching a creature whose HD bring the total above the spell's maximum.</p><p>The targets regard the caster as a trusted friend and ally. If the creatures are currently being threatened or attacked by the caster or the caster's allies, they receive a +5 bonus on their saving throw. The spell does not enable the caster to control the charmed creatures like automatons, but the subjects perceive the caster's words and actions in the most favorable way. The caster can try to give a subject orders, but must succeed at a charisma check to convince the subject to do anything it wouldn't ordinarily do. Any act by the caster or the caster's apparent allies that threatens the charmed creature breaks the spell. Note also that the caster must speak the creature's language to communicate commands.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 day/lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "7b2db668931d83f5",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

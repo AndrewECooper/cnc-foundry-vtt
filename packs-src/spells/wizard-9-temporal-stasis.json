@@ -1,0 +1,68 @@
+{
+  "_id": "39f599a82baa380b",
+  "_key": "!items!39f599a82baa380b",
+  "name": "Temporal Stasis",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster places the target into a state of suspended animation. For the creature, time ceases to flow and it does not grow older. Its body functions virtually cease, and no force or effect can harm it. The onset of poisons and disease and bleeding from mortal wounds ceases. This state persists until the magic is removed by a successful <em>dispel magic</em>, or until the caster releases the spell. The caster can release the spell at any time, with a single word of command.</p><p>The material component for this spell is a 5,000gp diamond.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

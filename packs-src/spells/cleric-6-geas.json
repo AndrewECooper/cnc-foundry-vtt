@@ -1,0 +1,68 @@
+{
+  "_id": "f2051edb4a2e6706",
+  "_key": "!items!f2051edb4a2e6706",
+  "name": "Geas",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>\"Do as I desire or suffer the consequences\" is the essence of this spell. The caster places a magical command on the spell's target, through means that are magical, divine and mental, to carry out some quest or service, or to refrain from some activity or course of action. If the geased individual fails to do as instructed, they sicken and will most likely die. A <em>geas</em> must be carefully worded by the caster, or it may lead to a quest with a goal not intended, or the spell may simply fail altogether. The caster of the <em>geas</em> may release the affected creature from it at any time.</p><p>Although a <em>geas</em> can command almost any course of activity, it cannot compel a creature to commit suicide or perform acts that would result in certain death. The creature affected must be able to understand the caster's command, or the spell fails. A geased creature is bound with the spell until the task is completed, no matter how long it takes, but if the instructions involve an open-ended task that the character cannot complete through its own actions, the spell ends after one day.</p><p>If a creature ignores the <em>geas</em>, or is prevented from obeying it, they suffer consequences. A creature will lose 1 point of strength and suffer a -1 penalty to all saving throws for every day during which the quest is not undertaken. If they again take up the quest, the penalties cease. If a creature ignores a quest for 5 days in a row, they must make a constitution save or sicken. A sickened character moves at half normal speed, suffers a -4 penalty on constitution and dexterity, heals no damage naturally, and cannot benefit from magical healing.</p><p>A sickened character must also again make a constitution save after a number of days have passed equal to the creature's normal constitution score. Failure means the creature is disabled, unable to move or act beyond a crawl. All of these effects end 1 day after the character deliberately attempts to resume the quest.</p><p>A <em>geas</em> and its effects can be removed magically by <em>remove curse</em> (but only if the caster of the <em>remove curse</em> is at least two levels higher than the level of the character who cast the <em>geas</em>, and the caster of the <em>remove curse</em> makes a successful charisma check), or a <em>wish</em>. <em>Dispel magic</em> does not affect a <em>geas</em>.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "Charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4f060dd90f1d4aad",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

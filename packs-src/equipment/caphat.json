@@ -1,0 +1,32 @@
+{
+  "_id": "6532f6983d1e178d",
+  "_key": "!items!6532f6983d1e178d",
+  "name": "Cap/Hat",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>An ordinary cloth cap or felt hat.</p>",
+    "price": {
+      "value": "4 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

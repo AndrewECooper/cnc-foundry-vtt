@@ -1,0 +1,33 @@
+{
+  "_id": "d973027fcc762c28",
+  "_key": "!items!d973027fcc762c28",
+  "name": "Splint Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Vertical strips of steel riveted to a leather or chain backing, worn over the limbs and torso.</p>",
+    "price": {
+      "value": "200 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "45",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

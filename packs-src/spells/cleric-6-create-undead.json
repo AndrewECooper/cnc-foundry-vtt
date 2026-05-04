@@ -1,0 +1,68 @@
+{
+  "_id": "0f87b91db4c66f67",
+  "_key": "!items!0f87b91db4c66f67",
+  "name": "Create Undead",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This evil spell allows the caster to create one specimen of the following undead if the cleric is of the appropriate level: ghoul (11), shadow (12), ghast (13), wight (14), or wraith (18). The cleric may create a less powerful undead if desired. For example, a 14th level cleric could, instead of creating a wight, also create a ghast, shadow, or ghoul. Created undead are not automatically under the control of their animator. The caster may gain command of the undead as it forms by making a successful turning check. This spell must be cast at night.</p><p>The material component for this spell is a corpse.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "DF, V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft. (one)",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 hour",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4f060dd90f1d4aad",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "9b5f34e88a517988",
+  "_key": "!items!9b5f34e88a517988",
+  "name": "Word Of Recall",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell teleports the caster instantly to the caster's sanctuary when a command word is uttered. The caster must designate the sanctuary when the spell is prepared and it must be a very familiar place. The actual point of arrival is a designated area no larger than 10 feet by 10 feet. The caster can be transported any distance within a plane but cannot travel between planes. The caster can transport, in addition to himself, objects and creatures weighing up to 50 pounds per caster level. Exceeding this limit causes the spell to fail. An unwilling creature can't be teleported by <em>word of recall</em>. Unattended, nonmagical objects receive no saving throw.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "unlimited",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9ed968d1395613fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

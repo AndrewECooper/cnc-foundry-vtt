@@ -1,0 +1,68 @@
+{
+  "_id": "4f3d3cd9817e028d",
+  "_key": "!items!4f3d3cd9817e028d",
+  "name": "Color Spray",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A rainbow cone springs forth from the caster's hand, causing nearby creatures to fall asleep. The spell can affect a number of creatures equal to 1d4 plus the caster's level. The cone is 5 feet wide and 25 feet long. The closest creatures in the cone are affected first.</p><p>The result of the spell depends upon the HD of the targeted creatures. Creatures of 2 HD or less are struck unconscious for 2d4 rounds; creatures of 3 to 4 HD are blinded for 1d4 rounds; and creatures of 5 HD or greater are stunned for one round. Creatures of the same level or HD as the caster, and all creatures with 5 HD or greater may make a wisdom saving throw to shake off the <em>color spray</em>. Sightless creatures are not affected by <em>color spray</em>.</p><p>The material components of this spell are small colored objects.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "25 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

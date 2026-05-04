@@ -1,0 +1,68 @@
+{
+  "_id": "f82cd0537154caa9",
+  "_key": "!items!f82cd0537154caa9",
+  "name": "Clairaudience/Clairvoyance",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Clairaudience</em> or <em>clairvoyance</em> enables the character to concentrate upon some locale and hear or see (the character's choice) almost as if the character were there. Distance is not a factor, but the locale must be a place familiar to the character. The spell does not allow magically enhanced senses to work through it. If the chosen locale is magically dark, the character sees nothing. If it is naturally pitch black, the character can see in a 10 foot radius around the center of the spell's effect. Lead sheeting or magical protection blocks the spell, and the caster senses that the spell is so blocked. The spell can be dispelled, and it functions only on the plane of existence the character is occupying.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

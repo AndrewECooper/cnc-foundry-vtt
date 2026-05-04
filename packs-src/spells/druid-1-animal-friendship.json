@@ -1,0 +1,68 @@
+{
+  "_id": "e8a29f612e6b9b97",
+  "_key": "!items!e8a29f612e6b9b97",
+  "name": "Animal Friendship",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By means of this spell, the caster befriends and wins the loyalty of an animal. The spell functions only if the caster actually wishes to become the animal's friend, and uses food to initiate the spell. Otherwise the spell fails. The befriended animal's loyalty is natural (not magical) and lasting. The caster can teach the befriended animal 3-6 specific tricks or tasks. The tricks or tasks cannot be complex, generally mimicking those taught to a pet or mount. It takes at least a week for an animal to learn each trick.</p><p>The animal is still an animal. While it may have learned some tricks, it is still no more intelligent than any other animal of its kind, and it retains all its bestial instincts. Unlike intelligent followers or cohorts, animals can't follow complex instructions. Animals are ill-equipped to handle unusual situations, such as combats with invisible opponents, and they typically hesitate to attack weird and unnatural creatures. Left to its own judgment, an animal follows a caster and attacks creatures that attack the caster or that attack the animal itself. To do more than that, it needs to learn tricks. Some typical tricks or tasks include the following:</p><p><em>Attack:</em> The animal attacks apparent enemies. The character may point to a particular creature and direct the animal to attack that creature. Normally, an animal will not attack unnatural creatures (though it will defend people, guard places and protect characters against them). Teaching an animal to attack unnatural creatures counts as two tricks.</p><p><em>Come:</em> The animal comes to the character, even if the animal normally would not do so such as following the character onto a boat.</p><p><em>Defend:</em> The animal defends the character or is ready to defend the character if no threat is present.</p><p><em>Down:</em> The animal breaks off from combat or otherwise backs down.</p><p><em>Fetch:</em> The animal goes and gets something. The character must point out a specific object or the animal fetches some random object.</p><p><em>Guard:</em> The animal stays in place and prevents others from approaching.</p><p><em>Heel:</em> The animal follows the character closely, even to places where it normally wouldn't go.</p><p><em>Perform:</em> The animal does a variety of simple tricks like sitting up, rolling over, roaring and so on. Each of these must be taught separately.</p><p><em>Protect:</em> The animal follows a specific character and protects them.</p><p><em>Seek:</em> The animal moves into an area and looks around for anything unusual.</p><p><em>Stay:</em> The animal stays in place waiting for the character to return. It does not challenge other creatures that come by, though it still defends itself if it needs to.</p><p><em>Track:</em> The animal tracks the scent presented to it.</p><p>A caster can have more than one animal friend, but their hit dice can total no more than twice the caster's level. A caster may dismiss animal friends to befriend new ones.</p><p>If the caster spends most of her time in the animals' home territory and treats them well, the caster can approach and maintain the maximum hit dice allowed. If the caster spends most of the time at sea, in cities or otherwise in places that the animals don't like, the animals desert or will return to their native lands, and the caster will not be able to retain even half the maximum hit dice. Remember, these creatures are loyal friends but are not pets or servants. They won't remain loyal if being the caster's friend becomes too onerous.</p><p>The material component for this spell is a small bag of food.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "8ff70d13d5cc704c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "0981778dd326e388",
+  "_key": "!items!0981778dd326e388",
+  "name": "Liquor, Cask",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small cask of strong distilled liquor.</p>",
+    "price": {
+      "value": "25 gp+",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5271d55d416b3598",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

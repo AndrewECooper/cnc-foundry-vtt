@@ -1,0 +1,32 @@
+{
+  "_id": "2144aea01a18217e",
+  "_key": "!items!2144aea01a18217e",
+  "name": "Wine, Fine (Bottle)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bottle of fine vintage wine.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5271d55d416b3598",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

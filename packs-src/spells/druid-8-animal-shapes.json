@@ -1,0 +1,68 @@
+{
+  "_id": "f1199bc7195045cc",
+  "_key": "!items!f1199bc7195045cc",
+  "name": "Animal Shapes",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster polymorphs up to one willing creature per level, in a 25 x 25 foot area, into a small or medium animal of the caster's choice. Recipients remain in the animal form until the spell expires or the caster dismisses the spell. The caster can designate the new form's physical qualities (such as hair color, hair texture, skin color, height, weight and gender), but all must fall within the norms for the species.</p><p>Upon changing into an animal, a subject regains lost hit points as if having rested for a day (though this healing does not restore temporary ability damage or provide other benefits of resting for a day). Further, the polymorphed subject acquires the physical and natural abilities of the animal while retaining its own mind. In general, the subject's new scores and faculties are average ones for the species into which it has been transformed. Natural abilities include armor class (if better), attack routines and damage, movement capabilities such as walking, swimming and flight, and extraordinary vision. The subject does not gain any extraordinary abilities of the animal.</p><p>The subject retains its prime attributes, intelligence, wisdom and charisma scores, level and class, hit points (despite any change in its constitution modifier), alignment and attack bonus. The subject can cast spells for which it has components. When the polymorph occurs, however, the subject's equipment, if any, melds into the new form and becomes nonfunctional; material components and focuses melded in this way cannot be used to cast spells. A humanlike voice is required for verbal components, and humanlike hands are require for somatic components.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9ed968d1395613fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

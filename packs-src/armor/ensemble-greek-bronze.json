@@ -1,0 +1,33 @@
+{
+  "_id": "2c773df276531d05",
+  "_key": "!items!2c773df276531d05",
+  "name": "Ensemble, Greek (Bronze)",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A bronze panoply: cuirass, greaves, vambraces, and a medium helm in the manner of a Greek hoplite.</p>",
+    "price": {
+      "value": "120 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "40",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 5,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

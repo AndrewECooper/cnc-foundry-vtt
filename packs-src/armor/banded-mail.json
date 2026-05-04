@@ -1,0 +1,33 @@
+{
+  "_id": "e0e93d9064ba571d",
+  "_key": "!items!e0e93d9064ba571d",
+  "name": "Banded Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Horizontal strips of overlapping steel banded together over a chain or padded undercoat.</p>",
+    "price": {
+      "value": "250 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "40",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

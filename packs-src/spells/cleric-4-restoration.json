@@ -1,0 +1,68 @@
+{
+  "_id": "b6efeebe29fe94e7",
+  "_key": "!items!b6efeebe29fe94e7",
+  "name": "Restoration",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster repairs the life energy of a single creature. Restoration dispels any magical effects that reduce the subject's attribute scores temporarily. Restoration will not restore permanent attribute score loss. The spell also restores one experience level to a creature who has had a level drained. The drained level is restored only if the time since the creature lost the level is equal to or less than 1 day per caster level. It does not restore levels or constitution points lost as a result of death.</p><p>The evil reverse of this spell, <em>life drain</em>, sucks one level from a creature. The effects are the same as any level loss. This version allows a constitution saving throw to avoid the spell's effect.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 hour",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "648ff0fd4c816377",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

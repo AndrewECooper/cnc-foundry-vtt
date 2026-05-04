@@ -1,0 +1,68 @@
+{
+  "_id": "a8d96086ecd5b92d",
+  "_key": "!items!a8d96086ecd5b92d",
+  "name": "Antipathy",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By means of this spell or its reverse variation, the caster causes one location or one object to emanate magical vibrations that repel or attract a specific order of intelligent creature or creatures of a particular alignment. The creature to be affected must be named specifically and defined by the caster during the casting of the spell; larger groups, such as a type or subtype, are not specific enough. Alternatively, a specific alignment can be named. For example, the caster could specify zombies, but not undead; alternatively, the caster could specify neutral evil creatures. This spell cannot be cast upon living creatures.</p><p>If the spell is cast upon a location, the area affected is a 10 foot square area per level of the caster. If the spell is cast upon an object, only the object is affected. Casting the spell requires at least 1,500 gp worth of gems or jewelry.</p><p><em>Antipathy</em> The spell emanates eldritch vibrations that repel specified creatures, forcing them to abandon the area or item. The creatures will not willingly return while the spell is in effect. A creature which makes a successful saving throw can stay in the area or touch the item, but feels hesitant and very uncomfortable doing so. This discomfort, while in effect, reduces the creature's charisma by 4 points. <em>Antipathy</em> counters and dispels <em>sympathy</em>.</p><p><em>Sympathy</em> The reverse of the spell causes designated creatures to feel elated and pleased to be in the area, or desire to touch or to possess the object. The compulsion is overpowering. If the save is successful, the creature is released from the enchantment, but a subsequent save must be made every hour if the creature remains in the area or within the presence of the item (within 10 feet per level of the caster). If a subsequent save fails, the affected creature attempts to return to the area or object. <em>Sympathy</em> counters and dispels <em>antipathy</em>.</p><p>The material component for this spell is a magnet or lodestone.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "2 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "Charisma (see below)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 hr.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4a8ec54e9b481630",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

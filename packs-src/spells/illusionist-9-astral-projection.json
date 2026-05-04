@@ -1,0 +1,68 @@
+{
+  "_id": "94609975710f93b2",
+  "_key": "!items!94609975710f93b2",
+  "name": "Astral Projection",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell frees the spirit from the body, allowing the caster to project an astral body into another plane. The caster can bring the astral forms of other creatures as well, provided the creatures are linked in a circle with the caster at the time of the casting. These fellow travelers must accompany the caster at all times to remain in an astral state. If something happens to the caster during the journey, the companions are stranded wherever the caster left them. The caster can bring one additional creature for every two levels of experience.</p><p>The bodies of the caster and companions are left behind, in a state of suspended animation. The spell projects an astral copy of them and all they wear or carry onto the astral plane. Because the astral plane touches upon other planes, the caster can travel astrally to any of these other planes as the caster wishes. The caster then leaves the astral plane, forming a new physical body (and equipment) on the plane of existence the caster has chosen to enter.</p><p>When on the astral plane or another plane, the caster's astral body is connected at all times to the caster's material body by a silvery cord. If the cord is broken, the caster is killed both astrally and materially. Very few things can destroy a silver cord. When a second body is formed on a different plane, the incorporeal silvery cord remains invisibly attached to the new body. If the second body or the astral form is slain, the cord simply returns to the caster's original body, reviving it from its state of suspended animation. Although astral projections are able to function on the astral plane, their actions affect only creatures existing on the astral plane.</p><p>The caster and the caster's companions may travel through the astral plane indefinitely. The spell lasts until the caster desires to end it, or until it is terminated by some outside means, such as <em>dispel magic</em> cast upon either the physical body or the astral form, or the destruction of the caster's body (which kills the caster).</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "30 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "363bae2fac999c09",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

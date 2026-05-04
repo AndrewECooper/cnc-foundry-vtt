@@ -1,0 +1,68 @@
+{
+  "_id": "8eb41d05b3d7349a",
+  "_key": "!items!8eb41d05b3d7349a",
+  "name": "Wish",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By speaking aloud, the caster alters reality with this most powerful of spells. Even wishes, however, have limits. The caster may wish for anything conceivable, but the wish must be precisely stated. The longer and more complicated the wish, the more dangerous the spell becomes. A <em>wish</em> gives the opportunity to fulfill the caster's request, but the spell, for whatever reason, may pervert the caster's intent into a literal but undesirable fulfillment or a fulfillment with unseen consequence. A <em>wish</em> never restores a level or constitution loss from being raised, resurrected or reincarnated from the dead. The caster of a <em>wish</em> spell always ages due to the debilitating effects of the spell upon the body. The caster must make a constitution save (challenge level 9) or age 3 years. Success means the caster ages only 1 year. Typically, a <em>wish</em> can aid one creature but, multiple subjects can be affected if, for example, they are all cured of the same type of affliction. In such a case, the caster can affect one subject for every three caster levels.</p><p>Generally, a <em>wish</em> can do any one of the following, if worded correctly, with little danger of misfortune: (1) Duplicate a spell of 9th level or lower that the character knows and has cast, or duplicate any other spell of 6th level or lower that the character has seen; (2) Undo the harmful effects of other spells; (3) Create a valuable item, even a magic item, of up to 15,000 gp in value; (4) Permanently raise or lower an attribute by +1 or -1; (5) Remove injuries and afflictions; (6) A <em>wish</em> can bring a dead creature back to life by duplicating <em>resurrection</em>; (7) A <em>wish</em> can revive a dead creature whose body has been destroyed, but the feat takes two wishes, one to recreate the body and another to infuse the body with life again. (8) A <em>wish</em> can lift one creature per caster level from anywhere on any plane and place these creatures anywhere else on any plane regardless of local conditions. An unwilling target gets a Cha save to negate as well as SR; (9) A <em>wish</em> can undo a single recent event. The wish forces a re roll of any roll made within the last round. Reality reshapes itself to accommodate the new result. The re roll, however, may be as bad as or worse than the original roll.</p><p>Duplicated spells allow saves and SR as normal. When a <em>wish</em> duplicates a spell with a material component that costs more than 10,000gp, the character must provide that component.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1, time takes to word wish",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

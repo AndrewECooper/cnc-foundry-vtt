@@ -1,0 +1,68 @@
+{
+  "_id": "88076f2bfd43a271",
+  "_key": "!items!88076f2bfd43a271",
+  "name": "Gate",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A shimmering, mystical gate appears, hovering just above the ground. The gate is an inter-dimensional portal between the plane the caster is on and another plane of existence. The caster chooses which plane to connect to upon casting the spell, but must have some knowledge of the other plane. The gate can be used in two ways.</p><p>First, the gate may be used as a means of travel. Anything or anyone moving through the gate instantly transports to the other plane. The gate is 5 feet in diameter, but the caster can increase the diameter by 1 foot per level. The caster may hold the gate open for no more than 1 round per level, and must concentrate to do so.</p><p>Second, the gate may be used to summon an individual creature or type of creature from the plane to which the gate is connected. The caster names the creature individually or a specific creature type upon casting, and the gate opens near the individual or creature. This spell does not give the caster any control over creatures summoned through the gate. The actions of a summoned creature vary depending upon the situation, the caster's motive, alignment and perhaps, additional spells that may be active. Deities and other unique entities are under no compulsion to come through the gate unless they choose to. An uncontrolled being acts as it pleases, often to the detriment of the caster, and may return to its home plane at any time. When used in this manner, the gate remains open only until the summoned creature(s) passes through the gate. Neither the caster nor anyone or anything on the caster's plane may enter the gate.</p><p>Typically, the caster will ask a summoned creature to perform a service. It is easier to gain service from creatures weaker than the caster. Deities and beings with a strong will are often ill-disposed toward the caster for interfering with their life's activities.</p><p>Even if a service is given, the creature may return to its home plane, at will, whether the service is completed or not, unless the caster has used some other spell to bind the creature and force servitude. Contractual service is entirely more involved, but more likely beneficial for the caster, because the summoned creature is less likely to be ill disposed towards its summoner when some form of recompense is offered. The negotiation of a contract must be roleplayed, bearing in mind the nature of the creature, its desires, and its intellect; few such creatures have any need for gold or coin, and their desires may seem alien at best, or utterly vile. Some creatures may attempt to subvert their contract, especially if they feel they have been tricked or treated poorly, interpreting a contract in ways that will hopefully cause the caster distress or peril.</p><p>Failure to fulfil a contract on the caster's part can have terrible consequences. A creature, its liege, or master may all attempt to enact some measure of revenge at some time. Or, if the caster violates his alignment or code, or fails to uphold a sworn oath, the caster's deity may impose some penalty or dishonor.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "special",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "2",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "f8ce24d24f48ae82",
+  "_key": "!items!f8ce24d24f48ae82",
+  "name": "Remove Fear",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster instills courage in one creature, granting the creature a +4 bonus against fear effects for 10 minutes. If the subject is suffering from a fear effect when the spell is cast, it gets a new save with a +1 bonus per caster level. <em>Remove fear</em> counters and dispels <em>cause fear</em>.</p><p>The reverse of the spell, <em>cause fear</em>, frightens the affected subject. It suffers a -2 penalty on attack rolls, weapon damage rolls, and saving throws. It flees from the character as well and as fast as it can. If unable to flee, the creature may fight. Creatures with 6 or more HD are immune the cause fear spell. <em>Cause fear</em> counters <em>remove fear</em>.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "20bf402ac5266eb7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "9f43a5764ddbf9c3",
+  "_key": "!items!9f43a5764ddbf9c3",
+  "name": "Invisibility To Undead",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell completely shields the recipient from all perception by undead creatures. Nonintelligent undead are automatically affected and act as though the warded creature is not present. Intelligent undead are entitled to an intelligence saving throw. Failure indicates that they cannot perceive the warded creature, but if intelligent undead creatures have reason to believe unseen opponents are present, it can attempt to find or strike it despite failure of the save. If a warded character attempts to turn or command undead, touches an undead, or attacks any creature (even with a spell), the spell ends.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "20bf402ac5266eb7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

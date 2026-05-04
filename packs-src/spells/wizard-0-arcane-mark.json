@@ -1,0 +1,68 @@
+{
+  "_id": "5435555548c957f7",
+  "_key": "!items!5435555548c957f7",
+  "name": "Arcane Mark",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to inscribe a rune or mark, which can be no taller than six inches in height and consist of no more than six characters. The writing can be visible or invisible. The caster can etch the rune upon any substance without harm to the material upon which it is placed.</p><p>If an invisible mark is made, a <em>detect magic</em> spell causes it to glow and be visible. <em>See invisibility, true seeing</em> and the like allow their users to see an invisible <em>arcane mark</em>. A <em>read magic</em> spell reveals the words, if any. The mark cannot be dispelled, but it can be removed by the caster or by an <em>erase</em> spell.</p><p>Creatures and items with charisma receive a charisma saving throw to prevent the inscription of the mark. If cast on a creature, normal wear gradually causes the mark to fade in about a month.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "bb05041786104153",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

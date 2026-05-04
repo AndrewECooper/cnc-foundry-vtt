@@ -1,0 +1,68 @@
+{
+  "_id": "93bbcff2a2a8fd33",
+  "_key": "!items!93bbcff2a2a8fd33",
+  "name": "Time Stop",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell causes time to cease flowing for everyone but the caster. The caster is free to act in any manner for the spell's duration, including attacking, casting spells or manipulating objects. All other creatures are frozen in place, unable to act. Creatures with SR can resist the effect. Energy and effects present in the area can still affect the caster. The caster cannot enter an area protected by an anti-magic field, or by <em>protection from alignment</em>, or by a <em>magic circle</em> spell, while under the effects of <em>time stop</em>. Spells cast or damage inflicted by the caster on another target during a <em>time stop</em> has no effect until the <em>time stop</em> ends. At that time, targets of spells receive a saving throw to avoid or mitigate effects if one is normally allowed. Physical damage, by weapon or spell, also accrues after the <em>time stop</em> ends. Spells cast upon the caster during a <em>time stop</em> take effect immediately upon casting. Durations of spells cast in this way should include the time spent in effect during the <em>time stop</em>. For example, a wizard casts shield during the first round of a time stop; the duration of his shield should include the one remaining round of the <em>time stop</em> for the purpose of determining when the spell dissipates.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1d4+1 rd.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

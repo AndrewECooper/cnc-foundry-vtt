@@ -1,0 +1,33 @@
+{
+  "_id": "c98b2c9ec3ffaf68",
+  "_key": "!items!c98b2c9ec3ffaf68",
+  "name": "Coat of Plates",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A heavy fabric coat lined with overlapping steel plates riveted on the inside.</p>",
+    "price": {
+      "value": "100 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "45",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 5,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

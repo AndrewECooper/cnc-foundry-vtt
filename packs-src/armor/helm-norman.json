@@ -1,0 +1,33 @@
+{
+  "_id": "8579cca649a71664",
+  "_key": "!items!8579cca649a71664",
+  "name": "Helm, Norman",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A conical iron helm with a riveted nasal bar, common among Norman and early medieval warriors.</p>",
+    "price": {
+      "value": "8 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "7",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 3,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

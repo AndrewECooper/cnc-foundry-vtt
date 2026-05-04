@@ -1,0 +1,68 @@
+{
+  "_id": "7c7eebd0de94de99",
+  "_key": "!items!7c7eebd0de94de99",
+  "name": "Legend Lore",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Great deeds, events and powers are writ large in legend, and with this spell the caster can draw upon these great tales, bringing to light knowledge about a legendary person, place or thing. If the person or thing is close at hand, or if the caster is in the place in question, the casting time is only 1d4 x 10 minutes. If the caster only possesses detailed information on the person, place or thing, the casting time is 1d10 days, and the resulting knowledge gleaned is less complete and specific. If the caster knows little beyond rumor, the casting time is 2d6 weeks, and the resulting lore is vague and incomplete. However it may enable the caster to locate more detailed information. While casting this spell, the caster cannot engage in anything other than routine activities such as sleeping and eating. When completed, the spell brings the legends, if any exist, about the individual, location or thing to the caster's mind.</p><p>The tales reveal themselves as long-forgotten and sometimes cryptic memories, riddles or rhymes, regardless of whether the legends are current, long forgotten or obscure. Subjects lacking legendary importance provide no information whatsoever. As a rule of thumb, characters of 10th level and higher are legendary, as are the sorts of creatures they strive against, the major magical items they wield, and the places where they performed their great or nefarious deeds.</p><p>The material component for this spell is 250gp of powdered gems, a magic item, incense, blank parchment, ink, quills or silver pens.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "see below",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d17b6041650219b9",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "08ae6d73123f18d5",
+  "_key": "!items!08ae6d73123f18d5",
+  "name": "Polymorph Self",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster takes the form of another creature. The new form can range in size from as small as a hummingbird to a size up to twice the caster's normal height. A polymorphed character can be changed into a member of his or her own species. The caster can change his or her form as often as desired during the spell's duration. Each transformation takes one round.</p><p>The polymorphed caster acquires the physical and natural abilities of the new form while retaining his or her own mental abilities and limitations. Physical and natural abilities include the natural size, armor class, natural weapon attack types and damage and similar physical qualities such as mundane movement capabilities (like flying or swimming), and vision capabilities. Physical and natural abilities do not include magical flight and other magical forms of travel, spell-like abilities, supernatural abilities or other extraordinary abilities.</p><p>Moreover, a caster does not gain the ability to make more attacks than is normal for the character just because the creature type transformed and naturally has extra limbs, wings, or a tail. For example, a caster capable of one attack per round might polymorph into a lion. A lion can make three attacks per round - bite, and two claws. The caster polymorphed into a lion, however, may make only one attack although the caster may choose either a bite or a claw attack. If the attack succeeds, the damage inflicted is normal for a lion.</p><p>The caster can freely designate the new form's minor physical qualities such as hair color, hair texture and skin color within the normal ranges for a creature of that type. The new form's significant physical qualities such as height, weight and gender are also under the caster's control, but must fall within the norms for the new form's species.</p><p>Unlike physical abilities, the caster retains his own mental abilities, prime attribute designations when applicable to the new form, level and class, hit points, alignment and class to hit bonus. If the new form possesses strength, dexterity and/or constitution attributes, the new scores are applied and thus may affect attack bonuses and attribute checks. The character retains his or her own type, extraordinary abilities, spells and spell-like abilities. A character that can cast spells needs a humanlike voice for verbal components and humanlike hands for somatic components.</p><p>When the polymorph occurs, the caster's equipment, if any, transforms to match the new form. If the new form is a creature that does not use equipment, the equipment melds into the new form and becomes nonfunctional. Components and foci melded in this way cannot be used to cast spells. If the new form uses equipment, the caster's equipment changes to match the new form and retains its properties. Incorporeal and gaseous forms cannot be assumed.</p><p>Upon changing back to his original form, the caster regains 1d4 hit points. If slain, the character reverts to his or her original form, but remains dead.</p><p>Common sense must be applied when a polymorph spell comes into play. The above spell descriptions should adequately address most uses of the polymorph spells. In those other unique instances, the Castle Keeper should utilize the above as a guideline for issuing rulings on the spell's effect to the players.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

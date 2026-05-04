@@ -1,0 +1,32 @@
+{
+  "_id": "aad0f9865a3bab45",
+  "_key": "!items!aad0f9865a3bab45",
+  "name": "Bandages (2 wounds)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Strips of clean linen sufficient to dress two wounds.</p>",
+    "price": {
+      "value": "1 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

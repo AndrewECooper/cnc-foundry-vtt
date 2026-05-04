@@ -1,0 +1,33 @@
+{
+  "_id": "18886f98e5cf9ea7",
+  "_key": "!items!18886f98e5cf9ea7",
+  "name": "Breastplate, bronze",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A solid bronze breastplate worn over a padded undergarment, evoking the panoplies of antiquity.</p>",
+    "price": {
+      "value": "95 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "20",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 4,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

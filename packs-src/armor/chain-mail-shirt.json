@@ -1,0 +1,33 @@
+{
+  "_id": "c5000b1ce9784750",
+  "_key": "!items!c5000b1ce9784750",
+  "name": "Chain Mail Shirt",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A short-sleeved hauberk of interlocking riveted rings covering the torso and shoulders.</p>",
+    "price": {
+      "value": "100 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "25",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 4,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

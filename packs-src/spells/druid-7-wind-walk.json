@@ -1,0 +1,68 @@
+{
+  "_id": "d438a4226be70cf1",
+  "_key": "!items!d438a4226be70cf1",
+  "name": "Wind Walk",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster's body becomes a cloud-like vapor, allowing movement through the air at great speed. The caster can also use the spell to affect additional creatures, each of which acts independently. The caster can add one creature per 3 levels of experience. A magical wind wafts a wind walker along at up to 600 feet per round, or as slow as 5 feet per round. Wind walkers are not invisible, but appear misty and translucent. A wind walker can regain physical form as desired, and later resume the cloud form as long as the spell remains in effect. Each such change requires 5 rounds. While in vaporous form, subjects gain immunity from physical harm, though they, at the Castle Keepers discretion, may sustain damage from high winds. No spell casting is possible in vaporous form. For the last minute of the spell, a wind walker automatically descends 60 feet per round (for a total of 600 feet) unless the wind walker concentrates otherwise, although descent may be faster if desired. This descent serves as a warning that the spell is about to end.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "48aabb192190afe3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

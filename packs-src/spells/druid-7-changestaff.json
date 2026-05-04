@@ -1,0 +1,68 @@
+{
+  "_id": "6ac18499372591fb",
+  "_key": "!items!6ac18499372591fb",
+  "name": "Changestaff",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster changes a specially prepared staff into a treant-like creature, about 24 feet tall. The staff must be prepared over 28 days, during which time the caster cannot adventure or engage in other strenuous activity. The creature looks and fights just like a treant, and it defends the caster and obeys any spoken commands. It is not a true treant; it cannot converse with actual treants or control trees. If the staff-treant is reduced to 0 hit points or less, it crumbles to powder and the staff is destroyed. Otherwise, the staff can be used as the focus for another casting of the spell. The staff-treant is always at full strength when created, despite any wounds it may have suffered the last time it appeared.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "48aabb192190afe3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

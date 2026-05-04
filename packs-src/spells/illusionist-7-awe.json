@@ -1,0 +1,68 @@
+{
+  "_id": "0da65124d9c3d1a9",
+  "_key": "!items!0da65124d9c3d1a9",
+  "name": "Awe",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The spell generates a glow of awe around the caster. Those who see the caster and wish him harm, suffer nausea, pain, and a temporary loss of 1 in each of their attribute scores. Also, those wishing the caster harm lose all prime attribute status in any checks or saving throws involving or against the illusionist. The loss lasts as long as the victims wish the caster harm or, if they make their intelligence saving throw, the spell last 3 rounds.</p><p># B</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "Sight",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "2",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "1f5e85bd7531001f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

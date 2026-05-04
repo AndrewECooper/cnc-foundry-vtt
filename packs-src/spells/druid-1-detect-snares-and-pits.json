@@ -1,0 +1,68 @@
+{
+  "_id": "4d2a239e6892ab52",
+  "_key": "!items!4d2a239e6892ab52",
+  "name": "Detect Snares And Pits",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster can detect simple pits, deadfalls, snares of wilderness creatures, and primitive traps constructed of natural materials in the direction the caster is facing along a path 50 feet long and 10 feet wide. The caster must spend one round concentrating along the path, although the caster may cast the spell and detect in the round the spell is cast. The spell does not detect complex traps. The spell detects certain natural hazards such as quicksand (registers as a snare), a sinkhole (pit), or unsafe walls of natural rock (deadfall). It does not, however, reveal other potentially dangerous conditions.</p><p>The spell does not detect magic traps (except those that operate by pit, deadfall or snaring), nor mechanically complex ones, nor those that have been rendered safe or inactive. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead or 3 feet of wood or dirt blocks it.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft. x 10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "8ff70d13d5cc704c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "71ba94a257f74cbd",
+  "_key": "!items!71ba94a257f74cbd",
+  "name": "Wall Of Force",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates an invisible, immobile sheet, sphere or hemisphere of force that is immune to damage of most kinds, including spells and even <em>dispel magic</em>. The wall can only be brought down by <em>disintegrate</em>, a <em>rod of cancellation</em>, a <em>sphere of annihilation</em>, or <em>disjunction</em>. Spells and breath weapons cannot pass through the wall in either direction, although transportation spells and effects can bypass the barrier. It blocks ethereal creatures as well as material creatures. Gaze attacks operate through a <em>wall of force</em>.</p><p>The caster can form the wall into a flat, vertical plane whose area is up to 10 feet long per caster level, 20 feet tall and 1 inch thick. Alternately, the caster can form it into a sphere up to 1 foot per level in diameter, or a hemisphere up to 2 feet per level in diameter.</p><p>The material components for this spell are 20 small silver mirrors and a 100gp gem.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "2 rds./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

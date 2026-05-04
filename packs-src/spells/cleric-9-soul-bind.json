@@ -1,0 +1,68 @@
+{
+  "_id": "fb6f537386ff5ef3",
+  "_key": "!items!fb6f537386ff5ef3",
+  "name": "Soul Bind",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell draws the soul from a dead body and places it into a gem (of at least 5000gp value). The victim must have been deceased for no longer than 1 round per caster level. Once the soul is contained in the gem, it cannot be returned to life via <em>clone, raise dead, reincarnation, resurrection, true resurrection,</em> or even a <em>miracle</em> or a <em>wish</em>. Only destroying the gem can free the soul.</p><p>The material component for this spell is a 5000gp gem.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3d11a7f6d524894",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "3fc3ebf56150c7e9",
+  "_key": "!items!3fc3ebf56150c7e9",
+  "name": "Tea Leaves, 1 lb",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A pound of dried tea leaves.</p>",
+    "price": {
+      "value": "1 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5271d55d416b3598",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

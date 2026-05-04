@@ -1,0 +1,32 @@
+{
+  "_id": "19e3f367c7ee048c",
+  "_key": "!items!19e3f367c7ee048c",
+  "name": "Drum",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A taut skin drum stretched over a wooden frame and beaten with hands or sticks.</p>",
+    "price": {
+      "value": "9 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f058ddb571c33d82",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

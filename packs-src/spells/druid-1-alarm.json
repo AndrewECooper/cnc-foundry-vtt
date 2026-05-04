@@ -1,0 +1,68 @@
+{
+  "_id": "c58145597b4645ea",
+  "_key": "!items!c58145597b4645ea",
+  "name": "Alarm",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster summons a small animal to watch over an area. Each time a creature enters the warded area, a mental or audible alarm is triggered. Whether the alarm is mental or audible is left up to the caster but must be decided upon at the moment the spell is cast. A creature who speaks the password, also determined at the time of casting, does not set off the alarm. The caster may elect to have small animals not set off the alarm. Ethereal or astral creatures do not trigger the alarm unless the intruder becomes material while in the warded area. The spell's area of affect is a 50 ft. diameter circle and requires a small bell to activate.</p><p><em>Mental Alarm:</em> A mental alarm alerts the caster so long as the character remains within a mile of the warded area. It will also awaken the caster from normal sleep, but does not otherwise disturb concentration. A <em>silence</em> spell has no effect on a mental alarm.</p><p><em>Audible Alarm:</em> An audible alarm produces the sound of a bell, and anyone within 60 feet of the warded area can hear it clearly. Doors and walls will reduce the distance by 10 to 20 feet. In quiet conditions, the ringing can be heard faintly up to 180 feet. The ringing lasts for 1 round. Creatures within a <em>silence</em> spell cannot hear the ringing.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "2 hrs./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "N/A",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "8ff70d13d5cc704c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

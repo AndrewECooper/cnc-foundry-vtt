@@ -1,0 +1,68 @@
+{
+  "_id": "8fc799b267108999",
+  "_key": "!items!8fc799b267108999",
+  "name": "Binding",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A <em>binding</em> spell creates a magical restraint, o convinces the recipient that such a restraint exists, to hold a creature. The target only gets an initial saving throw if its HD is equal to at least half the caster's level. The caster may employ up to six assistants with the spell. For each assistant who casts <em>suggestion</em>, the caster's effective caster level increases by +1. For each assistant who casts a charm or other appropriate spell, the caster's effective level increases by +2 (provided the target is appropriate for the spell). All the assistants must join in chanting the spell as detailed below.</p><p>The <em>binding</em> spell has six versions. The caster chooses one when the spell is cast. Regardless of the version cast, the caster can specify triggering conditions that end the spell and release the creature whenever they occur. These can be as simple or elaborate as the caster desires (subject to the Castle Keeper agreeing that the condition is reasonable and has a likelihood of coming to pass). The conditions can be based on a creature's name, identity or alignment, but otherwise must be based on observable actions or qualities. Intangibles such as level, class, HD or HPs do not qualify. Once the spell is cast, its triggering conditions cannot be changed. Setting a release condition results in a saving throw penalty of -2, if the subject gets a saving throw.</p><p>A creature may only be subject to one <em>binding</em> spell at a time. Additional <em>binding</em> spells cast on a subject already bound have no effect.</p><p><strong>Chaining:</strong> The subject is confined by restraints that generate an <em>antipathy</em> spell affecting all creatures who approach the subject except the caster. Duration is one year per caster level. The subject is confined to the spot it occupied when it became subject to the spell's effect.</p><p><strong>Slumber:</strong> Imposes a comatose sleep upon the subject for up to one year per caster level. The subject does not need to eat or drink while slumbering, nor does it age. Saves are made at +1.</p><p><strong>Bound Slumber:</strong> A combination of chaining and slumber that lasts for up to one month per caster level. Saves are made at +3, if the subject gets a saving throw.</p><p><strong>Hedged Prison:</strong> The subject is transported to or otherwise brought within a confined area from which it cannot wander by any means. The spell is permanent. Saves are made at +4, if the subject gets a saving throw.</p><p><strong>Metamorphosis:</strong> The subject assumes gaseous form, except for its head or face. It is held harmless in a jar or other container, which may be transparent. The creature remains aware of its surroundings and can speak, but cannot leave the container, attack or use any of its powers or abilities. The binding is permanent. The subject does not need to breathe, eat or drink while metamorphosed, nor does it age. Saves are made at +5, if the subject gets a saving throw.</p><p><strong>Minimus Containment:</strong> The subject is shrunk to a height of one inch or less and held within some gem or similar object or jar. The binding is permanent. The subject does not need to breathe, eat or drink while contained, nor does it age. Saves are made at +4, if the subject gets a saving throw.</p><p>The material component for this spell is iron dust.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "7b2db668931d83f5",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

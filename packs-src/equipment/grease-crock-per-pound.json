@@ -1,0 +1,32 @@
+{
+  "_id": "1682a640d63d2883",
+  "_key": "!items!1682a640d63d2883",
+  "name": "Grease, Crock (per pound)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small crock of grease for waterproofing leather and lubricating mechanisms.</p>",
+    "price": {
+      "value": "2 cp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

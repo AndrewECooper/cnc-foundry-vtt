@@ -1,0 +1,68 @@
+{
+  "_id": "bea68ca2b584a48c",
+  "_key": "!items!bea68ca2b584a48c",
+  "name": "Earthquake",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Drawing upon elemental forces, this spell creates an intense but highly localized tremor, within a 50 foot diameter circle, that ripples the ground, knocking creatures down, collapsing structures, and opening gaping fissures. The earthquake affects standing creatures in its area in a variety of ways.</p><p>All creatures standing in the area must make a dexterity save or fall down. Even if they remain standing, they suffer a -10 penalty to any actions attempted during the spell's duration, and find it impossible to move at more than half their normal speed, if at all. All spellcasters standing in the area find it impossible to cast spells while the earthquake is in effect, and lose any spells they were in the process of casting.</p><p>Fissures rip open in the ground without warning, with a 25% chance of opening beneath each creature in the area. Such creatures must make dexterity saves to avoid falling into the fissure, taking 1d6 damage if they fail. The worse threat, however, is that all such fissures grind shut with impossible force at the end of the round, crushing any trapped creatures to death.</p><p>The earthquake also has additional effects based on the terrain it effects:</p><p><strong>Cave or Tunnel:</strong> The roof collapses, dealing 8d6 damage to any creature caught under the cave-in (dexterity save, half).</p><p><strong>Cliffs:</strong> The cliff crumbles, causing a landslide that travels as far horizontally as it fell vertically. An earthquake cast at the top of a 100 foot cliff would sweep 100 foot outward from the base of the cliff. Any creature in the path of the landslide suffers 8d6 damage (dexterity save, half).</p><p><strong>River, Lake, or Marsh:</strong> Fissures open underneath the water, draining it away from the area to form a quagmire. Soggy marsh or swampland becomes quicksand for the duration of the spell, sucking down creatures and structures. All creatures in the area must make dexterity saves or sink down in the mud and quicksand. At the end of the spell, the rest of the body of water rushes in to replace the drained water, possibly drowning those caught in the mud.</p><p><strong>Structure:</strong> Most structures standing on open ground collapse, dealing 8d6 damage to those caught in or beneath the rubble (dexterity save, half).</p><p>The material component for this spell is a chip of stone cast by a giant.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see text",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4a8ec54e9b481630",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

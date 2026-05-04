@@ -1,0 +1,68 @@
+{
+  "_id": "da97dfc05fb0ce1b",
+  "_key": "!items!da97dfc05fb0ce1b",
+  "name": "Prismatic Spray",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell causes seven shimmering, intertwined beams of multicolored light to spray from the caster's hand. Each beam has a different power. Creatures in the area of the spell with 8 HD or less are automatically blinded for 2d4 rounds. All creatures in the area are randomly struck by one or more beams, as determined by rolling 1d8 for each beam. The area of effect is a cone 15 feet wide by 50 feet long.</p><table><thead><tr><th>1d8</th><th>Color of Beam</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>Red</td><td>10 points damage</td></tr><tr><td>2</td><td>Orange</td><td>20 points damage</td></tr><tr><td>3</td><td>Yellow</td><td>40 points damage</td></tr><tr><td>4</td><td>Green Poison</td><td>Con save vs. Poison or die</td></tr><tr><td>5</td><td>Blue</td><td>Wis save or turn to stone</td></tr><tr><td>6</td><td>Indigo</td><td>Wis save or become insane</td></tr><tr><td>7</td><td>Violet</td><td>Int save or banished to another plane</td></tr><tr><td>8</td><td>Struck by two rays roll again twice, ignoring any result of 8.</td><td></td></tr></tbody></table>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see text",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see text",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "1f5e85bd7531001f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

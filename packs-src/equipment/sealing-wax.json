@@ -1,0 +1,32 @@
+{
+  "_id": "de8bbd85686794b0",
+  "_key": "!items!de8bbd85686794b0",
+  "name": "Sealing Wax",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A stick of red wax for sealing letters and packets.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.1",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f8912405b017fa54",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

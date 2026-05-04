@@ -1422,6 +1422,8 @@
   padding: 4px 8px;
   background: var(--cc-plain);
   border-bottom: 1px solid var(--cc-card-line);
+  cursor: pointer;
+  user-select: none;
 }
 
 .tlgcc .cc-spell-level-header .cc-level-num {
@@ -1429,6 +1431,22 @@
   font-size: 13px;
   font-style: italic;
   color: var(--cc-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tlgcc .cc-spell-level-header .cc-collapse-chevron {
+  font-size: 10px;
+  transition: transform 0.15s ease;
+}
+
+.tlgcc .cc-spell-level-header.cc-collapsed .cc-collapse-chevron {
+  transform: rotate(-90deg);
+}
+
+.tlgcc table.cc-spell-table.cc-collapsed {
+  display: none;
 }
 
 .tlgcc .cc-spell-level-header .cc-prepared-label {
@@ -1442,6 +1460,11 @@
 /* Align the PREPARED column header over the centered prepared-count cell. */
 .tlgcc .cc-spell-table th.cc-spell-prepared-col {
   text-align: center;
+}
+
+/* Align the ACTIONS column header over the right-aligned edit/delete icons. */
+.tlgcc .cc-spell-table th.cc-spell-actions-col {
+  text-align: right;
 }
 
 .tlgcc .cc-ruled-prose {

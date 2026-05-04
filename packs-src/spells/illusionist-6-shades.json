@@ -1,0 +1,68 @@
+{
+  "_id": "651420c0046c562c",
+  "_key": "!items!651420c0046c562c",
+  "name": "Shades",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster shapes quasi-real illusions resembling monsters, that can attack the caster's foes. The shades remain semi-solid, even to those who believe them to be illusory. The caster can create one or more illusions of creatures whose total HD are equal to the caster's level. The caster chooses what form the illusions take, be it goblin, orc or ogre, with size no larger than 1 foot per caster level in height or length. These shadow creatures, however, have only 60% the normal HP of a creature of the chosen type.</p><p>Characters interacting with these illusions believe them to be real creatures unless they make a successful intelligence save. If the saving throw fails, the creatures deal normal damage and have all the normal abilities and weaknesses of a creature of that type. If the saving throw succeeds, the creatures' special abilities, armor class, damage and all other aspects are only 60% as strong as the real thing. Those who succeed at their saves see the conjurations as transparent images superimposed on shadowy forms.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence disbelieves",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "42fc932ab27c891b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "b8ee75b3f6e4c4e7",
+  "_key": "!items!b8ee75b3f6e4c4e7",
+  "name": "Trap, medium animal, metal",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A steel jaw trap sized for wolves or large dogs.</p>",
+    "price": {
+      "value": "15 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "12",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "6",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

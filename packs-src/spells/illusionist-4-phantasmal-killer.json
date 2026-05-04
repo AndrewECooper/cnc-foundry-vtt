@@ -1,0 +1,68 @@
+{
+  "_id": "5473796baed6d7ff",
+  "_key": "!items!5473796baed6d7ff",
+  "name": "Phantasmal Killer",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes a manifestation, in the target's mind, of the most horrific creature imaginable. This creature is the formulation of all the subconscious fears of the target, brought into a very convincing and deadly illusion. Only the caster and the target can see the <em>phantasmal killer</em>. The killer makes an illusory attack upon the target, who must make a successful intelligence saving throw or instantly die from fear and psychic damage. A successful saving throw results in 4d6 damage.</p><p>The <em>phantasmal killer</em> cannot be damaged, and will pass through all physical barriers to reach the target. The killer cannot pass through magical protections such as a <em>globe of invulnerability</em>, or through any area of anti-magic.</p><p>Likewise, if the illusionist casting the spell is killed before the effect reaches the target, the spell ends. In rare circumstances, such as when the target makes a successful saving throw and is wearing a <em>helm of telepathy</em>, the target can turn the killer back upon the caster just as if the target cast the spell in the first place.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "abdecddf2e76ae4e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "73f43ad92e920884",
+  "_key": "!items!73f43ad92e920884",
+  "name": "Ensemble, Greek (Iron)",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A heavier Greek panoply made entirely of iron — cuirass, greaves, vambraces, and helm.</p>",
+    "price": {
+      "value": "230 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "50",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

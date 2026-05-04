@@ -1,0 +1,68 @@
+{
+  "_id": "077158e6b6d41424",
+  "_key": "!items!077158e6b6d41424",
+  "name": "Confusion",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell causes creatures in an area 50 feet x 50 feet to behave randomly, as indicated on the following table:</p><table><thead><tr><th>1d10</th><th>Behavior</th></tr></thead><tbody><tr><td>1</td><td>Wander away for 1 minute (unless prevented)</td></tr><tr><td>2-3</td><td>Attempt mundane task, like cooking, for 1 round</td></tr><tr><td>4-6</td><td>Do nothing for 1 round</td></tr><tr><td>7-8</td><td>Try to locate lost items for 1 round</td></tr><tr><td>9</td><td>Attack nearest creature for 1 round</td></tr><tr><td>10</td><td>Act normally for 1 round</td></tr></tbody></table><p>Wandering creatures leave the scene as if disinterested. Any confused creature who is attacked automatically attacks its attackers on its next turn.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

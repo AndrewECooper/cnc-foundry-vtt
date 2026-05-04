@@ -1,0 +1,68 @@
+{
+  "_id": "2339280dd9b980d3",
+  "_key": "!items!2339280dd9b980d3",
+  "name": "Distort Reality",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell is similar to <em>limited wish</em>, but reality is altered through illusion. As with <em>limited wish</em>, the caster must be careful in creating the illusion. The spell may duplicate the effects of any illusionist spell of 7th level or lower, any wizard spell of 5th level or lower or any cleric or druid spell of 4th level or lower. It may also grant other effects in line with the power of such spells, although any effects must be approved by the Castle Keeper. Duplicated spells allow saving throws and spell resistance as normal, except that all saves will always be against intelligence, not the designated attribute in the spell duplicated.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "26e7108c37377015",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

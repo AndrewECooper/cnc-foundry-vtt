@@ -1,0 +1,68 @@
+{
+  "_id": "c91b73a973d59b03",
+  "_key": "!items!c91b73a973d59b03",
+  "name": "Dispel Magic",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell ends ongoing spells and spell-like effects that have been cast on a creature or object, temporarily suppresses the magical abilities of a magic item or counters another spellcaster's spell within an area 30 feet x 30 feet x 30 feet. The caster must make a successful intelligence check against each spell, effect, object or creature in the area of effect to succeed. Some spells, as detailed in their descriptions, can't be defeated by <em>dispel magic</em>. The effects of spells with instantaneous duration can't be dispelled, because the magic effect is already over before <em>dispel magic</em> can take effect. Dispel magic only affects 1st-5th level illusionist spells. All magic within the area of effect is affected. The functioning of magic items is suppressed for 1d4 rounds, but artifacts are unaffected. Inter-dimensional portals close for a number of rounds equal to the caster's level. A creature or object whose presence is maintained by an ongoing spell, such as a summoned monster, is sent back to whence it came, because the spell that conjured it ends. If an ongoing spell's area overlaps that of the dispel, the effect is ended only within the area of the dispel magic. The caster automatically succeeds at the dispel check against their own spells as long as the character is of the same or higher level as when the spell was cast.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "0041d8941e2353c1",
+  "_key": "!items!0041d8941e2353c1",
+  "name": "Pavis",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A massive shield made to be planted on the ground and fired over, like a portable wall — favored by crossbowmen.</p>",
+    "price": {
+      "value": "55 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "90",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "12",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 6,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "22238e0d7cb6f583",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

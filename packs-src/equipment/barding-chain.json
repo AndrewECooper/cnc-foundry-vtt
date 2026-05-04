@@ -1,0 +1,32 @@
+{
+  "_id": "719d894a4e62e318",
+  "_key": "!items!719d894a4e62e318",
+  "name": "Barding, Chain",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A horse-sized hauberk of chain links, draping the mount in protective mail.</p>",
+    "price": {
+      "value": "500 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "125",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "6",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5bb847eb456821b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "1d23f41d9ff744b7",
+  "_key": "!items!1d23f41d9ff744b7",
+  "name": "Control Weather",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster changes the weather in the local area, 2 miles x 2 miles centered on caster. The caster can only call forth weather appropriate to the climate and season of the area, but can almost always change the direction of the wind and control its intensity from calm to strong. The character cannot control the specific applications of the weather. When the character selects a certain weather condition to occur, the weather assumes that condition 10 minutes later (changing gradually). The weather continues as the caster left it for the duration, or until the character designates a new kind of weather. Each change in weather by the caster takes 10 minutes to manafest.</p><p>Contradictory conditions are not possible simultaneously. <em>Control weather</em> can do away with atmospheric phenomena (naturally occurring or otherwise) as well as create them. Druids casting this spell double the duration and range.</p><table><thead><tr><th>Season</th><th>Possible weather</th></tr></thead><tbody><tr><td>Spring</td><td>Tornado, thunderstorm or sleet</td></tr><tr><td>Summer</td><td>Torrential rain, heat wave, or hailstorm</td></tr><tr><td>Autumn</td><td>Hot or cold weather, fog, or sleet</td></tr><tr><td>Winter</td><td>Frigid cold, blizzard, or thaw</td></tr></tbody></table><p>The material component for this spell is a storm giant hair.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "4d12 hrs.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "2 miles",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min. (see below)",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0168b1fa5dc0c76c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

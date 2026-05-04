@@ -1,0 +1,32 @@
+{
+  "_id": "e1116d4b72c16b34",
+  "_key": "!items!e1116d4b72c16b34",
+  "name": "Belt, Baldric",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A heavy belt slung over the shoulder, used to carry a sword or horn at the hip.</p>",
+    "price": {
+      "value": "2 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

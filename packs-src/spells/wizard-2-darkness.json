@@ -1,0 +1,68 @@
+{
+  "_id": "e2ea8a6d7568089f",
+  "_key": "!items!e2ea8a6d7568089f",
+  "name": "Darkness",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell causes an object or surface to radiate darkness out to a 20-foot radius. Not even creatures that can normally see in the dark can see in an area shrouded in magical darkness. Normal lights do not work, nor do light spells of a lower spell level.</p><p>The reverse of this spell is called <em>daylight</em>. <em>Daylight</em> causes an object or surface to shed light as bright as full daylight in a 60 foot radius. Creatures that suffer penalties in bright light suffer them while exposed to this magical light. <em>Darkness</em> and <em>daylight</em> cancel each other out, leaving whatever light conditions normally prevail in the overlapping areas of the spells. Higher-level light spells are not affected by <em>darkness</em>, and the reverse is true for <em>daylight</em>. If either spell is cast on a small object that is then placed inside or under a lightproof covering, the spell's effects are blocked until the covering is removed.</p><p>The material component for this spell, for a wizard and illusionist, is the dust of a mirror.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, M/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

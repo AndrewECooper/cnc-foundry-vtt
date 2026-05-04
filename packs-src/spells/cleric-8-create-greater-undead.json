@@ -1,0 +1,68 @@
+{
+  "_id": "f06e78625b7e56c8",
+  "_key": "!items!f06e78625b7e56c8",
+  "name": "Create Greater Undead",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This evil spell allows the caster to create one specimen of the following undead if the cleric is of the appropriate level: mummy (13), spectre (15), vampire (17), or ghost (19). The cleric may create a less powerful undead if desired. For example, a 17th level cleric could, instead of creating a vampire, also create a spectre or mummy. Created undead are not automatically under the control of their animator. The caster may gain command of the undead as it forms by making a successful turning check. This spell must be cast at night and the caster must spend 100gp per corpse.</p><p>The material component for this spell is a corpse.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "DF, V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft. (one)",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 hour",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e5708363043138ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "4d2a41950af0afd5",
+  "_key": "!items!4d2a41950af0afd5",
+  "name": "Backpack",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A sturdy canvas or leather pack with shoulder straps for carrying gear on the trail.</p>",
+    "price": {
+      "value": "2 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "2",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "92b9ae681ab9538b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

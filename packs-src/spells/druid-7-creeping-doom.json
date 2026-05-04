@@ -1,0 +1,68 @@
+{
+  "_id": "852a83c406b52c1b",
+  "_key": "!items!852a83c406b52c1b",
+  "name": "Creeping Doom",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster calls forth a mass of 1,000 venomous, biting and stinging spiders, scorpions, beetles and centipedes. The carpetlike mass swarms in a square 25 feet on a side. Upon the caster's command, the swarm creeps forth at 10 feet per round toward any prey within 150 feet. Each vermin in the <em>creeping doom</em> effect automatically bites a creature for 1 point of damage and then dies. Each creature overrun by the swarm takes enough hit points of damage to kill it, destroying that number of vermin in the process. If there aren't enough vermin to kill all the creatures in the spell's effect, damage is distributed among the survivors equally. If the <em>creeping doom</em> travels more than 100 feet away from the character, it loses 50 of its number for each additional 10 feet it travels. Anything that would deter or destroy normal insects is effective against these insects.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "48aabb192190afe3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

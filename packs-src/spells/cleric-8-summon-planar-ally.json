@@ -1,0 +1,68 @@
+{
+  "_id": "1e255db09d4fc2bc",
+  "_key": "!items!1e255db09d4fc2bc",
+  "name": "Summon Planar Ally",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Beseeching their deity, the caster pleads for aid, prompting the deity to select and send assistance in the form of a number of appropriate elementals or extraplanar creatures totaling no more than 16 HD. The caster may request a known individual creature beholden to the deity, but the deity can ignore this request and send a different creature. If the character serves no particular deity, the spell is a general plea answered by a creature sharing the character's philosophical alignment.</p><p>The caster may ask the summoned creature or creatures to perform one task, and a summoned creature may request some service in return (as befits the creature's outlook, alignment, deity and the magnitude of favor asked). If the caster agrees to these requests, the creature performs the task asked of them, reporting back to the character afterward if possible, then returning to their home plane. The caster is honor-bound to perform the return favor, and may lose any or all clerical abilities if they fail to do so. This will last until such a point as the caster properly atones, in whatever manner their deity sees fit, for the breech of promise. A creature might accept some form of payment, such as a magic item, in return for its service. The creature might keep it or may deliver the item to another member of the character's religion somewhere else where the item can help the religion's cause.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e5708363043138ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

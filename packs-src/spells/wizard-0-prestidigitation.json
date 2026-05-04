@@ -1,0 +1,68 @@
+{
+  "_id": "0c1e2ddbd2ca84f5",
+  "_key": "!items!0c1e2ddbd2ca84f5",
+  "name": "Prestidigitation",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The rudimentary <em>prestidigitation</em> spell is a building block for arcane study, and enables the caster to perform a variety of simple magical effects. This spell can clean, soil, or alter the color of items in a 1-foot cube. It can chill, warm or flavor 1 pound of non living material. It can move up to 1 pound of matter. It can create effects like a puff of smoke, very minor illusions, sound effects or temporary change in color. This spell can never inflict damage or disrupt the casting of other spellcasters. <em>Prestidigitation</em> lacks the power to duplicate any other spell effects. Any actual change to an object (beyond just moving, cleaning or soiling it) persists for only 1 hour.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "bb05041786104153",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

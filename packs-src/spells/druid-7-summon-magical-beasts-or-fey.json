@@ -1,0 +1,68 @@
+{
+  "_id": "910d746b0d33767e",
+  "_key": "!items!910d746b0d33767e",
+  "name": "Summon Magical Beasts Or Fey",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell is like <em>summon animals</em> and <em>summon beasts</em>, except it summons either magical beasts or fey. The spell conjures one or more magical beasts or fey with total HD equal to the caster's level. Thus, a 14th level caster can summon one 14 HD creature, four 2 HD creatures plus one 6 HD creature, or seven 2 HD creatures. The caster must choose either magical beasts or fey, not a mix of the two. The caster chooses the HD distribution desired, and the spell attempts to accommodate the request. The caster does not choose the specific type of creature summoned, but requests can be made as with <em>summon animals</em>. Unlike animals, beasts and plants, the creatures summoned by this spell are often more intelligent and less inclined to follow orders and commands. Additionally, alignment plays a large role in determining the effectiveness of any order.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "48aabb192190afe3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

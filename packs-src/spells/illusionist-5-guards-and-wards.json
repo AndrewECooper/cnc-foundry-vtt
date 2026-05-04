@@ -1,0 +1,68 @@
+{
+  "_id": "5e733e31d9d1701f",
+  "_key": "!items!5e733e31d9d1701f",
+  "name": "Guards And Wards",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This mighty spell is a useful tool in the defense of towers, strongholds, and other dwellings. The caster must be somewhere within the area being warded to cast the spell. The spell radiates out and away from the caster in a 20 foot/level diameter sphere, creating the effects detailed below within the building. The whole warded area radiates magic with incredible intensity. A <em>dispel magic</em> cast on a specific effect, if successful, removes only that effect. A successful <em>disjunction</em> destroys the entire <em>guards and wards</em> spell.</p><p>1. Any creature facing a choice in direction, such as a corridor intersection or side passage, becomes subject to a minor confusion-type effect, making it 50% likely that they will believe they are going in the exact opposite direction from the one they actually chose. <strong>SR: Yes</strong>. 2. All corridors within the area of the spell fill with an eerie fog, obscuring all sight, including darkvision, beyond 5 feet. A creature within 5 feet has one-half concealment; creatures farther away have full concealment. <strong>SR: No</strong>. 3. All doors are subjected to the <em>lock</em> spell (see <em>knock</em>). <strong>SR: No</strong>. 4. One door per caster level is covered by an illusion to appear as if it were a plain wall, and may only be detected with a successful intelligence (disbelief) save. <strong>SR: No</strong>. 5. Webs fill all stairs from top to bottom, the strands identical to those of the <em>web</em> spell, except that they regrow in 10 minutes if they are burned or torn away while the <em>guards and wards</em> spell is in effect. <strong>SR: No</strong>. 6. The caster may also select one of the following:     a. A <em>gust of wind</em> in one corridor or room. <strong>SR: No</strong>.     b. A <em>magic mouth</em> in two places. <strong>SR: No</strong>.     c. A <em>stinking cloud</em> in two places. The vapors appear and linger in the places the caster designates; they return within 10 minutes if dispersed by wind while the <em>guards and wards</em> spell lasts. <strong>SR: Yes</strong>.     d. A <em>suggestion</em> in one place. The caster selects a 10 square foot area (or less), and any creature who enters or passes through the area receives the suggestion mentally. <strong>SR: Yes</strong>.     e. <em>Dancing lights</em> in four corridors. The character can designate a simple routine that the lights will repeat for as long as the <em>guards and wards</em> spell lasts. <strong>SR: No</strong>.</p><p>The material components for this spell are a strand of giant spider's silk (20gp), an ounce of fine wine (2gp), a small decorated silver key (5gp) and a page of fine parchment to be lit (1gp).</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "special",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "30 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "946872a6e2dc6f4c",
+  "_key": "!items!946872a6e2dc6f4c",
+  "name": "Transport Via Plants",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster can enter any normal plant of human size or larger, and pass any distance to a plant of the same species in a single round, regardless of the distance separating the two. The entry plant must be alive. The destination plant need not be familiar to the caster, but it also must be alive. If the caster is uncertain of the location of a particular kind of destination plant, the caster needs merely designate direction and distance, and the spell moves the caster as close as possible to the desired location. If a particular destination plant is desired, but the plant is not living, the spell fails and the caster is ejected from the entry plant. This spell does not function with plant creatures. This spell will not transport the caster between planes of existence.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "no",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "unlimited",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "cbde643b5df067d3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

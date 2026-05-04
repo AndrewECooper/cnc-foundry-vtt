@@ -1,0 +1,33 @@
+{
+  "_id": "87b01bf12e052db7",
+  "_key": "!items!87b01bf12e052db7",
+  "name": "Ensemble, Roman (Segmented)",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A complete suit of Roman segmented armor (lorica segmentata) with iron greaves, vambraces, and helmet.</p>",
+    "price": {
+      "value": "650 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "45",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 7,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

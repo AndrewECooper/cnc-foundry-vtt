@@ -1,0 +1,68 @@
+{
+  "_id": "4111d42fb9609b3a",
+  "_key": "!items!4111d42fb9609b3a",
+  "name": "Bind Elemental",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Upon casting this spell, the wizard forcibly transports a powerful elemental from one of the elemental planes to the plane in which the caster is located. The type of elemental summoned must be designated by the caster before the spell is begun. As the elemental will be a large specimen of 12 HD, fire and water elementals will require a large source of either element in order to be able to take shape. Earth and air are typically present in abundance. The caster can use any time which can reasonably be associated with the element being summoned.</p><p>The elemental does not come willingly, nor will it do the caster's bidding without a struggle. The caster must maintain concentration upon the elemental to force it to serve. If the caster moves, speaks, takes damage, or performs any other action other than concentrating on forcing the elemental to do his or her bidding, the elemental attacks the caster immediately, and will not stop until destroyed. Control over the elemental cannot be regained. It will ignore any and all opponents save for the wizard who summoned it. The caster may release the elemental at any time.</p><p>The material component for this spell is a vial of the element.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

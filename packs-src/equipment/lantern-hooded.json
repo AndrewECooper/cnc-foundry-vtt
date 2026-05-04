@@ -1,0 +1,32 @@
+{
+  "_id": "e5886b4aee87dc8a",
+  "_key": "!items!e5886b4aee87dc8a",
+  "name": "Lantern, Hooded",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>An oil lantern with a hooded shutter to control the spread of light.</p>",
+    "price": {
+      "value": "7 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "2",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

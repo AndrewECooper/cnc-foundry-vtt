@@ -1,0 +1,68 @@
+{
+  "_id": "7b2c2e634fa45c62",
+  "_key": "!items!7b2c2e634fa45c62",
+  "name": "Magic Jar",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By casting <em>magic jar</em>, the caster places their own soul into a gem or large crystal, which must be of at least 1000gp in value, leaving the caster's own body lifeless. The caster may then attempt to take control of a nearby body, forcing the target's soul into the magic jar.</p><p>While in the magic jar, the caster can sense and attack any life force on the same plane within 10 feet per caster level. The caster, however, cannot determine the exact creature types or positions of these creatures. In a group of life forces, the caster can sense a difference of four or more HD and can determine whether a life force is positive or negative energy. Attempting to possess a body is an attack, and it is blocked by <em>protection from evil</em> or a similar ward.</p><p>The caster possesses the body and forces the creature's soul into the magic jar unless the subject succeeds at a charisma save. Failure to take over the host leaves the caster's life force in the magic jar, and the target automatically succeeds at further saving throws if the caster attempts to possess its body again.</p><p>If successful, the caster's life force occupies the host body, and the host's life force is imprisoned in the magic jar. The caster keeps his or her intelligence, wisdom, charisma, level, class, base attack bonus, prime attributes, alignment, and mental abilities while the host body retains its strength, dexterity, constitution, hit points, natural abilities and extraordinary abilities such as water breathing or regeneration. A body with extra limbs does not allow the caster to make more attacks (or more advantageous two-weapon attacks) than normal. The caster can't choose to activate the body's extraordinary or supernatural abilities. The creature's spells and spell-like abilities do not stay with the body.</p><p>The caster may move back to the jar, returning the trapped soul to its body, at any time; and may thereafter attempt to possess another body. The spell ends when the caster chooses to return to the caster's own body (leaving the receptacle empty).</p><p>To cast the spell, the magic jar must be within spell range. When the caster's soul transfers to the jar, the caster's original body is, as near as anyone can tell, dead.</p><p>If the host body is slain the caster returns to the magic jar, if within range, and the life force of the host dies. If the host body is slain beyond the range of the spell, both the caster and the host die. Any life force with nowhere to go is treated as slain.</p><p>At the end of the spell, the caster's soul returns to the caster's body, regardless of whether the soul is in the magic jar or a host body. Should a host's soul be in the magic jar at the end of the spell, the soul returns to the host's body. However, if the caster's soul or the host's soul is too far distant from its body, then the caster or host, possibly both, will die. Destroying the receptacle ends the spell. A <em>magic jar</em> may also be dispelled by casting a <em>dispel magic</em> (or greater) spell on either the receptacle or the host.</p><p>The material component for this spell is a 1000gp gem.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma save negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

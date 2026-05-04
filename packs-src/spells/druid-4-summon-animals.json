@@ -1,0 +1,68 @@
+{
+  "_id": "6f228cd049a9681b",
+  "_key": "!items!6f228cd049a9681b",
+  "name": "Summon Animals",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell summons wild animals to aid the caster. The animals appear wherever the caster designates within range, and act immediately on the caster's turn in the initiative order thereafter. If the caster can communicate with the animals, the caster can direct them not to attack, to attack particular enemies or to perform other actions. If ordered to attack, animals do so to the best of their ability. Summoned creatures disappear at the end of the spell's duration.</p><p>The spell conjures one or more animals with total HD equal to the caster's level. Thus, a 6th level caster can summon one 6 HD animal, or six 1 HD animals. The caster chooses the HD distribution desired, and the spell attempts to accommodate the request. The caster does not choose the specific type of animal summoned, although a request can be worked into the spell's casting. General requests, such as animals that fly, clever animals or fierce animals are more likely to be answered. The animals summoned will come from the region where the spell is cast, and are always determined by the Castle Keeper. A listing of some possible animals include, but are not limited to, normal and giant varieties of the following: ape, badger, bat, bear (black, brown, grizzly, cave, polar), bison, boar, cat, cheetah, crocodile, dog (wild), eagle, elephant, frog, hawk, horse (wild), leopard, lion, lizard, manta ray, monkey, octopus, owl, rat, raven, shark, snake, squid, tiger, toad, weasel, whale (blue, sperm, orca), wolves and wolverine.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

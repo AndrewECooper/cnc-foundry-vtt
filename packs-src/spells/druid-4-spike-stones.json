@@ -1,0 +1,68 @@
+{
+  "_id": "ba5a65cb6e6daf89",
+  "_key": "!items!ba5a65cb6e6daf89",
+  "name": "Spike Stones",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell causes stone formations around the caster (such as stone walls, floors or natural strata) to form into long and narrow points of sharpened stone. The spellcaster can effect a 20 by 20 foot area per level. These points of stone remain unobtrusive until someone other than the caster happens upon them. In this case, they can deal damage and impede movement. The sharpened stones cause 1d8 damage to the unwary. Those carefully searching for the stones must make successful intelligence check at -1 per level of the druid who cast the spell to notice them. A creature moving through the area takes damage for each 5 feet of movement. Those aware of the stones but who move through the area anyway take 1d4 damage per 10 feet.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

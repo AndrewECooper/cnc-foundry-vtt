@@ -1,0 +1,68 @@
+{
+  "_id": "215225bb887348e4",
+  "_key": "!items!215225bb887348e4",
+  "name": "Rope Trick",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell attaches a section of rope at least 5 feet long to an extradimensional space large enough to hold up to eight medium-size or smaller creatures. The end of the rope rises into the air until the whole rope hangs perpendicular to the ground, as if affixed at the upper end. Creatures can climb the rope into the space and can pull the rope up behind them, making the rope disappear. If the rope is pulled up into the space, it counts as one of the eight creatures. The extra-dimensional space is invisible from the outside, and those inside it cannot see outside. Those within cannot be targeted by spells or affected by area effects, but they cannot target spells or area effects outside of the space.</p><p>The rope is subject to its normal ability to support weight and withstand punishment. If the rope is not pulled in, a creature outside the extra-dimensional space can pull or break the rope free, ending the spell instantly. Anything inside the extradimensional space drops out when the spell ends, suffering damage from any fall. The rope can be used for normal climbing provided the climber does not climb all the way into the extradimensional space.</p><p># S</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

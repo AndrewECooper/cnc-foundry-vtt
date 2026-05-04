@@ -1,0 +1,68 @@
+{
+  "_id": "9e71e7663f531f42",
+  "_key": "!items!9e71e7663f531f42",
+  "name": "Move Earth",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell moves dirt, possibly collapsing embankments, moving hillocks, shifting dunes, etc. Rock formations cannot be moved. The area to be affected determines the casting time. For every 10 foot x 10 foot area, casting takes 3 minutes. The maximum area, 800 feet by 800 feet, takes 4 hours to move. The earth moved cannot exceed 10 feet in depth. Casting the spell requires a handful of earth and a wand, rod or staff.</p><p>This spell does not violently break the surface of the ground. Instead, it creates wavelike crests and troughs, the earth reacting with glacier-like fluidity until the desired result is achieved. Trees, structures, rock formations and such are mostly unaffected except for changes in elevation and relative topography. The spell cannot be used for tunneling and is generally too slow to trap or bury creatures. Its primary use is for digging or filling moats or for adjusting terrain contours before a battle. The material component for this spell is an earthworm.</p><p># N</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "see below",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d17b6041650219b9",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

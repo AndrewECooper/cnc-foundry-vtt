@@ -1,0 +1,68 @@
+{
+  "_id": "b981b1ecf467c33b",
+  "_key": "!items!b981b1ecf467c33b",
+  "name": "Detect Thoughts",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The character can detect surface thoughts, and get a general impression of the level of intelligence involved. The caster detects the presence or absence of thoughts (from conscious creatures with intelligence scores of 1 or higher) in the direction the caster is facing, along a path 50 feet long and 10 feet wide. The caster must spend one round concentrating along the path, although the caster may both cast the spell and begin detecting in the same round as the spell is cast. Once thoughts are detected, if the caster concentrates an additional round, the general level of intelligence will be revealed as one of the following: animal, very low, low, average, high, very high, genius, supra-genius, or deific. The spell can penetrate barriers, but 2 feet of stone or metal, 2 inches of common metal, a thick sheet of lead or 5 feet of wood or dirt blocks it. The reverse of this spell, <em>hide thoughts</em>, obscures a subject's thoughts and counters <em>detect thoughts</em>.</p><p>The material component for this spell is a copper coin.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft. x 10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "970419e5bee1392b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

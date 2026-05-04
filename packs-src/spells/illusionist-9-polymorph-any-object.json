@@ -1,0 +1,68 @@
+{
+  "_id": "c2181fcdaed5de34",
+  "_key": "!items!c2181fcdaed5de34",
+  "name": "Polymorph Any Object",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>While this spell can operate as a more powerful version of <em>polymorph other</em>, it is not restricted to transforming creatures. Objects and creatures targeted by this spell can be transformed into any other creature or object the caster desires. For example, this spell could be used to change a needle into a sword, a beetle into a dragon, a chair into a dwarf or a kobold into a horseshoe. The duration of the spell is determined by the degree of change enacted. This spell cannot be used to create magic items.</p><p>An unwilling living target is entitled to a wisdom saving throw to resist the effects of the spell. If the form assumed is inanimate, creatures are placed in a state of suspended animation until either the spell expires or until <em>dispel magic</em> is cast. A living creature polymorphed into the form of another living creature risks assuming the consciousness of the new form as detailed in <em>polymorph other</em>, and the other details of that spell apply as well. Use of the spell in that manner has a permanent duration, unless the size changed into is more than double the creature's normal height. If more than double, the spell lasts 12 hours. Upon changing, the creature regains 1d4 hit points. If slain, the creature reverts to his or her original form, but remains dead.</p><p>The change is permanent for inanimate objects changed into other inanimate objects as long as the general size and volume remains the same or less. Changing an object into a larger size results in the spell lasting 12 hours. Changing a creature into an object, or vice-versa, results in the spell lasting 1d4 hours if the size and volume remains the same or less. Changing creatures into larger sizes results in the spell lasting only 1d4 x 10 minutes.</p><p>This spell can also be used to duplicate the effects of <em>polymorph other, transmute flesh and stone, transmute mud and rock,</em> and <em>transmute metal and wood</em>.</p><p>The material components are butterfly wings and a bit of clay.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "363bae2fac999c09",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

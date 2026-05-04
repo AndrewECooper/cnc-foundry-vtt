@@ -1,0 +1,32 @@
+{
+  "_id": "d72de81418263880",
+  "_key": "!items!d72de81418263880",
+  "name": "Belt Pouch, Spell Component",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A reinforced and partitioned pouch for organizing spell components.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "92b9ae681ab9538b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

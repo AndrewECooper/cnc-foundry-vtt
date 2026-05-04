@@ -1,0 +1,68 @@
+{
+  "_id": "0cc1e618c2d22e96",
+  "_key": "!items!0cc1e618c2d22e96",
+  "name": "Seeming",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes the appearance, garb and equipment of one creature per two levels of caster experience to change to whatever the caster wishes, with the following limits. The recipients must maintain their basic forms (humanoid, horse, etc.), but can appear either 1 foot taller or shorter, as well as up to 50% lighter or heavier. The illusion provides the change in appearance, but not any change in demeanor, class abilities or other such manifestations. Furthermore, the dweomer is a visual illusion only; armor disguised as clothing will still creak and clink and will feel like armor to anyone touching it. Those disguised by the spell remain in the illusory form until the spell expires, the target is slain, or anyone scrutinizing them makes an intelligence saving throw.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "12 hrs.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "abdecddf2e76ae4e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "ebf4e7cc3bc6802b",
+  "_key": "!items!ebf4e7cc3bc6802b",
+  "name": "Shapechange",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster assumes the form of any creature known to the caster. The caster can change forms throughout the duration of the spell. Each change takes one round. The form is quite real, and grants the caster most of the abilities of the creature formed. The caster retains his own mind and intelligence, as well as wisdom scores and hit points. Other attributes might change as a result of the new form. The character retains his or her extraordinary abilities, spells and spell-like abilities. The character can cast spells for which he or she has components. The character needs a humanlike voice for verbal components and humanlike hands for somatic components. The caster does not gain the spell-like or supernatural abilities of the new form, but does gain the extraordinary abilities of the new form.</p><p>The size of the form being taken can range from a gnat to any creature not more than 200 feet in length. Even amorphous or gaseous states may be assumed by casting this spell. Upon changing, the caster regains 1d4 hit points. If slain, the caster reverts to his or her original form, but remains dead.</p><p>The material component for this spell is a 2,500 gp wand created from a shapechanging creature's arm or leg bone, gilded with silver and mystic carvings.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4a8ec54e9b481630",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "2d6d92f183ef5ca0",
+  "_key": "!items!2d6d92f183ef5ca0",
+  "name": "Shield",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Upon the incantation of this spell, a transparent, mobile wall of force appears in front of the caster, protecting him from frontal attacks and magic missiles. Against melee and ranged attacks, the spell grants the caster a specified armor class as follows: melee attacks and siege-weapon type missiles, AC 16; device-propelled missiles such as arrows, sling bullets and bolts, AC 17; hand-hurled missiles such as spears, axes and darts, AC 18. The caster's dexterity bonus to armor class is added to the armor class score granted by the spell. Attacks from the side or rear are unaffected. The spell blocks and provides complete immunity against magic missiles. The spell also grants a +1 bonus on all saving throws.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min/lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "36c5a2e3bfb00661",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "fc025006cdb56156",
+  "_key": "!items!fc025006cdb56156",
+  "name": "Divination",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell provides the caster with a useful piece of advice in reply to a question concerning a specific goal, event or activity that is to occur within 1 week. The advice can be as simple as a short phrase, or it might take the form of a cryptic riddle or omen. The Castle Keeper controls what information the character receives. It should be noted that if the caster's party doesn't act on the information, the conditions may change so that the information is no longer useful. The base chance for a correct divination is 70% + 1% per caster level. The Castle Keeper adjusts the chance if unusual circumstances require it (if, for example, unusual precautions against divination spells have been taken). If the die roll fails, the character knows the spell failed, unless specific magic yielding false information is at work. Multiple divinations about the same topic by the same caster use the same die result as the first divination and yield the same answer each time.</p><p>The material component for this spell is holy water.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "648ff0fd4c816377",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

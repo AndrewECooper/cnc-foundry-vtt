@@ -1,0 +1,68 @@
+{
+  "_id": "1fd9be7c3ffa20a1",
+  "_key": "!items!1fd9be7c3ffa20a1",
+  "name": "Sleep",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>All creatures within range and within a 30-foot diameter circle that are capable of sleep will fall into a comatose slumber, with weaker ones being felled prior to stronger ones. The spell will affect 2d4 HD of creatures. For creatures with equal HD, those who are closest to the spell's point of origin are affected first. No creature with 5 or more HD is affected, and HD that are not sufficient to affect a creature are wasted. The spell is centered on a location determined by the caster. Sleeping creatures are helpless. Slapping or wounding will awaken affected creatures, but normal noise does not. Sleep does not affect unconscious creatures, constructs or undead creatures.</p><p>The material component for this spell is a pillow feather.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "36c5a2e3bfb00661",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

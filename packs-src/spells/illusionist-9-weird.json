@@ -1,0 +1,68 @@
+{
+  "_id": "38059942ca351283",
+  "_key": "!items!38059942ca351283",
+  "name": "Weird",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell acts like <em>phantasmal killer</em>, but it affects all creatures within a 25 x 25 foot area. The caster causes a manifestation, in the targets' minds, of the most horrific creature imaginable. This creature is the formulation of all the subconscious fears of each target, brought into a very convincing and deadly illusion. Only the caster and the targets can see the killers. The killers make illusory attacks upon the targets, who must make a successful intelligence saving throw or instantly die from fear and psychic damage. A successful saving throw results in 8d6 damage and stuns the targets for 1 round. The killers cannot be damaged, and will pass through all physical barriers to reach the targets. The killers cannot pass through any area of <em>anti-magic</em>.</p><p>If the illusionist casting the spell is killed before the effect reaches the targets, the spell ends. In rare circumstances, such as when a target makes a successful saving throw and is wearing a <em>helm of telepathy</em>, the target can turn the killer back upon the caster just as if the target cast the spell in the first place.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "363bae2fac999c09",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

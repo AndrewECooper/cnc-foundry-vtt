@@ -1,0 +1,68 @@
+{
+  "_id": "2d17f93a3a89a17f",
+  "_key": "!items!2d17f93a3a89a17f",
+  "name": "Identify",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell reveals a single function of one magic item for each round it is in effect. The most basic functions are revealed first, including how to activate that function on the item, and how many charges remain. For a weapon, this will be the modifiers to attack and damage. If a magic item has multiple different functions that are equally basic, the Castle Keeper determines which is first identified. Multiple castings of this spell may be cast at the same time, taking 10 minutes per spell. After casting this spell, the caster becomes exhausted, and loses 1d4 points of constitution. After resting for 1 hour per each <em>identify</em> cast, constitution is returned to normal.</p><p>The material component for this spell are materials valued at 100gp.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "5 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "36c5a2e3bfb00661",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

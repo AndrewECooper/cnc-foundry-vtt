@@ -1,0 +1,68 @@
+{
+  "_id": "267ab30640da51a8",
+  "_key": "!items!267ab30640da51a8",
+  "name": "Simulacrum",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a duplicate of any creature. A full magical laboratory is needed to create the duplicate. Further, some form of formative substance such as ice, snow, or clay, 1000 gp of powdered gems and a piece of the creature to be duplicated are needed to complete this spell. While the duplicate will be a perfect physical match for the original in appearance, there will be differences in knowledge and abilities. The simulacrum will only have 51% to 60% (50+1d10) of the hit points, knowledge (including level, skills and speech), and personality of the creature being duplicated. The <em>simulacrum</em> will radiate magic under a <em>detect magic</em> spell.</p><p>At all times the <em>simulacrum</em> remains under the caster's verbal command. The <em>simulacrum</em> has no ability to gain power through experience. It can be repaired by a complex process requiring at least 1 day, 100gp per hit point, and a fully equipped magical laboratory. If destroyed, the <em>simulacrum</em> melts into nothingness.</p><p>The material component for this spell are materials worth 100gp per hit point.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "12 hrs",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "1f5e85bd7531001f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

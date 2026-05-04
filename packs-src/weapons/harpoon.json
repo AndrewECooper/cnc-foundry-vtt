@@ -1,0 +1,45 @@
+{
+  "_id": "e337bfb5d6d5061c",
+  "_key": "!items!e337bfb5d6d5061c",
+  "name": "Harpoon",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A heavy barbed throwing spear attached to a line, used for hunting whales or great fish.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "4",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d6",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "20 ft.",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "476a030cc61ba530",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

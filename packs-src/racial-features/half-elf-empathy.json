@@ -1,0 +1,24 @@
+{
+  "_id": "edc21ab94cb251a8",
+  "_key": "!items!edc21ab94cb251a8",
+  "name": "Empathy",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Elf</em></p><p>A half-elf's uncanny ability to empathize with others is reflected in a +2 bonus to all charisma checks. This ability can be combined with attribute check modification.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "ba192ca0f6db72fd",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

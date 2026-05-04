@@ -1,0 +1,33 @@
+{
+  "_id": "12725c0807a225e6",
+  "_key": "!items!12725c0807a225e6",
+  "name": "Leather Armor",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A jerkin and leggings of boiled and shaped leather, light and easy to wear.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "15",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 2,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "0ab8d9fdd6806b20",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

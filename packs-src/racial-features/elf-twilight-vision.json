@@ -1,0 +1,24 @@
+{
+  "_id": "c31f8fa80f70741e",
+  "_key": "!items!c31f8fa80f70741e",
+  "name": "Twilight Vision",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Elf</em></p><p>Even under starlight, moonlight or torchlight, elves have exceedingly good vision. They can distinguish color and detail under these conditions for up to one mile but only if they are outside.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "b6c7ac1b4ec1fe7e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

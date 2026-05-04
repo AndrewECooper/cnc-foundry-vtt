@@ -1,0 +1,68 @@
+{
+  "_id": "b3a20573972c023f",
+  "_key": "!items!b3a20573972c023f",
+  "name": "Reincarnate",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>With this spell, the caster brings a dead creature back to life but bound within another creature's body, provided that the death occurred no more than 1 week before the casting of the spell. The magic of the spell creates an entirely new, young adult body for the soul to inhabit from the natural elements at hand. This process requires 1 hour to complete.</p><p>The reincarnated subject recalls most of their former life and retains the intelligence, wisdom, charisma scores, and hit points from their former existence. Strength, dexterity and constitution scores depend on the new body. The attributes of animal forms are typical for each particular species, but the player should roll new physical attributes if reincarnated as a player character race. The ability to speak is not guaranteed.</p><p>The character retains his class, but it's possible for the new form to impede use of class abilities or even advancement in a class. Moreover, the character's level is reduced by 1; if the character was 1st level, then the new form's constitution is reduced by 1. A <em>reincarnation</em> followed by a subsequent <em>wish</em> spell can restore a reincarnated character to their original form.</p><p>The incarnation is determined by the following table or by the Castle Keeper.</p><table><thead><tr><th>d%</th><th>Incarnation</th><th>d%</th><th>Incarnation</th></tr></thead><tbody><tr><td>01-03</td><td>Badger</td><td>49-58</td><td>Halfling</td></tr><tr><td>04-09</td><td>Bear, black</td><td>59-78</td><td>Human</td></tr><tr><td>10-13</td><td>Bear, brown</td><td>79-80</td><td>Leopard</td></tr><tr><td>14-17</td><td>Boar</td><td>81-82</td><td>Owl</td></tr><tr><td>18-25</td><td>Centaur</td><td>83-86</td><td>Pixie</td></tr><tr><td>26-28</td><td>Dryad</td><td>87-90</td><td>Satyr</td></tr><tr><td>29-32</td><td>Eagle</td><td>91-96</td><td>Wolf</td></tr><tr><td>33-42</td><td>Elf</td><td>97-99</td><td>Wolverine</td></tr><tr><td>43-46</td><td>Gnome</td><td>100</td><td>CK choice</td></tr><tr><td>47-48</td><td>Hawk</td><td></td><td></td></tr></tbody></table>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

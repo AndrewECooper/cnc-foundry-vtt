@@ -1,0 +1,68 @@
+{
+  "_id": "9077a99ce92a6cba",
+  "_key": "!items!9077a99ce92a6cba",
+  "name": "Find The Path",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>With unerring instinct, the subject of this spell can locate the shortest, most direct physical route to a specified location on the same plane of existence, though this destination must be a location, not an object or creature. The character can even sense the correct direction that will eventually lead to the destination, indicating at the appropriate times the exact path to follow or physical actions to take, enabling the spell's target to escape labyrinths, underground tunnel networks and mazes, magical or mundane. This spell also instantly counters and dispels the <em>maze</em> spell. The material component of the spell is a Y-shaped stick.</p><p>The reverse of this spell makes the subject lost, no matter the place being sought. The subject wanders aimlessly, always straying off the path. The subject can be led by someone else, or could even use a map if able to normally do so.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "3",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "26e7108c37377015",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

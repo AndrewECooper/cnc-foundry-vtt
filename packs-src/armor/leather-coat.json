@@ -1,0 +1,33 @@
+{
+  "_id": "48ed877594f2738f",
+  "_key": "!items!48ed877594f2738f",
+  "name": "Leather Coat",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A heavy coat of soft leather offering minimal protection against light blows.</p>",
+    "price": {
+      "value": "7 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "10",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 1,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "0ab8d9fdd6806b20",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

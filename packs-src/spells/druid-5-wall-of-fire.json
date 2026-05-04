@@ -1,0 +1,68 @@
+{
+  "_id": "06f8ee8753e8b4a2",
+  "_key": "!items!06f8ee8753e8b4a2",
+  "name": "Wall Of Fire",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>With a single bit of burnt wood, a blazing curtain or ring of shimmering fire springs into existence at the caster's command. The wall can take two forms; either an immobile fiery wall, or a ring of fire surrounding the caster that moves with the caster. In both cases, the wall is 20 feet tall and only 1 foot thick. The fiery wall or curtain of fire measures up to 20 feet long per caster level (up to 100 ft long at 10th level). The ring of fire measures up to 10 feet wide per every two caster levels (up to 50 feet diameter at 10th level).</p><p>One side of the wall, selected by the caster, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those between 10 and 20 feet. The wall deals this damage when it appears, and for each round that a creature enters or remains in the area. In addition, the wall deals 2d6+1 point per caster level of fire damage to any creature entering or passing through the wall. The wall deals double damage to undead creatures. No saving throw is allowed for any of the heat or fire damage.</p><p>If the caster evokes the wall so that it appears where creatures are already present, each creature takes damage as if passing through the wall. Each such creature can avoid the wall by making a successful dexterity save. (If the creature ends up on the hot side of the wall, it takes 2d4 points of damage, as normal.)</p><p>The caster may maintain the wall indefinitely by concentrating on doing so, or may forgo continued concentration, in which case the wall will last 1 round per caster level.</p><p>The wall can be attacked and cancelled by cold spells and damage. If any 5 foot length of the wall takes 20 points of cold damage or more in 1 round, that length goes out.</p><p>The material component for this spell is a piece of burnt wood.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none (see below)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "91a80f29d8a51e6b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

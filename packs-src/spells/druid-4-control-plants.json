@@ -1,0 +1,68 @@
+{
+  "_id": "c931cbbb29dfa125",
+  "_key": "!items!c931cbbb29dfa125",
+  "name": "Control Plants",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to control and to converse, in very rudimentary terms, with all sorts of plants and plantlike creatures (including fungi, molds and plantlike monsters) in a 25 foot x 25 foot area. The caster automatically exercises limited control over normal plants, but plantlike creatures can negate the control effect with a charisma save. The spell does not enable plants to uproot themselves and move about, but it does allow them to move their branches, stems and leaves. The plants can duplicate the effect of an <em>entangle</em> spell, or free creatures trapped by that spell.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates (see below)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "fb7c1ae9c4084e2f",
+  "_key": "!items!fb7c1ae9c4084e2f",
+  "name": "Resistant To Arcane Magic",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Dwarf</em></p><p>As unshakeable as granite or iron, dwarves are particularly resistant to arcane magic. They receive a +3 bonus to all saving throws against arcane spells and spell-like effects.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "a115c27b4dc05b25",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

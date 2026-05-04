@@ -1,0 +1,68 @@
+{
+  "_id": "c83266a14a50cebe",
+  "_key": "!items!c83266a14a50cebe",
+  "name": "Command Plants",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes plants, fungi and plant creatures to do the character's bidding with a 50 foot diameter circle. There are three versions of the spell described below.</p><p><strong>Animate:</strong> The spell imbues trees or other large, inanimate vegetable life with mobility. The animated plants then attack whomever or whatever the character first designates. Animated plants gain humanlike senses. The plants' armor class, attacks and special abilities vary with their size and form, as described for animated objects. The character can animate two trees, four shrubs or eight vines. All plants to be affected must be within 50 feet of each other. The character can animate different types of plants if desired. The effect lasts one hour per caster level.</p><p><strong>Charm:</strong> Against plant and fungus creatures, command plants functions in the same manner as a <em>mass charm</em> spell. The character can command a number of plant creatures whose combined level or HD do not exceed three times the character's level. No two affected creatures can be more than 25 feet from each other, and each is allowed a charisma saving throw. The effect lasts 1 day per caster level.</p><p><strong>Enhanced Entangle:</strong> This version acts as an enhanced <em>entangle</em> spell, allowing all plants within the area of effect to entwine about any creatures within, or moving through the area, holding them fast. A successful dexterity save means that the creature manages to avoided becoming entangled for that particular round. An entangled creature suffers a -2 penalty to attack, a -4 penalty to effective dexterity, and also cannot move, making the casting of a spells with a somatic component impossible. Breaking free requires a successful strength check. Each round, the plants once again attempt to entangle all creatures who have avoided or escaped entanglement. Spell resistance does not keep creatures from being entangled. Plants can also free creatures trapped by an <em>entangle</em> spell. The effect lasts one hour per caster level.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (see below)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9ed968d1395613fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "f969c4ddf6355aa6",
+  "_key": "!items!f969c4ddf6355aa6",
+  "name": "Suggestion",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster influences one creature by suggesting a particular course of action (limited to a sentence or two). The suggestion must be worded in such a manner as to make the activity sound reasonable. A small piece of wool must also be rubbed between the fingers as the suggestion is being made for the spell to work. The victim must understand the language of the caster making the suggestion. Any attempt to suggest an act that would be harmful to the victim, or something severely at odds with its behavior, will allow the affected creature to automatically break the enchantment. The Castle Keeper is free to factor in penalties to the victim's saving throw for quite reasonable suggestions, as well as to give the target bonuses to its save for unreasonable or harmful suggestions.</p><p>The suggested course of activity can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do. The caster can instead specify conditions that will trigger a special activity during the duration. If the condition is not met before the spell expires, the activity is not performed.</p><p>The material component for this spell is a pinch of wool.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0989ad6c26833a69",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "f97e2f53db72a838",
+  "_key": "!items!f97e2f53db72a838",
+  "name": "Dreaming",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The dreaming is a powerful dweomer in which the illusionist places the victim into a comatose dream state and then enters the victim's dreams, and if the illusionist wishes, attack the victim in his dreams or seek out hidden knowledge and secrets. The illusionist must make a successful touch attack for the spell to take effect. The victim is not allowed a saving throw. If the touch attack is successful, the victim's body becomes comatose while the victim's mind wanders through the creature's dreams and nightmares. The victim does not believe they are in a dream, but instead believes they are awake and experiencing reality.</p><p>Once the illusionist has placed the victim in a comatose state, the illusionist has two options. The more powerful option requires the illusionist to keep touching the victim so as to successfully manipulate the magical dreams.</p><p>If the illusionist ceases to touch the victim, the victim will remain comatose and unable to act or interact with anyone in any way until the spell ends or until they are successfully awakened by another. The victim can only be awakened if struck with a force that causes damage. If so struck, the victim is allowed an intelligence saving throw to awaken and come out of the dreaming.</p><p>If the illusionist, however, has continued to touch the victim since the spell began, then the victim cannot be awakened. Instead, the illusionist convinces the victim that they have awakened into a dream and then they slip back into a comatose state.</p><p>While continuing to touch the victim, the illusionist also can assault the victim's mind with deadly attacks that cause damage or seek out information. The illusionist does so by casting spells into the dream. The spells are limited to those with verbal and/or somatic components only. If such a spell deals damage or death, the victim is allowed a normal saving throw to resist the spell's effect. If the spell seeks information from the victim, which typically will require both the spell and role playing the dream encounter, the victim suffers a -6 to any allowed saving throw.</p><p>The material component for this spell is the blood of a nightmare.</p><p># E</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd/lvl",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "Yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "363bae2fac999c09",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

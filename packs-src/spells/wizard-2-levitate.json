@@ -1,0 +1,68 @@
+{
+  "_id": "621b346cc5157d35",
+  "_key": "!items!621b346cc5157d35",
+  "name": "Levitate",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Levitate</em> allows the caster to float up or down through the air at a luxurious pace, moving no more than 20 feet up or down per round. Alternatively, the caster may levitate another creature or object weighing no more than 100 lb. per level, although an unwilling creature is entitled to a saving throw. Levitation does not enable horizontal movement, although a levitating character could clamber along the face of a cliff or push against a ceiling to move laterally (generally at half base speed). The caster needs a slender gold wire worth 5 gp to cast the spell.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "personal/50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

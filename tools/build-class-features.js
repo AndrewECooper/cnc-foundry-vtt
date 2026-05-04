@@ -62,6 +62,29 @@ function deterministicId(classSlug, featureSlug) {
   return hash.slice(0, 16);
 }
 
+function deterministicFolderId(classSlug) {
+  const hash = crypto
+    .createHash('sha1')
+    .update(`folder:class-features:${classSlug}`)
+    .digest('hex');
+  return hash.slice(0, 16);
+}
+
+function buildFolder(cls, folderId) {
+  return {
+    _id: folderId,
+    _key: `!folders!${folderId}`,
+    name: toTitleCase(cls.name),
+    type: 'Item',
+    description: '',
+    folder: null,
+    sorting: 'a',
+    color: null,
+    sort: 0,
+    flags: {},
+  };
+}
+
 function escapeHtml(s) {
   return s
     .replace(/&/g, '&amp;')
@@ -356,7 +379,7 @@ function parseClasses(md) {
   return classes;
 }
 
-function buildDocument(cls, feature) {
+function buildDocument(cls, feature, folderId) {
   const featureName = toTitleCase(feature.label);
   const featureSlug = slugify(feature.label);
   const id = deterministicId(cls.slug, featureSlug);
@@ -386,7 +409,7 @@ function buildDocument(cls, feature) {
         feature: { value: '' },
       },
       effects: [],
-      folder: null,
+      folder: folderId,
       flags: {},
       ownership: { default: 0 },
     },
@@ -412,11 +435,19 @@ async function main() {
   const counts = {};
   const ambiguousAll = [];
   let total = 0;
+  let folderCount = 0;
   const writtenIds = new Set();
   for (const cls of classes) {
     counts[cls.name] = 0;
+    const folderId = deterministicFolderId(cls.slug);
+    const folderDoc = buildFolder(cls, folderId);
+    await writeFile(
+      path.join(outDir, `__folder-${cls.slug}.json`),
+      JSON.stringify(folderDoc, null, 2) + '\n',
+    );
+    folderCount++;
     for (const feature of cls.features) {
-      const { fileSlug, doc } = buildDocument(cls, feature);
+      const { fileSlug, doc } = buildDocument(cls, feature, folderId);
       if (writtenIds.has(doc._id)) {
         ambiguousAll.push({
           class: cls.name,
@@ -439,7 +470,7 @@ async function main() {
     }
   }
 
-  console.log(`\nGenerated ${total} class feature documents.\n`);
+  console.log(`\nGenerated ${total} class feature documents and ${folderCount} folders.\n`);
   console.log('Per-class breakdown:');
   for (const cls of classes) {
     console.log(`  ${cls.name}: ${counts[cls.name]}`);

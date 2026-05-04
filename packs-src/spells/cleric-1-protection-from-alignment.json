@@ -1,0 +1,68 @@
+{
+  "_id": "e7f89b880968746d",
+  "_key": "!items!e7f89b880968746d",
+  "name": "Protection From Alignment",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a magical barrier around the subject at a distance of 1 foot offering protection against one axis of alignment: evil, good, chaos, or law. Only one protection spell can be in effect at a time, even if each would protect against a different alignment. The barrier moves with the subject and grants a +2 bonus to AC and saving throws against creatures of the alignment chosen. The spell prevents bodily contact by all summoned or conjured creatures of any alignment: the melee attacks of such creatures fail and the creatures recoil from the protective magic. The protection against contact by summoned or conjured creatures ends if the warded creature makes an attack against, or tries to force the barrier against, the blocked creature. Spell resistance can allow a summoned or conjured creature to overcome this protection and touch the warded creature.</p><p>The spell can also block any attempt to possess the warded creature or to exercise mental control over the creature by creatures of any alignment. The protection does not prevent casting a spell that gains mental control, but it prevents the caster of such a spell from mentally commanding the protected creature. If the protection ends before the mental control does, the caster would then be able to mentally command the controlled creature. Likewise, the barrier keeps out a possessing life force but does not expel one if it is in place before the spell is cast.</p><p>The material component for this spell is a lodestone.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "3 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no (see below)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "20bf402ac5266eb7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

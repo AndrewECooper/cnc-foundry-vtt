@@ -1,0 +1,68 @@
+{
+  "_id": "27d13e4840e31bae",
+  "_key": "!items!27d13e4840e31bae",
+  "name": "Warp Wood",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes wood to bend and warp, permanently destroying its form and strength. One cubic foot of material can be affected by this spell. Boards or planks can be affected. Doors can be twisted so that they come off their hinges. Warped weapons are useless. Magic weapons and wood are not affected. The reverse of this spell, <em>straighten wood</em>, reforms to original shape, straightness and strength any wood that has been warped by this spell or by other means.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "n/a",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "no",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (object)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "79e5de598b9405d7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

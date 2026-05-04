@@ -1,0 +1,68 @@
+{
+  "_id": "efbbc12f146e8394",
+  "_key": "!items!efbbc12f146e8394",
+  "name": "Charm Person",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This charm makes a medium-size or smaller humanoid regard the caster as a trusted friend and ally. If the target is being threatened or attacked by the caster or the caster's allies, however, it receives a +5 bonus to its saving throw. The spell does not enable the character to control the charmed creature as if it were an automaton, but the subject does perceive the caster's words and actions in the most favorable way. The caster can try to give the subject orders, but the caster must succeed at a charisma check to convince it to do anything it wouldn't ordinarily do.</p><p>Any act by the caster or the caster's apparent allies that threatens the charmed creature breaks the spell. Note also that the caster must speak the creature's language to communicate or give commands.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "4145d6bba5ca136b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

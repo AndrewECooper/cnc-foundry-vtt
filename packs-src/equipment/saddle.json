@@ -1,0 +1,32 @@
+{
+  "_id": "6a4ad15497bb2172",
+  "_key": "!items!6a4ad15497bb2172",
+  "name": "Saddle",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A standard riding saddle with stirrups and girth straps.</p>",
+    "price": {
+      "value": "20 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "30",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5bb847eb456821b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "177b58c7c271bca1",
+  "_key": "!items!177b58c7c271bca1",
+  "name": "Animate Dead",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell turns the bones or bodies of dead creatures in a 25 x 25 feet area into undead skeletons or zombies that follow the caster's spoken commands. The undead can follow the caster, or can remain in an area and attack any creature or specific type of creature entering the area. The undead remain animated until they are destroyed. Destroyed undead can't be animated again. Regardless of the type of undead, the caster can't create more HD of undead than the caster has levels in any single casting of the spell.</p><p>The undead remain under the caster's control indefinitely. No matter how many times the caster uses this spell, however, the character can only control 2 HD worth of undead creatures per caster level. If the caster exceeds this number, all the newly created creatures fall under the caster's control, and any excess undead from previous castings become uncontrolled (the character chooses which creatures are released). If the caster is a cleric, any undead the character might command by virtue of the caster's power to command or rebuke undead, do not count toward the spell's limits.</p><p>A skeleton can be created only from a mostly intact corpse or skeleton. The corpse must have bones. If a skeleton is made from a corpse, the flesh falls off the bones. A zombie, however, can be created only from a mostly intact corpse. The statistics for skeletons and zombies are detailed in <em>Monsters &amp; Treasure</em>; undead created with this spell do not retain any abilities the creature may have had while alive.</p><p>The material component for this spell is a bag of bones.</p><p><em>Preserve Dead:</em> This reverse version may only be cast by divine spellcasters, and has two effects. First, the caster preserves the remains of the target corpses so that they do not decay, for one day per level of the caster. Doing so extends the time limit on raising that creature from the dead. The spell works on severed body parts and the like. Second, the spell permanently prevents the target corpses from being animated by an <em>animate dead</em> spell. If a target corpse is preserved, and then raised from the dead or resurrected, the spell ends.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "Permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9a26512921b53303",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

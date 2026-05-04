@@ -1,0 +1,68 @@
+{
+  "_id": "7b2c6d697a2d9297",
+  "_key": "!items!7b2c6d697a2d9297",
+  "name": "Mage Hand",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster points a finger at an object of 5 pounds or less, and can then lift and move it at will from a distance. The caster can move the object up to 15 feet in any direction in a round, though the spell ends if the distance between the caster and the object ever exceeds the spell's range.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "concentration",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "25 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "bb05041786104153",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

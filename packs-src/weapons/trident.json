@@ -1,0 +1,45 @@
+{
+  "_id": "1e47452a3c00939a",
+  "_key": "!items!1e47452a3c00939a",
+  "name": "Trident",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A three-pronged spear that can be wielded in melee or hurled at close range.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d8",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

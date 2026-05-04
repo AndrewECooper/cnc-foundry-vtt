@@ -21,7 +21,7 @@
             <a class="rollable" data-roll-type="item">
               <img class="cc-item-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
             </a>
-            <span>✦ <em>{{item.name}}</em></span>
+            <a class="cc-item-name-toggle"><span>✦ <em>{{item.name}}</em></span></a>
           </div>
         </td>
         <td>
@@ -41,6 +41,14 @@
             <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
             <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
           </div>
+        </td>
+      </tr>
+      <tr class="cc-item-detail" data-item-id="{{item._id}}">
+        <td colspan="3">
+          <div class="cc-item-detail-stats">
+            {{#if item.system.formula.value}}<span><strong>{{localize 'TLGCC.Formula'}}:</strong> {{item.system.formula.value}}</span>{{/if}}
+          </div>
+          <div class="cc-item-detail-desc">{{{item.enrichedDescription}}}</div>
         </td>
       </tr>
       {{/each}}

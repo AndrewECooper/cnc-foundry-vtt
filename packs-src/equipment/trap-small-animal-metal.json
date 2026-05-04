@@ -1,0 +1,32 @@
+{
+  "_id": "8c37109d08847dcc",
+  "_key": "!items!8c37109d08847dcc",
+  "name": "Trap, Small animal, metal",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small steel jaw trap sized for foxes and rabbits.</p>",
+    "price": {
+      "value": "7 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

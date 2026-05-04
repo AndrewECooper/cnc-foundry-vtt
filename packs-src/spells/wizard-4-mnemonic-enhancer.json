@@ -1,0 +1,68 @@
+{
+  "_id": "24d893d2760dfb5e",
+  "_key": "!items!24d893d2760dfb5e",
+  "name": "Mnemonic Enhancer",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster prepares or retains additional spells. The additional spell or spells prepared or retained fade after 24 hours (if not cast). There are two versions of the spell.</p><p><strong>Prepare:</strong> The caster prepares up to three additional levels of spells. A 0 level spell counts as one-half level for these purposes. The character prepares and casts these spells normally.</p><p><strong>Retain:</strong> The caster retains any spell up to 3rd level that the caster had cast up to 1 day before casting the <em>mnemonic enhancer</em>. This version restores the previously cast spell to the caster's mind.</p><p>The material components for this spell are a 50gp item that has a flat surface, such as a mirror, and a special ink worth 50gp.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

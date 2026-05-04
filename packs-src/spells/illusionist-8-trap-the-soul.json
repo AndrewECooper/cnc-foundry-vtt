@@ -1,0 +1,68 @@
+{
+  "_id": "7578ac5d4f0d5e4d",
+  "_key": "!items!7578ac5d4f0d5e4d",
+  "name": "Trap The Soul",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell forces, or convinces, a creature's material body and life force to enter into an extra-dimensional space within a gem, worth at least 1000gp per level or HD of the creature trapped. The gem holds the trapped entity indefinitely or until the gem is broken and the life force is released, which allows the material body to reform. If the trapped creature is a powerful creature from another plane, it can be required to perform a service immediately upon being freed. Otherwise, the creature can go free once the gem imprisoning it is broken. The spell can be triggered in one of two ways.</p><p><strong>Spell Completion:</strong> The spell can be completed by speaking its final word as if the caster were casting a regular spell at the subject. This allows SR (if any) and an intelligence save to avoid the effect. If the creature's true name is spoken as well, any SR is ignored but the save CL increases by 2. If the save or SR is successful, the gem shatters.</p><p><strong>Trigger Object:</strong> The second method tricks the subject into accepting a trigger object inscribed with the final spell word, automatically placing the creature's soul in the trap. To use this method, both the creature's true name and the trigger word must be inscribed on the trigger object when the gem is enchanted. As soon as the subject picks up or accepts the trigger object, its life force is automatically transferred to the gem without the benefit of SR or a save.</p><p>The material component for this spell is a 1000gp gem.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 or see below",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "26e7108c37377015",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

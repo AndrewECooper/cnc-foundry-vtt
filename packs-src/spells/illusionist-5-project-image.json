@@ -1,0 +1,68 @@
+{
+  "_id": "b69de769e53607c1",
+  "_key": "!items!b69de769e53607c1",
+  "name": "Project Image",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Upon casting this spell, the caster weaves a shadow duplicate of himself. The image is intangible, but looks, sounds and smells like the caster. The shadow mimics the caster's actions (including speech) unless the caster concentrates on making the duplicate act differently. The caster can use the duplicate's senses, and during the caster's turn in a round, the caster can switch from seeing through its eyes to seeing normally, or back again. Any spell the caster casts originates from the shadow instead of from the caster. The caster must maintain a line of sight to the shadow at all times. If the caster's line of sight is obstructed, the spell ends.</p><p>The material component for this spell is a doll of the caster.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0cb2a872a32f0b65",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

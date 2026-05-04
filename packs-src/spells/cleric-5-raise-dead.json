@@ -1,0 +1,68 @@
+{
+  "_id": "ed4897316fb12a99",
+  "_key": "!items!ed4897316fb12a99",
+  "name": "Raise Dead",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell restores life to a deceased human or humanoid. This includes all of the player character races, monstrous humanoid creatures like orcs or giants, or creatures that are partially human, such as centaurs or sphinxes. The spell cannot raise creatures who have been dead longer than 1 day per caster level. The subject loses 1 point of constitution permanently when raised. If constitution is reduced to zero by this loss, the creature is permanently dead and cannot be brought back to life.</p><p>Creatures that are raised from the dead are considerably weakened by the process, and require 12 hours of complete rest for each day the creature was dead. During this time the creature is considered to have 1 HP and no mortal wounds. Normal poison and normal disease are cured in the process of raising the subject, but magical or extraplanar diseases and curses are not undone.</p><p>Missing appendages and parts are not regenerated upon return from the dead. Raise dead will not work on creatures that died from old age.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e999624dd21ebc1f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

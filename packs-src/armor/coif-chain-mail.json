@@ -1,0 +1,33 @@
+{
+  "_id": "e8561e819eefe252",
+  "_key": "!items!e8561e819eefe252",
+  "name": "Coif, Chain Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A hood of riveted chain links worn over a padded cap, protecting the head, neck, and shoulders.</p>",
+    "price": {
+      "value": "15 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 4,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

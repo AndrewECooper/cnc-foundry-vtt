@@ -1,0 +1,68 @@
+{
+  "_id": "07d66ee75054f75b",
+  "_key": "!items!07d66ee75054f75b",
+  "name": "Power Word Blind",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This one-word spell unleashes a torrent of power that blinds one or more creatures within the area of effect to a maximum of 100 HP. It affects creatures with the lowest hit point totals first, one at a time until the next target would put the spell over the limit of 100. Creatures with over 100 hit points are not affected. The duration of the spell depends on the total hit points of affected creatures. A creature with up to 50 hit points is blinded for 1d4 minutes, while a creature with 51 to 100 hit points is blinded for 1d4+1 rounds. The area of effect for this spell is 25 x 25 feet.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "7b2db668931d83f5",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

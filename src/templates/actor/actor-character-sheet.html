@@ -25,45 +25,49 @@
         </div>
         <div class="cc-identity">
           <input class="cc-char-name" name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'TLGCC.Name'}}"/>
-          <div class="cc-stamp-row">
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.HitPoints'}}</span>
-              <div class="cc-stamp-inputs">
-                <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number"/>
-                <span>/</span>
-                <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number"/>
+          <div class="cc-stamp-rows">
+            <div class="cc-stamp-row cc-stamp-row--quad">
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.Level'}}</span>
+                <input type="text" name="system.level.value" value="{{system.level.value}}" data-dtype="Number"/>
+              </div>
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.Race'}}</span>
+                <input type="text" name="system.race.value" value="{{system.race.value}}" data-dtype="String"/>
+              </div>
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.Class'}}</span>
+                <input type="text" name="system.class.value" value="{{system.class.value}}" data-dtype="String"/>
+              </div>
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.ExperiencePointsAbbr'}} / {{localize 'TLGCC.NextLevel'}}</span>
+                <div class="cc-stamp-inputs">
+                  <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="Number"/>
+                  <span>/</span>
+                  <input type="text" name="system.xp.next" value="{{system.xp.next}}" data-dtype="Number"/>
+                </div>
               </div>
             </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.Level'}}</span>
-              <input type="text" name="system.level.value" value="{{system.level.value}}" data-dtype="Number"/>
-            </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.Class'}}</span>
-              <input type="text" name="system.class.value" value="{{system.class.value}}" data-dtype="String"/>
-            </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.Race'}}</span>
-              <input type="text" name="system.race.value" value="{{system.race.value}}" data-dtype="String"/>
-            </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.Deity'}}</span>
-              <input type="text" name="system.deity.value" value="{{system.deity.value}}" data-dtype="String"/>
-            </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.Title'}}</span>
-              <input type="text" name="system.title.value" value="{{system.title.value}}" data-dtype="String"/>
-            </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.Alignment'}}</span>
-              <input type="text" name="system.alignment.value" value="{{system.alignment.value}}" data-dtype="String"/>
-            </div>
-            <div class="cc-stamp-field">
-              <span class="cc-stamp-label">{{localize 'TLGCC.ExperiencePointsAbbr'}} / {{localize 'TLGCC.NextLevel'}}</span>
-              <div class="cc-stamp-inputs">
-                <input type="text" name="system.xp.value" value="{{system.xp.value}}" data-dtype="Number"/>
-                <span>/</span>
-                <input type="text" name="system.xp.next" value="{{system.xp.next}}" data-dtype="Number"/>
+            <div class="cc-stamp-row cc-stamp-row--quad">
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.HitPoints'}}</span>
+                <div class="cc-stamp-inputs">
+                  <input type="text" name="system.hitPoints.value" value="{{system.hitPoints.value}}" data-dtype="Number"/>
+                  <span>/</span>
+                  <input type="text" name="system.hitPoints.max" value="{{system.hitPoints.max}}" data-dtype="Number"/>
+                </div>
+              </div>
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.Deity'}}</span>
+                <input type="text" name="system.deity.value" value="{{system.deity.value}}" data-dtype="String"/>
+              </div>
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.Title'}}</span>
+                <input type="text" name="system.title.value" value="{{system.title.value}}" data-dtype="String"/>
+              </div>
+              <div class="cc-stamp-field">
+                <span class="cc-stamp-label">{{localize 'TLGCC.Alignment'}}</span>
+                <input type="text" name="system.alignment.value" value="{{system.alignment.value}}" data-dtype="String"/>
               </div>
             </div>
           </div>

@@ -1,0 +1,68 @@
+{
+  "_id": "93dae207f440d6cf",
+  "_key": "!items!93dae207f440d6cf",
+  "name": "Sending",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This dweomer allows the caster to contact a single creature with whom the caster is familiar. The message may be up to 25 words long and can even be sent to those with animal intelligence and the creature will understand the message. The message, however, does not create any compulsion to perform any act, and the creature's reaction depends on its relation to the caster, its intelligence, alignment, etc. If the target and the caster are not on the same plane of existence, the caster must make a successful charisma check, or the sending will not be transmitted.</p><p>The material component for this spell is a piece of parchment.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "unlimited",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "648ff0fd4c816377",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

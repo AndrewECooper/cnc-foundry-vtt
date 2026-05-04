@@ -1,0 +1,32 @@
+{
+  "_id": "e6b454d2827f38d4",
+  "_key": "!items!e6b454d2827f38d4",
+  "name": "Parchment (10 sheets)",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Ten sheets of treated animal-skin parchment for writing.</p>",
+    "price": {
+      "value": "5 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f8912405b017fa54",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

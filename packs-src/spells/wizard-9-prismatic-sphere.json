@@ -1,0 +1,68 @@
+{
+  "_id": "41eae838ff0fa5be",
+  "_key": "!items!41eae838ff0fa5be",
+  "name": "Prismatic Sphere",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This powerful spell conjures up an immobile, opaque globe of shimmering, multicolored light that surrounds and protects the caster from all forms of attack. The sphere flashes in seven colors, each of which has a distinct power and purpose. The caster can pass in and out of the sphere without harm. Typically, only the upper hemisphere of the globe is seen because the caster is at the center of the sphere, so the lower half is beneath ground level.</p><p>The sphere blocks any attempt to project something through it, including spells. Other creatures, who may attempt to attack the caster through the sphere or pass through it, suffer the effects of each color, one at a time.</p><p>Any creature with fewer than 8 HD within 20 feet of the sphere that gazes directly upon it is blinded for 2d4 minutes by the colors. The accompanying table shows the seven colors of the sphere, the order in which they appear, their effects on creatures trying to attack the caster or pass through the sphere and the magic needed to negate each color.</p><p>The sphere can be destroyed, color by color, in consecutive order, by various magical effects; however, the first must be brought down before the second can be affected, and so on. A <em>rod of cancellation</em> or a <em>disjunction</em> spell destroys a <em>prismatic sphere</em>, but <em>dispel magic</em> can only work against the violet globe. Spell resistance is effective against a <em>prismatic sphere</em>, but the check must be repeated for each color present.</p><p>The area of effect for this spell is a 20-foot diameter sphere.</p><table><thead><tr><th>Order</th><th>Color</th><th>Effects of Globe</th><th>Negated by</th></tr></thead><tbody><tr><td>1st</td><td>Red</td><td>Stops nonmagical ranged weapons; causes 10 HP damage</td><td>Cone of Cold</td></tr><tr><td>2nd</td><td>Orange</td><td>Stops magical ranged weapons; causes 20 HP damage</td><td>Gust of Wind</td></tr><tr><td>3rd</td><td>Yellow</td><td>Stops poisons, gasses, and petrification; causes 40 HP damage</td><td>Disintegrate</td></tr><tr><td>4th</td><td>Green</td><td>Stops breath weapons; Con save vs. Poison or die</td><td>Passwall</td></tr><tr><td>5th</td><td>Blue</td><td>Stops divination and mental attacks; Wis save or turn to stone</td><td>Magic Missile</td></tr><tr><td>6th</td><td>Indigo</td><td>Stops all spells; Wis save or become insane</td><td>Continual Flame</td></tr><tr><td>7th</td><td>Violet</td><td>Energy field; Int save or banished to another plane</td><td>Dispel Magic</td></tr></tbody></table>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

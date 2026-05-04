@@ -1,0 +1,68 @@
+{
+  "_id": "6b75d6f79dc4ea42",
+  "_key": "!items!6b75d6f79dc4ea42",
+  "name": "Sunburst",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By use of this spell, the caster causes a brilliant sunburst of light to explode soundlessly at a predetermined point. Any creatures within the burst are blinded and take 3d6 hit points of damage. Those making a successful dexterity saving throw avoid blindness and take half the hit point damage. Creatures to whom sunlight is unusual or harmful take double damage. Undead who fail a dexterity save take an additional 1d6 damage per caster level and those who are specifically destroyed or harmed by sunlight (such as vampires) are automatically destroyed.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9ed968d1395613fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "2532d4adf9102299",
+  "_key": "!items!2532d4adf9102299",
+  "name": "Spot Hidden Doors",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Elf</em></p><p><em>Attribute Check: Wisdom</em></p><p>Elvish vision and keen senses allow them to spot secret, hidden and concealed doorways. An elf merely passing within 5 feet of a secret, hidden or concealed doorway is entitled to a wisdom check to spot the door, as if the elf were actively looking for it. When an elf actively searches for such doorways, the bonus to the wisdom check is +2.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "b6c7ac1b4ec1fe7e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

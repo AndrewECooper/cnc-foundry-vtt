@@ -1,0 +1,68 @@
+{
+  "_id": "b991a582a46037cb",
+  "_key": "!items!b991a582a46037cb",
+  "name": "Discern Location",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>With this spell, the caster learns the exact location of a person or object. <em>Discern location</em> circumvents normal means of protection from scrying or location. The spell reveals the exact name and location (community, county, country, continent and plane) where the subject is to be found. To find a creature with the spell, the character must have seen the creature or have some item that once belonged to it. To find an object, the character must have seen or touched the object at least once. The reverse of this spell, <em>hide location</em>, obscures the location of a person or object from detection by spell, crystal ball, or other means of scrying.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "unlimited",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e5708363043138ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

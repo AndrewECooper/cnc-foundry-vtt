@@ -1,0 +1,33 @@
+{
+  "_id": "798fa9211dda4dff",
+  "_key": "!items!798fa9211dda4dff",
+  "name": "Casquetel",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>An open-faced helmet with a brim and cheek pieces, popular among footmen.</p>",
+    "price": {
+      "value": "10 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 2,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

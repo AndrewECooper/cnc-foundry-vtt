@@ -1,0 +1,32 @@
+{
+  "_id": "92ab627d8d8abb88",
+  "_key": "!items!92ab627d8d8abb88",
+  "name": "Case, Map or Scroll",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A cylindrical leather or metal case for carrying maps and scrolls without folding.</p>",
+    "price": {
+      "value": "1 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0.5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "92b9ae681ab9538b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

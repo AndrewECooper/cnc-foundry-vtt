@@ -1,0 +1,68 @@
+{
+  "_id": "3fbe491843d7496b",
+  "_key": "!items!3fbe491843d7496b",
+  "name": "Power Word Stun",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This one-word spell stuns one creature of the caster's choice, regardless of whether the creature can hear the word or not. A creature with 40 or fewer hit points remains stunned for 4d4 rounds; one with 41 to 80 hit points is stunned for 2d4 rounds; one with 81 to 120 hit points is stunned for 1d4 rounds; and a creature with 121 hit points or more is not affected. A stunned creature cannot act for the duration of the spell. The area of effect for this spell is 25 x 25 feet.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "1f5e85bd7531001f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

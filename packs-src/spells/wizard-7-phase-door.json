@@ -1,0 +1,68 @@
+{
+  "_id": "5182204dc0d67db4",
+  "_key": "!items!5182204dc0d67db4",
+  "name": "Phase Door",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The spell creates an ethereal passage and space through a wall that only the caster can see and use. The caster disappears when entering the <em>phase door</em> and appears again upon exiting. The caster can enter the passage once for every two levels of experience, and it is permanent until the caster has done so. The caster may take additional creatures through the door, but each one counts as one use of the spell.</p><p>The door does not allow light, sound or spell effects through it, nor can the caster see through it without exiting or entering it. <em>Gems of true seeing</em> and similar magic reveal the presence of a <em>phase door</em> but do not allow its use. A <em>phase door</em> is subject to <em>dispel magic</em>.</p><p>Anyone inside a <em>phase door</em> when it is dispelled is killed instantly. The area of effect for this spell is a 5 by 8 by 10 feet.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "762c10d5c406fb67",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "7badc29207667d82",
+  "_key": "!items!7badc29207667d82",
+  "name": "Anti-Life Shell",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a mobile, 20 ft. diameter, sphere of energy around the caster that prevents the entrance of animals, aberrations, beasts, magical beasts, dragons, fey, giants, humanoids, oozes, plants, shapechangers and vermin; but not constructs, elementals, outsiders or undead. The shell is transparent, but it is not invisible. It moves with the caster. This spell may be used only defensively, not aggressively; an attempt to force the shell against a creature normally kept at bay causes the shell to collapse.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "person",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "cbde643b5df067d3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

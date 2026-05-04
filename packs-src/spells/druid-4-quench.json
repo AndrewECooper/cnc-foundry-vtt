@@ -1,0 +1,68 @@
+{
+  "_id": "2b2c1b3335438025",
+  "_key": "!items!2b2c1b3335438025",
+  "name": "Quench",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Quench</em> extinguishes all nonmagical fires in a 50 foot x 50 foot area or one magic item. The spell also dispels fire-based spells in the area. In the latter case though, the caster must make an intelligence check with a challenge level equal to that of the level of the caster of the fire-based spell. Fire-based creatures within the spell's area take 1d4 points of damage per caster level.</p><p>Alternatively, the caster can target the spell on a single magic item that creates or controls flame. The item temporarily loses all its fire-based magical abilities unless it succeeds at an item saving throw. Artifacts are immune to this effect.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a126174e31a8dd8b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

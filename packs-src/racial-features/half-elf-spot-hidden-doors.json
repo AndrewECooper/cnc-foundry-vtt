@@ -1,0 +1,24 @@
+{
+  "_id": "6384ce68611c842c",
+  "_key": "!items!6384ce68611c842c",
+  "name": "Spot Hidden Doors",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Elf</em></p><p><em>Attribute Check: Wisdom</em></p><p>This ability allows half-elves to spot secret, hidden and concealed doorways. A half-elf passing within 5 feet of such a doorway is entitled to a wisdom check. Success means that the half-elf notices the door as if actively searching for it. When a half-elf does actively search for such doorways, the bonus to the wisdom check is +1.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "ba192ca0f6db72fd",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "7ba5958744be8bf8",
+  "_key": "!items!7ba5958744be8bf8",
+  "name": "Magic Aura",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster makes an item's aura appear magical, and thus register to detection spells (and similar spells). <em>Identify</em> or a similar detection reveals the aura as false. The spell can affect 5 pounds per level of the caster.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "Permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (object)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "548de8614b61cf85",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

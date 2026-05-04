@@ -1,0 +1,32 @@
+{
+  "_id": "6f2cc2f87fdd523c",
+  "_key": "!items!6f2cc2f87fdd523c",
+  "name": "Shovel",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A standard digging shovel with a wooden haft and iron blade.</p>",
+    "price": {
+      "value": "2 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

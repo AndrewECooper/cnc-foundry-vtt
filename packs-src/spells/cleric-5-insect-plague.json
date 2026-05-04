@@ -1,0 +1,68 @@
+{
+  "_id": "0d3cbd9f658e60d2",
+  "_key": "!items!0d3cbd9f658e60d2",
+  "name": "Insect Plague",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A horde of insects swarm forth from the spell's point of origin, in a thick cloud 180 feet in diameter. The insects limit vision to 10 feet, and spellcasting within the cloud is impossible. Creatures inside the <em>insect plague</em>, regardless of AC, sustain 1 point of damage at the end of each round they remain within it. All creatures with 2 or fewer HD are driven from the cloud at their fastest possible speed in a random direction, and flee until they are at least 100 feet away from the insects. Creatures with 3 to 5 HD flee as well, unless they succeed at a charisma saving throw.</p><p>The horde of insects does not move from the targeted area of effect. Heavy smoke or fire drives the insects away, but a single torch is ineffective against the horde. Lightning, cold, and ice are ineffective, but a strong wind (21+ mph), that covers the entire plague area, disperses the insects and ends the spell.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e999624dd21ebc1f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

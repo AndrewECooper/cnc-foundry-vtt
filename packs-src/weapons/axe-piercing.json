@@ -1,0 +1,45 @@
+{
+  "_id": "57681e5c93cccbac",
+  "_key": "!items!57681e5c93cccbac",
+  "name": "Axe, Piercing",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A war axe whose head ends in a spiked back, designed to punch through armor.</p>",
+    "price": {
+      "value": "17 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "7",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d8+1",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "Melee",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "257d5282c4f5dc59",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

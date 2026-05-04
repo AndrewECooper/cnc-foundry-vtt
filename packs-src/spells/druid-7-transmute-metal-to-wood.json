@@ -1,0 +1,68 @@
+{
+  "_id": "4b376ea785b453db",
+  "_key": "!items!4b376ea785b453db",
+  "name": "Transmute Metal To Wood",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell enables the caster to change one metal object to wood, including weapons, armor and other metal objects carried by creatures. Magic objects made of metal effectively have SR16 plus their bonus against this spell. Artifacts cannot be transmuted. Weapons converted from metal to wood suffer a -2 penalty to attack and damage rolls. Armor converted from metal to wood loses 2 points of AC. Weapons changed by this spell splinter and break on any natural attack roll of 5 or lower, and armor changed by this spell loses an additional point of AC bonus every time it is struck by a natural attack roll of 15 or higher. Only a <em>limited wish</em> (temporary), <em>wish</em>, or similar magic can return an object back to its original state.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "48aabb192190afe3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

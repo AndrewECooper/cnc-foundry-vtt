@@ -1,0 +1,68 @@
+{
+  "_id": "05b77d37b0bfd45d",
+  "_key": "!items!05b77d37b0bfd45d",
+  "name": "Solid Fog",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell summons a barrier of swirling fog that acts like a <em>fog cloud</em> spell, but only a very strong wind may affect it and any creature attempting to move through it can only move at 1/10th the normal movement rate. Furthermore, all attacks within the fog suffer a -2 penalty to hit and damage. Any fire-based attack that does more than 12 hit points of damage will burn the fog barrier away in a single round. This spell affects a 25 foot diameter sphere.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "abdecddf2e76ae4e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "b0684d4b8c185dcf",
+  "_key": "!items!b0684d4b8c185dcf",
+  "name": "First Aid",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>When the caster lays hands upon a living creature, this minor healing spell magically bandages any wound on the creature's body, preventing further loss of hit points from bleeding. It prevents infection, but cures no damage. No saving throw is needed when the spell is cast by a cleric or druid.</p><p>The illusionist version of the spell acts in the same manner with one important exception. The recipient of the spell must make an intelligence saving throw. If the creature fails the saving throw, the spell acts normally. If the creature makes the saving throw, the spell fails as the creature realizes that the spell is an illusion.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a56bdbfdde36c793",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

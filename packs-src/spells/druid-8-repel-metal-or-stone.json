@@ -1,0 +1,68 @@
+{
+  "_id": "d79f4ec3ac159bd7",
+  "_key": "!items!d79f4ec3ac159bd7",
+  "name": "Repel Metal Or Stone",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates waves of invisible and intangible energy that roll forth from the caster in a path 150 feet long x 120 feet wide x 10 feet high. The energy pushes away all metal or stone objects in their path to the limit of the spell's range. Fixed metal or stone objects larger than 3 inches in diameter, and loose objects weighing more than 500 pounds, are not affected. Anything else, including small boulders and creatures in metal armor, moves back. Fixed objects 3 inches in diameter or smaller bend or break, and the pieces tumble along the ground with the wave of energy. Objects affected by the spell are repelled at the rate of 40 feet per round. Objects such as metal armor, swords, etc. are pushed back, dragging their bearers with them. Even magic items with metal components are repelled. The waves of energy continue to sweep down the set path for the spell's duration. After casting the spell, the path is set, and the caster can then engage in other activities without affecting the spell's progress. An anti-magic field blocks the effects of this spell.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9ed968d1395613fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

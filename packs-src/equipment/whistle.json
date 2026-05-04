@@ -1,0 +1,32 @@
+{
+  "_id": "98b21eeff3b98b9f",
+  "_key": "!items!98b21eeff3b98b9f",
+  "name": "Whistle",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A small wooden or bone whistle for signaling.</p>",
+    "price": {
+      "value": "5 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "0",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "0",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "f058ddb571c33d82",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

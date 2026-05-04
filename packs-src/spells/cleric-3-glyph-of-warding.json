@@ -1,0 +1,68 @@
+{
+  "_id": "339b98f39a477422",
+  "_key": "!items!339b98f39a477422",
+  "name": "Glyph Of Warding",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>To cast a <em>glyph of warding</em>, the caster inscribes an area or object with an invisible inscription that harms those who enter, pass, open the warded area or object, or otherwise break the conditions of the ward set by the caster. It can encompass an area up to 25 feet x 25 feet. An ounce of oil (1sp) mixed with incense (5sp) and a powdered gemstone of color appropriate to the caster's deity (200gp) is needed to activate the spell. Glyphs can be set to permit or ward against a specific individual or individuals, or even entire species or groups of species. They can be set to admit only characters of certain faiths or alignments, or carrying certain items, wearing certain garments, colors, or signs or uttering certain passwords. Any creature violating the warded area is subject to its magic.</p><p>Glyphs respond to invisible creatures normally, but can be fooled by <em>polymorph</em> and <em>non detection</em> spells, and they are not triggered by those who travel past them ethereally. Multiple glyphs cannot be cast on the same area or object, although more than one glyphed object may be placed in close proximity. A glyph can be made to conform to any shape, up to the limitations of the spell's area.</p><p><em>Read magic</em> permits a character to see a glyph, and a successful intelligence check allows the same character to identify the glyph. Identifying the glyph does not discharge it and allows the character to know the basic nature of the glyph. Glyphs are affected by <em>dispel magic</em>. Depending on the version selected, a glyph either blasts the intruder or activates a spell:</p><p><strong>Blast Glyph:</strong> This glyph causes 1d4 damage per caster level to the intruder and all within 5 feet of the intruder. A successful Wis save reduces damage by one-half. Damage may be either from acid, cold, electricity, fire, or sonic, as determined by caster. Because the damage is entirely divine, however, the type of damaging agent has no secondary effect.</p><p><strong>Spell Glyph:</strong> Stores any single spell of up to 3rd level that the caster knows. The spell must be cast as part of the process of inscribing the glyph. When it is violated, the spell operates as if the caster cast it at that time, allowing normal saves as per the spell.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "until discharge",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (to effect)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9a26512921b53303",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

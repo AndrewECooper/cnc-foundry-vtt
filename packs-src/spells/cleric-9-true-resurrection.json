@@ -1,0 +1,68 @@
+{
+  "_id": "bbf9688d8e6197bc",
+  "_key": "!items!bbf9688d8e6197bc",
+  "name": "True Resurrection",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster restores life to a deceased creature. This spell can bring back creatures whose bodies have been wholly destroyed, provided the caster unambiguously identifies the deceased in some fashion, such as reciting the time and place of birth or death of the deceased. The resurrected creature is immediately restored to full hit points, vigor and health, with no loss of prepared spells or loss of a constitution point. The spell can revive someone killed by a death effect or turned into an undead creature and then destroyed. Constructs, elementals, outsiders and undead creatures can't be raised. The spell cannot bring back a creature that has died of old age.</p><p>The material component is a gem worth at least 5000gp.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "3 hrs.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3d11a7f6d524894",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

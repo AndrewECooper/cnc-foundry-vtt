@@ -1,0 +1,68 @@
+{
+  "_id": "887353652aa2b075",
+  "_key": "!items!887353652aa2b075",
+  "name": "Blink",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell rapidly cycles the caster in and out of existence (into the ethereal plane). Blinking has several effects. Attacks against the caster are made at -10. If the attacker, however, is capable of striking ethereal or incorporeal creatures, or is able to see invisible creatures, then attacks are made at only -2. If the attacker can both see and strike ethereal creatures, the attacker suffers no penalty. Individually targeted spells have a 50% chance to fail against the character while blinking unless the attacker can target invisible or ethereal creatures. Area attacks, such as dragon's breath or fireball, cause full damage.</p><p>The caster's own attacks are made at -2. Likewise, the caster's own spells have a 50% chance to activate just as the character goes ethereal, in which case they take effect on the ethereal plane. Since the character spends about half the character's time on the ethereal plane, the character can see and even attack ethereal creatures. The character interacts with ethereal creatures roughly the same way the character interacts with material ones.</p><p>While blinking, the character can step through, but not see through, solid objects no more than 5 feet thick. If the caster attempts to walk through material thicker than 5 feet, they blink into the solid object, the spell ends, and they are shunted off to the nearest open space, suffering 1d6 points of damage per 5 feet traveled through solid matter.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "e1fd9c7227ec9c2b",
+  "_key": "!items!e1fd9c7227ec9c2b",
+  "name": "Permanency",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This powerful spell makes certain other spells permanent, assuming that the caster has attained a required level of experience and is otherwise able to cast the spell to be made permanent. Making spells permanent results in the temporary loss of 1 point of constitution for 1 month, with the caster needing to make a constitution saving throw to prevent the loss from remaining permanent.</p><p>The caster can make any of these spells permanent in regard to the character's person: <em>comprehend languages, detect magic, detect poison, endure elements, protection from arrows, read magic, see invisibility, tongues,</em> and <em>water breathing</em>. This application of <em>permanency</em> can be dispelled only by a caster of greater level than the caster was when he or she cast the spell.</p><p>In addition to personal use, <em>permanency</em> can be used to make the following spells permanent on the caster, another creature, an object, or an area (as appropriate): <em>alarm, confusion, dancing lights, enlarge, ghost sound, gust of wind, invisibility, magic mouth, phase door, prismatic sphere, scare, stinking cloud, symbol, teleportation circle, wall of fire, wall of force,</em> and <em>web</em>. Spells cast on other creatures, objects or locations (instead of the caster) are vulnerable to <em>dispel magic</em> as normal.</p><p>The Castle Keeper may allow other selected spells to be made permanent, based on an appropriate amount of time and money spent researching this application of a given spell. If the Castle Keeper has already determined that the application is not possible, the research automatically fails.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "n/a",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "2",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

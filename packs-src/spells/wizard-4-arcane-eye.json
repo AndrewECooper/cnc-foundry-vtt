@@ -1,0 +1,68 @@
+{
+  "_id": "8b6add9e32d90c5f",
+  "_key": "!items!8b6add9e32d90c5f",
+  "name": "Arcane Eye",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster creates an invisible magical eye that sends the caster visual information. The <em>arcane eye</em> travels at 30 feet per round, and sees exactly as the caster would see if the caster were there. If the eye examines walls or ceilings, it moves at 10 feet per round. Solid barriers prevent the passage of an <em>arcane eye</em>, although it can pass through a space no smaller than a small mouse hole (one inch in diameter). The caster must concentrate to use the eye. If the caster does not concentrate, the eye becomes inert until the caster again concentrates.</p><p>The powers of the eye cannot be enhanced by other spells or items (though the caster can use magic to improve the caster's own eyesight). The caster is subject to any gaze attack the eye encounters. A successful <em>dispel magic</em> cast on the caster or the eye ends the spell. With respect to blindness, magical darkness and other phenomena that affect vision, the <em>arcane eye</em> is considered an independent sensory organ of the caster (including a creature). Creatures with intelligence 12 or higher can sense the <em>arcane eye</em> by making an intelligence check. Spells such as <em>detect scrying</em> can also detect the eye.</p><p>The material component for this spell is an eye.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "unlimited",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

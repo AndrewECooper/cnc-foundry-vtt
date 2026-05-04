@@ -1,0 +1,68 @@
+{
+  "_id": "6cc28c32612e348b",
+  "_key": "!items!6cc28c32612e348b",
+  "name": "Resurrection",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster restores life and health to one deceased creature. The caster can resurrect creatures who have been dead up to 10 years per caster level. The condition of the remains is not a factor, but some small portion of the creature's body must exist and be present before the creature can be resurrected. The remains of a creature hit by a <em>disintegrate</em> spell or the like count as a small portion of body. The subject loses 1 point of constitution permanently when raised. If constitution is reduced to zero by this loss, the creature is permanently dead and cannot be brought back to life.</p><p>Should resurrection be successful in restoring life, the subject is healed of all hit point damage, missing appendages are restored, diseases are cured, poisons are neutralized, insanity is cured and all curses are removed. With the exception of the lost point of constitution, the character's attributes remain the same as at the time of death. Spells prepared before death are lost. None of the dead creature's equipment or possessions are affected in any way by this spell.</p><p><em>Resurrection</em> will work on undead creatures, returning them to their living state. It will also work on creatures slain by death spells or gazes. However, resurrection will not work on creatures that died from old age.</p><p>The material component for this spell is a small ornate urn filled with 1,000gp worth of diamond dust.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 hour",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0168b1fa5dc0c76c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

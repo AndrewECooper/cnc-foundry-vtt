@@ -1,0 +1,68 @@
+{
+  "_id": "1864e448dce47d38",
+  "_key": "!items!1864e448dce47d38",
+  "name": "Floating Disk",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a slightly concave, circular plane of shimmering force that follows the caster about and carries equipment, treasure or any other burden. The disk is 3 feet in diameter, and can bear up to 1000 pounds of weight, or hold up to 2 gallons of fluid. The disk floats 3 feet above the ground at all times, and always remains level, though it may not travel faster than the caster normally walks. When the spell ends or the caster moves more than 50 feet away from the disk, it vanishes, dropping its contents. To cast the spell the caster needs a small 5gp glass or metal disk.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 1,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 1,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "36c5a2e3bfb00661",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

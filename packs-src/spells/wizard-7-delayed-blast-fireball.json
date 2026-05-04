@@ -1,0 +1,68 @@
+{
+  "_id": "c7df3f360acf2ff7",
+  "_key": "!items!c7df3f360acf2ff7",
+  "name": "Delayed Blast Fireball",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell is an enhanced version of <em>fireball</em>, except the caster can choose to delay the detonation. With a gesture, the caster sends a small ball of fire hurtling through the air to detonate with a low roar at the height and distance the caster desires as long as it is within the spell's maximum range. The explosion fills the area of effect, a 40 foot diameter sphere, with intense fire and heat, causing 1d6 +1 per level fire damage to all creatures and objects within the area. It ignites combustibles and damages objects, and melts anything with a low melting point such as bronze, copper, silver, lead or gold. The explosion creates almost no pressure. A small lump of coal is required to cast the spell.</p><p>The fireball can detonate immediately in the same round that the spell is cast, or the caster can choose to delay the explosion for up to 5 rounds. The caster chooses the amount of delay upon completing the spell, and the delay cannot be changed once it has been set.</p><p>Unlike the <em>fireball</em> spell, impact against a solid barrier does not cause early detonation. If the caster chooses a delayed blast, the glowing bead sits at its destination until it detonates. A creature can pick up and hurl the fireball like a rock. If the caster attempts to send the ball through a narrow passage, such as an arrow slit, the character must hit with a ranged attack roll, or else the bead strikes the barrier and falls to a resting point until detonation.</p><p>The material component for this spell is coal.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "up to 5 rnds",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "762c10d5c406fb67",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

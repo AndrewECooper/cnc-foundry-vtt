@@ -1,0 +1,45 @@
+{
+  "_id": "6ce46be43cec120b",
+  "_key": "!items!6ce46be43cec120b",
+  "name": "Crossbow, Heavy",
+  "type": "weapon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A heavy crossbow drawn with a windlass or cranequin, slow to load but devastating.</p>",
+    "price": {
+      "value": "50 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "9",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "5",
+      "label": "TLGCC.ItemEV"
+    },
+    "bonusAb": {
+      "value": 0,
+      "label": "TLGCC.BonusAttackBonus"
+    },
+    "damage": {
+      "value": "1d10",
+      "label": "TLGCC.Damage",
+      "abbr": "TLGCC.DamageAbbr"
+    },
+    "range": {
+      "value": "120 ft.",
+      "label": "TLGCC.Range"
+    },
+    "size": {
+      "value": "M",
+      "label": "TLGCC.Size"
+    }
+  },
+  "effects": [],
+  "folder": "476a030cc61ba530",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

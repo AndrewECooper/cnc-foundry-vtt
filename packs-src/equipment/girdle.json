@@ -1,0 +1,32 @@
+{
+  "_id": "4bc126ac299788e3",
+  "_key": "!items!4bc126ac299788e3",
+  "name": "Girdle",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A wide cloth or leather sash worn about the waist.</p>",
+    "price": {
+      "value": "7 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "3",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "a499203665e61e58",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

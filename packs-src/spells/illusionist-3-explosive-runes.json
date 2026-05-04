@@ -1,0 +1,68 @@
+{
+  "_id": "fce897824ca67a6e",
+  "_key": "!items!fce897824ca67a6e",
+  "name": "Explosive Runes",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to inscribe innocuous-looking runes which detonate when they are read. The spell is used to protect and prevent access to a book, map, scroll, or similar object containing written information. When read, the runes explode causing 6d6 points of damage to the reader. The reader receives no saving throw. Creatures and objects within 10 feet of the blast must make a dexterity saving throw and suffer only half damage if successful. The book or other object upon which the runes are written also takes damage, and may be utterly ruined in the absence of some protection from magical fire.</p><p>The caster, along with anyone else the caster chooses to specify, may read the runes without triggering them. The caster can also remove the runes at any time. Otherwise, the runes are permanent until triggered or removed by <em>dispel magic</em> or other counterspell.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half (see below)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0989ad6c26833a69",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

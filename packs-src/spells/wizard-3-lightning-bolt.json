@@ -1,0 +1,68 @@
+{
+  "_id": "0a493692b5fea790",
+  "_key": "!items!0a493692b5fea790",
+  "name": "Lightning Bolt",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster unleashes a blinding, sizzling arc of forking electricity that deals 1d6 points of damage per caster level. The caster channels the electricity through a small iron rod (1sp) that has been left out in a thunderstorm. The bolt is 10 feet wide x 50 feet long or 5 feet wide x 100 feet long. The bolt erupts from the caster's fingertips, staff, rod or wand. It strikes creatures and objects along its sinuous path and even a couple of feet to either side, igniting combustibles, sundering wooden doors and melting metals with a low melting point, such as lead, gold, copper, silver or bronze.</p><p>If a <em>lightning bolt</em> causes enough damage to break through or shatter an interposing barrier, the bolt continues beyond the barrier to the extent of its range. If the bolt does not break through or is deflected, it rebounds toward the caster up to the full length of the bolt or until it strikes another barrier and rebounds again.</p><p>The material component for this spell is a small iron rod.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c846dbbf80af5d97",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "0efce988db726a6a",
+  "_key": "!items!0efce988db726a6a",
+  "name": "Holy Aura",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A divine radiance surrounds one good-aligned subject per level in a 25-foot radius, protecting from attacks, granting resistance to spells cast by evil creatures, and blinding evil creatures when they strike the subject. The warded creature gain a +4 bonus to armor class and saves, and a SR of 16 against evil spells and spells cast by evil creatures. The spell also blocks possession and mental influence just as <em>protection from evil</em> does. Finally, if an evil creature succeeds at a melee attack against a warded creature, the offending attacker is blinded unless they make an intelligence save (see <em>remove blindness</em>). The reverse of the spell, <em>unholy aura</em>, protects evil-aligned subjects but otherwise functions identically.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (h)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e5708363043138ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

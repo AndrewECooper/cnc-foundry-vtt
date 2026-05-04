@@ -1,0 +1,68 @@
+{
+  "_id": "9bb778b7450ebfd5",
+  "_key": "!items!9bb778b7450ebfd5",
+  "name": "Cloak Of Dark Chaos",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A smoky cloak envelopes and moves about the body of the illusionist. Those touching the cloak with their flesh or melee weapons or equipment, and who fail an intelligence saving throw, suffer 15 points of damage per strike. The cloak in no way hinders the illusionist.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "5 rds.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "caster",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "5",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "42fc932ab27c891b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

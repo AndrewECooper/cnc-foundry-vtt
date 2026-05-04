@@ -1,0 +1,24 @@
+{
+  "_id": "0ef618b22c697a56",
+  "_key": "!items!0ef618b22c697a56",
+  "name": "Duskvision",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Halfling</em></p><p>Halflings, with their large and piercing eyes, can see in starlight and moonlight just as a human can at dusk. They retain the ability to distinguish color and some detail under these conditions, though everything is cast in shadows. They have no enhanced vision underground, in torchlight, or under similar conditions of poor illumination.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "5e82998f869df45c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

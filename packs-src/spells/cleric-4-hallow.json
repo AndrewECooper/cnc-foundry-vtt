@@ -1,0 +1,68 @@
+{
+  "_id": "7224381654aa5e40",
+  "_key": "!items!7224381654aa5e40",
+  "name": "Hallow",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell sanctifies a large 150 foot radius area of a holy site. The spell has four effects.</p><p>First, the entire area operates as a <em>magic circle against evil</em> (or good, chaos or law, as chosen by the caster). All warded creatures in the area receive a +2 bonus to armor class and saves against attacks by creatures of the selected alignment. Likewise, the spell blocks any attempt to possess or mentally control a warded creature, and prevents bodily contact by summoned or conjured creatures. The protection against contact by summoned or conjured creatures ends if a warded individual makes an attack against such a creature. Spell resistance can allow a summoned creature to overcome this protection and touch the warded creature. These effects are not cumulative with <em>protection from evil</em>.</p><p>Second, all attempts to turn undead gain a +3 bonus. Attempts to command undead suffer a -3 penalty.</p><p>Third, any dead body interred in a hallowed site cannot be turned into an undead creature.</p><p>Fourth, the character may choose to affix a single spell effect to the hallowed site. The character must cast the spell when casting <em>hallow</em>. The spell effect lasts for one year and functions throughout the entire consecrated site, regardless of its normal duration and area of effect. The caster may designate whether the effects apply to all creatures, or only to creatures who share the character's faith or alignment. At the end of the year, the chosen effect lapses, but it can be renewed or replaced simply by casting <em>hallow</em> again. Spell effects that may be tied to a hallowed site include <em>aid, bless, cause fear, detect evil (good, chaos, law), detect magic, dispel magic, endure elements, freedom of movement, protection from elements, remove fear, resist elements, silence</em> and <em>tongues</em>.</p><p>The reverse of this spell, <em>unhallow</em>, provides the above effects, but against good creatures. Any dead body buried in an unhallowed area, however, will rise as a zombie in 24 hours.</p><p>The material component for this spell are religious trappings worth 1,000gp.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 year",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "see below",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "one day",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "648ff0fd4c816377",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

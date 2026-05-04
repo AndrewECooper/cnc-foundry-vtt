@@ -1,0 +1,68 @@
+{
+  "_id": "018b5f4df6762d15",
+  "_key": "!items!018b5f4df6762d15",
+  "name": "Refuge",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell imbues an object, worth at least 1,000gp, with teleportation magic, giving it the power to instantaneously transport its possessor to the caster's abode. This travel can occur across any distance, but must be within the same plane. Once the item is imbued with the spell's power, the caster must give it willingly to an individual and inform him or her of a command word to be spoken when the item is to be used. To make use of the item, the subject speaks the command word while rending or breaking the item. When this is done, the individual and all that he or she is wearing and carrying, up to a maximum of 50 lb/level, are instantaneously transported to the caster's residence. No other creatures are affected aside from a familiar, if it is touching the subject.</p><p>The material component for this spell is an object or objects worth 1000gp.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "until discharge",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 7,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 7,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "0168b1fa5dc0c76c",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

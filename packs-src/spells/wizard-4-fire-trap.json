@@ -1,0 +1,68 @@
+{
+  "_id": "bf8cc233f5ff5579",
+  "_key": "!items!bf8cc233f5ff5579",
+  "name": "Fire Trap",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Set upon any closeable item, a <em>fire trap</em> erupts into flame when anyone other than the caster, or any other caster-selected characters, opens the item that the spell is warding. When triggered, a fiery explosion fills the area within 5 feet of the item (10 foot diameter sphere). The explosion deals 1d4 damage +1 point per caster level. The item remains unharmed by the spell. A <em>knock</em> spell does not prevent the effects of a <em>fire trap</em> in any way. An unsuccessful <em>dispel magic</em> spell will not detonate the spell. To cast the spell the caster needs fragments of flint and a stick of charcoal, the latter used to draw around the closure, the former scattered over it, this process leaves no visible runes.</p><p>The material component for this spell is flint and charcoal.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "until discharged",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

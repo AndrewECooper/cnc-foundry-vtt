@@ -1,0 +1,33 @@
+{
+  "_id": "096921a52b4e7e60",
+  "_key": "!items!096921a52b4e7e60",
+  "name": "Cuir Bouille",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Heavy leather hardened in hot wax until it is nearly as rigid as wood.</p>",
+    "price": {
+      "value": "45 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "25",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 4,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "b423708b69146eaa",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

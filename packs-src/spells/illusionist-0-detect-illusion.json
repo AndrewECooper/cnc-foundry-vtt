@@ -1,0 +1,68 @@
+{
+  "_id": "df2446f0be9b93ac",
+  "_key": "!items!df2446f0be9b93ac",
+  "name": "Detect Illusion",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By means of this spell, the caster can detect the presence of illusions in the direction the caster is facing, along a path 50 feet long and 10 feet wide. Unlike <em>detect magic</em>, this spell may be cast on another creature by touch.</p><p>The caster must spend one round concentrating along the path to detect any illusion, although the caster may both cast the spell and begin detecting in the same round that the spell is cast. The strength of the illusion detected will be revealed as lingering, faint, moderate, strong or overwhelming. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead or 3 feet of wood or dirt blocks it.</p><p>Illusory areas, multiple types of illusion or strong illusory emanations may confuse or conceal weaker auras, although the Castle Keeper may allow the caster to spend additional rounds concentrating to decipher the confusion or reveal auras. The Castle Keeper may require an intelligence check to do so.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "548de8614b61cf85",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

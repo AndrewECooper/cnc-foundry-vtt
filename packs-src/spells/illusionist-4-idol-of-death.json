@@ -1,0 +1,68 @@
+{
+  "_id": "e9beb4a37ce0ccba",
+  "_key": "!items!e9beb4a37ce0ccba",
+  "name": "Idol Of Death",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster creates a fist-sized image of themselves out of clay. As the magic settles on the clay, the image becomes an exact unmoving copy of the caster. The clay figure absorbs three points of damage inflicted by every attack upon the caster in a single battle. Any area of effect attacks, however, do double damage to the caster as it affects the clay and the illusionist. The spell is negated if the clay image moves more than ten feet away from the caster. The spell does not have a cumulative effect and any new spell of the same nature can't be cast on the illusionist while the first spell is active.</p><p>The material component for this spell is a lump of clay.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "S, V, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "2",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "abdecddf2e76ae4e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

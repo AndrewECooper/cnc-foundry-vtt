@@ -1,0 +1,68 @@
+{
+  "_id": "8280e10cfd426975",
+  "_key": "!items!8280e10cfd426975",
+  "name": "Detect Alignment",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By means of this spell, the caster can sense the presence of one specific alignment aspect (chaos, evil, good or law) in the direction the caster is facing, along a path 150 feet long and 10 feet wide. The caster must spend one round concentrating along the path to detect the alignment aspect, although the caster may both cast the spell and begin detecting in the same round as the spell is cast. Chaos radiates a wave-like aura, whereas law's aura is constant. Good's aura creates pleasurable emotion, whereas evil's aura creates brief irritation and anger in the caster. The strength of each aspect's aura will be revealed as faint, strong, or overwhelming if it is supernatural. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead or gold or 3 feet of wood or dirt blocks it.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft. x 10 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 0,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 0,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "a56bdbfdde36c793",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

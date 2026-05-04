@@ -1,0 +1,68 @@
+{
+  "_id": "586553cf3d760342",
+  "_key": "!items!586553cf3d760342",
+  "name": "Disjunction",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This powerful spell rips asunder all magical effects within the spell's 25 foot x foot area of effect. That is, spells and spell-like effects are separated into their individual components (ending the effect as a <em>dispel magic</em> spell does), and permanent magic items must make successful constitution saves or be turned into normal items. Even artifacts are subject to disjunction, though there is only a 1% chance per caster level of actually affecting such powerful items. If an artifact is destroyed by the spell, the caster must succeed at a charisma save or permanently lose all spell-casting abilities. The abilities cannot be recovered by mortal magic, nor even by a <em>wish</em>. Destroying artifacts is a dangerous business, and it is 95% likely to attract the attention of some powerful being who has an interest in, or connection with, the device. When casting the spell at an anti-magic field, the caster has a 1% chance per caster level of destroying it. If the anti-magic field survives the disjunction, the items within it are unaffected by the spell.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates (objects)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

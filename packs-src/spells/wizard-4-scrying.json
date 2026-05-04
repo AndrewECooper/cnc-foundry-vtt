@@ -1,0 +1,68 @@
+{
+  "_id": "af12dbd490adc221",
+  "_key": "!items!af12dbd490adc221",
+  "name": "Scrying",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Focusing on a mental image of a particular creature, the caster's mind's eye may gaze upon the target, watching and listening, regardless of distance. An astute character (intelligence 13+) may get the feeling they are being watched upon a successful Intelligence check. Successfully focusing the mind's eye in this manner is difficult. It requires a gem worth at least 100gp to channel the spell and an intelligence attribute check with the roll adjusted by the following cumulative modifiers:</p><table><thead><tr><th>Condition</th><th>Modifier</th></tr></thead><tbody><tr><td>Caster knows the character well</td><td>+5</td></tr><tr><td>Caster has likeness of character</td><td>+5</td></tr><tr><td>Caster has possession of the character</td><td>+5</td></tr><tr><td>Caster has body part (like a lock of hair)</td><td>+5</td></tr><tr><td>Caster has only met the character</td><td>-5</td></tr><tr><td>Caster has only heard of the character</td><td>-10</td></tr><tr><td>Caster has no knowledge of character</td><td>-15</td></tr><tr><td>Character is on another plane</td><td>-15</td></tr></tbody></table><p>If the scrying is successful, the caster may cast the following spells through the scrying without a chance of failure: <em>comprehend languages, read magic, tongues</em>; the following spells have a 5% chance per caster level of operating correctly: <em>detect alignment, detect magic</em> and <em>message</em>.</p><p>The material component for this spell is a glass object.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, F",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

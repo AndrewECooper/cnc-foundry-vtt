@@ -1,0 +1,68 @@
+{
+  "_id": "7c7356dd21d772f9",
+  "_key": "!items!7c7356dd21d772f9",
+  "name": "Locate Object",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>With this spell, the caster need never fear misplacing his tower key again, for it enables the caster to sense the direction of a well-known or clearly visualized object, including apparel, jewelry, furniture, tools, weapons or even such mundane implements as a ladder. All the caster needs is a small 2gp glass lens or opaque crystal. The spell may be used to search for general items such as a stairway, a sword or a jewel, in which case the spell locates the nearest such object within its range, or the spell may be used to find a specific item, such as a particular piece of jewelry. A unique object (such as <em>Gideon Thorne's gold-plated quill</em>) may not be located unless the caster has observed that particular item first-hand. The spell is blocked by lead, fooled by polymorphing, and cannot detect creatures.</p><p><em>Obscure object</em>, the reverse of this spell, may be cast on an object, thereby preventing it from being located by spells of this type, or by divinatory means such as scrying, for the duration of the spell.</p><p># M</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, F/DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "2651df774959137e",
+  "_key": "!items!2651df774959137e",
+  "name": "Summon Elemental",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A portal to an elemental plane of the caster's choice (air, earth, fire or water) is torn open with this spell, drawing an elemental to the caster's service. When the spell is complete, a 12 HD elemental appears. The elemental has at least 4 HP per HD. Once the elemental appears, it serves the caster for the duration of the spell. The elemental explicitly obeys and never attacks the caster, even if someone else manages to usurp or gain control over the elemental. The caster does not need to maintain control over the elemental, and can dismiss it at any time.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "cbde643b5df067d3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

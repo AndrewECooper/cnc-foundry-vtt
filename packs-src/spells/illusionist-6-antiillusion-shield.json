@@ -1,0 +1,68 @@
+{
+  "_id": "f01139f6f11bb960",
+  "_key": "!items!f01139f6f11bb960",
+  "name": "Anti–Illusion Shield",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates an invisible, mobile, 20 ft. diameter sphere of energy around the caster that affects all illusions, whether created by spell, spell-like ability, device, or supernatural ability. It suppresses any illusion used within, passing into, or cast into the area, but does not dispel it. Time spent within an <em>ant-illusion shell</em> counts against the suppressed spell's duration. The shell prevents the entrance of illusory creatures; if the caster casts <em>anti-illusion shell</em> in an area occupied by such a creature, the creature is forced away. Should the character be larger than the area enclosed by the shell, any part of the character's person that lies outside the barrier is unaffected by the field. Illusions created by creatures of demigod or higher status may be unaffected.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "none",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "person",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "42fc932ab27c891b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

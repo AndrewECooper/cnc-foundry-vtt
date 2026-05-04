@@ -26,9 +26,6 @@
 <div class="cc-section">
   <div class="cc-section-header">
     <span class="cc-section-title">{{localize "TYPES.Item.item"}}</span>
-    <span style="font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 9px; color: var(--cc-muted);">
-      {{localize "TLGCC.CarriedWeight"}}: {{carriedWeight}} {{localize "TLGCC.WeightMeasure"}}
-    </span>
     <a class="item-create cc-add-btn" data-type="item" title="{{localize 'TLGCC.ItemCreate'}}">
       + {{localize "TLGCC.Add"}}
     </a>
@@ -38,6 +35,8 @@
       <tr>
         <th style="width: 40px;">Qty</th>
         <th>{{localize "TYPES.Item.item"}}</th>
+        <th style="text-align: right;">{{localize "TLGCC.ItemEV"}}</th>
+        <th style="text-align: right;">{{localize "TLGCC.Price"}}</th>
         <th style="text-align: right;">{{localize "TLGCC.WeightMeasure"}}</th>
         <th></th>
       </tr>
@@ -53,8 +52,14 @@
             <a class="rollable" data-roll-type="item">
               <img class="cc-item-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
             </a>
-            {{item.name}}
+            <a class="cc-item-name-toggle">{{item.name}}</a>
           </div>
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.itemev.value}}
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.price.value}}
         </td>
         <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
           {{item.system.weight.value}}
@@ -66,7 +71,100 @@
           </div>
         </td>
       </tr>
+      <tr class="cc-item-detail" data-item-id="{{item._id}}">
+        <td colspan="6">
+          <div class="cc-item-detail-stats">
+            {{#if item.system.quantity.value}}<span><strong>{{localize 'TLGCC.Quantity'}}:</strong> {{item.system.quantity.value}}</span>{{/if}}
+            {{#if item.system.itemev.value}}<span><strong>{{localize 'TLGCC.ItemEV'}}:</strong> {{item.system.itemev.value}}</span>{{/if}}
+            {{#if item.system.price.value}}<span><strong>{{localize 'TLGCC.Price'}}:</strong> {{item.system.price.value}}</span>{{/if}}
+            {{#if item.system.weight.value}}<span><strong>{{localize 'TLGCC.Weight'}}:</strong> {{item.system.weight.value}}</span>{{/if}}
+          </div>
+          <div class="cc-item-detail-desc">{{{item.enrichedDescription}}}</div>
+        </td>
+      </tr>
+      {{/each}}
+
+      {{#each weapons as |item id|}}
+      <tr class="item" data-item-id="{{item._id}}">
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: center;">—</td>
+        <td>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <img class="cc-item-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+            <a class="cc-item-name-toggle">{{item.name}}</a>
+            <span style="font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--cc-muted);">{{localize "TYPES.Item.weapon"}}</span>
+          </div>
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.itemev.value}}
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.price.value}}
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.weight.value}}
+        </td>
+        <td>
+          <div class="item-controls">
+            <a class="item-control item-edit" title="{{localize 'TLGCC.ItemEdit'}}"><i class="fas fa-edit"></i></a>
+          </div>
+        </td>
+      </tr>
+      <tr class="cc-item-detail" data-item-id="{{item._id}}">
+        <td colspan="6">
+          <div class="cc-item-detail-stats">
+            {{#if item.system.damage.value}}<span><strong>{{localize 'TLGCC.Damage'}}:</strong> {{item.system.damage.value}}</span>{{/if}}
+            {{#if item.system.bonusAb.value}}<span><strong>{{localize 'TLGCC.BonusAttackBonus'}}:</strong> {{item.system.bonusAb.value}}</span>{{/if}}
+            {{#if item.system.range.value}}<span><strong>{{localize 'TLGCC.Range'}}:</strong> {{item.system.range.value}}</span>{{/if}}
+            {{#if item.system.itemev.value}}<span><strong>{{localize 'TLGCC.ItemEV'}}:</strong> {{item.system.itemev.value}}</span>{{/if}}
+            {{#if item.system.price.value}}<span><strong>{{localize 'TLGCC.Price'}}:</strong> {{item.system.price.value}}</span>{{/if}}
+            {{#if item.system.weight.value}}<span><strong>{{localize 'TLGCC.Weight'}}:</strong> {{item.system.weight.value}}</span>{{/if}}
+          </div>
+          <div class="cc-item-detail-desc">{{{item.enrichedDescription}}}</div>
+        </td>
+      </tr>
+      {{/each}}
+
+      {{#each armors as |item id|}}
+      <tr class="item" data-item-id="{{item._id}}">
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: center;">—</td>
+        <td>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <img class="cc-item-img" src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+            <a class="cc-item-name-toggle">{{item.name}}</a>
+            <span style="font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--cc-muted);">{{localize "TYPES.Item.armor"}}</span>
+          </div>
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.itemev.value}}
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.price.value}}
+        </td>
+        <td style="font-family: ui-monospace, monospace; font-size: 11px; text-align: right;">
+          {{item.system.weight.value}}
+        </td>
+        <td>
+          <div class="item-controls">
+            <a class="item-control item-edit" title="{{localize 'TLGCC.ItemEdit'}}"><i class="fas fa-edit"></i></a>
+          </div>
+        </td>
+      </tr>
+      <tr class="cc-item-detail" data-item-id="{{item._id}}">
+        <td colspan="6">
+          <div class="cc-item-detail-stats">
+            {{#if item.system.armorClass.value}}<span><strong>{{localize 'TLGCC.ArmorClass'}}:</strong> +{{item.system.armorClass.value}}</span>{{/if}}
+            {{#if item.system.itemev.value}}<span><strong>{{localize 'TLGCC.ItemEV'}}:</strong> {{item.system.itemev.value}}</span>{{/if}}
+            {{#if item.system.price.value}}<span><strong>{{localize 'TLGCC.Price'}}:</strong> {{item.system.price.value}}</span>{{/if}}
+            {{#if item.system.weight.value}}<span><strong>{{localize 'TLGCC.Weight'}}:</strong> {{item.system.weight.value}}</span>{{/if}}
+          </div>
+          <div class="cc-item-detail-desc">{{{item.enrichedDescription}}}</div>
+        </td>
+      </tr>
       {{/each}}
     </tbody>
   </table>
+  <div class="cc-equipment-totals">
+    <span>{{localize "TLGCC.ItemEV"}} <strong>{{carriedEV}}</strong></span>
+    <span>{{localize "TLGCC.CarriedWeight"}} <strong>{{carriedWeight}} {{localize "TLGCC.WeightMeasure"}}</strong></span>
+  </div>
 </div>

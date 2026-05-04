@@ -1,0 +1,24 @@
+{
+  "_id": "4be9ad8489609a57",
+  "_key": "!items!4be9ad8489609a57",
+  "name": "Spells",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Gnome</em></p><p>Gnomes have an innate ability to cast the following spells once per day as a 1st level caster: <em>dancing lights, ghost sound,</em> and <em>prestidigitation</em>. These innate spells are in addition to any spells available to gnomes of spellcasting character classes.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "1a0e177eed0ac19b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

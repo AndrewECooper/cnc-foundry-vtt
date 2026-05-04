@@ -1,0 +1,68 @@
+{
+  "_id": "ef5ea8a1e2ba57d7",
+  "_key": "!items!ef5ea8a1e2ba57d7",
+  "name": "Animal Growth",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes up to a maximum of eight animals to grow to twice their normal size. This doubles each animal's height, length, and width, increasing its weight by a factor of eight. The increase in size has a number of effects. The animal's HD doubles, increasing the animal's bonus to hit and saving throws accordingly. The increase in size increase the damage the animal delivers by one-third. It also doubles the animal's constitution bonus. When the spell ends, the animal's HP return to normal, and all damage taken while enlarged is divided by 2. The spell gives the character no special means of command or influence over the enlarged animals. Thus, the spell is often combined with <em>speak with animals</em> and a charm spell. <em>Animal growth</em> has a 25 x 25 foot area of effect.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "91a80f29d8a51e6b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

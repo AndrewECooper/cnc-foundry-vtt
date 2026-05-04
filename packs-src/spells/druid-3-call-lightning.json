@@ -1,0 +1,68 @@
+{
+  "_id": "9c2fa20df6044b73",
+  "_key": "!items!9c2fa20df6044b73",
+  "name": "Call Lightning",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>If the caster is outdoors, in a stormy area, this spell allows him to call bolts of lightning from the sky. The caster can call down one bolt every 10 minutes, for the duration of the spell. The character need not call a bolt of lightning immediately. Other actions, even spellcasting, can be performed during the spell's duration. Calling a bolt, however, takes the caster's action for that round. A bolt causes 1d10 hit points of damage per caster level. It strikes in a vertical stroke at whatever target point the character chooses, within the spell's range. The bolt takes the shortest possible unobstructed path between a nearby cloud and the target. Any creature within a 10 foot radius of the path or the point where the lightning strikes is affected.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min. + 1 rd per bolt",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "6b0e9cf7912abf83",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

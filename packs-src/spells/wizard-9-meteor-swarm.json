@@ -1,0 +1,68 @@
+{
+  "_id": "11c7b8c4a2a3a8b9",
+  "_key": "!items!11c7b8c4a2a3a8b9",
+  "name": "Meteor Swarm",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Meteor like fireballs, spewing sparks and leaving a fiery trail, streak in a straight line from the caster toward a chosen spot. The caster may choose either four large 2-foot diameter or eight small 1-foot diameters spheres. Any creature in the straight line path of these spheres takes 9d6 points of fire damage with no save allowed. The large spheres follow a path 10 feet wide, and the small spheres follow a path 5 feet wide.</p><p>If the spheres reach their destination, each bursts in a spread. Each spread indicated below creates overlapping areas of effect, and creatures in an overlap area must save against each sphere separately or suffer damage. A successful dexterity save reduces damage by half for the burst damage indicated below.</p><p>The four large spheres explode with their points of origin forming a diamond or box pattern around the spell's target designated upon casting. Each large sphere has a 30 foot diameter spread, and each blast is 20 feet apart along the sides of the pattern, creating overlapping areas of the spell's effect and exposing the center to all four blasts. Each sphere deals 1d4 x 10 fire damage.</p><p>The smaller spheres have a 15-foot diameter spread, and each deals 1d4 x 5 fire damage. They explode with their target forming a pattern around the spell's central point of origin (which the wizard designated upon casting) of a box within a diamond or vice versa, with each of the outer sides measuring 20 feet long. The center has four areas of overlapping effect, and numerous peripheral areas have two or three overlapping areas of the spell's effect.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "instant",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see text",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "450 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "c76b7ff9a09dd6b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

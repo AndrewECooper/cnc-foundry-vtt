@@ -1,0 +1,68 @@
+{
+  "_id": "8262976167d99fc8",
+  "_key": "!items!8262976167d99fc8",
+  "name": "Commune",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster can attempt to contact the character's deity or agents and ask questions that can be answered by a simple yes or no answer. A cleric with no particular deity contacts a philosophically allied deity. This spell should be used sparingly, as disfavor could be gained with frequent use. The caster needs incense, holy symbol or other religious items.</p><p>The caster is allowed one question per caster level. The answers given are correct within the limits of the deity's knowledge. Any question that cannot be answered with yes or no will result in no answer and will count against the caster's maximum number of questions. If a caster doesn't focus on the conversation, such as discussing answers with others, the deity becomes angry or irritated, and ends the spell.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "special",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "n/a",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "n/a",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "e999624dd21ebc1f",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

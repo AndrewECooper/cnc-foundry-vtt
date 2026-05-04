@@ -1,0 +1,68 @@
+{
+  "_id": "afc8dbc37836ed89",
+  "_key": "!items!afc8dbc37836ed89",
+  "name": "Fire Seeds",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster binds elemental fire into acorns or holly berries, making them into weapons that burst into flame upon impact.</p><p><strong>Acorns:</strong> Up to four acorns may be altered with this spell. Each can be thrown with reasonable accuracy up to 50 feet. A successful roll to hit must be made. Each acorn bursts upon hitting a firm surface, blossoming into flame that deals 4d8 damage and igniting any combustibles.</p><p><strong>Holly Berries:</strong> Up to eight holly berries may be altered with this spell. They are normally placed by hand, but they can be thrown up to 25 feet. The berries burst into flame if the caster speaks a word of command from within 200 feet. They ignite instantly, and each deals 2d8 damage to any creatures within a 5 foot radius. The explosion will also ignite combustible materials.</p><p>The material component for this spell are acorns or holly berries and ash.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 min./lvl. or burst",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity half",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M, DF",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "see below",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1 per seed",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "cbde643b5df067d3",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

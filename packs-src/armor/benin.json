@@ -1,0 +1,33 @@
+{
+  "_id": "b5815d6d9aa11d08",
+  "_key": "!items!b5815d6d9aa11d08",
+  "name": "Benin",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A simple open-faced cap of boiled leather or thin steel reinforced with bands.</p>",
+    "price": {
+      "value": "8 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "1",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 2,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

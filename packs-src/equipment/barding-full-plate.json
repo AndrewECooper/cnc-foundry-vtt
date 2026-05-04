@@ -1,0 +1,32 @@
+{
+  "_id": "084c662f0b35f5af",
+  "_key": "!items!084c662f0b35f5af",
+  "name": "Barding, Full Plate",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A complete suit of horse plate armor — the panoply of a great warhorse.</p>",
+    "price": {
+      "value": "4,000 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "250",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "8",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "5bb847eb456821b6",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -28,19 +28,28 @@
     <span class="cc-section-title">{{localize 'TLGCC.SpellLevel'}} — {{localize 'TLGCC.SpellsPerLevel'}}</span>
   </div>
   {{#each spells as |spells spellLevel|}}
-  <div class="cc-spell-level-header">
-    <span class="cc-level-num">{{localize 'TLGCC.SpellLevel'}} {{spellLevel}}</span>
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <span class="cc-prepared-label">{{localize 'TLGCC.SpellPrepared'}}</span>
-      <a class="item-create cc-add-btn"
-         data-spell-level-value="{{spellLevel}}"
-         data-type="spell"
-         title="Create item">
-        + {{localize 'TLGCC.Add'}}
-      </a>
-    </div>
+  <div class="cc-spell-level-header cc-collapsed" data-spell-level="{{spellLevel}}">
+    <span class="cc-level-num">
+      <i class="fas fa-chevron-down cc-collapse-chevron"></i>
+      {{localize 'TLGCC.SpellLevel'}} {{spellLevel}}
+    </span>
+    <a class="item-create cc-add-btn"
+       data-spell-level-value="{{spellLevel}}"
+       data-type="spell"
+       title="Create item">
+      + {{localize 'TLGCC.Add'}}
+    </a>
   </div>
-  <table class="cc-table">
+  <table class="cc-table cc-spell-table cc-collapsed" data-spell-level="{{spellLevel}}">
+    {{#if spells.length}}
+    <thead>
+      <tr>
+        <th>{{localize 'TLGCC.Name'}}</th>
+        <th class="cc-spell-prepared-col">{{localize 'TLGCC.SpellPrepared'}}</th>
+        <th class="cc-spell-actions-col">{{localize 'TLGCC.Actions'}}</th>
+      </tr>
+    </thead>
+    {{/if}}
     <tbody>
       {{#each spells as |item id|}}
       <tr class="item" data-item-id="{{item._id}}">
@@ -54,7 +63,7 @@
                    title="Cast Spell: {{item.name}}"
                    width="24" />
             </a>
-            <span title="{{item.system.spell.summary}}">{{item.name}}</span>
+            <a class="cc-item-name-toggle" title="{{item.system.spell.summary}}">{{item.name}}</a>
             {{#if (ne item.system.spelldmg.value "")}}
             <a class="rollable"
                data-roll-type="damage"
@@ -86,6 +95,22 @@
               <i class="fas fa-trash"></i>
             </a>
           </div>
+        </td>
+      </tr>
+      <tr class="cc-item-detail" data-item-id="{{item._id}}">
+        <td colspan="3">
+          <div class="cc-item-detail-stats">
+            {{#if item.system.spell.spelllevel}}<span><strong>{{localize 'TLGCC.SpellLevel'}}:</strong> {{item.system.spell.spelllevel}}</span>{{/if}}
+            {{#if item.system.cast.value}}<span><strong>{{localize 'TLGCC.SpellCastTime'}}:</strong> {{item.system.cast.value}}</span>{{/if}}
+            {{#if item.system.range.value}}<span><strong>{{localize 'TLGCC.SpellRange'}}:</strong> {{item.system.range.value}}</span>{{/if}}
+            {{#if item.system.duration.value}}<span><strong>{{localize 'TLGCC.SpellDuration'}}:</strong> {{item.system.duration.value}}</span>{{/if}}
+            {{#if item.system.savevalue.value}}<span><strong>{{localize 'TLGCC.SaveValue'}}:</strong> {{item.system.savevalue.value}}</span>{{/if}}
+            {{#if item.system.spellresist.value}}<span><strong>{{localize 'TLGCC.SpellResistance'}}:</strong> {{item.system.spellresist.value}}</span>{{/if}}
+            {{#if item.system.spellcomp.value}}<span><strong>{{localize 'TLGCC.SpellComponents'}}:</strong> {{item.system.spellcomp.value}}</span>{{/if}}
+            {{#if item.system.spelldmg.value}}<span><strong>{{localize 'TLGCC.SpellDamage'}}:</strong> {{item.system.spelldmg.value}}</span>{{/if}}
+          </div>
+          {{#if item.system.spell.summary}}<div class="cc-item-detail-desc"><em>{{item.system.spell.summary}}</em></div>{{/if}}
+          <div class="cc-item-detail-desc">{{{item.enrichedDescription}}}</div>
         </td>
       </tr>
       {{/each}}

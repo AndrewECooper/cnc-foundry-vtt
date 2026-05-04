@@ -1,0 +1,68 @@
+{
+  "_id": "07899f984a67a720",
+  "_key": "!items!07899f984a67a720",
+  "name": "Symbol",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to scribe, either in the air or on a surface, a variety of mystic sigils and runes. The effects depend on the caster's choice of symbols, but some common symbols are described below. The Castle Keeper is free to add to this list. The material components for this spell are a diamond tipped pen and ink made from some unusual creature. The total value of these items should cost no less than 5000gp.</p><p>All symbols are inactive after being traced, and are programmed to activate on a circumstance given to it by the caster. As a guidance, most symbols are triggered whenever a creature does one or more of the following, as the caster selects: reads, touches or passes over the rune; looks at the rune; or passes through a portal bearing the rune.</p><p>In this case, reading the rune means any attempt to study it, identify it or fathom its meaning. Throwing a cover over a symbol to render it inoperative triggers it if it reacts to touch. To trigger a symbol, a creature must be within 30 feet of the rune. The caster can also create a command word that can be spoken prior to any of the above actions, so that the symbol will not activate. Creatures who subsequently meet an active symbol's triggering conditions suffer its effects.</p><p><strong>Death:</strong> One or more creatures within 30 feet whose combined total hit points do not exceed 100 must succeed at a constitution check or die. The symbol affects the closest creatures first, skipping creatures with too many hit points to affect. This symbol must be carefully engraved on a surface. Once triggered, the symbol lasts until it has affected 100 hit points worth of creatures.</p><p><strong>Discord:</strong> All creatures with an intelligence score of 3 or higher within 30 feet who fail an intelligence save immediately fall into loud bickering and arguing. Meaningful communication is impossible. If the affected creatures have different alignments, there is a 50% chance that they will attack each other. Bickering lasts 5d4 rounds. Fighting begins 1d4 rounds into the bickering, and lasts 2d4 rounds. This symbol must be carefully engraved on a surface. Once triggered, the symbol lasts 10 minutes per caster level.</p><p><strong>Fear:</strong> Living creatures within 30 feet become panicked unless they save versus charisma at -4. Those that fail suffer a -2 penalty on charisma saving throws for 10 minutes per caster level, and they flee from the area. A panicked creature has a 50% chance to drop what it's holding, chooses its path randomly (as long as it is getting away from immediate danger) and flees any other dangers that confront it. If cornered, a panicked creature cowers. Once triggered, the symbol lasts 10 minutes per level.</p><p><strong>Hopelessness:</strong> All creatures within 30 feet radius must attempt charisma saves at a -4 penalty. If the save fails, the creature suffers from hopelessness for 3d4x10 minutes and submits to simple demands from foes, such as to surrender or get out. If no foes are present to make demands, there is a 25% chance that a hopeless creature proves unable to take any action except hold its ground. If the creature remains free to act, there is a 25% chance it will retreat from the rune at normal speed. In either case, the creature can defend itself normally if attacked. Once triggered, the symbol lasts 10 minutes per caster level.</p><p><strong>Insanity:</strong> One or more creatures within 30 feet, whose combined total hit points do not exceed 150, become insane unless they make an intelligence saving throw. Insane creatures behave randomly, either wandering away for 1 minute (unless prevented), doing nothing for 1 round, attacking the nearest creature for 1 round, or acting normally for 1 round until the spell ends. The spell lasts until a <em>restoration, greater restoration, heal, limited wish</em> or <em>wish</em> is cast on the creature. The symbol affects the closest creatures first, skipping creatures with too many hit points to affect. Once triggered, the symbol lasts until it has affected 150 hit points worth of creatures.</p><p><strong>Pain:</strong> Creatures within 30 feet suffer wracking pains that temporarily reduce dexterity scores by 2 and impose a -4 penalty on attack rolls, dexterity saves and ability checks. A successful constitution save at -4 negates these effects. The pain lasts 2d10x10 minutes. Once triggered, the symbol lasts 10 minutes per caster level.</p><p><strong>Persuasion:</strong> All creatures within 30 feet must succeed at a charisma save at -4 to resist. If the save fails, the creature becomes the same alignment as the caster for 1d20 x 10 minutes. During this time, affected creatures become friendly to the caster. The spell does not enable the character to control the creatures as if they were automatons, but the creatures perceive the character's words and actions in the most favorable way. The caster can try to give the creatures orders, but must succeed at a charisma check (difficulty determined by the Castle Keeper) to convince the creatures to do anything they wouldn't ordinarily do. The creatures never obey suicidal or obviously harmful orders. Any act by the character or the character's apparent allies that threatens the creatures breaks the spell. Note also that the caster must speak the creatures' language to communicate the character's commands, or else be good at pantomiming.</p><p><strong>Sleep:</strong> Creatures within 30 feet fall into a catatonic slumber if they have 8 or fewer HD (intelligence save negates). Sleeping creatures cannot be awakened for 3d6x10 minutes. Once triggered, the symbol lasts 10 minutes per caster level.</p><p><strong>Stunning:</strong> One or more creatures within 30 feet whose total hit points do not exceed 200 must succeed at a constitution save or become stunned. The symbol affects the closest creatures first, skipping creatures with too many hit points to affect. A stunned creature can't act, and loses any dexterity bonus to AC. Attackers gain a +2 bonus while attacking stunned creatures. In addition, stunned creatures will drop what they are holding.</p><p>The material component is 5000gp worth of material.</p><p># T</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "see below",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "10 min.",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 9,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 9,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "363bae2fac999c09",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

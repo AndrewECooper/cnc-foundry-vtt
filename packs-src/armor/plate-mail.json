@@ -1,0 +1,33 @@
+{
+  "_id": "5f3c8be9c70697ce",
+  "_key": "!items!5f3c8be9c70697ce",
+  "name": "Plate Mail",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A combination of plate, mail, and padding covering the entire body — the standard armor of a knight.</p>",
+    "price": {
+      "value": "600 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "45",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "4",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 7,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "e4ee6caf72b45663",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

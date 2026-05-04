@@ -1,0 +1,68 @@
+{
+  "_id": "09e0b9bc8281a209",
+  "_key": "!items!09e0b9bc8281a209",
+  "name": "Incendiary Cloud",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight, including special visions, beyond 5 feet. A creature within 5 feet has one-half concealment; creatures farther away have total concealment. The spell affects an area 20 feet high by 30 feet wide and 30 feet long.</p><p>In addition, the white-hot embers within the cloud deal 4d6 points of fire damage each round (half damage on a successful dexterity save). A moderate wind (11+ mph) disperses the smoke in 4 rounds; a strong wind (21+ mph) disperses the smoke in 1 round. The spell does not function underwater.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./2 lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "dexterity halves",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 8,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 8,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "7b2db668931d83f5",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

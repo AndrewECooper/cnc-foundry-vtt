@@ -1,0 +1,68 @@
+{
+  "_id": "b5c174ca530da130",
+  "_key": "!items!b5c174ca530da130",
+  "name": "Polymorph Other",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster causes another creature to assume the body, abilities and potentially the consciousness of another form of another creature. An unwilling target gets a wisdom save to resist the spell. Additionally, a creature polymorphed into the form of another risks assuming the consciousness of the new form. For every 12 hours spent in the new form, the creature must succeed at a wisdom save or become a member of the species in question in both form and consciousness, forgetting everything associated with the prior form, including friends, family, experiences and training. If the magic is dispelled, the target regains its former memories and personality.</p><p>In all other regards, this spell acts like <em>polymorph self</em>. Size can be no larger than twice the creature's normal height. The caster retains control over both minor and significant physical qualities. Upon changing back to an original form, the polymorphed creature regains 1d4 hit points. If slain, the creature reverts to his or her original form, but remains dead.</p><p>The material components for this spell is butterfly wings.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "wisdom negates (h)",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 4,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 4,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ae7dd915b609c2eb",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

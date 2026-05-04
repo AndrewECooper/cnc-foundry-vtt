@@ -1,0 +1,68 @@
+{
+  "_id": "089231f1808a8a4e",
+  "_key": "!items!089231f1808a8a4e",
+  "name": "Mass Suggestion",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The spell is the same as <em>suggestion</em> except that this spell can affect more creatures. The caster influences the actions of the creatures by suggesting a course of activity (limited to a sentence or two). The number of creatures affected is equal to one per level of the caster and all must be within a 25 foot area. The suggestion must be worded in such a manner as to make the activity sound reasonable. The victim must understand the language of the caster making the suggestion. Any attempt to suggest an act that would be harmful to the victim or something severely at odds with their behavior will allow the affected creature to automatically break the enchantment. The Castle Keeper is free to factor in penalties to the victim's saving throw for quite reasonable suggestions as well as give the target bonuses to their saves for unreasonable or harmful suggestions.</p><p>The suggested course of activity can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what he was asked to do. The caster can instead specify conditions that will trigger a special activity during the duration. If the condition is not met before the spell expires, the activity is not performed.</p><p>The material component for this spell is a small piece of wood.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 hr./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "charisma negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 6,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 6,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "d17b6041650219b9",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "1ab7ce54ca69e2d3",
+  "_key": "!items!1ab7ce54ca69e2d3",
+  "name": "Helm, Great",
+  "type": "armor",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A flat-topped, fully enclosed helm worn over a padded cap or coif, offering the head total cover at the cost of vision.</p>",
+    "price": {
+      "value": "20 gp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "8",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "2",
+      "label": "TLGCC.ItemEV"
+    },
+    "armorClass": {
+      "value": 7,
+      "label": "TLGCC.ArmorClass",
+      "abbr": "TLGCC.ArmorClassAbbr"
+    }
+  },
+  "effects": [],
+  "folder": "2edefa6e765d52ea",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

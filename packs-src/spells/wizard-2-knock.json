@@ -1,0 +1,68 @@
+{
+  "_id": "d077a96d1145f49e",
+  "_key": "!items!d077a96d1145f49e",
+  "name": "Knock",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell opens stuck or locked doors, even magically held ones. It slides bolts and lifts latches. It opens secret doors, as well as locked or trick-opening boxes or chests, and also loosens shackles or chains that have been employed to hold closures shut. Non-magical items opened by a <em>knock</em> spell do not lock by themselves once opened. <em>Knock</em> can not raise portcullises or similar impediments, nor can it undo or untangle knots. Each spell can undo up to two means of preventing egress through a portal. If used to open a magically locked closure, <em>knock</em> does not remove the spell but simply inhibits its functioning for 10 minutes.</p><p><em>Lock</em> is the reverse of <em>knock</em>. It magically locks a single portal, chest or box, preventing it from being opened by any mundane means short of breaking or bypassing the portal itself; any magical means of opening, such as <em>dispel magic</em> or <em>knock</em> work normally. The caster can freely pass the character's own lock without affecting it.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "fa68d248077cd175",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "cdaea43f4cd7d190",
+  "_key": "!items!cdaea43f4cd7d190",
+  "name": "Enhanced Sense Of Smell",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Half-Orc</em></p><p>This ability allows half-orcs to detect the presence, but not the specific location, of creatures within 30 feet or within 60 feet if the other creature it is upwind. Strong scents, such as smoke or rotting garbage, can be detected at twice those ranges. Overpowering scents, such as skunk musk, can be detected at three times these ranges. If a half-orc becomes familiar with an individual, he can learn the individual's scent and recognize it. It should further be noted that false, powerful odors can easily mask other scents and completely spoil this ability.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "d3c310b460a7c8fc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

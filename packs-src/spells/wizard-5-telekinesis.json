@@ -1,0 +1,68 @@
+{
+  "_id": "49cd852a9cff6a71",
+  "_key": "!items!49cd852a9cff6a71",
+  "name": "Telekinesis",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>By concentrating, the caster can move an object or creature weighing 25 pounds per level of the caster up to 20 feet per round by mental command. A creature can negate the effect against itself with a successful charisma save at -4, and against an object it possesses with a successful strength save, or with SR.</p><p>The spell lasts up to 1 round per caster level, but it ends if the caster ceases concentrating. The weight can be moved in any direction, but not beyond the spell's range. The spell ends if an object is forced beyond the range.</p><p>Alternatively, if the caster chooses, the spell energy can be expended in a single round. The caster can hurl, with massive force, one object or creature (within range toward any target also within range). The caster can hurl up to a total weight of 25 pounds per caster level. To hit a target with a hurled item, caster must succeed at an attack roll using the caster's to hit bonus + the caster's intelligence modifier. Weapons hurled by the spell cause double standard damage (with no strength bonus). Other objects cause 1d6 points of damage per 25 pounds of weight. Creatures who fall within the weight capacity of the spell can be hurled, but they are allowed a charisma save as noted above. If a creature is hurled against a solid surface, it takes damage as if it had fallen 30 feet.</p>",
+    "class": {
+      "value": "Wizard",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "1 rd./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "100 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "ff2905fa0405f7f8",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

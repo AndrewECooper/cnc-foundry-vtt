@@ -1,0 +1,24 @@
+{
+  "_id": "8bb7ec4f02c7880a",
+  "_key": "!items!8bb7ec4f02c7880a",
+  "name": "Weapon Training",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Elf</em></p><p>Elves are taught the ways of combat at a young age, and their long lives allow them to become skilled in weapons favored by their society. Elves begin play with a +1 bonus to hit with one of the following weapons: composite longbow, composite shortbow, longbow, shortbow, longsword or shortsword.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "b6c7ac1b4ec1fe7e",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

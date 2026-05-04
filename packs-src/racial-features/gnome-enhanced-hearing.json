@@ -1,0 +1,24 @@
+{
+  "_id": "f00ad6341cb6d8fa",
+  "_key": "!items!f00ad6341cb6d8fa",
+  "name": "Enhanced Hearing",
+  "type": "feature",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p><em>Race: Gnome</em></p><p>Gnomes have keen ears, often likened to those of a fox. No one knows whether this is due to gnome physiology, or if it is because gnomes are such close observers of their environment. Gnomes receive a +3 bonus to all listening checks.</p>",
+    "formula": {
+      "value": "",
+      "label": "TLGCC.Formula"
+    },
+    "value": "",
+    "feature": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "folder": "1a0e177eed0ac19b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

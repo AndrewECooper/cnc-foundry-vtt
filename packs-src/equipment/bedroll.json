@@ -1,0 +1,32 @@
+{
+  "_id": "47f0cc1377af775a",
+  "_key": "!items!47f0cc1377af775a",
+  "name": "Bedroll",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>A rolled blanket and groundsheet for sleeping rough.</p>",
+    "price": {
+      "value": "1 sp",
+      "label": "TLGCC.Price"
+    },
+    "weight": {
+      "value": "5",
+      "label": "TLGCC.Weight"
+    },
+    "itemev": {
+      "value": "3",
+      "label": "TLGCC.ItemEV"
+    },
+    "quantity": {
+      "value": 1,
+      "label": "TLGCC.Quantity"
+    }
+  },
+  "effects": [],
+  "folder": "bfaf816708d584bc",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

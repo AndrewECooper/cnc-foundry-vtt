@@ -1,0 +1,68 @@
+{
+  "_id": "19f5d27ac432eba1",
+  "_key": "!items!19f5d27ac432eba1",
+  "name": "Wall Of Thorns",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell creates a barrier of very tough, pliable and tangled brush, bearing needle-sharp thorns as long as a person's finger that is 10 cubic feet in size per level of the caster. A simple thorn is used to enact this spell. Any creature forced into or attempting to move through the wall of thorns takes 25 points of damage per round of movement minus 1 point for each point of the creature's AC that is granted by armor. Dexterity bonus to AC does not count for this calculation.</p><p>Creatures can force their way slowly through the wall by making a successful challenge level 10 Strength check. A successful creature moves a number of feet equal to its strength divided by 3 (round down). Of course, moving or attempting to move through the thorns incurs damage as described above.</p><p>Any creature within the area of the spell when it is cast takes damage as if it had moved into the wall, and is caught inside. In order to escape, it must attempt to push its way free, or it can wait until the spell ends. A creature trapped in the thorns can choose to remain motionless in order to avoid taking any more damage. Creatures with the ability to pass unhindered through overgrown areas can pass through a <em>wall of thorns</em> at normal speed without taking damage.</p><p>A wall of thorns can be carefully breached by slow work with edged weapons. Chopping away at the wall creates a safe passage 1 foot deep for every 10 minutes of work. Normal fire cannot harm the barrier, but magical fire burns it away in 10 minutes.</p><p>The material component for this spell is a dried thorn.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "10 min./lvl.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S, M",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "150 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 5,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 5,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "91a80f29d8a51e6b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "0bcd0a0057af8c9f",
+  "_key": "!items!0bcd0a0057af8c9f",
+  "name": "Heat Metal",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell raises the temperature of metal items, such as weapons and armor, while its reverse, <em>chill metal</em>, lowers the temperature. Magical metal items are not affected. The spell affects the equipment of one creature per two caster levels and the creatures can be no more than 25 feet apart. If the metal targeted is not held or worn, the the amount affected is 25 pounds per level.</p><p>This spell lasts for 7 rounds. On the first and seventh round of the spell, the metal becomes warm or chilly, and uncomfortable to touch but deals no damage. During the second and sixth rounds, burning heat or icy coldness causes pain and 1d4 damage. In the third, fourth and fifth rounds, the metal is searing hot or freezing cold, causing disabling pain and 2d4 damage per round. The disabling pain results in the hands and/or body becoming totally disabled for 1-4 days.</p><p>Any heat or cold intense enough to damage the creature negates heat or cold damage from this spell (and vice versa) on a point-for-point basis. Underwater, <em>heat metal</em> deals half damage and boils the surrounding water, and <em>chill metal</em> deals no damage, but ice immediately forms around the affected metal, making it more buoyant.</p>",
+    "class": {
+      "value": "Druid",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "7 rd.",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "none",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "no",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "79e5de598b9405d7",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

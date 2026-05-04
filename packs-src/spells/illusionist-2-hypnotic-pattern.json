@@ -1,0 +1,68 @@
+{
+  "_id": "dc9d3ef2e6528c71",
+  "_key": "!items!dc9d3ef2e6528c71",
+  "name": "Hypnotic Pattern",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>The caster creates a pattern of shifting and weaving colors, mists, or fogs as determined by the caster. The scintallating, constantly moving forms draws creatures who view it in, fascinating them. The spell affects a 25 foot x 25 foot area. Affected creatures gaze at the lights, doing nothing and heedless of all else. Each creature in the area gets an intelligence save to avoid the spell's effect, but the caster can affect no more than 2d4 HD of creatures plus an additional HD per caster level. Creatures with fewer HD are affected first.</p><p>The caster need not utter a sound to cast this spell, but must gesture and concentrate to maintain the weaving pattern of lights. Sightless creatures are not affected.</p>",
+    "class": {
+      "value": "Illusionist",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "concentration",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "intelligence negates",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "50 ft.",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 2,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 2,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "970419e5bee1392b",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}

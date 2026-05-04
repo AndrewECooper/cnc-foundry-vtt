@@ -1,0 +1,68 @@
+{
+  "_id": "e7e19e5e12c0494b",
+  "_key": "!items!e7e19e5e12c0494b",
+  "name": "Remove Curse",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>This spell allows the caster to remove the effects of a curse from an object or creature. <em>Remove curse</em> does not remove the curse from a cursed shield, weapon, or suit of armor, although the spell typically enables the person afflicted with any such cursed item to remove it and get rid of it. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or higher.</p><p><em>Bestow Curse:</em> The reverse of this spell allows the caster to place a curse on a creature. The caster can choose one of the following effects: -6 to one ability score (which cannot reduce the score below 1), or a -4 penalty on attack rolls, saving throws and checks. Subject to the Castle Keeper's approval, the caster may invent a new curse, but it must be no more powerful than the standard curses.</p><p>The Castle Keeper has final say on a curse's effect. A curse cannot be dispelled with <em>dispel magic</em>, but it can be nullified by <em>limited wish</em>, <em>remove curse</em>, or <em>wish</em> spell.</p>",
+    "class": {
+      "value": "Cleric",
+      "label": "TLGCC.Class"
+    },
+    "duration": {
+      "value": "permanent",
+      "label": "TLGCC.Duration"
+    },
+    "savevalue": {
+      "value": "see below",
+      "label": "TLGCC.SaveValue"
+    },
+    "spellresist": {
+      "value": "yes (bestow only)",
+      "label": "TLGCC.SpellResistance"
+    },
+    "spellcomp": {
+      "value": "V, S",
+      "label": "TLGCC.SpellComp"
+    },
+    "prepared": {
+      "value": 0,
+      "label": "TLGCC.Prepared"
+    },
+    "range": {
+      "value": "touch",
+      "label": "TLGCC.Range"
+    },
+    "spelldmg": {
+      "value": "",
+      "label": "TLGCC.SpellDamage"
+    },
+    "cast": {
+      "value": "1",
+      "label": "TLGCC.SpellCastTime"
+    },
+    "component": {
+      "value": "",
+      "label": "TLGCC.SpellComponent"
+    },
+    "summary": {
+      "value": "",
+      "label": "TLGCC.SpellSummary"
+    },
+    "spellLevel": {
+      "value": 3,
+      "label": "TLGCC.SpellLevel"
+    },
+    "spell": {
+      "spelllevel": 3,
+      "summary": ""
+    }
+  },
+  "effects": [],
+  "folder": "9a26512921b53303",
+  "flags": {},
+  "ownership": {
+    "default": 0
+  }
+}
